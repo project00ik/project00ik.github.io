@@ -10,9 +10,183 @@
 		<meta http-equiv="cache-control" content="no-cache" />
 		<meta http-equiv="imagetoolbar" content="no" />
 		<meta name="viewport" content="width=1190">
-		<title>hello</title>
+		<title>kt commerce</title>
+		<script type="text/javascript" src="resource/js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="resource/css/import.css" />
+		<style type="text/css">
+			body.guide{color:#333; background: #F3F3F3;}
+			.guide .wrap {padding: 0 15px 15px;}
+			.guide h1 {font-size: 2em; padding: 0.67em 0; color: #666; font-weight: 500; text-align: center;}
+			.guide th{padding:6px 0 7px;border:1px solid #ccc;background:#999;font-size:13px;color:#fff;}
+			.guide td{padding:4px 10px 5px;border:1px solid #ccc;font-size:13px; text-align:center;}
+			.guide td > a {text-decoration: underline;}
+			.guide td:last-child {text-align:left;}
+			.guide tr.cms > td:last-child:before {content:'CMS'; padding:1px 3px; margin-right:3px; color:#fff; background:#009999; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
+			.guide tr.new > td:last-child:before {content:'NEW'; padding:1px 3px; margin-right:3px; color:#fff; background:red; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
+			.guide tr.del > td {color:#ccc;}
+			.guide tr.del > td > a {}
+			.guide tr.del > td span,
+			.guide tr.del > td::after {background:#ededed !important;}
+			.guide tr.del > td b {color:inherit;}
+			.guide tr.finish > td {background:#fff;}
+			.guide tr.mod > td {background:#edf7ff;}
+			.guide tr.ing > td {background:#ccffff;}
+			.guide tr.line > td {border-top:2px solid #ccc;}
+			.guide .link {color:#145e95; text-align: left;}
+			.guide nav ul {float: left; padding: 0; margin: 0; margin-bottom: 20px; border: 1px solid #666;}
+			.guide nav ul:after {content: ''; clear: both; display: block;}
+			.guide nav ul li {float: left; list-style: none; border-left: 1px solid #666; width: 100px; line-height: 30px; text-align: center; background:#fff;}
+			.guide nav ul li:first-child {border: 0 none;}
+			.guide nav ul li a {text-decoration: none; color:#444;}
+			.guide nav ul li.active {color:#fff; background:#000;}
+			.guide nav ul li.active a {color:#fff;}
+			.guide b {color: #c24d41}
+			.guideInfo {width:100%; overflow:hidden; margin-bottom:20px;}
+			.guideInfo > p {min-width:150px; height:20px; padding:4px 0; font-size:12px; float:left; text-align:center;}
+			.guideInfo > p:last-child {width:350px;}
+			.guideInfo > .mod {background:#edf7ff;}
+			.guideInfo > .finish {background:#fff;}
+			.guideInfo > p span,
+			.guideInfo > p span:after {vertical-align: top; margin:0;}
+			span.new {padding:1px 3px; margin-right:3px; color:#fff; background:red; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold; text-indent:initial;}
+			span.cms {padding:1px 3px; margin-right:3px; color:#fff; background:#009999; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
+			span.hd {padding:1px 3px; margin-right:3px; color:#fff; background:#6600cc; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
+			.popup::after {content:"POPUP"; padding:1px 3px; margin:3px; color:#fff; background:#666; border-radius:3px; display:inline-block; font-size:11px;}
+			.html::after {content:"HTML"; padding:1px 3px; margin:3px; color:#fff; background:#145e95; border-radius:3px; display:inline-block; font-size:11px;}
+			.infoPage {}
+			.infoPage b, .infoPage span {vertical-align: top;}
+			.guide tr:hover td,
+			.guide tr.finish:hover td {background:#fff0f0}
+			.modiList {padding-left:70px;}
+			.modiList > li {text-indent:-70px; font-size:13px;}
+			.guide .input {padding:1px 3px; margin-right:3px; color:#fff; background:#6600cc; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold; text-indent:initial;}
+			.guideInfoBox {width:100%; padding:20px; margin-bottom:30px; border:1px solid #666; background:#fff; line-height:1.5; font-size:12px;}
+			.guideInfoBox > p {font-size:12px;}
+		</style>
 	</head>
-<body>
-	hello!
+<body class="guide">
+<div class="wrap">
+	<h1>HTML 화면목록</h1>
+	<div class="guideInfoBox">
+		<!-- <p>[디자인 최적화 기준]</p>
+		<p>화면사이즈 360*740 (해상도1080*2220) 3배수
+			pc 965 기준 가운데 정렬 / 공사자재 구매 목록 1320
+		</p>
+		<br>
+		<p>[테스트 기기정보]</p>
+		<p>Galaxy Note9 (소프트웨어 버전: Android10.0 / 화면사이즈 360*740 (해상도 1080*2220))</p>
+		<p>Galaxy S9 (소프트웨어 버전: Android8.0 / 화면사이즈 360*740 (해상도1080*2220))</p>
+		<p>iPhone11(소프트웨어 버전: IOS14.4 / 화면사이즈 414*896 (해상도 828*1792))</p>
+		<br>
+		<p>[퍼블 최적화 기준]</p>
+		<p>가로기준 최소사이즈 360(Galaxy) ~ 가로기준 최대사이즈1024(ipad pro)</p>
+		<p>(* 320(iphoneSE)은 깨지지 않는 수준)</p>
+		<br> -->
+		<p>[크로스브라우징]</p>
+		<p>크롬, 엣지, 파이어폭스, 사파리, IE 등 (Internet Explorer 기준 IE10 버전 이상)</p>
+		<br>
+		<p>[plugin 사용정보]</p>
+		<p>swiper.min.js (Swiper 5.4.5)</p>
+	</div>
+	<nav>
+		<ul>
+			<li class="active"><a href="index.html">작업목록</a></li>
+			<!-- <li><a href="guide.html">가이드</a></li> -->
+		</ul>
+	</nav>
+	<div class="guideInfo">
+		<p class="mod">수정예정</p>
+		<p class="finish">작업완료</p>
+		<p class="infoPage">작업/총(page) : <b class="page"></b> / <span class="total"></span></p>
+		<p><span class="html"></span> : html 페이지</p>
+		<p><span class="popup"></span> : 레이어팝업(full popup)</p>
+		<p><span class="new">NEW</span> : 신규작업</p>
+	</div>
+	<table>
+		<colgroup>
+			<col style="width:5%" />
+			<col style="width:10%" />
+			<col style="width:10%" />
+			<col style="width:10%" />
+			<col style="width:10%" />
+			<col style="width:10%" />
+			<col style="width:10%" />
+			<col style="width:10%" />
+			<col />
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" rowspan="2">no.</th>
+				<th scope="col" colspan="5">Depth</th>
+				<th scope="col" rowspan="2">FILE</th>
+				<th scope="col" rowspan="2">완료일</th>
+				<th scope="col" rowspan="2">수정이력</th>
+			</tr>
+			<tr>
+				<th scope="col">D1</th>
+				<th scope="col">D2</th>
+				<th scope="col">D3</th>
+				<th scope="col">D4</th>
+				<th scope="col">D5</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="">
+				<td class="d1">메인</td>
+				<td class="d2">메인</td>
+				<td class="d3"></td>
+				<td class="d4"></td>
+				<td class="d5"></td>
+				<td class="link"><a href="#" target="_blank">html/simonMain.html</a></td>
+				<td class="date">
+					20.12.02
+				</td>
+				<td class="memo">
+					<ul class="modiList">
+						<li>00.00 수정 : 
+					</ul>
+				</td>
+			</tr>
+			<tr class="">
+				<td class="d1">메인</td>
+				<td class="d2">메인</td>
+				<td class="d3"></td>
+				<td class="d4"></td>
+				<td class="d5"></td>
+				<td class="link"><a href="#" target="_blank">html/simonMain.html</a></td>
+				<td class="date">
+					20.12.02
+				</td>
+				<td class="memo">
+					<ul class="modiList">
+						<li>00.00 수정 : 
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('tbody tr').each(function(){
+		var index = $('tbody tr').index(this);
+		$(this).prepend('<td class="alc">' + (index+1)+'</td>');
+		if ($(this).find('td').eq(7).text() == '') {
+			$(this).removeClass('finish');
+		} else {
+			$(this).addClass('finish');
+		}
+	});
+	$('.link').on('click',function(){
+		var link = $(this).find('a');
+		var linkTxt = $(this).find('a').text();
+		link.attr({ href : linkTxt });
+	});
+	var total = $('.alc').length;
+	var finish = $('tbody tr.finish').length;
+	$('.total').text(total);
+	$('.page').text(finish);
+});
+</script>
 </body>
 </html>
