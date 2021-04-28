@@ -196,7 +196,47 @@
                 </div>
             </div>
             <div class="cont-mdpick">
-                
+                <p class="tit-type1">MD 추천상품</p>
+                <div class="tab-area tabArea">
+                    <ul class="tab-btn-list tab-style1">
+                        <li class="tabBtn" data-tab="tab1">TAB1</li>
+                        <li class="tabBtn" data-tab="tab2">TAB2</li>
+                        <li class="tabBtn" data-tab="tab3">TAB3</li>
+                    </ul>
+                    <div class="tab-cont tabCont" id="tab1">
+                        TAB1 내용
+                    </div>
+                    <div class="tab-cont tabCont" id="tab2">
+                        TAB2 내용
+                    </div>
+                    <div class="tab-cont tabCont" id="tab3">
+                        TAB3 내용
+                    </div>
+                </div>
+                <div class="tab-area tabArea">
+                    <ul class="tab-btn-list tab-style1">
+                        <li class="tabBtn" data-tab="mdTab1">탭버튼1</li>
+                        <li class="tabBtn" data-tab="mdTab2">탭버튼2</li>
+                        <li class="tabBtn" data-tab="mdTab3">탭버튼3</li>
+                        <li class="tabBtn" data-tab="mdTab4">탭버튼4</li>
+                        <li class="tabBtn" data-tab="mdTab5">탭버튼5</li>
+                    </ul>
+                    <div class="tab-cont tabCont" id="mdTab1">
+                        탭 내용1
+                    </div>
+                    <div class="tab-cont tabCont" id="mdTab2">
+                        탭 내용2
+                    </div>
+                    <div class="tab-cont tabCont" id="mdTab3">
+                        탭 내용3
+                    </div>
+                    <div class="tab-cont tabCont" id="mdTab4">
+                        탭 내용4
+                    </div>
+                    <div class="tab-cont tabCont" id="mdTab5">
+                        탭 내용5
+                    </div>
+                </div>
             </div>
         </section>
         <footer class="footer-wrap">
@@ -235,6 +275,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             responsive();
+            tab(); //탭 메뉴 js
             $(window).resize(function (){
                 responsive();
             });
@@ -249,6 +290,7 @@
                 navigation: false,
                 pagination: { el: '.swiper-pagination', clickable: true }
             });
+            
         });
         function responsive(){
             // 반응형 관련 노출
