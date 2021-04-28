@@ -46,9 +46,12 @@ $(document).ready(function () {
     
     // fixedArea(); // 플로팅 버튼 관련 스크롤 이벤트(fixed-area share, top)
     nowScrollPosition(); // 현재 스크롤 위치 기억
+
   });
   
 });
+
+
 
 function lyOpen(id) {
   // 팝업
