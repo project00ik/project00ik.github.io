@@ -88,7 +88,7 @@
 .main .main-slide-area .swiper-slide .mo-slide-img-area {display:none;}
 .main .main-slide-area .swiper-scrollbar {background:rgba(0,0,0,0.7);}
 .main .main-slide-area .swiper-scrollbar-drag {background:#fff;}
-
+ 
 .main .bulk-purchase-wrap {width:100%; background:#f5f5f5;}
 .main .bulk-purchase-wrap .cont-bulk-purchase {width:1200px; margin:0 auto; padding:40px 0;}
 .main .tit-type1 {margin-bottom:40px; text-align:center;}
@@ -102,14 +102,25 @@
 .main .bulk-purchase-slide .bulk-img-area > dt {width:212px; height:150px; border-radius:10px; overflow:hidden;}
 .main .bulk-purchase-slide .bulk-img-area > dt > img {width:100%; height:100%;}
 .main .bulk-purchase-slide .bulk-img-area > dd {width:100%; margin-top:20px; text-align:center; font-size:18px;}
-.main .bulk-purchase-slide .swiper-button-next:after,
-.main .bulk-purchase-slide .swiper-button-prev:after {display:none;}
-.main .bulk-purchase-slide .swiper-button-prev {width:40px; height:40px; margin-top:0; background:url(../../resource/img/common/btn_slide_L.svg) 0 0 no-repeat; left:0; top:55px;}
-.main .bulk-purchase-slide .swiper-button-next {width:40px; height:40px; margin-top:0; background:url(../../resource/img/common/btn_slide_R.svg) 0 0 no-repeat; right:0; top:55px;}
 
-.main .cont-mdpick {width:100%; background:#fff;}
+.main .cont-mdpick-wrap {width:100%;}
+.main .cont-mdpick-wrap .tab-cont {margin-top:30px;}
+.main .cont-mdpick-wrap .cont-mdpick {width:1200px; margin:0 auto; padding:40px 0;}
+.main .cont-mdpick .tab-btn-list {text-align:center;}
+.main .cont-mdpick .mdpick-slide {width:100%; padding:0 5px; position:relative;}
+.main .cont-mdpick .mdpick-slide .unit-type1 {width:290px;}
 
-
+/* swiper 관련 css */
+.main .mdpick-slide .slide-arrow-next:after,
+.main .mdpick-slide .slide-arrow-prev:after,
+.main .bulk-purchase-slide .slide-arrow-next:after,
+.main .bulk-purchase-slide .slide-arrow-prev:after {display:none;}
+.slide-arrow-prev {width:40px; height:40px; margin-top:0; background:url(../../resource/img/common/btn_slide_L.svg) 0 0 no-repeat; left:0; position:absolute; z-index:10;}
+.slide-arrow-next {width:40px; height:40px; margin-top:0; background:url(../../resource/img/common/btn_slide_R.svg) 0 0 no-repeat; right:0; position:absolute; z-index:10;}
+.main .mdpick-slide .slide-arrow-prev,
+.main .mdpick-slide .slide-arrow-next {top:156px;}
+.main .bulk-purchase-slide .slide-arrow-prev,
+.main .bulk-purchase-slide .slide-arrow-next {top:55px;}
 
 .sub-content {width:1200px; margin:0 auto;}
 /* ==========================================================================
@@ -144,6 +155,7 @@ input.input:read-only:focus {border-color:#bbb;} */
 /* 텍스트 관련 style */
 .point-color1 {color:#ed1c24;}
 .tit-type1 {font-size:34px; color:#000;}
+.tit-type1 > b {font-weight:700;}
 .ellipsis {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .ellipsis-multiple {overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; word-wrap:break-wrod;}
 .ellipsis-multiple2 {overflow:hidden ; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-wrod;}
@@ -164,6 +176,26 @@ input.input:read-only:focus {border-color:#bbb;} */
 .tab-area .tab-style2 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
 .tab-area .tab-cont {width:100%;}
 
+/* 유닛 */
+.unit-type1 {width:100%; height:472px; position:relative;}
+.unit-type1 > a {width:100%; height:calc(100% - 42px); display:inline-block; position:absolute; top:0; left:0; z-index:8;}
+.unit-type1 .unit-area {width:100%; padding:10px;}
+.unit-type1 .unit-area > dt {width:270px; height:270px; background:#f5f5f5;}
+.unit-type1 .unit-area > dd {width:100%; padding:20px 0 62px;}
+.unit-type1 .unit-area .brand {margin-bottom:10px; font-size:15px; color:#bbb; display:inline-block;}
+.unit-type1 .unit-area .product-name {height:38px; font-size:16px;}
+.unit-type1 .unit-area .price {margin-top:10px; font-size:20px; color:#000; display:inline-block;}
+.unit-type1 .unit-area .price > b {vertical-align:text-bottom; font-weight:700; font-size:28px;}
+
+.unit-type1 .unit-layer {width:100%; height:100%; border:1px solid #346dd0; position:absolute; top:0; left:0; z-index:7;}
+.unit-type1 .hoverLy {display:none;}
+.unit-type1 .hoverLy.active {display:block;}
+.unit-type1 .unit-layer .unit-under-btn {width:100%; height:42px; line-height:42px; display:-webkit-box; display:-ms-flexbox; display:flex; position:absolute; bottom:0; left:0; z-index:9; background:#346dd0; color:#fff;}
+.unit-type1 .unit-layer .unit-under-btn > li {height:100%; flex:1; text-align:center;}
+.unit-type1 .unit-layer .unit-under-btn > li > a {width:100%; height:100%; display:inline-block; vertical-align:top;}
+.unit-type1 .unit-layer .unit-under-btn > li + li  {border-left:1px solid #7ea1dc;}
+.unit-type1 .unit-layer .unit-under-btn .btn-cart {width:36px; height:100%; font-size:0; background:url(../../resource/img/common/icon_cart_w.svg) 50% 50% no-repeat;}
+.unit-type1 .unit-layer .unit-under-btn .btn-like {width:36px; height:100%; font-size:0; margin-left:20px; background:url(../../resource/img/common/icon_like_w.svg) 50% 50% no-repeat;}
 
 
 /* ==========================================================================
@@ -244,14 +276,17 @@ input.input:read-only:focus {border-color:#bbb;} */
     .main .bulk-purchase-slide {padding:0;}
     .main .bulk-purchase-slide .swiper-slide {width:116px !important;}
     .main .bulk-purchase-slide .swiper-slide:first-child {margin-left:20px;}
-    .main .bulk-purchase-slide .swiper-button-prev,
-    .main .bulk-purchase-slide .swiper-button-next {display:none;}
+    .main .bulk-purchase-slide .slide-arrow-prev,
+    .main .bulk-purchase-slide .slide-arrow-next {display:none;}
     .main .bulk-purchase-slide .bulk-img-area {width:116px;}
     .main .bulk-purchase-slide .swiper-scrollbar {width:calc(100% - 76px); height:2px; display:block; background:#fff; left:38px;}
     .main .bulk-purchase-slide .swiper-scrollbar-drag {background:#346dd0;}
     .main .bulk-purchase-slide .bulk-img-area > dt {width:116px; height:82px; border-radius:10px; overflow:hidden;}
     .main .bulk-purchase-slide .bulk-img-area > dd {margin-top:10px; font-size:16px;}
     
+
+
+    /* sub */
     .sub-content {width:100%; margin:0;}
 
 }

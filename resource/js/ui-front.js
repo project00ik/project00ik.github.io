@@ -113,7 +113,7 @@ function mdClose() {
   $(window).scrollTop(scrollPoint);
 }
 
-function tab() {
+function tab() { // 탭 관련 js
   $('.tabArea').each(function () {
     var $tabName = $(this);
     var $tabBtn = $tabName.find('.tabBtn');
@@ -141,6 +141,20 @@ function ratingBtnArea(){
       $(this).parent().attr('class','star'+ starIndex);
     })
   });
+}
+
+function hoverEvent(){ // hover 이벤트
+  $('.hoverArea').each(function(){
+    var hoverBtn = $(this);
+    hoverBtn.on('mouseover', function(e){
+      e.preventDefault();
+      hoverBtn.find('.hoverLy').addClass('active');
+    });
+    hoverBtn.on('mouseleave', function(e){
+      e.preventDefault();
+      hoverBtn.find('.hoverLy').removeClass('active');
+    });
+  })
 }
 
 function toggleBtn(){
