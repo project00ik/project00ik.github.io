@@ -118,18 +118,17 @@ function tab() { // 탭 관련 js
     var $tabName = $(this);
     var $tabBtn = $tabName.find('.tabBtn');
     var $tabCont = $tabName.find('.tabCont');
-    $tabCont.hide();
+    $tabCont.removeClass('active');
     $tabBtn.eq(0).addClass('on');
-    $tabCont.eq(0).show();
+    $tabCont.eq(0).addClass('active');
     $tabBtn.on('click', function () {
       var $activeBtn = $(this);
       $activeBtn.closest('.tabArea').find('.tabBtn').removeClass('on');
       $activeBtn.addClass('on');
-      $activeBtn.closest('.tabArea').find('.tabCont').hide();
+      $activeBtn.closest('.tabArea').find('.tabCont').removeClass('active');
       var activeTab = $activeBtn.attr('data-tab');
-      $('#' + activeTab).show();
+      $('#' + activeTab).addClass('active');
     });
-
   })
 }
 
@@ -141,20 +140,6 @@ function ratingBtnArea(){
       $(this).parent().attr('class','star'+ starIndex);
     })
   });
-}
-
-function hoverEvent(){ // hover 이벤트
-  $('.hoverArea').each(function(){
-    var hoverBtn = $(this);
-    hoverBtn.on('mouseover', function(e){
-      e.preventDefault();
-      hoverBtn.find('.hoverLy').addClass('active');
-    });
-    hoverBtn.on('mouseleave', function(e){
-      e.preventDefault();
-      hoverBtn.find('.hoverLy').removeClass('active');
-    });
-  })
 }
 
 function toggleBtn(){
