@@ -103,15 +103,14 @@
 .main .bulk-purchase-slide .bulk-img-area > dt > img {width:100%; height:100%;}
 .main .bulk-purchase-slide .bulk-img-area > dd {width:100%; margin-top:20px; text-align:center; font-size:18px;}
 
-.main .cont-mdpick-wrap {width:100%;}
-.main .cont-mdpick-wrap .tab-cont {margin-top:30px;}
-.main .cont-mdpick-wrap .cont-mdpick {width:1200px; margin:0 auto; padding:40px 0;}
+.main .cont-main-wrap {width:100%;}
+.main .cont-main-wrap .tab-cont {margin-top:30px;}
+.main .cont-main-wrap .cont-mdpick {width:1200px; margin:0 auto; padding:40px 0;}
 .main .cont-mdpick .tab-btn-list {text-align:center;}
 .main .cont-mdpick .mdpick-slide {width:100%; padding:0 5px; position:relative;}
 .main .cont-mdpick .mdpick-slide .unit-type1 {width:290px;}
 
-.main .cont-newproduct-wrap {width:100%;}
-.main .cont-newproduct-wrap .cont-newproduct {width:1200px; margin:0 auto;}
+.main .cont-main-wrap .cont-newproduct {width:1200px; margin:0 auto;}
 
 /* swiper 관련 css */
 .slide-arrow-prev:after,
@@ -120,6 +119,10 @@
 .slide-arrow-next {width:40px; height:40px; margin-top:0; background:url(../../resource/img/common/btn_slide_R.svg) 0 0 no-repeat; right:0; position:absolute; z-index:10;}
 .slide-arrow-next.swiper-button-disabled,
 .slide-arrow-prev.swiper-button-disabled {display:none;}
+.swiper-pagination.swiper-pagination-bullets {display:none; width:100%; margin-top:20px; text-align:center;}
+.swiper-pagination-bullet + .swiper-pagination-bullet {margin-left:5px;}
+.swiper-pagination-bullet {width:8px; height:8px; background:#d7d7d7; opacity:1;}
+.swiper-pagination-bullet-active {width:24px; height:8px; border-radius:4px; background:#346dd0;}
 .main .mdpick-slide .slide-arrow-prev,
 .main .mdpick-slide .slide-arrow-next {top:156px;}
 .main .bulk-purchase-slide .slide-arrow-prev,
@@ -271,17 +274,18 @@ input.input:read-only:focus {border-color:#bbb;} */
 
     /* 탭 */
     .tab-area .tab-btn-list > li {display:inline-block; font-size:16px;}
+    .tab-area .tab-style1 > li:first-child {margin-left:20px;}
+    .tab-area .tab-style1 > li:last-child {margin-right:20px;}
     .tab-area .tab-style1 > li + li {margin-left:18px;}
-    .tab-area .tab-style1 .tabBtn {padding-bottom:5px; font-size:14px; position:relative;}
+    .tab-area .tab-style1 .tabBtn {padding-bottom:5px; margin-bottom:10px; font-size:14px; position:relative;}
     .tab-area .tab-style2 > li + li {margin-left:24px;}
     .tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:16px;}
 
     /* 텍스트 관련 */
     .tit-type1 {font-size:22px;}
 
-
     /* 유닛 */
-    .unit-type1 {height:auto; overflow:hidden;}
+    .unit-type1 {width:100% !important; height:auto; overflow:hidden;}
     .unit-type1 > a {height:calc(100% - 42px); display:inline-block; position:absolute; top:0; left:0; z-index:8;}
     .unit-type1 .unit-area {padding:5px;}
     .unit-type1 .unit-area > dt {width:100%; height:100%;}
@@ -302,8 +306,11 @@ input.input:read-only:focus {border-color:#bbb;} */
     .unit-type1 .unit-layer .unit-under-btn .btn-like {width:24px; height:100%; font-size:0; margin-left:10px; background:url(../../resource/img/common/mo_icon_like_g.svg) 50% 50% no-repeat;}
     .unit-type1 .unit-layer {display:block;}
 
+    /* swiper 관련 */
+    .swiper-pagination.swiper-pagination-bullets {display:block;}
+    .slide-arrow-prev, .slide-arrow-next {display:none;}
     /* 상품리스트 */
-    .product-list-wrap {max-width:auto;}
+    .product-list-wrap {max-width:100%;}
     .product-list-wrap .product-list {width:100%; margin:0; padding:0 10px 10px; font-size:0;}
     .product-list-wrap .product-list > li {width:50%; padding:5px; display:inline-block;}
 
@@ -326,8 +333,9 @@ input.input:read-only:focus {border-color:#bbb;} */
     .main .bulk-purchase-slide .swiper-scrollbar-drag {background:#346dd0;}
     .main .bulk-purchase-slide .bulk-img-area > dt {width:116px; height:82px; border-radius:10px; overflow:hidden;}
     .main .bulk-purchase-slide .bulk-img-area > dd {margin-top:10px; font-size:16px;}
-    .main .cont-mdpick-wrap .cont-mdpick {width:100%;}
-    .main .cont-newproduct-wrap .cont-newproduct {width:100%; }
+    .main .cont-main-wrap .cont-mdpick {width:100%;}
+    .main .cont-main-wrap .cont-newproduct {width:100%;}
+    
 
 
 
