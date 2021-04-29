@@ -7,8 +7,22 @@
 
 .btn-more {width: 57px; height: 18px; line-height: 18px; font-size: 14px; text-align: left; color: #000; background: url(../../resource/img/common/btn_more.svg) right center no-repeat;}
 
-
-
+/* 퀵메뉴 */
+.quick-menu {position: absolute; right: 0; top: 252px;}
+.quick-menu > div {display: flex; justify-content: center; align-items: center; text-align: center;  width: 70px; height: 70px; margin-bottom: 1px; background: #000;}
+.quick-menu > div a {display: block;}
+.quick-menu > div a u {display: inline-block; width: 36px; height: 36px;}
+.quick-menu > div a span {display: block; margin: 2px 0 4px; font-size: 13px; line-height: 14px; color: #fff;}
+.quick-menu .qk-notify u {background: url(../../resource/img/common/icon_st_notify.svg) 0 0 no-repeat;}
+.quick-menu .qk-lookmark u {background: url(../../resource/img/common/icon_st_lookmark.svg) 0 0 no-repeat;}
+.quick-menu .qk-history u {background: url(../../resource/img/common/icon_st_history.svg) 0 0 no-repeat;}
+.quick-menu .qk-favorite u {background: url(../../resource/img/common/icon_st_favorite.svg) 0 0 no-repeat;}
+.quick-menu .qk-speech u {background: url(../../resource/img/common/icon_st_speech.svg) 0 0 no-repeat;}
+.quick-menu .qk-quick a span {font-size: 12px; margin-top: -4px;}
+.quick-menu .qk-quick u {background: url(../../resource/img/common/icon_st_quick.svg) 0 0 no-repeat;}
+.quick-menu .qk-request u {background: url(../../resource/img/common/icon_st_request.svg) 0 0 no-repeat;}
+.quick-menu .qk-quicktop {background: #2d3a52;}
+.quick-menu .qk-quicktop u {background: url(../../resource/img/common/icon_st_quicktop.svg) 0 0 no-repeat;}
 
 /* ==========================================================================
     마이페이지
@@ -27,26 +41,27 @@
 .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 12px;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li:last-child {padding-bottom: 0;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li > a {font-size: 16px; color: #666;}
+
 .mypage-cont .my-main {margin-left: 214px;}
 .mypage-cont .my-main .my-top-area {display: flex; justify-content: space-around; align-items: center; width: 100%; height: 160px; margin-bottom: 60px; border-radius: 80px 80px 80px 0px; background: #12b5cf;}
 .mypage-cont .my-main .my-top-area .top-member {padding-left: 50px; color: #fff;}
 .mypage-cont .my-main .my-top-area .top-member p {font-size: 22px;}
-.mypage-cont .my-main .my-top-area .top-member strong {font-size: 28px;}
+.mypage-cont .my-main .my-top-area .top-member b {font-size: 28px;}
 .mypage-cont .my-main .my-top-area .top-member span {font-size: 20px; vertical-align: bottom;}
 .mypage-cont .my-main .my-top-area .top-member-condition {display: flex; width: 640px; justify-content: space-evenly;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div {position: relative; width: 100%; text-align: center; color: #fff;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div:before {content: ''; display: inline-block; position: absolute; top: 0; left: 0; width: 1px; height: 60px; background: #0095ac; opacity: 0.6;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div span {font-size: 16px;}
-.mypage-cont .my-main .my-top-area .top-member-condition > div strong {display: block; padding-top: 5px; font-size: 30px;}
+.mypage-cont .my-main .my-top-area .top-member-condition > div b {display: block; padding-top: 5px; font-size: 30px;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div:first-child:before {display: none;}
-.mypage-cont .my-main .my-top-area .top-member-condition > div:first-child strong {color: #f0ff58;}
+.mypage-cont .my-main .my-top-area .top-member-condition > div:first-child b {color: #f0ff58;}
 .mypage-cont .my-main .mystep-box {width: 100%; height: 184px; margin-top: 20px; background: transparent; border: 1px solid #d7d7d7;}
 .mypage-cont .my-main .mystep-box ul {display: flex; align-items: center; justify-content: center; width: auto; height: 100%; margin: 0 auto;}
 .mypage-cont .my-main .mystep-box ul li {text-align: center; position: relative; width: 207px;}
 .mypage-cont .my-main .mystep-box ul li:last-child:after {display: none;}
 .mypage-cont .my-main .mystep-box ul li:after {content: ''; display: inline-block; position: absolute; top: 50%; right: 0; margin: -9px -9px 0 0; width: 18px; height: 18px; background: url(../../resource/img/common/arrow_step.svg) 0 0 no-repeat;}
-.mypage-cont .my-main .mystep-box ul li strong {font-size: 46px; color: #bbb;}
-.mypage-cont .my-main .mystep-box ul li.on strong {color: #346dd0;}
+.mypage-cont .my-main .mystep-box ul li b {font-size: 46px; color: #bbb;}
+.mypage-cont .my-main .mystep-box ul li.on b {color: #346dd0;}
 .mypage-cont .my-main .mystep-box ul li p {padding-top: 10px; font-size: 16px; color: #000;}
 .mypage-cont .my-main .my-board {display: flex; justify-content: space-between;}
 .mypage-cont .my-main .my-board .board-inquiry {width: 518px;}
@@ -61,7 +76,6 @@
 .mypage-cont .my-main .my-boardlist ul li a > p {width: 326px; font-size: 16px; color: #000;}
 .mypage-cont .my-main .my-boardlist ul li a > span {font-size: 14px; color: #666;}
 .mypage-cont .my-main .board-faq .my-boardlist ul li a > p {width: 100%;}
-.mypage-cont .my-main .btn-board-area {display: none;}
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
@@ -76,37 +90,37 @@
 
   .mypage .tabArea {margin: 20px 0 0;}
   .mypage-cont {margin-top: 0;}
+  .mypage-cont .my-menu {position: relative; width: 100%; padding-bottom: 100px;}
+  .mypage-cont .my-menu .my-logo {display: none;}
+  .mypage-cont .my-menu .my-menu-list > ul {padding-left: 0; border-bottom: 10px solid #f5f5f5;}
+  .mypage-cont .my-menu .my-menu-list > ul > li {padding-bottom: 0; border-top: 10px solid #f5f5f5;}
+  .mypage-cont .my-menu .my-menu-list > ul > li > a {padding: 16px 20px; font-size: 16px;}
+  .mypage-cont .my-menu .my-menu-list .list-deps {padding-top: 0;}
+  .mypage-cont .my-menu .my-menu-list .list-deps > li:first-child {border-top: 1px solid #d7d7d7;}
+  .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 0; border-top: 1px solid #e5e5e5;}
+  .mypage-cont .my-menu .my-menu-list .list-deps > li > a {padding: 12px 20px; font-size: 14px;}
+  
   .mypage-cont .my-main {margin-left: 0;}
   .mypage-cont .my-main .my-top-area {margin-bottom: 20px; border-radius: 0; padding: 20px; height: 153px; flex-direction: column; align-items: flex-start; justify-content: flex-start;}
   .mypage-cont .my-main .my-top-area .top-member {padding-left: 0;}
   .mypage-cont .my-main .my-top-area .top-member p {display: inline-block; padding-right: 5px; font-size: 18px;}
-  .mypage-cont .my-main .my-top-area .top-member strong {font-size: 20px;}
+  .mypage-cont .my-main .my-top-area .top-member b {font-size: 20px;}
   .mypage-cont .my-main .my-top-area .top-member span {font-size: 16px;}
   .mypage-cont .my-main .my-top-area .top-member-condition {width: 100%; padding-top: 20px;}
   .mypage-cont .my-main .my-top-area .top-member-condition > div {display: flex; height: 100%; align-items: center; justify-content: space-between; flex-direction: column;}
   .mypage-cont .my-main .my-top-area .top-member-condition > div span {display: inline-block; word-break:keep-all; width: 55px; font-size: 13px;}
-  .mypage-cont .my-main .my-top-area .top-member-condition > div strong {font-size: 26px;}
+  .mypage-cont .my-main .my-top-area .top-member-condition > div b {font-size: 26px;}
   .mypage-cont .my-main .my-top-area .top-member-condition > div:before {height: 68px;}
   .mypage-cont .my-main .mystep-box {border: 0; height: 64px; margin: 20px 0;}
   .mypage-cont .my-main .mystep-box ul li:after {top: auto; bottom: 0;}
-  .mypage-cont .my-main .mystep-box ul li strong {font-size: 36px;}
+  .mypage-cont .my-main .mystep-box ul li b {font-size: 36px;}
   .mypage-cont .my-main .mystep-box ul li p {padding-top: 5px; font-size: 14px;}
   .mypage-cont .my-main .my-board {display: none;}
-  .mypage-cont .my-main .btn-board-area {display: block; width: 100%; overflow: hidden; padding: 20px; background: #f5f5f5;}
+  .mypage-cont .my-main .btn-board-area {width: 100%; overflow: hidden; padding: 20px; background: #f5f5f5;}
   .mypage-cont .my-main .btn-board-area a {float: left; width: 50%;}
 
-  .mypage-cont .my-menu .my-menu-list > ul {padding-left: 0;}
-  .mypage-cont .my-menu .my-menu-list > ul > li {padding-bottom: 0;}
-  .mypage-cont .my-menu .my-menu-list > ul > li > a {padding: 16px 20px; font-size: 16px;}
-  .mypage-cont .my-menu .my-menu-list .list-deps {padding-top: 0;}
-  .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 0;}
-  .mypage-cont .my-menu .my-menu-list .list-deps > li > a {padding: 12px 20px; font-size: 14px;}
-  
-  
 
-  
-  .mypage-cont .my-menu {position: relative; width: 100%;}
-  .mypage-cont .my-menu .my-logo {display: none;}
+
 }
 
 

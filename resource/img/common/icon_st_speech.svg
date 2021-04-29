@@ -1,0 +1,9 @@
+<svg id="ic_quick_speech" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect id="area" width="36" height="36" fill="none"/>
+  <g id="icon" transform="translate(6 10)">
+    <path id="_00" data-name="00" d="M229.5,413h-22a1,1,0,0,0-1,1v13a1,1,0,0,0,1,1h3l2.5,3,2.5-3h14a1,1,0,0,0,1-1V414A1,1,0,0,0,229.5,413Z" transform="translate(-206.5 -413)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="_00-2" data-name="00" cx="1.5" cy="1.5" r="1.5" transform="translate(5 6)" fill="#fff"/>
+    <circle id="_00-3" data-name="00" cx="1.5" cy="1.5" r="1.5" transform="translate(11 6)" fill="#fff"/>
+    <circle id="_00-4" data-name="00" cx="1.5" cy="1.5" r="1.5" transform="translate(17 6)" fill="#fff"/>
+  </g>
+</svg>
