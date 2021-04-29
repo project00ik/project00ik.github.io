@@ -226,7 +226,10 @@ input.input:read-only:focus {border-color:#bbb;} */
 .product-list-wrap {width:100%; max-width:1200px;}
 .product-list-wrap .product-list {width:calc(100% + 10px); margin:0 -5px; font-size:0;}
 .product-list-wrap .product-list > li {width:25%; padding:0 5px; display:inline-block;}
-.product-list-wrap .product-list .product-1st {width:50%;}
+.product-list-wrap .best-list {overflow:hidden;}
+.product-list-wrap .best-list > li {float:left;}
+.product-list-wrap .best-list .product-1st {width:50%;}
+.product-list .product-1st .unit-type1 {height:860px;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */

@@ -1,15 +1,15 @@
 
 $(document).ready(function () {
-  var appHidden = function() { 
-		var agent = navigator.userAgent;
-		agent = agent.toLowerCase();
+  // var appHidden = function() { 
+	// 	var agent = navigator.userAgent;
+	// 	agent = agent.toLowerCase();
 		
-		if (agent.indexOf("ipod") != -1 || agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1) { // iOS일때
-      $('body').addClass('ios');
-    } else { // iOS가 아닐때
-      $('body').addClass('android');
-		}
-  }; appHidden();
+	// 	if (agent.indexOf("ipod") != -1 || agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1) { // iOS일때
+  //     $('body').addClass('ios');
+  //   } else { // iOS가 아닐때
+  //     $('body').addClass('android');
+	// 	}
+  // }; appHidden();
 
   // $(window).scroll(function () {
   //   /* 스크롤 방향 체크 [S] */
