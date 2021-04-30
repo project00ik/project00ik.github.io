@@ -11,71 +11,8 @@
   <meta property="og:title" content="ktcommerce" />
   <!-- style -->
   <link rel="stylesheet" type="text/css" href="../resource/css/import.css?v=2020123001" />
-  <style>
-    /* 수정s */
-    .cate-area .btn-cate {width:190px; height:48px; padding:6px 0 6px 20px; color:#f8f8f8; font-size:16px; display:inline-block; line-height:1.1; text-align:left;}
-    .cate-area .btn-cate::before {content:""; width:36px; height:36px; margin-right:10px; display:inline-block; background:url(../../resource/img/layout/btn_cate.svg) 50% 50% no-repeat; vertical-align:middle;}
-    .cate-area .cate-layer {width:175px; height:592px; padding:16px 0; background:rgba(0,0,0,0.2); font-size:16px; line-height:1.2;}
-    .gnb-wrap .cate-area .cate-layer-wrap {display:none; width: 100%; height: 592px; background: #fff; position: fixed; top: 176px; left: 0; z-index: 100;}
-    .gnb-wrap .cate-area .cate-layer-cont {width:1200px; margin:0 auto; position:relative;}
-    .cate-layer .d1-btn {padding:8px 24px; display:block; color:#fff;}
-    .cate-layer .d1-btn.on {background:#346dd0; position:relative;}
-    .cate-layer .d1-btn.on::after {content:""; width:18px; height:18px; display:inline-block; background:url(../../resource/img/common/arrow_gnb_d1.svg) 0 0 no-repeat; position:absolute; top:8px; right:16px;}
-    .cate-layer .d2-layer-box {display:none; width:1025px; height: 593px; background:#fff; position: absolute; top:0; left:175px; z-index:1;}
-    .cate-layer .d2-layer-box.active {display:block;}
-    .cate-layer .cate-sub-layer {display:none; width:100%; height:500px; background:#fff;}
-    .cate-layer .d1:hover + .cate-sub-layer {display:block;}
-    .main-visual {position:relative;}
-    .main-visual-cate .cate-area .cate-layer {position:absolute; top:48px; left:0; z-index:99;}
-    .main-visual-cate {width:1200px; margin-left:-600px; position:absolute; top:0; left:50%; z-index:10;}
-    .main-visual-cate .cate-area .cate-layer {top:0;}
-    /* 수정e */
-  </style>
   <!-- javascript -->
   <script type="text/javascript" src="../resource/js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.cateLyArea').each(function(){
-        $(this).find('.d1Btn').on('mouseover', function(){
-          var $d1Bt = $(this)
-          $('.d1Btn').not($d1Bt.addClass('on')).removeClass('on');
-          $('.d2Layer').removeClass('active');
-          if ($d1Bt.hasClass('on')){
-            $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
-            // $('.visualCate').css('height','592px');
-          } else {
-            $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
-            // $('.visualCate').css('height', '0');
-          }
-        });
-        $(this).find('.d2Layer').on('mouseleave', function(){
-          console.log('mouseout');
-          $('.d1Btn').removeClass('on');
-          $('.d2Layer').removeClass('active');
-        });
-        // $(this).find('.main-visual-cate').on('mouseout', function () {
-        //   console.log('mouseout');
-        //   $('.d1Btn').removeClass('on');
-        //   $('.d2Layer').removeClass('active');
-        // });
-      });
-
-      // gnb 전체카테고리 열고 닫기
-      $('.btnCate').on('click', function(){
-        $(this).toggleClass('on');
-        if($(this).hasClass('on')){
-          $('.cateLyWrap').slideDown();
-        } else {
-          $('.cateLyWrap').hide();
-        }
-      });
-    });
-    function d2lyClose() {
-      // 2depth layer 닫기
-      $('.d2Layer').removeClass('active');
-      // <button class="d2-layer-close d2LyClose" onclick="d2lyClose()">닫기</button>
-    }
-  </script>
 </head>
 
 <body class="main-body">
@@ -572,489 +509,493 @@
     </header>
     <section class="container">
       <div class="main-visual">
+        <!-- 메인 비주얼 배너 슬라이드 -->
         <div class="main-slide-area">
-          <div class="swiper-container scrollbarSlide">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" style="background-color:#587a94;">
-                <a href="#">
-                  <div class="slide-img-area">
-                    <img src="../resource/img/main/main_slide_img1.png" alt="메인 비주얼 이미지">
-                  </div>
-                  <div class="mo-slide-img-area">
-                    <img src="../resource/img/main/mo_main_slide_img1.png" alt="메인 비주얼 이미지">
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide" style="background-color:#655894;">
-                <a href="#">
-                  <div class="slide-img-area">
-                    <img src="../resource/img/main/main_slide_img1.png" alt="메인 비주얼 이미지">
-                  </div>
-                  <div class="mo-slide-img-area">
-                    <img src="../resource/img/main/mo_main_slide_img1.png" alt="메인 비주얼 이미지">
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide" style="background-color:#589494;">
-                <a href="#">
-                  <div class="slide-img-area">
-                    <img src="../resource/img/main/main_slide_img1.png" alt="메인 비주얼 이미지">
-                  </div>
-                  <div class="mo-slide-img-area">
-                    <img src="../resource/img/main/mo_main_slide_img1.png" alt="메인 비주얼 이미지">
-                  </div>
-                </a>
-              </div>
+            <div class="swiper-container scrollbarSlide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-color:#587a94;">
+                        <a href="#">
+                            <div class="slide-img-area">
+                                <img src="../resource/img/main/main_slide_img1.png" alt="메인 비주얼 이미지">
+                            </div>
+                            <div class="mo-slide-img-area">
+                                <img src="../resource/img/main/mo_main_slide_img1.png" alt="메인 비주얼 이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="background-color:#655894;">
+                        <a href="#">
+                            <div class="slide-img-area">
+                                <img src="../resource/img/main/main_slide_img1.png" alt="메인 비주얼 이미지">
+                            </div>
+                            <div class="mo-slide-img-area">
+                                <img src="../resource/img/main/mo_main_slide_img1.png" alt="메인 비주얼 이미지">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide" style="background-color:#589494;">
+                        <a href="#">
+                            <div class="slide-img-area">
+                                <img src="../resource/img/main/main_slide_img1.png" alt="메인 비주얼 이미지">
+                            </div>
+                            <div class="mo-slide-img-area">
+                                <img src="../resource/img/main/mo_main_slide_img1.png" alt="메인 비주얼 이미지">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
             </div>
-            <div class="swiper-scrollbar"></div>
-          </div>
         </div>
-        <!-- main 고정 카테고리 -->
+        <!--// 메인 비주얼 배너 슬라이드 -->
+        <!-- 메인 고정 카테고리 -->
         <div class="main-visual-cate">
           <div class="visualCate">
-            <div class="cate-area">
-              <div class="cate-layer cateLyArea">
-                <ul>
-                  <li class="d1Area"><span class="d1-btn d1Btn"><a href="#">가구</a></span>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">가구 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">건설/설비</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">건설/설비 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">공구</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">공구 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">산업용기기/부품</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">산업용기기/부품 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">생활용품/기타</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">생활용품/기타 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">서버</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">서버 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">소방/안전</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">소방/안전 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">운반/저장</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">운반/저장 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">윤활유/페인트</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">윤활유/페인트 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">전기/전자부품</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">전기/전자부품 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">전산기기/용품</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">전산기기/용품 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">전선</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">전선 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">전자제품</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">전자제품 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">조명기기</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">조명기기 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">측정관찰</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">측정관찰 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="d1Area"><a class="d1-btn d1Btn" href="#">통신장비</a>
-                    <div class="d2-layer-box d2Layer">
-                      <div class="partition-area">
-                        <ul class="depth-list d2-list">
-                          <li><a href="#">통신장비 2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d3-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area">
-                        <ul class="depth-list d4-list">
-                          <li><a href="#">2depth</a></li>
-                          <li><a href="#">2depth</a></li>
-                        </ul>
-                      </div>
-                      <div class="partition-area banner-area">
-                        <div class="banner-img-area">
-                          <img src="" alt="배너이미지">
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <div class="cate-area">
+                  <div class="cate-layer cateLyArea">
+                      <ul>
+                          <li class="d1Area"><span class="d1-btn d1Btn"><a href="#">가구</a></span>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">가구 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">건설/설비</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">건설/설비 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">공구</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">공구 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">산업용기기/부품</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">산업용기기/부품 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">생활용품/기타</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">생활용품/기타 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">서버</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">서버 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">소방/안전</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">소방/안전 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">운반/저장</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">운반/저장 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">윤활유/페인트</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">윤활유/페인트 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">전기/전자부품</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">전기/전자부품 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">전산기기/용품</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">전산기기/용품 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">전선</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">전선 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">전자제품</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">전자제품 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">조명기기</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">조명기기 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">측정관찰</a>
+                              <div class="d2-layer-box d2Layer">
+                                  <div class="partition-area">
+                                      <ul class="depth-list d2-list">
+                                          <li><a href="#">측정관찰 2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d3-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area">
+                                      <ul class="depth-list d4-list">
+                                          <li><a href="#">2depth</a></li>
+                                          <li><a href="#">2depth</a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="partition-area banner-area">
+                                      <div class="banner-img-area">
+                                          <img src="" alt="배너이미지">
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li class="d1Area"><a class="d1-btn d1Btn" href="#">통신장비</a>
+                          <div class="d2-layer-box d2Layer">
+                              <div class="partition-area">
+                                  <ul class="depth-list d2-list">
+                                      <li><a href="#">통신장비 2depth</a></li>
+                                      <li><a href="#">2depth</a></li>
+                                  </ul>
+                              </div>
+                              <div class="partition-area">
+                                  <ul class="depth-list d3-list">
+                                      <li><a href="#">2depth</a></li>
+                                      <li><a href="#">2depth</a></li>
+                                  </ul>
+                              </div>
+                              <div class="partition-area">
+                                  <ul class="depth-list d4-list">
+                                      <li><a href="#">2depth</a></li>
+                                      <li><a href="#">2depth</a></li>
+                                  </ul>
+                              </div>
+                              <div class="partition-area banner-area">
+                                  <div class="banner-img-area">
+                                      <img src="" alt="배너이미지">
+                                  </div>
+                              </div>
+                          </div>
+                          </li>
+                      </ul>
+                  </div>
               </div>
-            </div>
           </div>
         </div>
-        <!--// main 고정 카테고리 -->
+        <!--// 메인 고정 카테고리 -->
       </div>
-      
+      <div class="container">
+        컨텐츠 내용
+      </div>
     </section>
     <footer class="footer-wrap">
       <div class="footer">
@@ -1091,6 +1032,8 @@
   <script type="text/javascript" src="../resource/js/ui-front.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
+      allCategoryBtn(); // gnb 전체카테고리 열고 닫기
+      layoutCategory(); // 카테고리 레이어 이벤트
       // 메인 비주얼 영역 slide (scrollbarSlide)
       var scrollbarSwiper = new Swiper('.swiper-container.scrollbarSlide', {
         slidesPerView: 1,

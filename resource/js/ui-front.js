@@ -48,10 +48,60 @@ $(document).ready(function () {
   //   nowScrollPosition(); // 현재 스크롤 위치 기억
 
   // });
+
+  
+  // allCategoryBtn();
+  // layoutCategory();
   
 });
 
+function allCategoryBtn(){
+  // gnb 전체카테고리 열고 닫기
+  $('.btnCate').on('click', function(){
+    $(this).toggleClass('on');
+    if($(this).hasClass('on')){
+      $('.cateLyWrap').slideDown();
+    } else {
+      $('.cateLyWrap').hide();
+    }
+  });
+}
 
+function layoutCategory(){
+  // 카테고리 레이어 이벤트
+  $('.cateLyArea').each(function(){
+    $(this).find('.d1Btn').on('mouseover', function(){
+      var $d1Bt = $(this)
+      $('.d1Btn').not($d1Bt.addClass('on')).removeClass('on');
+      $('.d2Layer').removeClass('active');
+      if ($d1Bt.hasClass('on')){
+        $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
+        // $('.visualCate').css('height','592px');
+      } else {
+        $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
+        // $('.visualCate').css('height', '0');
+      }
+    });
+    $(this).find('.d2Layer').on('mouseleave', function(){
+      console.log('mouseout');
+      $('.d1Btn').removeClass('on');
+      $('.d2Layer').removeClass('active');
+    });
+    // $(this).find('.main-visual-cate').on('mouseout', function () {
+    //   console.log('mouseout');
+    //   $('.d1Btn').removeClass('on');
+    //   $('.d2Layer').removeClass('active');
+    // });
+
+    
+  });
+}
+
+function d2lyClose() {
+  // 카데고리 2depth layer 닫기
+  $('.d2Layer').removeClass('active');
+  // <button class="d2-layer-close d2LyClose" onclick="d2lyClose()">닫기</button>
+}
 
 function lyOpen(id) {
   // 팝업
