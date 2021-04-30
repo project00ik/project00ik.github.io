@@ -5,6 +5,7 @@
 .tit-area {display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 40px;}
 .tit-area .tit-type1 {margin-bottom: 0;}
 .tit-type2 {font-size: 24px; color: #000;}
+.tit-type3 {width: 100%; height: 36px; line-height: 36px; font-size: 16px; text-align: center; color: #000;}
 
 .btn-more {width: 57px; height: 18px; line-height: 18px; font-size: 14px; text-align: left; color: #000; background: url(../../resource/img/common/btn_more.svg) right center no-repeat;}
 .btn-more-black {width: auto; height: 28px; line-height: 26px; padding: 0 35px 0 15px; border: 1px solid #000; font-weight: 500; font-size: 14px; color: #000; background: url(../../resource/img/common/icon_plus_black.svg) right 16px center no-repeat;}
@@ -24,8 +25,7 @@
 
 /* 퀵메뉴 */
 .quick-menu {position: absolute; right: 0; top: 252px; z-index: 99;}
-.quick-menu > div {overflow: visible; position: relative; display: flex; justify-content: center; align-items: center; text-align: center;  width: 70px; height: 70px; margin-bottom: 1px; background: #000;}
-.quick-menu a {display: block;}
+.quick-menu a {overflow: visible; position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;  width: 70px; height: 70px; margin-bottom: 1px; background: #000;}
 .quick-menu u {display: inline-block; width: 36px; height: 36px;}
 .quick-menu span {display: block; margin: 2px 0 4px; font-size: 13px; line-height: 14px; color: #fff;}
 .quick-menu .qk-quick span {font-size: 12px; margin-top: -4px;}
@@ -38,9 +38,11 @@
 .quick-menu .qk-quick u {background: url(../../resource/img/common/icon_st_quick.svg) 0 0 no-repeat;}
 .quick-menu .qk-request u {background: url(../../resource/img/common/icon_st_request.svg) 0 0 no-repeat;}
 .quick-menu .qk-quicktop u {background: url(../../resource/img/common/icon_st_quicktop.svg) 0 0 no-repeat;}
+.quick-menu .qk-group-show {display: none;}
 .quick-menu .noti-txt {position: absolute; top: 19px; right: 57px; width: auto; height: 32px; line-height: 32px; font-size: 13px; color: #fff; padding: 0 12px; border-radius: 16px; text-align: right; background: #12b5cf; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);}
 .quick-menu .noti-txt p {white-space: nowrap; }
 .quick-menu .noti-txt:after {content: ''; display: inline-block; position: absolute; top: 50%; right: -2px; margin-top: -5px; width: 10px; height: 10px; transform: rotate(45deg); background: #12b5cf;}
+
 
 
 
@@ -55,7 +57,7 @@
 .notice-wrap .cont-notice .notice-area ul {display: flex; justify-content: space-between;}
 .notice-wrap .cont-notice .notice-area ul li {width: 240px; height: 190px;}
 .notice-wrap .cont-notice .notice-area ul li a {display: block; padding: 24px 20px; background: #fff;}
-.notice-wrap .cont-notice .notice-area ul li p {padding-top: 10px; font-size: 18px; line-height: 26px; text-align: left; color: #000;}
+.notice-wrap .cont-notice .notice-area ul li p {padding-top: 10px; font-size: 18px; font-weight: 500; line-height: 26px; text-align: left; color: #000;}
 .notice-wrap .cont-notice .notice-area ul li .noti-date {padding-top: 46px; font-size: 15px; line-height: 15px; text-align: left; color: #999;}
 .notice-wrap .cont-notice .notice-area ul li .noti-date .icon-new {margin-left: 3px;}
 .notice-wrap .cont-notice .service-area {position: absolute; top: -20px; right: 0; width: 436px; height: 384px; padding: 40px 28px; border: 1px solid #d7d7d7; background: #fff url(../../resource/img/common/img_cs.svg) right 28px top 28px no-repeat;}
@@ -111,14 +113,16 @@
 ========================================================================== */
 .mypage .tabArea {margin: 30px 0 100px;}
 .mypage-cont {position: relative; margin-top: 60px;}
-.mypage-cont .my-menu {position: absolute; top: 0; left: 0; width: 214px;}
+.mypage-cont .my-menu {position: absolute; top: 0; left: 0; width: 164px;}
 .mypage-cont .my-menu .my-logo {display: flex; justify-content: center; margin-bottom: 60px; align-items: center; width: 164px; height: 160px; border-radius: 80px 80px 0px 80px; background: #2d3a52;}
 .mypage-cont .my-menu .my-logo p {font-weight: bold; font-size: 32px; line-height: 35px; text-align: center; color: #fff;}
 .mypage-cont .my-menu .my-menu-list ul:after {content: ""; display: block; clear: both;}
-.mypage-cont .my-menu .my-menu-list a {display: inline-block;}
+.mypage-cont .my-menu .my-menu-list a {display: block;}
 .mypage-cont .my-menu .my-menu-list > ul {padding-left: 20px;}
 .mypage-cont .my-menu .my-menu-list > ul > li {padding-bottom: 36px;}
-.mypage-cont .my-menu .my-menu-list > ul > li > a {font-weight: 500; font-size: 20px; color: #000;}
+.mypage-cont .my-menu .my-menu-list > ul > li > a {font-weight: 500; font-size: 20px; color: #000; transition: all 0.3s ease;}
+.mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn {background: url(../../resource/img/common/icon_plus_black.svg) right center no-repeat;}
+.mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn.on {background: url(../../resource/img/common/icon_minus_black.svg) right center no-repeat;}
 .mypage-cont .my-menu .my-menu-list .list-deps {display: none; padding-top: 24px;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 12px;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li:last-child {padding-bottom: 0;}
@@ -164,10 +168,19 @@
 .mypage .unit-type1 {height: 421px;}
 .mypage .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
 
+
+
+
+
+
+
+
+
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
     .tit-area {padding: 0 20px;}
     .tit-type2 {font-size: 18px;}
+    .tit-type3 {font-size: 16px;}
     .mo-pd {padding: 0 20px;}
 
     .btn-board {height: 36px; box-sizing: border-box; line-height: 34px; border: 1px solid #000; border-left: 0; font-size: 14px; text-align: center; color: #000; background: #fff;}
@@ -180,6 +193,30 @@
     .mypage .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
 
     .flag-txt {height: 18px; padding: 0 8px; font-size: 10px; line-height: 16px;}
+
+
+
+
+    .quick-menu {right: 20px;}
+    .quick-menu span {display: none;}
+    .quick-menu a {width: 40px; height: 40px;}
+    .quick-menu u {width: 24px; height: 24px;}
+    .quick-menu .qk-notify u {background: url(../../resource/img/common/mo_icon_st_notify.svg) 0 0 no-repeat;}
+    .quick-menu .qk-lookmark u {background: url(../../resource/img/common/mo_icon_st_lookmark.svg) 0 0 no-repeat;}
+    .quick-menu .qk-history u {background: url(../../resource/img/common/mo_icon_st_history.svg) 0 0 no-repeat;}
+    .quick-menu .qk-favorite u {background: url(../../resource/img/common/mo_icon_st_favorite.svg) 0 0 no-repeat;}
+    .quick-menu .qk-speech u {background: url(../../resource/img/common/mo_icon_st_speech.svg) 0 0 no-repeat;}
+    .quick-menu .qk-quick u {background: url(../../resource/img/common/mo_icon_st_quick.svg) 0 0 no-repeat;}
+    .quick-menu .qk-request u {background: url(../../resource/img/common/mo_icon_st_request.svg) 0 0 no-repeat;}
+    .quick-menu .qk-quicktop u {background: url(../../resource/img/common/mo_icon_st_quicktop.svg) 0 0 no-repeat;}
+    .quick-menu .qk-group {display: none;}
+    .quick-menu .qk-group-show {display: flex;}
+    .quick-menu .qk-group-show u {background: url(../../resource/img/common/mo_icon_plus_big_w.svg) 0 0 no-repeat;  transition: all 0.3s ease;}
+    .quick-menu .qk-group-show.on u {transform: rotate(45deg);}
+    .quick-menu .noti-txt {top: -5px; right: -5px; width: 22px; height: 22px; line-height: 22px; font-size: 12px; padding: 0; text-align: center;}
+    .quick-menu .noti-txt:after {display: none;}
+    
+
 
 
 
