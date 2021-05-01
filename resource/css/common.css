@@ -78,6 +78,7 @@
 .real-time-search .real-time-layer .layer-close {display:inline-block;}
 
 .container {margin-top:174px; overflow: hidden;}
+.sub-content {min-height:550px;}
 
 /* footer */
 .footer-wrap {width:100%; overflow:hidden; position:relative; background:#fafafa;}
@@ -361,6 +362,7 @@ input.input:read-only:focus {border-color:#bbb;} */
     .gnb-wrap .gnb-area .gnb-right-area {display:none;}
 
     .container {margin-top:176px;}
+    .sub-content {min-height:auto;}
 
     .footer-wrap .footer {width:100%; padding:84px 20px 0; text-align:center;}
     .footer .footer-cont {padding:20px 0 60px; position:inherit;}
