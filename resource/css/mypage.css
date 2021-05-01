@@ -23,7 +23,7 @@
 
 
 /* 퀵메뉴 */
-.quick-menu {position: absolute; right: 0; top: 252px; z-index: 99;}
+/* .quick-menu {position: absolute; right: 0; top: 252px; z-index: 99;}
 .quick-menu > div {overflow: visible; position: relative; display: flex; justify-content: center; align-items: center; text-align: center;  width: 70px; height: 70px; margin-bottom: 1px; background: #000;}
 .quick-menu a {display: block;}
 .quick-menu u {display: inline-block; width: 36px; height: 36px;}
@@ -40,7 +40,7 @@
 .quick-menu .qk-quicktop u {background: url(../../resource/img/common/icon_st_quicktop.svg) 0 0 no-repeat;}
 .quick-menu .noti-txt {position: absolute; top: 19px; right: 57px; width: auto; height: 32px; line-height: 32px; font-size: 13px; color: #fff; padding: 0 12px; border-radius: 16px; text-align: right; background: #12b5cf; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);}
 .quick-menu .noti-txt p {white-space: nowrap; }
-.quick-menu .noti-txt:after {content: ''; display: inline-block; position: absolute; top: 50%; right: -2px; margin-top: -5px; width: 10px; height: 10px; transform: rotate(45deg); background: #12b5cf;}
+.quick-menu .noti-txt:after {content: ''; display: inline-block; position: absolute; top: 50%; right: -2px; margin-top: -5px; width: 10px; height: 10px; transform: rotate(45deg); background: #12b5cf;} */
 
 
 
