@@ -48,16 +48,27 @@
 .cate-layer .d2-layer-box .tit {margin:24px 0; padding-left:24px; font-size:28px; line-height:28px; color:#000;}
 .cate-layer .d2-layer-box .partition-wrap {width:100%; overflow:hidden;}
 .cate-layer .partition-wrap .partition-area {float:left; display:inline-block; position:relative;}
-.cate-layer .partition-area + .partition-area {height:100%;}
-.cate-layer .partition-area + .partition-area::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:0;}
-.cate-layer .partition-area .depth-list > li {width:220px; padding:0 24px 14px; font-size:15px; color:#333; position:relative;}
+/* .cate-layer .partition-area + .partition-area {height:100%;}
+.cate-layer .partition-area + .partition-area::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:0;} */
+.cate-layer .partition-area .depth-list {}
+.cate-layer .partition-area .depth-list > li {width:220px; padding:0 24px 14px; font-size:15px; color:#333;}
 .cate-layer .partition-area .depth-list > li .btn-star {position:absolute; top:0; right:24px; z-index:1;}
 .cate-layer .partition-area .depth-list > li > a {color:#333;}
 .cate-layer .partition-area .depth-list > li > a:hover {color:#346dd0;}
 .cate-layer .partition-area .depth-list > li > a.on {color:#346dd0;}
-.cate-layer .partition-area .depth-list.d4-list {width:440px; height:503px; display:-webkit-box; display:-ms-flexbox; display:flex; flex-direction:column; flex-wrap:wrap; justify-content:left; position:relative; overflow:hidden;}
-.cate-layer .partition-area .depth-list.d4-list::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:218px;}
-.cate-layer .partition-area .depth-list.d4-list > li {padding-right:55px;}
+.cate-layer .depthCont {height:100%; position:absolute; top:0; z-index:1; background:#fff;}
+.cate-layer .depthCont::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:0;}
+.cate-layer .depth3-layer {left:220px;}
+.cate-layer .depth4-layer {left:220px;}
+.cate-layer .depth3-layer,
+.cate-layer .depth4-layer {display:none;}
+.cate-layer .depth3-layer.active,
+.cate-layer .depth4-layer.active {display:block;}
+.cate-layer .depth4-layer .d4-list {width:440px; height:503px; display:-webkit-box; display:-ms-flexbox; display:flex; flex-direction:column; flex-wrap:wrap; justify-content:left; position:relative; overflow:hidden;}
+/* .cate-layer .partition-area .d2-list,
+.cate-layer .partition-area .d4-list {display:none;} */
+.cate-layer .depth4-layer .d4-list::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:218px;}
+.cate-layer .depth4-layer .d4-list > li {padding-right:55px;}
 .cate-layer .banner-area {float:right;}
 .cate-layer .banner-area .banner-img-area {width:119px; height:475px;}
 .cate-layer .banner-area .banner-img-area > img {width:100%; height:100%;}
@@ -74,8 +85,11 @@
 .gnb-right-area .real-time-search .real-time-more {width:18px; height:18px; display:inline-block; background:url(../../resource/img/common/arrow_realtime_search.svg) 0 0 no-repeat; position:absolute; top:14px; right:0; font-size:0;}
 .gnb-right-area .real-time-search .realtime-area {width:100%; height:100%; padding:14px 0 14px 32px; position:relative;}
 .gnb-right-area .real-time-search .realtime-area .num {width:20px; height:20px; text-align:center; line-height:20px; background:#12b5cf; color:#fff; position:absolute; top:14px; left:0; z-index:1;}
-.gnb-right-area .real-time-search .real-time-layer {display:none; width:190px; padding:10px 20px 5px; position:absolute; top:0; right:0; z-index:1; background:#fff; color:#000; border:1px solid #2d3a52;}
-.real-time-search .real-time-layer .layer-close {display:inline-block;}
+.gnb-right-area .real-time-search .real-time-layer {display:none; width:190px; padding:25px 20px 10px; position:absolute; top:0; right:0; z-index:1; background:#fff; color:#000; border:1px solid #d7d7d7;}
+.real-time-search .real-time-layer .layer-close {width:20px; height:20px; display:inline-block; position: absolute; top:5px; right:5px; font-size:0; background: url(../../resource/img/common/btn_close_s.svg) 0 0 no-repeat; background-size:100% auto;}
+.real-time-search .real-time-layer .all-list {}
+.real-time-search .real-time-layer .all-list .realtime-area {padding:5px 0 5px 32px;}
+.real-time-search .real-time-layer .all-list .realtime-area .num {top:5px;}
 
 .container {margin-top:174px; overflow: hidden;}
 .sub-content {min-height:550px;}

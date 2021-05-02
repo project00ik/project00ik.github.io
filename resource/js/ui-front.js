@@ -76,7 +76,8 @@ function allCategoryLyClose(){
 function layoutCategory(){
   // 카테고리 레이어 이벤트
   $('.cateLyArea').each(function(){
-    $('.header, .content').on('mouseover', function (){
+    // 1depth 레이어 이벤트
+    $('.header, .content').on('mouseover', function () {
       $('.visualCate .d1Btn').removeClass('on');
       $('.visualCate .d2Layer').removeClass('active');
     });
@@ -92,7 +93,22 @@ function layoutCategory(){
         $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
       }
     });
+    // 카테고리 depth 별 hover, click 시 노출 이벤트
+    $(this).find('.depthBtn').each(function () {
+      $(this).on('click', function () {
+        $('.btn').removeClass('on');
+        $(this).addClass('on');
+        
+        if ($(this).hasClass('on')) {
+          $(this).parent().find('> .depthCont').addClass('active');
+        } else {
+          $(this).parent().find('> .depthCont').removeClass('active');
+        }
+      });
+    });
+
   });
+  
 }
 
 function d2lyClose(){
