@@ -53,6 +53,7 @@ $(document).ready(function (){
 
 function allCategoryBtn(){
   // gnb 전체카테고리 열고 닫기
+  //pc
   $('.btnCate').on('click', function (){
     var $catFirstBt = $('.cateLyWrap').find('.d1Area').eq(0).find('> .d1Btn');
     var $catFirstCt = $('.cateLyWrap').find('.d1Area').eq(0).find('> .d2Layer');
@@ -66,11 +67,30 @@ function allCategoryBtn(){
       $('.cateLyWrap').hide();
     }
   });
+
+  // mobile
+  $('.moBtnCate').on('click', function () {
+    $(this).toggleClass('on');
+    if ($(this).hasClass('on')) {
+      $('.moCateLyWrap').addClass('open');
+    } else {
+      $('.moCateLyWrap').removeClass('open');
+    }
+  });
 }
 
 function allCategoryLyClose(){
   $('.cateLyWrap').hide();
+  $('.moCateLyWrap').removeClass('open');
   $('.btnCate').removeClass('on');
+  $('.moBtnCate').removeClass('on');
+  $('.d1Btn').removeClass('on');
+  $('.d2Layer').removeClass('active');
+  $('.d3Layer').removeClass('active');
+  $('.depthBtn').removeClass('on');
+  $('.d3-list > li .acdBtn').removeClass('on');
+  $('.d3-list > li .acdCont').hide();
+  
 }
 
 function layoutCategory(){
@@ -120,6 +140,17 @@ function layoutCategory(){
         $(this).addClass('on');
       });
     });
+    // 모바일 카테고리 이전메뉴 보기
+    $('.goback1depth').each(function () {
+      $(this).on('click', function () {
+        $(this).closest('.d2Layer').removeClass('active');
+      });
+    });
+    $('.goback2depth').each(function () {
+      $(this).on('click', function () {
+        $(this).closest('.d3Layer').removeClass('active');
+      });
+    })
   });
   
 }
@@ -127,8 +158,13 @@ function layoutCategory(){
 function d2lyClose(){
   // 카데고리 2depth layer 닫기
   $('.d2Layer').removeClass('active');
-  // <button class="d2-layer-close d2LyClose" onclick="d2lyClose()">닫기</button>
 }
+
+function moCteLyClose() {
+  // 모바일 카데고리 닫기
+  $('.d2Layer').removeClass('active');
+}
+
 
 function quickTopBtn(){
   // 스크롤 최상단으로 이동
