@@ -53,7 +53,7 @@
 .cate-layer .d2-layer-box .partition-wrap {width:100%; overflow:hidden;}
 .cate-layer .partition-wrap .partition-area {float:left; display:inline-block; position:relative;}
 .cate-layer .partition-area .depth-list {}
-.cate-layer .partition-area .depth-list > li {width:100%; position:relative; color:#333;}
+.cate-layer .partition-area .depth-list > li {width:100%; color:#333;}
 .cate-layer .partition-area .depth-list > li > a {width:220px; padding:0 24px 14px; font-size:15px; display:inline-block;}
 
 .cate-layer .partition-area .depth-list {color:#333;}
@@ -69,7 +69,7 @@
 .cate-layer .depth4-layer.active {display:block;}
 .cate-layer .depth4-layer .d4-list {width:440px; height:503px; display:-webkit-box; display:-ms-flexbox; display:flex; flex-direction:column; flex-wrap:wrap; justify-content:left; position:relative; overflow:hidden;}
 .cate-layer .depth4-layer .d4-list::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:218px;}
-.cate-layer .depth4-layer .d4-list > li {padding-right:55px;}
+.cate-layer .depth4-layer .d4-list > li {width:220px; padding-right:55px; position: relative;}
 .cate-layer .depth4-layer .d4-list > li .btn-star {position:absolute; top:0; right:24px; z-index:1;}
 .cate-layer .banner-area {float:right;}
 .cate-layer .banner-area .banner-img-area {width:119px; height:475px;}
