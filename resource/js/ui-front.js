@@ -75,13 +75,14 @@ function allCategoryLyClose(){
 
 function layoutCategory(){
   // 카테고리 레이어 이벤트
-  $('.cateLyArea').each(function(){
+  $('.cateLyArea').each(function () {
+    var $cateLyArea = $(this);
     // 1depth 레이어 이벤트
     $('.header, .content').on('mouseover', function () {
       $('.visualCate .d1Btn').removeClass('on');
       $('.visualCate .d2Layer').removeClass('active');
     });
-    $(this).find('.d1Btn').on('mouseover', function(){
+    $cateLyArea.find('.d1Btn').on('mouseover', function(){
       var $d1Bt = $(this);
       $(this).closest('.cate-layer').find('.d1Btn').not(
         $d1Bt.addClass('on')
@@ -93,20 +94,32 @@ function layoutCategory(){
         $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
       }
     });
-    // 카테고리 depth 별 hover, click 시 노출 이벤트
-    $(this).find('.depthBtn').each(function () {
+    // 카테고리 depth 별 click 시 노출 이벤트
+    // 2depth
+    $cateLyArea.find('.d2-list > li > .depthBtn').each(function () {
       $(this).on('click', function () {
-        $('.btn').removeClass('on');
+        $('.d2-list > li .depthBtn').removeClass('on');
         $(this).addClass('on');
-        
-        if ($(this).hasClass('on')) {
-          $(this).parent().find('> .depthCont').addClass('active');
-        } else {
-          $(this).parent().find('> .depthCont').removeClass('active');
-        }
+        $('.d2-list > li .depthCont').removeClass('active');
+        $(this).parent().find('> .depthCont').addClass('active');
       });
     });
-
+    // 3depth
+    $cateLyArea.find('.d3-list > li > .depthBtn').each(function () {
+      $(this).on('click', function () {
+        $('.d3-list > li .depthBtn').removeClass('on');
+        $(this).addClass('on');
+        $('.d3-list > li .depthCont').removeClass('active');
+        $(this).parent().find('> .depthCont').addClass('active');
+      });
+    });
+    // 4depth
+    $cateLyArea.find('.d4-list > li > .depthBtn').each(function () {
+      $(this).on('click', function () {
+        $('.d4-list > li .depthBtn').removeClass('on');
+        $(this).addClass('on');
+      });
+    });
   });
   
 }
