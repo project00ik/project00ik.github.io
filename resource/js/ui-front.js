@@ -172,6 +172,18 @@ function quickTopBtn(){
     return false;
 }
 
+function quickFloating(){
+  // 퀵 플로팅 모바일 펼치기 js
+  $('.qk-group-show').on('click', function(e){
+      e.preventDefault();
+      if ( $(this).is('.on') ) {
+          $(this).siblings('.qk-group').slideUp();
+      } else {
+          $(this).siblings('.qk-group').slideDown();
+      }
+  })
+}
+
 function lyOpen(id) {
   // 팝업
   var $lyAcive = $('#' + id);
@@ -468,4 +480,6 @@ function realtimeSearchSlide(){
     $('.realtimeLayer').hide();
   })
 }
+
+
 

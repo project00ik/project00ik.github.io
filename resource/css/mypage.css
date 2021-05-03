@@ -23,34 +23,6 @@
 
 
 
-/* 퀵메뉴 */
-<<<<<<< HEAD
-.quick-menu {position: absolute; right: 0; top: 252px; z-index: 99;}
-.quick-menu a {overflow: visible; position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;  width: 70px; height: 70px; margin-bottom: 1px; background: #000;}
-=======
-/* .quick-menu {position: absolute; right: 0; top: 252px; z-index: 99;}
-.quick-menu > div {overflow: visible; position: relative; display: flex; justify-content: center; align-items: center; text-align: center;  width: 70px; height: 70px; margin-bottom: 1px; background: #000;}
-.quick-menu a {display: block;}
->>>>>>> a9e089b7b5cff96e473f05346431ce406574b4ab
-.quick-menu u {display: inline-block; width: 36px; height: 36px;}
-.quick-menu span {display: block; margin: 2px 0 4px; font-size: 13px; line-height: 14px; color: #fff;}
-.quick-menu .qk-quick span {font-size: 12px; margin-top: -4px;}
-.quick-menu .qk-quicktop {background: #2d3a52;}
-.quick-menu .qk-notify u {background: url(../../resource/img/common/icon_st_notify.svg) 0 0 no-repeat;}
-.quick-menu .qk-lookmark u {background: url(../../resource/img/common/icon_st_lookmark.svg) 0 0 no-repeat;}
-.quick-menu .qk-history u {background: url(../../resource/img/common/icon_st_history.svg) 0 0 no-repeat;}
-.quick-menu .qk-favorite u {background: url(../../resource/img/common/icon_st_favorite.svg) 0 0 no-repeat;}
-.quick-menu .qk-speech u {background: url(../../resource/img/common/icon_st_speech.svg) 0 0 no-repeat;}
-.quick-menu .qk-quick u {background: url(../../resource/img/common/icon_st_quick.svg) 0 0 no-repeat;}
-.quick-menu .qk-request u {background: url(../../resource/img/common/icon_st_request.svg) 0 0 no-repeat;}
-.quick-menu .qk-quicktop u {background: url(../../resource/img/common/icon_st_quicktop.svg) 0 0 no-repeat;}
-.quick-menu .qk-group-show {display: none;}
-.quick-menu .noti-txt {position: absolute; top: 19px; right: 57px; width: auto; height: 32px; line-height: 32px; font-size: 13px; color: #fff; padding: 0 12px; border-radius: 16px; text-align: right; background: #12b5cf; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);}
-.quick-menu .noti-txt p {white-space: nowrap; }
-.quick-menu .noti-txt:after {content: ''; display: inline-block; position: absolute; top: 50%; right: -2px; margin-top: -5px; width: 10px; height: 10px; transform: rotate(45deg); background: #12b5cf;} */
-
-
-
 
 /* ==========================================================================
     메인 공지사항
@@ -203,24 +175,6 @@
 
 
 
-    .quick-menu {right: 20px;}
-    .quick-menu span {display: none;}
-    .quick-menu a {width: 40px; height: 40px;}
-    .quick-menu u {width: 24px; height: 24px;}
-    .quick-menu .qk-notify u {background: url(../../resource/img/common/mo_icon_st_notify.svg) 0 0 no-repeat;}
-    .quick-menu .qk-lookmark u {background: url(../../resource/img/common/mo_icon_st_lookmark.svg) 0 0 no-repeat;}
-    .quick-menu .qk-history u {background: url(../../resource/img/common/mo_icon_st_history.svg) 0 0 no-repeat;}
-    .quick-menu .qk-favorite u {background: url(../../resource/img/common/mo_icon_st_favorite.svg) 0 0 no-repeat;}
-    .quick-menu .qk-speech u {background: url(../../resource/img/common/mo_icon_st_speech.svg) 0 0 no-repeat;}
-    .quick-menu .qk-quick u {background: url(../../resource/img/common/mo_icon_st_quick.svg) 0 0 no-repeat;}
-    .quick-menu .qk-request u {background: url(../../resource/img/common/mo_icon_st_request.svg) 0 0 no-repeat;}
-    .quick-menu .qk-quicktop u {background: url(../../resource/img/common/mo_icon_st_quicktop.svg) 0 0 no-repeat;}
-    .quick-menu .qk-group {display: none;}
-    .quick-menu .qk-group-show {display: flex;}
-    .quick-menu .qk-group-show u {background: url(../../resource/img/common/mo_icon_plus_big_w.svg) 0 0 no-repeat;  transition: all 0.3s ease;}
-    .quick-menu .qk-group-show.on u {transform: rotate(45deg);}
-    .quick-menu .noti-txt {top: -5px; right: -5px; width: 22px; height: 22px; line-height: 22px; font-size: 12px; padding: 0; text-align: center;}
-    .quick-menu .noti-txt:after {display: none;}
     
 
 

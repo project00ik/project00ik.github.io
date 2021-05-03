@@ -1890,18 +1890,23 @@
   </div>
   <!-- 퀵메뉴 -->
   <div class="quick-menu">
-    <div class="qk-notify"><a href="#"><u></u><span>알림</span></a>
-      <div class="noti-txt">
-        <p>배송중인 상품이 있습니다.</p>
-      </div>
+    <div class="qk-group">
+        <a href="#" class="qk-notify">
+            <u></u><span>알림</span>
+            <div class="noti-txt">
+                <p class="mo-hide">배송중인 상품이 있습니다.</p>
+                <p class="pc-hide">1</p>
+            </div>
+        </a>
+        <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
+        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
+        <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+        <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
+        <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
     </div>
-    <div class="qk-lookmark"><a href="#"><u></u><span>즐겨찾기</span></a></div>
-    <div class="qk-history"><a href="#"><u></u><span>최근본상품</span></a></div>
-    <div class="qk-favorite"><a href="#"><u></u><span>관심상품</span></a></div>
-    <div class="qk-speech"><a href="#"><u></u><span>1:1문의</span></a></div>
-    <div class="qk-quick"><a href="#"><u></u><span>QUICK<br />주문</span></a></div>
-    <div class="qk-request"><a href="#"><u></u><span>신규요청</span></a></div>
-    <div class="qk-quicktop"><a href="javascript:;" onclick="quickTopBtn()"><u></u><span>TOP</span></a></div>
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
   </div>
   <!--// 퀵메뉴 -->
   <!-- javascript -->
@@ -1916,9 +1921,9 @@
       /* 레이아웃 */
       allCategoryBtn(); // gnb 전체카테고리 열고 닫기
       layoutCategory(); // 카테고리 레이어 이벤트
-      // quickMenu(); // 퀵 플로팅
       quickTopBtn(); // 스크롤 최상단으로 이동
       realtimeSearchSlide(); //header 실시간검색 swiper(plugin)
+      quickFloating(); //퀵 플로팅 모바일 펼치기 js
 
       /* 컨텐츠 공통 */
       tab() // 탭 
@@ -1927,6 +1932,9 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
+
+      
+
 
     });
   </script>
