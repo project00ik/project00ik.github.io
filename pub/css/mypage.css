@@ -22,6 +22,14 @@
 .flag-txt.black {color: #000; border: 1px solid #bbb;}
 
 
+/* 탭 */
+.tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display: flex; justify-content: space-around; border-bottom: 1px solid #d7d7d7;}
+.tab-area .tab-style3 > li {width: 100%; text-align: center;}
+.tab-area .tab-style3 .tabBtn {padding-bottom:4px; font-size:20px; line-height: 51px; position:relative;}
+.tab-area .tab-style3 .tabBtn.on {color:#346dd0; font-weight:500;}
+.tab-area .tab-style3 .tabBtn.on::after {content:""; width:100%; height:4px; background:#346dd0; display:inline-block; position:absolute; bottom:0px; left:0; z-index:1;}
+.tab-area .tab-style3 ~ .tabCont {display: block;}
+
 
 
 /* ==========================================================================
