@@ -165,23 +165,10 @@
       </div>
     </header>
     <section class="container">
-      <div class="sub-content mypage-cont">
-        <div class="my-main">
-          <div class="my-top-area">
-            <div class="top-member">
-              <p>안녕하세요</p><b>김재욱</b><span>님</span>
-            </div>
-            <div class="top-member-condition">
-              <div><span>배송중</span><b>2</b></div>
-              <div><span>작성 가능 리뷰</span><b>2</b></div>
-              <div><span>작성한 리뷰</span><b>5</b></div>
-              <div><span>작성한 문의</span><b>2</b></div>
-            </div>
-          </div>
-          <div class="tit-area">
-            <p class="tit-type2">진행현황 조회</p>
-          </div>
+      <div class="sub-content">
+        <div class="product-detail">
 
+          <div class="pro-detail-"></div>
           <div class="tab-area tabArea">
             <ul class="tab-btn-list tab-style3">
               <li class="tabBtn" data-tab="rvTab1">TAB1</li>
@@ -301,7 +288,6 @@
 
       /* 컨텐츠 공통 */
       tab(); // 탭 
-      scrollTab(); // scroll 탭
       toggleBtn(); // 토글버튼
       accordion(); // 아코디언
       /* ==========================================================================
@@ -310,7 +296,7 @@
 
 
       function scrollTab(){
-        $('.tab-style3 li').each(function(){ // scroll 탭 관련 js
+        $('.tab li').each(function(){ // scroll 탭 관련 js
           $(this).bind('click', function(){
             var winWidth = $(window).width();
             var depId = $(this).attr('data-tab');
