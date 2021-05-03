@@ -1,8 +1,0 @@
-<svg id="ic_mo_shopping" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-  <rect id="area" width="24" height="24" fill="none"/>
-  <g id="icon" transform="translate(-5 -7)">
-    <path id="_00" data-name="00" d="M13,14V10.889A3.844,3.844,0,0,1,17,7a3.844,3.844,0,0,1,4,3.889V14" transform="translate(-1 2)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-width="2"/>
-    <path id="_00-2" data-name="00" d="M16.229,32H8.3L6.667,18h18l-.818,5.765" transform="translate(0.333 -4)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="_" data-name="+" d="M-3247-3012v-2h-2a1,1,0,0,1-1-1,1,1,0,0,1,1-1h2v-2a1,1,0,0,1,1-1,1,1,0,0,1,1,1v2h2a1,1,0,0,1,1,1,1,1,0,0,1-1,1h-2v2a1,1,0,0,1-1,1A1,1,0,0,1-3247-3012Z" transform="translate(3268 3040)" fill="#bbb"/>
-  </g>
-</svg>

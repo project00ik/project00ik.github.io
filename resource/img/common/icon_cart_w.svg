@@ -1,8 +1,0 @@
-<svg id="ic_hover_shopping" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
-  <rect id="area" width="36" height="36" fill="none"/>
-  <g id="icon" transform="translate(0 -2)">
-    <path id="_00" data-name="00" d="M13,16V12s0-5,5-5,5,5,5,5v4" transform="translate(0 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
-    <path id="_00-2" data-name="00" d="M18.354,35H8.667l-2-17h22l-1,7" transform="translate(0.333 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="_" data-name="+" d="M-3246-3010v-3h-3a1,1,0,0,1-1-1,1,1,0,0,1,1-1h3v-3a1,1,0,0,1,1-1,1,1,0,0,1,1,1v3h3a1,1,0,0,1,1,1,1,1,0,0,1-1,1h-3v3a1,1,0,0,1-1,1A1,1,0,0,1-3246-3010Z" transform="translate(3270 3041)" fill="#fff"/>
-  </g>
-</svg>
