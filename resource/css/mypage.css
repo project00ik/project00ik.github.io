@@ -187,6 +187,8 @@
     .mypage-cont .my-menu .my-menu-list > ul {padding-left: 0; border-bottom: 10px solid #f5f5f5;}
     .mypage-cont .my-menu .my-menu-list > ul > li {padding-bottom: 0; border-top: 10px solid #f5f5f5;}
     .mypage-cont .my-menu .my-menu-list > ul > li > a {padding: 16px 20px; font-size: 16px;}
+    .mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn {background-position: right 20px center;}
+    .mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn.on {background-position: right 20px center;}
     .mypage-cont .my-menu .my-menu-list .list-deps {padding-top: 0;}
     .mypage-cont .my-menu .my-menu-list .list-deps > li:first-child {border-top: 1px solid #d7d7d7;}
     .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 0; border-top: 1px solid #e5e5e5;}
