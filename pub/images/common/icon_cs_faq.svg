@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.622" height="38.628" viewBox="0 0 46.622 38.628">
+  <g id="그룹_127" data-name="그룹 127" transform="translate(0.25 0.25)">
+    <g id="그룹_121" data-name="그룹 121" transform="translate(12.425)">
+      <path id="패스_555" data-name="패스 555" d="M108.1,375.405h-3.709v-1.681h2.049v-8.214l4.732-4.28-4.732-4.279v-8.214H81.751v2.352H80.09v-4.033H108.1V356.2l5.564,5.032-5.564,5.032Z" transform="translate(-80.09 -347.057)" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+    </g>
+    <g id="그룹_122" data-name="그룹 122" transform="translate(0 6.912)">
+      <path id="패스_556" data-name="패스 556" d="M84.024,385.057l-4.972-5.632h-6.7a4.722,4.722,0,0,1-4.688-4.745V358.715a4.723,4.723,0,0,1,4.688-4.746H95.695a4.723,4.723,0,0,1,4.689,4.746V374.68a4.722,4.722,0,0,1-4.689,4.745H89ZM72.353,355.65a3.051,3.051,0,0,0-3.028,3.065V374.68a3.051,3.051,0,0,0,3.028,3.065H79.8l4.228,4.789,4.229-4.789h7.442a3.05,3.05,0,0,0,3.028-3.065V358.715a3.05,3.05,0,0,0-3.028-3.065Z" transform="translate(-67.665 -353.969)" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+    </g>
+    <g id="그룹_126" data-name="그룹 126" transform="translate(9.442 14.486)">
+      <g id="그룹_123" data-name="그룹 123" transform="translate(0 4.415)">
+        <rect id="사각형_512" data-name="사각형 512" width="13.657" height="1.681" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+      </g>
+      <g id="그룹_124" data-name="그룹 124">
+        <rect id="사각형_513" data-name="사각형 513" width="13.657" height="1.681" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+      </g>
+      <g id="그룹_125" data-name="그룹 125" transform="translate(0 8.829)">
+        <rect id="사각형_514" data-name="사각형 514" width="7.895" height="1.681" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
