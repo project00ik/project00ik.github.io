@@ -1,6 +1,6 @@
 
-$(document).ready(function () {
-  // var appHidden = function() { 
+$(document).ready(function (){
+  // var appHidden = function(){ 
 	// 	var agent = navigator.userAgent;
 	// 	agent = agent.toLowerCase();
 		
@@ -11,7 +11,7 @@ $(document).ready(function () {
 	// 	}
   // }; appHidden();
 
-  // $(window).scroll(function () {
+  // $(window).scroll(function (){
   //   /* 스크롤 방향 체크 [S] */
   //   if ($(this).scrollTop() >= 43) {
   //     nowScrollTop = $(this).scrollTop();
@@ -48,10 +48,129 @@ $(document).ready(function () {
   //   nowScrollPosition(); // 현재 스크롤 위치 기억
 
   // });
-  
+
 });
 
+function allCategoryBtn(){
+  // gnb 전체카테고리 열고 닫기
+  //pc
+  $('.btnCate').on('click', function (){
+    var $catFirstBt = $('.cateLyWrap').find('.d1Area').eq(0).find('> .d1Btn');
+    var $catFirstCt = $('.cateLyWrap').find('.d1Area').eq(0).find('> .d2Layer');
+    $(this).toggleClass('on');
+    if($(this).hasClass('on')){
+      $('.cateLyWrap').slideDown();
+      // 첫번째 메뉴 on
+      $catFirstBt.addClass('on');
+      $catFirstCt.addClass('active');
+    } else {
+      $('.cateLyWrap').hide();
+    }
+  });
 
+  // mobile
+  $('.moBtnCate').on('click', function () {
+    $(this).toggleClass('on');
+    if ($(this).hasClass('on')) {
+      $('.moCateLyWrap').addClass('open');
+    } else {
+      $('.moCateLyWrap').removeClass('open');
+    }
+  });
+}
+
+function allCategoryLyClose(){
+  $('.cateLyWrap').hide();
+  $('.moCateLyWrap').removeClass('open');
+  $('.btnCate').removeClass('on');
+  $('.moBtnCate').removeClass('on');
+  $('.d1Btn').removeClass('on');
+  $('.d2Layer').removeClass('active');
+  $('.d3Layer').removeClass('active');
+  $('.depthBtn').removeClass('on');
+  $('.d3-list > li .acdBtn').removeClass('on');
+  $('.d3-list > li .acdCont').hide();
+  
+}
+
+function layoutCategory(){
+  // 카테고리 레이어 이벤트
+  $('.cateLyArea').each(function () {
+    var $cateLyArea = $(this);
+    // 1depth 레이어 이벤트
+    $('.header, .content').on('mouseover', function () {
+      $('.visualCate .d1Btn').removeClass('on');
+      $('.visualCate .d2Layer').removeClass('active');
+    });
+    $cateLyArea.find('.d1Btn').on('mouseover', function(){
+      var $d1Bt = $(this);
+      $(this).closest('.cate-layer').find('.d1Btn').not(
+        $d1Bt.addClass('on')
+      ).removeClass('on');
+      $('.d2Layer').removeClass('active');
+      if ($d1Bt.hasClass('on')){
+        $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
+      } else {
+        $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
+      }
+    });
+    // 카테고리 depth 별 click 시 노출 이벤트
+    // 2depth
+    $cateLyArea.find('.d2-list > li > .depthBtn').each(function () {
+      $(this).on('click', function () {
+        $('.d2-list > li .depthBtn').removeClass('on');
+        $(this).addClass('on');
+        $('.d2-list > li .depthCont').removeClass('active');
+        $(this).parent().find('> .depthCont').addClass('active');
+      });
+    });
+    // 3depth
+    $cateLyArea.find('.d3-list > li > .depthBtn').each(function () {
+      $(this).on('click', function () {
+        $('.d3-list > li .depthBtn').removeClass('on');
+        $(this).addClass('on');
+        $('.d3-list > li .depthCont').removeClass('active');
+        $(this).parent().find('> .depthCont').addClass('active');
+      });
+    });
+    // 4depth
+    $cateLyArea.find('.d4-list > li > .depthBtn').each(function () {
+      $(this).on('click', function () {
+        $('.d4-list > li .depthBtn').removeClass('on');
+        $(this).addClass('on');
+      });
+    });
+    // 모바일 카테고리 이전메뉴 보기
+    $('.goback1depth').each(function () {
+      $(this).on('click', function () {
+        $(this).closest('.d2Layer').removeClass('active');
+      });
+    });
+    $('.goback2depth').each(function () {
+      $(this).on('click', function () {
+        $(this).closest('.d3Layer').removeClass('active');
+      });
+    })
+  });
+  
+}
+
+function d2lyClose(){
+  // 카데고리 2depth layer 닫기
+  $('.d2Layer').removeClass('active');
+}
+
+function moCteLyClose() {
+  // 모바일 카데고리 닫기
+  $('.d2Layer').removeClass('active');
+}
+
+
+function quickTopBtn(){
+  // 스크롤 최상단으로 이동
+    $('html, body').stop().animate({ scrollTop: 0 }, 300);
+    return false;
+}
 
 function lyOpen(id) {
   // 팝업
@@ -93,7 +212,7 @@ function mdOpen(id) {
   });
 }
 
-function lyClose() {
+function lyClose(){
   // 팝업닫기
   $('body').removeClass('nonScroll');
   $('.dim').hide();
@@ -103,7 +222,7 @@ function lyClose() {
   $(window).scrollTop(scrollPoint);
 }
 
-function mdClose() {
+function mdClose(){
   // 팝업닫기
   $('body').removeClass('nonScroll');
   $('.dim').hide();
@@ -113,15 +232,15 @@ function mdClose() {
   $(window).scrollTop(scrollPoint);
 }
 
-function tab() { // 탭 관련 js
-  $('.tabArea').each(function () {
+function tab(){ // 탭 관련 js
+  $('.tabArea').each(function (){
     var $tabName = $(this);
     var $tabBtn = $tabName.find('.tabBtn');
     var $tabCont = $tabName.find('.tabCont');
     $tabCont.removeClass('active');
     $tabBtn.eq(0).addClass('on');
     $tabCont.eq(0).addClass('active');
-    $tabBtn.on('click', function () {
+    $tabBtn.on('click', function (){
       var $activeBtn = $(this);
       $activeBtn.closest('.tabArea').find('.tabBtn').removeClass('on');
       $activeBtn.addClass('on');
@@ -206,7 +325,7 @@ function toggleSlideArea(){
   });
 }
 
-function toggleAreaClose() {
+function toggleAreaClose(){
   // 닫기 버튼에  onclick="toggleAreaClose()" 넣어서 사용
   $('.tgAreaCont').hide();
   $(".tgArea").removeClass('open');
@@ -311,3 +430,42 @@ function allChecked(){
     }
   });
 }
+
+/* ==========================================================================
+    swiper(plugin)
+========================================================================== */
+function realtimeSearchSlide(){
+  //header 실시간검색 swiper(plugin) option
+  var itemNum = $('.realtimeSearchSlide .swiper-slide').length;
+  if (itemNum > 1) {
+    var realtimeSearch = new Swiper('.swiper-container.realtimeSearchSlide', {
+      direction: 'vertical',
+      spaceBetween: 10,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      }
+    });
+  } else {
+    var realtimeSearch = new Swiper('.swiper-container.realtimeSearchSlide', {
+      direction: 'vertical',
+      spaceBetween: 10,
+      centeredSlides: true,
+      loop: true
+    })
+  }
+  $('.realTimeMore').on('click', function (){
+    $(this).addClass('on');
+    realtimeSearch.autoplay.stop();
+    $('.realtimeLayer').slideDown();
+
+  });
+  $('.realtimeLyClose').on('click', function (){
+    $(this).removeClass('on');
+    realtimeSearch.autoplay.start();
+    $('.realtimeLayer').hide();
+  })
+}
+
