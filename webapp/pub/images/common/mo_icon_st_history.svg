@@ -1,0 +1,8 @@
+<svg id="ic_mo_quick_history_clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="area" width="24" height="24" fill="none"/>
+  <g id="icon" transform="translate(1 4)">
+    <path id="_00" data-name="00" d="M3,12a9,9,0,1,1,2.693,6.42" transform="translate(-1 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="_00-2" data-name="00" d="M3,18l3-4H0Z" transform="translate(-1 -8)" fill="#fff"/>
+    <path id="_00-3" data-name="00" d="M14,7v5.091L16,14" transform="translate(-3 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
