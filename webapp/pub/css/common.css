@@ -418,7 +418,7 @@ input.input:read-only:focus {border-color:#bbb;} */
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list a {padding-bottom:16px;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list > li {width:100%;}
     .mo-cate-layer-wrap .cate-layer .banner-area {width:100%; height:auto; padding:24px; float:inherit; }
-    .mo-cate-layer-wrap .ly-go-back {width:24px; height:24px; display:inline-block; background:url(../images/common/mo_arrow_cate_goback.svg) 0 0 no-repeat; position:absolute; top:24px; left:24px; z-index:1; font-size:0;}
+    .mo-cate-layer-wrap .ly-go-back {width:24px; height:24px; display:inline-block; background:url(../images/common/mo_arrow_cate_goback.svg) 0 0 no-repeat; position:absolute; top:24px; left:24px; z-index:11; font-size:0;}
     .mo-cate-layer-wrap .depth-scroll-area {height:100%; overflow-x:hidden; overflow-y:auto;}
     .mo-cate-layer-wrap .cate-layer .banner-area .banner-img-area {width:100%; height:100%;}
     .container {margin-top:176px;}
