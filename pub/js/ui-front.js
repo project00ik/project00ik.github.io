@@ -102,7 +102,7 @@ function layoutCategory(){
       $('.visualCate .d1Btn').removeClass('on');
       $('.visualCate .d2Layer').removeClass('active');
     });
-    $cateLyArea.find('.d1Btn').on('mouseover', function(){
+    $cateLyArea.find('.gnbPC .d1Btn').on('mouseover', function(){
       var $d1Bt = $(this);
       $(this).closest('.cate-layer').find('.d1Btn').not(
         $d1Bt.addClass('on')
