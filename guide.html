@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>kt commerce 퍼블가이드</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- style -->
+	<link rel="stylesheet" href="pub/css/import.css?v=202000527" media="all">
+	<!-- javascript -->
+	<script type="text/javascript" src="pub/js/jquery-3.4.1.min.js" charset="UTF-8" ></script>
+	<script type="text/javascript" src="pub/js/swiper.min.js"></script>
+	<script type="text/javascript" src="pub/js/ui-front.js" charset="UTF-8" ></script>
+	<style>
+		body {background:#F3F3F3; font-size: 14px;}
+		.guide .container {padding:10px 10px 60px;}
+		.guide h1 {padding:10px; font-size:20px; text-align:center; background:#999; color:#fff; border-radius: 5px;}
+		.guide h1 > span {width:180px; display:inline-block; vertical-align:bottom;}
+		.guide h1 > span > img {width:100%; margin-right:10px;}
+		.guide-tit {margin-top:30px; padding:10px 20px; border:1px solid #ccc; border-bottom:0; background:rgba(0,0,0,0.1); color:#000; font-size:14px; font-weight:700; border-radius:6px 6px 0 0;}
+		.guide .guide-sub-tit {margin:20px 0 10px; padding:10px 20px 0; font-size:16px; font-weight:700; color:#486b95; background:#ededed;}
+		.guide .guide-sub-tit::before {content:'*'; margin:0 5px 0 0; vertical-align:middle;}
+		.guide .guide-sub-tit2 {margin:20px 0 10px; padding:5px 5px 5px; font-size:14px; font-weight:700; color:#486b95; background:#ededed;}
+		.guide .guide-sub-tit2::before {content:'-'; margin:0 5px 0 0; vertical-align:top;}
+		.guide-box {border:1px solid #ccc; box-sizing:border-box; overflow:hidden; background:#fff;}
+		.guide-box + .guide-box {border-top:0;}
+		.guide-cont {padding:20px;}
+		.guide-cont .sm-list {margin:0 -20px;}
+		.guide-cont + .guide-cont {padding-top:0;}
+		.guide-wrap {width:100%; display:table; overflow:hidden;}
+		.guide-area {width:50%; padding:0 5px; display:table-cell; vertical-align:top; box-sizing:border-box;}
+		.guide-area:first-child {padding-left:0;}
+		.guide-area:last-child {padding-right:0;}
+		.guide nav {margin-top:20px; overflow:hidden;}
+		.guide nav ul {float: left; padding: 0; margin: 0; margin-bottom: 20px; border: 1px solid #666;}
+		.guide nav ul:after {content: ''; clear: both; display: block;}
+		.guide nav ul li {float: left; list-style: none; border-left: 1px solid #666; width: 100px; line-height: 30px; text-align: center; font-size:0;}
+		.guide nav ul li:first-child {border: 0 none;}
+		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
+		.guide nav ul li.active a {background:#000; color:#fff;}
+		.guide .code {}
+		.guide .code textarea {width:0; height:0; padding:0; background:#486b95; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
+		.guide .code.open {}
+		.guide .code.open textarea {width:100%; height:200px; padding:10px;}
+		.guide .btn-code {width:150px; padding:10px; text-align: center; margin-top:35px; background:#ededed; border:1px solid #ccc; color:#486b95; font-weight:700; border-radius:3px; display:inline-block; font-size:14px;}
+		.guide .btn-code:after {content:'보기';}
+		.guide .btn-code.on {border-color:#486b95; background:#486b95; color:#fff; border-radius:3px 3px 0 0;}
+		.guide .btn-code.on:after {content:'닫기';}
+
+		.guide .js-code {}
+		.guide .js-code textarea {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
+		.guide .js-code.open {}
+		.guide .js-code.open textarea {width:100%; height:200px; padding:10px;}
+		.guide .btn-js-code {width:150px; padding:10px; margin-top:10px; background:#ededed; border:1px solid #ccc; color:#477163; font-weight:700; font-size:14px; border-radius:3px; text-align: center; display:inline-block}
+		.guide .btn-js-code:after {content:'보기';}
+		.guide .btn-js-code.on {border-color:#477163; background:#477163; color:#fff; border-radius:3px 3px 0 0;}
+		.guide .btn-js-code.on:after {content:'닫기';}
+		.guide-gnb {width:100%; padding:5px 0; overflow:hidden; position:sticky; top:0; left:0; z-index:99999; background:#F3F3F3;}
+		.guide-gnb > a {margin:5px 2px; padding:5px 10px; display:inline-block; border:1px solid #000; background:#fff; color:#000;}
+		.guide-gnb > a:focus,
+		.guide-gnb > a.on {background:#000; color:#fff;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$('.btn-code').on('click', function(){
+				$('.btn-code').not($(this).toggleClass('on')).removeClass('on');
+				$('.code').not($(this).closest('.guide-cont').find('.code').toggleClass('open')).removeClass('open');
+				$('.btn-js-code').removeClass('on');
+				$('.js-code').removeClass('open');
+			});
+			$('.btn-js-code').on('click', function(){
+				$('.btn-js-code').not($(this).toggleClass('on')).removeClass('on');
+				$('.js-code').not($(this).closest('.guide-cont').find('.js-code').toggleClass('open')).removeClass('open');
+				$('.btn-code').removeClass('on');
+				$('.code').removeClass('open');
+			});
+		});
+	</script>
+</head>
+<body class="responsive-bd">
+	<!-- wrap -->
+	<div class="guide">
+		<!-- container -->
+		<div class="container">
+			<section class="contents" id="contents">
+				<h1>kt commerce 퍼블가이드</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">작업목록</a></li>
+						<li class="active"><a href="guide.html">가이드</a></li>
+					</ul>
+				</nav>
+				<div class="guide-gnb tabArea">
+					<a class="tabBtn" href="#gText">텍스트</a>
+					<a class="tabBtn" href="#gtitle">타이틀</a>
+					<a class="tabBtn" href="#gBtn">공통버튼</a>
+					<a class="tabBtn" href="#gHeader">헤더</a>
+					<a class="tabBtn" href="#gStar">별점</a>
+					<a class="tabBtn" href="#gForm">폼요소</a>
+					<a class="tabBtn" href="#gAppbar">앱바</a>
+					<a class="tabBtn" href="#gTable">테이블</a>
+					<a class="tabBtn" href="#gList">리스트</a>
+					<a class="tabBtn" href="#gPost">우편번호</a>
+					<a class="tabBtn" href="#gToogle">토글형</a>
+					<a class="tabBtn" href="#gTab">탭</a>
+					<a class="tabBtn" href="#gUnit">유닛</a>
+				</div>
+				<div class="cont-body">
+					<h2 class="guide-tit" id="gText">Font</h2>
+					<div class="guide-box">
+						<div class="guide-cont">
+							<!-- font -->
+							
+							<!--// font -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit">Color</h2>
+					<div class="guide-box">
+						<div class="guide-cont">
+							<!-- title -->
+							<p class="">기본컬러</p>
+							<p class="point1">point1: 포인트 컬러1</p>
+							<p class="point2">point2: 포인트 컬러2</p>
+							<p class="txt-under1">txt-under1: 하단 설명 텍스트 #666 / margin-top:7 / font-size:12 <br>(예시 - 사용가능 포인트 : 15,000원)</p>
+							<p class="txt-under2">txt-under2: 하단 설명 텍스트2 #000 / margin-top:10 / font-size:13 <br>(예시 - (필수) 주문하는 상품 및 결제, 주문정보를 확인하였으며, 이에 동의합니다.)</p>
+							<p class="txt-style1">txt-style1: #666 / font-size:14,16 <br>(예시 - <b>15,000</b>원 보유)</p>
+							<p class="txt-style2">txt-style2: #666 / font-size:14 <br>(예시 - 삼성비자카드 / 일시불)</p>
+							<!--// title -->
+						</div>
+					</div>
+					
+					<h2 class="guide-tit" id="gtitle">Title</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">페이지 타이틀</h3>
+						<div class="guide-cont">
+							<!-- title -->
+							<p class="tit-type1">MD 추천상품</p>
+							<p class="sm-sub-tit">포토리뷰<span class="num">(7)</span></p> 
+							<p class="sm-sub-tit">함께 많이 본 상품</p>
+							<!--// title -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+					</div>
+					
+					<h2 class="guide-tit" id="gBtn">공통버튼</h2>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">컨텐츠 a태그 버튼</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area">
+										<a href="#" class="btn btn-style1">btn-style1</a>
+										<a href="#" class="btn btn-style2">btn-style2</a>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										<a href="#" class="btn btn-style6">btn-style6</a>
+										<a href="#" class="btn btn-style7">btn-style7</a>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										<a href="#" class="btn btn-disabled">btn-disabled</a>
+									</div>
+									<!--// button -->
+									<br>
+									<p class="guide-sub-tit2">넓이 고정 버튼</p>
+									<div>
+										<!-- button -->
+										btn-style3(padding:0 30px):	<a href="#" class="btn btn-style3">btn-style3</a>
+										<br><br>
+										btn-style4(padding:0 10px): <a href="#" class="btn btn-style4">btn-style4</a>
+										<br><br>
+										btn-style5(width:73px): <a href="#" class="btn btn-style5">btn-style5</a>
+										<br><br>
+										btn-style8(width:73.333px): <a href="#" class="btn btn-style8">btn-style8</a>
+										<!--// button -->
+									</div>
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">컨텐츠 button태그 버튼</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area">
+										<button class="btn btn-style1">btn-style1</button>
+										<button class="btn btn-style2">btn-style2</button>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										<button class="btn btn-style6">btn-style6</button>
+										<button class="btn btn-style7">btn-style7</button>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										
+										<button class="btn btn-disabled" disabled>btn-disabled</button>
+									</div>
+									<!--// button -->
+									<br>
+									<p class="guide-sub-tit2">넓이 고정 버튼</p>
+									<div>
+										<!-- button -->
+										btn-style3(padding:0 30px): <button class="btn btn-style3">btn-style3</button>
+										<br><br>
+										btn-style4(padding:0 10px): <button class="btn btn-style4">btn-style4</button>
+										<br><br>
+										btn-style5(width:73px): <button class="btn btn-style5">btn-style5</button>
+										<br><br>
+										btn-style8(width:73.333px): <button class="btn btn-style8">btn-style8</button>
+										<!--// button -->
+									</div>
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">컨텐츠 span태그 버튼</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area">
+										<span class="btn btn-style1">btn-style1</span>
+										<span class="btn btn-style2">btn-style2</span>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										<span class="btn btn-style6">btn-style6</span>
+										<span class="btn btn-style7">btn-style7</span>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										<span class="btn btn-style9">btn-style9</span>
+										<span class="btn btn-style10">btn-style10</span>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-area">
+										<span class="btn btn-disabled">btn-disabled</span>
+									</div>
+									<!--// button -->
+									<br>
+									<p class="guide-sub-tit2">넓이 고정 버튼</p>
+									<div>
+										<!-- button -->
+										btn-style3(padding:0 30px): <span class="btn btn-style3">btn-style3</span>
+										<br><br>
+										btn-style4(padding:0 10px): <span class="btn btn-style4">btn-style4</span>
+										<br><br>
+										btn-style5(width:73px): <span class="btn btn-style5">btn-style5</span>
+										<br><br>
+										btn-style8(width:73.333px): <span class="btn btn-style8">btn-style8</span>
+										<!--// button -->
+									</div>
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">하단 고정 버튼 유형 1 (sm-action-bar)</p>
+								<div class="guide-cont">
+									<!-- button - 상품상세 액션바 -->
+									<div class="sm-action-bar">
+										<ul class="detail-btn">
+											<li class="share-area">
+												<button class="btn btn-like tgBtn">좋아요</button>
+												<button class="btn btn-share">공유하기</button>
+											</li>
+											<li class="buy-area">
+												<a href="javascript:;" class="btn btn-buy detailLyBtn">바로구매</a>
+											</li>
+										</ul>
+									</div>
+									<!--// button - 상품상세 액션바 -->
+									<!-- button - 상품상세 액션바 -->
+									<div class="sm-action-bar" style="position:relative">
+										<ul class="detail-btn">
+											<li class="share-area">
+												<button class="btn btn-like tgBtn">좋아요</button>
+												<button class="btn btn-share">공유하기</button>
+											</li>
+											<li class="buy-area">
+												<a href="javascript:;" class="btn btn-buy">바로구매</a>
+											</li>
+										</ul>
+									</div>
+									<!--// button - 상품상세 액션바 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">하단 고정 버튼 유형 2 (sm-action-bar)</p>
+								<div class="guide-cont">
+									<!-- button - 상품상세 액션바 -->
+									<div class="sm-action-bar" style="position:relative">
+										<ul class="detail-btn">
+											<li class="buy-area">
+												<a href="javascript:;" class="btn btn-buy">1건 주문하기</a>
+											</li>
+										</ul>
+									</div>
+									<!--// button - 상품상세 액션바 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">하단 버튼 유형 3</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area">
+										<a href="javascript:;" class="btn btn-style2">쇼핑백</a>
+										<a href="javascript:;" class="btn btn-style1">바로구매</a>
+									</div>
+									<!--// button -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">하단 버튼 유형 4</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area">
+										<a href="javascript:;" class="btn btn-style7">쇼핑 계속하기</a>
+										<a href="javascript:;" class="btn btn-style6">주문상품 상세보기</a>
+									</div>
+									<!--// button -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">하단 버튼 유형 5</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area">
+										<a href="javascript:;" class="btn btn-style10">취소/교환/반품조회</a>
+										<a href="javascript:;" class="btn btn-style9">주문배송조회</a>
+									</div>
+									<!--// button -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">더보기 버튼</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<a href="javascript:;" class="btn btn-more-box moreBtn">총 <b>2건</b> 전체보기</a>
+									<!--// button -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+								 	<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">라인형 버튼</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<a href="javascript:;" class="btn btn-line-box">목록으로</a>
+									<!--// button -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">아이콘 버튼</p>
+								<div class="guide-cont">
+									<div>
+										<!-- button -->
+										<a href="javascript:;" class="btn-menu">메뉴보기</a>
+										<a href="../html/shoppingBag.html" class="btn-cart">장바구니
+											<span class="num">1</span>
+										</a>
+										<button type="button" class="btn-like-small tgBtn">찜하기</button>
+										<!--// button -->
+									</div>
+									<div style="background:#000;">
+										<button class="btn btn-like tgBtn">좋아요</button>
+										<button class="btn btn-share">공유하기</button>
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+									<!-- js 보기 -->
+									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+									<div class="js-code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// js 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<h2 class="guide-tit" id="gHeader">헤더</h2>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">헤더 로고형</p>
+								<div class="guide-cont">
+									<!-- 헤더 로고형 -->
+									<header class="sm-header" style="position:static;">
+										<h1 class="logo"><a href="../html/simonMain.html">PREMIUM OUTLETS - SHINSEGAE SIMON</a></h1>
+									</header>
+									<!--// 헤더 로고형 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">헤더 버튼형 (역스크롤 시 노출)</p>
+								<div class="guide-cont">
+									<!-- 헤더 버튼형 -->
+									<header class="sm-header sm-detail-header" style="position: relative; z-index:inherit;">
+										<a href="javascript:;" onclick="history.back();" class="btn-history-back">뒤로가기</a>
+										<div class="right-area">
+											<a href="javascript:;" class="btn-menu">메뉴보기</a>
+											<a href="../html/shoppingBag.html" class="btn-cart">장바구니
+												<span class="num">1</span>
+											</a>
+										</div>
+									</header>
+									<!--// 헤더 버튼형 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">헤더 제목형 (역스크롤 시 노출)</p>
+								<div class="guide-cont">
+									<!-- 헤더 제목형 -->
+									<header class="sm-header sm-title-header" style="position: relative; z-index:inherit;">
+										<a href="javascript:;" onclick="history.back();" class="btn-history-back">뒤로가기</a>
+										<span class="tit-page">쇼핑백</span>
+									</header>
+									<!--// 헤더 제목형 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gStar">별점</h2>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">별점 (class: star0~5)</p>
+								<div class="guide-cont">
+									<!-- 별점 -->
+									<p class="rating">
+										<a href="#">
+											<span class="star star3">별점</span><!-- 별점 class : star0~5 -->
+										</a>
+									</p>
+									<!--// 별점 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">별점 M (class: star0~5)</p>
+								<div class="guide-cont">
+									<!-- 별점 M -->
+									<p class="rating">
+										<span class="star-m star3">별점</span><!-- 별점 class : star0~5 -->
+									</p>
+									<!--// 별점 M -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">별점 선택</p>
+								<div class="guide-cont">
+									<!-- 만족도 체크 영역 -->
+									<div class="sm-satisfaction-area">
+										<p class="tit">이 상품 만족하셨나요?</p>
+										<!-- 별점 선택 -->
+										<div class="rating-btn-area">
+											<div>
+												<button class="btn-star">별점1</button>
+												<button class="btn-star">별점2</button>
+												<button class="btn-star">별점3</button>
+												<button class="btn-star">별점4</button>
+												<button class="btn-star">별점5</button>
+											</div>
+											<i class="icon-star"></i>
+										</div>
+										<!--// 별점 선택 -->
+									</div>
+									<!--// 만족도 체크 영역 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+									<!-- js 보기 -->
+									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+									<div class="js-code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// js 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gForm">폼요소</h2>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text)</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-area">
+										<input type="text" class="input" name="" value="" placeholder="기본 타입">
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text):disabled</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-area">
+										<input type="text" class="input" name="" value="" placeholder="disabled" disabled>
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text):readonly</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-area">
+										<input type="text" class="input" name="" value="" placeholder="readonly" readonly>
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+
+						<div class="cont-layout">
+
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(email)</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-layout form-email">
+										<input type="text" name="" class="input" value="" maxlength="100">
+										<span class="bar">@</span>
+										<input type="text" name="" class="input" value="" maxlength="100">
+										<span class="select select-style1">
+											<select>
+												<option value="">직접입력</option>
+												<option value="aaa.com">naver.com</option>
+												<option value="bbb.net">bbb.net</option>
+											</select>
+										</span>
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text) : 전화번호 / 사업자번호</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-layout form-phoen">
+										<input type="text" name="" class="input" value="010" maxlength="3">
+										<span class="bar">-</span>
+										<input type="text" name="" class="input" value="1234" maxlength="4">
+										<span class="bar">-</span>
+										<input type="text" name="" class="input" value="5678" maxlength="4">
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(file) :</p>
+								<div class="guide-cont">
+									<!-- 이미지 업로드 영역 -->
+									<div class="sm-upload-area">
+										<!-- 썸네일 -->
+										<div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../img/common/ex_product1.png" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+										<div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../img/common/ex_product2.png" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+										<!--// 썸네일 -->
+										<!-- 이미지 추가버튼 -->
+										<div class="img-upload-btn">
+											<label>
+												<input type="file" id="input_imgs" multiple/>
+											</label>
+										</div>
+										<!--// 이미지 추가버튼 -->
+									</div>
+									<!--// 이미지 업로드 영역 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+									<!-- js 보기 -->
+									<!-- <a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+									<div class="js-code">
+										<textarea class="textarea">
+										</textarea>
+									</div> -->
+									<!--// script 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(address)</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-layout">
+										<input type="text" name="" class="input" value="" readonly="readonly" maxlength="8" />
+										<span class="btn btn-style3 btn-address">우편번호</span>
+									</div>
+									<p class="form-layout"><input type="text" id="addr1" name="addr1" class="input" value="" readonly="readonly" maxlength="1000"  /></p>
+									<p class="form-layout"><input type="text" id="addr2" name="addr2" class="input" value="" maxlength="1000" /></p>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">Textarea</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<textarea class="form-textarea" name="" rows="10" cols="8" placeholder="내용을 입력하세요.&#10;내용을 입력하세요."></textarea>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Textarea:disabled</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<textarea class="form-textarea" name="" rows="10" cols="8" disabled="disabled"></textarea>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Textarea:readonly</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<textarea class="form-textarea" name="" rows="10" cols="8" readonly="readonly">내용 내용</textarea>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">Select</p>
+								<div class="guide-cont">
+									<!-- select -->
+									<span class="select select-style1">
+										<select name="" id="">
+											<option value="">크림</option>
+											<option value="">베이지</option>
+											<option value="">그레이</option>
+										</select>
+									</span>
+									<!--// select -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Select:disabled</p>
+								<div class="guide-cont">
+									<!-- select -->
+									<span class="select select-style1">
+										<select name="" id="" disabled>
+											<option value="">크림</option>
+											<option value="">베이지</option>
+											<option value="">그레이</option>
+										</select>
+									</span>
+									<!--// select -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">Checkbox</p>
+								<div class="guide-cont">
+									<div>
+										<!-- form : 기본 -->
+										<label class="check-style1"><input type="checkbox" name=""><i></i><span>체크박스 기본</span></label>
+										<!--// form : 기본 -->
+										<!-- form : id 연결 시 -->
+										<label for="chk" class="check-style1"><input type="checkbox" name="" id="chk"><i></i><span>id 연결 시</span></label>
+										<!--// form : id 연결 시 -->
+										<!-- form : checked -->
+										<label class="check-style1"><input type="checkbox" name="" checked="checked"><i></i><span>체크박스 기본</span></label>
+										<!--// form : checked -->
+										<!-- form : disabled -->
+										<label class="check-style1"><input type="checkbox" name="" disabled="disabled"><i></i><span>체크박스 기본</span></label>
+										<!--// form : disabled -->
+										<!-- form : 글자가 없는경우 -->
+										<label class="check-style1"><input type="checkbox" name=""><i></i></label>
+										<!--// form : 글자가 없는경우 -->
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Radio</p>
+								<div class="guide-cont">
+									<div>
+										<!-- form : 기본 -->
+										<label class="radio-style1"><input type="radio" name="rd"><i></i><span>라디오 기본</span></label>
+										<!--// form : 기본 -->
+										<!-- form : id 연결 시 -->
+										<label for="rd" class="radio-style1"><input type="radio" name="rd" id="rd"><i></i><span>id 연결 시</span></label>
+										<!--// form : id 연결 시 -->
+										<!-- form : checked -->
+										<label class="radio-style1"><input type="radio" name="rd" checked="checked"><i></i><span>라디오 기본</span></label>
+										<!--// form : checked -->
+										<!-- form : disabled -->
+										<label class="radio-style1"><input type="radio" name="rd" disabled="disabled"><i></i><span>라디오 기본</span></label>
+										<!--// form : disabled -->
+										<!-- form : 글자가 없는경우 -->
+										<label class="radio-style1"><input type="radio" name="rd"><i></i></label>
+										<!--// form : 글자가 없는경우 -->
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<textarea class="textarea">
+										</textarea>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gAppbar">앱바</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">앱바</h3>
+						<div class="guide-cont">
+							<!-- normal-app-bar -->
+							<!-- 사용시 style="position: static;" 제거 후 사용 -->
+							<div class="normal-app-bar-wrap" style="position: static;">
+								<div class="app-bar-btn cart">
+									<a href="../html/shoppingBag.html" class="btn-cart">
+										장바구니 바로가기
+										<span class="cart-num">1</span>
+									</a>
+								</div>
+								<div class="app-bar-btn order">
+									<a href="#!">
+										주문배송 바로가기
+									</a>
+								</div>
+								<div class="app-bar-btn mypage">
+									<a href="#!">
+										마이페이지 바로가기
+									</a>
+								</div>
+								<div class="app-bar-btn cate">
+									<a href="#!" class="btn-menu">
+										검색 바로가기
+									</a>
+								</div>
+							</div>
+							<!-- // normal-app-bar -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gTable">테이블</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">테이블</h3>
+						<div class="guide-cont">
+							<!-- table-area -->
+							<div class="table-area">
+								<p class="table-title">개인정보 이용 목적 및 수집항목</p>
+								<table>
+									<caption>개인정보 이용 목적 및 수집항목</caption>
+									<colgroup>
+										<col width="50%">
+										<col width="50%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th>이용 목적</th>
+											<th>수집 항목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>주문자 정보 확인, 계약사항 및 주문내역 안내</td>
+											<td>이름, 휴대폰번호</td>
+										</tr>
+										<tr>
+											<td>상품 배송 및 배송정보 관리</td>
+											<td>수령인 정보<br>(이름, 휴대폰 번호, 주소)</td>
+										</tr>
+										<tr>
+											<td>주문상품 결제</td>
+											<td>신용카드정보<br>(카드사명, 카드번호)</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // table-area -->
+							<br>
+							<!-- table -->
+							<!-- font-size: 12px; -->
+							<div class="info-table-area">
+								<!-- thead 없이 세로형 테이블 class="vertical-table"-->
+								<table class="vertical-table">
+									<caption>상품정보</caption>
+									<colgroup>
+										<col width="35%">
+										<col width="">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>제품소재</th>
+											<td>버진 울 100%</td>
+										</tr>
+										<tr>
+											<th>색상</th>
+											<td>그레이</td>
+										</tr>
+										<tr>
+											<th>치수</th>
+											<td>44, 48, 50, 52</td>
+										</tr>
+										<tr>
+											<th>제조사/수입자</th>
+											<td>CORNELIANI S.r.l/CORNELIANI S.r.l</td>
+										</tr>
+										<tr>
+											<th>제조국</th>
+											<td>슬로바키아</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- // table -->
+
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gList">리스트</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">리스트 (양쪽정렬형)</h3>
+						<div class="guide-cont">
+							<ul class="sm-justify-list">
+								<li>
+									<span class="tit">신용카드</span>
+									<span class="price"><b>1,990,000</b>원<br>
+										<em class="txt-style2">삼성비자카드 / 일시불</em>
+									</span>
+								</li>
+							</ul>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">리스트 (왼쪽정렬라인형)</h3>
+						<div class="guide-cont">
+							<ul class="sm-left-list">
+								<li>
+									<span class="tit">받으시는 분</span>
+									<span class="txt">
+										신세계
+									</span>
+								</li>
+								<li>
+									<span class="tit">휴대폰 번호</span>
+									<span class="txt">
+										010-1234-5678
+									</span>
+								</li>
+								<li>
+									<span class="tit">주소</span>
+									<span class="txt">
+										[06062] 서울특별시 강남구<br>도산대로 420 (청담동)
+									</span>
+								</li>
+								<li>
+									<span class="tit">배송시 요청사항</span>
+									<span class="txt">
+										부재시 문앞에 놓아주세요.
+									</span>
+								</li>
+							</ul>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">리스트 (결제내역)</h3>
+						<div class="guide-cont">
+							<div class="sm-total-box">
+								<ul>
+									<li>
+										<span class="tit">상품금액</span>
+										<span class="price"><b>4,000,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">할인금액</span>
+										<span class="price"><b>(-) 2,000,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">배송비</span>
+										<span class="price"><b>0</b>원</span>
+									</li>
+									<li>
+										<span class="tit">포인트 사용</span>
+										<span class="price"><b>(-) 10,000</b>원</span>
+									</li>
+								</ul>
+								<p class="total">
+									<span class="tit">최종 결제금액</span>
+									<span class="price"><b>1,990,000</b>원</span>
+								</p>
+							</div>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">리스트 (결제내역2)</h3>
+						<div class="guide-cont">
+							<div class="sm-total-list">
+								<ul>
+									<li>
+										<span class="tit">상품금액</span>
+										<span class="price"><b>3,000,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">할인금액</span>
+										<span class="price"><b>(-) 1,300,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">배송비</span>
+										<span class="price"><b>0</b>원</span>
+									</li>
+									<li>
+										<span class="tit">포인트 사용</span>
+										<span class="price"><b>(-) 15,000</b>원</span>
+									</li>
+								</ul>
+							</div>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">리스트 (결제내역3)</h3>
+						<div class="guide-cont">
+							<div class="sm-total-list">
+								<ul class="sub-list">
+									<li>
+										<span class="tit">취소상품금액</span>
+										<span class="price"><b>2,000,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">할인금액</span>
+										<span class="price"><b>(-) 1,000,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">환불배송비</span>
+										<span class="price"><b>0</b>원</span>
+									</li>
+									<li>
+										<span class="tit">추가배송비</span>
+										<span class="price"><b>(-) 0</b>원</span>
+									</li>
+								</ul>
+								<p class="sub-total">
+									<span class="tit">최종 환불금액</span>
+									<span class="price"><b>1,000,000</b>원</span>
+								</p>
+								<ul class="sub-list">
+									<li>
+										<span class="tit">신용카드</span>
+										<span class="price"><b>(-) 1,000,000</b>원</span>
+									</li>
+									<li>
+										<span class="tit">신세계포인트</span>
+										<span class="price"><b>0</b>원</span>
+									</li>
+									<li>
+										<span class="card">삼성비자카드<br>(2020.12.01 11:22:30)</span>
+									</li>
+								</ul>
+								<p class="total">
+									<span class="tit">최종 결제금액</span>
+									<span class="price"><b>685,000</b>원</span>
+								</p>
+							</div>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gPost">우편번호</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">우편번호</h3>
+						<div class="guide-cont">
+							<!-- 우편번호 -->
+							<div class="form-area">
+								<input type="text" class="input" name="" value="" placeholder="수령인명">
+								<input type="number" class="input" name="" value="" placeholder="휴대폰번호 ('-')없이 입력">
+							</div>
+							<!-- 주소 영역 -->
+							<div class="address-wrap tgArea">
+								<div class="form-layout">
+									<input type="text" name="" class="input" value="" readonly="readonly" maxlength="8" placeholder="배송주소">
+									<span class="btn btn-style3 btn-address tgAreaBtn">우편번호</span>
+								</div>
+								<!-- 우편번호 팝업 -->
+								<div class="post-address-area hide tgAreaCont">
+									<div class="form-area">
+										<input type="text" class="input" name="" value="" placeholder="도로명 또는 지번 주소 입력">
+										<button type="button" class="btn-search">검색</button>
+										<button type="button" class="btn-close addressClose" onclick="toggleAreaClose()">닫기</button>
+									</div>
+									<!-- input 입력 전 -->
+									<div class="before-data">
+										<p>아래와 같은 조합으로 검색을 하시면 더욱 정확한<br>결과가 검색됩니다.</p>
+										<ul>
+											<li>
+												<dl>
+													<dt class="ex-tit">도로명 + 건물번호</dt>
+													<dd class="ex-con">예) 판교역로 235, 제주 첨단로 242</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt class="ex-tit">지역명(동/리) + 번지</dt>
+													<dd class="ex-con">예) 삼평동 681, 제주 영평동 2181</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt class="ex-tit">지역명(동/리) + 건물영(아파트명)</dt>
+													<dd class="ex-con">예) 분당 주공, 연수동 주공3차</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt class="ex-tit">사서함명 + 번호</dt>
+													<dd class="ex-con">예) 분당우체국사서함 1-100</dd>
+												</dl>
+											</li>
+										</ul>
+									</div>
+									<!-- // input 입력 전 -->
+									<!-- input 입력 후 -->
+									<div class="after-data">
+										<ul class="address-list">
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63 서울특별시 중구 소공로 63 서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+											<li class="address">
+												<a href="#!">
+													<dl>
+														<dt class="post-num">04530</dt>
+														<dd class="post-text">
+															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
+															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
+														</dd>
+													</dl>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- // input 입력 후 -->
+								</div>
+								<!-- // 우편번호 팝업 -->
+							</div>
+							<p class="form-layout"><input type="text" id="addr1" name="addr1" class="input" value="" readonly="readonly" maxlength="1000"></p>
+							<p class="form-layout"><input type="text" id="addr1" name="addr1" class="input" value="" maxlength="1000" placeholder="상세주소 입력"></p>
+							<label class="check-style1 location-check"><input type="checkbox" name=""><i></i><span>기본배송지로 등록</span></label>
+							<!-- // 주소 영역 -->
+							<!-- 우편번호 -->
+							<br>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gToogle">토글형</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">아코디언1</h3>
+						<div class="guide-cont">
+							<!-- 아코디언1 -->
+							<div class="product-info acdArea">
+								<dl>
+									<dt class="btn-tg acdBtn">상품정보</dt>
+									<dd class="acdCont">
+										<ul class="txt-indent">
+											<li><b>상품코드 : 20MO77SNMSS78</b></li>
+											<li>상품소재 : 100% 울</li>
+											<li>상세정보 : 브라운 울 소재로 이탈리아에서 제작,<br>
+												대담한 와이드 레그 실루엣,<br>
+												앞쪽에 두 개의 주름으로 부드러운 핏 강조<br>
+												숨겨진 후크, 앞면의 버튼 및 지퍼 여밈<br>
+												드라이클리닝으로 세탁</li>
+											<li><b>배송정보 : 해당 상품은 무료배송 됩니다.</b><br>
+												제주도를 포함한 도서/산간지역은<br>
+												<b>추가 배송비 3,000원</b></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="btn-tg acdBtn">상품정보</dt>
+									<dd class="acdCont">
+										<ul class="txt-indent">
+											<li><b>상품코드 : 20MO77SNMSS78</b></li>
+											<li>상품소재 : 100% 울</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<!--// 아코디언1 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+							<!-- js 보기 -->
+							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+							<div class="js-code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// js 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">토글형1</h3>
+						<div class="guide-cont">
+							<!-- 토글형1 -->
+							<div class="sm-shopping-area tgLineArea">
+								<p class="tit-line tgLineBtn">신세계 포인트
+									<span class="right-area">
+										<em class="txt-style1 tgHideTxt">토글 시 show/hide text</em>
+									</span>
+								</p>
+								<div class="line-cont tgLineCont">
+									내용
+								</div>
+							</div>
+							<!--// 신세계 포인트 -->
+							<!-- 결제금액 -->
+							<div class="sm-shopping-area tgLineArea">
+								<p class="tit-line tgLineBtn">결제금액</p>
+								<div class="line-cont tgLineCont">
+									내용
+								</div>
+							</div>
+							<!--// 결제금액 -->
+							<!--// 토글형1 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+							<!-- js 보기 -->
+							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+							<div class="js-code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// js 보기 -->
+						</div>
+						
+						<h3 class="guide-sub-tit">체크 시 토글형</h3>
+						<div class="guide-cont">
+							<!-- 체크 시 토글형 -->
+							<dl class="pointcard-area chkTg">
+								<dt class="chkTgBtn">
+									<label class="chk check-style1">
+										<input type="checkbox" name="">
+										<i></i>
+										<span>신세계포인트 카드 적립</span>
+									</label>
+								</dt>
+								<dd class="chkTgCont" style="display:none;">
+									<p class="form-layout">
+										<span class="inp-tit">카드번호</span>
+										<input type="text" name="" class="input" placeholder="카드번호 입력">
+									</p>
+								</dd>
+							</dl>
+							<!--// 체크 시 토글형 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+							<!-- js 보기 -->
+							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+							<div class="js-code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// js 보기 -->
+						</div>
+
+						<h3 class="guide-sub-tit">주문상품정보 더보기</h3>
+						<div class="guide-cont">
+							<!-- 주문상품정보 -->
+							<div class="sm-order-area orderMoreArea">
+								<p class="tit-line">주문상품정보</p>
+								<div class="line-cont">
+									<ul class="sm-order-list">
+										<!-- 주문 상품 -->
+										<li>
+											<div class="sm-unit-cont1">
+												<!-- 상품 타이틀 -->
+												<div class="product-title">
+													<p class="brand">[CORNELIANI]</p>
+													<p class="product-name">해링본 싱글코트</p>
+													<p class="option opt-mid">옵션 : 그레이 / L</p>
+													<p class="discount-price">
+														<span class="sale">50%</span>
+														<span class="price"><b>1,000,000</b>원</span>
+														<span class="amount">/ 수량 : <b>1</b>개</span>
+													</p>
+													<div class="thumbnail">
+														<img src="../img/common/ex_product_01.png" alt="상품이미지">
+													</div>
+												</div>
+												<!--// 상품 타이틀 -->
+											</div>
+										</li>
+										<!--// 주문 상품 -->
+										<!-- 주문 상품 -->
+										<li>
+											<div class="sm-unit-cont1">
+												<!-- 상품 타이틀 -->
+												<div class="product-title">
+													<p class="brand">[CORNELIANI]</p>
+													<p class="product-name">해링본 싱글코트</p>
+													<p class="option opt-mid">옵션 : 그레이 / L</p>
+													<p class="discount-price">
+														<span class="sale">50%</span>
+														<span class="price"><b>1,000,000</b>원</span>
+														<span class="amount">/ 수량 : <b>1</b>개</span>
+													</p>
+													<div class="thumbnail">
+														<img src="../img/common/ex_product_01.png" alt="상품이미지">
+													</div>
+												</div>
+												<!--// 상품 타이틀 -->
+											</div>
+										</li>
+										<!--// 주문 상품 -->
+									</ul>
+									<!-- 전체보기 버튼 -->
+									<a href="javascript:;" class="btn btn-more-box moreBtn">총 <b>2건</b> 전체보기</a>
+									<!--// 전체보기 버튼 -->
+								</div>
+							</div>
+							<!--// 주문상품정보 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+							<!-- js 보기 -->
+							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+							<div class="js-code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// js 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gTab">탭</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">탭1</h3>
+						<div class="guide-cont">
+							<!-- 탭1 -->
+							<div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn" data-tab="tab1">TAB1</li>
+									<li class="tabBtn" data-tab="tab2">TAB2</li>
+									<li class="tabBtn" data-tab="tab3">TAB3</li>
+								</ul>
+								<div class="tab-cont tabCont" id="tab1">
+									TAB1 내용
+								</div>
+								<div class="tab-cont tabCont" id="tab2">
+									TAB2 내용
+								</div>
+								<div class="tab-cont tabCont" id="tab3">
+									TAB3 내용
+								</div>
+							</div>
+							<!--// 탭1 -->
+							<!-- 탭2 -->
+							<div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style2">
+									<li class="tabBtn" data-tab="tab2-1">TAB1</li>
+									<li class="tabBtn" data-tab="tab2-2">TAB2</li>
+									<li class="tabBtn" data-tab="tab2-3">TAB3</li>
+								</ul>
+								<div class="tab-cont tabCont" id="tab2-1">
+									TAB1 내용
+								</div>
+								<div class="tab-cont tabCont" id="tab2-2">
+									TAB2 내용
+								</div>
+								<div class="tab-cont tabCont" id="tab2-3">
+									TAB3 내용
+								</div>
+							</div>
+							<!--// 탭2 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+							<!-- js 보기 -->
+							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+							<div class="js-code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// js 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gUnit">유닛</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">유닛(리스트형)</h3>
+						<div class="guide-cont">
+							<!-- 유닛(리스트형) -->
+							<!-- 리스트 영역 -->
+							<div class="product-list-wrap">
+								<ul class="product-list">
+									<li>
+										<div class="unit-type1">
+											<dl class="unit-area">
+												<dt><img src="../img/main/mdpick_ex_image1.png" alt="선로 설비공사"></dt>
+												<dd>
+													<span class="brand">Aimsak</span>
+													<span class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</span>
+													<span class="price"><b>100,000</b>원</span>
+												</dd>
+											</dl>
+											<div class="unit-layer">
+												<!-- 상품링크 -->
+												<a href="#상품링크" class="unit-link"></a>
+												<!--// 상품링크 -->
+												<ul class="unit-under-btn">
+													<li>
+														<a href="javascript:;" class="btn btn-buynow">바로구매</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="btn btn-cart">장바구니</a>
+														<a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="unit-type1">
+											<dl class="unit-area">
+												<dt><img src="../img/main/mdpick_ex_image1.png" alt="선로 설비공사"></dt>
+												<dd>
+													<span class="brand">Aimsak</span>
+													<span class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</span>
+													<span class="price"><b>100,000</b>원</span>
+												</dd>
+											</dl>
+											<div class="unit-layer">
+												<!-- 상품링크 -->
+												<a href="#상품링크" class="unit-link"></a>
+												<!--// 상품링크 -->
+												<ul class="unit-under-btn">
+													<li>
+														<a href="javascript:;" class="btn btn-buynow">바로구매</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="btn btn-cart">장바구니</a>
+														<a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="unit-type1">
+											<dl class="unit-area">
+												<dt><img src="../img/main/mdpick_ex_image1.png" alt="선로 설비공사"></dt>
+												<dd>
+													<span class="brand">Aimsak</span>
+													<span class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</span>
+													<span class="price"><b>100,000</b>원</span>
+												</dd>
+											</dl>
+											<div class="unit-layer">
+												<!-- 상품링크 -->
+												<a href="#상품링크" class="unit-link"></a>
+												<!--// 상품링크 -->
+												<ul class="unit-under-btn">
+													<li>
+														<a href="javascript:;" class="btn btn-buynow">바로구매</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="btn btn-cart">장바구니</a>
+														<a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="unit-type1">
+											<dl class="unit-area">
+												<dt><img src="../img/main/mdpick_ex_image1.png" alt="선로 설비공사"></dt>
+												<dd>
+													<span class="brand">Aimsak</span>
+													<span class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</span>
+													<span class="price"><b>100,000</b>원</span>
+												</dd>
+											</dl>
+											<div class="unit-layer">
+												<!-- 상품링크 -->
+												<a href="#상품링크" class="unit-link"></a>
+												<!--// 상품링크 -->
+												<ul class="unit-under-btn">
+													<li>
+														<a href="javascript:;" class="btn btn-buynow">바로구매</a>
+													</li>
+													<li>
+														<a href="javascript:;" class="btn btn-cart">장바구니</a>
+														<a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<!-- // 리스트 영역 -->
+							<!--// 유닛(리스트형) -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">유닛(유형1: sm-unit-cont1)<br>[예시]주문결제, 쇼핑백</h3>
+						<div class="guide-cont">
+							<!-- 유닛(유형1: 주문결제, 쇼핑백) -->
+							<h3 class="guide-sub-tit2">옵션타입1 (option)</h3>
+								<!-- 장바구니 상품 -->
+								<div class="sm-unit-cont1">
+									<!-- 상품 타이틀 -->
+									<div class="product-title">
+										<p class="product-name">해링본 싱글코트</p>
+										<p class="price"><b>2,000,000</b>원</p>
+										<p class="discount-price">
+											<span class="sale">50%</span>
+											<span class="price"><b>1,000,000</b>원</span>
+										</p>
+										<p class="option">옵션 : 그레이 / L</p>
+										<div class="spinner">
+											<input type="text" value="1" maxlength="3" title="수량조절">
+											<a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+										</div>
+										<div class="thumbnail">
+										<!-- 이미지 없는 경우 -->
+										<img src="../img/common/img_none450.png" alt="">
+										<!--// 이미지 없는 경우 -->
+										<!-- 이미지 
+											<img src="../../img/common/ex_product_01.png" alt="상품이미지"> 
+										-->
+										</div>
+									</div>
+									<!--// 상품 타이틀 -->
+									<!-- 가격 -->
+									<div class="product-total">
+										<span class="price"><b>1,000,000</b>원</span>
+										<span class="right-area">
+											<button class="btn btn-style3">바로구매</button>
+										</span>
+									</div>
+									<!--// 가격 -->
+								</div>
+								<!--// 장바구니 상품 -->
+
+								<h3 class="guide-sub-tit2">옵션타입2 (option opt-mid)</h3>
+								<!-- 주문 상품 -->
+								<div class="sm-unit-cont1">
+									<!-- 상품 타이틀 -->
+									<div class="product-title">
+										<p class="brand">[CORNELIANI]</p>
+										<p class="product-name">해링본 싱글코트</p>
+										<p class="option opt-mid">옵션 : 그레이 / L</p>
+										<p class="discount-price">
+											<span class="sale">50%</span>
+											<span class="price"><b>1,000,000</b>원</span>
+											<span class="amount">/ 수량 : <b>1</b>개</span>
+										</p>
+										<div class="thumbnail">
+											<img src="../img/common/ex_product_01.png" alt="상품이미지">
+										</div>
+									</div>
+									<!--// 상품 타이틀 -->
+								</div>
+								<!--// 주문 상품 -->
+								<!--// 유닛(유형1: 주문결제, 쇼핑백) -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">유닛(유형2: sm-unit-cont2)<br>[예시]찜한상품, 포토리뷰</h3>
+						<div class="guide-cont">
+							<!-- 유닛(유형2:찜한상품, 포토리뷰) -->
+							<h3 class="guide-sub-tit2">할인타입</h3>
+							<div class="sm-unit-cont2">
+								<!-- 상품 타이틀 -->
+								<div class="product-title">
+									<p class="brand">[CORNELIANI]</p>
+									<p class="product-name">해링본 싱글코트</p>
+									<p class="price"><b>2,000,000</b>원</p>
+									<p class="discount-price">
+										<span class="sale">50%</span>
+										<span class="price"><b>1,000,000</b>원</span>
+									</p>
+									<div class="thumbnail">
+									<span class="flag flag-last-one">LAST ONE</span>
+									<!-- 이미지 없는 경우 -->
+									<img src="../img/common/img_none450.png" alt="">
+									<!--// 이미지 없는 경우 -->
+									<!-- 이미지
+										<img src="../img/common/ex_product_01.png" alt="상품이미지"> 
+									-->
+									</div>
+								</div>
+								<!--// 상품 타이틀 -->
+							</div>
+							<h3 class="guide-sub-tit2">옵션타입</h3>
+							<div class="sm-unit-cont2">
+								<!-- 상품 타이틀 -->
+								<div class="product-title">
+									<p class="brand">[CORNELIANI]</p>
+									<p class="product-name">해링본 싱글코트</p>
+									<p class="option opt-mid">옵션 : 크림 / S</p>
+									<p class="discount-price">
+										<span class="price"><b>1,000,000</b>원</span>
+									</p>
+									<div class="thumbnail">
+										<!-- 이미지 없는 경우 -->
+										<!-- <img src="../img/common/img_none450.png" alt=""> -->
+										<!-- // 이미지 없는 경우 -->
+										<img src="../img/common/ex_product_01.png" alt="상품이미지">
+									</div>
+								</div>
+								<!--// 상품 타이틀 -->
+							</div>
+							<!--// 유닛(유형2:찜한상품, 포토리뷰) -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<div class="code">
+								<textarea class="textarea">
+								</textarea>
+							</div>
+							<!--// html 보기 -->
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!--// container -->
+	</div>
+	<!--// wrap -->
+
+	<script>
+		toggleBtn(); // 토글버튼 (찜하기 버튼)
+		toggleLineArea(); // 토글영역 (line 디자인형)
+		toggleArea() // 토글영역
+		toggleSlideArea() // 토글 슬라이드(상품평 영역)
+		chkToggle() // checkbox 토글
+		radioToggle() // radio 토글 시 textarea 영역 show/hide
+		accordion(); // 아코디언
+		tab(); // 탭
+		photoReview(); // 포토리뷰
+		customSelect(); // 디자인셀렉트 관련 js(상품목록 정렬하기)
+		allChecked(); // all checked
+		btnMenu(); // 메뉴보기(카테고리)
+		menuTab(); // 메뉴탭(카테고리)
+		detailOptionLy(); // 상품상세 옵션 레이어 이벤트
+		menuLy(); // 3depth 레이어 메뉴선택
+		searchInputBox(); // 검색 input clear
+		lySearchPop(); // 검색어 입력시 노출 레이어
+		orderMoreArea(); // 주문결재 주문상품정보 전체보기 토글
+		// productListLineAdd() // 상품리스트 4번째마다 라인 style 추가
+		ratingBtnArea(); // 포토리뷰 별점버튼 js
+		txtEq(); // 포토리뷰 글자수 0 이상 active js
+		lyShare(); // 공유하기 팝업
+		popHasBtn(); // 팝업 하단에 버튼이 있는 경우
+		popHasSelect() // 이용약관 셀렉트가 있는 경우
+	</script>
+</body>
+</html>
