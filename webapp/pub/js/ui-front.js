@@ -200,61 +200,15 @@ function quickFloating(){
 function lyOpen(id) {
   // 팝업
   var $lyAcive = $('#' + id);
-  // var winHeight = $(window).outerHeight()
-  $('body').attr('data-scroll', window.oriScroll); // data-scroll에 스크롤 위치 저장
-  $('body').removeClass('scrollTop');
-  $('body').addClass('nonScroll');
-  // $lyAcive.css({
-  //   'height': winHeight
-  // });
-  $lyAcive.show();
-  $lyAcive.animate({ top: '0' }, 50);
+  $lyAcive.fadeIn();
   $lyAcive.addClass('open');
-}
-
-function mdOpen(id) {
-  // 모달 팝업
-  var $body = $('body');
-  var $popAcive = $('#' + id);
-  var $dim = '<div class="dim"></div>';
-  var popW = $popAcive.outerWidth() / 2;
-  var popH = $popAcive.outerHeight() / 2;
-
-  $body.addClass('nonScroll');
-  $body.css('top', '-233px')
-  $('.mdPopup').hide();
-  $popAcive.css('margin-left', '-' + popW + 'px');
-  if ($(window).height() > $popAcive.outerHeight()) {
-    $popAcive.css('margin-top', '-' + popH + 'px');
-  }
-  $popAcive.fadeIn();
-  $('.nonScroll').find('.wrap').after($dim);
-  $('.dim').on('click', function (e) {
-    $(this).hide();
-    $body.removeClass('nonScroll');
-    $popAcive.hide();
-    e.preventDefault();
-  });
 }
 
 function lyClose(){
   // 팝업닫기
-  $('body').removeClass('nonScroll');
   $('.dim').hide();
-  $('.lyPopup').animate({ top: '100%' }, 50);
-  // data-scroll 저장된 스크롤 위치로 이동
-  var scrollPoint = $('body').attr('data-scroll');
-  $(window).scrollTop(scrollPoint);
-}
-
-function mdClose(){
-  // 팝업닫기
-  $('body').removeClass('nonScroll');
-  $('.dim').hide();
-  $('.mdPopup').hide();
-  // data-scroll 저장된 스크롤 위치로 이동
-  var scrollPoint = $('body').attr('data-scroll');
-  $(window).scrollTop(scrollPoint);
+  $('.lyPopupWrap').hide();
+  $('.lyPopupWrap').removeClass('open');
 }
 
 function tab(){ // 탭 관련 js
