@@ -1,4 +1,8 @@
 @charset "utf-8";
+.btn-small-blue {width: 98px; height: 28px; line-height: 28px; text-align: center; font-weight: 500; font-size: 14px; color: #fff; background: #346DD0;}
+.tit-type2 .count {display: inline-block; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
+.tab-style3 ~ .tabCont {padding: 80px 40px;}
+
 /* ==========================================================================
     메인 공지사항
 ========================================================================== */
@@ -80,7 +84,6 @@
 .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 12px;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li:last-child {padding-bottom: 0;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li > a {font-size: 16px; color: #666;}
-
 .mypage-cont .my-main {margin-left: 214px;}
 .mypage-cont .my-main .my-top-area {display: flex; justify-content: space-around; align-items: center; width: 100%; height: 160px; margin-bottom: 60px; border-radius: 80px 80px 80px 0px; background: #12b5cf;}
 .mypage-cont .my-main .my-top-area .top-member {padding-left: 50px; color: #fff;}
@@ -115,13 +118,14 @@
 .mypage-cont .my-main .my-boardlist ul li a > p {width: 326px; font-size: 16px; color: #000;}
 .mypage-cont .my-main .my-boardlist ul li a > span {font-size: 14px; color: #666;}
 .mypage-cont .my-main .board-faq .my-boardlist ul li a > p {width: 100%;}
-
 .mypage .product-list-wrap {max-width: 986px; margin-bottom: 100px;}
 .mypage .product-list-wrap .tit-area {margin-bottom: 30px;}
 .mypage .unit-type1 {height: 421px;}
 .mypage .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
 
-
+/* ==========================================================================
+     
+========================================================================== */
 
 
 
