@@ -90,7 +90,8 @@ function allCategoryLyClose(){
   $('.depthBtn').removeClass('on');
   $('.d3-list > li .acdBtn').removeClass('on');
   $('.d3-list > li .acdCont').hide();
-  
+  $('.visualCate .d1Btn').removeClass('on');
+  $('.visualCate .d2Layer').removeClass('active');
 }
 
 function layoutCategory(){
@@ -141,6 +142,13 @@ function layoutCategory(){
       } else {
         $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
       }
+    });
+    // PC 카테고리 depth 별 hover 시 닫기 버튼 노출
+    $pcCateLyArea.on('mouseover', function(){
+      $('.visualCate .btn-layer-close').show();
+    });
+    $pcCateLyArea.on('mouseout', function(){
+      $('.visualCate .btn-layer-close').hide();
     });
     // PC 카테고리 depth 별 hover 시 이벤트
     $pcCateLyArea.each(function () {
