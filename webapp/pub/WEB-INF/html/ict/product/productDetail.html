@@ -11,6 +11,9 @@
   <meta property="og:title" content="ktcommerce" />
   <!-- style -->
   <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
+  <style>
+
+  </style>
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
 </head>
@@ -167,8 +170,42 @@
     <section class="container">
       <div class="sub-content">
         <div class="product-detail">
-
-          <div class="pro-detail-"></div>
+          <div class="pro-detail-top">
+            <div class="product-detail-slide">
+              <!-- Swiper -->
+              <div class="swiper-container productDetaileSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="../../../../images/product/img_review_ex.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../../../../images/product/img_review_ex2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../../../../images/product/img_review_ex3.png" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div thumbsSlider="" class="swiper-container productDetaileSlide2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../../../../images/product/img_review_ex.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../../../../images/product/img_review_ex2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="../../../../images/product/img_review_ex3.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="tab-area tabArea">
             <ul class="tab-btn-list tab-style3">
               <li class="tabBtn" data-tab="rvTab1">TAB1</li>
@@ -274,26 +311,26 @@
           현재페이지에서만 사용 js
       ========================================================================== */
 
-
-      function scrollTab(){
-        $('.tab li').each(function(){ // scroll 탭 관련 js
-          $(this).bind('click', function(){
-            var winWidth = $(window).width();
-            var depId = $(this).attr('data-tab');
-            $('html, body').animate({ scrollTop: $('#' + depId).offset().top - 180}, 800, 'easeInOutExpo' );
-          });
-        });
-      }
-
-
-      
-      
-
-
-      
-
-
+      // 상품상세 슬라이드
+      var productDetaileSlide = new Swiper(".productDetaileSlide", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var productDetaileSlide2 = new Swiper(".productDetaileSlide2", {
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
     });
+    
   </script>
   <!-- javascript -->
 </body>
