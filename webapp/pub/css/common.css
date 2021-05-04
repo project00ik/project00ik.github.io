@@ -177,6 +177,21 @@
 .btn-more-white {width:auto; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #fff; font-weight:500; font-size:14px; color:#fff; background:url(../images/common/icon_plus_white.svg) right 16px center no-repeat; display:inline-block;}
 .btn-star {font-size:0; width:24px; height:24px; background:url(../images/common/icon_star_s.svg) 0 0 no-repeat; display:inline-block;}
 .btn-star.on {background:url(../images/common/icon_star_s_on.svg) 0 0 no-repeat;}
+.btn-more {width: 57px; height: 18px; line-height: 18px; font-size: 14px; text-align: left; color: #000; background: url(../images/common/btn_more.svg) right center no-repeat;}
+.btn-more-black {width: auto; height: 28px; line-height: 26px; padding: 0 35px 0 15px; border: 1px solid #000; font-weight: 500; font-size: 14px; color: #000; background: url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
+
+/* 플래그 */
+.flag-txt {display: inline-block; width: auto; height: 20px; line-height: 18px; font-size: 12px; text-align: center; border-radius: 10px; padding: 0 10px;}
+.flag-txt ~ .flag-txt {margin-left: 6px;}
+.flag-txt.blue {color: #fff; background: #346dd0;}
+.flag-txt.purple {color: #a340bf; border: 1px solid #a340bf;}
+.flag-txt.brown {color: #c67043; border: 1px solid #c67043;}
+.flag-txt.green {color: #239587; border: 1px solid #239587;}
+.flag-txt.black {color: #000; border: 1px solid #bbb;}
+
+/* 공통 아이콘 */
+.icon-new {position: relative; display: inline-block; font-style: normal; margin-top: -4px; width: 15px; height: 15px; font-weight: 500; font-size: 10px; line-height: 15px; text-align: center; color: #fff; border-radius: 100%; background: #346DD0; text-decoration: none;}
+
 
 /* 인풋 */
 input::placeholder {color:#999; opacity:1;}
@@ -201,6 +216,11 @@ input.input:read-only:focus {border-color:#bbb;} */
 .tit-center-area .right-area {position:absolute; top:50%; right:0; transform:translateY(-50.4%); text-align:right;}
 .tit-type1 {font-size:34px; color:#000;}
 /* .tit-type1 > b {font-weight:700;} */
+.tit-area {display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 40px;}
+.tit-area .tit-type1 {margin-bottom: 0;}
+.tit-type2 {font-size: 24px; color: #000;}
+.tit-type3 {width: 100%; height: 36px; line-height: 36px; font-size: 16px; text-align: center; color: #000;}
+
 .ellipsis {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .ellipsis-multiple {overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; word-wrap:break-wrod;}
 .ellipsis-multiple2 {overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-wrod;}
@@ -227,6 +247,11 @@ input.input:read-only:focus {border-color:#bbb;} */
 .tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:18px; position:relative;}
 .tab-area .tab-style2 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style2 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
+.tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display: flex; justify-content: space-around; border-bottom: 1px solid #d7d7d7;}
+.tab-area .tab-style3 > li {width: 100%; text-align: center; cursor: pointer;}
+.tab-area .tab-style3 .tabBtn {padding-bottom:4px; font-size:20px; line-height: 51px; position:relative;}
+.tab-area .tab-style3 .tabBtn.on {color:#346dd0; font-weight:500;}
+.tab-area .tab-style3 .tabBtn.on::after {content:""; width:100%; height:4px; background:#346dd0; display:inline-block; position:absolute; bottom:0px; left:0; z-index:1;}
 .tab-area .tab-cont {width:100%;}
 
 /* ==========================================================================
@@ -471,6 +496,11 @@ input.input:read-only:focus {border-color:#bbb;} */
     .icon-btn.member {background:url(../images/common/mo_icon_member.svg) 50% 50% no-repeat;}
     .btn-more-white {width:24px; height:24px; padding:0; font-size:0; border-color:#d7d7d7; background-position:center center; display:inline-block;}
     
+    .btn-more-black {width: 24px; height: 24px; padding: 0; font-size: 0; border-color: #d7d7d7; background-position: center center;}
+
+    /* 모바일 padding */    
+    .mo-pd {padding: 0 20px;}
+    
     /* 탭 */
     .tab-area .tab-btn-list > li {display:inline-block; font-size:16px;}
     .tab-area .tab-style1 > li:first-child {margin-left:20px;}
@@ -481,10 +511,21 @@ input.input:read-only:focus {border-color:#bbb;} */
     .tab-area .tab-style2 > li:last-child {margin-right:20px;}
     .tab-area .tab-style2 > li + li {margin-left:24px;}
     .tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:16px;}
+    .tab-area .tab-style3 .tabBtn {font-size: 16px; line-height: 47px; padding-bottom: 3px;}
+    .tab-area .tab-style3 .tabBtn.on::after {height: 3px;}
     .tabArea.tabSlide {}
 
     /* 텍스트 관련 */
+    .tit-area {padding: 0 20px;}
     .tit-type1 {font-size:22px;}
+    .tit-type2 {font-size: 18px;}
+    .tit-type3 {font-size: 16px;}
+
+    /* 공통 아이콘 */
+    .icon-new {width: 14px; height: 14px; line-height: 14px;}
+
+    /* 플래그 */
+    .flag-txt {height: 18px; padding: 0 8px; font-size: 10px; line-height: 16px;}
 
     /* 유닛 */
     .unit-type1 {width:100% !important; height:auto; overflow:hidden;}
