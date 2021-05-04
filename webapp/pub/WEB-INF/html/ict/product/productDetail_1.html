@@ -174,12 +174,17 @@
             <li class="tabBtn" data-tab="rvTab4">배송 및 반품</li>
           </ul>
           <div class="tab-cont tabCont" id="rvTab1">
-            
+            <div class="tit-area">
+              <p class="tit-type2 ">전체 상품리뷰<span class="count">(114)</span></p>
+            </div>
+            <div class="detail-info">
+              
+            </div>
           </div>
           <div class="tab-cont tabCont" id="rvTab2">
             <div class="tit-area">
               <p class="tit-type2 ">전체 상품리뷰<span class="count">(114)</span></p>
-              <a href="#" class="btn btn-small-blue">리뷰작성</a>
+              <button onclick="lyOpen('reviewWritePopup')" class="btn btn-small-blue">리뷰작성</button>
             </div>
             <div class="detail-review">
               <!-- 리뷰가 있는경우 -->
@@ -375,6 +380,107 @@
       </div>
     </footer>
   </div>
+
+  <!-- 리뷰작성 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="reviewWritePopup"><!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>리뷰작성</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-review-write">
+              <ul>
+                <li class="pop-product">
+                  <div class="pro-img-area"><img src="../../../../images/main/img_review_ex.png" alt="상품이미지"></div>
+                  <div class="pro-text-area">
+                    <p class="pro-name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                    <p class="pro-option">6.5인치 / 3700RPM</p>
+                    <div class="pro-price">
+                      <p><b>100,000</b><span> 원</span></p><p>/ 1개</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="pop-satis">
+                  <b class="satis-tit">상품 리뷰 평점</b>
+                  <div class="pro-satis-list">
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">가격</p>
+                      <div class="rating-btn-area">
+                        <div>
+                            <button class="btn-star-b btnStar">별점1</button>
+                            <button class="btn-star-b btnStar">별점2</button>
+                            <button class="btn-star-b btnStar">별점3</button>
+                            <button class="btn-star-b btnStar">별점4</button>
+                            <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">품질</p>
+                      <div class="rating-btn-area">
+                        <div>
+                            <button class="btn-star-b btnStar">별점1</button>
+                            <button class="btn-star-b btnStar">별점2</button>
+                            <button class="btn-star-b btnStar">별점3</button>
+                            <button class="btn-star-b btnStar">별점4</button>
+                            <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">배송</p>
+                      <div class="rating-btn-area">
+                        <div>
+                            <button class="btn-star-b btnStar">별점1</button>
+                            <button class="btn-star-b btnStar">별점2</button>
+                            <button class="btn-star-b btnStar">별점3</button>
+                            <button class="btn-star-b btnStar">별점4</button>
+                            <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">서비스</p>
+                      <div class="rating-btn-area">
+                        <div>
+                            <button class="btn-star-b btnStar">별점1</button>
+                            <button class="btn-star-b btnStar">별점2</button>
+                            <button class="btn-star-b btnStar">별점3</button>
+                            <button class="btn-star-b btnStar">별점4</button>
+                            <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-text-review">
+                  <p class="pop-layout-txt">상품 후기를 남겨주세요.</p>
+                  <div class="textarea-wrap count">
+                    <textarea name="" id="" placeholder="다른 분들의 보다 나은 선택을 위해  솔직한 리뷰를 남겨주세요."></textarea>
+                    <p class="cot"><b>0</b> / 3000</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">등록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 리뷰작성 팝업 -->
+
+
   <!-- 퀵메뉴 -->
   <!-- <div class="quick-menu">
     <div class="qk-group">
@@ -417,6 +523,7 @@
       toggleBtn(); // 토글버튼
       accordion(); // 아코디언
       reviewToggle(); //리뷰토글
+      ratingBtnArea(); // 포토리뷰 별점버튼 js
 
       /* ==========================================================================
           현재페이지에서만 사용 js
@@ -438,12 +545,18 @@
         $('.review-text').each(function(){
           $(this).on('click', function(e){
             e.preventDefault();
-            $(this).toggleClass('show');
-            $(this).parent().toggleClass('on')
-            $(this).parent().siblings().removeClass('on');
+            $(this).closest('li').toggleClass('on')
+            $(this).closest('li').siblings().removeClass('on');
+            if($(this).hasClass('on')){
+              $(this).closest('li').removeClass('on');
+            } else {
+              $(this).closest('li').addClass('on');
+            }
           })
         });
       }
+
+
 
 
       
