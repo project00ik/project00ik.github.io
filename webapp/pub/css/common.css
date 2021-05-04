@@ -174,11 +174,11 @@
 .icon-btn.cart {position:relative; background:url(../images/common/icon_cart.svg) 50% 50% no-repeat;}
 .icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px}
 .icon-btn.member {background:url(../images/common/icon_member.svg) 50% 50% no-repeat;}
-.btn-more-white {width:auto; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #fff; font-weight:500; font-size:14px; color:#fff; background:url(../images/common/icon_plus_white.svg) right 16px center no-repeat; display:inline-block;}
+.btn-more-white {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #fff; font-weight:500; font-size:14px; color:#fff; background:url(../images/common/icon_plus_white.svg) right 16px center no-repeat; display:inline-block;}
 .btn-star {font-size:0; width:24px; height:24px; background:url(../images/common/icon_star_s.svg) 0 0 no-repeat; display:inline-block;}
 .btn-star.on {background:url(../images/common/icon_star_s_on.svg) 0 0 no-repeat;}
 .btn-more {width: 57px; height: 18px; line-height: 18px; font-size: 14px; text-align: left; color: #000; background: url(../images/common/btn_more.svg) right center no-repeat;}
-.btn-more-black {width: auto; height: 28px; line-height: 26px; padding: 0 35px 0 15px; border: 1px solid #000; font-weight: 500; font-size: 14px; color: #000; background: url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
+.btn-more-black {width: 98px; height: 28px; line-height: 26px; padding: 0 35px 0 15px; border: 1px solid #000; font-weight: 500; font-size: 14px; color: #000; background: url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
 
 /* 플래그 */
 .flag-txt {display: inline-block; width: auto; height: 20px; line-height: 18px; font-size: 12px; text-align: center; border-radius: 10px; padding: 0 10px;}
