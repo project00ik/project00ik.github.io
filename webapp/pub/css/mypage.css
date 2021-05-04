@@ -8,6 +8,14 @@
 .notice-wrap .cont-notice .notice-area .tit-area .tit-type1 {margin-bottom: 0;}
 .tit-area > * {margin-bottom: 0;}
 
+/* textarea */
+textarea {resize: none; border: 1px solid #bbb; width: 100%; height: 163px; padding: 16px; font-size: 16px; color: #000;}
+textarea::placeholder {color: #bbb;}
+.textarea-wrap {position: relative;}
+.textarea-wrap.count textarea {padding-bottom: 40px;}
+.textarea-wrap.count .cot {text-align: right; font-size: 16px; line-height: 21px; color: #999;}
+.textarea-wrap.count .cot b {color: #000; line-height: 21px; vertical-align: top;}
+
 
 /* 공통 - 별점  */
 .rating .star-m {width:120px; height:24px; display:inline-block; background:url(../images/common/icon_star_m.svg) 0 50% no-repeat; position:relative; font-size:0;}
@@ -29,6 +37,9 @@
 .rating .star-s.star5::after {content:"별점5"; width:90px;}
 
 .rating .star-s.black::after {background:url(../images/common/icon_star_s_black_on.svg) 0 50% no-repeat;  position:absolute; top:0; left:0; z-index:1; overflow:hidden;}
+
+
+
 
 
 /* ==========================================================================
@@ -174,8 +185,8 @@
 .product-detail .detail-review ul li .review-front-img img {max-width: 70px; max-height: 70px; background: #d7d7d7;}
 .product-detail .detail-review ul li .review-cont-img {display: none;}
 .product-detail .detail-review ul li.on {background: #fafafa;}
-.product-detail .detail-review ul li.on .review-text.show {padding-right: 0;}
-.product-detail .detail-review ul li.on .review-text.show p {display: block;}
+.product-detail .detail-review ul li.on .review-text {padding-right: 0;}
+.product-detail .detail-review ul li.on .review-text p {display: block;}
 .product-detail .detail-review ul li.on .review-front-img {display: none;}
 .product-detail .detail-review ul li.on .review-cont-img {display: block; margin-top: 30px;}
 .product-detail .detail-review ul li.on .review-cont-img img {max-width: 560px; max-height: 560px; margin-bottom: 10px;}
@@ -183,6 +194,29 @@
 .product-detail .detail-review .detail-review-empty {text-align: center; border-bottom: 1px solid #d7d7d7; padding: 30px 0;}
 .product-detail .detail-review .detail-review-empty p {padding-top: 80px; font-size: 16px; line-height: 22px; color: #999; background: url(../images/common/icon_list_empty.svg) center 0 no-repeat;}
 
+/* ==========================================================================
+    팝업 
+========================================================================== */
+.pop-layout {}
+.pop-layout > ul {border-top: 1px solid #000;}
+.pop-layout > ul > li {padding: 10px 0; border-bottom: 1px solid #d7d7d7;}
+.pop-layout .pop-layout-txt {font-size: 16px; color: #000; line-height: 16px; padding-bottom: 10px;}
+
+/* 리뷰작성 */
+.pop-review-write .pop-product {display: flex;}
+.pop-review-write .pop-product .pro-img-area img {max-width: 100px; max-height: 100px;}
+.pop-review-write .pop-product .pro-text-area {margin-left: 20px; display: flex; flex-direction: column; justify-content: center;}
+.pop-review-write .pop-product .pro-text-area .pro-name {font-size: 15px; color: #000; padding-bottom: 5px;}
+.pop-review-write .pop-product .pro-text-area .pro-option {font-size: 14px; color: #666; padding-bottom: 15px;}
+.pop-review-write .pop-product .pro-text-area .pro-price {display: flex; align-items: flex-end;}
+.pop-review-write .pop-product .pro-text-area .pro-price p {font-size: 14px; color: #666; line-height: 21px;}
+.pop-review-write .pop-product .pro-text-area .pro-price p + p {padding-left: 5px;}
+.pop-review-write .pop-product .pro-text-area .pro-price p b {font-size: 20px; line-height: 22px; color: #000;}
+.pop-review-write .pop-product .pro-text-area .pro-price p span {font-size: 12px; line-height: 12px; color: #000; vertical-align: text-bottom;}
+.pop-review-write .pop-satis .satis-tit {display: block; font-size: 18px; line-height: 16px; color: #000; padding-bottom: 16px; text-align: center;}
+.pop-review-write .pop-satis .pro-satis-list {display: flex; flex-wrap: wrap;}
+.pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 50%; display: flex; align-items: center; justify-content: center; padding: 5px 0;}
+.pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {width: 50px; font-size: 16px; line-height: 18px; color: #000; text-align: right; margin-right: 20px;}
 
 
 
