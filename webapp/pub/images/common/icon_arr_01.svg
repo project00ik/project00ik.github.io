@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="btn_펼치기_닫기" data-name="btn_펼치기/닫기" transform="translate(-1052 -222)">
+    <g id="ic_arrow_unfold__66" data-name="ic_arrow_unfold_#66" transform="translate(1052 222)">
+      <rect id="area" width="18" height="18" fill="none"/>
+      <path id="arrow" d="M388,758l4,4-4,4" transform="translate(771 -381) rotate(90)" fill="none" stroke="#666" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
