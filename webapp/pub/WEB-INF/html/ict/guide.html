@@ -587,14 +587,14 @@
 									<!-- 만족도 체크 영역 -->
 									<div class="sm-satisfaction-area">
 										<div class="rating-btn-area">
-										<div>
-												<button class="btn-star-b btnStar">별점1</button>
-												<button class="btn-star-b btnStar">별점2</button>
-												<button class="btn-star-b btnStar">별점3</button>
-												<button class="btn-star-b btnStar">별점4</button>
-												<button class="btn-star-b btnStar">별점5</button>
-										</div>
-										<i class="icon-star"></i>
+											<div>
+													<button class="btn-star-b btnStar">별점1</button>
+													<button class="btn-star-b btnStar">별점2</button>
+													<button class="btn-star-b btnStar">별점3</button>
+													<button class="btn-star-b btnStar">별점4</button>
+													<button class="btn-star-b btnStar">별점5</button>
+											</div>
+											<i class="icon-star"></i>
 										</div>
 									</div>
 									<!--// 만족도 체크 영역 -->
@@ -1909,31 +1909,20 @@
 	</div>
 	<!--// wrap -->
 
-	<script>
-		toggleBtn(); // 토글버튼 (찜하기 버튼)
-		toggleLineArea(); // 토글영역 (line 디자인형)
-		toggleArea() // 토글영역
-		toggleSlideArea() // 토글 슬라이드(상품평 영역)
-		chkToggle() // checkbox 토글
-		radioToggle() // radio 토글 시 textarea 영역 show/hide
-		accordion(); // 아코디언
-		tab(); // 탭
-		photoReview(); // 포토리뷰
-		customSelect(); // 디자인셀렉트 관련 js(상품목록 정렬하기)
-		allChecked(); // all checked
-		btnMenu(); // 메뉴보기(카테고리)
-		menuTab(); // 메뉴탭(카테고리)
-		detailOptionLy(); // 상품상세 옵션 레이어 이벤트
-		menuLy(); // 3depth 레이어 메뉴선택
-		searchInputBox(); // 검색 input clear
-		lySearchPop(); // 검색어 입력시 노출 레이어
-		orderMoreArea(); // 주문결재 주문상품정보 전체보기 토글
-		// productListLineAdd() // 상품리스트 4번째마다 라인 style 추가
-		ratingBtnArea(); // 포토리뷰 별점버튼 js
-		txtEq(); // 포토리뷰 글자수 0 이상 active js
-		lyShare(); // 공유하기 팝업
-		popHasBtn(); // 팝업 하단에 버튼이 있는 경우
-		popHasSelect() // 이용약관 셀렉트가 있는 경우
+	<script type="text/javascript">
+		$(document).ready(function () {
+			toggleBtn(); // 토글버튼 (찜하기 버튼)
+			toggleLineArea(); // 토글영역 (line 디자인형)
+			toggleArea() // 토글영역
+			toggleSlideArea() // 토글 슬라이드(상품평 영역)
+			chkToggle() // checkbox 토글
+			radioToggle() // radio 토글 시 textarea 영역 show/hide
+			accordion(); // 아코디언
+			tab(); // 탭
+			customSelect(); // 디자인셀렉트 관련 js(상품목록 정렬하기)
+			allChecked(); // all checked
+			ratingBtnArea(); // 포토리뷰 별점버튼 js
+		});
 	</script>
 </body>
 </html>
