@@ -12,7 +12,45 @@
   <!-- style -->
   <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
   <style>
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
   </style>
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
@@ -171,37 +209,46 @@
       <div class="sub-content">
         <div class="product-detail">
           <div class="pro-detail-top">
-            <div class="product-detail-slide">
-              <!-- Swiper -->
-              <div class="swiper-container productDetaileSlide">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="../../../../images/product/img_review_ex.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../../../../images/product/img_review_ex2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../../../../images/product/img_review_ex3.png" />
+            <div class="pro-detail-top-area">
+              <div class="pro-detail-slide-wrap">
+                <div class="pro-detail-photo">
+                  <div class="pro-detail-slide">
+                    <!-- Swiper -->
+                    <div class="swiper-container productDetaileSlide">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="../../../../images/product/img_review_ex.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../../../../images/product/img_review_ex2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../../../../images/product/img_review_ex3.png" />
+                        </div>
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper-container productDetaileSlide2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../../../../images/product/img_review_ex.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../../../../images/product/img_review_ex2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../../../../images/product/img_review_ex3.png" />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-              <div thumbsSlider="" class="swiper-container productDetaileSlide2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../../../../images/product/img_review_ex.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../../../../images/product/img_review_ex2.png" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="../../../../images/product/img_review_ex3.png" />
-                  </div>
+                <div class="pro-option">
+
                 </div>
               </div>
             </div>
@@ -326,7 +373,7 @@
           prevEl: ".swiper-button-prev",
         },
         thumbs: {
-          swiper: swiper,
+          swiper: productDetaileSlide,
         },
       });
     });
