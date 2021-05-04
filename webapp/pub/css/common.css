@@ -192,6 +192,30 @@
 /* 공통 아이콘 */
 .icon-new {position: relative; display: inline-block; font-style: normal; margin-top: -4px; width: 15px; height: 15px; font-weight: 500; font-size: 10px; line-height: 15px; text-align: center; color: #fff; border-radius: 100%; background: #346DD0; text-decoration: none;}
 
+/* 별점 */
+/* 공통 - 별점  */
+.rating {overflow:hidden;}
+.rating .star {width:180px; height:36px; display:inline-block; background:url(../images/common/icon_star.svg) 0 50% no-repeat; position:relative; font-size:0;}
+.rating .star::after {content:"별점0"; width:108px; height:36px; display:inline-block; background:url(../images/common/icon_star_on.svg) 0 50% no-repeat;  position:absolute; top:0; left:0; z-index:1; overflow:hidden;}
+.rating .star.star0::after {content:"별점0"; width:0;}
+.rating .star.star1::after {content:"별점1"; width:36px;}
+.rating .star.star2::after {content:"별점2"; width:72px;}
+.rating .star.star3::after {content:"별점3"; width:108px;}
+.rating .star.star4::after {content:"별점4"; width:144px;}
+.rating .star.star5::after {content:"별점5"; width:180px;}
+
+/* 공통 - 별점 버튼형 (포토리뷰쓰기)  */
+.rating-btn-area {width:180px; height:36px; background:url(../images/common/icon_star.svg) 0 50% no-repeat; display:inline-block; position:relative;}
+.rating-btn-area > div {width:180px; height:36px; position:absolute; top:0; left:0; z-index:2; display:inline-block; font-size:0;}
+.rating-btn-area > div + .icon-star {width:180px; height:36px; position:absolute; top:-1px; left:0; z-index:1; text-align:left; display:inline-block;}
+.rating-btn-area > div + .icon-star::after {content:""; width:0; height:36px; line-height:36px; font-size:0; display:inline-block; background:url(../images/common/icon_star_on.svg) 0 50% no-repeat; overflow:hidden; vertical-align:top; transition-duration:0.3s; -moz-transition-duration:0.3s;}
+.rating-btn-area .star0 + .icon-star::after {content:"별점0"; width:0;}
+.rating-btn-area .star1 + .icon-star::after {content:"별점1"; width:36px;}
+.rating-btn-area .star2 + .icon-star::after {content:"별점2"; width:72px;}
+.rating-btn-area .star3 + .icon-star::after {content:"별점3"; width:108px;}
+.rating-btn-area .star4 + .icon-star::after {content:"별점4"; width:144px;}
+.rating-btn-area .star5 + .icon-star::after {content:"별점5"; width:180px;}
+.rating-btn-area .btn-star-b {width:36px; height:36px; display:inline-block; font-size:0;}
 
 /* 인풋 */
 input::placeholder {color:#999; opacity:1;}

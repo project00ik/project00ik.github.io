@@ -278,7 +278,7 @@ function tab(){ // 탭 관련 js
 
 function ratingBtnArea(){
   // 포토리뷰 별점버튼 js
-  $('.rating-btn-area').find('.btn-star').each(function(){
+  $('.rating-btn-area').find('.btnStar').each(function(){
     $(this).on('click', function(){
       var starIndex = $(this).index() + 1;
       $(this).parent().attr('class','star'+ starIndex);
