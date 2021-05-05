@@ -276,12 +276,15 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-style1 .tabBtn {padding-bottom:5px; font-size:16px; position:relative; cursor:pointer;}
 .tab-area .tab-style1 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style1 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
+
 .tab-area .tab-style2 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap;}
 .tab-area .tab-style2 > li + li {margin-left:36px;}
 .tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:18px; position:relative;}
 .tab-area .tab-style2 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style2 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
-.tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display:flex; justify-content:space-around; border-bottom:1px solid #d7d7d7;}
+
+.tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display:flex; justify-content:space-around; position: relative;}
+.tab-area .tab-style3::after {content:''; width:100%; height:1px; display:inline-block; background: #d7d7d7; position: absolute; bottom:0; left:0;}
 .tab-area .tab-style3 > li {width:100%; text-align:center; cursor:pointer;}
 .tab-area .tab-style3 .tabBtn {padding-bottom:4px; font-size:20px; line-height:51px; position:relative;}
 .tab-area .tab-style3 .tabBtn.on {color:#346dd0; font-weight:500;}
@@ -300,6 +303,7 @@ button.btn-style-s1 {line-height:25px;}
 /* 폼요소 */
 .form-layout {}
 .form-layout + .form-layout {margin-top:10px;}
+.form-area + .form-area {margin-top:10px;}
 
 .spinner {width:112px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative;}
 .spinner input {width:100%; height:38px; line-height:38px; text-align:center; font-size:16px; vertical-align:top; font-weight: 500; color:#666;}
@@ -338,7 +342,7 @@ select.select:read-only:focus {border-color:#bbb;}
 .form-layout.form-email .input + .select {margin-left:5px;}
 .form-layout + .form-layout {margin-top:5px;}
 
-textarea.textarea {width:100%; height:163px; padding:11px 12px 10px; border:1px solid #bbb; font-size:14px;}
+textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px;}
 textarea.textarea:disabled {background: #fafafa; border: 1px solid #e5e5e5; color: #d7d7d7;}
 textarea.textarea:read-only {background: #fafafa; border: 1px solid #bbb; color: #666;}
 textarea.textarea:read-only::placeholder {color: #666;}
