@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="../../../js/ui-front.js" charset="UTF-8" ></script>
 	<style>
 		body {background:#F3F3F3; font-size: 14px;}
-		.guide .container {padding:10px 10px 60px;}
+		.guide .container {padding:10px 10px 60px; margin-top:0;}
 		.guide h1 {padding:10px; font-size:20px; text-align:center; background:#999; color:#fff; border-radius: 5px;}
 		.guide h1 > span {width:180px; display:inline-block; vertical-align:bottom;}
 		.guide h1 > span > img {width:100%; margin-right:10px;}
@@ -477,70 +477,6 @@
 							</div>
 						</div>
 					</div>
-					
-					<h2 class="guide-tit" id="gHeader">헤더</h2>
-					<div class="guide-box">
-						<div class="cont-layout">
-							<div class="cont-area">
-								<p class="guide-sub-tit">헤더 로고형</p>
-								<div class="guide-cont">
-									<!-- 헤더 로고형 -->
-									<header class="sm-header" style="position:static;">
-										<h1 class="logo"><a href="../html/simonMain.html">PREMIUM OUTLETS - SHINSEGAE SIMON</a></h1>
-									</header>
-									<!--// 헤더 로고형 -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="textarea">
-										</textarea>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">헤더 버튼형 (역스크롤 시 노출)</p>
-								<div class="guide-cont">
-									<!-- 헤더 버튼형 -->
-									<header class="sm-header sm-detail-header" style="position: relative; z-index:inherit;">
-										<a href="javascript:;" onclick="history.back();" class="btn-history-back">뒤로가기</a>
-										<div class="right-area">
-											<a href="javascript:;" class="btn-menu">메뉴보기</a>
-											<a href="../html/shoppingBag.html" class="btn-cart">장바구니
-												<span class="num">1</span>
-											</a>
-										</div>
-									</header>
-									<!--// 헤더 버튼형 -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="textarea">
-										</textarea>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">헤더 제목형 (역스크롤 시 노출)</p>
-								<div class="guide-cont">
-									<!-- 헤더 제목형 -->
-									<header class="sm-header sm-title-header" style="position: relative; z-index:inherit;">
-										<a href="javascript:;" onclick="history.back();" class="btn-history-back">뒤로가기</a>
-										<span class="tit-page">쇼핑백</span>
-									</header>
-									<!--// 헤더 제목형 -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="textarea">
-										</textarea>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<h2 class="guide-tit" id="gStar">별점</h2>
 					<div class="guide-box">
@@ -683,13 +619,11 @@
 										<input type="text" name="" class="input" value="" maxlength="100">
 										<span class="bar">@</span>
 										<input type="text" name="" class="input" value="" maxlength="100">
-										<span class="select select-style1">
-											<select>
-												<option value="">직접입력</option>
-												<option value="aaa.com">naver.com</option>
-												<option value="bbb.net">bbb.net</option>
-											</select>
-										</span>
+										<select class="select">
+											<option value="">직접입력</option>
+											<option value="aaa.com">naver.com</option>
+											<option value="bbb.net">bbb.net</option>
+										</select>
 									</div>
 									<!--// form -->
 									<!-- html 보기 -->
@@ -798,7 +732,7 @@
 								<p class="guide-sub-tit">Textarea</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<textarea class="form-textarea" name="" rows="10" cols="8" placeholder="내용을 입력하세요.&#10;내용을 입력하세요."></textarea>
+									<textarea class="textarea" name="" rows="10" cols="8" placeholder="내용을 입력하세요.&#10;내용을 입력하세요."></textarea>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -813,7 +747,7 @@
 								<p class="guide-sub-tit">Textarea:disabled</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<textarea class="form-textarea" name="" rows="10" cols="8" disabled="disabled"></textarea>
+									<textarea class="textarea" name="" rows="10" cols="8" disabled="disabled"></textarea>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -828,7 +762,7 @@
 								<p class="guide-sub-tit">Textarea:readonly</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<textarea class="form-textarea" name="" rows="10" cols="8" readonly="readonly">내용 내용</textarea>
+									<textarea class="textarea" name="" rows="10" cols="8" readonly="readonly">내용 내용</textarea>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -847,13 +781,11 @@
 								<p class="guide-sub-tit">Select</p>
 								<div class="guide-cont">
 									<!-- select -->
-									<span class="select select-style1">
-										<select name="" id="">
-											<option value="">크림</option>
-											<option value="">베이지</option>
-											<option value="">그레이</option>
-										</select>
-									</span>
+									<select class="select" name="" id="">
+										<option value="">크림</option>
+										<option value="">베이지</option>
+										<option value="">그레이</option>
+									</select>
 									<!--// select -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -868,13 +800,11 @@
 								<p class="guide-sub-tit">Select:disabled</p>
 								<div class="guide-cont">
 									<!-- select -->
-									<span class="select select-style1">
-										<select name="" id="" disabled>
-											<option value="">크림</option>
-											<option value="">베이지</option>
-											<option value="">그레이</option>
-										</select>
-									</span>
+									<select class="select" name="" id="" disabled>
+										<option value="">크림</option>
+										<option value="">베이지</option>
+										<option value="">그레이</option>
+									</select>
 									<!--// select -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -995,246 +925,69 @@
 						<h3 class="guide-sub-tit">테이블</h3>
 						<div class="guide-cont">
 							<!-- table-area -->
-							<div class="table-area">
-								<p class="table-title">개인정보 이용 목적 및 수집항목</p>
+							<div class="table-area table-style1 tb-c">
+								<!-- 테이블 전체 가운데 정렬 시 tb-c(class) -->
 								<table>
-									<caption>개인정보 이용 목적 및 수집항목</caption>
 									<colgroup>
-										<col width="50%">
-										<col width="50%">
+										<col style="width: 33.3%;">
+										<col style="width: 33.3%;">
+										<col style="width: 33.3%;">
 									</colgroup>
 									<thead>
 										<tr>
-											<th>이용 목적</th>
-											<th>수집 항목</th>
+											<th>품목</th>
+											<th>평균 유통기한</th>
+											<th>권장 납품기한</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>주문자 정보 확인, 계약사항 및 주문내역 안내</td>
-											<td>이름, 휴대폰번호</td>
+											<td>라면</td>
+											<td class="tb-l">5개월</td>
+											<td class="tb-r">최소 2~3개월이상</td>
 										</tr>
 										<tr>
-											<td>상품 배송 및 배송정보 관리</td>
-											<td>수령인 정보<br>(이름, 휴대폰 번호, 주소)</td>
+											<td>과자류</td>
+											<td>6개월</td>
+											<td>최소 2~3개월이상</td>
 										</tr>
 										<tr>
-											<td>주문상품 결제</td>
-											<td>신용카드정보<br>(카드사명, 카드번호)</td>
+											<td>차류 (티백차, 잎차, 분말차 등)</td>
+											<td>12~24개월</td>
+											<td>최소 6개월이상</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
+							<p class="table-info">※ 상품특성에 따라 평균/권장 유통기한의 차이가 있을 수 있음</p>
 							<!-- // table-area -->
 							<br>
-							<!-- table -->
-							<!-- font-size: 12px; -->
-							<div class="info-table-area">
-								<!-- thead 없이 세로형 테이블 class="vertical-table"-->
-								<table class="vertical-table">
-									<caption>상품정보</caption>
+							<div class="table-area table-style2">
+								<!-- 테이블 전체 가운데 정렬 시 tb-c(class) -->
+								<table>
 									<colgroup>
-										<col width="35%">
-										<col width="">
+										<col style="width: 176px;">
+										<col />
 									</colgroup>
 									<tbody>
 										<tr>
-											<th>제품소재</th>
-											<td>버진 울 100%</td>
+											<th>상품코드</th>
+											<td>10013098</td>
 										</tr>
 										<tr>
-											<th>색상</th>
-											<td>그레이</td>
+											<th>고객사코드</th>
+											<td>-</td>
 										</tr>
 										<tr>
-											<th>치수</th>
-											<td>44, 48, 50, 52</td>
+											<th>제조사</th>
+											<td>디월트</td>
 										</tr>
 										<tr>
-											<th>제조사/수입자</th>
-											<td>CORNELIANI S.r.l/CORNELIANI S.r.l</td>
-										</tr>
-										<tr>
-											<th>제조국</th>
-											<td>슬로바키아</td>
+											<th>원산지</th>
+											<td>멕시코</td>
 										</tr>
 									</tbody>
 								</table>
-							</div>
-							<!-- // table -->
-
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// html 보기 -->
-						</div>
-					</div>
-
-					<h2 class="guide-tit" id="gList">리스트</h2>
-					<div class="guide-box">
-						<h3 class="guide-sub-tit">리스트 (양쪽정렬형)</h3>
-						<div class="guide-cont">
-							<ul class="sm-justify-list">
-								<li>
-									<span class="tit">신용카드</span>
-									<span class="price"><b>1,990,000</b>원<br>
-										<em class="txt-style2">삼성비자카드 / 일시불</em>
-									</span>
-								</li>
-							</ul>
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// html 보기 -->
-						</div>
-						<h3 class="guide-sub-tit">리스트 (왼쪽정렬라인형)</h3>
-						<div class="guide-cont">
-							<ul class="sm-left-list">
-								<li>
-									<span class="tit">받으시는 분</span>
-									<span class="txt">
-										신세계
-									</span>
-								</li>
-								<li>
-									<span class="tit">휴대폰 번호</span>
-									<span class="txt">
-										010-1234-5678
-									</span>
-								</li>
-								<li>
-									<span class="tit">주소</span>
-									<span class="txt">
-										[06062] 서울특별시 강남구<br>도산대로 420 (청담동)
-									</span>
-								</li>
-								<li>
-									<span class="tit">배송시 요청사항</span>
-									<span class="txt">
-										부재시 문앞에 놓아주세요.
-									</span>
-								</li>
-							</ul>
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// html 보기 -->
-						</div>
-						<h3 class="guide-sub-tit">리스트 (결제내역)</h3>
-						<div class="guide-cont">
-							<div class="sm-total-box">
-								<ul>
-									<li>
-										<span class="tit">상품금액</span>
-										<span class="price"><b>4,000,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">할인금액</span>
-										<span class="price"><b>(-) 2,000,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">배송비</span>
-										<span class="price"><b>0</b>원</span>
-									</li>
-									<li>
-										<span class="tit">포인트 사용</span>
-										<span class="price"><b>(-) 10,000</b>원</span>
-									</li>
-								</ul>
-								<p class="total">
-									<span class="tit">최종 결제금액</span>
-									<span class="price"><b>1,990,000</b>원</span>
-								</p>
-							</div>
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// html 보기 -->
-						</div>
-						<h3 class="guide-sub-tit">리스트 (결제내역2)</h3>
-						<div class="guide-cont">
-							<div class="sm-total-list">
-								<ul>
-									<li>
-										<span class="tit">상품금액</span>
-										<span class="price"><b>3,000,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">할인금액</span>
-										<span class="price"><b>(-) 1,300,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">배송비</span>
-										<span class="price"><b>0</b>원</span>
-									</li>
-									<li>
-										<span class="tit">포인트 사용</span>
-										<span class="price"><b>(-) 15,000</b>원</span>
-									</li>
-								</ul>
-							</div>
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// html 보기 -->
-						</div>
-						<h3 class="guide-sub-tit">리스트 (결제내역3)</h3>
-						<div class="guide-cont">
-							<div class="sm-total-list">
-								<ul class="sub-list">
-									<li>
-										<span class="tit">취소상품금액</span>
-										<span class="price"><b>2,000,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">할인금액</span>
-										<span class="price"><b>(-) 1,000,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">환불배송비</span>
-										<span class="price"><b>0</b>원</span>
-									</li>
-									<li>
-										<span class="tit">추가배송비</span>
-										<span class="price"><b>(-) 0</b>원</span>
-									</li>
-								</ul>
-								<p class="sub-total">
-									<span class="tit">최종 환불금액</span>
-									<span class="price"><b>1,000,000</b>원</span>
-								</p>
-								<ul class="sub-list">
-									<li>
-										<span class="tit">신용카드</span>
-										<span class="price"><b>(-) 1,000,000</b>원</span>
-									</li>
-									<li>
-										<span class="tit">신세계포인트</span>
-										<span class="price"><b>0</b>원</span>
-									</li>
-									<li>
-										<span class="card">삼성비자카드<br>(2020.12.01 11:22:30)</span>
-									</li>
-								</ul>
-								<p class="total">
-									<span class="tit">최종 결제금액</span>
-									<span class="price"><b>685,000</b>원</span>
-								</p>
 							</div>
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -1408,29 +1161,15 @@
 							<!-- 아코디언1 -->
 							<div class="product-info acdArea">
 								<dl>
-									<dt class="btn-tg acdBtn">상품정보</dt>
+									<dt class="btn-tg acdBtn on">아코디언버튼(click!!)</dt>
 									<dd class="acdCont">
-										<ul class="txt-indent">
-											<li><b>상품코드 : 20MO77SNMSS78</b></li>
-											<li>상품소재 : 100% 울</li>
-											<li>상세정보 : 브라운 울 소재로 이탈리아에서 제작,<br>
-												대담한 와이드 레그 실루엣,<br>
-												앞쪽에 두 개의 주름으로 부드러운 핏 강조<br>
-												숨겨진 후크, 앞면의 버튼 및 지퍼 여밈<br>
-												드라이클리닝으로 세탁</li>
-											<li><b>배송정보 : 해당 상품은 무료배송 됩니다.</b><br>
-												제주도를 포함한 도서/산간지역은<br>
-												<b>추가 배송비 3,000원</b></li>
-										</ul>
+										내용
 									</dd>
 								</dl>
 								<dl>
-									<dt class="btn-tg acdBtn">상품정보</dt>
-									<dd class="acdCont">
-										<ul class="txt-indent">
-											<li><b>상품코드 : 20MO77SNMSS78</b></li>
-											<li>상품소재 : 100% 울</li>
-										</ul>
+									<dt class="btn-tg acdBtn">아코디언버튼(click!!)</dt>
+									<dd class="acdCont" style="display: none;">
+										내용
 									</dd>
 								</dl>
 							</div>
@@ -1450,28 +1189,17 @@
 							</div>
 							<!--// js 보기 -->
 						</div>
-						<h3 class="guide-sub-tit">토글형1</h3>
+						<h3 class="guide-sub-tit">토글형(toggleSlide)</h3>
 						<div class="guide-cont">
 							<!-- 토글형1 -->
-							<div class="sm-shopping-area tgLineArea">
-								<p class="tit-line tgLineBtn">신세계 포인트
-									<span class="right-area">
-										<em class="txt-style1 tgHideTxt">토글 시 show/hide text</em>
-									</span>
-								</p>
-								<div class="line-cont tgLineCont">
-									내용
+							<div class="tgSlide">
+								<div class="tgSlideBtn">
+									토글버튼(click!!)
+								</div>
+								<div class="tgSlideCont ">
+									토글내용
 								</div>
 							</div>
-							<!--// 신세계 포인트 -->
-							<!-- 결제금액 -->
-							<div class="sm-shopping-area tgLineArea">
-								<p class="tit-line tgLineBtn">결제금액</p>
-								<div class="line-cont tgLineCont">
-									내용
-								</div>
-							</div>
-							<!--// 결제금액 -->
 							<!--// 토글형1 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -1524,77 +1252,6 @@
 							<!--// js 보기 -->
 						</div>
 
-						<h3 class="guide-sub-tit">주문상품정보 더보기</h3>
-						<div class="guide-cont">
-							<!-- 주문상품정보 -->
-							<div class="sm-order-area orderMoreArea">
-								<p class="tit-line">주문상품정보</p>
-								<div class="line-cont">
-									<ul class="sm-order-list">
-										<!-- 주문 상품 -->
-										<li>
-											<div class="sm-unit-cont1">
-												<!-- 상품 타이틀 -->
-												<div class="product-title">
-													<p class="brand">[CORNELIANI]</p>
-													<p class="product-name">해링본 싱글코트</p>
-													<p class="option opt-mid">옵션 : 그레이 / L</p>
-													<p class="discount-price">
-														<span class="sale">50%</span>
-														<span class="price"><b>1,000,000</b>원</span>
-														<span class="amount">/ 수량 : <b>1</b>개</span>
-													</p>
-													<div class="thumbnail">
-														<img src="../img/common/ex_product_01.png" alt="상품이미지">
-													</div>
-												</div>
-												<!--// 상품 타이틀 -->
-											</div>
-										</li>
-										<!--// 주문 상품 -->
-										<!-- 주문 상품 -->
-										<li>
-											<div class="sm-unit-cont1">
-												<!-- 상품 타이틀 -->
-												<div class="product-title">
-													<p class="brand">[CORNELIANI]</p>
-													<p class="product-name">해링본 싱글코트</p>
-													<p class="option opt-mid">옵션 : 그레이 / L</p>
-													<p class="discount-price">
-														<span class="sale">50%</span>
-														<span class="price"><b>1,000,000</b>원</span>
-														<span class="amount">/ 수량 : <b>1</b>개</span>
-													</p>
-													<div class="thumbnail">
-														<img src="../img/common/ex_product_01.png" alt="상품이미지">
-													</div>
-												</div>
-												<!--// 상품 타이틀 -->
-											</div>
-										</li>
-										<!--// 주문 상품 -->
-									</ul>
-									<!-- 전체보기 버튼 -->
-									<a href="javascript:;" class="btn btn-more-box moreBtn">총 <b>2건</b> 전체보기</a>
-									<!--// 전체보기 버튼 -->
-								</div>
-							</div>
-							<!--// 주문상품정보 -->
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// html 보기 -->
-							<!-- js 보기 -->
-							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
-								<textarea class="textarea">
-								</textarea>
-							</div>
-							<!--// js 보기 -->
-						</div>
 					</div>
 
 					<h2 class="guide-tit" id="gTab">탭</h2>

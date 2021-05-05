@@ -203,6 +203,7 @@
 button.btn-style-s1 {line-height:25px;}
 .btn-style-m1 {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-m2 {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-del {width:18px; height:18px; background:url(../images/common/btn_del.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 
 /* 플래그 */
 .flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 10px;}
@@ -240,21 +241,6 @@ button.btn-style-s1 {line-height:25px;}
 .rating-btn-area .star4 + .icon-star::after {content:"별점4"; width:144px;}
 .rating-btn-area .star5 + .icon-star::after {content:"별점5"; width:180px;}
 .rating-btn-area .btn-star-b {width:36px; height:36px; display:inline-block; font-size:0;}
-
-/* 인풋 */
-input::placeholder {color:#999; opacity:1;}
-input::-webkit-input-placeholder {color:#999; opacity:1;}
-input:-ms-input-placeholder {color:#999; opacity:1;}
-input:-mos-input-placeholder {color:#999; opacity:1;}
-
-textarea::placeholder {color:#999; opacity:1;}
-textarea::-webkit-input-placeholder {color:#999; opacity:1;}
-textarea:-ms-input-placeholder {color:#999; opacity:1;}
-textarea:-mos-input-placeholder {color:#999; opacity:1;}
-/* input.input {width:100%; height:35px; padding:0 10px; border:1px solid #bbb; line-height:35px; font-size:13px;}
-input.input:disabled {background:#f8f8f8; color:#999;}
-input.input:focus {border-color:#000;}
-input.input:read-only:focus {border-color:#bbb;} */
 
 /* 텍스트 관련 style */
 .point-color1 {color:#ed1c24;}
@@ -307,12 +293,62 @@ input.input:read-only:focus {border-color:#bbb;} */
 .tgLineCont {display:none;}
 
 /* 컨텐츠 레이아웃 */
-.align-area {width:100%;}
+.align-area {width:100%; display:inline-block;}
 .align-area > .left {float:left;}
 .align-area > .right {float:right; text-align:right;}
 
+/* 폼요소 */
+.form-layout {}
+.form-layout + .form-layout {margin-top:10px;}
+
+.spinner {width:112px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative;}
+.spinner input {width:100%; height:38px; line-height:38px; text-align:center; font-size:16px; vertical-align:top; font-weight: 500; color:#666;}
+.spinner .down {width:38px; height:38px; position:absolute; top:0; left:0; z-index:1; font-size:0; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
+.spinner .up {width:38px; height:38px; position:absolute; top:0; right:0; z-index:1; font-size:0; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
+
+::placeholder {color:#bbb; opacity:1;}
+::-webkit-input-placeholder {color:#bbb; opacity:1;}
+:-ms-input-placeholder {color:#bbb; opacity:1;}
+:-mos-input-placeholder {color:#bbb; opacity:1;}
+
+input.input {width:100%; height:38px; padding:11px 12px 10px; border:1px solid #bbb; font-size:14px;}
+input.input:disabled {background: #fafafa; border: 1px solid #e5e5e5; color: #d7d7d7;}
+input.input:read-only {background: #fafafa; border: 1px solid #bbb; color: #666;}
+input.input:read-only::placeholder {color: #666;}
+input.input:focus {border-color:#000; color:#000;}
+input.input:read-only:focus {border-color:#bbb;}
+
+select.select {width:100%; height:38px; padding:0 38px 0 12px; border: 1px solid #bbb; background:url(../images/common/arrow_select.svg) top 10px right 10px no-repeat #fff; font-size: 14px; line-height:38px; color: #666; vertical-align: top;}
+select.select:focus {border-color:#000; color:#000;}
+select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border: 1px solid #e5e5e5; color: #d7d7d7;}
+select.select:focus {border-color:#000; color:#000;}
+select.select:read-only:focus {border-color:#bbb;}
+
+.form-layout {width:100%; display:flex;}
+.form-layout .input {flex:1;}
+.form-layout .select {flex:1;}
+.form-layout .input-price {flex:1; width:100%; height:38px; padding:0 10px; border:1px solid #bbb; line-height:35px; font-size:13px;}
+.form-layout .input-price.focus {border-color:#000;}
+.form-layout .input-price .input {width:calc(100% - 18px); height:36px; border:0; padding:0; text-align:right; vertical-align:top;}
+.form-layout .input-price .won {width:15px; height:36px; line-height:36px; display:inline-block; vertical-align:top;}
+.form-layout .input-price.disabled {color:#bbb;}
+.form-layout .input-price input.input:disabled {color:#bbb; background:none;}
+.form-layout .bar {height:35px; line-height:33px; padding:0 5px; display:inline-block; vertical-align:middle;}
+.form-layout.form-email .input + .input {margin-left:5px;}
+.form-layout.form-email .input + .select {margin-left:5px;}
+.form-layout + .form-layout {margin-top:5px;}
+
+textarea.textarea {width:100%; height:163px; padding:11px 12px 10px; border:1px solid #bbb; font-size:14px;}
+textarea.textarea:disabled {background: #fafafa; border: 1px solid #e5e5e5; color: #d7d7d7;}
+textarea.textarea:read-only {background: #fafafa; border: 1px solid #bbb; color: #666;}
+textarea.textarea:read-only::placeholder {color: #666;}
+textarea.textarea:focus {border-color:#000; color:#000;}
+textarea.textarea:read-only:focus {border-color:#bbb;}
+
+
 /* 테이블 */
-.table-area table {margin-top:16px; border-top:1px solid #000;}
+.table-area  {width:100%; margin-top:16px; border-top:1px solid #000; overflow: hidden;}
+.table-area table {}
 .table-area.tb-c table {text-align:center;}
 .table-area.tb-r table {text-align:right;}
 .table-area table th.tb-l,
@@ -322,14 +358,23 @@ input.input:read-only:focus {border-color:#bbb;} */
 .table-area table th.tb-r,
 .table-area table td.tb-r {text-align:right;}
 
-.table-area.table-style1 table tr{border-bottom:1px solid #D7D7D7;}
+.table-area.table-style1 table {font-size:16px;}
+.table-area.table-style1 table tr {border-bottom:1px solid #D7D7D7;}
 .table-area.table-style1 table th,
-.table-area.table-style1 table td {height:60px;}
-.table-area.table-style1 table th{border-left:1px solid #D7D7D7; background:#f7f7f7; font-weight:normal;}
-.table-area.table-style1 table th:first-child{border-left:none;}
-.table-area.table-style1 table td{border-left:1px solid #D7D7D7;}
-.table-area.table-style1 table td:first-child{border-left:none;}
-.table-area .table-info{margin-top:16px;color:#999; font-size:14px;}
+.table-area.table-style1 table td {height:60px; padding:10px;}
+.table-area.table-style1 table th {border-left:1px solid #D7D7D7; background:#f7f7f7; font-weight:normal;}
+.table-area.table-style1 table th:first-child {border-left:none;}
+.table-area.table-style1 table td {border-left:1px solid #D7D7D7;}
+.table-area.table-style1 table td:first-child {border-left:none;}
+.table-area.table-style1 table tr {border-bottom:1px solid #D7D7D7;}
+
+.table-area.table-style2 {padding:11px 0 16px; border-bottom: 1px solid #d7d7d7;}
+.table-area.table-style2 table {color:#666; font-size:16px;}
+.table-area.table-style2 table th,
+.table-area.table-style2 table td {padding-top:5px; height:19px; text-align:left;}
+.table-area.table-style2 table th {padding-right:10px; font-weight:normal;}
+
+.table-info {margin-top:16px; color:#999; font-size:14px;}
 
 /* ==========================================================================
     유닛 관련
