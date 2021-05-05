@@ -522,39 +522,14 @@
       tab(); // 탭 
       toggleBtn(); // 토글버튼
       accordion(); // 아코디언
-      reviewToggle(); //리뷰토글
-      ratingBtnArea(); // 포토리뷰 별점버튼 js
-
+      
       /* ==========================================================================
-          현재페이지에서만 사용 js
+      현재페이지에서만 사용 js
       ========================================================================== */
+      ratingBtnArea(); // 포토리뷰 별점버튼 js
+      reviewToggle(); //리뷰토글
 
-
-      function scrollTab(){
-        $('.tab li').each(function(){ // scroll 탭 관련 js
-          $(this).bind('click', function(){
-            var winWidth = $(window).width();
-            var depId = $(this).attr('data-tab');
-            $('html, body').animate({ scrollTop: $('#' + depId).offset().top - 180}, 800, 'easeInOutExpo' );
-          });
-        });
-      }
-
-      function reviewToggle(){
-        // 리뷰토글
-        $('.review-text').each(function(){
-          $(this).on('click', function(e){
-            e.preventDefault();
-            $(this).closest('li').toggleClass('on')
-            $(this).closest('li').siblings().removeClass('on');
-            if($(this).hasClass('on')){
-              $(this).closest('li').removeClass('on');
-            } else {
-              $(this).closest('li').addClass('on');
-            }
-          })
-        });
-      }
+      
 
 
 

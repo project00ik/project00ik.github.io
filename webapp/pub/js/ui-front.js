@@ -355,6 +355,23 @@ function radioToggle(){
   });  
 }
 
+function reviewToggle() {
+  // 리뷰토글
+  $('.review-text').each(function () {
+    $(this).on('click', function (e) {
+      e.preventDefault();
+      var $reviewActive = $(this);
+      $reviewActive.closest('li').toggleClass('on')
+      $reviewActive.closest('li').siblings().removeClass('on');
+      if ($reviewActive.hasClass('on')) {
+        $reviewActive.closest('li').removeClass('on');
+      } else {
+        $reviewActive.closest('li').addClass('on');
+      }
+    })
+  });
+}
+
 function accordion(){
   // 아코디언
   var $acdName = $('.acdArea');
@@ -425,6 +442,17 @@ function pagination() {
     $(this).on('click', function () {
       $('.paging > a').removeClass('on');
       $(this).addClass('on');
+    });
+  });
+}
+
+function scrollTab() {
+  // scroll 탭 관련 js (미사용)
+  $('.tab li').each(function () { 
+    $(this).bind('click', function () {
+      var winWidth = $(window).width();
+      var depId = $(this).attr('data-tab');
+      $('html, body').animate({ scrollTop: $('#' + depId).offset().top - 180 }, 800, 'easeInOutExpo');
     });
   });
 }
