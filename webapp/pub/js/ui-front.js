@@ -419,6 +419,16 @@ function allChecked(){
   });
 }
 
+function pagination() {
+  // 페이지네이션
+  $('.paging > a').each(function () {
+    $(this).on('click', function () {
+      $('.paging > a').removeClass('on');
+      $(this).addClass('on');
+    });
+  });
+}
+
 /* ==========================================================================
     swiper(plugin)
 ========================================================================== */
