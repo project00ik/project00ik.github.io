@@ -196,15 +196,15 @@
                     <p>아직 등록된 상품문의가 없습니다.</p>
                   </li>
                   <li>
-                    <div class="tgLineArea">
-                      <div class="tgLineBtn tit">
+                    <div class="tgSlide">
+                      <div class="tgSlideBtn tit">
                         <div>답변대기</div>
                         <p>자재 사이즈 문의드립니다.</p>
                         <span>김**</span>
                         <span class="date">2020.08.20</span>
                         <a href="#" class="btn-tg">더보기</a>
                       </div>
-                      <div class="tgLineCont content">
+                      <div class="tgSlideCont content">
                           <p>문의구분 : 고객사(VOC) <em>협력사 : ㈜아이씨알</em></p>
                           <div>
                               <p class="question">DJR188RTE 제품 성능이 어떤가요?</p>
@@ -214,15 +214,15 @@
                     </div>
                   </li>
                   <li>
-                    <div class="tgLineArea">
-                      <div class="tgLineBtn tit">
+                    <div class="tgSlide">
+                      <div class="tgSlideBtn tit">
                         <div>답변대기</div>
                         <p>자재 사이즈 문의드립니다.</p>
                         <span>김**</span>
                         <span class="date">2020.08.20</span>
                         <a href="#" class="btn-tg">더보기</a>
                       </div>
-                      <div class="tgLineCont content">
+                      <div class="tgSlideCont content">
                           <p>문의구분 : 고객사(VOC) <em>협력사 : ㈜아이씨알</em></p>
                           <div>
                               <p class="question">DJR188RTE 제품 성능이 어떤가요?</p>
@@ -232,15 +232,15 @@
                     </div>
                   </li>
                   <li>
-                    <div class="tgLineArea">
-                      <div class="tgLineBtn tit on">
+                    <div class="tgSlide">
+                      <div class="tgSlideBtn tit on">
                         <div class="done">답변완료</div>
                         <p>자재 사이즈 문의드립니다.</p>
                         <span>김**</span>
                         <span class="date">2020.08.20</span>
                         <a href="#" class="btn-tg">더보기</a>
                       </div>
-                      <div class="tgLineCont content">
+                      <div class="tgSlideCont content">
                           <p>문의구분 : 고객사(VOC) <em>협력사 : ㈜아이씨알</em></p>
                           <div>
                               <p class="question">DJR188RTE 제품 성능이 어떤가요?</p>
@@ -405,43 +405,10 @@
       toggleBtn(); // 토글버튼
       accordion(); // 아코디언
       /* ==========================================================================
-          현재페이지에서만 사용 js
+      현재페이지에서만 사용 js
       ========================================================================== */
-
-
-      function scrollTab(){
-        $('.tab li').each(function(){ // scroll 탭 관련 js
-          $(this).bind('click', function(){
-            var winWidth = $(window).width();
-            var depId = $(this).attr('data-tab');
-            $('html, body').animate({ scrollTop: $('#' + depId).offset().top - 180}, 800, 'easeInOutExpo' );
-          });
-        });
-      }
-
-        $('.tgLineArea').closest('.tgLineArea').find('.tgLineCont').slideUp();
-         $('.tgLineArea').each(function(){
-          $(this).find('.tgLineBtn').on('click', function(e){
-          var $active = $(this);
-          e.preventDefault();
-          $active.toggleClass("on");
-          if($active.hasClass('on')){
-            $active.closest('.tgLineArea').addClass('open');
-            $active.closest('.tgLineArea').find('.tgLineCont').slideDown();
-          } else {
-            $active.closest('.tgLineArea').removeClass('open');
-            $active.closest('.tgLineArea').find('.tgLineCont').slideUp();
-          }
-         });
-        });
-
-
-         $('.paging > a').each(function(){
-          $(this).on('click', function(e){
-            $('.paging > a').removeClass('on');
-            $(this).addClass('on');
-         });
-        });
+      toggleSlideArea(); // // 토글영역(slide모션)(상품문의)
+      pagination(); // 페이지네이션
 
     });
   </script>
