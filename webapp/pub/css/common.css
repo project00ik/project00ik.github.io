@@ -214,8 +214,21 @@ button.btn-style-s1 {line-height:25px;}
 .btn-del {width:18px; height:18px; background:url(../images/common/btn_del.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 .btn-small-blue {width:98px; height:28px; line-height:28px; text-align:center; font-size:14px; color:#fff; background:#346DD0;}
 .btn-xs-small {width:78px; height:20px; line-height:18px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
-.btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat #fff;}
-.btn-like-l.on {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat;}
+.btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:#fff; position: relative;}
+.btn-like-l::after {content:""; width: 36px; height: 36px; margin:-18px 0 0 -18px;  display:inline-block; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
+.btn-like-l.on {}
+.btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s; animation-name:btnLike; opacity:1; transform:scale(1);}
+@keyframes btnLike {
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.3);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
 .btn-tooltip {position: relative;}
 .tooltip-box {display:none; width: 180px; padding:14px 16px; border-radius: 10px; background: #fff; border: 1px solid #d7d7d7; position:absolute; top:30px; left:11px; z-index:2;}
 .tooltip-box::before {content: ""; width: 10px; height: 6px; display:inline-block; background: url(../images/common/arrow_tooltip.svg) 0 0 no-repeat; position: absolute; top:-6px; left:20px; z-index:1;}
