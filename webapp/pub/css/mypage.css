@@ -1,9 +1,6 @@
 @charset "utf-8";
-.btn-small-blue {width: 98px; height: 28px; line-height: 28px; text-align: center; font-size: 14px; color: #fff; background: #346DD0;}
-.btn-xs-small {width: 78px; height: 20px; display: block; line-height: 18px; color: #333; font-size: 12px; text-align: center; border: 1px solid #bbb;}
 
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
-.tab-style3 ~ .tabCont {padding: 80px 40px;}
 
 .notice-wrap .cont-notice .notice-area .tit-area .tit-type1 {margin-bottom: 0;}
 .tit-area > * {margin-bottom: 0;}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+  <g id="arrow" fill="#fff">
+    <path d="M 8.93248176574707 5.5 L 1.067518353462219 5.5 L 5 0.7810220122337341 L 8.93248176574707 5.5 Z" stroke="none"/>
+    <path d="M 5 1.562044143676758 L 2.135036468505859 5 L 7.864963531494141 5 L 5 1.562044143676758 M 5 0 L 10 6 L 0 6 L 5 0 Z" stroke="none" fill="#d7d7d7"/>
+  </g>
+</svg>

@@ -73,6 +73,59 @@
 .main .bidding-info-box .date {margin-top:30px; color:#666;}
 
 /* ==========================================================================
+    상품상세
+========================================================================== */
+.pro-detail-top {font-size:0;}
+.pro-detail-photo {width:590px; font-size:14px; display:inline-block;}
+.pro-detail-slide {width:100%; padding-left:90px; position: relative;}
+.pro-detail-slide .swiper-container {width: 100%; margin-left: auto; margin-right: auto;}
+.pro-detail-slide .swiper-slide {background-size: cover; background-position: center; overflow: hidden;}    
+.pro-detail-slide .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
+.pro-detail-slide .swiper-slide .product-img {width:500px; height:500px; overflow: hidden;}
+.pro-detail-slide .productDetaileSlide {width:70px; height:390px; position:absolute; top:0; left:0; z-index:1;}
+.pro-detail-slide .productDetaileSlide .swiper-slide {width:70px; height:70px;}
+.pro-detail-slide .swiper-slide-thumb-active {opacity:1; border: 2px solid #346dd0;}
+.pro-detail-slide .swiper-button-next,
+.pro-detail-slide .swiper-button-prev {display:none;}
+.pro-detail-reporting {width:100%; margin-top:20px; padding:16px 22px; border: 1px solid #d7d7d7; overflow: hidden;}
+.pro-detail-reporting > p {font-size:16px; float:left;}
+.pro-detail-reporting  .btn-style-s1 {float:right; margin-left:22px;}
+.pro-detail-info {width:570px; margin-left:40px; font-size:14px; display:inline-block; vertical-align: top;}
+.pro-detail-info .flag-area {}
+.pro-detail-info .brand {margin-top:10px; font-size: 16px;}
+.pro-detail-info .product-name {margin-top:10px; font-weight: 500; font-size: 24px;}
+.pro-detail-info .product-info {margin-top:10px; font-size: 16px; color: #999;}
+.pro-detail-info .group-buying {width:100%; margin-top:20px; padding:12px 20px; font-size:16px; color: #fff; border-radius: 21.5px 21.5px 21.5px 0px; background: #12b5cf; overflow: hidden;}
+.pro-detail-info .price-area {margin-top:20px;}
+.pro-detail-info .price-area .price {display:inline-block; font-size:22px;}
+.pro-detail-info .price-area .price > b {font-size:32px; font-weight:700; vertical-align: text-bottom;}
+.pro-detail-info .price-area .flag-txt {margin:3px 0 0 2px;}
+.pro-detail-info .satis-large {display:inline-block; margin-top:6px;}
+.pro-detail-info .satis-large > p {display:inline-block;}
+.pro-detail-info .satis-large .tit {margin-left:10px; font-size: 14px; text-align: right; color: #666;}
+.pro-detail-info .satis-large .tit > * {vertical-align: top;}
+.pro-detail-info .table-area {margin-top:10px;}
+.pro-detail-info .option-area {margin-top:20px;}
+.pro-detail-info .option-result {margin-top:20px;}
+.pro-detail-info .option-box {width:100%; margin-top: 10px; padding:20px; position: relative; background: #f5f5f5;}
+.pro-detail-info .option-box:first-child {margin-top:0;}
+.pro-detail-info .option-box .btn-del {position: absolute; top:20px; right:20px;}
+.pro-detail-info .option-box .option-name {font-size:16px;}
+.pro-detail-info .option-box .option-price {width:100%; margin-top:20px; padding-top:20px; border-top:1px solid #d7d7d7; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
+.pro-detail-info .option-box .option-price > li {flex:1;}
+.pro-detail-info .option-box .option-price > li:last-child {flex:2; text-align: right;}
+.pro-detail-info .option-box .option-price .price {font-size:20px; display:inline-block}
+.pro-detail-info .option-box .option-price .btn-xs-small {margin-left:10px;}
+.pro-detail-info .option-box .option-price .price > b {font-size:30px; vertical-align:text-bottom; font-weight: 700;}
+.pro-detail-info .option-box .minimum-order {margin-top:3px; font-size: 13px; color: #666;}
+.pro-detail-info .option-box .normal-price {font-size: 16px; color: #999; text-decoration:line-through;}
+.pro-detail-info .total {margin-top:20px; padding:20px 0 40px; border-top:1px solid #000; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
+.pro-detail-info .total .tit {flex: 1; font-size: 23px; font-weight: 500; color: #333;}
+.pro-detail-info .total .total-price {flex: 2; text-align: right;}
+.pro-detail-info .total .total-price .price {font-size: 28px;}
+.pro-detail-info .total .total-price .price > b {font-size: 42px; font-weight:700;}
+.pro-detail-info .total .price-info {font-size: 14px; color: #999;}
+/* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
    @media only screen and (max-width:1200px){

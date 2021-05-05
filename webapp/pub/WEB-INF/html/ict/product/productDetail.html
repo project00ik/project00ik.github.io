@@ -11,47 +11,6 @@
   <meta property="og:title" content="ktcommerce" />
   <!-- style -->
   <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
-  <style>
-    .swiper-container {
-        width: 100%;
-        height: 300px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .swiper-slide {
-        background-size: cover;
-        background-position: center;
-      }
-
-      .mySwiper2 {
-        height: 80%;
-        width: 100%;
-      }
-
-      .mySwiper {
-        height: 20%;
-        box-sizing: border-box;
-        padding: 10px 0;
-      }
-
-      .mySwiper .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
-      }
-
-      .mySwiper .swiper-slide-thumb-active {
-        opacity: 1;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-  </style>
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
 </head>
@@ -209,48 +168,223 @@
       <div class="sub-content">
         <div class="product-detail">
           <div class="pro-detail-top">
-            <div class="pro-detail-top-area">
-              <div class="pro-detail-slide-wrap">
-                <div class="pro-detail-photo">
-                  <div class="pro-detail-slide">
-                    <!-- Swiper -->
-                    <div class="swiper-container productDetaileSlide">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="../../../../images/product/img_review_ex.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="../../../../images/product/img_review_ex2.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="../../../../images/product/img_review_ex3.png" />
-                        </div>
+            <div class="pro-detail-photo">
+              <div class="pro-detail-slide">
+                <!-- 상품 슬라이드 Swiper -->
+                <div thumbsSlider="" class="swiper-container productDetaileSlide2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="product-img">
+                        <img src="../../../../images/product/img_review_ex.png" />
                       </div>
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
                     </div>
-                    <div thumbsSlider="" class="swiper-container productDetaileSlide2">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <img src="" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="../../../../images/product/img_review_ex.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="../../../../images/product/img_review_ex2.png" />
-                        </div>
-                        <div class="swiper-slide">
-                          <img src="../../../../images/product/img_review_ex3.png" />
-                        </div>
+                    <div class="swiper-slide">
+                      <div class="product-img">
+                        <img src="../../../../images/product/img_review_ex2.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-img">
+                        <img src="../../../../images/product/img_review_ex3.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-img">
+                        <img src="../../../../images/product/img_review_ex.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="product-img">
+                        <img src="../../../../images/product/img_review_ex2.png" />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="pro-option">
-
+                <!--// 상품 슬라이드 Swiper -->
+                <!-- 썸네일 슬라이드 Swiper -->
+                <div class="swiper-container productDetaileSlide">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../../../../images/product/img_review_ex.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../../../../images/product/img_review_ex2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../../../../images/product/img_review_ex3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../../../../images/product/img_review_ex.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../../../../images/product/img_review_ex2.png" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev">이전</div>
+                  <div class="swiper-button-next">다음</div>
+                </div>
+                <!--// 썸네일 슬라이드 Swiper -->
+              </div>
+              <div class="pro-detail-reporting">
+                <p>이미지 또는 상품정보에 수정이 필요한가요?</p>
+                <button class="btn btn-style-s1">제보하기</button>
+              </div>
+            </div>
+            <div class="pro-detail-info">
+              <div class="flag-area">
+                <div class="flag-txt blue">MD추천</div>
+                <div class="flag-txt blue">특가전</div>
+                <div class="flag-txt blue">공동구매</div>
+                <!-- 
+                <div class="flag-txt blue">특가전</div>
+                <div class="flag-txt blue">최저가</div>
+                <div class="flag-txt blue">신규출시</div>
+                -->
+              </div>
+              <p class="brand">DeWalt</p>
+              <p class="product-name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+              <p class="product-info">편리한 그립감, 목재 트리밍 및 규격 절단 작업 / 배터리, 충전기, 날 별도구매</p>
+              <p class="group-buying">
+                <span class="tit">공동구매 구매 찬스</span>
+                <span class="date">7일 23:42:01</span>
+                <span class="buying">현재 10,000개 구매</span>
+              </p>
+              <div class="price-area align-area">
+                <div class="left">
+                  <p class="price"><b>100,000</b>원</p>
+                  <a href="javarcript:;" class="btn-tooltip">
+                    <span class="flag-txt blue ">볼륨DC</span>
+                    <div class="tooltip-box">
+                      <p>1~9개 : 100,000원/EA</p>
+                      <p>10~999개 : 90,000원/EA</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="right">
+                  <div class="satis-large">
+                    <p class="rating">
+                      <span class="star-m star4">별점</span><!-- star0 ~ star5 -->
+                    </p>
+                    <p class="tit">상품리뷰(<span class="num">114</span>)</p>
+                  </div>
                 </div>
               </div>
+              <!-- 테이블 -->
+              <div class="table-area table-style2"><!-- 테이블 전체 가운데 정렬 시 tb-c(class) -->
+                <table>
+                  <colgroup>
+                    <col style="width: 176px;">
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>상품코드</th>
+                      <td>10013098</td>
+                    </tr>
+                    <tr>
+                      <th>고객사코드</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>제조사</th>
+                      <td>디월트</td>
+                    </tr>
+                    <tr>
+                      <th>원산지</th>
+                      <td>멕시코</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--// 테이블 -->
+              <!-- 옵션 선택 영역 -->
+              <div class="option-area">
+                <div class="form-area">
+                  <select class="select">
+                    <option value="" selected>옵션을 선택해 주세요.</option>
+                    <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
+                  </select>
+                </div>
+                <div class="form-area">
+                  <select class="select">
+                    <option value="" selected>옵션을 선택해 주세요.</option>
+                    <option value="">6.5인치 / 3700RPM</option>
+                  </select>
+                </div>
+              </div>
+              <!--// 옵션 선택 영역 -->
+              <!-- 옵션 선택 시 노출 영역 -->
+              <div class="option-result">
+                <!-- 옵션 -->
+                <div class="option-box">
+                  <div class="option-name">
+                    <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                    <p class="option">6.5인치 / 3700RPM</p>
+                  </div>
+                  <ul class="option-price">
+                    <li>
+                      <div class="spinner">
+                        <input type="text" value="1" maxlength="3" title="수량조절">
+                        <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+                      </div>
+                      <p class="minimum-order">(최소 주문수량 1개)</p>
+                    </li>
+                    <li>
+                      <p class="price"><b>100,000</b>원</p>
+                      <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+                    </li>
+                  </ul>
+                  <button class="btn btn-del">옵션삭제</button>
+                </div>
+                <!--// 옵션 -->
+                <!-- 옵션 -->
+                <div class="option-box">
+                  <div class="option-name">
+                    <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                    <p class="option">6.5인치 / 3700RPM</p>
+                  </div>
+                  <ul class="option-price">
+                    <li>
+                      <div class="spinner">
+                        <input type="text" value="999" maxlength="3" title="수량조절">
+                        <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+                      </div>
+                      <p class="minimum-order">(최소 주문수량 1개)</p>
+                    </li>
+                    <li>
+                      <p class="normal-price">99,900,000</p>
+                      <p class="price"><b>89,910,000</b>원</p>
+                      <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+                    </li>
+                  </ul>
+                  <button class="btn btn-del">옵션삭제</button>
+                </div>
+                <!--// 옵션 -->
+              </div>
+              <!--// 옵션 선택 시 노출 영역 -->
+              <!-- 총 구매 금액 -->
+              <div class="total">
+                <p class="tit">총 구매 금액</p>
+                <div class="total-price">
+                  <p class="price"><b>90,010,000</b>원</p>
+                  <p class="price-info">(표준납기일 7일 / VAT포함 110,000원)</p>
+                </div>
+              </div>
+              <!--// 총 구매 금액 -->
+              <!-- 버튼 영역 -->
+              <div class="btn-full-area">
+                <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
+                <a href="javascript:;" class="btn btn-style-l1">장바구니</a>
+                <a href="javascript:;" class="btn btn-style-l2">바로구매</a>
+              </div>
+              <!--// 버튼 영역 -->
+              <!-- 버튼 영역(품절 시) -->
+              <!-- <div class="btn-full-area">
+                <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
+                <a href="javascript:;" class="btn btn-style-l3">품절</a>
+                <a href="javascript:;" class="btn btn-style-l4">재입고알림</a>
+              </div> -->
+              <!--// 버튼 영역(품절 시) -->
             </div>
           </div>
           <div class="tab-area tabArea">
@@ -261,8 +395,7 @@
               <li class="tabBtn" data-tab="rvTab4">TAB4</li>
             </ul>
             <div class="tab-cont tabCont" id="rvTab1">
-              TAB1 내용<br/>
-              TAB1 내용<br/>TAB1 내용<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>TAB1 내용<br/>
+              
             </div>
             <div class="tab-cont tabCont" id="rvTab2">
               TAB2 내용
@@ -359,13 +492,16 @@
       ========================================================================== */
 
       // 상품상세 슬라이드
+      // 썸네일
       var productDetaileSlide = new Swiper(".productDetaileSlide", {
+        direction: 'vertical',
         spaceBetween: 10,
-        slidesPerView: 4,
+        slidesPerView: 5,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
       });
+      // 상품이미지
       var productDetaileSlide2 = new Swiper(".productDetaileSlide2", {
         spaceBetween: 10,
         navigation: {
