@@ -341,9 +341,18 @@
               </div>
               <!-- //리뷰가 없는경우 -->
             </div>
+            <div class="paging mo-hide">
+              <a href="#" class="btn prev">previous</a>
+              <a href="#" class="btn on">1</a>
+              <a href="#" class="btn ">2</a>
+              <a href="#" class="btn ">3</a>
+              <a href="#" class="btn ">4</a>
+              <a href="#" class="btn ">5</a>
+              <a href="#" class="btn next active">Next</a>
+            </div>
           </div>
           <div class="tab-cont tabCont" id="rvTab3">
-            TAB3 내용
+            <button onclick="lyOpen('qnaWritePopup')" class="btn btn-small-blue">상품문의</button>
           </div>
           <div class="tab-cont tabCont" id="rvTab4">
             TAB4 내용
@@ -467,6 +476,51 @@
                     <p class="cot"><b>0</b> / 3000</p>
                   </div>
                 </li>
+                <li class="pro-upload">
+                  <p class="pop-layout-txt">상품 사진 첨부 또는 동영상 URL를 업로드해 보세요.</p>
+                  <p class="pop-layout-txt2">첨부파일은 JPG, GIF, PNG만 가능하며, 파일당 최대 10MB, 5개까지 등록가능합니다. <br/>상품과 무관한 사진을 첨부한 경우, 통보 없이 삭제될 수 있습니다.</p>
+                  <!-- 이미지 업로드 영역 -->
+									<div class="upload-area">
+										<!-- 썸네일 -->
+										<div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+                    <div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+                    <div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+										<div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+										<!--// 썸네일 -->
+										<!-- 이미지 추가버튼 -->
+										<div class="img-upload-btn">
+											<label>
+												<input type="file" id="input_imgs" multiple/>
+											</label>
+										</div>
+										<!--// 이미지 추가버튼 -->
+									</div>
+									<!--// 이미지 업로드 영역 -->
+                  <div class="upload-url">
+                    <label for="videourl">동영상 URL</label>
+                    <input type="text" class="input" id="videourl" name="" value="" placeholder="">
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -479,6 +533,144 @@
     </div>
   </div>
   <!--// 리뷰작성 팝업 -->
+
+  <!-- 1:1문의 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="qnaWritePopup"><!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>1:1문의</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <p class="pop-layout-txt">상품 사진 첨부 또는 동영상 URL를 업로드해 보세요.</p>
+            <div class="pop-layout pop-write">
+              <ul>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-type">문의유형<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <select class="select" id="q-type">
+                        <option value="">상품</option>
+                        <option value="상품1">상품1</option>
+                        <option value="상품2">상품2</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-divi">문의구분</label>
+                    <div class="form-layout">
+                      <select class="select" id="q-divi">
+                        <option value="">고객사(VOC)</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-contr">협력사</label>
+                    <div class="form-layout form-search">
+                      <input type="text" class="input" id="q-contr">
+                      <button class="btn btn-search2">검색</button>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-tit">제목<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <input type="text" class="input" id="q-tit">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-cont">문의내용<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <textarea class="textarea" name="" id="q-cont" placeholder="상품과 관련한 문의만 작성 바랍니다."></textarea>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-rec">처리완료수신</label>
+                    <div class="form-layout form-checkradio">
+                      <label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>메일</span></label>
+                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>SMS </span></label>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="q-name">상품명</label>
+                    <div class="form-layout">
+                      <input type="text" class="input" id="q-name" name="" value="" placeholder="DCS39IN 전동스킬 18V 충전 원형톱(베어툴)" disabled="">
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-upload">
+                  <div class="pop-ip-area">
+                    <label>파일첨부</label>
+                    <div class="form-layout form-flexnone">
+                      <p class="pop-layout-txt2">첨부파일은 JPG, GIF, PNG만 가능하며, 파일당 최대 10MB, 5개까지 등록 가능합니다.</p>
+                      <!-- 이미지 업로드 영역 -->
+                      <div class="upload-area">
+                        <!-- 썸네일 -->
+                        <div class="upload-thumbnail">
+                          <span class="img-thumbnail">
+                            <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                          </span>
+                          <button class="img-del-btn">삭제</button>
+                        </div>
+                        <div class="upload-thumbnail">
+                          <span class="img-thumbnail">
+                            <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                          </span>
+                          <button class="img-del-btn">삭제</button>
+                        </div>
+                        <div class="upload-thumbnail">
+                          <span class="img-thumbnail">
+                            <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                          </span>
+                          <button class="img-del-btn">삭제</button>
+                        </div>
+                        <div class="upload-thumbnail">
+                          <span class="img-thumbnail">
+                            <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                          </span>
+                          <button class="img-del-btn">삭제</button>
+                        </div>
+                        <!--// 썸네일 -->
+                        <!-- 이미지 추가버튼 -->
+                        <div class="img-upload-btn">
+                          <label>
+                            <input type="file" id="input_imgs" multiple/>
+                          </label>
+                        </div>
+                        <!--// 이미지 추가버튼 -->
+                      </div>
+                      <!--// 이미지 업로드 영역 -->
+                    </div>
+                  </div>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">등록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 1:1문의 팝업 -->
 
 
   <!-- 퀵메뉴 -->

@@ -384,10 +384,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
 .check-style1 input + i {width: 22px; height: 22px; background: #fff; border: 1px solid #bbb; display:inline-block; }
-.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 50% no-repeat #fff; display:inline-block; border:1px solid #bbb; background-size:12.826px 8.413px;}
+.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 51% no-repeat #fff; display:inline-block; border:1px solid #bbb; background-size:12.826px 8.413px;}
 .check-style1 input:disabled + i {width: 22px; height: 22px; background: #fafafa; border: 1px solid #e5e5e5;}
 .check-style1 input:checked:disabled + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox_disabled.svg) 50% 50% no-repeat #fafafa; border: 1px solid #e5e5e5;}
-.check-style1 > span {margin-left:7px; font-weight:400; font-size:16px;}
+.check-style1 > span {margin-left:10px; font-weight:400; font-size:16px;}
 
 .check-style1 > b {margin-left:7px; font-weight:500; font-size:14px;}
 .check-style1 .num {vertical-align:text-bottom; font-weight:400; line-height:1.4;}
@@ -504,7 +504,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 
 /* 파일 업로드 */
-.upload-area {padding:20px 0; overflow:hidden; font-size:0;}
+.upload-area {padding:20px 0 10px; overflow:hidden; font-size:0;}
 .upload-area .upload-thumbnail {width:80px; height:80px; display:inline-block; font-size:0; position:relative;}
 .img-thumbnail {width:100%; height:100%; overflow:hidden; display:inline-block;}
 .img-thumbnail img {width: 100%;}
