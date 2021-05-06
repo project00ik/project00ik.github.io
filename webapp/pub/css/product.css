@@ -57,7 +57,7 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
-    .product-detail .tab-cont{padding:0}
+    .product-detail .tab-cont{padding:30px 0}
     .product-detail .qna-wrap .tit{line-height:20px;text-align: left;color:#999;font-size: 14px;padding:20px 19px}
     .product-detail .qna-wrap .tit::after {content: ""; display: block; clear: both;}
     .product-detail .qna-wrap .tit > div{width:19%;}
