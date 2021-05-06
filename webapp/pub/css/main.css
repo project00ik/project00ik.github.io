@@ -35,7 +35,7 @@
 .main .cont-main-wrap {width:100%; max-width:1200px; margin:0 auto;}
 .main .cont-main {margin:100px auto 0;}
 .main .cont-main .tab-btn-list {text-align:center;}
-.main .cont-main-wrap .tab-cont {margin-top:30px;}
+.main .cont-main-wrap .tab-cont {}
 .main .cont-main-wrap .cont-mdpick {width:1200px;}
 .main .slide-type-arrow {width:100%; padding:0 5px; position:relative;}
 .main .slide-type-arrow .mdpick-slide .unit-type1 {width:290px;}
@@ -123,7 +123,7 @@
 .product-total .tit {flex: 1; font-size: 23px; font-weight: 500; color: #333;}
 .product-total .total-price {flex: 2; text-align: right;}
 .product-total .total-price .price {font-size: 28px;}
-.product-total .total-price .price > b {font-size: 42px; font-weight:700;}
+.product-total .total-price .price > b {font-size: 42px; font-weight:700; vertical-align: text-bottom;}
 .product-total .price-info {font-size: 14px; color: #999;}
 
 .product-banner-area {width:100%; margin:100px 0; display:-webkit-box; display:-ms-flexbox; display:flex;}
@@ -146,7 +146,7 @@
 .ly-detail .option-select-area + .option-list {margin-top:10px;}
 .ly-detail .option-select-area > li + li {margin-top:5px;}
 .ly-detail .btn-full-area {width:calc(100% + 40px); margin:0 -20px;}
-.ly-detail .option-result {height:381px; overflow-x: hidden; overflow-y: auto;}
+.ly-detail .option-result {height:235px; overflow-x: hidden; overflow-y: auto;}
 
 .ly-detail .option-list {overflow-x:hidden; overflow-y:auto; max-height:174px;}
 .ly-detail .option-list > li {padding:15px 0; height:58px; line-height:25px;}
@@ -163,6 +163,10 @@
 .ly-detail .option-del {width:20px; height:20px; margin-left:7px; background:url(../img/common/btn_option_close.png) 0 0 no-repeat; background-size:20px auto; display:inline-block; font-size:0;}
 .ly-detail .btn-area {padding-top:20px;}
 .detaileLyDim {width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,0.6); position:fixed; top:0; left:0; z-index:101;}
+
+.product .tit-type1-1 {text-align: center;}
+
+.personalization-area {margin:100px 0 120px;}
 
 /* ==========================================================================
    Media Queries for Responsive Design.
@@ -243,12 +247,26 @@
     .pro-detail-info .group-buying .buying {float: right;}
     .pro-detail-info .satis-large {margin-top:8px;}
     .pro-detail-info .table-area {margin-top:18px;}
-    
+    .option-box {padding:16px 20px; margin-top:5px;}
+    .option-box .option-name {font-size:13px;}
+    .option-box .normal-price {font-size:13px;}
+    .option-box .option-price {margin-top:16px; height:79px; padding-top:12px; align-items: flex-end;}
+    .option-box .option-price .price {width:100%; font-size: 12px; text-align:right;}
+    .option-box .option-price .price > b {font-size: 22px;}
+    .option-box .option-price .btn-xs-small {margin:5px 0 0;}
+    .option-result {margin-top:16px;}
+    .product-total {margin-top:16px; padding:20px 0;}
     .product-banner-area {width:100%; margin:30px 0; padding:0 20px; display:block;}
     .product-banner-area > li {flex:1;}
     .product-banner-area > li + li {margin-left:0; margin-top:10px;}
     .action-bar {display:block;}
     .option-pc-area {display:none;}
+    .product-total .total-price .price {font-size: 22px;}
+    .product-total .total-price .price > b {font-size: 32px;}
+    .product-total .price-info {margin-top:5px; font-size:12px;}
+    .product-total .tit {font-size:18px;}
+    .option-box .btn-del {top:14px; right:14px;}
+    .personalization-area {margin:60px 0 120px; padding:0 15px;}
 
     .btn-full-area {padding:20px; background:#fff; border-top:1px solid #d7d7d7;}
 }
@@ -274,7 +292,10 @@
 
 }
 @media only screen and  (max-width:320px){ /* iphoneSE */
-
+    .ly-detail .option-result {height:150px;}
+    .product-total .total-price .price > b {font-size: 30px;}
+    .product-total .price-info {font-size: 11px;}
+    .option-box {padding:14px;}
 }
 @media only screen and  (max-height:568px){ /* 아이폰SE */
 
