@@ -494,6 +494,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .unit-type1 .unit-layer .unit-under-btn .btn-buynow {font-size:18px;}
 .unit-type1 .unit-layer .unit-under-btn .btn-cart {width:36px; height:100%; font-size:0; background:url(../images/common/icon_cart_w.svg) 50% 50% no-repeat;}
 .unit-type1 .unit-layer .unit-under-btn .btn-like {width:36px; height:100%; font-size:0; margin-left:20px; background:url(../images/common/icon_like_w.svg) 50% 50% no-repeat;}
+.unit-type1 .unit-layer .unit-under-btn .btn-like.on {background:url(../images/common/icon_like_w_on.svg) 50% 50% no-repeat;}
 .unit-type1 .unit-layer .unit-under-btn .btn-restock {width:100%; height:100%; background:#000; color:#fff; text-align: center;}
 .unit-type1 .unit-layer {display:none;}
 .unit-type1:hover .unit-layer {display:block;}
@@ -766,6 +767,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .unit-type1 .unit-layer .unit-under-btn .btn-buynow {width:90px; font-size:15px; border:1px solid #bbb; border-radius:15px; text-align:center;}
     .unit-type1 .unit-layer .unit-under-btn .btn-cart {width:24px; height:100%; font-size:0; background:url(../images/common/mo_icon_cart_g.svg) 50% 50% no-repeat;}
     .unit-type1 .unit-layer .unit-under-btn .btn-like {width:24px; height:100%; font-size:0; margin-left:10px; background:url(../images/common/mo_icon_like_g.svg) 50% 50% no-repeat;}
+    .unit-type1 .unit-layer .unit-under-btn .btn-like.on {background:url(../images/common/mo_icon_like_g_on.svg) 50% 50% no-repeat;}
     .unit-type1 .unit-layer {display:block;}
     .best-list .unit-type1 {height:307px;}
     .product-1st .flag-area {margin-bottom:6px;}
