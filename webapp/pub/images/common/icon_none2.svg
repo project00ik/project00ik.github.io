@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="ic_notice" transform="translate(-480 -157)">
+    <g id="타원_15" data-name="타원 15" transform="translate(480 157)" fill="none" stroke="#d7d7d7" stroke-width="2">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29" fill="none"/>
+    </g>
+    <g id="ic_barricade" transform="translate(492 169)">
+      <rect id="area" width="36" height="36" fill="none"/>
+      <g id="icon" transform="translate(2 6)">
+        <g id="_00" data-name="00" transform="translate(1 3)" fill="none" stroke="#bbb" stroke-width="2">
+          <rect width="30" height="14" rx="1" stroke="none"/>
+          <rect x="1" y="1" width="28" height="12" fill="none"/>
+        </g>
+        <g id="_00-2" data-name="00" transform="translate(4 -1)" fill="none" stroke="#bbb" stroke-width="2">
+          <rect width="6" height="6" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="4" height="4" rx="1" fill="none"/>
+        </g>
+        <g id="_00-3" data-name="00" transform="translate(22 -1)" fill="none" stroke="#bbb" stroke-width="2">
+          <rect width="6" height="6" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="4" height="4" rx="1" fill="none"/>
+        </g>
+        <g id="_00-4" data-name="00" transform="translate(4 15)" fill="none" stroke="#bbb" stroke-width="2">
+          <rect width="6" height="10" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="4" height="8" rx="1" fill="none"/>
+        </g>
+        <g id="_00-5" data-name="00" transform="translate(22 15)" fill="none" stroke="#bbb" stroke-width="2">
+          <rect width="6" height="10" rx="2" stroke="none"/>
+          <rect x="1" y="1" width="4" height="8" rx="1" fill="none"/>
+        </g>
+        <path id="_00-6" data-name="00" d="M4,0H7L2,12,0,10Z" transform="translate(1 4)" fill="#bbb"/>
+        <path id="_00-7" data-name="00" d="M4,0H7L2,12H-1Z" transform="translate(7 4)" fill="#bbb"/>
+        <path id="_00-8" data-name="00" d="M4,0H7L2,12H-1Z" transform="translate(13 4)" fill="#bbb"/>
+        <path id="_00-9" data-name="00" d="M4,0H7L2,12H-1Z" transform="translate(19 4)" fill="#bbb"/>
+        <path id="_00-10" data-name="00" d="M4,0,6,2,2,12H-1Z" transform="translate(25 4)" fill="#bbb"/>
+      </g>
+    </g>
+  </g>
+</svg>
