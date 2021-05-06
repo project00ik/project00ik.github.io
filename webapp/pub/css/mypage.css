@@ -1,5 +1,6 @@
 @charset "utf-8";
-
+.form-checkradio label {margin-left: 40px;}
+.form-checkradio label:first-child {margin-left: 0;}
 
 
 
@@ -204,8 +205,6 @@
 .pop-ip-area > label {width: 132px; padding-left: 20px;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 .pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
-.pop-ip-area .form-checkradio label {margin-left: 40px;}
-.pop-ip-area .form-checkradio label:first-child {margin-left: 0;}
 .form-search input.input {padding-right: 36px;}
 .form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
 .form-layout.form-flexnone {display: block;}

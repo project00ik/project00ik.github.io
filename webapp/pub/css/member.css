@@ -1,4 +1,39 @@
+.tit-type1-1 {font-size: 28px; color: #000; margin-bottom: 50px;}
+.tit-type2-1 {font-size: 20px; color: #000;}
+.tit-area2 {display: flex; align-items: flex-end;}
+.form-layout .bar {font-size: 16px; color: #666;}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+
+.btn-slide-open {width: 18px; height: 18px; background: url(../images/common/arrow_select.svg) center center no-repeat #fff;}
+
+
+
 /* ==========================================================================
     회원가입
 ========================================================================== */
-.tit-type1-1 {font-size: 28px; color: #000; margin-bottom: 50px;}
+.join-list-con .req {font-size: 16px; color: #346dd0; font-style: normal; vertical-align: top; padding: 0 3px;}
+.join-list-con .form-layout {flex: 1;}
+.join-list-con .tit-type3 {text-align: left; height: 24px; line-height: 24px;}
+.join-list-con .join-txt {font-size: 16px; color: #000;}
+.join-list-con .tit-area {margin-bottom: 0;}
+.join-list-con .tit-area2 .join-txt {padding-left: 20px;}
+.join-list-con .list-con {margin-top: 10px; border-top: 2px solid #000; padding-top: 30px;}
+.join-list-con ~ .join-list-con {padding-top: 50px;}
+.join-list-con .list-con ul {margin-top: 10px; padding-top: 20px; border-top: 1px solid #bbb; border-bottom: 1px solid #d7d7d7;}
+.join-list-con .list-con ul li {padding: 0 20px 20px 20px; display: flex; align-items: center;}
+.join-list-con .list-con .list-half-style {display: flex; flex-wrap: wrap;}
+.join-list-con .list-con .list-half-style li {width: 50%;}
+.join-list-con .list-con ul li > label {width: 180px;}
+.join-list-con .list-con ul li button {margin-left: 5px;} 
+.join-list-con .list-con ul + .tit-type2-1 {padding-top: 30px;}
+.join-list-con .list-con .mem-info-list li {display: flex;}
+.join-list-con .list-con .mem-info-list li .form-layout {flex: inherit; width: 503px;}
+.join-list-con .list-con .mem-info-list .ip-only .form-layout {width: 380px;}
+.join-list-con .list-con .mem-info-list li .form-layout .input {flex: initial;}
+.join-list-con .list-con .mem-info-list li .form-email input.input {flex: inherit; width: 177px;}
+.join-list-con .list-con .mem-info-list li .form-email .select {width: 118px;}
+
+
+
