@@ -698,7 +698,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-like-l {width:42px; height:42px;}
     .btn-style-l1,
     .btn-style-l5,
-    .btn-style-l2 {height:42px; line-height: 40px; font-size: 16px;}
+    .btn-style-l2,
+    .btn-style-l3,
+    .btn-style-l4 {height:42px; line-height: 40px; font-size: 16px;}
     .btn-del {background: url(../images/common/mo_btn_del.svg) 0 0 no-repeat;}
     .tit-type1-1 {font-size:20px; margin-bottom:16px;}
     .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px}
