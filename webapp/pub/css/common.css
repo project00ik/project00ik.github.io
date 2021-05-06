@@ -384,10 +384,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
 .check-style1 input + i {width: 22px; height: 22px; background: #fff; border: 1px solid #bbb; display:inline-block; }
-.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 50% no-repeat #fff; display:inline-block; border:1px solid #bbb;}
+.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 50% no-repeat #fff; display:inline-block; border:1px solid #bbb; background-size:12.826px 8.413px;}
 .check-style1 input:disabled + i {width: 22px; height: 22px; background: #fafafa; border: 1px solid #e5e5e5;}
 .check-style1 input:checked:disabled + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox_disabled.svg) 50% 50% no-repeat #fafafa; border: 1px solid #e5e5e5;}
-.check-style1 > span {margin-left:7px; font-weight:400; font-size:14px;}
+.check-style1 > span {margin-left:7px; font-weight:400; font-size:16px;}
 
 .check-style1 > b {margin-left:7px; font-weight:500; font-size:14px;}
 .check-style1 .num {vertical-align:text-bottom; font-weight:400; line-height:1.4;}
@@ -395,8 +395,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 .check-style2 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style2 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
-.check-style2 input + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox2.svg) 50% 50% no-repeat; border: 0; display:inline-block;}
-.check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_disabled.svg) 50% 50% no-repeat ; }
+.check-style2 input + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox2.svg) 50% 50% no-repeat; background-size:22px 22px; border: 0; display:inline-block;}
+.check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_disabled.svg) 50% 50% no-repeat; }
 .check-style2 > span {margin-left:7px; font-weight:400; font-size:14px;}
 
 .radio-style1 {position:relative; display:inline-block;}
