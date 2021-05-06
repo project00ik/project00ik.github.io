@@ -194,6 +194,7 @@
 .btn-full-area .btn + .btn {margin-left:10px;}
 .btn-full-area > .btn {flex:1;}
 .btn-search {width:36px; height:36px; display:inline-block; font-size:0; background:url(../images/common/btn_search.svg) 50% 50% no-repeat;}
+.btn-search2 {width: 24px; height: 24px; font-size: 0; background: url(../images/common/btn_search2.svg) center center no-repeat;}
 .icon-btn + .icon-btn {margin-left:30px;}
 .icon-btn.cart {position:relative; background:url(../images/common/icon_cart.svg) 50% 50% no-repeat;}
 .icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px}
@@ -283,7 +284,9 @@ button.btn-style-s1 {line-height:25px;}
 /* .tit-type1 > b {font-weight:700;} */
 .tit-area {display:flex; align-items:flex-end; flex-wrap: wrap;justify-content:space-between; margin-bottom:40px;}
 .tit-area .tit-type1 {margin-bottom:0;}
+.tit-area > * {margin-bottom: 0;} /* 정리필요 */
 .tit-type2 {font-size:24px; color:#000;}
+.tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
 .tit-type3 {width:100%; height:36px; line-height:36px; font-size:16px; text-align:center; color:#000;}
 
 .ellipsis {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
@@ -644,7 +647,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .popup-type-xs .lyPopup .popup-wrap .popup-cont {width:100%;}
     .lyPopup .popup-cont .lyTitle {width:100%; height:50px; padding:0 44px 0 20px; line-height:50px; font-size:18px; color:#000; background:#fff; border-bottom:1px solid #d7d7d7; text-align:center;}
     .lyPopup .popup-cont .lyTitle .btn-close {background:url(../images/common/mo_btn_popup_close.svg) 0 0 no-repeat;top:14px; right:20px;} 
-    .lyPopup .lyPopCont {padding:20px;}
+    .lyPopup .lyPopCont {padding:30px 20px;}
     .popup-type-m .lyPopup .popup-cont .lyPopCont {height:calc(100% - 129px); max-height:100%;}
     .popup-type-s .lyPopup .popup-cont .lyPopCont,
     .popup-type-s .lyPopup .popup-cont .lyPopCont {max-height:100; min-height:229px;}
@@ -653,14 +656,17 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .popup-type-s .lyPopup .popup-cont .btn-area,
     .popup-type-xs .lyPopup .popup-cont .btn-area {overflow:hidden; padding:20px; text-align:center;}
 
+    
+
     /* 버튼 */
     .header-cont .search-area .btn-search {width:24px; height:24px; background:url(../images/common/mo_btn_search.svg) 50% 50% no-repeat; top:5px;}
     .icon-btn.cart {background:url(../images/common/mo_icon_cart.svg) 50% 50% no-repeat;}
     .icon-btn.cart .cart-num {min-width:22px; height:22px; font-size:12px; line-height:18px; top:0; right:-12px;}
     .icon-btn.member {background:url(../images/common/mo_icon_member.svg) 50% 50% no-repeat;}
     .btn-more-white {width:24px; height:24px; padding:0; font-size:0; border-color:#d7d7d7; background-position:center center; display:inline-block;}
-    
     .btn-more-black {width:24px; height:24px; padding:0; font-size:0; border-color:#d7d7d7; background-position:center center;}
+    .btn-board {height: 36px; box-sizing: border-box; line-height: 34px; border: 1px solid #000; border-left: 0; font-size: 14px; text-align: center; color: #000; background: #fff;}
+    .btn-board:first-child {border-left: 1px solid #000;}
 
     /* 모바일 padding */    
     .mo-pd {padding:0 20px;}
@@ -685,11 +691,16 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .tit-type2 {font-size:18px;}
     .tit-type3 {font-size:16px;}
 
+    .tit-area {margin-bottom: 16px;} /* 정리필요 */
+
     /* 공통 아이콘 */
     .icon-new {width:14px; height:14px; line-height:14px;}
 
     /* 플래그 */
     .flag-txt {height:18px; padding:0 8px; font-size:10px; line-height:16px;}
+
+    /* 별점 */
+    .rating .star-s {vertical-align: top;}
 
     /* 유닛 */
     .unit-type1 {width:100% !important; height:auto; overflow:hidden;}
@@ -727,12 +738,22 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .product-list-wrap .product-list {width:100%; margin:0; padding:0 10px 10px; font-size:0;}
     .product-list-wrap .product-list > li {width:50%; padding:5px; display:inline-block;}
 
+    /* 파일 업로드 */
+    .img-upload-btn > label {width: 63px; height: 63px;}
+
     /* sub */
     .sub-content {width:100%; margin:0;}
 
     /* 컨텐츠 레이아웃 */
     .align-area > .left {width:100%; float:inherit;}
     .align-area > .right {width:100%; float:inherit; text-align:left;}
+
+    /* 폼요소 */
+    select.select {line-height: 36px; height: 36px;}
+    .check-style1 input + i {width: 20px; height: 20px;}
+    .upload-area {padding: 10px 0 0;}
+    .upload-area .upload-thumbnail {width: 63px; height: 63px;}
+    .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}
 
 }
 @media only screen and  (min-height:812px){ /* iphoneX */

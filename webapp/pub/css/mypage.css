@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-.tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
+
 
 .notice-wrap .cont-notice .notice-area .tit-area .tit-type1 {margin-bottom: 0;}
-.tit-area > * {margin-bottom: 0;}
 
-.btn-search2 {width: 24px; height: 24px; font-size: 0; background: url(../images/common/btn_search2.svg) center center no-repeat;}
+
+
 
 /* textarea */
 .textarea-wrap {position: relative;}
@@ -195,10 +195,11 @@
     팝업 
 ========================================================================== */
 .popup-cont .pop-layout-txt {font-size: 16px; color: #000; line-height: 16px; padding-bottom: 10px;}
+.popup-cont .lyPopCont > .pop-layout-txt {padding-bottom: 16px;}
 .popup-cont .pop-layout-txt2 {font-size: 14px; color: #999; line-height: 18px;}
 .pop-layout > ul {border-top: 1px solid #000;}
 .pop-layout > ul > li {padding: 10px 0; border-bottom: 1px solid #d7d7d7;}
-.pop-ip-area {display: flex; width: 100%;}
+.pop-ip-area {display: flex; width: 100%; align-items: center;}
 .pop-ip-area label {font-size: 16px; line-height: 38px; color: #000;}
 .pop-ip-area > label {width: 127px; padding-left: 20px;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
@@ -236,50 +237,25 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
-    /* 공통 */
-    .tit-area {margin-bottom: 16px;}
-    .rating .star-s {vertical-align: top;}
-
-    select.select {line-height: 36px; height: 36px;}
-
-    .check-style1 input + i {width: 20px; height: 20px;}
-    .upload-area {padding: 10px 0 0;}
-    .upload-area .upload-thumbnail {width: 63px; height: 63px;}
-    .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}
-
-
-    .btn-board {height: 36px; box-sizing: border-box; line-height: 34px; border: 1px solid #000; border-left: 0; font-size: 14px; text-align: center; color: #000; background: #fff;}
-    .btn-board:first-child {border-left: 1px solid #000;}
-
     
-    .pop-ip-area > label {width: auto; padding-left: 0;}
-    .pop-ip-area {flex-direction: column;}
-    .pop-ip-area label + .form-layout {width: 100%;}
-    .pop-ip-area label {line-height:inherit; padding-bottom: 8px;}
-    .form-search input.input {height: 36px; line-height: 36px;}
-    .form-search .btn-search2 {width: 34px; height: 34px;}
-    .img-upload-btn > label {width: 63px; height: 63px;}
-
-    .pop-ip-area .form-checkradio label {padding-bottom: 0;}
-
-    
-    
-
-
-
-
-
-
 
     /* ==========================================================================
     팝업 
     ========================================================================== */
+    .pop-ip-area {flex-direction: column; align-items: flex-start;}
+    .pop-ip-area > label {width: auto; padding-left: 0;}
+    .pop-ip-area label + .form-layout {width: 100%;}
+    .pop-ip-area label {line-height:inherit; padding-bottom: 8px;}
+    .pop-ip-area .form-checkradio label {padding-bottom: 0;}
+    
+    .form-search input.input {height: 36px; line-height: 36px;}
+    .form-search .btn-search2 {width: 34px; height: 34px;}
+
     .popup-cont .pop-layout-txt {font-size: 14px;}
     .pop-layout > ul > li {padding: 16px 0;}
-    
+
     .mypage .unit-type1 {height: auto;}
     .mypage .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
-
     .mypage .tabArea {margin: 20px 0 0;}
     .mypage-cont {margin-top: 0;}
     .mypage-cont .my-menu {position: relative; width: 100%; padding-bottom: 100px;}
