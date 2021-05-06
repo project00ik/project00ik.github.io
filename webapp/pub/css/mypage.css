@@ -2,7 +2,6 @@
 
 
 
-.notice-wrap .cont-notice .notice-area .tit-area .tit-type1 {margin-bottom: 0;}
 
 
 
@@ -47,6 +46,7 @@
 .notice-wrap .cont-notice .notice-area {width: 740px;}
 .notice-wrap .cont-notice .notice-area .tit-area {align-items: flex-start; margin-bottom: 33px;}
 .notice-wrap .cont-notice .notice-area .tit-type1 > b {line-height: 100%;}
+.notice-wrap .cont-notice .notice-area .tit-area .tit-type1 {margin-bottom: 0;}
 .notice-wrap .cont-notice .notice-area ul {display: flex; justify-content: space-between;}
 .notice-wrap .cont-notice .notice-area ul li {width: 240px; height: 190px;}
 .notice-wrap .cont-notice .notice-area ul li a {display: block; padding: 24px 20px; background: #fff;}
@@ -201,7 +201,7 @@
 .pop-layout > ul > li {padding: 10px 0; border-bottom: 1px solid #d7d7d7;}
 .pop-ip-area {display: flex; width: 100%; align-items: center;}
 .pop-ip-area label {font-size: 16px; line-height: 38px; color: #000;}
-.pop-ip-area > label {width: 127px; padding-left: 20px;}
+.pop-ip-area > label {width: 132px; padding-left: 20px;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 .pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
 .pop-ip-area .form-checkradio label {margin-left: 40px;}
@@ -227,8 +227,11 @@
 .pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 50%; display: flex; align-items: center; justify-content: center; padding: 5px 0;}
 .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {width: 50px; font-size: 16px; line-height: 18px; color: #000; text-align: right; margin-right: 20px;}
 .pop-review-write .pro-upload .upload-url {display: flex;}
-.pop-review-write .pro-upload .upload-url label {width: 90px; line-height: 38px;}
+.pop-review-write .pro-upload .upload-url label {width: 90px; line-height: 38px; font-size: 16px; color: #000;}
 .pop-review-write .pro-upload .upload-url label + input[type='text'] {width: 350px;}
+.pop-review-write .pro-upload .upload-area + .upload-url {padding-top: 16px;}
+
+
 
 
 
@@ -237,22 +240,10 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
-    
+    input.input {height: 36px; line-height: 36px;}
 
-    /* ==========================================================================
-    팝업 
-    ========================================================================== */
-    .pop-ip-area {flex-direction: column; align-items: flex-start;}
-    .pop-ip-area > label {width: auto; padding-left: 0;}
-    .pop-ip-area label + .form-layout {width: 100%;}
-    .pop-ip-area label {line-height:inherit; padding-bottom: 8px;}
-    .pop-ip-area .form-checkradio label {padding-bottom: 0;}
-    
-    .form-search input.input {height: 36px; line-height: 36px;}
-    .form-search .btn-search2 {width: 34px; height: 34px;}
 
-    .popup-cont .pop-layout-txt {font-size: 14px;}
-    .pop-layout > ul > li {padding: 16px 0;}
+    .tit-type2 .count {font-size: 16px; margin-left: 2px;}
 
     .mypage .unit-type1 {height: auto;}
     .mypage .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
@@ -288,9 +279,7 @@
     .mypage-cont .my-main .my-board {display: none;}
     .mypage-cont .my-main .btn-board-area {width: 100%; overflow: hidden; padding: 20px; margin-bottom: 30px; background: #f5f5f5;}
     .mypage-cont .my-main .btn-board-area a {float: left; width: 50%;}
-
     
-    .tit-type2 .count {font-size: 16px; margin-left: 2px;}
     .product-detail .detail-review ul li .review-info {padding-bottom: 6px;}
     .product-detail .detail-review ul li .review-info p {font-size: 12px; margin-right: 20px;}
     .product-detail .detail-review ul li .review-satisfaction-area {display: block;}
@@ -308,7 +297,37 @@
     .product-detail .detail-review ul li.on .review-cont-img {margin-top: 20px;}
     .product-detail .detail-review .detail-review-empty {padding: 20px 0;}
     .product-detail .detail-review .detail-review-empty p {padding-top: 38px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_list_empty.svg) center 0 no-repeat;}
+    
+    
+    
+    /* ==========================================================================
+    팝업 
+    ========================================================================== */
+    .pop-ip-area {flex-direction: column; align-items: flex-start;}
+    .pop-ip-area > label {width: auto; padding-left: 0;}
+    .pop-ip-area label + .form-layout {width: 100%;}
+    .pop-ip-area label {line-height:inherit; padding-bottom: 8px;}
+    .pop-ip-area .form-checkradio label {padding-bottom: 0;}
+    
+    .form-search input.input {height: 36px; line-height: 36px;}
+    .form-search .btn-search2 {width: 34px; height: 34px;}
 
+    .popup-cont .pop-layout-txt {font-size: 15px;}
+    .popup-cont .pop-layout-txt2 {font-size: 13px;}
+    .pop-layout > ul > li {padding: 16px 0;}
+
+    .pop-review-write .pop-product .pro-text-area {margin-left: 10px;}
+    .pop-review-write .pop-product .pro-text-area .pro-name {font-size: 14px; padding-bottom: 3px;}
+    .pop-review-write .pop-product .pro-text-area .pro-option {font-size: 12px; padding-bottom: 3px;}
+    .pop-review-write .pop-product .pro-text-area .pro-price p {font-size: 12px; line-height: 19px;}
+    .pop-review-write .pop-product .pro-text-area .pro-price p b {font-size: 18px;}
+    .pop-review-write .pop-product .pro-img-area img {max-width: 80px; max-height:80px;}
+    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 100%;}
+    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {font-size: 15px;}
+    .pop-review-write .pro-upload .upload-area + .upload-url {padding-top: 10px;}
+    .pop-review-write .pro-upload .upload-url {flex-direction: column;}
+    .pop-review-write .pro-upload .upload-url label {width: 100%; line-height: inherit; padding-bottom: 8px; font-size: 15px;}
+    .pop-review-write .pro-upload .upload-url label + input[type='text'] {width: 100%;}
     
     
 
