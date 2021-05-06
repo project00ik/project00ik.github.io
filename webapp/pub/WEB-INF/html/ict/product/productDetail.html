@@ -226,7 +226,7 @@
                 <!--// 썸네일 슬라이드 Swiper -->
                 <div class="pro-detail-reporting">
                   <p>이미지 또는 상품정보에 수정이 필요한가요?</p>
-                  <button class="btn btn-style-s1">제보하기</button>
+                  <button class="btn btn-style-s1" onclick="lyOpen('modificationPopup')">제보하기</button>
                 </div>
               </div>
             </div>
@@ -298,6 +298,7 @@
                 </table>
               </div>
               <!--// 테이블 -->
+              <!-- PC 옵션 영역 [S] (모바일은 하단에 팝업으로 위치 : '모바일 옵션영역 [S]') -->
               <div class="option-pc-area">
                 <!-- 옵션 선택 영역 -->
                 <div class="option-area">
@@ -333,7 +334,7 @@
                       </li>
                       <li>
                         <p class="price"><b>100,000</b>원</p>
-                        <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+                        <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
                       </li>
                     </ul>
                     <button class="btn btn-del">옵션삭제</button>
@@ -356,7 +357,7 @@
                       <li>
                         <p class="normal-price">99,900,000</p>
                         <p class="price"><b>89,910,000</b>원</p>
-                        <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+                        <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
                       </li>
                     </ul>
                     <button class="btn btn-del">옵션삭제</button>
@@ -384,10 +385,11 @@
                 <!-- <div class="btn-full-area">
                   <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
                   <a href="javascript:;" class="btn btn-style-l3">품절</a>
-                  <a href="javascript:;" class="btn btn-style-l4">재입고알림</a>
+                  <a href="javascript:;" class="btn btn-style-l4" onclick="lyOpen('restockPopup')">재입고알림</a>
                 </div> -->
                 <!--// 버튼 영역(품절 시) -->
               </div>
+              <!-- PC 옵션 영역 [E] -->
             </div>
           </div>
           
@@ -753,7 +755,7 @@
               <div class="tit-area">
                 <p class="tit-type2 ">전체 상품문의 <span class="count">(114)</span></p>
                 <span class="tit-sub">단순 상품비방, 상업적인 내용, 미풍양속 위반, 게시판의 성격에 맞지 않는 글은 통보 없이 삭제될 수 있습니다.</span>
-                <a href="#" class="btn-small-blue">리뷰작성</a>
+                <a href="#" class="btn-small-blue" onclick="lyOpen('qnaWritePopup')">상품문의</a>
               </div>
               <div class="qna-wrap">
                 <ul>
@@ -1019,7 +1021,7 @@
                                     <!--// 상품링크 -->
                                     <ul class="unit-under-btn">
                                         <li>
-                                            <a href="javascript:;" class="btn btn-restock">재입고알림</a>
+                                            <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup')">재입고알림</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1235,7 +1237,7 @@
       </div>
     </footer>
   </div>
-  
+  <!-- 모바일 옵션 영역 [S] -->
   <!-- 상품상세 옵션 레이어 -->
   <div class="ly-detail">
     <!-- 옵션 선택 영역 -->
@@ -1272,7 +1274,7 @@
           </li>
           <li>
             <p class="price"><b>100,000</b>원</p>
-            <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+            <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
           </li>
         </ul>
         <button class="btn btn-del">옵션삭제</button>
@@ -1295,7 +1297,7 @@
           <li>
             <p class="normal-price">99,900,000</p>
             <p class="price"><b>89,910,000</b>원</p>
-            <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+            <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
           </li>
         </ul>
         <button class="btn btn-del">옵션삭제</button>
@@ -1318,7 +1320,7 @@
           <li>
             <p class="normal-price">99,900,000</p>
             <p class="price"><b>89,910,000</b>원</p>
-            <a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
+            <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
           </li>
         </ul>
         <button class="btn btn-del">옵션삭제</button>
@@ -1337,17 +1339,16 @@
     <!--// 총 구매 금액 -->
     <!-- 버튼 영역 -->
     <div class="btn-full-area">
-      <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
-      <a href="javascript:;" class="btn btn-style-l1" onclick="detailLyClose()">장바구니</a>
+      <!-- <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a> -->
+      <a href="javascript:;" class="btn btn-style-l5" onclick="detailLyClose()">장바구니</a>
       <a href="javascript:;" class="btn btn-style-l2" onclick="detailLyClose()">바로구매</a>
     </div>
     <!--// 버튼 영역 -->
     <!-- 버튼 영역(품절 시) -->
     <!-- <div class="btn-full-area">
-      <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
-      <a href="javascript:;" class="btn btn-style-l3">품절</a>
-      <a href="javascript:;" class="btn btn-style-l4">재입고알림</a>
-    </div> -->
+          <a href="javascript:;" class="btn btn-style-l3">품절</a>
+          <a href="javascript:;" class="btn btn-style-l4">재입고알림</a>
+        </div> -->
     <!--// 버튼 영역(품절 시) -->
   </div>
   <!--// 상품상세 옵션 레이어 -->
@@ -1370,6 +1371,7 @@
     <!--// 버튼 영역(품절 시) -->
   </div>
   <!--// 상품상세 모바일 구매버튼 영역 -->
+  <!--// 모바일 옵션 영역 [E] -->
 
   <!-- 리뷰작성 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="reviewWritePopup"><!-- id 값 버튼과 연결해주세요. -->
@@ -1565,7 +1567,7 @@
                   <div class="pop-ip-area">
                     <label for="q-tit">제목<i class="req">*</i></label>
                     <div class="form-layout">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                     </div>
                   </div>
                 </li>
@@ -1688,7 +1690,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">신고가격<i class="req">*</i></label>
                     <div class="form-layout form-layout2">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                     </div>
                   </div>
                 </li>
@@ -1696,7 +1698,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">근거</label>
                     <div class="form-layout">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                       <div class="file-upload-btn">
                         <label>
                           찾아보기<input type="file" id="input_imgs" multiple="" style="display: none;" class="">
@@ -1709,7 +1711,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">출처<i class="req">*</i></label>
                     <div class="form-layout">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                     </div>
                   </div>
                 </li>
@@ -1720,7 +1722,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">신고자 성명</label>
                     <div class="form-layout form-layout2">
-                      <input type="text" class="input" id="q-tit" value="김상현" readonly>
+                      <input type="text" class="input" value="김상현" readonly>
                     </div>
                   </div>
                 </li>
@@ -1728,7 +1730,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">전화번호</label>
                     <div class="form-layout form-layout2">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                     </div>
                   </div>
                 </li>
@@ -1736,7 +1738,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">메일주소</label>
                     <div class="form-layout form-flexnone">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                       
                       <p class="pop-layout-txt3">※ 처리결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.</p>
                     </div>                    
@@ -1794,7 +1796,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">수신자 성명</label>
                     <div class="form-layout form-layout2">
-                      <input type="text" class="input" id="q-tit" value="김상현" readonly>
+                      <input type="text" class="input" value="김상현" readonly>
                     </div>
                   </div>
                 </li>
@@ -1802,7 +1804,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">메일주소</label>
                     <div class="form-layout form-flexnone">
-                      <input type="text" class="input" id="q-tit">
+                      <input type="text" class="input">
                       <p class="pop-layout-txt3">※ 처리결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.</p>
                     </div>                    
                   </div>
@@ -1845,7 +1847,7 @@
                   <div class="pop-ip-area">
                     <label for="q-type">제목<i class="req">*</i></label>
                     <div class="form-layout">
-                      <input type="text" class="input" id="q-tit" value="">
+                      <input type="text" class="input" value="">
                     </div>
                   </div>
                 </li>
@@ -1868,70 +1870,8 @@
       </div>
     </div>
   </div>
-  <!--// 재입고 알림신청 팝업 -->
+  <!--// 상품정보 수정요청 팝업 -->
 
-  <!-- 장바구니 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="cartPopup"><!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle">
-            <p>장바구니</p>      
-            <a href="javascript:;" onc lick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-cart">
-              <div class="cart-select">
-                <select class="select" name="" id="">
-                  <option value="">기본 장바구니</option>
-                </select>
-                <button class="btn btn-style1">선택</button>
-              </div>
-              <div class="cart-add-select">
-                <p>장바구니가 필요한 경우 장바구니명을 입력해 생성해 보세요.</p>
-                <div class="form-area">
-                  <input type="text" class="input" name="" value="" >
-                </div>
-                <span>생성할 장바구니명을 입력한 후 ‘생성’버튼을 클릭하면, 장바구니가 생성됩니다.</span>
-                <span>장바구니 삭제는 장바구니 관리 메뉴를 통해 삭제할 수 있습니다.</span>
-              </div>
-            </div>
-          </div>
-          <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">취소</a>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">생성</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //장바구니 팝업 -->
-
-  <!--장바구니 완료 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="cartPopup"><!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle">
-            <p>장바구니</p>      
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-cart">
-              <p class="add-cart">
-                상품이 장바구니에 담겼습니다.
-              </p>
-            </div>
-          </div>
-          <div class="btn-area btn-area02">
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">계속쇼핑</a>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">장바구니 바로가기</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //장바구니 완료 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
