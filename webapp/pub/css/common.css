@@ -505,15 +505,15 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 /* 파일 업로드 */
 .upload-area {padding:20px 0; overflow:hidden; font-size:0;}
-.upload-area .upload-thumbnail {width:60px; height:60px; border:1px solid #bbb; display:inline-block; font-size:0; position:relative;}
+.upload-area .upload-thumbnail {width:80px; height:80px; display:inline-block; font-size:0; position:relative;}
 .img-thumbnail {width:100%; height:100%; overflow:hidden; display:inline-block;}
 .img-thumbnail img {width: 100%;}
 .upload-area .upload-thumbnail .img-del-btn {width:18px; height:18px; font-size:0; display:inline-block; background:url(../images/common/btn_del2.svg) 0 0 no-repeat; background-size:100% auto; position:absolute; top:5px; right:5px; z-index:1;}
 .img-upload-btn {display:inline-block;}
-.img-upload-btn > label {width:60px; height:60px; border:1px solid #bbb; background:url(../images/common/btn_img_upload.png) 50% 50% no-repeat #f4f4f4; background-size:18px auto; display:inline-block; overflow:hidden;}
+.img-upload-btn > label {width:80px; height:80px; border:1px solid #bbb; background:url(../images/common/icon_plus.svg) 50% 50% no-repeat #fafafa; background-size:18px auto; display:inline-block; overflow:hidden;}
 .img-upload-btn > label input {width:100%; display:inline-block; opacity:0;}
 .upload-area .upload-thumbnail + .upload-thumbnail,
-.upload-area .upload-thumbnail + .img-upload-btn {margin-left:8px;}
+.upload-area .upload-thumbnail + .img-upload-btn {margin-left:10px;}
 
 
 /* ==========================================================================
