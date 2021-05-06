@@ -460,9 +460,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .upload-area {padding:20px 0; overflow:hidden; font-size:0;}
 .upload-area .upload-thumbnail {width:60px; height:60px; border:1px solid #bbb; display:inline-block; font-size:0; position:relative;}
 .img-thumbnail {width:100%; height:100%; overflow:hidden; display:inline-block;}
-.upload-area .upload-thumbnail .img-del-btn {width:14px; height:14px; font-size:0; display:inline-block; background:url(../img/common/btn_del2.png) 0 0 no-repeat; background-size:100% auto; position:absolute; top:-1px; right:-1px; z-index:1;}
+.img-thumbnail img {width: 100%;}
+.upload-area .upload-thumbnail .img-del-btn {width:18px; height:18px; font-size:0; display:inline-block; background:url(../images/common/btn_del2.svg) 0 0 no-repeat; background-size:100% auto; position:absolute; top:5px; right:5px; z-index:1;}
 .img-upload-btn {display:inline-block;}
-.img-upload-btn > label {width:60px; height:60px; border:1px solid #bbb; background:url(../img/common/btn_img_upload.png) 50% 50% no-repeat #f4f4f4; background-size:18px auto; display:inline-block; overflow:hidden;}
+.img-upload-btn > label {width:60px; height:60px; border:1px solid #bbb; background:url(../images/common/btn_img_upload.png) 50% 50% no-repeat #f4f4f4; background-size:18px auto; display:inline-block; overflow:hidden;}
 .img-upload-btn > label input {width:100%; display:inline-block; opacity:0;}
 .upload-area .upload-thumbnail + .upload-thumbnail,
 .upload-area .upload-thumbnail + .img-upload-btn {margin-left:8px;}
