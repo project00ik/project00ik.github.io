@@ -187,7 +187,7 @@
             <div class="tab-cont tabCont" id="rvTab3">
               <div class="tit-area">
                 <p class="tit-type2 ">전체 상품문의 <span class="count">(114)</span></p>
-                <span>단순 상품비방, 상업적인 내용, 미풍양속 위반, 게시판의 성격에 맞지 않는 글은 통보 없이 삭제될 수 있습니다.</span>
+                <span class="tit-sub">단순 상품비방, 상업적인 내용, 미풍양속 위반, 게시판의 성격에 맞지 않는 글은 통보 없이 삭제될 수 있습니다.</span>
                 <a href="#" class="btn-small-blue">리뷰작성</a>
               </div>
               <div class="qna-wrap">
@@ -363,6 +363,71 @@
       </div>
     </footer>
   </div>
+
+<!-- 장바구니 팝업 -->
+<div class="lyPopupWrap popup-type-s" id="cartPopup"><!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle">
+          <p>장바구니</p>      
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-cart">
+            <div class="cart-select">
+              <select class="select" name="" id="">
+                <option value="">기본 장바구니</option>
+              </select>
+              <button class="btn btn-style1">선택</button>
+            </div>
+            <div class="cart-add-select">
+              <p>장바구니가 필요한 경우 장바구니명을 입력해 생성해 보세요.</p>
+              <div class="form-area">
+                <input type="text" class="input" name="" value="" placeholder="Input Empty">
+              </div>
+              <span>생성할 장바구니명을 입력한 후 ‘생성’버튼을 클릭하면, 장바구니가 생성됩니다.</span>
+              <span>장바구니 삭제는 장바구니 관리 메뉴를 통해 삭제할 수 있습니다.</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">취소</a>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">생성</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //장바구니 팝업 -->
+
+<!-- 장바구니 완료 팝업 -->
+<div class="lyPopupWrap popup-type-s" id="cartPopup"><!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle">
+          <p>장바구니</p>      
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-cart">
+            <p class="add-cart">
+              상품이 장바구니에 담겼습니다.
+            </p>
+          </div>
+        </div>
+        <div class="btn-area btn-area02">
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">계속쇼핑</a>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">장바구니 바로가기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //장바구니 완료 팝업 -->
+
+
   <!-- 퀵메뉴 -->
   <!-- <div class="quick-menu">
     <div class="qk-group">
