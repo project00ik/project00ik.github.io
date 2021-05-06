@@ -220,6 +220,27 @@ function lyClose(){
   $('.lyPopupWrap').removeClass('open');
 }
 
+function detailOptionLy(){
+  // 상품상세 옵션 레이어 이벤트
+  $('.detailLyBtn').on('click', function () {
+    $('body').addClass('detailLyOpen');
+    $('.ly-detail').addClass('open');
+    $('.ly-detail').after('<div class="detaileLyDim"></div>');
+    $('.detaileLyDim').on('click', function(){
+      $(this).remove();
+      $('.ly-detail').removeClass('open');
+      $('body').removeClass('detailLyOpen');
+    });
+  });
+}
+
+function detailLyClose() {
+  // 닫기 버튼에  onclick="detailLyClose()" 넣어서 사용
+  $('.detaileLyDim').remove();
+  $('.ly-detail').removeClass('open');
+  $('body').removeClass('detailLyOpen');
+}
+
 function tab(){ // 탭 관련 js
   $('.tabArea').each(function (){
     var $tabName = $(this);

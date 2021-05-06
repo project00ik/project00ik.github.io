@@ -212,6 +212,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-l2 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#fff; background:#346dd0;}
 .btn-style-l3 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#d7d7d7; background:#fafafa; border:1px solid #e5e5e5;}
 .btn-style-l4 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#fff; background:#000;}
+.btn-style-l5 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#000; background:#fff; border:1px solid #000;}
 .btn-del {width:18px; height:18px; background:url(../images/common/btn_del.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 .btn-small-blue {width:98px; height:28px; line-height:28px; text-align:center; font-size:14px; color:#fff; background:#346DD0;}
 .btn-xs-small {width:78px; height:20px; line-height:18px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
