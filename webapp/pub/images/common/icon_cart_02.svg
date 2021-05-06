@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="ic_notice" transform="translate(-480 -157)">
+    <g id="타원_15" data-name="타원 15" transform="translate(480 157)" fill="none" stroke="#d7d7d7" stroke-width="2">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29" fill="none"/>
+    </g>
+    <g id="ic_shopping" transform="translate(492 169)">
+      <rect id="area" width="36" height="36" fill="none"/>
+      <g id="icon" transform="translate(0 -2)">
+        <path id="_00" data-name="00" d="M13,16V12s0-5,5-5,5,5,5,5v4" transform="translate(0 1)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-width="2"/>
+        <path id="_00-2" data-name="00" d="M18.354,35H8.667l-2-17h22l-1,7" transform="translate(0.333 -4)" fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="_" data-name="+" d="M-3246-3010v-3h-3a1,1,0,0,1-1-1,1,1,0,0,1,1-1h3v-3a1,1,0,0,1,1-1,1,1,0,0,1,1,1v3h3a1,1,0,0,1,1,1,1,1,0,0,1-1,1h-3v3a1,1,0,0,1-1,1A1,1,0,0,1-3246-3010Z" transform="translate(3270 3041)" fill="#bbb"/>
+      </g>
+    </g>
+  </g>
+</svg>
