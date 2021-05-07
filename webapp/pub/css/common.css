@@ -206,6 +206,8 @@
 .btn-more {width:57px; height:18px; line-height:18px; font-size:14px; text-align:left; color:#000; background:url(../images/common/btn_more.svg) right center no-repeat;}
 .btn-more-black {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
 .btn-more-black2 {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat; position: absolute; top: -69px; right: 35px; z-index: 2;}
+.mobile-paging {width:calc(100% - 40px); height:36px; margin:0 20px; background: #fff; border: 1px solid #000; font-size: 14px; text-align: center;}
+.mobile-paging::after {content:""; width:18px; height:18px; margin-top:2px; background:url(../images/common/icon_plus_black.svg) 0 0 no-repeat; display:inline-block; vertical-align:top;}
 .btn-style-s1 {min-width:98px; height:26px; line-height:26px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000; display:inline-block;}
 button.btn-style-s1 {line-height:25px;}
 .btn-style-m1 {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
