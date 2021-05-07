@@ -1,3 +1,4 @@
+/* 공통 */
 .tit-area2 {display: flex; align-items: flex-end;}
 .tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
 .tit-type2-1 {font-size: 20px; color: #000;}
@@ -16,6 +17,18 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 
 .check-style2 > span {font-size: 16px; color: #000; line-height: 22px; margin-left: 10px;}
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
     회원가입
 ========================================================================== */
@@ -24,6 +37,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 .join-list-con .form-layout {flex: 1;}
 .join-list-con .tit-type3 {text-align: left; height: 24px; line-height: 24px;}
 .join-list-con .join-txt {font-size: 16px; color: #000;}
+.join-list-con .join-txt ~ .join-txt {padding-top: 6px;}
 .join-list-con .tit-area {margin-bottom: 0; border-bottom: 2px solid #000; padding-bottom: 10px;}
 .join-list-con .tit-area2 {border-bottom: 2px solid #000; padding-bottom: 10px;}
 .join-list-con .tit-area2 .join-txt {padding-left: 20px;}
@@ -52,6 +66,14 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 .join-list-con .list-con .join-agree .agree-area .agree-tit .btn-slide-open {position: absolute; top: 18px; right: 12px; width: 30px; height: 30px;}
 .join-list-con .list-con .join-agree .agree-area .agree-cont {padding: 20px; border: 1px solid #d7d7d7; border-top: 0; font-size: 14px; line-height: 22px; text-align: left; color: #666; height: 125px; overflow-y: auto;}
 .join-content .btn-area-c {padding: 70px 0 120px;}
+
+.join-list-con .con-normal-info {padding-top: 0;}
+.join-list-con .con-normal-info .list-in {margin-top: 0; border-top: 0; display: flex; flex-wrap: wrap;}
+.join-list-con .con-normal-info .list-in .list-w100 {flex: initial; width: 100%; border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
+.join-list-con .con-normal-info .list-in .list-w60 {width: 66.666%;}
+.join-list-con .con-normal-info .list-in .list-w60 .select {width: 118px; flex: initial; margin-left: 5px;}
+.join-list-con .con-normal-info .list-in > li {width: 33.333%;}
+.join-list-con .con-normal-info .list-in > li > label {width: 120px;}
 
 
 
