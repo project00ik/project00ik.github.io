@@ -1240,6 +1240,7 @@
   <!-- 모바일 옵션 영역 [S] -->
   <!-- 상품상세 옵션 레이어 -->
   <div class="ly-detail">
+    <button class="option-ly-btn-open" onclick="detailLyClose()">옵션보기</button>
     <!-- 옵션 선택 영역 -->
     <div class="option-area">
       <div class="form-area">
@@ -1337,19 +1338,6 @@
       </div>
     </div>
     <!--// 총 구매 금액 -->
-    <!-- 버튼 영역 -->
-    <div class="btn-full-area">
-      <!-- <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a> -->
-      <a href="javascript:;" class="btn btn-style-l5" onclick="detailLyClose()">장바구니</a>
-      <a href="javascript:;" class="btn btn-style-l2" onclick="detailLyClose()">바로구매</a>
-    </div>
-    <!--// 버튼 영역 -->
-    <!-- 버튼 영역(품절 시) -->
-    <!-- <div class="btn-full-area">
-          <a href="javascript:;" class="btn btn-style-l3">품절</a>
-          <a href="javascript:;" class="btn btn-style-l4">재입고알림</a>
-        </div> -->
-    <!--// 버튼 영역(품절 시) -->
   </div>
   <!--// 상품상세 옵션 레이어 -->
 
@@ -1357,9 +1345,10 @@
   <div class="action-bar">
     <!-- 버튼 영역 -->
     <div class="btn-full-area">
+      <button class="option-ly-btn detailLyBtn">옵션보기</button>
       <a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
-      <a href="javascript:;" class="btn btn-style-l1 detailLyBtn">장바구니</a>
-      <a href="javascript:;" class="btn btn-style-l2 detailLyBtn">바로구매</a>
+      <a href="javascript:;" class="btn btn-style-l1" onclick="detailLyClose()">장바구니</a>
+      <a href="javascript:;" class="btn btn-style-l2" onclick="detailLyClose()">바로구매</a>
     </div>
     <!--// 버튼 영역 -->
     <!-- 버튼 영역(품절 시) -->

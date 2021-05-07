@@ -223,6 +223,8 @@ function lyClose(){
 function detailOptionLy(){
   // 상품상세 옵션 레이어 이벤트
   $('.detailLyBtn').on('click', function () {
+    $('.option-ly-btn').hide();
+    $('.option-ly-btn-open').show();
     $('body').addClass('detailLyOpen');
     $('.ly-detail').css('z-index', '102');
     $('.ly-detail').addClass('open');
@@ -235,31 +237,10 @@ function detailOptionLy(){
   });
 }
 
-// function detailOptionLy() {
-//   // 상품상세 옵션 레이어 이벤트
-//   $('.detailLyBtn').on('click', function () {
-//     $(this).toggleClass('on');
-//     $('.ly-detail').css('z-index', '102');
-//     if ($(this).hasClass('on')) {
-//       $('body').addClass('detailLyOpen');
-//       $('.ly-detail').addClass('open');
-//       $('.ly-detail').after('<div class="detaileLyDim"></div>');
-//     } else {
-//       $('body').removeClass('detailLyOpen');
-//       $('.ly-detail').removeClass('open');
-//       $('.detaileLyDim').remove();
-//     }
-//     $('.detaileLyDim').on('click', function () {
-//       $(this).remove();
-//       $('.ly-detail').removeClass('open');
-//       $('.detailLyBtn').removeClass('on');
-//       $('body').removeClass('detailLyOpen');
-//     });
-//   });
-// }
-
 function detailLyClose() {
   // 닫기 버튼에  onclick="detailLyClose()" 넣어서 사용
+  $('.option-ly-btn').show();
+  $('.option-ly-btn-open').hide();
   $('.detaileLyDim').remove();
   $('.ly-detail').removeClass('open');
   $('.ly-detail').css('z-index', '100');

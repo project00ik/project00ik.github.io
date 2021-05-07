@@ -131,7 +131,7 @@
 .product-banner-area > li img {width:100%;}
 .product-banner-area > li + li {margin-left:24px;}
 
-.action-bar {display:none; width:100%; position:fixed; bottom:0; left:0; z-index:101;}
+.action-bar {display:none; width:100%; position:fixed; bottom:0; left:0; z-index:102;}
 .action-bar .detail-btn {display:flex;}
 .action-bar .detail-btn > li {flex:1; height:50px; align-self:center; background:#000; color:#fff;}
 .action-bar .detail-btn > li + li {border-left:1px solid #d7d7d7;}
@@ -139,8 +139,10 @@
 .action-bar .detail-btn > li.buy-area {flex:2.317;}
 .action-bar .detail-btn .btn {height:100%; display:inline-block; text-align:center; line-height:50px; vertical-align:middle;}
 
-.ly-detail {width:100%; padding:0 20px 83px; background:#fff; position:fixed; bottom:-100%; left:0; z-index:100; transition-duration:0.5s; -moz-transition-duration:0.5s;}
-.ly-detail.open {bottom:0;}
+.option-ly-btn {width:48px; height:20px; display:inline-block; margin-left:-24px; font-size:0; position:absolute; top:-20px; left:50%; z-index:1; background: url(../images/common/btn_ly_option_more.svg) 0 0 no-repeat;}
+.option-ly-btn-open {width:48px; height:20px; display:inline-block; margin-left:-24px; font-size:0; position:absolute; top:-20px; left:50%; z-index:1; background: url(../images/common/btn_ly_option_more_on.svg) 0 0 no-repeat;}
+.ly-detail {width:100%; padding:0 20px 83px; background:#fff; position:fixed; bottom:0; left:0; z-index:100; transition-duration:0.5s; -moz-transition-duration:0.5s; display:none;}
+.ly-detail.open {display:block;}
 .ly-detail .option-select-area {}
 .ly-detail .option-select-area + .option-select-area {margin-top:5px;}
 .ly-detail .option-select-area + .option-list {margin-top:10px;}
