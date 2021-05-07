@@ -166,13 +166,15 @@
     </header>
     <section class="container">
       <div class="sub-content join-content">
-        <p class="tit-type1-1">회원가입</p>
+        <p class="tit-type1-2">회원가입</p>
 
         <div class="join-list-con">
-          <p class="tit-type2">가입확인</p>
+          <div class="tit-area2">
+            <p class="tit-type2">가입확인</p>
+          </div>
           <div class="list-con">
             <p class="join-txt">※ 사업자 등록번호를 통해 서비스 가입이 가능한지 확인 바랍니다.</p>
-            <ul>
+            <ul class="list-in">
               <li class="list-btn-area">
                 <label for="">사업자 등록번호</label>
                 <div class="form-layout">
@@ -195,7 +197,7 @@
           </div>
           <div class="list-con">
             <p class="tit-type2-1">조직정보</p>
-            <ul class="list-half-style">
+            <ul class="list-in list-half-style">
               <li>
                 <label for="">법인</label>
                 <div class="form-layout">
@@ -220,7 +222,7 @@
               </li>
             </ul>
             <p class="tit-type2-1">회원정보</p>
-            <ul class="mem-info-list">
+            <ul class="list-in mem-info-list">
               <li>
                 <label for="">아이디<i class="req">*</i></label>
                 <div class="form-layout">
@@ -261,7 +263,7 @@
               </li>
               <li>
                 <label for="">우편번호<i class="req">*</i></label>
-                <div class="form-layout">
+                <div class="form-layout form-address">
                   <input type="text" name="" class="input" value="" readonly="readonly">
                   <button class="btn btn-style-m1">우편번호 찾기</button>
                 </div>
@@ -301,27 +303,108 @@
           </div>
         </div>
 
-        <div class="join-list-con">
+        <div class="join-list-con tgSlide">
           <div class="tit-area">
             <p class="tit-type2">관심 공종 선택</p>
-            <a href="#" class="btn btn-slide-open"></a>
+            <button class="btn btn-slide-open tgSlideBtn">더보기</button>
           </div>
-          <div class="list-con">
+          <div class="list-con tgSlideCont">
             <p class="join-txt">※ 관심 공종을 선택하시면, 고객님을 위한 공종 정보를 제공해드립니다.</p>
-            <ul>
+            <ul class="list-in">
               <li class="list-btn-area">
-                <label for="">사업자 등록번호</label>
                 <div class="form-layout">
-                  <input type="text" name="" class="input" value="">
-                  <span class="bar">-</span>
-                  <input type="text" name="" class="input" value="">
-                  <span class="bar">-</span>
-                  <input type="text" name="" class="input" value="">
-                  <button class="btn btn-style-m1">조회</button>
+                  <ul class="form-list-checkradio">
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>선로 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>교환 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>전송 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>정보망 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>방송국 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>선박 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>구내통신 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>이동통신 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>위성통신 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>정보매체 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>방송전송·선로 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>정보제어·보안 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>고정무선통신 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>공항·항만통신 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>철도통신신호 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>정보통신전용 전기시설 설비공사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="" id="q-rec"><i></i><span>정보통신설비 유지보수공사</span></label></li>
+                  </ul>
                 </div>
               </li>
             </ul>
           </div>
+        </div>
+
+        <div class="join-list-con join-agree-con">
+          <div class="tit-area2">
+            <p class="tit-type2">이용약관</p>
+          </div>
+          <div class="list-con">
+            <div class="agree-allcheck"><label class="check-style2"><input type="checkbox" name=""><i></i><span>모든 약관에 대하여 동의합니다.</span></label></div>
+            <div class="join-agree">
+              <ul>
+                <li>
+                  <div class="agree-area tgSlide">
+                    <div class="agree-tit">
+                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>$고객사명$ 회원 이용약관</span></label>
+                      <button class="btn btn-slide-open tgSlideBtn">더보기</button>
+                    </div>
+                    <div class="agree-cont tgSlideCont">
+                      <div>
+                        고객사명$ 이용표준약관 (利用標準約款)
+                        제 1 장 총 칙
+                        공 정  거 래 위 원 회
+                        표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+                        제 1조 (목적 )
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="agree-area tgSlide">
+                    <div class="agree-tit">
+                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보의 수집, 이용목적, 항목 및 보유기간</span></label>
+                      <button class="btn btn-slide-open tgSlideBtn">더보기</button>
+                    </div>
+                    <div class="agree-cont tgSlideCont">
+                      <div class="agree-textarea">
+                        고객사명$ 이용표준약관 (利用標準約款)
+                        제 1 장 총 칙
+                        공 정  거 래 위 원 회
+                        표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+                        제 1조 (목적 )
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="agree-area tgSlide">
+                    <div class="agree-tit">
+                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>$고객사명$ 회원 이용약관</span></label>
+                      <button class="btn btn-slide-open tgSlideBtn">더보기</button>
+                    </div>
+                    <div class="agree-cont tgSlideCont">
+                      <div>
+                        고객사명$ 이용표준약관 (利用標準約款)
+                        제 1 장 총 칙
+                        공 정  거 래 위 원 회
+                        표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+                        제 1조 (목적 )
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area-c">
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-ml1">취소</a>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-ml2">회원가입하기</a>
         </div>
       </div>
     </section>
@@ -401,8 +484,7 @@
       /* ==========================================================================
       현재페이지에서만 사용 js
       ========================================================================== */
-      ratingBtnArea(); // 포토리뷰 별점버튼 js
-      reviewToggle(); //리뷰토글
+      toggleSlideArea(); // 토글영역
 
       
 
