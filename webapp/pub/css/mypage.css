@@ -157,8 +157,9 @@
 .mypage-cont .my-main .board-faq .my-boardlist ul li a > p {width: 100%;}
 .mypage .product-list-wrap {max-width: 986px; margin-bottom: 100px;}
 .mypage .product-list-wrap .tit-area {margin-bottom: 30px;}
-.mypage .unit-type1 {height: 421px;}
+.mypage .unit-type1 {height: 450px;}
 .mypage .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
+.mypage .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 18px;}
 
 /* ==========================================================================
     상품상세 
