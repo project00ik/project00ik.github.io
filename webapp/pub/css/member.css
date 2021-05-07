@@ -74,7 +74,9 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 .join-list-con .con-normal-info .list-in {margin-top: 0; border-top: 0; display: flex; flex-wrap: wrap;}
 .join-list-con .con-normal-info .list-in .list-w100 {flex: inherit; width: 100%; border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
 .join-list-con .con-normal-info .list-in .list-w60 {width: 66.666%;}
-.join-list-con .con-normal-info .list-in .list-w60 .select {width: 118px; flex: initial; margin-left: 5px;}
+.join-list-con .con-normal-info .list-in .list-w60 input {flex:initial; width: 395px;}
+.join-list-con .con-normal-info .list-in .list-w60 .btn-style-m1 {flex: 1;}
+.join-list-con .con-normal-info .list-in .list-w60 .select {flex: 1;  margin-left: 5px;}
 .join-list-con .con-normal-info .list-in > li {width: 33.333%;}
 .join-list-con .con-normal-info .list-in > li > label {width: 120px;}
 
