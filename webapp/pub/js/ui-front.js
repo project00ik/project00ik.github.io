@@ -522,5 +522,14 @@ function realtimeSearchSlide(){
   })
 }
 
+// function scaleImg(){
+//   $('.product-1st').on('mouseover', function(){
+//     $('.product-1st .unit-area > dt.on').addClass('on');
+//   });
+//   $('.product-1st').on('mouseoout', function(){
+//     $('.product-1st .unit-area > dt.on').removeClass('on');
+//   })
+// }
+
 
 

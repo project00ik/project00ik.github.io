@@ -205,7 +205,7 @@
 .btn-star.on {background:url(../images/common/icon_star_s_on.svg) 0 0 no-repeat;}
 .btn-more {width:57px; height:18px; line-height:18px; font-size:14px; text-align:left; color:#000; background:url(../images/common/btn_more.svg) right center no-repeat;}
 .btn-more-black {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
-.btn-more-black2 {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
+.btn-more-black2 {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat; position: absolute; top: -69px; right: 35px; z-index: 2;}
 .btn-style-s1 {min-width:98px; height:26px; line-height:26px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000; display:inline-block;}
 button.btn-style-s1 {line-height:25px;}
 .btn-style-m1 {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
@@ -221,18 +221,8 @@ button.btn-style-s1 {line-height:25px;}
 .btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:#fff; position: relative;}
 .btn-like-l::after {content:""; width: 36px; height: 36px; margin:-18px 0 0 -18px;  display:inline-block; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
 .btn-like-l.on {}
-.btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s; animation-name:btnLike; opacity:1; transform:scale(1);}
-@keyframes btnLike {
-    0% {
-        transform:scale(1);
-    }
-    50% {
-        transform:scale(1.3);
-    }
-    100% {
-        transform:scale(1);
-    }
-}
+.btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s;}
+
 .btn-tooltip {width: 20px; height: 20px; margin-left:2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}
 .btn-tooltip.on {background: url(../images/common/btn_tooltip_on.svg) 0 0 no-repeat;}
@@ -299,7 +289,7 @@ button.btn-style-s1 {line-height:25px;}
 .ellipsis-multiple3 {overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; word-wrap:break-wrod;}
 
 /* 탭 */
-.tab-area {}
+.tab-area {position: relative;}
 .tabArea .tabCont {display:none;}
 .tabArea .tabCont.active {display:block;}
 .tabSlide .tabCont {display:none;}
@@ -517,6 +507,18 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .product-list-wrap .best-list > li.product-1st::after {content:"1"; width:50px; height:50px; font-size:32px; line-height:50px; background:#346dd0; top:0; left:0;}
 .best-list .unit-type1 {height:459px;}
 .best-list .product-1st .unit-type1 {padding:0; border:1px solid #d7d7d7;}
+.best-list .product-1st .unit-area > dt.on {animation-duration:3s; animation-name:scaleImg; opacity:1; transform:scale(1);}
+@keyframes scaleImg {
+    0% {
+        transform:scale(1);
+    }
+    50% {
+        transform:scale(1.3);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
 .best-list .unit-type1 .unit-layer {border:0;}
 .best-list .unit-type1 .unit-area {padding:0 10px;}
 .best-list .unit-type1 .unit-area > dd {padding-bottom:20px;}
@@ -838,7 +840,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 }
 @media only screen and  (max-width:360px){ /* galaxy */
-
+    .unit-type1 .unit-layer .unit-under-btn .btn-like {margin-left:3px}
 }
 @media only screen and  (max-width:320px){ /* iphoneSE */
     .product-list-wrap .product-list {padding:0 10px;}
