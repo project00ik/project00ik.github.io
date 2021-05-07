@@ -484,6 +484,34 @@ function scrollTab() {
   });
 }
 
+
+// function btnTooltip(){
+//   // 툴팁
+//   $('.tooltipBtn').each(function(){
+//     $(this).on('click', function(){
+//       $(this).toggleClass('on');
+//       if($(this).hasClass('on')){
+//         $(this).closest('.tooltip-box').show();
+//       } else {
+//         $(this).closest('.tooltip-box').hide();
+//       }
+//     });
+//     $(this).find('.btnCloseTooltip').on('click', function(){
+//       $(this).closest('.tooltipBtn').removeClass('on');
+//     })
+//   })
+// }
+
+// function scaleImg(){
+//   $('.product-1st').on('mouseover', function(){
+//     $('.product-1st .unit-area > dt.on').addClass('on');
+//   });
+//   $('.product-1st').on('mouseoout', function(){
+//     $('.product-1st .unit-area > dt.on').removeClass('on');
+//   })
+// }
+
+
 /* ==========================================================================
     swiper(plugin)
 ========================================================================== */
@@ -522,14 +550,6 @@ function realtimeSearchSlide(){
   })
 }
 
-// function scaleImg(){
-//   $('.product-1st').on('mouseover', function(){
-//     $('.product-1st .unit-area > dt.on').addClass('on');
-//   });
-//   $('.product-1st').on('mouseoout', function(){
-//     $('.product-1st .unit-area > dt.on').removeClass('on');
-//   })
-// }
 
 
 

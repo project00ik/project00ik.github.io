@@ -139,7 +139,7 @@
 .action-bar .detail-btn > li.buy-area {flex:2.317;}
 .action-bar .detail-btn .btn {height:100%; display:inline-block; text-align:center; line-height:50px; vertical-align:middle;}
 
-.option-ly-btn {width:48px; height:20px; display:inline-block; margin-left:-24px; font-size:0; position:absolute; top:-20px; left:50%; z-index:1; background: url(../images/common/btn_ly_option_more.svg) 0 0 no-repeat;}
+.option-ly-btn {width:48px; height:20px; display:inline-block; margin-left:-24px; font-size:0; position:absolute; top:-19px; left:50%; z-index:1; background: url(../images/common/btn_ly_option_more.svg) 0 0 no-repeat;}
 .option-ly-btn-open {width:48px; height:20px; display:inline-block; margin-left:-24px; font-size:0; position:absolute; top:-20px; left:50%; z-index:1; background: url(../images/common/btn_ly_option_more_on.svg) 0 0 no-repeat;}
 .ly-detail {width:100%; padding:0 20px 83px; background:#fff; position:fixed; bottom:0; left:0; z-index:100; transition-duration:0.5s; -moz-transition-duration:0.5s; display:none;}
 .ly-detail.open {display:block;}

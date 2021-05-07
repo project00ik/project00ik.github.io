@@ -1,0 +1,7 @@
+<svg id="tooltip_mo_default" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="_00" data-name="00" fill="#fff" stroke="#bbb" stroke-width="1">
+    <rect width="18" height="18" stroke="none"/>
+    <rect x="0.5" y="0.5" width="17" height="17" fill="none"/>
+  </g>
+  <text id="_" data-name="?" transform="translate(12 14)" fill="#666" font-size="12" font-family="SpoqaHanSansNeo-Medium, Spoqa Han Sans Neo" font-weight="500"><tspan x="-5.82" y="0">?</tspan></text>
+</svg>

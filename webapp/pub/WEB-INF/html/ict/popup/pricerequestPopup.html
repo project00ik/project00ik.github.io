@@ -281,12 +281,20 @@
                 </li>
                 <li>
                   <div class="pop-ip-area">
-                    <label for="q-type">메일주소</label>
+                    <label for="q-type">이메일 주소</label>
                     <div class="form-layout form-flexnone">
-                      <input type="text" class="input">
-  
+                      <div class="form-layout form-email">
+                        <input type="text" name="" class="input" value="" maxlength="100">
+                        <span class="bar">@</span>
+                        <input type="text" name="" class="input" value="" maxlength="100">
+                        <select class="select">
+                          <option value="">직접입력</option>
+                          <option value="aaa.com">naver.com</option>
+                          <option value="bbb.net">bbb.net</option>
+                        </select>
+                      </div>
                       <p class="pop-layout-txt3">※ 처리결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.</p>
-                    </div>
+                    </div>                    
                   </div>
                 </li>
               </ul>
