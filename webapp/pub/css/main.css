@@ -199,9 +199,22 @@
 
 .product-result {margin-top:54px;}
 .product-result .tit-area {padding-bottom:20px; border-bottom:1px solid #d7d7d7;}
+.product-result .product-list-wrap {margin-top:30px;}
+.product-result .paging {margin-top:70px;}
 .list-top-area {display:flex; align-items:flex-end; flex-wrap: wrap; justify-content:space-between;}
 .list-top-area .tab-rd-area {flex:1;}
-.list-top-area .tab-rd-area > li {display:inline-block;}
+.list-top-area .right-area {display:inline-block;}
+.btn-list-layout {width: 55px; height: 28px; background: url(../images/common/btn_list_layout.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
+.btn-list-layout.on {background: url(../images/common/btn_list_layout.svg) 0 0 no-repeat;}
+.rd-tab-area {}
+.rd-tab-area > li {display:inline-block;}
+.rd-tab-area > li + li {margin-left:24px;}
+.rd-tab-area .rd-tab {display:inline-block;}
+.rd-tab-area .rd-tab > span {padding-bottom:5px; font-size:16px; position:relative; cursor:pointer; display:inline-block;}
+.rd-tab-area .rd-tab > input {width:0; height:0; opacity: 0; overflow: hidden;}
+.rd-tab-area .rd-tab input:checked + span {color:#346dd0; font-weight:500;}
+.rd-tab-area .rd-tab input:checked + span::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
