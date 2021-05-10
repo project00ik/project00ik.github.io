@@ -105,7 +105,7 @@
 /* ==========================================================================
     마이페이지
 ========================================================================== */
-.mypage .tabArea {margin: 30px 0 100px;}
+.mypage-cont .tabArea {margin: 30px 0 100px;}
 .mypage-cont {position: relative; margin-top: 60px;}
 .mypage-cont .my-menu {position: absolute; top: 0; left: 0; width: 164px;}
 .mypage-cont .my-menu .my-logo {display: flex; justify-content: center; margin-bottom: 60px; align-items: center; width: 164px; height: 160px; border-radius: 80px 80px 0px 80px; background: #2d3a52;}
@@ -155,11 +155,11 @@
 .mypage-cont .my-main .my-boardlist ul li a > p {width: 326px; font-size: 16px; color: #000;}
 .mypage-cont .my-main .my-boardlist ul li a > span {font-size: 14px; color: #666;}
 .mypage-cont .my-main .board-faq .my-boardlist ul li a > p {width: 100%;}
-.mypage .product-list-wrap {max-width: 986px; margin-bottom: 100px;}
-.mypage .product-list-wrap .tit-area {margin-bottom: 30px;}
-.mypage .unit-type1 {height: 450px;}
-.mypage .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
-.mypage .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 18px;}
+.mypage-cont .product-list-wrap {max-width: 986px; margin-bottom: 100px;}
+.mypage-cont .product-list-wrap .tit-area {margin-bottom: 30px;}
+.mypage-cont .unit-type1 {height: 450px;}
+.mypage-cont .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
+.mypage-cont .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 18px;}
 
 /* ==========================================================================
     상품상세 
@@ -240,9 +240,10 @@
 
     .tit-type2 .count {font-size: 16px; margin-left: 2px;}
 
-    .mypage .unit-type1 {height: auto;}
-    .mypage .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
-    .mypage .tabArea {margin: 20px 0 0;}
+
+    .mypage-cont .unit-type1 {height: auto;}
+    .mypage-cont .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
+    .mypage-cont .tabArea {margin: 20px 0 0;}
     .mypage-cont {margin-top: 0;}
     .mypage-cont .my-menu {position: relative; width: 100%; padding-bottom: 100px;}
     .mypage-cont .my-menu .my-logo {display: none;}
@@ -274,7 +275,8 @@
     .mypage-cont .my-main .my-board {display: none;}
     .mypage-cont .my-main .btn-board-area {width: 100%; overflow: hidden; padding: 20px; margin-bottom: 30px; background: #f5f5f5;}
     .mypage-cont .my-main .btn-board-area a {float: left; width: 50%;}
-    .mypage .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px;}
+    .mypage-cont .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px;}
+    .mypage-cont .product-list-wrap {margin-bottom: 50px;}
 
     .product-detail .detail-review ul li .review-info {padding-bottom: 6px;}
     .product-detail .detail-review ul li .review-info p {font-size: 12px; margin-right: 20px;}
@@ -294,6 +296,7 @@
     .product-detail .detail-review ul li.on .review-cont-img img {max-width:100%;}
     .product-detail .detail-review .detail-review-empty {padding: 20px 0;}
     .product-detail .detail-review .detail-review-empty p {padding-top: 38px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_list_empty.svg) center 0 no-repeat;}
+    
     
     
     
