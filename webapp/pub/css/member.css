@@ -21,6 +21,11 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 .form-phone .select {width: 86px; flex: inherit;}
 .form-phone .input {flex:1;}
 
+input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 16px center no-repeat;}
+
+
+
+
 
 
 
@@ -102,6 +107,10 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
+
+    input.datepicker {background: none;}
+
+
     .tit-type1-2 {font-size: 16px; font-weight: normal; text-align: center; margin-bottom: 0; padding: 8px 0; border-bottom: 1px solid #d7d7d7;}
     .tit-type2-1 {font-size: 16px;}
     .form-layout .bar {font-size: 14px;}
