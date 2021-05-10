@@ -1,0 +1,38 @@
+<svg id="switch_card_list" data-name="switch_card/list" xmlns="http://www.w3.org/2000/svg" width="55" height="28" viewBox="0 0 55 28">
+  <g id="btn_card" transform="translate(-1559 -3344)">
+    <g id="btn_card_default">
+      <g id="btn" transform="translate(1559 3344)" fill="#fff" stroke="#bbb" stroke-width="1">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <g id="ic_card" transform="translate(1561 3346)">
+        <rect id="area" width="24" height="24" fill="none"/>
+        <g id="icon" transform="translate(-1440 -420)">
+          <rect id="_00" data-name="00" width="8" height="8" transform="translate(1443 423)" fill="#bbb"/>
+          <rect id="_00-2" data-name="00" width="8" height="8" transform="translate(1453 423)" fill="#bbb"/>
+          <rect id="_00-3" data-name="00" width="8" height="8" transform="translate(1443 433)" fill="#bbb"/>
+          <rect id="_00-4" data-name="00" width="8" height="8" transform="translate(1453 433)" fill="#bbb"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="btn_list" transform="translate(-1532 -3344)">
+    <g id="btn_list_active">
+      <g id="btn-2" data-name="btn" transform="translate(1559 3344)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="28" height="28" stroke="none"/>
+        <rect x="0.5" y="0.5" width="27" height="27" fill="none"/>
+      </g>
+      <g id="ic_list__00" data-name="ic_list_#00" transform="translate(1561 3346)">
+        <rect id="area-2" data-name="area" width="24" height="24" fill="none"/>
+        <g id="icon-2" data-name="icon" transform="translate(-1440 -417)">
+          <rect id="_00-5" data-name="00" width="2" height="3" transform="translate(1443 423)"/>
+          <rect id="_00-6" data-name="00" width="14" height="3" transform="translate(1447 423)"/>
+          <rect id="_00-7" data-name="00" width="2" height="3" transform="translate(1443 428)"/>
+          <rect id="_00-8" data-name="00" width="14" height="3" transform="translate(1447 428)"/>
+          <rect id="_00-9" data-name="00" width="2" height="3" transform="translate(1443 433)"/>
+          <rect id="_00-10" data-name="00" width="14" height="3" transform="translate(1447 433)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
