@@ -12,8 +12,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 .btn-area-c .btn + .btn {margin-left: 10px;}
 .btn-slide-open {width: 18px; height: 18px; background: url(../images/common/arrow_select.svg) center center no-repeat #fff; font-size: 0;}
 .btn-slide-open.on { transform: rotate(180deg);}
-.btn-style-ml1 {min-width:198px; height:48px; line-height:46px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
-.btn-style-ml2 {min-width:198px; height:48px; line-height:46px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 
 .check-style2 > span {font-size: 16px; color: #000; line-height: 22px; margin-left: 10px;}
 
