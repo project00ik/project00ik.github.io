@@ -225,12 +225,13 @@ button.btn-style-s1 {line-height:25px;}
 .btn-like-l.on {}
 .btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s;}
 
-.btn-tooltip {width: 20px; height: 20px; margin-left:2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
+.btn-tooltip {width: 20px; height: 20px; margin:3px 0 0 2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}
 .btn-tooltip.on {background: url(../images/common/btn_tooltip_on.svg) 0 0 no-repeat;}
 .btn-tooltip.on .tooltip-box {display:block;}
 .tooltip-box > p {font-size: 13px; color: #666;}
 .tooltip-close {width:18px; height:18px; background: url(../images/common/btn_tooltip_close.svg) 0 0 no-repeat; display:inline-block; font-size:0; position: absolute; top:5px; right:5px; z-index: 1;}
+.btn-refresh {width: 36px; height: 36px; margin-left:5px; display:inline-block; font-size:0; background: url(../images/common/btn_refresh.svg) 0 0 no-repeat;}
 
 /* 플래그 */
 .flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 10px;}
@@ -712,6 +713,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-del {background: url(../images/common/mo_btn_del.svg) 0 0 no-repeat;}
     .tit-type1-1 {font-size:20px; margin-bottom:16px;}
     .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px}
+    .main .btn-more-black2 {position: inherit;  top:inherit; left: inherit; z-index: inherit;}
 
     .tooltip-box {left:inherit; right:0;}
     .tooltip-close {background: url(../images/common/mo_btn_tooltip_close.svg) 0 0 no-repeat;}
