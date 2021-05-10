@@ -58,5 +58,7 @@
   
   .promotion-cont .event-empty {padding: 50px 0;}
   .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
+  .promt-banner .ban-text-area .ban-tit {font-size: 18px;}
+  .promt-banner .ban-text-area .ban-P {font-size: 14px;}
 
 }
