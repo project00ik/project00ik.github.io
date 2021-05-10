@@ -64,7 +64,7 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 .join-list-con .list-con .mem-info-list li .form-layout .input {flex: inherit;}
 .join-list-con .list-con .mem-info-list li .form-email input.input {flex: inherit; width: 100%;}
 .join-list-con .list-con .mem-info-list li .form-email .select {width: 118px;}
-.join-list-con .list-con .form-list-checkradio {display: flex; flex-wrap: wrap; margin-bottom: -22px;}
+.join-list-con .list-con .form-list-checkradio {display: flex; flex-wrap: wrap; margin-bottom: -22px; width: 100%;}
 .join-list-con .list-con .form-list-checkradio li {width: 25%; margin-bottom: 22px;}
 .join-list-con .list-con .agree-allcheck {padding-bottom: 20px;}
 .join-list-con .list-con .join-agree ul li {padding-bottom: 10px;}
