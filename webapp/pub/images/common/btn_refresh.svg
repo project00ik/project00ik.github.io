@@ -1,0 +1,7 @@
+<svg id="ic_correct_big" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect id="area" width="36" height="36" fill="none"/>
+  <g id="icon" transform="translate(5 8)">
+    <path id="_00" data-name="00" d="M25,14A11,11,0,1,0,14,25a8.45,8.45,0,0,0,6-2" transform="translate(-1 -4)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    <path id="_00-2" data-name="00" d="M4,19l4-5H0Z" transform="translate(20 -5)"/>
+  </g>
+</svg>

@@ -91,7 +91,7 @@
 .pro-detail-reporting > p {font-size:16px; float:left;}
 .pro-detail-reporting  .btn-style-s1 {float:right; margin-left:22px;}
 .pro-detail-info {width:570px; margin-left:40px; font-size:14px; display:inline-block; vertical-align: top;}
-.pro-detail-info .flag-area {}
+.pro-detail-info .flag-area {font-size: 0;}
 .pro-detail-info .brand {margin-top:10px; font-size: 16px;}
 .pro-detail-info .product-name {margin-top:10px; font-weight: 500; font-size: 24px;}
 .pro-detail-info .product-info {margin-top:10px; font-size: 16px; color: #999;}
@@ -170,6 +170,38 @@
 
 .personalization-area {margin:100px 0 120px;}
 
+/* ==========================================================================
+    상품목록
+========================================================================== */
+.pro-list-cont {margin-top:30px;}
+.location {width:100%; margin-bottom:50px; display:inline-block;}
+.location > .home {width:18px; height:18px; font-size:0; background: url(../images/common/icon_home.svg) 0 0 no-repeat; display:inline-block; float: left;}
+.location-list {float: left; display:inline-block;}
+.location-list > li {margin-left:12px; padding-left:13px; position: relative; float: left;}
+.location-list > li::before {content: ""; width:1px; height:10px; background:#e5e5e5; display:inline-block; position: absolute; top:50%; left:0; transform: translateY(-50%);}
+.location-list > li .select-type-s {width:163px; height:18px; padding-right:21px; line-height:18px; font-size:14px; color:#666; background:url(../images/common/arrow_select.svg) 100% 0 no-repeat; vertical-align: top;}
+.pro-list-cont .tit-type1-2 {margin-bottom:30px;}
+.filter-box {padding:31px 30px; border:1px solid #d7d7d7; border-top:1px solid #333; margin-bottom:10px;}
+.filter-box > ul {width:100%; overflow: hidden;}
+.filter-box > ul > li {width:16.666%; float:left;}
+.filter-box > ul > li > a {width:100%; height:100%; display:inline-block;}
+.filter-box > ul > li .num {vertical-align: top;}
+.filter-box .filter-rd {position: relative;}
+.filter-box .filter-rd input {opacity: 0; position: absolute; top:0; left:0;}
+.filter-box .filter-rd > span {height:40px; line-height:40px; font-size:16px; color:#666; vertical-align: middle;}
+.filter-box .filter-rd input:checked + span {color:#333; font-weight: 500;}
+.filter-price {width:100%; display:flex; padding:20px 30px; border:1px solid #d7d7d7;}
+.filter-price > li {display:inline-block;}
+.filter-price > li:first-child .cont {width:382px; margin-right:95px;}
+.filter-price > li:last-child .cont {width:467px;}
+.filter-price .tit {margin-right: 30px; font-weight: 500; font-size: 16px; text-align: left; color: #000; display:inline-block;}
+.filter-price .cont {display:inline-block;}
+
+.product-result {margin-top:54px;}
+.product-result .tit-area {padding-bottom:20px; border-bottom:1px solid #d7d7d7;}
+.list-top-area {display:flex; align-items:flex-end; flex-wrap: wrap; justify-content:space-between;}
+.list-top-area .tab-rd-area {flex:1;}
+.list-top-area .tab-rd-area > li {display:inline-block;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
