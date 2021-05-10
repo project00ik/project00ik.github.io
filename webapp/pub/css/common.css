@@ -296,6 +296,7 @@ button.btn-style-s1 {line-height:25px;}
 .tit-type2 {font-size:24px; color:#000;}
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
 .tit-type2-1 {font-size: 20px; color: #000;}
+.tit-type2-1 .count {vertical-align:top; color: #346dd0; font-weight: 700;}
 .tit-type3 {width:100%; height:36px; line-height:36px; font-size:16px; text-align:center; color:#000;}
 
 .ellipsis {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
@@ -844,7 +845,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .img-upload-btn > label {width: 63px; height: 63px;}
 
     /* sub */
-    .sub-content {width:100%; margin:0;}
+    .sub-content {width:100%; margin:0 0 100px;}
 
     /* 컨텐츠 레이아웃 */
     .align-area > .left {width:100%; float:inherit;}
