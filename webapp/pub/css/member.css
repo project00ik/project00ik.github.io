@@ -1,39 +1,5 @@
 /* 공통 */
-.tit-area2 {display: flex; align-items: flex-end;}
-.tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
-.tit-type2-1 {font-size: 20px; color: #000;}
-
-.form-layout .bar {font-size: 16px; color: #666;}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
-
-.btn-area-c {font-size: 0;}
-.btn-area-c .btn + .btn {margin-left: 10px;}
-.btn-slide-open {width: 18px; height: 18px; background: url(../images/common/arrow_select.svg) center center no-repeat #fff; font-size: 0;}
-.btn-slide-open.on { transform: rotate(180deg);}
-.btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
-.btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
-
-.check-style2 > span {font-size: 16px; color: #000; line-height: 22px; margin-left: 10px;}
-
-
-.form-phone .select {width: 86px; flex: inherit;}
-.form-phone .input {flex:1;}
-
 input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 16px center no-repeat;}
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
     회원가입
@@ -109,18 +75,6 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 @media only screen and (max-width:800px){
 
     input.datepicker {background: none;}
-
-
-    .tit-type1-2 {font-size: 16px; font-weight: normal; text-align: center; margin-bottom: 0; padding: 8px 0; border-bottom: 1px solid #d7d7d7;}
-    .tit-type2-1 {font-size: 16px;}
-    .form-layout .bar {font-size: 14px;}
-    .check-style1 > span {font-size: 14px;}
-    .check-style2 > span {font-size: 14px;}
-
-    .btn-style-ml1 {font-size: 16px;}
-
-    
-
 
 
     .join-content .btn-area-c {display: flex; margin: 0 20px;}

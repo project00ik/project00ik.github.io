@@ -95,7 +95,7 @@
 .real-time-search .real-time-layer .all-list .realtime-area .num {top:5px;}
 
 .container {margin-top:174px; overflow:hidden;}
-.sub-content {width:1200px; margin:60px auto 0; min-height:550px;}
+.sub-content {width:1200px; margin:60px auto 120px; min-height:550px;}
 
 /* footer */
 .footer-wrap {width:100%; overflow:hidden; position:relative; background:#fafafa;}
@@ -226,6 +226,13 @@ button.btn-style-s1 {line-height:25px;}
 .btn-like-l.on {}
 .btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s;}
 
+.btn-area-c {font-size: 0;}
+.btn-area-c .btn + .btn {margin-left: 10px;}
+.btn-slide-open {width: 18px; height: 18px; background: url(../images/common/arrow_select.svg) center center no-repeat #fff; font-size: 0;}
+.btn-slide-open.on { transform: rotate(180deg);}
+.btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+
 .btn-tooltip {width: 20px; height: 20px; margin:3px 0 0 2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}
 .btn-tooltip.on {background: url(../images/common/btn_tooltip_on.svg) 0 0 no-repeat;}
@@ -284,8 +291,11 @@ button.btn-style-s1 {line-height:25px;}
 .tit-area {display:flex; align-items:flex-end; flex-wrap: wrap;justify-content:space-between; margin-bottom:40px;}
 .tit-area .tit-type1 {margin-bottom:0;}
 .tit-area > * {margin-bottom: 0;} /* 정리필요 */
+.tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
+.tit-area2 {display: flex; align-items: flex-end;}
 .tit-type2 {font-size:24px; color:#000;}
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
+.tit-type2-1 {font-size: 20px; color: #000;}
 .tit-type3 {width:100%; height:36px; line-height:36px; font-size:16px; text-align:center; color:#000;}
 
 .ellipsis {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
@@ -357,11 +367,15 @@ input.input:read-only {background:#fafafa; border:1px solid #bbb; color:#666;}
 input.input:read-only::placeholder {color:#666;}
 input.input:focus {border-color:#000; color:#000;}
 input.input:read-only:focus {border-color:#bbb;}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
 
 select.select {width:100%; height:38px; padding:0 38px 0 12px; border:1px solid #bbb; background:url(../images/common/arrow_select.svg) top 10px right 10px no-repeat #fff; font-size:14px; line-height:36px; color:#666; vertical-align:top;}
 select.select:focus {border-color:#000; color:#000;}
 select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
 select.select:focus {border-color:#000; color:#000;}
+select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
+
 
 .form-layout {width:100%; display:flex;}
 .form-layout .input {flex:1;}
@@ -377,6 +391,10 @@ select.select:focus {border-color:#000; color:#000;}
 .form-layout.form-email .input + .select {margin-left:5px;}
 .form-layout + .form-layout {margin-top:5px;}
 .form-layout .w-auto {flex:inherit; width:auto;}
+.form-layout .bar {font-size: 16px; color: #666;}
+
+.form-phone .select {width: 86px; flex: inherit;}
+.form-phone .input {flex:1;}
 
 textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px;}
 textarea.textarea:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
@@ -402,6 +420,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .check-style2 input + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox2.svg) 50% 50% no-repeat; background-size:22px 22px; border: 0; display:inline-block;}
 .check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_disabled.svg) 50% 50% no-repeat; }
 .check-style2 > span {margin-left:7px; font-weight:400; font-size:14px;}
+
+/* member 확인필요 */
+.check-style2 > span {font-size: 16px; color: #000; line-height: 22px; margin-left: 10px;}
 
 .radio-style1 {position:relative; display:inline-block;}
 .radio-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
@@ -492,7 +513,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .unit-type1 .unit-layer .unit-under-btn .btn-cart {width:36px; height:100%; font-size:0; background:url(../images/common/icon_cart_w.svg) 50% 50% no-repeat;}
 .unit-type1 .unit-layer .unit-under-btn .btn-like {width:36px; height:100%; font-size:0; margin-left:20px; background:url(../images/common/icon_like_w.svg) 50% 50% no-repeat;}
 .unit-type1 .unit-layer .unit-under-btn .btn-like.on {background:url(../images/common/icon_like_w_on.svg) 50% 50% no-repeat;}
-.unit-type1 .unit-layer .unit-under-btn .btn-restock {width:100%; height:100%; background:#000; color:#fff; text-align: center;}
+.unit-type1 .unit-layer .unit-under-btn .btn-restock {width:100%; height:100%; background:#000; color:#fff; text-align: center; font-size:18px;}
 .unit-type1 .unit-layer {display:none;}
 .unit-type1:hover .unit-layer {display:block;}
 .unit-type1 .flag-area {margin-bottom:6px;}
@@ -716,6 +737,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px}
     .main .btn-more-black2 {position: inherit;  top:inherit; left: inherit; z-index: inherit;}
 
+    .btn-style-ml1 {font-size: 16px;}
+
     .tooltip-box {left:inherit; right:0;}
     .tooltip-close {background: url(../images/common/mo_btn_tooltip_close.svg) 0 0 no-repeat;}
     .btn-tooltip {width: 18px; height: 18px; background: url(../images/common/mo_btn_tooltip.svg) 0 0 no-repeat;}
@@ -745,7 +768,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     /* 텍스트 관련 */
     .tit-area {padding:0 20px;}
     .tit-type1 {font-size:22px;}
+    .tit-type1-2 {font-size: 16px; font-weight: normal; text-align: center; margin-bottom: 0; padding: 8px 0; border-bottom: 1px solid #d7d7d7;}
     .tit-type2 {font-size:18px;}
+    .tit-type2-1 {font-size: 16px;}
     .tit-type3 {font-size:16px;}
 
     .tit-area {margin-bottom: 16px;} /* 정리필요 */
@@ -835,6 +860,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .spinner input {height:34px; line-height:34px;}
     .spinner .down {width:36px; height:36px; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
     .spinner .up {width:36px; height:36px; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
+    .check-style1 > span {font-size: 14px;}
+    .check-style2 > span {font-size: 14px;}
+    .form-layout .bar {font-size: 14px;}
 
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
