@@ -57,8 +57,8 @@
           <div class="cate-area">
             <button class="btn-cate btnCate">전체카테고리</button>
             <button class="btn-cate moBtnCate">전체카테고리</button>
-          </div>
-          <!--// header 카테고리 -->
+        </div>
+        <!--// header 카테고리 -->
           <div class="gnb">
             <ul>
               <li><a href="#">브랜드</a></li>
@@ -165,13 +165,24 @@
       </div>
     </header>
     <section class="container">
-      <div class="sub-content">
-        컨텐츠 내용
+      <div class="sub-content join-content">
+        <p class="member-tit"><strong>IC</strong>TMALL 개인정보보호 안내</p>
+        <p class="member-sub-tit">고객님, 비밀번호 변경으로 <em>소중한 개인정보를 지켜주세요!</em></p>
+        <div class="login-wrap privacy">
+          <p>고객님은 3개월 동안 비밀번호를 <em>변경하지 않으셨습니다.</em></p>
+          <div class="privacy-box">
+            <p>장기간 비밀번호를 변경하지 않고 동일한 비밀번호를 사용중인 경우, 개인정보를 안전하게 보호하고, 개인정보 도용으로 인한 피해를 방지하기 위해 주기적으로 비밀번호를 변경하도록 안내해드리고 있습니다.</p>
+            <p>고객님의 소중한 정보 보호를 위하여 적극적인 참여 부탁드립니다.</p>
+          </div>
+          <div class="btn-full-area">
+            <a href="#" class="btn btn-style-l1">다음에 변경</a>
+            <a href="#" class="btn btn-style-l2">비밀번호 변경</a>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer-wrap">
-      <div class="footer">
-        <div class="footer-top">
+      <div class="footer"><div class="footer-top">
           <ul>
             <li>회사소개</li>
             <li>이용약관</li>
@@ -198,26 +209,30 @@
       </div>
     </footer>
   </div>
-  <!-- 주소검색 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="addressPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle">
-            <p>도로명 또는 지번주소 검색</p>
-            <a href="javascript:;" onc lick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-address">
-              
+
+
+
+  <!-- 퀵메뉴 -->
+  <!-- <div class="quick-menu">
+    <div class="qk-group">
+        <a href="#" class="qk-notify">
+            <u></u><span>알림</span>
+            <div class="noti-txt">
+                <p class="mo-hide">배송중인 상품이 있습니다.</p>
+                <p class="pc-hide">1</p>
             </div>
-          </div>
-        </div>
-      </div>
+        </a>
+        <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
+        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
+        <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+        <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
+        <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
     </div>
-  </div>
-  <!-- //주소검색 팝업 -->
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+  </div> -->
+  <!--// 퀵메뉴 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -238,13 +253,23 @@
       tab(); // 탭 
       toggleBtn(); // 토글버튼
       accordion(); // 아코디언
+      
       /* ==========================================================================
-          현재페이지에서만 사용 js
+      현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('addressPopup');
-
-
-
+      ratingBtnArea(); // 포토리뷰 별점버튼 js
+      reviewToggle(); //리뷰토글
+  
+                  
+      $(".login-wrap input:radio[name=rd]").on('click', function (){
+        if($(this).hasClass('email')){
+          $('.tab-cont').find('.email').addClass('on');
+          $('.tab-cont').find('.phone').removeClass('on');
+        }else{
+          $('.tab-cont').find('.phone').addClass('on');
+          $('.tab-cont').find('.email').removeClass('on');
+        }            
+      });
     });
   </script>
   <!-- javascript -->
