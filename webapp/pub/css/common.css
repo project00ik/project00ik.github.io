@@ -364,12 +364,12 @@ select.select:focus {border-color:#000; color:#000;}
 .form-layout {width:100%; display:flex;}
 .form-layout .input {flex:1;}
 .form-layout .select {flex:1;}
-.form-layout .input-price {flex:1; width:100%; height:38px; padding:0 10px; border:1px solid #bbb; line-height:35px; font-size:13px;}
-.form-layout .input-price.focus {border-color:#000;}
+.form-layout .input-price {flex:1; width:100%; height:38px; padding:0 10px; border:1px solid #bbb; line-height:35px; font-size:13px; color:#bbb;}
+.form-layout .input-price.focus {border-color:#000; color:#000;}
 .form-layout .input-price .input {width:calc(100% - 18px); height:36px; border:0; padding:0; text-align:right; vertical-align:top;}
 .form-layout .input-price .won {width:15px; height:36px; line-height:36px; display:inline-block; vertical-align:top;}
-.form-layout .input-price.disabled {color:#bbb;}
-.form-layout .input-price input.input:disabled {color:#bbb; background:none;}
+.form-layout .input-price.disabled {color:#d7d7d7; background: #fafafa;}
+.form-layout .input-price input.input:disabled {color:#d7d7d7; background:none;}
 .form-layout .bar {height:35px; line-height:33px; padding:0 5px; display:inline-block; vertical-align:middle;}
 .form-layout.form-email .input + .input {margin-left:5px;}
 .form-layout.form-email .input + .select {margin-left:5px;}
