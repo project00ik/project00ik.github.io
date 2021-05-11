@@ -1,3 +1,5 @@
+/* 공통 */
+
 /* ==========================================================================
     유닛 관련
 ========================================================================== */
@@ -8,16 +10,16 @@
 .unit-type2 .unit-area > dt {width:100%; background:#f5f5f5; position: relative;}
 .unit-type2 .unit-area > dt > img {width:100%;}
 .unit-type2 .unit-area > dd {width:100%; padding:16px 0 0;}
-.unit-type2 .unit-area .promt-name {width:100%; height:50px; font-size:20px; font-weight: 500;}
+.unit-type2 .unit-area .unit-title {width:100%; height:50px; font-size:20px; font-weight: 500;}
 .unit-type2 .unit-area .date-area {display:-webkit-box; display:-ms-flexbox; display:flex; align-items:flex-end;padding-top: 3px; }
 .unit-type2 .unit-area .date-area .date {font-size:14px; color:#333; display:inline-block;}
 .unit-type2 .unit-area .date-area .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
 .unit-type2 .unit-area .date-area .dday {font-size:14px; color:#346dd0; font-weight: 500; display:inline-block; margin-left: 10px;}
 .unit-type2 .unit-area .date-area .dday.end {color: #999;}
 
-.promt-list-wrap {width:100%; max-width:1200px;}
-.promt-list-wrap .promt-list {width:calc(100% + 14px); margin:0 -7px; font-size:0;}
-.promt-list-wrap .promt-list > li {width:33.333%; padding:0 7px; display:inline-block;}
+
+
+
 
 
 
@@ -29,14 +31,31 @@
 /* ==========================================================================
     프로모션
 ========================================================================== */
+.promotion-cont .event-empty {text-align: center; border: 1px solid #d7d7d7; padding: 100px 0;}
+.promotion-cont .event-empty p {padding-top: 80px; font-size: 16px; line-height: 22px; color: #999; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
 .promotion-cont .tab-area .tab-style2 {text-align: center;}
 .promt-banner {position: relative; text-align: center; margin-bottom: 50px;}
 .promt-banner img {max-width: 100%;}
 .promt-banner .ban-text-area {position: absolute; top: 50%; left: 0; width: 100%; transform: translateY(-50%);}
 .promt-banner .ban-text-area .ban-tit {font-size: 28px; color: #fff; font-weight: 500; padding-bottom: 12px;}
 .promt-banner .ban-text-area .ban-p {font-size: 16px; color: #e5e5e5; font-weight: normal;}
-.promotion-cont .event-empty {text-align: center; border: 1px solid #d7d7d7; padding: 100px 0;}
-.promotion-cont .event-empty p {padding-top: 80px; font-size: 16px; line-height: 22px; color: #999; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
+.promt-list-wrap {width:100%; max-width:1200px;}
+.promt-list-wrap .promt-list {width:calc(100% + 14px); margin:0 -7px; font-size:0;}
+.promt-list-wrap .promt-list > li {width:33.333%; padding:0 7px; display:inline-block;}
+
+.promotion-detail .promt-top {width: 100%; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid #d7d7d7; }
+.promotion-detail .promt-top .promt-detail-tit {font-size: 0; padding-bottom: 10px;}
+.promotion-detail .promt-top .promt-detail-tit p {width: 100%; font-size: 24px; color: #000; font-weight: 500; padding-bottom: 6px;}
+.promotion-detail .promt-top .promt-detail-tit span {font-size: 16px; color: #999;}
+.promotion-detail .promt-top .promt-detail-tit .dday {color: #346dd0; font-weight: 500; margin-left: 10px;}
+.promotion-detail .promt-top .promt-detail-tit .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
+.promotion-detail .promt-top .btn-small-line {margin-bottom: 16px;}
+.promotion-detail .promt-cont {padding: 60px 100px; border-bottom: 1px solid #d7d7d7; }
+.promotion-detail .promt-cont img {max-width: 100%;}
+
+
+
+
 
 
 
@@ -49,16 +68,27 @@
 
 
 @media only screen and (max-width: 800px){
+  /* ==========================================================================
+    유닛 관련
+========================================================================== */
+/* 유닛 */
   .unit-type2 {height: auto; padding-bottom: 30px;}
-  .unit-type2 .unit-area .promt-name {height: 38px; font-size: 16px;}
+  .unit-type2 .unit-area .unit-title {height: 38px; font-size: 16px;}
   .unit-type2 .unit-area .date-area {padding-top: 8px;}
 
+
+
+
+  /* ==========================================================================
+    프로모션
+========================================================================== */
+  .promotion-cont .event-empty {padding: 50px 0;}
+  .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}  
+  .promt-banner .ban-text-area .ban-tit {font-size: 18px;}
+  .promt-banner .ban-text-area .ban-P {font-size: 14px;}  
   .promt-list-wrap .promt-list {padding: 0 20px; width: auto;}
   .promt-list-wrap .promt-list > li {width: 100%;}
   
-  .promotion-cont .event-empty {padding: 50px 0;}
-  .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
-  .promt-banner .ban-text-area .ban-tit {font-size: 18px;}
-  .promt-banner .ban-text-area .ban-P {font-size: 14px;}
+  
 
 }
