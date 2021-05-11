@@ -1,0 +1,59 @@
+/* 공통 */
+/* 탭 */
+.tab-area .tab-style4 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; text-align: center;}
+.tab-area .tab-style4 > li + li {margin-left:12px;}
+.tab-area .tab-style4 .tabBtn {padding: 12px 25px; border-radius: 21px; font-size:16px; font-weight: 500; background: #f5f5f5; cursor:pointer;}
+.tab-area .tab-style4 .tabBtn.on {color:#fff; background: #000;}
+
+
+/* ==========================================================================
+    자재일괄구매
+========================================================================== */
+.materiel-banner {position: relative; text-align: center; margin-bottom: 50px;}
+.materiel-banner img {max-width: 100%;}
+.materiel-banner .ban-text-area {position: absolute; top: 50%; left: 100px; transform: translateY(-50%); text-align: left;}
+.materiel-banner .ban-text-area p {font-size: 34px; color: #fff; line-height: 41px; display: inline-block; font-weight: normal;}
+.materiel-banner .ban-text-area p b {display: block; font-weight: bold;}
+
+.materiel-cont .bulk-purchase-wrap {background: none;}
+.materiel-cont .materiel-list {padding: 70px 0 0 0;}
+.materiel-cont .tit-area2 {margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #d7d7d7;}
+.materiel-cont .tab-area .tab-cont {padding: 50px 0;}
+
+/* .container.fixed-con {padding-top: 103px;} */
+.materiel-cont .tab-btn-list.fixed {position: fixed; max-width: 1200px; background: #fff; z-index: 10; padding: 60px 0 50px;}
+.materiel-cont .tab-btn-list.fixed + .tab-cont {margin-top: 123px;}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+  /* 공통 */
+  /* 탭 */
+  .tab-area .tab-style4 > li {margin: 0 0 12px 10px;}
+  .tab-area .tab-style4 > li:first-child {margin-left: 20px;}
+  .tab-area .tab-style4 > li:last-child {margin-right: 20px;}
+  .tab-area .tab-style4 .tabBtn {padding: 10px 20px; font-size: 14px;}
+  
+
+
+
+  /* ==========================================================================
+    자재일괄구매
+========================================================================== */
+  .materiel-banner {margin-bottom: 30px;}
+  .materiel-banner .ban-text-area {left: 28px;}
+  .materiel-banner .ban-text-area p {font-size: 18px; line-height: 1.2;}
+  .materiel-cont {margin-top: 0;}
+  .materiel-cont .materiel-list {padding: 50px 0 0;}
+  .materiel-cont .tit-area2 {margin: 0 20px 10px;}
+  .materiel-cont .tab-area .tab-cont {padding: 30px 0 40px;}
+
+  .materiel-cont .tab-btn-list.fixed {padding: 20px 0 20px;}
+  .materiel-cont .tab-btn-list.fixed + .tab-cont {margin-top: 80px;}
+
+  
+
+
+}

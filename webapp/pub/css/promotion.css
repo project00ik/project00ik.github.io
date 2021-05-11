@@ -81,6 +81,7 @@
   /* ==========================================================================
     프로모션
 ========================================================================== */
+  .promotion-cont {margin-top: 0;}
   .promotion-cont .event-empty {padding: 50px 0; margin: 0 20px;}
   .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}  
   .promt-banner .ban-text-area .ban-tit {font-size: 18px;}

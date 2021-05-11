@@ -280,6 +280,28 @@ function tab(){ // 탭 관련 js
   })
 }
 
+/* 정리필요 */
+function scrollTab() {
+  // scroll 탭 관련 js
+  $('.scrollTab li').each(function () { 
+    $(this).bind('click', function () {
+      var depId = $(this).attr('data-tab');
+      var winW = $(window).width();
+      if (winW > 800){
+        var depPd = 278;
+      } else {
+        var depPd = 240;
+      }
+      $('html, body').animate({ scrollTop: $('#' + depId).offset().top - depPd }, 800, 'easeInOutExpo');
+      $(this).addClass('on');
+      $(this).siblings().removeClass('on');
+    });
+  });
+}
+$(window).resize(function(){
+  scrollTab();
+})
+
 function ratingBtnArea(){
   // 포토리뷰 별점버튼 js
   $('.rating-btn-area').find('.btnStar').each(function(){
@@ -483,17 +505,6 @@ function pagination() {
     $(this).on('click', function () {
       $('.paging > a').removeClass('on');
       $(this).addClass('on');
-    });
-  });
-}
-
-function scrollTab() {
-  // scroll 탭 관련 js (미사용)
-  $('.tab li').each(function () { 
-    $(this).bind('click', function () {
-      var winWidth = $(window).width();
-      var depId = $(this).attr('data-tab');
-      $('html, body').animate({ scrollTop: $('#' + depId).offset().top - 180 }, 800, 'easeInOutExpo');
     });
   });
 }
