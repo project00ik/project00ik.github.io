@@ -519,6 +519,18 @@ function selectionDelete(){
   })
 }
 
+function filterBoxMore(){
+  // 필터 더보기 버튼 이벤트
+  $('.btn-filter-more').on('click', function(){
+    $(this).toggleClass('on');
+    if($(this).hasClass('on')){
+      $('.filter-box').css('height','auto');
+    } else {
+      $('.filter-box').css('height','108px');
+    }
+  });
+}
+
 
 
 // function btnTooltip(){
