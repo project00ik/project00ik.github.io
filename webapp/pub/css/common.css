@@ -846,7 +846,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .img-upload-btn > label {width: 63px; height: 63px;}
 
     /* sub */
-    .sub-content {width:100%; margin:48px 0 100px;}
+    .sub-content {width:100%; margin:36px 0 100px;}
 
     /* 컨텐츠 레이아웃 */
     .align-area > .left {width:100%; float:inherit;}

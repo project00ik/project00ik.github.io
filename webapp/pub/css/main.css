@@ -350,8 +350,9 @@
     .ly-detail .btn-full-area {display:flex;}
 
     /* 상품목록 */
-    .pro-list-cont {margin-top:48px;}
+    .pro-list-cont {margin-top:36px;}
     .pro-list-cont .location {display: none;}
+    .pro-list-cont .tit-type1-2 {margin-bottom:0;}
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 
