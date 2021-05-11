@@ -542,6 +542,17 @@ function filterBoxMore(){
   });
 }
 
+function btnListLayout(){
+  $('.btnListLayout').on('click', function () {
+    $(this).toggleClass('on');
+    if ($(this).hasClass('on')) {
+      $('.productLayout').addClass('proList');
+    } else {
+      $('.productLayout').removeClass('proList');
+    }
+  })
+}
+
 
 
 // function btnTooltip(){

@@ -375,12 +375,12 @@
                 <option value="">20개씩보기</option>
                 <option value="">10개씩보기</option>
               </select>
-              <button class="btn btn-list-layout">리스트형 보기</button>
+              <button class="btn btn-list-layout btnListLayout">리스트형 보기</button>
               <button class="btn btn-filter-detail pc-hide" onclick="lyOpen('filterDetail')">상세필터</button>
             </div>
           </div>
           <!-- 상품 목록 -->
-          <div class="product-list-wrap">
+          <div class="product-list-wrap productLayout">
             <div class="product-list">
               <li>
                 <div class="unit-type1">
@@ -1288,7 +1288,7 @@
             <p>필터</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
-          <div class="lyPopCont">
+          <div class="lyPopCont filter-popup">
             <div class="filter-detail-box">
               <dl class="selection-result">
                 <dt>선택항목</dt>
@@ -1310,7 +1310,6 @@
                     <span class="selection-item">컬러<button class="del">삭제</button></span>
                     <span class="selection-item">무료배송<button class="del">삭제</button></span>
                   </div>
-                  <button class="btn btn-style-m1 ml5">초기화</button>
                 </dd>
               </dl>
               <dl>
@@ -1416,7 +1415,7 @@
       ========================================================================== */
       btnFilterDetail(); // 상세필터
       selectionDelete(); // 선택항목 삭제버튼 이벤트
-      
+      btnListLayout(); // 상품목록 리스트형으로 보기      
     });
   </script>
   <!-- javascript -->

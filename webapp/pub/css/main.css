@@ -219,10 +219,8 @@
 .rd-tab-area .rd-tab input:checked + span {color:#346dd0; font-weight:500;}
 .rd-tab-area .rd-tab input:checked + span::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
 
-.rd-btn-area {}
-.rd-btn-area > li {display:inline-block;}
-.rd-btn-area > li + li {margin-left:24px;}
-.rd-btn-area .rd-btn {display:inline-block;}
+.rd-btn-area {font-size:0; margin-left:-5px; margin-top:-5px;}
+.rd-btn-area .rd-btn {margin-left:5px; margin-top:5px; display:inline-block;}
 .rd-btn-area .rd-btn > span {width: 118px; height: 38px; line-height: 37px; background: #fff; border: 1px solid #bbb; font-size: 14px; color: #666; text-align: center; display:inline-block;}
 .rd-btn-area .rd-btn > input {width:0; height:0; opacity: 0; overflow: hidden;}
 .rd-btn-area .rd-btn input:checked + span {color:#346dd0; border: 1px solid #346dd0;}
@@ -251,6 +249,14 @@
 .btn-filter-more.on {transform: rotate(-180deg);}
 
 .tit-type2-1 .mo-hide {display: inline-block; vertical-align: top;}
+
+/* 유닛 리스트형 */
+.proList.product-list-wrap .product-list > li {width:100%;}
+.proList .unit-type1 .unit-area {height:auto;}
+.proList .unit-type1 .unit-area > dt {width: 156px; height: 156px;}
+
+
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
@@ -384,8 +390,23 @@
     .product-result .tit-area {border-bottom:0; padding-bottom:0;}
     .btn.btn-filter-detail {width:98px; height:28px;}
     .btn.btn-filter-detail.pc-hide {display:inline-block;}
+    .popup-type-m .lyPopup .popup-cont .lyPopCont.filter-popup {padding:0}
+    .filter-detail-box {border:0;}
+    .filter-detail-box > dl.selection-result {padding:0;}
+    .selection-result > dt {display:none;}
+    .selection-result > dd {width:100%; overflow-y: hidden; overflow-x: auto;}
+    .selection-area {margin:0; padding:0 0 0 20px; white-space: nowrap;}
+    .selection-area .selection-item {padding:15px 0 14px; margin:0 16px 0 0;}
+    .selection-area .selection-item:last-child {margin:0 20px 0 0;}
+    .filter-detail-box > dl.selection-result + dl {border-top:0;}
+    .filter-detail-box > dl {display:block; padding:20px;}
+    .filter-detail-box > dl > dt {width:100%;}
+    .filter-detail-box .filter-chk-list {margin-top:0;}
+    .filter-detail-box .filter-chk-list > li {width:50%; padding-top:16px;}
+    .filter-detail-box > dl.sub-sort {padding-top:6px;}
+    .filter-detail-box .rd-btn-area {margin-top:16px;}
 
-    
+    .rd-btn-area .rd-btn > span {width:107px; height:36px; line-height:35px;}
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 
