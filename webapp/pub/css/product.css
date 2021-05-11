@@ -132,7 +132,6 @@
 .join-content .login-wrap.find .radio-select > div > div .form-layout{display: contents;width: calc(100% - 180px);}
 .join-content .login-wrap.find .radio-select > div > div .w380{width:380px}
 .join-content .login-wrap.find .radio-select > div > div .w100{width: calc(100% - 180px)}
-.join-content .login-wrap.find .radio-select > div > div button{flex:1;height:48px;line-height: 46px;font-size: 14px;}
 .join-content .login-wrap.find .radio-select select.select{width: 86px;}
 .join-content .login-wrap.find .radio-select .form-email select.select{width: 118px;flex: none;}
 .join-content .login-wrap.find #tab2 .radio-select .form-phone input{width: 130px;flex: none;}
