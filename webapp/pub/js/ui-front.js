@@ -498,6 +498,27 @@ function scrollTab() {
   });
 }
 
+function btnFilterDetail(){
+  // 상세필터
+  $('.btnFilterDetail').on('click', function(){
+    $(this).toggleClass('on');
+    if($(this).hasClass('on')){
+      $('.filterDetailBox').slideDown();
+    } else {
+      $('.filterDetailBox').hide();
+    }
+  });
+}
+
+function selectionDelete(){
+  // 선택항목 삭제버튼 이벤트
+  $('.selection-area').find('.del').each(function(){
+    $(this).on('click', function(){
+      $(this).closest('.selection-item').hide();
+    });
+  })
+}
+
 
 
 // function btnTooltip(){

@@ -230,7 +230,7 @@
 .filter-detail-area .right-area {margin:10px 0; float:right;}
 .btn-filter-detail {width: 118px; height: 38px; background: #346dd0; color:#fff; font-size: 14px; text-align: center;}
 .btn-filter-detail::before {content: ""; width:18px; height:18px; margin-top:2px; display:inline-block; background: url(../images/common/icon_filter.svg) 0 0 no-repeat; vertical-align: top;}
-.filter-detail-box {width:100%; overflow: hidden; border: 1px solid #d7d7d7;}
+.filter-detail-box {width:100%; overflow: hidden; border: 1px solid #d7d7d7; display:none;}
 .filter-detail-box > dl {padding:30px; display:flex;}
 .filter-detail-box > dl + dl {border-top:1px solid #d7d7d7;}
 .filter-detail-box > dl > dt {width:188px; font-weight: 500; font-size: 16px; color: #000;}
@@ -242,8 +242,10 @@
 .filter-detail-box > dl.selection-result > dt {font-size: 14px; color: #333; font-weight: 400;}
 .selection-area {margin-left:-20px; margin-top:-18px; padding-right:178px;}
 .selection-area .selection-item {margin-left:20px; margin-top:18px; font-weight: 500; font-size: 14px; color: #346dd0; display:inline-block;}
-.selection-area .selection-item .del {width: 18px; height: 18px; margin-top:2px; display:inline-block; background: url(../images/common/btn_tooltip_close.svg) 0 0 no-repeat; display:inline-block; font-size:0; vertical-align: top;}
+.selection-area .selection-item .del {width: 18px; height: 18px; display:inline-block; background: url(../images/common/btn_tooltip_close.svg) 0 0 no-repeat; display:inline-block; font-size:0; vertical-align: top;}
 .selection-result .btn-style-m1 {position: absolute; top:50%; right:30px; transform: translateY(-50%);}
+
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
@@ -346,6 +348,10 @@
 
     .btn-full-area {padding:20px; background:#fff; border-top:1px solid #d7d7d7;}
     .ly-detail .btn-full-area {display:flex;}
+
+    /* 상품목록 */
+    .pro-list-cont {margin-top:48px;}
+    .pro-list-cont .location {display: none;}
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 
