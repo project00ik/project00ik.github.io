@@ -43,7 +43,7 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .join-list-con .list-con .join-agree .agree-area .agree-tit {position: relative; padding: 20px; border: 1px solid #d7d7d7;}
 .join-list-con .list-con .join-agree .agree-area .agree-tit .btn-slide-open {position: absolute; top: 18px; right: 12px; width: 30px; height: 30px;}
 .join-list-con .list-con .join-agree .agree-area .agree-cont {padding: 20px; border: 1px solid #d7d7d7; border-top: 0; font-size: 14px; line-height: 22px; text-align: left; color: #666; height: 125px; overflow-y: auto;}
-.join-content .btn-area-c {padding: 70px 0 120px;}
+.join-content .btn-area-c {padding: 70px 0 0;}
 
 .join-list-con .con-normal-info {padding-top: 0;}
 .join-list-con .con-normal-info .list-in {margin-top: 0; border-top: 0; display: flex; flex-wrap: wrap;}
@@ -107,7 +107,7 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
     .join-list-con .list-con .join-agree .agree-area .agree-tit {padding: 18px 20px;}
     .join-list-con .list-con .join-agree .agree-area .agree-cont {font-size: 12px; line-height: 1.4;}
     .join-agree-con .list-con {padding: 20px 20px 0 20px; border-bottom: 0;}
-    .join-content .btn-area-c {padding: 50px 0 100px;}
+    .join-content .btn-area-c {padding: 50px 0 0;}
 
     .join-list-con .con-normal-info .list-in {padding-top: 0; flex-direction: column;}
     .join-list-con .con-normal-info .list-in > li {width: 100%;}
