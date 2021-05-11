@@ -15,7 +15,7 @@
 .unit-type2 .unit-area .date-area .date {font-size:14px; color:#333; display:inline-block;}
 .unit-type2 .unit-area .date-area .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
 .unit-type2 .unit-area .date-area .dday {font-size:14px; color:#346dd0; font-weight: 500; display:inline-block; margin-left: 10px;}
-.unit-type2 .unit-area .date-area .dday.end {color: #999;}
+.unit-type2 .unit-area .date-area .dday.end {color: #eb3030;}
 
 
 
@@ -43,16 +43,14 @@
 .promt-list-wrap .promt-list {width:calc(100% + 14px); margin:0 -7px; font-size:0;}
 .promt-list-wrap .promt-list > li {width:33.333%; padding:0 7px; display:inline-block;}
 
-.promotion-detail .promt-top {width: 100%; display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid #d7d7d7; }
-.promotion-detail .promt-top .promt-detail-tit {font-size: 0; padding-bottom: 10px;}
-.promotion-detail .promt-top .promt-detail-tit p {width: 100%; font-size: 24px; color: #000; font-weight: 500; padding-bottom: 6px;}
-.promotion-detail .promt-top .promt-detail-tit span {font-size: 16px; color: #999;}
-.promotion-detail .promt-top .promt-detail-tit .dday {color: #346dd0; font-weight: 500; margin-left: 10px;}
-.promotion-detail .promt-top .promt-detail-tit .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
-.promotion-detail .promt-top .btn-small-line {margin-bottom: 16px;}
-.promotion-detail .promt-cont {padding: 60px 100px; border-bottom: 1px solid #d7d7d7; }
+.promotion-detail .promt-top {display: flex; justify-content: space-between; align-items: flex-end; font-size: 0; padding-bottom: 10px; border-bottom: 1px solid #d7d7d7; }
+.promotion-detail .promt-top p {max-width: 940px; height: 29px; font-size: 24px; color: #000; font-weight: 500;}
+.promotion-detail .promt-top .promt-date span {font-size: 16px; color: #999;}
+.promotion-detail .promt-top .promt-date .dday {color: #346dd0; font-weight: 500; margin-left: 10px;}
+.promotion-detail .promt-top .promt-date .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
+.promotion-detail .promt-top .promt-date .dday.end {color: #eb3030;}
+.promotion-detail .promt-cont {padding: 60px 100px; margin-bottom: 20px; border-bottom: 1px solid #d7d7d7; }
 .promotion-detail .promt-cont img {max-width: 100%;}
-
 
 
 
@@ -85,9 +83,17 @@
   .promotion-cont .event-empty {padding: 50px 0;}
   .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}  
   .promt-banner .ban-text-area .ban-tit {font-size: 18px;}
-  .promt-banner .ban-text-area .ban-P {font-size: 14px;}  
+  .promt-banner .ban-text-area .ban-p {font-size: 14px;}  
   .promt-list-wrap .promt-list {padding: 0 20px; width: auto;}
   .promt-list-wrap .promt-list > li {width: 100%;}
+
+  .promt-banner {margin-bottom: 30px;}
+  .promotion-detail {padding: 30px 0 0;}
+  .promotion-detail .promt-top {display: block; margin: 0 20px;}
+  .promotion-detail .promt-top p {width: 100% ;font-size: 16px; line-height: 21px; height: auto; padding-bottom: 6px;}
+  .promotion-detail .promt-top .promt-date span {font-size: 14px;}
+  .promotion-detail .promt-cont {padding: 30px 36px; border-bottom:10px solid #f5f5f5;}
+
   
   
 
