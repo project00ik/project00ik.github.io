@@ -94,11 +94,11 @@
 .join-content .member-sub-tit2{text-align: center;font-size: 18px;line-height: 21px;margin-top: 30px;padding:0 60px}
 .join-content .member-tit strong{color:#346DD0;vertical-align: top;font-weight: bold;}
 .join-content .member-select-box {display: flex;margin: 50px auto;width: 706px;}
-.join-content .member-select-box > div{flex: 1;border:1px solid #D7D7D7;text-align: center;padding:50px 0}
+.join-content .member-select-box > div{border:1px solid #D7D7D7;text-align: center;padding:50px 0}
 .join-content .member-select-box > div p{font-size: 24px;}
 .join-content .member-select-box > div span{font-size: 18px;display: inline-block;margin-top: 30px;font-weight: 300;}
 .join-content .member-select-box > div a{width: 198px;height: 48px;line-height: 46px;margin-top: 70px;}
-.join-content .member-select-box .mo-hide{margin-left: 50px;}
+.join-content .member-select-box > div.admin{margin-left: 50px;}
 
 .join-content .complete-wrap{width: 406px; margin: 200px auto;text-align: center;}
 .join-content .complete-wrap .complete-txt{font-size: 18px; margin: 50px 0 70px;}
@@ -181,6 +181,7 @@
 @media only screen and (max-width:1200px){
 }
 
+
 @media only screen and (max-width:1024px){ /* ipad pro*/
 }
 
@@ -260,10 +261,12 @@
     .join-content .member-sub-tit{font-size: 16px;line-height: 19px;}
     .join-content .member-sub-tit em{display: block;}
     .join-content .member-select-box {width:100%;margin:30px auto;padding:0 30px;flex-direction: column;}
-    .join-content .member-select-box > p.pc-hide{margin-top: 30px;font-size: 15px;text-align: center;}
+    .join-content .member-select-box > p.pc-hide{margin-top: 10px;font-size: 15px;text-align: center;}
     .join-content .member-select-box > div a{margin-top: 50px;}
     .join-content .member-select-box > div span{margin-top: 20px;font-size: 16px;}
     .join-content .member-select-box > div p{font-size: 20px;}
+    .join-content .member-select-box > div.admin {margin:30px 0 0;}
+    .join-content .member-select-box > div.admin a{background: #D7D7D7;}
     .join-content .login-wrap{padding: 30px 20px;width: 100%;}
     .join-content .login-wrap input{height:42px}
     .join-content .login-wrap .login-checkbox label + label{margin-left:20px;}
