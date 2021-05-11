@@ -231,7 +231,8 @@
 .filter-detail-area .right-area {margin:10px 0; float:right;}
 .btn-filter-detail {width: 118px; height: 38px; background: #346dd0; color:#fff; font-size: 14px; text-align: center;}
 .btn-filter-detail::before {content: ""; width:18px; height:18px; margin-top:2px; display:inline-block; background: url(../images/common/icon_filter.svg) 0 0 no-repeat; vertical-align: top;}
-.filter-detail-box {width:100%; overflow: hidden; border: 1px solid #d7d7d7; display:none;}
+.filter-detail-box {width:100%; overflow: hidden; border: 1px solid #d7d7d7;}
+.filter-detail-box.filterDetailBox {display:none}
 .filter-detail-box > dl {padding:30px; display:flex;}
 .filter-detail-box > dl + dl {border-top:1px solid #d7d7d7;}
 .filter-detail-box > dl > dt {width:188px; font-weight: 500; font-size: 16px; color: #000;}
@@ -249,6 +250,7 @@
 .btn-filter-more {width:100%; height:32px; background:url(../images/common/btn_filter_more.svg) 50% 50% no-repeat #fff; font-size:0;}
 .btn-filter-more.on {transform: rotate(-180deg);}
 
+.tit-type2-1 .mo-hide {display: inline-block; vertical-align: top;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
@@ -369,6 +371,21 @@
     .filter-price > li:last-child .cont {width: 100%; margin-top:10px;}
     .btn-refresh {width:24px; height:24px; background: url(../images/common/mo_btn_refresh.svg) 50% 50% no-repeat; position: absolute; top:0; left:94px;}
     .form-layout .input-price {height:36px; line-height: 34px;}
+    .product-result {margin:0; padding-top:20px; position: relative;}
+    .tit-type2-1 .mo-hide {display:none;}
+    .product-result .tit-type2-1 {font-size:18px;}
+    .btn-list-layout {display:none;}
+    .list-top-area {width:100%; overflow-y: hidden; overflow-x: auto;}
+    .list-top-area .rd-tab-area {padding:0 20px 10px; white-space: nowrap; font-size:0;}
+    .list-top-area .right-area {position: absolute; top:15px; right:20px;}
+    .rd-tab-area .rd-tab > span {font-size:14px;}
+    .rd-tab-area > li + li {margin-left:12px;}
+    .product-result .product-list-wrap {margin-top:5px;}
+    .product-result .tit-area {border-bottom:0; padding-bottom:0;}
+    .btn.btn-filter-detail {width:98px; height:28px;}
+    .btn.btn-filter-detail.pc-hide {display:inline-block;}
+
+    
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 

@@ -233,8 +233,8 @@
           </li>
         </ul>
         <!--// 필터영역 -->
-        <!-- 상세필터 -->
-        <div class="filter-detail-area">
+        <!-- PC 상세필터 (모바일 상세필터 하단에 레이어팝업으로 있음) -->
+        <div class="filter-detail-area mo-hide">
           <div class="right-area">
             <button class="btn btn-filter-detail btnFilterDetail">상세필터</button>
           </div>
@@ -328,11 +328,11 @@
             </dl>
           </div>
         </div>
-        <!--// 상세필터 -->
+        <!--// PC 상세필터 -->
         <div class="product-result">
           <div class="tit-area">
-            <p class="tit-type2-1">총 <b class="count">473</b>개의 상품이 있습니다.</p>
-            <div class="right-area">
+            <p class="tit-type2-1">총 <b class="count">473</b>개<span class="mo-hide">의 상품이 있습니다.</span></p>
+            <div class="right-area mo-hide">
               <button class="btn btn-small-line">신규상품요청</button>
               <button class="btn btn-small-line">엑셀다운로드</button>
             </div>
@@ -376,6 +376,7 @@
                 <option value="">10개씩보기</option>
               </select>
               <button class="btn btn-list-layout">리스트형 보기</button>
+              <button class="btn btn-filter-detail pc-hide" onclick="lyOpen('filterDetail')">상세필터</button>
             </div>
           </div>
           <!-- 상품 목록 -->
@@ -413,14 +414,15 @@
                     <!--// 상품링크 -->
                     <ul class="unit-under-btn">
                       <li>
-                        <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                        <a href="#바로구매" class="btn btn-buynow">바로구매</a>
                       </li>
                       <li>
-                        <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                        <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                        <a href="#장바구니" class="btn btn-cart">장바구니</a>
+                        <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                       </li>
                     </ul>
                   </div>
+                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
                 </div>
               </li>
               <li>
@@ -1277,6 +1279,115 @@
       </div>
     </footer>
   </div>
+  <!-- 모바일 상세필터 -->
+  <div class="lyPopupWrap popup-type-m" id="filterDetail"><!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>필터</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="filter-detail-box">
+              <dl class="selection-result">
+                <dt>선택항목</dt>
+                <dd>
+                  <div class="selection-area">
+                    <span class="selection-item">탐사<button class="del">삭제</button></span>
+                    <span class="selection-item">한국제지<button class="del">삭제</button></span>
+                    <span class="selection-item">정품토너<button class="del">삭제</button></span>
+                    <span class="selection-item">컬러<button class="del">삭제</button></span>
+                    <span class="selection-item">무료배송<button class="del">삭제</button></span>
+                    <span class="selection-item">탐사<button class="del">삭제</button></span>
+                    <span class="selection-item">한국제지<button class="del">삭제</button></span>
+                    <span class="selection-item">정품토너<button class="del">삭제</button></span>
+                    <span class="selection-item">컬러<button class="del">삭제</button></span>
+                    <span class="selection-item">무료배송<button class="del">삭제</button></span>
+                    <span class="selection-item">탐사<button class="del">삭제</button></span>
+                    <span class="selection-item">한국제지<button class="del">삭제</button></span>
+                    <span class="selection-item">정품토너<button class="del">삭제</button></span>
+                    <span class="selection-item">컬러<button class="del">삭제</button></span>
+                    <span class="selection-item">무료배송<button class="del">삭제</button></span>
+                  </div>
+                  <button class="btn btn-style-m1 ml5">초기화</button>
+                </dd>
+              </dl>
+              <dl>
+                <dt>브랜드</dt>
+                <dd>
+                  <ul class="filter-chk-list">
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>탐사</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>삼성물산</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>더블에이</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>프리카피</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>HP</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>한국제지</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>한솔제지</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>엑소</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>밀크</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>디포원</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>네비게이터</span></label></li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>잉크/토너 종류</dt>
+                <dd>
+                  <ul class="filter-chk-list">
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정품잉크</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>비정품잉크</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>무한리필잉크</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정품토너</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>비정품토너</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>무한리필토너</span></label></li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl class="sub-sort">
+                <dt>흑백/컬러</dt>
+                <dd>
+                  <ul class="filter-chk-list">
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>흑백</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>컬러</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>흑백+컬러</span></label></li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl>
+                <dt>혜택</dt>
+                <dd>
+                  <div class="rd-btn-area">
+                    <label class="rd-btn">
+                      <input type="radio" name="btnRd" checked>
+                      <span>무료배송</span>
+                    </label>
+                    <label class="rd-btn">
+                      <input type="radio" name="btnRd">
+                      <span>특가세일</span>
+                    </label>
+                    <label class="rd-btn">
+                      <input type="radio" name="btnRd">
+                      <span>사은품</span>
+                    </label>
+                    <label class="rd-btn">
+                      <input type="radio" name="btnRd">
+                      <span>볼륨DC</span>
+                    </label>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">초기화</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">선택 적용</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 모바일 상세필터 -->
   
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
