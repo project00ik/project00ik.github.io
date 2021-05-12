@@ -191,6 +191,7 @@
 .filter-box .filter-rd > span {height:40px; line-height:40px; font-size:16px; color:#666; vertical-align: middle;}
 .filter-box .filter-rd > span b {max-width:calc(100% - 44px); font-weight:400; vertical-align:top; display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .filter-box .filter-rd input:checked + span {color:#333; font-weight: 500;}
+.filter-box .filter-rd input:checked + span > b {font-weight: 500;}
 .filter-price {width:100%; display:flex; padding:20px 30px; border:1px solid #d7d7d7;}
 .filter-price > li {display:inline-block;}
 .filter-price > li:first-child .cont {width:382px; margin-right:95px;}
@@ -251,12 +252,38 @@
 .tit-type2-1 .mo-hide {display: inline-block; vertical-align: top;}
 
 /* 유닛 리스트형 */
-.proList.product-list-wrap .product-list > li {width:100%;}
+.proList.product-list-wrap .product-list > li {width:100%; border-top:1px solid #d7d7d7;}
+.proList .unit-type1 {height:auto; padding:30px 30px 30px 62px;}
 .proList .unit-type1 .unit-area {height:auto;}
+.proList .unit-type1 .unit-area {padding:0; display:flex;}
 .proList .unit-type1 .unit-area > dt {width: 156px; height: 156px;}
-
-
-
+.proList .unit-type1 .unit-area > dd {flex:1; padding:0 0 0 20px;}
+.proList .unit-type1 .unit-layer {display:block; border:0;}
+.proList .unit-type1 .check-style2 {top:97px;}
+.proList .unit-type1 .unit-layer .unit-link {height:auto;}
+.proList .unit-type1 .unit-layer .unit-under-btn {width:auto; display:inline-block;}
+.proList .unit-type1 .unit-layer .unit-under-btn > li {flex:inherit;}
+.proList .unit-type1 .unit-layer .unit-under-btn > li > a {width:auto;}
+.proList .unit-type1 .unit-layer .unit-under-btn > li + li {border:0;}
+.proList .unit-type1 .unit-area .product-name {width:100%; height:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -webkit-line-clamp: 1;}
+.unit-type1 .standard {display:none;}
+.proList .unit-type1 .standard {margin:6px 0;font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
+.unit-type1 .satis-large {display:none;}
+.proList .unit-type1 .satis-large {display:block;}
+.proList .unit-type1 .satis-large .rating {display:inline-block;}
+.proList .unit-type1 .satis-large .tit {margin-left:6px; font-size: 14px; color: #666; display:inline-block;}
+.proList .unit-type1 .satis-large .tit .num {vertical-align: top;}
+.proList .unit-type1 .normal-price {display:inline-block;}
+.proList .unit-type1 .unit-area .price-area {display:inline-block; align-items:inherit;}
+.proList .unit-type1 .unit-area .price {flex:inherit; margin-left:10px; font-size:14px;}
+.proList .unit-type1 .unit-area .price > b {font-size:22px;}
+.proList .unit-type1 .unit-area .sale {margin:0 0 0 10px; display:inline-block; font-size:22px; text-align: left;}
+.proList .unit-type1 .unit-layer .unit-under-btn {width: 178px; height:auto; padding:30px; bottom:inherit; top:0; right:0; background:none;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow {width: 118px; height: 38px; background:#346dd0; font-size:14px; line-height:37px;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-cart,
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-like {width: 118px; height: 38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #000; color:#000;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-like {margin-left:0;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-restock {width: 118px; height: 38px; background:#000; font-size:14px; line-height:37px;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */

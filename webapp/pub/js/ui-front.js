@@ -251,6 +251,28 @@ function detailOptionLy(){
   });
 }
 
+function buyNowLy(id){
+  // 장바구니 바로구매 레이어 이벤트
+  var $buyNowLyAcive = $('#' + id);
+  $buyNowLyAcive.show();
+  $buyNowLyAcive.addClass('open');
+  $buyNowLyAcive.css('z-index', '102');
+  $buyNowLyAcive.find('.ly-buyNowLy-wrap').after('<div class="buyNowLyDim"></div>');
+  $('.buyNowLyDim').on('click', function(){
+    $(this).remove();
+    $('.ly-buyNowLy').removeClass('open');
+    $buyNowLyAcive.hide();
+  });
+  
+}
+
+function buyNowLyClose(){
+  // 장바구니 바로구매 레이어 닫기
+  $('.buyNowLyDim').hide();
+  $('.ly-buyNowLy').hide();
+  $('.ly-buyNowLy').removeClass('open');
+}
+
 function detailLyClose() {
   // 닫기 버튼에  onclick="detailLyClose()" 넣어서 사용
   $('.option-ly-btn').show();
@@ -543,6 +565,7 @@ function filterBoxMore(){
 }
 
 function btnListLayout(){
+  // 상품목록 리스트형으로 보기
   $('.btnListLayout').on('click', function () {
     $(this).toggleClass('on');
     if ($(this).hasClass('on')) {

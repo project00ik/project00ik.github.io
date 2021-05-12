@@ -182,6 +182,12 @@
 .popup-type-s .lyPopup .popup-cont .btn-area,
 .popup-type-xs .lyPopup .popup-cont .btn-area {overflow:hidden; padding:30px; text-align:center;}
 
+/* 바로구매 장바구니 팝업 */
+.ly-buyNowLy {display:none; width:100%; height:100%; position:fixed; top:0; left:0; z-index:999;}
+.buyNowLyDim {width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,0.6); position:fixed; top:0; left:0; z-index:99;}
+.ly-buyNowLy-wrap {}
+.ly-buyNowLy-cont {width:870px; height:730px; margin:-435px 0 0 -365px; background:#fff; position: absolute; top:50%; left:50%; z-index:100;}
+
 /* 블릿style */
 .bul-bar + .bul-bar {margin-left:12px; padding-left:12px; position:relative;}
 .bul-bar + .bul-bar::before {content:""; width:1px; height:10px; display:inline-block; background:#666; position:absolute; top:5px; left:0;}
@@ -506,7 +512,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 .unit-type1 .unit-layer {width:100%; height:100%; border:1px solid #346dd0; position:absolute; top:0; left:0; z-index:7;}
 .unit-type1 .unit-layer .unit-link {width:100%; height:calc(100% - 48px); cursor:pointer; display:inline-block;}
-.unit-type1 .unit-layer .unit-under-btn {width:100%; height:42px; line-height:42px; display:-webkit-box; display:-ms-flexbox; display:flex; position:absolute; bottom:0; left:0; z-index:9; background:#346dd0; color:#fff;}
+.unit-type1 .unit-layer .unit-under-btn {width:100%; height:42px; line-height:42px; display:-webkit-box; display:-ms-flexbox; display:flex; position:absolute; bottom:0; right:0; z-index:9; background:#346dd0; color:#fff;}
 .unit-type1 .unit-layer .unit-under-btn > li {height:100%; flex:1; text-align:center;}
 .unit-type1 .unit-layer .unit-under-btn > li > a {width:100%; height:100%; display:inline-block; vertical-align:top;}
 .unit-type1 .unit-layer .unit-under-btn > li + li  {border-left:1px solid #7ea1dc;}
