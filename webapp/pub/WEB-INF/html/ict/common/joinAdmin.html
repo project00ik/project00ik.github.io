@@ -384,18 +384,18 @@
           </div>
         </div>
 
-        <div class="join-list-con join-agree-con">
+        <div class="join-list-con join-agree-con allChkArea">
           <div class="tit-area2">
             <p class="tit-type2">이용약관</p>
           </div>
           <div class="list-con">
-            <div class="agree-allcheck"><label class="check-style2"><input type="checkbox" name=""><i></i><span>모든 약관에 대하여 동의합니다.</span></label></div>
+            <div class="agree-allcheck"><label class="check-style2 allChk"><input type="checkbox" name=""><i></i><span>모든 약관에 대하여 동의합니다.</span></label></div>
             <div class="join-agree">
               <ul>
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>회원 이용약관</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>회원 이용약관</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -412,7 +412,7 @@
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보의 수집, 이용목적, 항목 및 보유기간</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 수집, 이용목적, 항목 및 보유기간</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -429,7 +429,7 @@
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보의 수집 방법</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 수집 방법</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -446,7 +446,7 @@
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보와 보유 및 이용기간</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보와 보유 및 이용기간</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -463,7 +463,7 @@
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보 처리의 위탁</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보 처리의 위탁</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -480,7 +480,7 @@
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보 제공 동의 거부 및 권리</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보 제공 동의 거부 및 권리</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -497,7 +497,7 @@
                 <li>
                   <div class="agree-area tgSlide">
                     <div class="agree-tit">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i><span>개인정보의 제3자 제공</span></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 제3자 제공</span></label>
                       <button class="btn btn-slide-open tgSlideBtn">더보기</button>
                     </div>
                     <div class="agree-cont tgSlideCont">
@@ -599,56 +599,12 @@
       현재페이지에서만 사용 js
       ========================================================================== */
       toggleSlideArea(); // 토글영역
-      toggleResize();
-
-      function toggleSlideArea(){
-        // 토글영역(slide모션)
-        $(".tgSlide").each(function(){
-          $(this).find('.tgSlideBtn').on('click', function(){
-            var $active = $(this);
-            $active.toggleClass('on');
-            if($active.hasClass('on')){
-              $active.closest('.tgSlide').addClass('open');
-              $active.closest('.tgSlide').find('.tgSlideCont').slideDown();
-            } else {
-              $active.closest('.tgSlide').removeClass('open');
-              $active.closest('.tgSlide').find('.tgSlideCont').slideUp();
-            }
-          });
-        });
-      }
-
-
-      function toggleResize(){
-        //관심공종 pc mobile 여닫기
-        var winW = $(window).width();
-        var $tgcon = $('.type-slide')
-        if (winW < 800){
-          $tgcon.removeClass('open');
-          $tgcon.find('.tgSlideCont').slideUp();
-        } else {
-          $tgcon.addClass('open');
-          $tgcon.find('.tgSlideCont').slideDown();
-        }
-      }
+      toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
+      allChecked(); // all checked
+      
       $(window).resize(function(){
-        toggleResize();
+        toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
       })
-
-      
-
-      
-
-
-
-
-      
-      
-
-
-      
-
-
     });
   </script>
   <!-- javascript -->

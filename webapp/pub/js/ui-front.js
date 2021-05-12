@@ -553,6 +553,19 @@ function btnListLayout(){
   })
 }
 
+function toggleResize(){
+  //관심공종 pc mobile 여닫기
+  var winW = $(window).width();
+  var $tgcon = $('.type-slide')
+  if (winW < 800){
+    $tgcon.removeClass('open');
+    $tgcon.find('.tgSlideCont').slideUp();
+  } else {
+    $tgcon.addClass('open');
+    $tgcon.find('.tgSlideCont').slideDown();
+  }
+}
+
 
 
 // function btnTooltip(){
