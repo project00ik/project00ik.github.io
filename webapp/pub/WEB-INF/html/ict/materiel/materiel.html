@@ -179,7 +179,7 @@
           <div class="bulk-purchase-slide">
             <div class="swiper-container bulkPurchaseSlide">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide on"><!-- on 활성화 -->
                         <a href="#">
                             <dl class="bulk-img-area">
                                 <dt><img src="../../../../images/main/bulk_ex_image1.png" alt="선로 설비공사">
@@ -3113,11 +3113,11 @@
 
       $(window).scroll(function() {
         var $wTop = $(window).scrollTop();
-        var $contTop = $('.materiel-list').offset().top - 113;
+        var $contTop = $('.materiel-list').offset().top - 134;
         var $hdH = $('.header').height();
         var $tab = $('.tab-btn-list');
         var $container = $('.container');
-
+        console.log($wTop, $contTop)
         if ($wTop < $contTop){
           $tab.removeClass('fixed').css({'top':'0'});
           $container.removeClass('fixed-con');
