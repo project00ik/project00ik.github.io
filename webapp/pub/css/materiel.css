@@ -52,7 +52,7 @@
   .materiel-cont .materiel-list {padding: 50px 0 0;}
   .materiel-cont .tit-area2 {margin: 0 20px 10px;}
   .materiel-cont .tab-area .tab-cont {padding: 30px 0 40px;}
-  .materiel-cont .tab-btn-list.fixed {padding: 20px 0 20px;}
+  .materiel-cont .tab-btn-list.fixed {padding: 20px 0 10px;}
   .materiel-cont .tab-btn-list.fixed + .tab-cont {margin-top: 80px;}
   .materiel-cont .bulk-purchase-slide .swiper-slide.on .bulk-img-area > dt {border: 2px solid #346dd0;}
 
