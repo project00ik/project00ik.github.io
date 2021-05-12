@@ -50,7 +50,7 @@
 .gnbPC .cate-layer .d1:hover + .cate-sub-layer {display:block;}
 .cate-layer .d2-layer-box {border:1px solid #d7d7d7;}
 .cate-layer .d2-layer-box .tit {margin:24px 0; padding-left:24px; font-size:28px; line-height:28px; color:#000;}
-.cate-layer .d2-layer-box .partition-wrap {width:100%; overflow:hidden;}
+.cate-layer .d2-layer-box .partition-wrap {width:100%;}
 .cate-layer .partition-wrap .partition-area {float:left; display:inline-block; position:relative;}
 .cate-layer .partition-area .depth-list {}
 .cate-layer .partition-area .depth-list > li {width:100%; color:#333;}
