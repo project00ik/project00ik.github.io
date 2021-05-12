@@ -92,7 +92,7 @@
 .pro-detail-reporting  .btn-style-s1 {float:right; margin-left:22px;}
 .pro-detail-info {width:570px; margin-left:40px; font-size:14px; display:inline-block; vertical-align: top;}
 .pro-detail-info .flag-area {font-size: 0;}
-.pro-detail-info .brand {margin-top:10px; font-size: 16px;}
+.pro-detail-info .brand {margin-top:10px; font-size: 16px; color:#bbb;}
 .pro-detail-info .product-name {margin-top:10px; font-weight: 500; font-size: 24px;}
 .pro-detail-info .product-info {margin-top:10px; font-size: 16px; color: #999;}
 .pro-detail-info .group-buying {width:100%; margin-top:20px; padding:12px 20px; font-size:16px; color: #fff; border-radius: 21.5px 21.5px 21.5px 0px; background: #12b5cf; overflow: hidden;}
@@ -107,11 +107,12 @@
 .pro-detail-info .table-area {margin-top:10px;}
 .option-area {margin-top:20px;}
 .option-result {margin-top:20px;}
-.option-box {width:100%; margin-top: 10px; padding:20px; position: relative; background: #f5f5f5;}
+.option-box {width:100%; margin-top: 10px; padding:16px; position: relative; background: #f5f5f5;}
 .option-box:first-child {margin-top:0;}
-.option-box .btn-del {position: absolute; top:20px; right:20px;}
-.option-box .option-name {font-size:16px;}
-.option-box .option-price {width:100%; margin-top:20px; padding-top:20px; border-top:1px solid #d7d7d7; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
+.option-box .btn-del {position: absolute; top:16px; right:16px;}
+.option-box .option-name {padding-right: 26px; font-size:14px;}
+.option-box .option-name > p {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.option-box .option-price {width:100%; margin-top:12px; padding-top:12px; border-top:1px solid #d7d7d7; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .option-box .option-price > li {flex:1;}
 .option-box .option-price > li:last-child {flex:2; text-align: right;}
 .option-box .option-price .price {font-size:20px; display:inline-block}
@@ -284,6 +285,32 @@
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like {width: 118px; height: 38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #000; color:#000;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like {margin-left:0;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-restock {width: 118px; height: 38px; background:#000; font-size:14px; line-height:37px;}
+
+.ly-buyNowLy .ly-buyNowLy-wrap {}
+.ly-buyNowLy .ly-buyNowLy-cont {padding:30px; overflow: hidden;}
+.ly-buyNowLy .pro-detail-slide {width:390px; padding-left:0; float: left;}
+.ly-buyNowLy .pro-detail-slide .productDetaileSlide {width:100%; height:70px; padding:0; margin-top:10px; position: inherit; top:inherit; left:inherit; z-index:inherit;}
+.ly-buyNowLy .pro-detail-slide .productDetaileSlide .swiper-wrapper {height:70px;}
+.ly-buyNowLy .pro-detail-slide .productDetaileSlide .swiper-slide {height:auto !important;}
+.ly-buyNowLy .pro-detail-slide .productDetaileSlide2 {width:100%;}
+.ly-buyNowLy .pro-detail-slide .swiper-slide .product-img {width:100%; height:390px;}
+.ly-buyNowLy .option-wrap {width:390px; float:right;}
+.ly-buyNowLy .pro-detail-info {width:100%; margin:0; padding-bottom:10px; border-bottom: 1px solid #000;}
+.ly-buyNowLy .pro-detail-info .price-area {margin-top:10px;}
+.ly-buyNowLy .pro-detail-info .product-name {margin-top:5px; overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-wrod; font-size:22px;}
+.ly-buyNowLy .pro-detail-info .brand {margin-top:0;}
+.ly-buyNowLy .pro-detail-info .normal-price {margin-top:10px; display:inline-block; color:#999; font-size:14px; text-decoration: line-through;}
+.ly-buyNowLy .pro-detail-info .normal-price > b {font-size:16px; font-weight: 400; vertical-align: text-bottom;}
+.ly-buyNowLy .pro-detail-info .price-area .price {font-size: 20px;}
+.ly-buyNowLy .pro-detail-info .price-area .price > b {font-size: 28px;}
+.ly-buyNowLy .option-result {height:222px; overflow-x: hidden; overflow-y: auto;}
+.ly-buyNowLy .product-total {padding-bottom:0;}
+.ly-buyNowLy .product-total .tit {font-size:20px;}
+.ly-buyNowLy .product-total .total-price .price {font-size:20px;}
+.ly-buyNowLy .product-total .total-price .price > b {font-size:28px;}
+.ly-buyNowLy .cart-select-area {margin-top:24px;}
+.ly-buyNowLy .cart-select-area .tit {margin-bottom:10px; font-size: 16px;}
+.ly-buyNowLy .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
