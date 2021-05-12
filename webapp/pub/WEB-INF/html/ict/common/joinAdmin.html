@@ -190,6 +190,7 @@
           </div>
         </div>
 
+        <!--관리자회원 노출-->
         <div class="join-list-con">
           <div class="tit-area2">
             <p class="tit-type2">기본정보</p>
@@ -321,6 +322,137 @@
             </ul>
           </div>
         </div>
+        <!--//관리자회원 노출-->
+
+        <!--일반회원 노출-->
+        <div class="join-list-con">
+          <div class="tit-area2">
+            <p class="tit-type2">회원 정보 입력</p>
+            <p class="join-txt"><i class="req">*</i>표기 항목은 필수입력 항목입니다.</p>
+          </div>
+          <div class="list-con">
+            <p class="tit-type2-1">조직정보</p>
+            <ul class="list-in list-half-style">
+              <li>
+                <label for="">법인</label>
+                <div class="form-layout">
+                  <input type="text" name="" class="input" value="" placeholder="(재)대림문화재단" readonly="readonly">
+                </div>
+              </li>
+              <li>
+                <label for="">사업장</label>
+                <div class="form-layout">
+                  <input type="text" name="" class="input" value="" placeholder="(재)대림문화재단" readonly="readonly">
+                </div>
+              </li>
+              <li>
+                <label for="">부서<i class="req">*</i></label>
+                <div class="form-layout">
+                  <select class="select">
+                    <option value="">상품</option>
+                    <option value="상품1">상품1</option>
+                    <option value="상품2">상품2</option>
+                  </select>
+                </div>
+              </li>
+            </ul>
+            <p class="tit-type2-1">회원정보</p>
+            <ul class="list-in mem-info-list">
+              <li>
+                <label for="">아이디<i class="req">*</i></label>
+                <div class="form-layout">
+                  <input type="text" name="" class="input" value="">
+                  <button class="btn btn-style-m1">중복체크</button>
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">이름<i class="req">*</i></label>
+                <div class="form-layout">
+                  <input type="text" name="" class="input" value="">
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">비밀번호<i class="req">*</i></label>
+                <div class="form-layout">
+                  <input type="password" name="" class="input" value="" placeholder="6-15자의 영문 대소문자, 숫자 및 특수문자 조합">
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">비밀번호 확인<i class="req">*</i></label>
+                <div class="form-layout">
+                  <input type="password" name="" class="input" value="" placeholder="위의 비밀번호를 다시 입력해주세요.">
+                </div>
+              </li>
+              <li>
+                <label for="">이메일 주소<i class="req">*</i></label>
+                <div class="form-layout form-email">
+                  <input type="text" name="" class="input" value="" maxlength="100">
+                  <span class="bar">@</span>
+                  <input type="text" name="" class="input" value="" maxlength="100">
+                  <select class="select">
+                    <option value="">직접입력</option>
+                    <option value="aaa.com">naver.com</option>
+                    <option value="bbb.net">bbb.net</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <label for="">우편번호<i class="req">*</i></label>
+                <div class="form-layout form-address">
+                  <input type="text" name="" class="input" value="" readonly="readonly">
+                  <button class="btn btn-style-m1">우편번호 찾기</button>
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">주소<i class="req">*</i></label>
+                <div class="form-layout">
+                  <input type="text" name="" class="input" value="" readonly="readonly">
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">상세주소<i class="req">*</i></label>
+                <div class="form-layout">
+                  <input type="text" name="" class="input" value="">
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">전화번호<i class="req">*</i></label>
+                <div class="form-layout form-phone">
+                  <select class="select">
+                    <option value="">02</option>
+                    <option value="02">02</option>
+                  </select>
+                  <span class="bar">-</span>
+                  <input type="number" name="" maxlength="4" class="input" value="">
+                  <span class="bar">-</span>
+                  <input type="number" name="" maxlength="4" class="input" value="">
+                </div>
+              </li>
+              <li class="ip-only">
+                <label for="">휴대폰 번호<i class="req">*</i></label>
+                <div class="form-layout form-phone">
+                  <select class="select">
+                    <option value="">010</option>
+                    <option value="010">010</option>
+                    <option value="010">010</option>
+                  </select>
+                  <span class="bar">-</span>
+                  <input type="number" name="" maxlength="4" class="input" value="">
+                  <span class="bar">-</span>
+                  <input type="number" name="" maxlength="4" class="input" value="">
+                </div>
+              </li>
+              <li>
+                <label for="">메시지수신여부</label>
+                <div class="form-layout form-checkradio">
+                  <label class="check-style1"><input type="checkbox" name=""><i></i><span>SMS</span></label>
+                  <label class="check-style1"><input type="checkbox" name=""><i></i><span>이메일</span></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--// 일반회원 노출-->
 
         <div class="join-list-con type-slide tgSlide">
           <div class="tit-area">
@@ -357,6 +489,7 @@
           </div>
         </div>
 
+         <!--관리자회원 노출-->
         <div class="join-list-con">
           <div class="tit-area">
             <p class="tit-type2">제출서류</p>
@@ -383,6 +516,7 @@
             </div>
           </div>
         </div>
+         <!--//관리자회원 노출-->
 
         <div class="join-list-con join-agree-con allChkArea">
           <div class="tit-area2">
