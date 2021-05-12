@@ -198,31 +198,83 @@
       </div>
     </footer>
   </div>
-  <!-- 아이디 찾기 결과 팝업 -->
-  <div class="lyPopupWrap popup-type-xs" id="loginfindPopup1">
+  <!--비밀번호 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="restockPopup2">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
           <div class="lyTitle">
-            <p>아이디 찾기 결과</p>
+            <p>재입고 알림 신청</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
-            <div class="pop-layout pop-loginfind">
-              <span>"<em>최성락</em>"님의 아이디는 아래와 같습니다.</span>
-              <p class="id">820222*****</p>
+            <div class="pop-layout pop-restock">
+              <span>재입고 알림 신청</span>
+              <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
+              <div class="pop-layout pop-write">
+                <table>
+                    <tr>
+                      <th rowspan="2">상품정보</th>
+                      <td>
+                        <div>
+                          <label>상품코드</label>
+                          <div>
+                            <p>102622887</p>
+                          </div>
+                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>
+                          <label>상품명</label>
+                          <div>
+                            <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="3">알림 수신자 정보</th>
+                      <td>
+                        <div>
+                          <label>수신자 성명</label>
+                          <div class="form-layout form-layout2">
+                            <input type="text" class="input" value="김상현" readonly="">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>
+                          <label>메일주소</label>
+                          <div class="form-layout form-layout2">
+                            <input type="text" class="input" value="61781104991@null.com" >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
           <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">전체 아이디 전송</a>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //아이디 찾기 결과 팝업 -->
+  <!-- //비밀번호 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -246,7 +298,7 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('loginfindPopup1');
+      lyOpen('restockPopup2');
     });
   </script>
   <!-- javascript -->

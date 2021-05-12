@@ -157,6 +157,7 @@
 /* 회원가입 로그인 팝업 */
 .pop-loginfind{text-align: center;}
 .pop-loginfind > p{margin-top: 20px;}
+.pop-loginfind > p.id{text-decoration: underline;}
 .pop-loginfind > span em{vertical-align: top;}
 .pop-loginfind > span strong{text-decoration: underline;vertical-align: top;}
 .pop-loginfind > div{border-top:1px solid #d7d7d7;margin-top: 30px;}
@@ -178,6 +179,14 @@
 .pop-account > p em {vertical-align: top;}
 .pop-account > .form-area {margin-top: 30px;}
 #accountPopup .lyPopup .lyPopCont {padding-bottom: 0;min-height: 100px;}
+
+/* 재입고알림팝업 */
+.pop-restock {text-align: center;}
+.pop-restock > p{margin-top: 20px;}
+.pop-restock > span{font-size: 24px;font-weight: bold;}
+.pop-restock .pop-write{text-align: left;}
+.pop-restock .pop-write th{background: #FAFAFA;padding: 20px;width: 137px;border-top: 1px solid #D7D7D7;}
+.pop-restock .pop-write td{font-size: 15px;color: #666;padding: 20px;}
 
 /* ==========================================================================
    Media Queries for Responsive Design.
