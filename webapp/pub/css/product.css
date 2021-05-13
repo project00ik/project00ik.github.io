@@ -221,6 +221,7 @@
 .pop-cart .cart-add-select > p{margin:20px 0 16px;}
 .pop-cart .cart-add-select > span{font-size: 14px;color:#999;display: block;padding-right: 60px;}
 .pop-cart .cart-add-select .form-area{margin-bottom: 10px;}
+#pricerequestPopup input.input:read-only{width: 250px;}
 
 /* ==========================================================================
     상품목록
@@ -496,6 +497,7 @@
     #cartPopup .lyPopCont{min-height: 140px;}  
     #cartPopup .lyPopup .lyPopCont{padding:20px 20px 0}
     #cartPopup .btn-area02 a{width:calc(50% - 5px);}
+    #pricerequestPopup input.input:read-only{width: 100%;}
     .btn.pc-hide {display:block;}
     .btn.mo-hide {display:none;}
 

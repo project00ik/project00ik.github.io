@@ -589,6 +589,13 @@ function toggleResize(){
   }
 }
 
+function fileupload(){
+  $("#file").on('change',function(){
+    var fileName = $("#file").val();
+    $(".upload-name").val(fileName);
+  });
+}
+
 
 
 // function btnTooltip(){

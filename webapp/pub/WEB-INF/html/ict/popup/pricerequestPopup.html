@@ -242,13 +242,10 @@
                 <li>
                   <div class="pop-ip-area">
                     <label for="">근거</label>
-                    <div class="form-layout">
-                      <input type="text" class="input">
-                      <div class="file-upload-btn">
-                        <label>
-                          찾아보기<input type="file" id="input_imgs" multiple="" style="display: none;" class="">
-                        </label>
-                      </div>
+                    <div class="filebox ">
+                      <input class="upload-name input " value="" readonly>
+                      <label for="file">파일 선택</label> 
+                      <input type="file" id="file"> 
                     </div>
                   </div>
                 </li>
@@ -256,7 +253,7 @@
                   <div class="pop-ip-area">
                     <label for="">출처<i class="req">*</i></label>
                     <div class="form-layout">
-                      <input type="text" class="input">
+                      <input type="text" class="input flexnone">
                     </div>
                   </div>
                 </li>
@@ -332,9 +329,8 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('pricerequestPopup');
-
-
-
+      
+      fileupload();//파일업로드
     });
   </script>
   <!-- javascript -->
