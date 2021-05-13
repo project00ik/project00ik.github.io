@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>kt commerce</title>
+  <meta charset="utf-8" />
+  <meta property="og:title" content="ktcommerce" />
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header-top">
+        <a href="#" class="bul-bar">로그아웃</a>
+        <a href="#" class="bul-bar">고객센터</a>
+      </div>
+      <div class="header-cont">
+        <h1 class="logo"><a href="#"><img src="../../../../images/layout/logo_ictmall.png" alt="ICTMALL 로고"></a>
+        </h1>
+        <div class="search-area">
+          <div class="inp-area">
+            <input type="search" name="" id="" class="inp" placeholder="기업 자재 일괄 구매는 ICTMALL에서!!!">
+            <button class="del">삭제</button>
+          </div>
+          <button class="btn btn-search">검색</button>
+        </div>
+        <div class="right-area">
+          <div class="icon-btn cart">
+            <a href="#">
+              장바구니
+              <span class="cart-num">99</span>
+            </a>
+          </div>
+          <div class="icon-btn member">
+            <a href="#">
+              개인
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-area gnbPC">
+          <!-- header 카테고리 
+            [작업 시 참고 내용 (카테고리 총 3개)]
+            1. pc용 카테고리 2개 : header 카테고리와 메인 고정 카테고리 (메인에만 카테고리 2개 / 서브페이지는 header영역만 1개)
+            2. mobile용 카테고리 1개 : 레이어팝업 형태로 제일 하단에 위치함
+          -->
+          <!-- header 카테고리 -->
+          <div class="cate-area">
+            <button class="btn-cate btnCate">전체카테고리</button>
+            <button class="btn-cate moBtnCate">전체카테고리</button>
+        </div>
+        <!--// header 카테고리 -->
+          <div class="gnb">
+            <ul>
+              <li><a href="#">브랜드</a></li>
+              <li><a href="#">베스트</a></li>
+              <li><a href="#">특가 세일</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </div>
+          <ul class="gnb-right-area">
+            <div class="real-time-search">
+              <div class="swiper-container realtimeSearchSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="real-time-more realTimeMore">실시간 검색 더보기</button>
+              <div class="real-time-layer realtimeLayer">
+                <ul class="all-list">
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <button class="layer-close realtimeLyClose">닫기</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="sub-content mypage-cont">
+        <div class="my-main">
+          <p class="tit-type1-2 pc-hide">마이페이지</p>
+          <div class="join-list-con">
+         
+            <div class="tit-area">
+              <p class="tit-type2">회원정보 수정</p>
+            </div>
+            
+            <div class="list-con">
+              <p class="tit-type2-1">조직정보</p>
+              <ul class="list-in">
+                <li>
+                  <label for="">법인</label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="" value="(재)대림문화재단" readonly="readonly">
+                  </div>
+                </li>
+                <li>
+                  <label for="">사업장</label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="" value="(재)대림문화재단" readonly="readonly">
+                  </div>
+                </li>
+                <li>
+                  <label for="">부서<i class="req">*</i></label>
+                  <div class="form-layout">
+                    <select class="select">
+                      <option value="">구매관리팀</option>
+                      <option value="구매관리팀1">구매관리팀1</option>
+                      <option value="구매관리팀2">구매관리팀2</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">직책</label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="대리" placeholder="">
+                  </div>
+                </li>
+              </ul>
+              <p class="tit-type2-1">회원정보</p>
+              <ul class="list-in mem-info-list">
+                <li>
+                  <label for="">아이디<i class="req">*</i></label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="" value="BUYBUY_KT">
+                  </div>
+                </li>
+                <li class="ip-only">
+                  <label for="">이름<i class="req">*</i></label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="" value="유재석">
+                  </div>
+                </li>
+                <li>
+                  <label for="">이메일 주소<i class="req">*</i></label>
+                  <div class="form-layout form-email">
+                    <input type="text" name="" class="input" value="BUYBUY" maxlength="100">
+                    <span class="bar">@</span>
+                    <input type="text" name="" class="input" value="naver.com" maxlength="100">
+                    <select class="select">
+                      <option value="">직접입력</option>
+                      <option value="aaa.com">naver.com</option>
+                      <option value="bbb.net">bbb.net</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">우편번호<i class="req">*</i></label>
+                  <div class="form-layout form-address">
+                    <input type="text" name="" class="input" value="06352" readonly="readonly">
+                    <button class="btn btn-style-m1">우편번호 찾기</button>
+                  </div>
+                </li>
+                <li class="ip-only">
+                  <label for="">주소<i class="req">*</i></label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="서울특별시 강남구 광평로 47길 28" readonly="readonly">
+                  </div>
+                </li>
+                <li class="ip-only">
+                  <label for="">상세주소<i class="req">*</i></label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="4층 KT커머스">
+                  </div>
+                </li>
+                <li class="ip-only">
+                  <label for="">전화번호<i class="req">*</i></label>
+                  <div class="form-layout form-phone">
+                    <select class="select">
+                      <option value="">02</option>
+                      <option value="02">02</option>
+                    </select>
+                    <span class="bar">-</span>
+                    <input type="number" name="" maxlength="4" class="input" value="1234">
+                    <span class="bar">-</span>
+                    <input type="number" name="" maxlength="4" class="input" value="1234">
+                  </div>
+                </li>
+                <li class="ip-only">
+                  <label for="">휴대폰 번호<i class="req">*</i></label>
+                  <div class="form-layout form-phone">
+                    <select class="select">
+                      <option value="">010</option>
+                      <option value="010">010</option>
+                      <option value="010">010</option>
+                    </select>
+                    <span class="bar">-</span>
+                    <input type="number" name="" maxlength="4" class="input" value="1234">
+                    <span class="bar">-</span>
+                    <input type="number" name="" maxlength="4" class="input" value="1234">
+                  </div>
+                </li>
+                <li>
+                  <label for="">메시지수신여부</label>
+                  <div class="form-layout form-checkradio">
+                    <label class="check-style1"><input type="checkbox" name=""><i></i><span>SMS</span></label>
+                    <label class="check-style1"><input type="checkbox" name=""><i></i><span>이메일</span></label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="join-list-con type-slide tgSlide">
+            <div class="tit-area">
+              <p class="tit-type2">관심 공종 선택</p>
+              <button class="btn btn-slide-open tgSlideBtn on">더보기</button>
+            </div>
+            <div class="list-con tgSlideCont">
+              <p class="join-txt">관심 공종은 최대 5개까지 선택 가능합니다.</p>
+              <ul class="list-in">
+                <li class="list-btn-area">
+                  <div class="form-layout">
+                    <ul class="form-list-checkradio">
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>선로 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>교환 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>전송 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정보망 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>방송국 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>선박 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>구내통신 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>이동통신 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>위성통신 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정보매체 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>방송전송·선로 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정보제어·보안 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>고정무선통신 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>공항·항만통신 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>철도통신신호 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정보통신전용 전기시설 설비공사</span></label></li>
+                      <li><label class="check-style1"><input type="checkbox" name=""><i></i><span>정보통신설비 유지보수공사</span></label></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btn-area-c">
+            <button class="btn btn-style-ml2">확인</button>
+          </div>
+          
+          
+
+          
+        </div>
+
+        <div class="my-menu">
+          <div class="my-logo">
+            <p>MY<br />ICT</p>
+          </div>
+          <div class="my-menu-list acdArea">
+            <ul>
+              <li>
+                <a href="#" class="acdBtn">신규요청</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">주문/배송조회</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">입고</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">예산</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">나의 활동</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">1:1 문의</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">나의 카테고리</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">나의 관심뉴스</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">정산</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn">결제관리</a>
+                <ul class="list-deps acdCont">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="acdBtn on">회원정보 관리</a><!-- on 활성화 -->
+                <ul class="list-deps acdCont" style="display: block;"><!-- on 활성되면 display:block -->
+                  <li><a href="#">회원관리</a></li>
+                  <li class="on"><a href="#">회원정보 수정</a></li><!-- on 활성화 -->
+                  <li><a href="#">비밀번호변경</a></li>
+                  <li><a href="#">배송지관리</a></li>
+                  <li><a href="#">회원탈퇴</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-wrap">
+      <div class="footer">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>이용약관</li>
+            <li><b class="point-color1">개인정보처리방침</b></li>
+          </ul>
+          <ul class="question">
+            <li>상담문의 <a href="tel:1577-3712" class="phone-link">1577-3712</a></li>
+            <li>이메일문의 <a href="mailto:ktcommerce@kt.com" class="mail-link">ktcommerce@kt.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-cont">
+          <p class="footet-logo">
+            <img src="../../../../images/layout/logo_footer.png" alt="kt commerce 로고">
+          </p>
+          <div class="footer-info">
+            <span>서울시 강남구 광평로 47길 28 <br class="pc-hide">KT수서지점 4층 케이티커머스(주)</span>
+            <span>대표이사 : 조창환</span><br class="mo-hide">
+            <span>사업자등록번호 : 107-86-18163</span>
+            <span>통신판매신고 : 강남-1568</span>
+            <span>개인정보최고책임자 : 김태기 본부</span>
+          </div>
+          <p class="copyright">COPYRIGHT ⓒ kt commerce ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- 퀵메뉴 -->
+  <!-- <div class="quick-menu">
+    <div class="qk-group">
+        <a href="#" class="qk-notify">
+            <u></u><span>알림</span>
+            <div class="noti-txt">
+                <p class="mo-hide">배송중인 상품이 있습니다.</p>
+                <p class="pc-hide">1</p>
+            </div>
+        </a>
+        <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
+        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
+        <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+        <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
+        <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
+    </div>
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+  </div> -->
+  <!--// 퀵메뉴 -->
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
+  <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../../js/ui-front.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /* ==========================================================================
+          공통 js (ui-front.js)
+      ========================================================================== */
+      /* 레이아웃 */
+      allCategoryBtn(); // gnb 전체카테고리 열고 닫기
+      layoutCategory(); // 카테고리 레이어 이벤트
+      realtimeSearchSlide(); //header 실시간검색 swiper(plugin)
+      // quickTopBtn(); // 스크롤 최상단으로 이동
+      // quickFloating(); //퀵 플로팅 모바일 펼치기 js
+
+      /* 컨텐츠 공통 */
+      tab() // 탭 
+      toggleBtn(); // 토글버튼
+      accordion(); // 아코디언
+      /* ==========================================================================
+          현재페이지에서만 사용 js
+      ========================================================================== */
+      toggleSlideArea(); // 토글영역
+      toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
+      $(window).resize(function(){
+        toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
+      })
+            
+
+
+    });
+  </script>
+  <!-- javascript -->
+</body>
+
+</html>
