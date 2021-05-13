@@ -279,11 +279,11 @@
 .rd-btn-area .rd-btn input:checked + span {color:#346dd0; border: 1px solid #346dd0;}
 
 .filter-detail-area {overflow: hidden;}
-.filter-detail-area .right-area {margin:10px 0; float:right;}
+.filter-detail-area .right-area {margin-top:10px; text-align:right;}
 .btn-filter-detail {width: 118px; height: 38px; background: #346dd0; color:#fff; font-size: 14px; text-align: center;}
 .btn-filter-detail::before {content: ""; width:18px; height:18px; margin-top:2px; display:inline-block; background: url(../images/common/icon_filter.svg) 0 0 no-repeat; vertical-align: top;}
 .filter-detail-box {width:100%; overflow: hidden; border: 1px solid #d7d7d7;}
-.filter-detail-box.filterDetailBox {display:none}
+.filter-detail-box.filterDetailBox {display:none; margin-top:10px;}
 .filter-detail-box > dl {padding:30px; display:flex;}
 .filter-detail-box > dl + dl {border-top:1px solid #d7d7d7;}
 .filter-detail-box > dl > dt {width:188px; font-weight: 500; font-size: 16px; color: #000;}
@@ -523,7 +523,9 @@
     .filter-box > ul > li:nth-child(odd) {border-right:1px solid #d7d7d7;}
     .filter-box .filter-rd > span {height:36px; line-height:35px; font-size:14px;}
     .filter-box .filter-rd > span b {max-width:calc(100% - 27px);}
-    .filter-price {width:100%; padding:16px 20px; border:0; border-top:10px solid #f5f5f5; border-bottom:10px solid #f5f5f5; display:block;}
+    .filter-price {width:100%; padding:16px 20px 0; border:0; border-top:10px solid #f5f5f5; display:block;}
+    .filter-detail-area {padding:0 20px 16px; border-bottom:10px solid #f5f5f5;}
+    .filter-detail-area .right-area {margin:16px 0 0;}
     .filter-price > li {width:100%; position: relative;}
     .filter-price > li + li {margin-top:10px;}
     .filter-price .btn-style-m1 {width:68px; min-width:68px; height:36px; line-height: 35px;}
