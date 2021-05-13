@@ -59,26 +59,7 @@
 .mypage-cont .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
 .mypage-cont .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 18px;}
 
-/* ==========================================================================
-    상품상세 
-========================================================================== */
 
-/* ==========================================================================
-    팝업 
-========================================================================== */
-.popup-cont .pop-layout-txt {font-size: 16px; color: #000; line-height: 16px; padding-bottom: 10px;}
-.popup-cont .lyPopCont > .pop-layout-txt {padding-bottom: 16px;}
-.popup-cont .pop-layout-txt2 {font-size: 14px; color: #999; line-height: 18px;}
-.pop-layout > ul {border-top: 1px solid #000;}
-.pop-layout > ul > li {padding: 10px 0; border-bottom: 1px solid #d7d7d7;}
-.pop-ip-area {display: flex; width: 100%; align-items: center;}
-.pop-ip-area label {font-size: 16px; line-height: 38px; color: #000;}
-.pop-ip-area > label {width: 132px; padding-left: 20px;}
-.pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
-.pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
-.form-search input.input {padding-right: 36px;}
-.form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
-.form-layout.form-flexnone {display: block;}
 
 
 
@@ -122,29 +103,6 @@
     .mypage-cont .product-list-wrap {margin-bottom: 50px;}
 
     
-    
-    
-    
-    
-    /* ==========================================================================
-    팝업 
-    ========================================================================== */
-    .pop-ip-area {flex-direction: column; align-items: flex-start;}
-    .pop-ip-area > label {width: auto; padding-left: 0;}
-    .pop-ip-area label + .form-layout {width: 100%;}
-    .pop-ip-area label {line-height:inherit; padding-bottom: 8px;}
-    .pop-ip-area .form-checkradio label {padding-bottom: 0;}
-    
-    .form-search input.input {height: 36px; line-height: 36px;}
-    .form-search .btn-search2 {width: 34px; height: 34px;}
-
-    .popup-cont .pop-layout-txt {font-size: 15px;}
-    .popup-cont .pop-layout-txt2 {font-size: 13px;}
-    .pop-layout > ul > li {padding: 16px 0;}
-
-    
-
-
 
 }
 
