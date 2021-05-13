@@ -276,6 +276,27 @@ button.btn-style-s1 {line-height:25px;}
 .rating .star.star4::after {content:"별점4"; width:144px;}
 .rating .star.star5::after {content:"별점5"; width:180px;}
 
+.rating .star-m {width:120px; height:24px; display:inline-block; background:url(../images/common/icon_star_m.svg) 0 50% no-repeat; position:relative; font-size:0;}
+.rating .star-m::after {content:"별점0"; width:120px; height:24px; display:inline-block; background:url(../images/common/icon_star_m_on.svg) 0 50% no-repeat;  position:absolute; top:0; left:0; z-index:1; overflow:hidden;}
+.rating .star-m.star0::after {content:"별점0"; width:0;}
+.rating .star-m.star1::after {content:"별점1"; width:24px;}
+.rating .star-m.star2::after {content:"별점2"; width:48px;}
+.rating .star-m.star3::after {content:"별점3"; width:72px;}
+.rating .star-m.star4::after {content:"별점4"; width:96px;}
+.rating .star-m.star5::after {content:"별점5"; width:120px;}
+
+.rating .star-s {width:90px; height:18px; display:inline-block; background:url(../images/common/icon_star_s_1.svg) 0 50% no-repeat; position:relative; font-size:0;}
+.rating .star-s::after {content:"별점0"; width:90px; height:18px; display:inline-block; background:url(../images/common/icon_star_s_1on.svg) 0 50% no-repeat;  position:absolute; top:0; left:0; z-index:1; overflow:hidden;}
+.rating .star-s.star0::after {content:"별점0"; width:0;}
+.rating .star-s.star1::after {content:"별점1"; width:18px;}
+.rating .star-s.star2::after {content:"별점2"; width:36px;}
+.rating .star-s.star3::after {content:"별점3"; width:54px;}
+.rating .star-s.star4::after {content:"별점4"; width:72px;}
+.rating .star-s.star5::after {content:"별점5"; width:90px;}
+
+.rating .star-s.black::after {background:url(../images/common/icon_star_s_black_on.svg) 0 50% no-repeat;  position:absolute; top:0; left:0; z-index:1; overflow:hidden;}
+
+
 /* 공통 - 별점 버튼형 (포토리뷰쓰기)  */
 .rating-btn-area {width:180px; height:36px; background:url(../images/common/icon_star.svg) 0 50% no-repeat; display:inline-block; position:relative;}
 .rating-btn-area > div {width:180px; height:36px; position:absolute; top:0; left:0; z-index:2; display:inline-block; font-size:0;}
@@ -415,6 +436,12 @@ textarea.textarea:read-only::placeholder {color:#666;}
 textarea.textarea:focus {border-color:#000; color:#000;}
 textarea.textarea:read-only:focus {border-color:#bbb;}
 
+/* textarea */
+.textarea-wrap {position: relative;}
+.textarea-wrap.count textarea {padding-bottom: 40px;}
+.textarea-wrap.count .cot {text-align: right; font-size: 14px; color: #999; padding-top: 5px;}
+.textarea-wrap.count .cot b {color: #000; vertical-align: top;}
+
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
 .check-style1 input + i {width: 22px; height: 22px; background: #fff; border: 1px solid #bbb; display:inline-block; }
@@ -432,6 +459,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .check-style2 input + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox2.svg) 50% 50% no-repeat; background-size:22px 22px; border: 0; display:inline-block;}
 .check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_disabled.svg) 50% 50% no-repeat; }
 .check-style2 > span {margin-left:7px; font-weight:400; font-size:14px;}
+
 
 /* member 확인필요 */
 .check-style2 > span {font-size: 16px; color: #000; line-height: 22px; margin-left: 10px;}
@@ -465,6 +493,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .radio-style3 > span {width:100%; height:40px; line-height:38px; border:1px solid #666; font-weight:500; font-size:12px; display:inline-block; text-align:center; color:#666;}
 .radio-style3 input:checked + span {border-color:#000; background:#000; color:#fff;}
 
+.form-checkradio label {margin-left: 40px;}
+.form-checkradio label:first-child {margin-left: 0;}
 
 /* 테이블 */
 .table-area  {width:100%; margin-top:16px; border-top:1px solid #000; overflow:hidden;}
@@ -784,6 +814,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .tit-type1 {font-size:22px;}
     .tit-type1-2 {width:100%; padding:8px 38px; font-size: 16px; font-weight: 500; text-align: center; margin-bottom: 0; border-bottom: 1px solid #d7d7d7; position: fixed; top:176px; left:0; z-index: 10; background:#fff;}
     .tit-type2 {font-size:18px;}
+    .tit-type2 .count {font-size: 16px; margin-left: 2px;}
     .tit-type2-1 {font-size: 16px;}
     .tit-type3 {font-size:16px;}
 
@@ -865,6 +896,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .align-area > .right {width:100%; float:inherit; text-align:left;}
 
     /* 폼요소 */
+    input.input {height: 36px; line-height: 36px;}
     select.select {line-height: 34px; height: 36px;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .upload-area {padding: 10px 0 0;}
