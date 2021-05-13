@@ -248,7 +248,8 @@
             </div>
           </div>
           <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">업로드</a>
+            <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
           </div>
         </div>
       </div>
@@ -281,6 +282,18 @@
       lyOpen('registerPopup');
 
       fileupload();//파일업로드
+      
+      $('.excel-btn').hide();
+      $('.tab-btn-list li').on('click', function (){
+        var lang = $(this).attr('data-tab');
+        if(lang == 'tab1'){
+          $('.btn-style-m2').show();
+          $('.excel-btn').hide();
+        }else{
+          $('.btn-style-m2').hide();
+          $('.excel-btn').show();
+        }
+      });
     });
   </script>
   <!-- javascript -->
