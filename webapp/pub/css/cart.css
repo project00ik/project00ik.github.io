@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+.cart-top {display: flex;margin-bottom: 30px;}
+.cart-top .step-wrap{margin-left: auto;}
+.cart-top .step-wrap ul {display: flex;}
+.cart-top .step-wrap ul li {margin-left: 60px;position: relative;}
+.cart-top .step-wrap ul li::before{content: '';position: absolute;top:0;left: -38px;width:18px;height: 40px;background: url(../images/common/arrow_step.svg) top 50% left 50% no-repeat;}
+.cart-top .step-wrap ul li:first-child::before{display: none}
+.cart-top .step-wrap ul li p span{background:#D7D7D7 ;color:#fff;margin-right: 10px;font-size: 16px;text-align: center;display: inline-block;width: 40px;line-height: 40px;border-radius: 50%;}
+.cart-top .step-wrap ul li.on p {color:#346DD0 ;}
+.cart-top .step-wrap ul li.on p span{background:#346DD0; color: #fff;}
+.cart-content .tit-type1-2 em {font-size: 20px;line-height: 40px; font-weight: normal;vertical-align: text-top;}
+.cart-list-con{}
+.cart-list-con .tit-area{margin-bottom: 30px;}
+.cart-list-con + .cart-list-con{margin-top: 100px;}
+.cart-list-con .list-con ul{border-top: 1px solid #000;border-bottom: 1px solid #D7D7D7; }
+.cart-list-con .list-con ul li{}
+.cart-list-con .list-con ul li .list-none{padding: 180px 0 100px;text-align: center;background:url(../images/common/icon_cart_02.svg) top 100px left 50% no-repeat;color: #999;}
+.wish-list-con .list-con ul li .list-none{background:url(../images/common/icon_none2.svg) top 100px left 50% no-repeat;}
+
+
 /* 장바구니 팝업 */
 .pop-restock {text-align: center;}
 .pop-restock > p{margin-top: 20px;}
@@ -15,7 +34,7 @@
 
 .pop-restock.pop-register {text-align: left;}
 .pop-restock .tab-area .tab-cont{padding: 0;}
-.pop-restock .form-down-btn{padding-right: 23px;margin-bottom: 5px;background:url(../images/common/btn_download.svg) top 3px right 0 no-repeat;;}
+.pop-restock .form-down-btn{padding-right: 23px;margin-bottom: 5px;background:url(../images/common/btn_download.svg) top 3px right 0 no-repeat;}
 
 /* ==========================================================================
    Media Queries for Responsive Design.
@@ -29,6 +48,14 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
+
+    .cart-top{margin-bottom: 0;}
+    .cart-content .tit-type1-2 em {font-size: 16px;line-height: 19px;vertical-align: top;}
+    .cart-list-con + .cart-list-con{margin-top: 30px;}
+    .cart-list-con .tit-area{margin-bottom: 20px;}
+    .cart-list-con .list-con ul li .list-none{padding:130px 0 70px;background-position-y: 60px;}
+    .cart-list-con .list-con ul{border-top: none;border-bottom: 10px solid #F5F5F5;;}
+    .wish-list-con .list-con ul{border-top:1px solid #000;border-bottom:none; }
 
     /* 장바구니 팝업 */
     .pop-restock {text-align:left;}
