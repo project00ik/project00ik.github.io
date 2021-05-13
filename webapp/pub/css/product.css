@@ -104,14 +104,6 @@
 .product-detail .text-info ul{}
 .product-detail .text-info ul li{font-size: 16px; color:#666;margin-top: 5px;padding-left: 10px;}
 .product-detail .text-info ul li:before{content: "-";display: inline-block;margin-left: -10px;padding-right: 4px;}
- 
-/* 페이징 */
-.paging{text-align: center;margin: 30px 0;}
-.paging a{width:38px;line-height: 36px;display: inline-block;}
-.paging a.on{border:1px solid #346DD0;box-sizing: border-box;}
-.paging a.prev,.paging a.next{border:1px solid #BBBBBB;box-sizing: border-box;text-indent: -9999px;background: url(../images/common/mo_arrow_gnb_d1.svg) 50% no-repeat;}
-.paging a.prev{ -webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);}
-.paging a.prev.active,.paging a.next.active{background: url(../images/common/mo_arrow_gnb_d1_on.svg) 50% no-repeat;;}
 
 /* 상품상세 팝업*/
 .popup-cont .lyPopCont > .pop-layout-txt {color: #666;}
@@ -133,18 +125,6 @@
 .pop-cart .cart-add-select > span{font-size: 14px;color:#999;display: block;padding-right: 60px;}
 .pop-cart .cart-add-select .form-area{margin-bottom: 10px;}
 
-/* 장바구니 팝업 */
-.pop-restock {text-align: center;}
-.pop-restock > p{margin-top: 20px;}
-.pop-restock > span{font-size: 24px;font-weight: bold;}
-.pop-restock .pop-write{margin-top: 30px;text-align: left;border-bottom: 1px solid #D7D7D7;}
-.pop-restock .pop-write th{font-weight: normal;background: #FAFAFA;padding: 20px 30px 20px 20px;width: 137px;border-top: 1px solid #D7D7D7;border-right: 1px solid #D7D7D7;}
-.pop-restock .pop-write td{font-size: 15px;color: #666;padding: 20px;border-top: 1px solid #D7D7D7;}
-.pop-restock .pop-write td div{display: flex;}
-.pop-restock .pop-write td div label{width: 100px;}
-.pop-restock .pop-write td strong{color:#346DD0;}
-.pop-restock .pop-write .input td div label{line-height: 38px;}
-.pop-restock .pop-write .input td div.form-layout{display: block;width: calc(100% - 100px);}
 
 /* ==========================================================================
    Media Queries for Responsive Design.
@@ -251,24 +231,7 @@
     .pop-review-write .pro-upload .upload-url {flex-direction: column;}
     .pop-review-write .pro-upload .upload-url label {width: 100%; line-height: inherit; padding-bottom: 8px; font-size: 15px;}
     .pop-review-write .pro-upload .upload-url label + input[type='text'] {width: 100%;}
-    
-    
-
-
-    /* 장바구니 팝업 */
-    .pop-restock {text-align:left;}
-    .pop-restock > p{margin-top: 10px;font-size: 15px;}
-    .pop-restock > span{font-size: 18px;font-weight: bold;}
-    .pop-restock .pop-write th{width: 81px;}
-    .pop-restock .pop-write td{font-size: 14px;}
-    .pop-restock .pop-write td div{flex-direction: column;}
-    .pop-restock .pop-write td div label{width: 100px;margin-bottom: 5px;font-size: 15px;}
-    .pop-restock .pop-write .input th {padding-right: 15px;}
-    .pop-restock .pop-write .input td div{line-height: 19px}
-    .pop-restock .pop-write .input td div label{line-height: 19px}
-    .pop-restock .pop-write .input td div.form-layout{width:100%;}
-
-    
+        
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 }

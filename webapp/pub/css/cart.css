@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* 장바구니 팝업 */
+.pop-restock {text-align: center;}
+.pop-restock > p{margin-top: 20px;}
+.pop-restock > span{font-size: 24px;font-weight: bold;}
+.pop-restock .pop-write{margin-top: 30px;text-align: left;border-bottom: 1px solid #D7D7D7;}
+.pop-restock .pop-write th{font-weight: normal;background: #FAFAFA;padding: 20px 30px 20px 20px;width: 137px;border-top: 1px solid #D7D7D7;border-right: 1px solid #D7D7D7;}
+.pop-restock .pop-write td{font-size: 15px;color: #666;padding: 20px;border-top: 1px solid #D7D7D7;}
+.pop-restock .pop-write td div{display: flex;}
+.pop-restock .pop-write td div label{width: 100px;}
+.pop-restock .pop-write td strong{color:#346DD0;}
+.pop-restock .pop-write .input td div label{line-height: 38px;}
+.pop-restock .pop-write .input td div.form-layout{display: block;width: calc(100% - 100px);}
+
+.pop-restock.pop-register {text-align: left;}
+.pop-restock .pop-write{margin-top: 0;}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+@media only screen and (max-width:1200px){
+}
+
+
+@media only screen and (max-width:1024px){ /* ipad pro*/
+}
+
+/* 모바일 시작 */
+@media only screen and (max-width:800px){
+
+    /* 장바구니 팝업 */
+    .pop-restock {text-align:left;}
+    .pop-restock > p{margin-top: 10px;font-size: 15px;}
+    .pop-restock > span{font-size: 18px;font-weight: bold;}
+    .pop-restock .pop-write th{width: 81px;}
+    .pop-restock .pop-write td{font-size: 14px;}
+    .pop-restock .pop-write td div{flex-direction: column;}
+    .pop-restock .pop-write td div label{width: 100px;margin-bottom: 5px;font-size: 15px;}
+    .pop-restock .pop-write .input th {padding-right: 15px;}
+    .pop-restock .pop-write .input td div{line-height: 19px}
+    .pop-restock .pop-write .input td div label{line-height: 19px}
+    .pop-restock .pop-write .input td div.form-layout{width:100%;}
+
+    
+}
+@media only screen and  (min-height:812px){ /* iphoneX */
+}
+@media only screen and (max-width:768px){ /* ipad */
+}
+@media only screen and (max-width:760px){
+}
+@media only screen and (max-width:480px){
+}
+@media only screen and (max-width:414px){ /* iphone plus */
+}
+@media only screen and  (max-width:375px){ /* iphone6 */
+}
+@media only screen and  (max-width:360px){ /* galaxy */
+}
+@media only screen and  (max-width:320px){ /* iphoneSE */
+}
+@media only screen and  (max-height:568px){ /* 아이폰SE */
+
+}
