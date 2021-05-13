@@ -83,7 +83,7 @@
 .join-list-con .list-con .list-in.list-delivery > li > p.de-name {text-align: center; width:45px;}
 .join-list-con .list-con .list-in.list-delivery > li > p.de-name:before {display: none;}
 .join-list-con .list-con .list-in.list-delivery > li > p:before {content: ''; display: inline-block; width: 1px; height: 10px; background: #999; margin-right: 20px;}
-.join-list-con .list-con .list-in.list-delivery > li > p.de-address {max-width: 457px; margin-right: 10px;}
+.join-list-con .list-con .list-in.list-delivery > li > p.de-address {max-width: 457px; margin-right: 10px; width: auto;}
 .join-list-con .list-con .list-in.list-delivery > li button {margin-left: 10px;}
 
 
