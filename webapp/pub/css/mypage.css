@@ -79,11 +79,11 @@
 .join-list-con .list-con .list-in.list-delivery > li {position: relative;}
 .join-list-con .list-con .list-in.list-delivery > li .de-btn-area {position: absolute; top: -2px; right: 20px;}
 .join-list-con .list-con .list-in.list-delivery > li > label {width: auto; margin-right: 10px;}
-.join-list-con .list-con .list-in.list-delivery > li > p {display: block; margin-right: 10px;}
+.join-list-con .list-con .list-in.list-delivery > li > p {display: block; margin-right: 20px;}
 .join-list-con .list-con .list-in.list-delivery > li > p.de-name {text-align: center; width:45px;}
 .join-list-con .list-con .list-in.list-delivery > li > p.de-name:before {display: none;}
 .join-list-con .list-con .list-in.list-delivery > li > p:before {content: ''; display: inline-block; width: 1px; height: 10px; background: #999; margin-right: 20px;}
-.join-list-con .list-con .list-in.list-delivery > li > .de-address {max-width: 448px;}
+.join-list-con .list-con .list-in.list-delivery > li > p.de-address {max-width: 457px; margin-right: 10px;}
 .join-list-con .list-con .list-in.list-delivery > li  .flag-txt.blue {width: 36px;}
 .join-list-con .list-con .list-in.list-delivery > li button {margin-left: 10px;}
 
@@ -93,6 +93,7 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
+    .mypage-cont input[type='text'], .mypage-cont input[type='password'] {font-size: 14px;}
     .mypage-cont .unit-type1 {height: auto;}
     .mypage-cont .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
     .mypage-cont .tabArea {margin: 20px 0 0;}
