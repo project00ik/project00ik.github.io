@@ -590,6 +590,7 @@ function toggleResize(){
 }
 
 function fileupload(){
+  //첨부파일 업로드
   $("#file").on('change',function(){
     var fileName = $("#file").val();
     $(".upload-name").val(fileName);

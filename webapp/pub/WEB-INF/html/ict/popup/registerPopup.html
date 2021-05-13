@@ -221,11 +221,11 @@
                       <tr>
                         <th>파일선택</th>
                         <td>
-                          <div class="input">
-                            <label>수신자 성명</label>
-                            <div class="form-layout">
-                              
-                            </div>
+                          <button class="btn form-down-btn">양식 다운로드</button>
+                          <div class="filebox">
+                            <input class="upload-name input " value="" readonly>
+                            <label for="file">파일 선택</label> 
+                            <input type="file" id="file"> 
                           </div>
                         </td>
                       </tr>
@@ -240,13 +240,15 @@
                   </div>
 								</div>
 								<div class="tab-cont tabCont" id="tab2">
-									TAB2 내용
+									<div class="excel-wrap">
+                    그리드
+                  </div>
 								</div>
 							</div>
             </div>
           </div>
           <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">업로드</a>
           </div>
         </div>
       </div>
@@ -277,6 +279,8 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('registerPopup');
+
+      fileupload();//파일업로드
     });
   </script>
   <!-- javascript -->

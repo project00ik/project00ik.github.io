@@ -14,7 +14,8 @@
 .pop-restock .pop-write .input td div.form-layout{display: block;width: calc(100% - 100px);}
 
 .pop-restock.pop-register {text-align: left;}
-.pop-restock .pop-write{margin-top: 0;}
+.pop-restock .tab-area .tab-cont{padding: 0;}
+.pop-restock .form-down-btn{padding-right: 23px;margin-bottom: 5px;background:url(../images/common/btn_download.svg) top 3px right 0 no-repeat;;}
 
 /* ==========================================================================
    Media Queries for Responsive Design.
