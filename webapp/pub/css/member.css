@@ -199,8 +199,10 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
     .join-list-con .con-normal-info .list-in {padding-top: 0; flex-direction: column;}
     .join-list-con .con-normal-info .list-in > li {width: 100%;}
     .join-list-con .con-normal-info .list-in .list-w60 {width: 100%;}
-    .join-list-con .con-normal-info .list-in .list-w60 .w60-flexbox {width: 196px;}
+    .join-list-con .con-normal-info .list-in .list-w60 .w60-flexbox {width: 190px;}
+    .join-list-con .con-normal-info .list-in .list-w60 .select {width: 112px;}
     .join-list-con .con-normal-info .list-in .form-layout {flex: inherit; }
+    .join-list-con .list-con .mem-info-list li .form-email .select {width: 112px;}
     .join-list-con .list-con .mem-info-list li .form-address .btn-style-m1 {width: 112px;}
     .join-list-con .list-file-con {padding-bottom: 20px;}
     .join-list-con .list-file-con .file-con {margin: 10px 20px; display: block; }

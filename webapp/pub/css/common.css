@@ -269,9 +269,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-refresh {width: 36px; height: 36px; margin-left:5px; display:inline-block; font-size:0; background: url(../images/common/btn_refresh.svg) 0 0 no-repeat;}
 
 /* 플래그 */
-.flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 10px;}
+.flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 7px;}
 .flag-txt ~ .flag-txt {margin-left:6px;}
-.flag-txt.blue {width:58px; padding:0 5px; color:#fff; background:#346dd0;}
+.flag-txt.blue {color:#fff; background:#346dd0;}
 .flag-txt.purple {color:#a340bf; border:1px solid #a340bf;}
 .flag-txt.brown {color:#c67043; border:1px solid #c67043;}
 .flag-txt.green {color:#239587; border:1px solid #239587;}
@@ -870,8 +870,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     /* 플래그 */
     .flag-txt ~ .flag-txt {margin-left:2px;}
-    .flag-txt {height:18px; padding:0 8px; font-size:10px; line-height:16px; text-align: center;}
-    .flag-txt.blue {width:45px; padding:0;}
+    .flag-txt {height:18px; padding:0 7px; font-size:10px; line-height:16px; text-align: center;}
 
     /* 별점 */
     .rating .star-s {vertical-align: top;}
