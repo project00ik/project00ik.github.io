@@ -214,7 +214,7 @@
 .btn-area {width:100%; font-size:0;}
 .btn-area .btn + .btn {margin-left:10px;}
 .btn-area-c {text-align: center;}
-.btn-r-area {display: flex; justify-content: flex-end;}
+.btn-r-area {display: flex; justify-content: flex-end; padding-top: 20px;} /* 리스트 하단 버튼 */
 .btn-r-area .btn + .btn {margin-left: 10px;}
 .btn-full-area {width:100%; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .btn-full-area .btn + .btn {margin-left:10px;}
