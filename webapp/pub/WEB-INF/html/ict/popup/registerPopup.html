@@ -218,38 +218,43 @@
 								<div class="tab-cont tabCont active" id="tab1">
 									<div class="pop-write">
                     <table>
-                      <tr>
-                        <th>파일선택</th>
-                        <td>
-                          <button class="btn form-down-btn">양식 다운로드</button>
-                          <div class="filebox">
-                            <input class="upload-name input " value="" readonly>
-                            <label for="file">파일 선택</label> 
-                            <input type="file" id="file"> 
-                          </div>
-                        </td>
-                      </tr>
-                      <tr class="input">
-                        <th>추가설명</th>
-                        <td>
-                          양식의 필수항목은 모두 등록해 주시기 바랍니다.<br/>(필수항목 : 상품코드, 수량)
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                      <tbody>
+                        <tr>
+                          <th>파일선택</th>
+                          <td>
+                            <button class="btn form-down-btn">양식 다운로드</button>
+                            <div class="filebox">
+                              <input class="upload-name input " value="" readonly>
+                              <label for="file">파일 선택</label> 
+                              <input type="file" id="file"> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="input">
+                          <th>추가설명</th>
+                          <td>
+                            양식의 필수항목은 모두 등록해 주시기 바랍니다.<br/>(필수항목 : 상품코드, 수량)
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
                   </div>
 								</div>
 								<div class="tab-cont tabCont" id="tab2">
-									<div class="excel-wrap">
-                    그리드
+                  <div class="pop-write">
+                    <div class="excel-wrap">
+                      그리드 영역
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
                   </div>
 								</div>
 							</div>
             </div>
-          </div>
-          <div class="btn-area">
-            <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
-            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
           </div>
         </div>
       </div>
@@ -282,18 +287,6 @@
       lyOpen('registerPopup');
 
       fileupload();//파일업로드
-      
-      $('.excel-btn').hide();
-      $('.tab-btn-list li').on('click', function (){
-        var lang = $(this).attr('data-tab');
-        if(lang == 'tab1'){
-          $('.btn-style-m2').show();
-          $('.excel-btn').hide();
-        }else{
-          $('.btn-style-m2').hide();
-          $('.excel-btn').show();
-        }
-      });
     });
   </script>
   <!-- javascript -->
