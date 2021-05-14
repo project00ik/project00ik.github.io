@@ -331,7 +331,7 @@
 .proList .unit-type1 .unit-area .price {flex:inherit; margin-left:10px; font-size:14px;}
 .proList .unit-type1 .unit-area .price > b {font-size:22px;}
 .proList .unit-type1 .unit-area .sale {margin:0 0 0 10px; display:inline-block; font-size:22px; text-align: left;}
-.proList .unit-type1 .unit-layer .unit-under-btn {width: 178px; height:auto; padding:30px; bottom:inherit; top:0; right:0; background:none;}
+.proList .unit-type1 .unit-layer .unit-under-btn {width: 178px; height:auto; padding:30px; bottom:inherit; top:50%; right:0; background:none; transform: translateY(-50%);}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow {width: 118px; height: 38px; background:#346dd0; font-size:14px; line-height:37px;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-cart,
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like {width: 118px; height: 38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #000; color:#000;}
