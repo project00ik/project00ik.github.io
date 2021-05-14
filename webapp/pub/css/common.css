@@ -243,6 +243,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-small-blue {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#fff; background:#346DD0;}
 .btn-small-line {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; background:#fff; border:1px solid #000;}
 .btn-small2-line {width:56px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
+.btn-small3-line {height:28px; padding:0 12px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
 .btn-check-line > input {opacity: 0;}
 .btn-check-line > span {display: inline-block; width:98px; height:28px; line-height:27px; padding: 0 0 0 30px; text-align: left; font-size:14px; color:#000; border:1px solid #000; background: url(../images/common/icon_checkbox_disabled.svg) left 13px center no-repeat;}
 .btn-check-line input:checked + span {color:#fff; border: 0;background-color: #346dd0;}
