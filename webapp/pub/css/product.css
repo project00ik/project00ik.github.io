@@ -311,16 +311,16 @@
 .proList .unit-type1 .unit-area {padding:0; display:flex;}
 .proList .unit-type1 .unit-area > dt {width: 156px; height: 156px;}
 .proList .unit-type1 .unit-area > dd {flex:1; padding:0 0 0 20px;}
-.proList .unit-type1 .unit-layer {display:block; border:0;}
-.proList .unit-type1 .check-style2 {top:97px;}
+.proList .unit-type1 .unit-layer {width:100%; display:block; border:0;}
+.proList .unit-type1 .check-style2 {top:50%; margin-top:-11px;}
 .proList .unit-type1 .unit-layer .unit-link {width:calc(100% - 178px); height:100%;}
 .proList .unit-type1 .unit-layer .unit-under-btn {width:auto; display:inline-block;}
 .proList .unit-type1 .unit-layer .unit-under-btn > li {flex:inherit;}
-.proList .unit-type1 .unit-layer .unit-under-btn > li > a {width:auto;}
+.proList .unit-type1 .unit-layer .unit-under-btn > li > a {width:auto; margin-bottom: 5px;}
 .proList .unit-type1 .unit-layer .unit-under-btn > li + li {border:0;}
-.proList .unit-type1 .unit-area .product-name {width:100%; height:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -webkit-line-clamp: 1;}
+.proList .unit-type1 .unit-area .product-name {width:754px; height:20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -webkit-line-clamp: 1; display:inline-block;}
 .unit-type1 .standard {display:none;}
-.proList .unit-type1 .standard {margin:6px 0;font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
+.proList .unit-type1 .standard {width:754px; margin:6px 0;font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
 .unit-type1 .satis-large {display:none;}
 .proList .unit-type1 .satis-large {display:block;}
 .proList .unit-type1 .satis-large .rating {display:inline-block;}
