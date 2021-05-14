@@ -329,7 +329,9 @@ button.btn-style-s1 {line-height:25px;}
 
 /* 텍스트 관련 style */
 .point-color1 {color:#ed1c24;}
-.point-color2 {color: #666;}
+.point-color2 {color:#666;}
+.point-color3 {color:#346dd0;}
+
 /* - 타이틀 */
 .tit-center-area {width:100%; padding-right:100px; position:relative;}
 .tit-center-area .left-area [class^="tit"] {width:100%; text-align:center;}
@@ -347,6 +349,8 @@ button.btn-style-s1 {line-height:25px;}
 .tit-type2-1 {font-size: 20px; color: #000;}
 .tit-type2-1 .count {vertical-align:top; color: #346dd0; font-weight: 700;}
 .tit-type3 {width:100%; height:36px; line-height:36px; font-size:16px; text-align:center; color:#000;}
+.sub-txt {margin-left:7px;}
+.sub-txt > b {color:#346dd0; font-weight: 400; vertical-align: top;}
 
 .ellipsis {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .ellipsis-multiple {overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; word-wrap:break-wrod;}
