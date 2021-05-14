@@ -313,7 +313,7 @@
 .proList .unit-type1 .unit-area > dd {flex:1; padding:0 0 0 20px;}
 .proList .unit-type1 .unit-layer {display:block; border:0;}
 .proList .unit-type1 .check-style2 {top:97px;}
-.proList .unit-type1 .unit-layer .unit-link {height:auto;}
+.proList .unit-type1 .unit-layer .unit-link {width:calc(100% - 178px); height:100%;}
 .proList .unit-type1 .unit-layer .unit-under-btn {width:auto; display:inline-block;}
 .proList .unit-type1 .unit-layer .unit-under-btn > li {flex:inherit;}
 .proList .unit-type1 .unit-layer .unit-under-btn > li > a {width:auto;}
