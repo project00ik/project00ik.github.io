@@ -192,6 +192,7 @@
 .pop-ip-area > label {width: 132px; padding-left: 20px;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 .pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
+.form-search {position: relative;}
 .form-search input.input {padding-right: 36px;}
 .form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
 .form-layout.form-flexnone {display: block;}
@@ -213,6 +214,8 @@
 .btn-area {width:100%; font-size:0;}
 .btn-area .btn + .btn {margin-left:10px;}
 .btn-area-c {text-align: center;}
+.btn-r-area {display: flex; justify-content: flex-end;}
+.btn-r-area .btn {margin-left: 10px;}
 .btn-full-area {width:100%; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .btn-full-area .btn + .btn {margin-left:10px;}
 .btn-full-area > .btn {flex:1;}
@@ -260,6 +263,8 @@ button.btn-style-s1 {line-height:25px;}
 .btn-slide-open.on { transform: rotate(180deg);}
 .btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 
 .btn-tooltip {width: 20px; height: 20px; margin:3px 0 0 2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}

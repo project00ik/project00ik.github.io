@@ -1,11 +1,4 @@
 @charset "utf-8";
-
-/* 공통 */
-.btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
-.btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
-.btn-r-area {display: flex; justify-content: flex-end;}
-.btn-r-area .btn {margin-left: 10px;}
-
 /* ==========================================================================
     마이페이지
 ========================================================================== */
@@ -135,6 +128,7 @@
 
     /* 회원정보관리 */
     .mypage-cont .my-main .btn-area-c {padding-top: 50px;}
+    .mypage-cont .my-main .btn-full-area {padding: 0; border-top: 0;}
     .join-list-con .join-txt-normal {font-size: 14px; margin: 0 20px;}
 
     

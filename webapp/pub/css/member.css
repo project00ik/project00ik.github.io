@@ -24,7 +24,7 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .join-list-con .list-con .list-in {margin-top: 10px; padding-top: 20px; border-top: 1px solid #bbb; border-bottom: 1px solid #d7d7d7;}
 .join-list-con .list-con .list-in > li {padding: 0 20px 20px 20px; display: flex; align-items: center;}
 .join-list-con .list-con .list-in > li > label {width: 180px; font-size: 16px; display: block;}
-.join-list-con .list-con .list-in > li button {margin-left: 5px;} 
+.join-list-con .list-con .list-in > li input + button {margin-left: 5px;} 
 .join-list-con .list-con .list-half-style {display: flex; flex-wrap: wrap;}
 .join-list-con .list-con .list-half-style li {width: 50%;}
 .join-list-con .list-con .list-in + .tit-type2-1 {padding-top: 30px;}
@@ -51,7 +51,7 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .join-list-con .con-normal-info .list-in .list-w60 {width: 66.666%; font-size: 0;}
 .join-list-con .con-normal-info .list-in .list-w60 input {width: 100%;}
 .join-list-con .con-normal-info .list-in .list-w60 .select {margin-left: 5px; width: 118px;}
-.join-list-con .con-normal-info .list-in .list-w60 .w60-flexbox {display: flex; width: 245px;}
+.join-list-con .con-normal-info .list-in .list-w60 .w60-flexbox {display: flex; width: 240px; margin-left: 5px;}
 .join-list-con .con-normal-info .list-in > li {width: 33.333%;}
 .join-list-con .con-normal-info .list-in > li > label {width: 120px;}
 
