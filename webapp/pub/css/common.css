@@ -568,6 +568,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 .table-info {margin-top:16px; color:#999; font-size:14px;}
 
+.table-area col.w21 {width:21%;}
+
 /* ==========================================================================
     유닛 관련
 ========================================================================== */
@@ -871,6 +873,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
+
+    /* 테이블 */
+    .table-area col.w21 {width:112px;}
     
     /* 탭 */
     .tab-area .tab-btn-list > li {display:inline-block; font-size:16px;}
