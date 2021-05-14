@@ -17,17 +17,6 @@
 .unit-type2 .unit-area .date-area .dday {font-size:14px; color:#346dd0; font-weight: 500; display:inline-block; margin-left: 10px;}
 .unit-type2 .unit-area .date-area .dday.end {color: #eb3030;}
 
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
     프로모션
 ========================================================================== */
@@ -55,8 +44,57 @@
 
 
 
+/* 열린소싱상품제안 */
+.suggestion-goods .list-con{padding-top:0px;}
+.suggestion-goods .list-con > p {padding-top: 30px;}
+.suggestion-goods .list-con .list-in{margin-top:0px;border-top:none;}
+.suggestion-goods .list-con > p + .list-in{margin-top: 10px;border-top: 1px solid #bbb;}
+.suggestion-goods .list-con > .suggestion-tit + .list-in{margin-top: 10px;border-top: 1px solid #bbb;}
+.suggestion-goods .list-con .list-in > li > label{width: 150px;}
+.suggestion-goods .list-con .list-in > li div{margin-right: 40px;}
+.suggestion-goods .list-con .list-in > li div.suggestion-date{margin-right: 0px;max-width: 530px;}
+.suggestion-goods .list-con .list-in > li div.suggestion-date div{display: flex;}
+.suggestion-goods .list-con .list-in > li div:last-child{margin-right: 0px;}
+.suggestion-goods .list-con .list-in > li div.form-search{margin-right: 5px;width: 50%;}
+.suggestion-goods .list-con .list-in > li.name div{max-width: 323px;}
+.suggestion-goods .list-con .list-in > li div.radio{display: inline-table;max-width: 100%;}
+.suggestion-goods .list-con .list-in > li div.radio div:last-child{margin-top: 20px;}
+.suggestion-goods .list-con .list-in > li div.radio label{margin-right: 50px;}
+.suggestion-goods .list-con .list-in > li div.radio label span{font-size: 16px;font-weight: normal;}
+.suggestion-goods .list-con .list-in > li div.textarea-wrap{max-width: 100%;position: relative;display: inline-table;}
+.suggestion-goods .list-con .list-in > li div.textarea-wrap label{margin-top: 10px;}
+.suggestion-goods .list-con .list-in > li div.textarea-wrap .btn-right{margin: 0px;}
+.suggestion-goods .list-con .list-in > li.btn-right {display: block;margin: 0;}
+.suggestion-goods .list-con .list-in > li .btn-right p{font-size: 14px;margin-top: 5px;}
+.suggestion-goods .list-con .list-in > li .btn-right p .req{font-size: 14px;}
+.suggestion-goods .list-con .list-in > li.write label{align-self: flex-start;}
+.suggestion-goods .suggestion-date select{width:127px;margin-right: 5px;flex:none}
+.suggestion-goods .suggestion-date em{margin:0 5px;line-height: 38px;}
+.suggestion-goods .btn-right{text-align: right;margin: 30px 0;}
+.mypage-cont .my-main .join-list-con .list-in.suggestion-step li label{width: 85px;}
+.suggestion-goods .list-con .list-in.suggestion-step li div {max-width:100%;display: flex;}
+.suggestion-goods .suggestion-step {margin-bottom: 50px;}
+.suggestion-goods .suggestion-step li div p{position: relative;flex:1;width:175px;padding-top: 80px;margin-top: 10px;color: #999;background: url(../images/common/icon_step1.svg) top 0 left 50% no-repeat;text-align: center;}
+.suggestion-goods .suggestion-step li div p.on{color: #346DD0;}
+.suggestion-goods .suggestion-step li div p::after{content: '';position: absolute;top: 0;right: 0;width: 18px;height: 140px;background: url(../images/common/arrow_step.svg) top 50% right 0 no-repeat;}
+.suggestion-goods .suggestion-step li div p:last-child::after{display: none;}
+.suggestion-goods .suggestion-step li div p.step2{background: url(../images/common/icon_step2.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step3{background: url(../images/common/icon_step3.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step4{background: url(../images/common/icon_step4.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step5{background: url(../images/common/icon_step5.svg) top 10px left 50% no-repeat;margin-top: 0;}
+.suggestion-goods .suggestion-tit{display: flex;margin-top: 30px;}
+.suggestion-goods .suggestion-tit p.tit-type3-1{font-size: 16px;margin-left:20px;line-height: 24px;}
 
-
+/* 열린소싱상품제안 팝업*/
+.pop-account.pop-suggestion  > .form-area{width: 320px;margin: 30px auto 0 ;}
+.pop-suggestion > p em{color:#666;vertical-align: top;}
+.pop-suggestion .textarea-wrap{margin-top: 20px;}
+.pop-suggestion .textarea-wrap textarea{margin-top: 10px;}
+.pop-suggestion .user-search{display: flex;margin-bottom: 30px;}
+.pop-suggestion .user-search select{width: 118px;}
+.pop-suggestion .user-search .form-area{margin-left:5px;width: 394px;}
+.pop-suggestion .user-search .btn-style-m1{margin-left:5px;}
+.popup-type-m .lyPopup .popup-cont .pop-suggestion .btn-area{padding:0;border: none;width: auto;}
 
 
 
