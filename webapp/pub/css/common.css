@@ -246,6 +246,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-del {width:18px; height:18px; background:url(../images/common/btn_del.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 .btn-small-blue {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#fff; background:#346DD0;}
 .btn-small-line {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; background:#fff; border:1px solid #000;}
+.btn-small-line2 {width:118px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; background:#fff; border:1px solid #000;}
 .btn-small2-line {width:56px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
 .btn-small3-line {height:28px; padding:0 12px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
 .btn-check-line > input {opacity: 0;}
@@ -456,7 +457,7 @@ select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background
 .form-phone .select {width: 86px; flex: inherit;}
 .form-phone .input {flex:1;}
 
-textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px;}
+textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px; resize: none;}
 textarea.textarea:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
 textarea.textarea:read-only {background:#fafafa; border:1px solid #bbb; color:#666;}
 textarea.textarea:read-only::placeholder {color:#666;}
@@ -837,7 +838,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .main .btn-more-black2 {position: inherit;  top:inherit; left: inherit; z-index: inherit;}
 
     .btn-style-ml1 {font-size: 16px;}
+    .btn-style-ml2 {width: 100%;}
     .btn-style-m3 {height: 36px; width: 100%;}
+    .btn-style-mm1 {width: 100%;}
+    .btn-style-mm2 {width: 100%;}
 
     .tooltip-box {left:inherit; right:0;}
     .tooltip-close {background: url(../images/common/mo_btn_tooltip_close.svg) 0 0 no-repeat;}
@@ -849,7 +853,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .history-bak {width:18px; height:18px; font-size:0; display:inline-block; position: absolute; top:9px; left:20px; z-index:1; background: url(../images/common/arrow_history_bak.svg) 0 0 no-repeat;}
 
     /* 모바일 padding */    
-    .mo-pd {padding:0 20px;}
+    .mo-pd {padding:0 20px; display: flex;}
     
     /* 탭 */
     .tab-area .tab-btn-list > li {display:inline-block; font-size:16px;}

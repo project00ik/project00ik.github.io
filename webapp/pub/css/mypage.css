@@ -77,21 +77,27 @@
 .mypage-cont .my-main .btn-area-c {padding-top: 70px;}
 .mypage-cont .my-main .btn-r-area {padding-top: 20px;}
 .mypage-cont .my-main .join-list-con .list-con .list-in > li > label {width: 130px;}
-.join-list-con .join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
-.join-list-con .list-con .list-in.list-delivery > li {position: relative;}
-.join-list-con .list-con .list-in.list-delivery > li .de-btn-area {position: absolute; top: -2px; right: 20px;}
-.join-list-con .list-con .list-in.list-delivery > li > label {width: auto; margin-right: 10px;}
-.join-list-con .list-con .list-in.list-delivery > li > p {display: block; margin-right: 20px;}
-.join-list-con .list-con .list-in.list-delivery > li > p.de-name {text-align: center; width:45px;}
-.join-list-con .list-con .list-in.list-delivery > li > p.de-name:before {display: none;}
-.join-list-con .list-con .list-in.list-delivery > li > p:before {content: ''; display: inline-block; width: 1px; height: 10px; background: #999; margin-right: 20px;}
-.join-list-con .list-con .list-in.list-delivery > li > p.de-address {max-width: 457px; margin-right: 10px; width: auto;}
-.join-list-con .list-con .list-in.list-delivery > li button {margin-left: 10px;}
+.mypage-cont .my-main .join-list-con .join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li {position: relative;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li .de-btn-area {position: absolute; top: -2px; right: 20px;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li > label {width: auto; margin-right: 10px;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li > p {display: block; margin-right: 20px;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li > p.de-name {text-align: center; width:45px;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li > p.de-name:before {display: none;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li > p:before {content: ''; display: inline-block; width: 1px; height: 10px; background: #999; margin-right: 20px;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li > p.de-address {max-width: 457px; margin-right: 10px; width: auto;}
+.mypage-cont .my-main .join-list-con .list-con .list-in.list-delivery > li button {margin-left: 10px;}
 .mypage-cont .my-main .join-list-con .bt-btn-line {padding-top: 0;}
 .mypage-cont .my-main .join-list-con .bt-btn-line .list-in {border-top: 0; border-bottom: 0; margin-top: 0;}
 .mypage-cont .my-main .join-list-con .bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
 .mypage-cont .my-main .join-list-con .bt-btn-line .list-half-style li {width: 50%;}
 .mypage-cont .my-main .join-list-con .list-file-con .btn-r-area {padding: 0 0 20px;}
+.mypage-cont .my-main .join-list-con .my-leave {padding: 30px 20px; border-bottom: 1px solid #d7d7d7;}
+.mypage-cont .my-main .join-list-con .my-leave .leave-tit {padding-bottom: 20px; font-size: 16px; font-weight: 500; color: #000;}
+.mypage-cont .my-main .join-list-con .my-leave ul {padding-bottom: 30px;}
+.mypage-cont .my-main .join-list-con .my-leave ul li {font-size: 16px; line-height: 26px; color: #000;}
+.mypage-cont .my-main .join-list-con .my-leave .textarea {height: 109px;}
+.mypage-cont .my-main .join-list-con .leave-check-area {padding: 20px 20px 0;}
 
 
 
@@ -141,11 +147,14 @@
     /* 회원정보관리 */
     .mypage-cont .my-main .btn-area-c {padding-top: 50px;}
     .mypage-cont .my-main .btn-full-area {padding: 0; border-top: 0;}
-    .join-list-con .join-txt-normal {font-size: 14px; margin: 0 20px;}
+    .mypage-cont .my-main .join-list-con .join-txt-normal {font-size: 14px; margin: 0 20px;}
     .mypage-cont .my-main .join-list-con .bt-btn-line .list-half-style li {width: 100%;}
     .mypage-cont .my-main .join-list-con .bt-btn-line .btn-r-area {padding: 0 20px 20px;}
     .mypage-cont .my-main .join-list-con .list-file-con .btn-r-area {padding: 0 20px 10px;}
     .mypage-cont .my-main .join-list-con .list-file-con.m-line-hide {border-bottom: 0;}
+    .mypage-cont .my-main .join-list-con .my-leave {padding: 20px;}
+    .mypage-cont .my-main .join-list-con .my-leave .leave-tit {padding-bottom: 12px;}
+    .mypage-cont .my-main .join-list-con .my-leave ul li {font-size: 14px; line-height: 24px;}
 
     
 
