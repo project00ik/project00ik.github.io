@@ -126,14 +126,13 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .join-content .login-wrap.privacy .btn-full-area{padding:50px 147px 30px;line-height: 46px;border: none;}
 
 /* 회원가입 로그인 팝업 */
-.pop-loginfind{text-align: center;}
+.pop-loginfind{padding:20px 0; text-align: center;}
 .pop-loginfind > p{margin-top: 20px;}
 .pop-loginfind > p.id{text-decoration: underline;}
 .pop-loginfind > span em{vertical-align: top;}
 .pop-loginfind > span strong{text-decoration: underline;vertical-align: top;}
 .pop-loginfind > div{border-top:1px solid #d7d7d7;margin-top: 30px;}
-#loginfindPopup1 .lyPopup .lyPopCont, #loginfindPopup2 .lyPopup .lyPopCont, #loginfindPopup3 .lyPopup .lyPopCont{padding: 50px 0px 20px;}
-#passwordPopup1 .lyPopup .lyPopCont,#passwordPopup2 .lyPopup .lyPopCont,#passwordPopup3 .lyPopup .lyPopCont{padding-bottom: 0;}
+
 .pop-password {text-align: center;}
 .pop-password > p {margin-top: 20px;}
 .pop-password > p em{vertical-align: top;}
@@ -149,11 +148,6 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .pop-account > p {margin-top: 20px;}
 .pop-account > p em {vertical-align: top;}
 .pop-account > .form-area {margin-top: 30px;}
-#accountPopup .lyPopup .lyPopCont {padding-bottom: 0;min-height: 100px;}
-
-
-
-
 
 
 
@@ -253,7 +247,6 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
     .join-content .login-wrap.privacy .btn-style-l2{height:42px; line-height: 40px;}
 
     /* 회원가입 팝업 */
-    .lyPopupWrap .lyPopup .popup-cont .btn-area.m-one-btn a{width: 100%;} 
     .pop-password > p {margin-top: 20px;}
     .pop-password > p em {display: block;vertical-align: top;}
     .pop-password .pop-ip-area label + .form-layout {width: 100%;}
@@ -262,5 +255,4 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
     .lyPopup .popup-cont .lyTitle.center{padding:0px 44px}
     .pop-account > span em {display: block;vertical-align: top;}
     .pop-account > p em {display: block;vertical-align: top;}
-    #loginfindPopup1 .lyPopup .lyPopCont, #loginfindPopup2 .lyPopup .lyPopCont, #loginfindPopup3 .lyPopup .lyPopCont{padding: 50px 0px 30px;}    
 }

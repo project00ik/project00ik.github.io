@@ -175,12 +175,10 @@
 .lyPopup .popup-cont .lyTitle {width:100%; height:54px; padding:0 54px 0 30px; line-height:54px; font-size:18px; color:#fff; font-weight:500; color:#fff; background:#346dd0; position:relative;}
 .lyPopup .popup-cont .lyTitle .btn-close {width:24px; height:24px; display:inline-block; background:url(../images/common/btn_popup_close.svg) 0 0 no-repeat; font-size:0; position:absolute; top:15px; right:30px; z-index:1;} 
 .lyPopup .lyPopCont {padding:30px;}
-.lyPopup .popup-cont .btn-area {}
+.lyPopup .popup-cont .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
+.lyPopup .popup-cont .lyPopCont .btn-area {padding:20px 0 0; border:0;}
 .popup-type-m .lyPopup .popup-cont .lyPopCont {max-height:calc(100vh - 265px); overflow-x:hidden; overflow-y:auto;}
 .popup-type-s .lyPopup .popup-cont .lyPopCont {max-height:500px; min-height:119px;}
-.popup-type-m .lyPopup .popup-cont .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
-.popup-type-s .lyPopup .popup-cont .btn-area,
-.popup-type-xs .lyPopup .popup-cont .btn-area {overflow:hidden; padding:30px; text-align:center;}
 
 .popup-cont .pop-layout-txt {font-size: 16px; color: #000; line-height: 16px; padding-bottom: 10px;}
 .popup-cont .lyPopCont > .pop-layout-txt {padding-bottom: 16px;}
@@ -267,6 +265,8 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-style-mml1 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-mml2 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 
 .btn-tooltip {width: 20px; height: 20px; margin:3px 0 0 2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}
@@ -793,13 +793,16 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .lyPopup .popup-cont .lyTitle {width:100%; height:50px; padding:0 44px 0 20px; line-height:50px; font-size:18px; color:#000; background:#fff; border-bottom:1px solid #d7d7d7; text-align:center;}
     .lyPopup .popup-cont .lyTitle .btn-close {background:url(../images/common/mo_btn_popup_close.svg) 0 0 no-repeat;top:14px; right:20px;} 
     .lyPopup .lyPopCont {padding:30px 20px;}
+    .lyPopup .popup-cont .btn-area,
+    .lyPopup .popup-cont .btn-area {overflow:hidden; padding:20px; text-align:center; display:-webkit-box; display:-ms-flexbox; display:flex; align-items:center; border:0;}
+    .lyPopup .popup-cont .lyPopCont .btn-area,
+    .lyPopup .popup-cont .lyPopCont .btn-area {padding:20px 0; border:0;}
     .popup-type-m .lyPopup .popup-cont .lyPopCont {height:calc(100% - 129px); max-height:100%;}
     .popup-type-s .lyPopup .popup-cont .lyPopCont,
-    .popup-type-s .lyPopup .popup-cont .lyPopCont {max-height:100; min-height:229px;}
-    .popup-type-m .lyPopup .popup-cont .btn-area {overflow:hidden; padding:20px; text-align:center; border-top:1px solid #d7d7d7; display:-webkit-box; display:-ms-flexbox; display:flex; align-items:center;}
-    .popup-type-m .lyPopup .popup-cont .btn-area .btn {width:50%; flex:1;}
-    .popup-type-s .lyPopup .popup-cont .btn-area,
-    .popup-type-xs .lyPopup .popup-cont .btn-area {overflow:hidden; padding:20px; text-align:center;}
+    .popup-type-xs .lyPopup .popup-cont .lyPopCont {max-height:100%; padding:20px 20px 0;}
+    .popup-type-m .lyPopup .popup-cont .btn-area {border-top:1px solid #d7d7d7;}
+    .lyPopup .popup-cont .btn-area .btn {width:50%; min-width: auto; flex:1;}
+    
 
     .pop-ip-area {flex-direction: column; align-items: flex-start;}
     .pop-ip-area > label {width: auto; padding-left: 0;}
