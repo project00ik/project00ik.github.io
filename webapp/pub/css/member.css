@@ -56,7 +56,7 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .join-list-con .con-normal-info .list-in > li > label {width: 120px;}
 
 .join-list-con .list-file-con .file-con {margin: 10px 0; border: 1px solid #d7d7d7; display: flex;}
-.join-list-con .list-file-con .file-con .in-grid-size {background: #f5f5f5; height: 280px;}
+.join-list-con .list-file-con .file-con .in-grid-size {background: #f5f5f5; height: 280px; overflow: auto;}
 .join-list-con .list-file-con .file-con .in-grid-size.w-460 {width: 460px; margin-right: 10px;}
 .join-list-con .list-file-con .file-con .in-grid-size.w-all {flex:1;}
 
