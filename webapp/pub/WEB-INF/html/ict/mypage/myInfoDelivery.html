@@ -186,7 +186,7 @@
                     <p>서울특별시 강남구 광평로47길 28 4층 KT커머스</p>
                   </div>
                   <div class="de-btn-area">
-                    <button class="btn btn-small2-line">수정</button>
+                    <button class="btn btn-small2-line" onclick="lyOpen('myMngDeliveryPopup')">수정</button>
                   </div>
                 </li>
                 <li>
@@ -201,7 +201,7 @@
                     <p>서울특별시 강남구 광평로10길 11 1층</p>
                   </div>
                   <div class="de-btn-area">
-                    <button class="btn btn-small2-line">수정</button>
+                    <button class="btn btn-small2-line" onclick="lyOpen('myMngDeliveryPopup')">수정</button>
                     <button class="btn btn-small2-line">삭제</button>
                   </div>
                 </li>
@@ -216,7 +216,7 @@
                     <p>서울특별시 서초구 방배동 10길 43 204호</p>
                   </div>
                   <div class="de-btn-area">
-                    <button class="btn btn-small2-line">수정</button>
+                    <button class="btn btn-small2-line" onclick="lyOpen('myMngDeliveryPopup')">수정</button>
                     <button class="btn btn-small2-line">삭제</button>
                   </div>
                 </li>
@@ -232,7 +232,7 @@
                     <p>서울특별시 서초구 반포동 17길 21 개나리아파트 3동 1102호</p>
                   </div>
                   <div class="de-btn-area">
-                    <button class="btn btn-small2-line">수정</button>
+                    <button class="btn btn-small2-line" onclick="lyOpen('myMngDeliveryPopup')">수정</button>
                     <button class="btn btn-small2-line">삭제</button>
                   </div>
                 </li>
@@ -243,13 +243,13 @@
           <div class="btn-r-area mo-hide">
             <button class="btn btn-small-line">대표 배송지</button>
             <button class="btn btn-small-line2">자주쓰는배송지</button>
-            <button class="btn btn-small-line">배송지 추가</button>
+            <button class="btn btn-small-line" onclick="lyOpen('myMngDeliveryPopup')">배송지 추가</button>
             <button class="btn btn-small-line">배송지 삭제</button>
           </div>
 
           <div class="pc-hide mo-pd">
             <div class="btn-full-area">
-              <button class="btn btn-style-m2">배송지 추가</button>
+              <button class="btn btn-style-m2" onclick="lyOpen('myMngDeliveryPopup')">배송지 추가</button>
             </div>
           </div>
           
@@ -396,6 +396,98 @@
     <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
   </div> -->
   <!--// 퀵메뉴 -->
+
+  <!-- 배송지관리 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myMngDeliveryPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>배송지관리</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-password">
+              <div class="user-search tit-area3">
+                <p class="tit-type2-1">배송지 추가/수정</p>
+                <div class="pop-mo-check">
+                  <label class="check-style1"><input type="checkbox" name=""><i></i><span>대표 배송지로 지정</span></label>
+                  <label class="check-style1"><input type="checkbox" name=""><i></i><span>자주 쓰는 배송지로 지정</span></label>
+                </div>
+              </div>
+              <div class="pop-layout pop-write">
+                <ul>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">수령인<i class="req">*</i></label>
+                      <div class="form-layout">
+                        <input type="password" class="input" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">휴대폰 번호<i class="req">*</i></label>
+                      <div class="form-layout form-phone">
+                        <select class="select">
+                          <option value="">02</option>
+                          <option value="02">02</option>
+                        </select>
+                        <span class="bar">-</span>
+                        <input type="number" name="" maxlength="4" class="input" value="">
+                        <span class="bar">-</span>
+                        <input type="number" name="" maxlength="4" class="input" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">전화번호</label>
+                      <div class="form-layout form-phone">
+                        <select class="select">
+                          <option value="">02</option>
+                          <option value="02">02</option>
+                        </select>
+                        <span class="bar">-</span>
+                        <input type="number" name="" maxlength="4" class="input" value="">
+                        <span class="bar">-</span>
+                        <input type="number" name="" maxlength="4" class="input" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">주소<i class="req">*</i></label>
+                      <div class="form-address">
+                        <div class="form-layout">
+                          <input type="text" name="" class="input" value="" readonly="readonly">
+                          <button class="btn btn-style-m1">우편번호 찾기</button>
+                        </div>
+                        <div class="form-layout">
+                          <input type="text" name="" class="input" value="" readonly="readonly">
+                        </div>
+                        <div class="form-layout">
+                          <input type="text" name="" class="input" value="">
+                        </div>
+                      </div form-address>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m1">취소</a>
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //배송지관리 조회 팝업 -->
+
+
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
