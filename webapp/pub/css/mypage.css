@@ -3,15 +3,17 @@
 .tit-area3 {display: flex; align-items: center; justify-content: space-between;}
 
 /* promotion.css */
+.pop-ip-area .form-address {width: calc(100% - 190px);}
+.pop-ip-area .form-address .form-layout input + button {margin-left: 5px;}
 .pop-suggestion .user-search .pop-mo-form {display: flex; flex:1;}
 .pop-suggestion .user-search .pop-mo-form .form-area {width: 100%;}
 .pop-suggestion .user-search .pop-mo-btn {display: flex; margin-left: 5px;}
 .pop-suggestion .user-search .pop-mo-btn .btn {margin-left: 0;}
 .pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 5px;} 
 .pop-password .user-search .pop-mo-check {display: flex;}
-.pop-password .user-search .pop-mo-check label {margin-left: 30px;}
-.pop-ip-area .form-address {width: calc(100% - 190px);}
-.pop-ip-area .form-address .form-layout input + button {margin-left: 5px;}
+.pop-password .user-search .pop-mo-check label + label {margin-left: 30px;}
+.pop-password .tit-area3 + .pop-write {margin-top: 10px;}
+.pop-password .pop-ip-area  {align-items: flex-start;}
 
 
 
@@ -115,11 +117,16 @@
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
     /* promotion.css */
+    .pop-ip-area .form-address {width: 100%;}
     .pop-suggestion .user-search {flex-wrap: wrap;}
     .pop-suggestion .user-search .pop-mo-btn {width: 100%; margin: 10px 0 0 0;}
     .pop-suggestion .user-search .pop-mo-btn .btn {width: 100%;}
     .pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 10px;}
-    
+    .user-search.tit-area3 {flex-direction: column; align-items: start;}
+    .pop-password .user-search .pop-mo-check {margin: 10px 0 10px;}
+    .pop-password .user-search .pop-mo-check label + label {margin-left: 20px;}
+
+
 
 
 
