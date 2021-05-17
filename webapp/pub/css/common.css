@@ -206,7 +206,7 @@
 /* 블릿style */
 .bul-bar + .bul-bar {margin-left:12px; padding-left:12px; position:relative;}
 .bul-bar + .bul-bar::before {content:""; width:1px; height:10px; display:inline-block; background:#666; position:absolute; top:5px; left:0;}
-.bar-vertical {width:1px; height:12px; display:inline-block; background:#666; vertical-align: middle;}
+.bar-verti {width:1px; height:12px; margin-top:-1px; margin-left:7px; padding-left:8px; display:inline-block; border-left:1px solid #666; vertical-align:middle;}
 
 /* 버튼 */
 .btn {display:inline-block;}
