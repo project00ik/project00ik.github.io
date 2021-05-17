@@ -113,7 +113,12 @@
     .cart-list-con .list-con + .list-con {margin-top:20px;}
     .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y: 60px;}
     .cart-list-con .list-con ul {}
-    .wish-list-con .list-con ul {border-top:1px solid #000;border-bottom:none; }
+    .wish-list-con .list-con ul {border-top:1px solid #000; border-bottom:none; }
+
+    .cart-total-area {margin-top:30px; border-top:1px solid #000; background: none;}
+    .cart-total-area dl.total::before,
+    .cart-total-area dl + dl::before {display:none;}
+    .cart-total-area dl + dl {border:0;}
 
     /* 장바구니 유닛 */
     .unit-cart .check-style2 {margin-top:0; top:20px; left:20px; z-index:8;}
