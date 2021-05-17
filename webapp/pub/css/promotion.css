@@ -97,8 +97,17 @@
 .popup-type-m .lyPopup .popup-cont .pop-suggestion .btn-area{padding:0;border: none;width: auto;}
 
 
-
-
+/* 장바구니 주문서 팝업*/
+.pop-orderlist {word-break:keep-all;}
+.pop-orderlist > .input{display: flex;margin: 30px 15px 0;}
+.pop-orderlist > .input label{width: 80px;line-height: 38px;text-align: left;}
+.pop-orderlist > .input .form-layout{width:calc(100% - 80px)}
+.pop-orderlist > p.ex{font-size: 14px;color: #666;margin: 20px 0;}
+.pop-orderlist > .orderlist-wrap ul li{padding:20px 0;border-bottom: 1px solid #D7D7D7;}
+.pop-orderlist > .orderlist-wrap ul li:first-child{padding-top:0;}
+.pop-orderlist > .orderlist-wrap ul li div{display: flex;}
+.pop-orderlist > .orderlist-wrap ul li div img{width: 65px;}
+.pop-orderlist > .orderlist-wrap ul li div p{line-height: 65px;padding-left: 20px;}
 
 
 
@@ -136,6 +145,12 @@
   .promt-product-list .tit-area {border-bottom: 0; padding-bottom: 0; align-items: center;}
 
   
+  /* 장바구니 주문서 팝업*/
+  .pop-orderlist > .input{display: flex;flex-direction: column;margin:20px 0 0}
+  .pop-orderlist > .input .form-layout{width: 100%;}
+
+
+
   
 
 }
