@@ -14,7 +14,7 @@
 .cart-list-con .tit-area {margin-bottom:30px;}
 .cart-list-con + .cart-list-con {margin-top:100px;}
 .cart-list-con .list-con {border-top:1px solid #000;border-bottom:1px solid #D7D7D7;}
-.cart-list-con .list-con + .list-con {margin-top:29px;}
+.cart-list-con .list-con + .list-con {margin-top:20px;}
 .cart-list-con .list-con .list-tit {padding:20px; background:#fafafa;}
 .cart-list-con .list-con .list-tit .sub-txt {vertical-align:top;}
 .cart-list-con .list-con > ul{}
