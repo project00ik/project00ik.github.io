@@ -15,6 +15,31 @@
 .pop-password .tit-area3 + .pop-write {margin-top: 10px;}
 .pop-password .pop-ip-area  {align-items: flex-start;}
 
+/* cart.css */
+.cart-order-list {padding: 20px 0 30px;}
+.cart-order-list .tit-area {padding-bottom: 10px; margin-bottom: 0; border-bottom: 2px solid #000;}
+
+
+.cart-content .join-list-con {padding: 20px 0 30px;}
+.cart-content .join-list-con ~ .join-list-con {padding: 20px 0 30px;}
+.cart-content .join-list-con .list-con {padding-top: 0;}
+.cart-content .join-list-con .list-con .list-in {border-bottom: 0; margin-top: 0;}
+.cart-content .join-list-con .list-con .list-in .btn-tooltip {vertical-align: top; margin-top: 0;}
+.cart-content .join-list-con .list-con .list-in .tooltip-box {width: 232px;}
+.cart-content .join-list-con .list-con .list-in.bdt-none {border-top: 0;}
+.cart-content .join-list-con .list-con .list-in .form-layout {max-width: 613px;} 
+.tit-type2 .sub-txt {font-size: 16px; color: #000;}
+.tit-type2 .sub-txt b {vertical-align: baseline;}
+
+.join-txt3 {font-size: 16px; color: #666; padding-left: 12px;}
+
+.join-list-con .list-con .list-in .two-form .form-layout > :first-child {flex:1;}
+.join-list-con .list-con .list-in .two-form .form-layout > :last-child {margin-left: 5px; width: 118px;}
+
+.cart-content .cart-order-list .toolsize .tooltip-box {width: 232px; left: auto; right: 0;}
+.cart-order-list .tit-area + .cart-list-con {margin-top: 20px;}
+
+
 
 
 
