@@ -57,11 +57,11 @@
 .suggestion-goods .list-con .list-in > li div:last-child{margin-right: 0px;}
 .suggestion-goods .list-con .list-in > li div.form-search{margin-right: 5px;width: 50%;}
 .suggestion-goods .list-con .list-in > li.name div{max-width: 323px;}
-.suggestion-goods .list-con .list-in > li div.radio{display: inline-table;max-width: 100%;}
+.suggestion-goods .list-con .list-in > li div.radio{display: inline-table;max-width: calc(100% - 130px);}
 .suggestion-goods .list-con .list-in > li div.radio div:last-child{margin-top: 20px;}
 .suggestion-goods .list-con .list-in > li div.radio label{margin-right: 50px;}
 .suggestion-goods .list-con .list-in > li div.radio label span{font-size: 16px;font-weight: normal;}
-.suggestion-goods .list-con .list-in > li div.textarea-wrap{max-width: 100%;position: relative;display: inline-table;}
+.suggestion-goods .list-con .list-in > li div.textarea-wrap{max-width: calc(100% - 130px);position: relative;display: inline-table;}
 .suggestion-goods .list-con .list-in > li div.textarea-wrap label{margin-top: 10px;}
 .suggestion-goods .list-con .list-in > li div.textarea-wrap .btn-right{margin: 0px;}
 .suggestion-goods .list-con .list-in > li.btn-right {display: block;margin: 0;}
@@ -72,7 +72,7 @@
 .suggestion-goods .suggestion-date em{margin:0 5px;line-height: 38px;}
 .suggestion-goods .btn-right{text-align: right;margin: 30px 0;}
 .mypage-cont .my-main .join-list-con .list-in.suggestion-step li label{width: 85px;}
-.suggestion-goods .list-con .list-in.suggestion-step li div {max-width:100%;display: flex;}
+.suggestion-goods .list-con .list-in.suggestion-step li div {max-width:100%;display: flex;flex:1}
 .suggestion-goods .suggestion-step {margin-bottom: 50px;}
 .suggestion-goods .suggestion-step li div p{position: relative;flex:1;width:175px;padding-top: 80px;margin-top: 10px;color: #999;background: url(../images/common/icon_step1.svg) top 0 left 50% no-repeat;text-align: center;}
 .suggestion-goods .suggestion-step li div p.on{color: #346DD0;}
