@@ -883,6 +883,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
 
+    /* 모바일 fixed */
+    .mo-fixed-btn {width:100%; padding:20px; position:fixed; bottom:0; left:0; z-index:10; background:#fff; border-top:1px solid #d7d7d7;}
+
     /* 테이블 */
     .table-area col.w21 {width:112px;}
     
@@ -993,6 +996,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
     .check-style2 input:checked + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2_checked.svg) 50% 50% no-repeat;}
+    .unit-type1 .check-style2 {top:10px; left:10px;}
     .upload-area {padding: 10px 0 0;}
     .upload-area .upload-thumbnail {width: 63px; height: 63px;}
     .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}

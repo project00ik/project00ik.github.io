@@ -377,6 +377,7 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
+    .pro-detail-cont {margin:36px 0 113px;}
     /* 상품상세 상단 */
     .pro-detail-photo {width:100%;}
     .pro-detail-slide .swiper-container {height:auto;}
