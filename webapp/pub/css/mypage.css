@@ -1,8 +1,17 @@
 @charset "utf-8";
 /* 공통 */
+.tit-area3 {display: flex; align-items: center; justify-content: space-between;}
 
-
-
+/* promotion.css */
+.pop-suggestion .user-search .pop-mo-form {display: flex; flex:1;}
+.pop-suggestion .user-search .pop-mo-form .form-area {width: 100%;}
+.pop-suggestion .user-search .pop-mo-btn {display: flex; margin-left: 5px;}
+.pop-suggestion .user-search .pop-mo-btn .btn {margin-left: 0;}
+.pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 5px;} 
+.pop-password .user-search .pop-mo-check {display: flex;}
+.pop-password .user-search .pop-mo-check label {margin-left: 30px;}
+.pop-ip-area .form-address {width: calc(100% - 190px);}
+.pop-ip-area .form-address .form-layout input + button {margin-left: 5px;}
 
 
 
@@ -105,6 +114,15 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
+    /* promotion.css */
+    .pop-suggestion .user-search {flex-wrap: wrap;}
+    .pop-suggestion .user-search .pop-mo-btn {width: 100%; margin: 10px 0 0 0;}
+    .pop-suggestion .user-search .pop-mo-btn .btn {width: 100%;}
+    .pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 10px;}
+    
+
+
+
     .mypage-cont {min-height:auto;}
     .mypage-cont .my-main.main-style + .my-menu {display: block;}
 

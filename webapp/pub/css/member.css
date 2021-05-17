@@ -138,8 +138,9 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .pop-password > p em{vertical-align: top;}
 .pop-password > span{font-size: 24px;}
 .pop-password .pop-write{margin-top: 30px;}
-.pop-password .pop-write > ul {padding:10px 0;border-top:1px solid #000}
+.pop-password .pop-write > ul {padding:10px 0 0;border-top:1px solid #d7d7d7}
 .pop-password .pop-write > ul > li{border: none;padding:10px 0}
+.pop-password .pop-write > ul > li:last-child {padding-bottom: 0;}
 .pop-password .pop-ip-area > label{width: 170px;text-align: left;}
 .pop-password .pop-ip-area label + .form-layout{width: calc(100% - 190px)}
 .popup-type-m .lyPopup .popup-cont .pop-password .btn-area{padding-bottom: 0;}
@@ -199,7 +200,7 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
     .join-list-con .list-con .mem-info-list li .form-email .select {width: 112px;}
     .join-list-con .list-con .mem-info-list li .form-address .btn-style-m1 {width: 112px;}
     .join-list-con .list-file-con {padding-bottom: 20px;}
-    .join-list-con .list-file-con .file-con {margin: 10px 0; display: block; border: 0;}
+    .join-list-con .list-file-con .file-con {margin: 10px 20px; display: block; border: 0;}
     .join-list-con .list-file-con .file-con .in-grid-size {height: auto; min-height: 480px;}
     .join-list-con .list-file-con .file-con .in-grid-size.w-460 {width: 100%; margin: 0 0 10px 0; min-height: 240px;}
 
