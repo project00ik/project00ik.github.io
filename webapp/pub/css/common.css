@@ -485,7 +485,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .check-style2 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style2 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
 .check-style2 input + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox2.svg) 50% 50% no-repeat; background-size:22px 22px; border: 0; display:inline-block;}
-.check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_disabled.svg) 50% 50% no-repeat; }
+.check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_checked.svg) 50% 50% no-repeat; }
 .check-style2 > span {margin-left:7px; font-weight:400; font-size:14px;}
 
 
@@ -982,6 +982,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     input.input {height: 36px; line-height: 36px;}
     select.select {line-height: 34px; height: 36px;}
     .check-style1 input + i {width: 20px; height: 20px;}
+    .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
+    .check-style2 input:checked + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2_checked.svg) 50% 50% no-repeat;}
     .upload-area {padding: 10px 0 0;}
     .upload-area .upload-thumbnail {width: 63px; height: 63px;}
     .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}
