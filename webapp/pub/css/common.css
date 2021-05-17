@@ -206,6 +206,7 @@
 /* 블릿style */
 .bul-bar + .bul-bar {margin-left:12px; padding-left:12px; position:relative;}
 .bul-bar + .bul-bar::before {content:""; width:1px; height:10px; display:inline-block; background:#666; position:absolute; top:5px; left:0;}
+.bar-vertical {width:1px; height:12px; display:inline-block; background:#666; vertical-align: middle;}
 
 /* 버튼 */
 .btn {display:inline-block;}
@@ -813,12 +814,12 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .lyPopup .popup-cont .btn-area {overflow:hidden; padding:20px; text-align:center; display:-webkit-box; display:-ms-flexbox; display:flex; align-items:center; border:0;}
     .lyPopup .popup-cont .lyPopCont .btn-area,
     .lyPopup .popup-cont .lyPopCont .btn-area {padding:20px 0; border:0;}
-    .popup-type-m .lyPopup .popup-cont .lyPopCont {height:calc(100% - 129px); max-height:100%;}
+    .popup-type-m .lyPopup .popup-cont {display: flex; flex-direction: column; }
+    .popup-type-m .lyPopup .popup-cont .lyPopCont {flex: 1; max-height:none;}
     .popup-type-s .lyPopup .popup-cont .lyPopCont,
     .popup-type-xs .lyPopup .popup-cont .lyPopCont {max-height:100%; padding:20px 20px 0;}
-    .popup-type-m .lyPopup .popup-cont .btn-area {border-top:1px solid #d7d7d7;}
+    .popup-type-m .lyPopup .popup-cont .btn-area {height:79px; border-top:1px solid #d7d7d7;}
     .lyPopup .popup-cont .btn-area .btn {width:50%; min-width: auto; flex:1;}
-    
 
     .pop-ip-area {flex-direction: column; align-items: flex-start;}
     .pop-ip-area > label {width: auto; padding-left: 0;}
