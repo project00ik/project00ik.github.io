@@ -395,7 +395,7 @@ button.btn-style-s1 {line-height:25px;}
 .tab-style3 ~ .tabCont {padding:80px 40px;}
 .tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display:flex; justify-content:space-around; position:relative;}
 .tab-area .tab-style3::after {content:''; width:100%; height:1px; display:inline-block; background:#d7d7d7; position:absolute; bottom:0; left:0;}
-.tab-area .tab-style3 > li {width:100%; text-align:center; cursor:pointer;}
+.tab-area .tab-style3 > li {width:25%; text-align:center; cursor:pointer;}
 .tab-area .tab-style3 .tabBtn {padding-bottom:4px; font-size:20px; line-height:51px; position:relative;}
 .tab-area .tab-style3 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style3 .tabBtn.on::after {content:""; width:100%; height:4px; background:#346dd0; display:inline-block; position:absolute; bottom:0px; left:0; z-index:1;}
@@ -883,6 +883,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
 
+    /* 모바일 fixed */
+    .mo-fixed-btn {width:100%; padding:20px; position:fixed; bottom:0; left:0; z-index:10; background:#fff; border-top:1px solid #d7d7d7;}
+
     /* 테이블 */
     .table-area col.w21 {width:112px;}
     
@@ -993,6 +996,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
     .check-style2 input:checked + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2_checked.svg) 50% 50% no-repeat;}
+    .unit-type1 .check-style2 {top:10px; left:10px;}
     .upload-area {padding: 10px 0 0;}
     .upload-area .upload-thumbnail {width: 63px; height: 63px;}
     .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}
