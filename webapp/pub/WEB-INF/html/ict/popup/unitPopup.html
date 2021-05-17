@@ -809,30 +809,32 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      // 상품상세 슬라이드 (바로구매/장바구니 팝업)
+      detailOptionLy(); // 장바구니 옵션 레이어 이벤트(상품상세 옵션레이어 이벤트랑 동일)
+      // 바로구매/장바구니 상품슬라이드
       // 썸네일
-      var productDetaileSlide = new Swiper(".productDetaileSlide", {
-        direction: 'horizontal',
-        spaceBetween: 10,
-        slidesPerView: 5,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-        observer: true,
-        observeParents: true,
-      });
-      // 상품이미지
-      var productDetaileSlide2 = new Swiper(".productDetaileSlide2", {
-        spaceBetween: 10,
-        observer: true,
-        observeParents: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: productDetaileSlide,
-        },
-      
+      $('.pro-detail-slide').each(function(){
+        var productDetaileSlide = new Swiper($(this).find('.productDetaileSlide'), {
+          direction: 'horizontal',
+          spaceBetween: 10,
+          slidesPerView: 5,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          observer: true,
+          observeParents: true,
+        });
+        // 상품이미지
+        var productDetaileSlide2 = new Swiper($(this).find('.productDetaileSlide2'), {
+          spaceBetween: 10,
+          observer: true,
+          observeParents: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: productDetaileSlide,
+          },
+        });
       });
     });
   </script>
