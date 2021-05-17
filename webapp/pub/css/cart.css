@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/* 장바구니 */
 .cart-top  {display: flex;margin-bottom: 30px;}
 .cart-top .step-wrap {margin-left: auto;}
 .cart-top .step-wrap > ul {display: flex;}
@@ -24,7 +24,7 @@
 .cart-list-con .tit-area {margin-bottom:14px; font-size:16px; font-weight: 400;}
 .cart-list-con .tit-area > * {vertical-align: text-bottom;}
 
-.cart-total-area {width:100%; padding:30px 0; background:#fafafa; display:flex; align-items: center;}
+.cart-total-area {width:100%; margin-top: 60px; padding:30px 0; background:#fafafa; display:flex; align-items: center;}
 .cart-total-area dl {width:33.333%; flex:1; position: relative; text-align: center;}
 .cart-total-area dl > dt {margin-bottom:5px; font-weight: 500; font-size: 16px;}
 .cart-total-area dl > dd {}
@@ -69,7 +69,8 @@
 .unit-cart .unit-area .price-area .flag-txt {margin-right:10px}
 .unit-cart .unit-area .price {font-size:14px; color:#000; display:inline-block;}
 .unit-cart .unit-area .price > b {vertical-align:text-bottom; font-weight:700; font-size:22px;}
-.unit-cart .unit-area .sale {margin:0 0 0 10px; color: #eb3030; font-weight: 700; text-align: right; display:inline-block; font-size:22px; text-align: left; }
+.unit-cart .unit-area .sale {margin:0 0 0 10px; color: #eb3030; text-align: right; display:inline-block; font-size:14px; text-align: left; }
+.unit-cart .unit-area .sale > b {font-size:22px; vertical-align: text-bottom; font-weight: 700;}
 .unit-cart .standard {width:754px; margin:6px 0;font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
 .unit-cart .option-area {margin-top:6px; color:#666; font-size:0;}
 .unit-cart .option-area > p {display: inline-block; font-size: 14px;}
@@ -103,11 +104,13 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px) {
-
+    /* 장바구니 */
     .cart-top {margin-bottom: 0;}
     .cart-content .tit-type1-2 em  {font-size: 16px;line-height: 19px;vertical-align: top;}
     .cart-list-con + .cart-list-con {margin-top: 30px;}
-    .cart-list-con .tit-area {margin-bottom: 20px;}
+    .cart-list-con .tit-area {margin-bottom:20px; padding:78px 20px 0; position: relative; font-size:15px;}
+    .cart-list-con .tit-area .check-style2 > span {font-size:15px;}
+    .cart-list-con .right-area {position: absolute; top:30px; left:20px; z-index:1;}
     .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y: 60px;}
     .cart-list-con .list-con ul {border-top: none;border-bottom: 10px solid #F5F5F5;;}
     .wish-list-con .list-con ul {border-top:1px solid #000;border-bottom:none; }
