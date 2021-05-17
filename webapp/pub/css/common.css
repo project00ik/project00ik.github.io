@@ -871,6 +871,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .tooltip-box > p {font-size: 13px; color: #666;}
     .tooltip-close {width:18px; height:18px; background: url(../images/common/mo_btn_tooltip_close.svg) 0 0 no-repeat;}
     .history-bak {width:18px; height:18px; font-size:0; display:inline-block; position: absolute; top:9px; left:20px; z-index:1; background: url(../images/common/arrow_history_bak.svg) 0 0 no-repeat;}
+    .btn-r-area {padding:20px 20px 0; justify-content: flex-start;}
 
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
