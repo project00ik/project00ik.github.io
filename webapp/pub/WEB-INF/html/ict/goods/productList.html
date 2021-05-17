@@ -1867,14 +1867,42 @@
       allCategoryBtn(); // gnb 전체카테고리 열고 닫기
       layoutCategory(); // 카테고리 레이어 이벤트
       realtimeSearchSlide(); //header 실시간검색 swiper(plugin)
-      quickTopBtn(); // 스크롤 최상단으로 이동
-      quickFloating(); //퀵 플로팅 모바일 펼치기 js
+      // quickTopBtn(); // 스크롤 최상단으로 이동
+      // quickFloating(); //퀵 플로팅 모바일 펼치기 js
       accordion(); // 아코디언
 
       /* 컨텐츠 공통 */
       tab() // 탭 
       toggleBtn(); // 토글버튼
       inputPrice(); // 가격 input 포커스시 style 효과
+      detailOptionLy(); // 장바구니 옵션 레이어 이벤트(상품상세 옵션레이어 이벤트랑 동일)
+
+      // 바로구매/장바구니 상품슬라이드
+      // 썸네일
+      $('.pro-detail-slide').each(function(){
+        var productDetaileSlide = new Swiper($(this).find('.productDetaileSlide'), {
+          direction: 'horizontal',
+          spaceBetween: 10,
+          slidesPerView: 5,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          observer: true,
+          observeParents: true,
+        });
+        // 상품이미지
+        var productDetaileSlide2 = new Swiper($(this).find('.productDetaileSlide2'), {
+          spaceBetween: 10,
+          observer: true,
+          observeParents: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: productDetaileSlide,
+          },
+        });
+      });
 
       /* ==========================================================================
           현재페이지에서만 사용 js
