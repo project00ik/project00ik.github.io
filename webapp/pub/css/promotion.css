@@ -109,7 +109,17 @@
 .pop-orderlist > .orderlist-wrap ul li div img{width: 65px;}
 .pop-orderlist > .orderlist-wrap ul li div p{line-height: 65px;padding-left: 20px;}
 
-
+/* 장바구니 관리 */
+.mypage-cart-list .list-con{position: relative;padding-top: 30px;}
+.mypage-cart-list .list-con > p{font-size: 16px;line-height: 28px;}
+.mypage-cart-list .list-con button{position: absolute;top:30px;right:0}
+.mypage-cart-list .list-con ul::after {content: ""; display: block; clear: both;}
+.mypage-cart-list .list-con ul li{width: 50%;float: left;}
+.mypage-cart-list .list-con .form-area{flex:1}
+.mypage-cart-list .list-con .select{margin-left: 5px;width: 154px;}
+.mypage-cart-list .paging{margin: 50px 0 0;}
+.mypage-cont .my-main .join-list-con.mypage-cart-list .list-con .list-in {border-bottom:none}
+.mypage-cont .my-main .join-list-con.mypage-cart-list .list-con .list-in > li > label{width: auto;}
 
 
 
@@ -149,7 +159,13 @@
   .pop-orderlist > .input{display: flex;flex-direction: column;margin:20px 0 0}
   .pop-orderlist > .input .form-layout{width: 100%;}
 
-
+  /* 장바구니 관리 */
+  .mypage-cart-list .list-con{padding-top: 20px;border-bottom: none;}
+  .mypage-cart-list .list-con > p{font-size: 14px;}
+  .mypage-cart-list .list-con button{position: relative;top:0;margin:0 20px;}
+  .join-list-con.mypage-cart-list .list-con .list-in > li {display: flex;width: 100%;}
+  .mypage-cont .my-main .mypage-cart-list .btn-area-c{padding: 50px 20px 20px;}
+  .mypage-cart-list .btn-style-mm1, .mypage-cart-list .btn-style-mm2{width:calc(50% - 5px);}
 
   
 
