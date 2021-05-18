@@ -258,7 +258,8 @@
 
 .list-top-area {display:flex; align-items:flex-end; flex-wrap: wrap; justify-content:space-between;}
 .list-top-area .tab-rd-area {flex:1;}
-.list-top-area .right-area {display:inline-block;}
+.list-top-area .right-area {display:inline-block; font-size:0;}
+.list-top-area .right-area > * {margin-left:5px;}
 
 .btn-list-layout {width: 55px; height: 28px; background: url(../images/common/btn_list_layout.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 .btn-list-layout.on {background: url(../images/common/btn_list_layout_on.svg) 0 0 no-repeat;}

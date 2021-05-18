@@ -217,7 +217,7 @@
 .btn-r-area .btn + .btn {margin-left: 10px;}
 /* btn-r-area2 PC에서는 오른쪽정렬 / 모바일에서는 왼쪽정렬 형 */
 .btn-r-area2 {display: flex; justify-content: flex-end; padding:20px 0;}
-.btn-r-area2 .btn + .btn {margin-left: 10px;}
+.btn-r-area2 .btn + .btn {margin-left: 5px;}
 .btn-full-area {width:100%; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .btn-full-area .btn + .btn {margin-left:10px;}
 .btn-full-area > .btn {flex:1;}
