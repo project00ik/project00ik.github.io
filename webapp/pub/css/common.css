@@ -264,7 +264,7 @@ button.btn-style-s1 {line-height:25px;}
 
 .btn-area-c {font-size: 0;}
 .btn-area-c .btn + .btn {margin-left: 10px;}
-.btn-slide-open {width: 18px; height: 18px; background: url(../images/common/arrow_select.svg) center center no-repeat #fff; font-size: 0;}
+.btn-slide-open {width: 18px; height: 18px; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0;}
 .btn-slide-open.on { transform: rotate(180deg);}
 .btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
