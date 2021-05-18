@@ -108,7 +108,9 @@
 .pop-orderlist > .orderlist-wrap ul li div{display: flex;}
 .pop-orderlist > .orderlist-wrap ul li div img{width: 65px;}
 .pop-orderlist > .orderlist-wrap ul li div p{line-height: 65px;padding-left: 20px;}
-
+.pop-cart .radio-wrap {margin-top: 10px;}
+.pop-cart .radio-wrap .radio-style1 {margin-right: 30px;margin-top: 10px;}
+.pop-cart .radio-wrap .radio-style1 > span{font-weight: normal;margin-left: 10px;}
 
 /* 장바구니 관리 */
 .mypage-cart-list .list-con{position: relative;padding-top: 30px;}
@@ -159,6 +161,7 @@
   /* 장바구니 주문서 팝업*/
   .pop-orderlist > .input{display: flex;flex-direction: column;margin:20px 0 0}
   .pop-orderlist > .input .form-layout{width: 100%;}
+  .pop-cart .radio-wrap {margin: 10px 0 30px}
 
   /* 장바구니 관리 */
   .mypage-cart-list .list-con{padding-top: 20px;border-bottom: none;}
