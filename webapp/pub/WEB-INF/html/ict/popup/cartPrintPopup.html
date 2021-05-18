@@ -198,68 +198,132 @@
       </div>
     </footer>
   </div>
-  <!--비밀번호 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="restockPopup2">
+  <!-- 장바구니 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartWritePopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
           <div class="lyTitle">
-            <p>재입고 알림 신청</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+            <p>상품별 배송지/수량 일괄등록 엑셀업로드</p>
+            <a href="javascript:;" onc lick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
-            <div class="pop-layout pop-restock">
-              <span>재입고 알림 신청</span>
-              <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
+            <div class="pop-layout pop-cart-print">
+              <p class="date">출력일자 :<em> 2021-05-13</em></p>
               <div class="table-area table-style1">
                 <table>
+                  <colgroup>
+                    <col style="width: 16%;">
+                    <col style="width: 35%;">
+                    <col style="width: 16%;">
+                    <col style="">
+                  </colgroup>
+                  <tbody>
                     <tr>
-                      <th rowspan="2">상품정보</th>
-                      <td>
-                        <div>
-                          <label>상품코드</label>
-                          <div>
-                            <p>102622887</p>
-                          </div>
-                          
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>
-                          <label>상품명</label>
-                          <div>
-                            <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="input">
-                      <th rowspan="3">알림 수신자 정보</th>
-                      <td>
-                        <div class="input">
-                          <label>수신자 성명</label>
-                          <div class="form-layout">
-                            <input type="text" class="input" value="김상현" readonly="">
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="input">
-                      <td>
-                        <div>
-                          <label>메일주소</label>
-                          <div class="form-layout">
-                            <input type="text" class="input" value="61781104991@null.com" >
-                          </div>
-                        </div>
-                      </td>
+                      <th>실주문자</th>
+                      <td>홍길동</td>
+                      <th>결재자</th>
+                      <td><span>업무지원및부동산관리부</span>,
+                        <span>전여진</span></td>
                     </tr>
                     <tr>
+                      <th>참조자</th>
+                      <td>이순신</td>
+                      <th>구매사유</th>
+                      <td>업무용</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-area table-style1">
+                <table>
+                  <colgroup>
+                    <col style="width: ;">
+                    <col style="width: ;">
+                    <col style="width: 10%;">
+                    <col style="width: 15%;">
+                    <col style="width: 10%;">
+                    <col style="width: 15%;">
+                    <col style="width: 13%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>상품코드</th>
+                      <th>상품명<br/>대표규격/단위</th>
+                      <th>수량</th>
+                      <th>단가</th>
+                      <th>금액</th>
+                      <th>비용부서</th>
+                      <th>제조사</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="center">
+                        <a href="#">10363791</a>
+                      </td>
                       <td>
-                        <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
+                          <a href="#">액자</a>
+                          <p>210*297mm(A4), 미색, 민자틀 / EA</p>
+                      </td>
+                      <td class="center">
+                        111
+                      </td>
+                      <td>
+                        <p>3,164</p>
+                        (VAT포함)
+                      </td>
+                      <td class="center">
+                        3,164
+                      </td>
+                      <td>
+                        업무지원및부동산관리부
+                      </td>
+                      <td class="center">
+                        알파
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="addr">
+                        <span class="addr-name">배송지 : 수령인 - 전여진</span>
+                        <span>주소 - 서울시 영등포구 **** 대한민국</span>
+                        <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="center"3><a href="#">10382460</a></td>
+                      <td>
+                          <a href="#">명함</a>
+                          <p>아르떼울트라화이트 210g, 200EA/BOX, 인쇄: 앞-1도+1도(별색), 뒤-4도, ABL전용 / BOX</p>
+                      </td>
+                      <td class="center">
+                        1111
+                      </td>
+                      <td>
+                        <p>7,164</p>
+                        (VAT포함)
+                      </td>
+                      <td class="center">
+                        7,164
+                      </td>
+                      <td>
+                        업무지원및부동산관리부
+                      </td>
+                      <td class="center">
+                        시중품품품
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="addr">
+                        <span class="addr-name">배송지 : 수령인 - 전여진</span>
+                        <span>주소 - 서울시 영등포구 **** 대한민국</span>
+                        <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="total">
+                        <p>품목수 : <em>2</em>건<i></i>총수량 : <em>2</em>개<i></i>합계 : <em>10,888</em>원 (VAT 포함)</p>
                       </td>
                     </tr>
                   </tbody>
@@ -268,13 +332,13 @@
             </div>
           </div>
           <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">인쇄</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //비밀번호 팝업 -->
+  <!-- //장바구니 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -298,7 +362,10 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('restockPopup2');
+      lyOpen('cartWritePopup');
+
+
+
     });
   </script>
   <!-- javascript -->
