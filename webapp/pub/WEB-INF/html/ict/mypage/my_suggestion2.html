@@ -199,37 +199,37 @@
                 <li>
                   <label for="">회사명 <i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="지입자제">
+                    <input type="text" name="" class="input" value="지입자제" readonly>
                   </div>
                   <label for="">사업자등록번호 <i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="number" name="" class="input" value="1333811975">
+                    <input type="number" name="" class="input" value="1333811975" readonly>
                   </div>
                 </li>
                 <li>
                   <label for="">소재지 <i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="서울 강남구 수서동 734번지 kt 수서지점 4층">
+                    <input type="text" name="" class="input" value="서울 강남구 수서동 734번지 kt 수서지점 4층" readonly>
                   </div>
                   <label for="">담당자 <i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="홍길동">
+                    <input type="text" name="" class="input" value="홍길동" readonly>
                   </div>
                 </li>
                 <li>
                   <label for="">연락처 <i class="req">*</i></label>
                   <div class="form-layout ">
-                    <input type="number" name="" class="input" value="010-1234-5678">
+                    <input type="text" name="" class="input" value="010-1234-5678" readonly>
                   </div>
                   <label for="">이메일<i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="id@null.com">
+                    <input type="text" name="" class="input" value="id@null.com" readonly>
                   </div>
                 </li>
                 <li>
                   <label for="">소속사<i class="req">*</i></label>
                   <div class="form-layout">
-                    <select class="select" name="" id="">
+                    <select class="select" name="" id="" disabled>
                       <option value="">KT/KT그룹사</option>
                       <option value="">베이지</option>
                       <option value="">그레이</option>
@@ -237,7 +237,7 @@
                   </div>
                   <label for="">제안번호 <i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="SU210512088">
+                    <input type="text" name="" class="input" value="SU210512088" readonly>
                   </div>
                 </li>
               </ul>
@@ -252,7 +252,7 @@
                 <li class="name">
                   <label for="">제안명 <i class="req">*</i></label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="지입자재">
+                    <input type="text" name="" class="input" value="">
                   </div>
                 </li>
                 <li class="write">
@@ -263,10 +263,10 @@
                       <label class="radio-style1"><input type="radio" name="rd"><i></i><span>기존물품제안</span></label>
                     </div>
                     <div>
-                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>가격경쟁력</span></label>
-                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>차별화고품질</span></label>
-                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>차세대 신기술/신사업</span></label>
-                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>기타</span></label>
+                      <label class="check-style1"><input type="checkbox" name="chk1"><i></i><span>가격경쟁력</span></label>
+                      <label class="check-style1"><input type="checkbox" name="chk1"><i></i><span>차별화고품질</span></label>
+                      <label class="check-style1"><input type="checkbox" name="chk1"><i></i><span>차세대 신기술/신사업</span></label>
+                      <label class="check-style1"><input type="checkbox" name="chk1"><i></i><span>기타</span></label>
                     </div>
                   </div>
                 </li>
@@ -274,27 +274,29 @@
                   <label for="">제안배경 <i class="req">*</i></label>
                   <div class="form-layout textarea-wrap count">
                     <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;" placeholder="※ 100자 이상 300자 이하로 입력해 주세요."></textarea>
-                    <p class="cot"><b>0</b> / 3000</p>
+                    <p class="cot"><b>0</b> / 300</p>
                   </div>
                 </li>
                 <li class="write">
                   <label for="">특징/장점<i class="req">*</i></label>
                   <div class="form-layout textarea-wrap count">
                     <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;" placeholder="※ 100자 이상 300자 이하로 입력해 주세요."></textarea>
-                    <p class="cot"><b>0</b> / 3000</p>
+                    <p class="cot"><b>0</b> / 300</p>
                   </div>
                 </li>
                 <li class="write">
                   <label for="">제품정보 <i class="req">*</i></label>
                   <div class="form-layout textarea-wrap count">
                     <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;" placeholder="※ 100자 이상 300자 이하로 입력해 주세요."></textarea>
-                    <p class="cot"><b>0</b> / 3000</p>
+                    <p class="cot"><b>0</b> / 300</p>
                   </div>
                 </li>
                 <li class="write">
                   <label for="">첨부파일</label>
                   <div class="form-layout textarea-wrap">
-                    그리드영역
+                    <div class="file-upload-area">
+                      첨부파일영역 as-is 그대로 
+                    </div>
                     <div class="btn-right">
                       <p>* 메인이미지는 <i class="req">jpg, gif, png</i> 만 가능하며, 파일당 최대 <i class="req">25MB</i> 까지 등록 가능합니다.</p> 
                       <p>* 첨부파일은 이미지 파일 과 문서파일 만 등록 가능합니다.</p>
@@ -344,7 +346,19 @@
                 <li class="write">
                   <label for="">개인정보수집 <i class="req">*</i><br>및 이용동의</label>
                   <div class="form-layout textarea-wrap count">
-                    <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;height: 160px;" readonly></textarea>
+                    <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;height: 160px;" readonly>
+[개인정보수집 및 이용동의]
+
+* 개인정보의 수집 및 이용 목적
+열린소싱제안은 서비스 제공을 위하여 필요한 최소한의 정보만을 수집합니다.
+다만, 고객의 동의하는 경우에 한하여 정보를 수집/이용하고 있습니다. 
+
+* 수집하는 개인정보의 항목
+회사명, 소재지, 담당자, 연락처, 이메일, 소속사, 사업자등록번호
+
+* 개인정보의 보유, 이용기간 및 파기
+열린소싱제안은 고객님의 정보를 고객님께 서비스를 제공하는 기간(이용기간) 또는 분쟁처리 기간(보유기간)동안에 한하여 보유하고 이를 활용합니다. 
+                    </textarea>
                     <label class="check-style1"><input type="checkbox" name=""><i></i><span>위 개인정보수집 및 이용 목적에 <i class="req">동의합니다.</i></span></label>
                   </div>
                   
@@ -352,10 +366,18 @@
                 <li class="write">
                   <label for="">제안서 제출시 <i class="req">*</i><br>유의사항</label>
                   <div class="form-layout textarea-wrap count">
-                    <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;height: 160px;" readonly></textarea>
+                    <textarea class="textarea" name="" rows="10" cols="8"  style="resize: none;height: 160px;" readonly>
+[제안서 제출시 유의사항]
+
+* 제안자의 권리 보호를 위해 다음 사항을 유의하시기 바랍니다.
+1.제안내용에 기재된 상품(이하, 제안 상품)에 대하여는 제안 전 특허, 실용신안, 적작권 등의 지적재산권을 확보해 두시기 바랍니다.
+
+가) 채택여부와 상관없이 제안 상품에 제안자의 영업비밀 등 비밀정보가 포함되지 않도록 유의하시기 바랍니다.
+나) 제안자는 제안 당시 제안 상품과 관련하여 특허,실용신안, 저작권 등 지적재산권을 확보 하였거나 진행 중인 경우, 해당 사실과 출원(신청)번호 또는 등록번호 등 관련 사항을 반드시 명시하시기 바랍니다.
+다) 제안 상품을 제안자가 직접 발병 또는 창작하지 않았거나 제안 상품에 대한 진정한 권리자가 아닌 경우에는 관련
+                    </textarea>
                     <label class="check-style1"><input type="checkbox" name=""><i></i><span>위 개인정보수집 및 이용 목적에 <i class="req">동의합니다.</i></span></label>
                   </div>
-                 
                 </li>
               </ul>
             </div>

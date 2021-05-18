@@ -438,8 +438,8 @@ input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margi
 
 select.select {width:100%; height:38px; padding:0 38px 0 12px; border:1px solid #bbb; background:url(../images/common/arrow_select.svg) top 10px right 10px no-repeat #fff; font-size:14px; line-height:36px; color:#666; vertical-align:top;}
 select.select:focus {border-color:#000; color:#000;}
-select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
-select.select:focus {border-color:#000; color:#000;}
+select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #bbb; color:#666;}
+/* select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #e5e5e5; color:#d7d7d7;} */
 select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
 
 
@@ -473,7 +473,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .textarea-wrap {position: relative;}
 .textarea-wrap.count textarea {padding-bottom: 40px;}
 .textarea-wrap.count .cot {text-align: right; font-size: 14px; color: #999; padding-top: 5px;}
-.textarea-wrap.count .cot b {color: #000; vertical-align: top;}
+.textarea-wrap.count .cot b {vertical-align: top;}
 
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
@@ -574,6 +574,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .table-info {margin-top:16px; color:#999; font-size:14px;}
 
 .table-area col.w21 {width:21%;}
+
+/* 파일업로드(as-is그대로 영역) */
+.file-upload-area {width:100%; min-height:100px; display:block; border:1px solid #bbb;}
 
 /* ==========================================================================
     유닛 관련
