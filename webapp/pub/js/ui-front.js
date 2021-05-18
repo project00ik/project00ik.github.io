@@ -302,27 +302,39 @@ function tab(){ // 탭 관련 js
   })
 }
 
-/* 정리필요 */
-function scrollTab() {
-  // scroll 탭 관련 js
-  $('.scrollTab li').each(function () { 
-    $(this).bind('click', function () {
-      var depId = $(this).attr('data-tab');
-      var winW = $(window).width();
-      if (winW > 800){
-        var depPd = 278;
-      } else {
-        var depPd = 240;
-      }
-      $('html, body').animate({ scrollTop: $('#' + depId).offset().top - depPd }, 800, 'easeInOutExpo');
-      $(this).addClass('on');
-      $(this).siblings().removeClass('on');
-    });
-  });
+// function scrollTab() {
+//   // scroll 탭 관련 js
+//   $('.scrollTab li').each(function () { 
+//     $(this).bind('click', function () {
+//       var depId = $(this).attr('data-tab');
+//       var winW = $(window).width();
+//       if (winW > 800){
+//         var depPd = 278;
+//       } else {
+//         var depPd = 240;
+//       }
+//       $('html, body').animate({ scrollTop: $('#' + depId).offset().top - depPd }, 800, 'easeInOutExpo');
+//       $(this).addClass('on');
+//       $(this).siblings().removeClass('on');
+//     });
+//   });
+// }
+// $(window).resize(function(){
+//   scrollTab();
+// })
+
+function scrollTop(){
+  // 스크롤탭 fixed 고정
+  var $wTop = $(window).scrollTop();
+  var $contTop = $('.materiel-list').offset().top - 134;
+  var $hdH = $('.header').height();
+  var $tab = $('.tab-btn-list');
+  if ($wTop < $contTop){
+    $tab.removeClass('fixed').css({'top':'0'});
+  } else {
+    $tab.addClass('fixed').css({'top':$hdH});
+  }
 }
-$(window).resize(function(){
-  scrollTab();
-})
 
 function ratingBtnArea(){
   // 포토리뷰 별점버튼 js

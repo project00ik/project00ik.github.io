@@ -281,13 +281,13 @@
         <div class="materiel-list">
           <div class="tab-area scrollTab">
             <ul class="tab-btn-list tab-style4">
-              <li class="tabBtn on" data-tab="meterial-1">볼트</li>
-              <li class="tabBtn" data-tab="meterial-2">너트</li>
-              <li class="tabBtn" data-tab="meterial-3">건설공구</li>
-              <li class="tabBtn" data-tab="meterial-4">설비자재</li>
+              <li class="tabBtn on" id="meterialCont1"><a href="#section-01" class="menu-01">볼트</a></li>
+              <li class="tabBtn" id="meterialCont2"><a href="#section-02" class="menu-02">너트</a></li>
+              <li class="tabBtn" id="meterialCont3"><a href="#section-03" class="menu-03">건설공구</a></li>
+              <li class="tabBtn" id="meterialCont4"><a href="#section-04" class="menu-04">설비자재</a></li>
             </ul>
 
-            <div class="tab-cont allChkArea" id="meterial-1"> 
+            <div class="tab-cont allChkArea section-01 scrollCont"> 
               <div class="tit-area">
                 <p class="tit-type2">볼트</p>
                 <div>
@@ -1162,7 +1162,7 @@
               <!-- //상품리스트 -->
             </div>
 
-            <div class="tab-cont allChkArea" id="meterial-2"> 
+            <div class="tab-cont allChkArea section-02 scrollCont">
               <div class="tit-area">
                 <p class="tit-type2">너트</p>
                 <div>
@@ -1693,7 +1693,7 @@
               <!-- //상품리스트 -->
             </div>
 
-            <div class="tab-cont allChkArea" id="meterial-3"> 
+            <div class="tab-cont allChkArea section-03 scrollCont">
               <div class="tit-area">
                 <p class="tit-type2">건설공구</p>
                 <div>
@@ -2568,7 +2568,7 @@
               <!-- //상품리스트 -->
             </div>
 
-            <div class="tab-cont allChkArea" id="meterial-4"> 
+            <div class="tab-cont allChkArea section-04 scrollCont">
               <div class="tit-area">
                 <p class="tit-type2">설비자재</p>
                 <div>
@@ -3158,10 +3158,9 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       pagination(); // 페이지네이션
-      scrollTab(); // 스크롤탭
+      // scrollTab(); // 스크롤탭
       allChecked(); // all checked
-
-
+      
       // 공종별 자재 일괄구매 slide (bulkPurchaseSlide) swiper(plugin) option
       var bulkPurchaseSwiper = new Swiper('.bulkPurchaseSlide', {
           centeredSlides: false,
@@ -3188,27 +3187,60 @@
           }
       });
 
-
-      function scrollTop(){
-        // 스크롤탭 fixed 고정
-        var $wTop = $(window).scrollTop();
-        var $contTop = $('.materiel-list').offset().top - 134;
-        var $hdH = $('.header').height();
-        var $tab = $('.tab-btn-list');
-        if ($wTop < $contTop){
-          $tab.removeClass('fixed').css({'top':'0'});
-        } else {
-          $tab.addClass('fixed').css({'top':$hdH});
-        }
-      }
-
+      /* 스크롤 이동 탭 [S] */
+      scrollTop(); // 스크롤탭 fixed 고정
       $(window).scroll(function() {
         scrollTop(); //스크롤탭 fixed 고정
       });
 
+      // $(window).resize(function(){
+      //   scrollTab(); // 스크롤탭 fixed 고정
+      // });
+      
+      // 스크롤이동 이벤트
+      (function (global, $) { 
+        var $menu = $('.tab-btn-list li.tabBtn');
+        var $contents = $('.scrollCont');
+        var $doc = $('html, body');
+        var winW = $(window).width();
 
-
-
+        // 스크롤 여유분
+        if (winW > 800){
+          var depPd = 278;
+          var btnPd = 328;
+        } else {
+          var depPd = 240;
+          var btnPd = 290;
+        }
+        
+        $(function () { 
+          // 해당 섹션으로 스크롤 이동 
+          $menu.on('click','a', function(e){ 
+            var $target = $(this).parent(), 
+            idx = $target.index(), 
+            section = $contents.eq(idx), 
+            offsetTop = section.offset().top - depPd; 
+            $doc.stop().animate({ scrollTop :offsetTop }, 800); 
+            return false;
+          });
+        }); 
+        // menu class 추가 
+        $(window).scroll(function(){ 
+          var scltop = $(window).scrollTop();
+          $.each($contents, function(idx, item){ 
+            var $target = $contents.eq(idx), 
+            i = $target.index(), 
+            targetTop = $target.offset().top - btnPd; 
+            if (targetTop <= scltop) { 
+              $menu.removeClass('on'); 
+              $menu.eq(idx).addClass('on'); 
+            } if (!(200 <= scltop)) { 
+              $menu.removeClass('on'); 
+            } 
+          }) 
+        }); 
+      }(window, window.jQuery));
+      /* 스크롤 이동 탭 [E] */
     });
     
   </script>

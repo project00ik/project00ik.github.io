@@ -2,8 +2,9 @@
 /* 탭 */
 .tab-area .tab-style4 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; text-align: center;}
 .tab-area .tab-style4 > li + li {margin-left:12px;}
-.tab-area .tab-style4 .tabBtn {padding: 12px 25px; border-radius: 21px; font-size:16px; font-weight: 500; background: #f5f5f5; cursor:pointer;}
-.tab-area .tab-style4 .tabBtn.on {color:#fff; background: #000;}
+.tab-area .tab-style4 .tabBtn {}
+.tab-area .tab-style4 .tabBtn > a {padding: 12px 25px; border-radius: 21px; font-size:16px; font-weight: 500; background: #f5f5f5; cursor:pointer; display:inline-block;}
+.tab-area .tab-style4 .tabBtn.on > a {color:#fff; background: #000;}
 
 
 /* ==========================================================================
