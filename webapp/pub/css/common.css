@@ -867,6 +867,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     .btn-style-ml1 {font-size: 16px;}
     .btn-style-ml2 {width: 100%;}
+    .btn-style-m1 {height: 36px;}/* 추가 */
+    .btn-style-m2 {height: 36px;}/* 추가 */
     .btn-style-m3 {height: 36px; width: 100%;}
     .btn-style-mm1 {width: 100%;}
     .btn-style-mm2 {width: 100%;}

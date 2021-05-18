@@ -136,7 +136,7 @@
     .unit-cart .unit-area > dt .soldeout-txt {font-size:14px;}
     .unit-cart .unit-area > dd {padding:0 0 0 10px;}
     .unit-cart .standard {display:none;}
-    .unit-cart .unit-area .brand {font-size:14px;}
+    .unit-cart .unit-area .brand {font-size:14px; margin-bottom: 2px;}
     .unit-cart .unit-area .product-name {width:100%; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-wrod; white-space:inherit; font-size:15px;}
     .unit-cart .unit-under-btn {width:100%; padding:10px 0 0;}
     .unit-cart .unit-under-btn > li {display:flex;}
