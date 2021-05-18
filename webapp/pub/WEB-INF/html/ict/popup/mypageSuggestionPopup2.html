@@ -166,9 +166,8 @@
     </header>
     <section class="container">
       <div class="sub-content">
-        <button class="btn btn-style-m1" onclick="lyOpen('suggestionPopup1')">MASKING 해제</button>
-        <button class="btn btn-style-m1" onclick="lyOpen('suggestionPopup2')">비밀번호입력</button>
-        <button class="btn btn-style-m1" onclick="lyOpen('suggestionPopup3')">운영사용자</button>
+        컨텐츠 영역
+      </div>
     </section>
     <footer class="footer-wrap">
       <div class="footer">
@@ -200,34 +199,6 @@
     </footer>
   </div>
 
-  <!-- MASKING 해제 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="suggestionPopup1">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle">
-            <p>MASKING 해제</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <p>Masking 해제 기간 : <em>2021-05-12</em></p>
-              <div class="textarea-wrap count">
-                <p>Masking 해제 사유</p>
-                <textarea class="textarea" name="" rows="9" cols="8"  style="resize: none;" placeholder="※ 100자 이상 300자 이하로 입력해 주세요."></textarea>
-                <p class="cot"><b>0</b> / 3000</p>
-              </div>
-            </div>
-          </div>
-          <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //MASKING 해제 팝업 -->
   <!-- 비밀번호 입력 팝업 -->
   <div class="lyPopupWrap popup-type-s" id="suggestionPopup2">
     <!-- id 값 버튼과 연결해주세요. -->
@@ -257,41 +228,6 @@
     </div>
   </div>
   <!-- //비밀번호 입력 팝업 -->
-    <!-- 비밀번호 입력 팝업 -->
-    <div class="lyPopupWrap popup-type-m" id="suggestionPopup3">
-      <!-- id 값 버튼과 연결해주세요. -->
-      <div class="lyPopup">
-        <div class="popup-wrap">
-          <div class="popup-cont">
-            <div class="lyTitle center">
-              <p>운영사 사용자</p>
-              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-            </div>
-            <div class="lyPopCont">
-              <div class="pop-layout pop-suggestion">
-                <div class="user-search">
-                  <select class="select" name="" id="">
-										<option value="">사용자명</option>
-										<option value="">법인</option>
-										<option value="">사업본부</option>
-										<option value="">부서</option>
-									</select>
-                  <div class="form-area">
-										<input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                  <button class="btn btn-style-m2 ml5">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-                <div class="excel-wrap">
-                  그리드
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //비밀번호 입력 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -315,7 +251,7 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-
+      lyOpen('suggestionPopup2'); // 비밀번호 입력팝업
 
     
     });
