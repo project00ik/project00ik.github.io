@@ -119,6 +119,7 @@
 .pop-cart-print .table-area{margin-top: 10px;}
 .pop-cart-print .table-area + .table-area{margin-top: 30px;}
 .pop-cart-print .table-area a{color: #346DD0;text-decoration: underline;}
+.pop-cart-print .table-area a + p{margin-top: 10px;}
 .pop-cart-print .table-area.table-style1 table tbody th{padding: 20px;}
 .pop-cart-print .table-area.table-style1 table tbody th + td{padding: 20px;word-break: keep-all;}
 .pop-cart-print .table-area.table-style1 table tbody td{height: auto;}
