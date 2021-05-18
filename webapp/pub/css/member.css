@@ -8,12 +8,12 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .join-list-con .req {font-size: 16px; color: #346dd0; font-style: normal; vertical-align: top; padding: 0 3px;}
 .join-list-con .form-layout {flex: 1;}
 .join-list-con .tit-type3 {text-align: left; height: 24px; line-height: 24px;}
-.join-list-con .join-txt {font-size: 16px; color: #000; word-break: keep-all;}
-.join-list-con .join-txt ~ .join-txt {padding-top: 6px;}
-.join-list-con .join-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
-.join-list-con .join-txt2 {text-align: right; font-size: 16px; color: #000; word-break: keep-all;}
-.join-list-con .join-txt2:before {content: '*'; display: inline-block; margin-right: 3px;}
-.join-list-con .join-txt2 span {color: #346DD0; vertical-align: top;}
+.join-txt {font-size: 16px; color: #000; word-break: keep-all;}
+.join-txt ~ .join-txt {padding-top: 6px;}
+.join-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
+.join-txt2 {text-align: right; font-size: 16px; color: #000; word-break: keep-all;}
+.join-txt2:before {content: '*'; display: inline-block; margin-right: 3px;}
+.join-txt2 span {color: #346DD0; vertical-align: top;}
 .join-list-con .tit-area {margin-bottom: 0; border-bottom: 2px solid #000; padding-bottom: 10px;}
 .join-list-con .tit-area2 {border-bottom: 2px solid #000; padding-bottom: 10px;}
 .join-list-con .tit-area2 .join-txt {padding-left: 20px;}
@@ -166,8 +166,8 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
     .join-list-con .tit-area {padding-bottom: 16px;}
     .join-list-con .tit-area2 {padding: 0 20px 15px; border-bottom: 1px solid #000;}
     .join-list-con .tit-area2 .join-txt {padding-left: 10px; line-height: 100%;}
-    .join-list-con .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
-    .join-list-con .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
+    .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
+    .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
     .join-list-con .list-con {padding-top: 20px; border-bottom: 10px solid #f5f5f5;}
     .join-list-con .list-con .tit-type2-1 {padding: 0 20px;}
     .join-list-con .list-con .list-in {margin-left: 20px; margin-right: 20px; border-bottom: 0;}
