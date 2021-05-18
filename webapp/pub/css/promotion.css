@@ -132,6 +132,12 @@
 .pop-cart-print .table-area.table-style1 table tbody td.total em{color: #346DD0;vertical-align: top;}
 .pop-cart-print .table-area.table-style1 table tbody td.total i{padding:0 7px;}
 
+.pop-restock .pop-write td .before-num {display: block;}
+.before-num {display: block;}
+.before-num p{padding-left: 15px;position: relative;line-height: 19px}
+.before-num p::before{content: "1.";position: absolute;top:0;left: 0;}
+.before-num p:nth-child(2):before{content: "2."}
+.before-num p:nth-child(3):before{content: "3."}
 
 /* 장바구니 관리 */
 .mypage-cart-list .list-con{position: relative;padding-top: 30px;}
