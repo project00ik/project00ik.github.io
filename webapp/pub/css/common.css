@@ -455,7 +455,6 @@ select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background
 .form-layout .bar {height:35px; line-height:33px; padding:0 5px; display:inline-block; vertical-align:middle;}
 .form-layout.form-email .input + .input {margin-left:5px;}
 .form-layout.form-email .input + .select {margin-left:5px;}
-.form-layout + .form-layout {margin-top:5px;}
 .form-layout .w-auto {flex:inherit; width:auto;}
 .form-layout .bar {font-size: 16px; color: #666;}
 
