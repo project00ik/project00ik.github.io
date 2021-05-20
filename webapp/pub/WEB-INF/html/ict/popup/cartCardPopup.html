@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>kt commerce</title>
+  <meta charset="utf-8" />
+  <meta property="og:title" content="ktcommerce" />
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap mypage">
+    <header class="header">
+      <div class="header-top">
+        <a href="#" class="bul-bar">로그아웃</a>
+        <a href="#" class="bul-bar">고객센터</a>
+      </div>
+      <div class="header-cont">
+        <h1 class="logo"><a href="#"><img src="../../../../images/layout/logo_ictmall.png" alt="ICTMALL 로고"></a>
+        </h1>
+        <div class="search-area">
+          <div class="inp-area">
+            <input type="search" name="" id="" class="inp" placeholder="기업 자재 일괄 구매는 ICTMALL에서!!!">
+            <button class="del">삭제</button>
+          </div>
+          <button class="btn btn-search">검색</button>
+        </div>
+        <div class="right-area">
+          <div class="icon-btn cart">
+            <a href="#">
+              장바구니
+              <span class="cart-num">99</span>
+            </a>
+          </div>
+          <div class="icon-btn member">
+            <a href="#">
+              개인
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-area gnbPC">
+          <!-- header 카테고리 
+            [작업 시 참고 내용 (카테고리 총 3개)]
+            1. pc용 카테고리 2개 : header 카테고리와 메인 고정 카테고리 (메인에만 카테고리 2개 / 서브페이지는 header영역만 1개)
+            2. mobile용 카테고리 1개 : 레이어팝업 형태로 제일 하단에 위치함
+          -->
+          <!-- header 카테고리 -->
+          <div class="cate-area">
+            <button class="btn-cate btnCate">전체카테고리</button>
+            <button class="btn-cate moBtnCate">전체카테고리</button>
+        </div>
+        <!--// header 카테고리 -->
+          <div class="gnb">
+            <ul>
+              <li><a href="#">브랜드</a></li>
+              <li><a href="#">베스트</a></li>
+              <li><a href="#">특가 세일</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </div>
+          <ul class="gnb-right-area">
+            <div class="real-time-search">
+              <div class="swiper-container realtimeSearchSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="real-time-more realTimeMore">실시간 검색 더보기</button>
+              <div class="real-time-layer realtimeLayer">
+                <ul class="all-list">
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <button class="layer-close realtimeLyClose">닫기</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="sub-content">
+        컨텐츠 내용
+      </div>
+    </section>
+    <footer class="footer-wrap">
+      <div class="footer">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>이용약관</li>
+            <li><b class="point-color1">개인정보처리방침</b></li>
+          </ul>
+          <ul class="question">
+            <li>상담문의 <a href="tel:1577-3712" class="phone-link">1577-3712</a></li>
+            <li>이메일문의 <a href="mailto:ktcommerce@kt.com" class="mail-link">ktcommerce@kt.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-cont">
+          <p class="footet-logo">
+            <img src="../../../../images/layout/logo_footer.png" alt="kt commerce 로고">
+          </p>
+          <div class="footer-info">
+            <span>서울시 강남구 광평로 47길 28 <br class="pc-hide">KT수서지점 4층 케이티커머스(주)</span>
+            <span>대표이사 : 조창환</span><br class="mo-hide">
+            <span>사업자등록번호 : 107-86-18163</span>
+            <span>통신판매신고 : 강남-1568</span>
+            <span>개인정보최고책임자 : 김태기 본부</span>
+          </div>
+          <p class="copyright">COPYRIGHT ⓒ kt commerce ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 주문서 저장 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartCardPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>주문서 저장</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-account pop-namecard">             
+              <p>※ 명함정보 작성 시 주문자의 필수정보 기재가 어려운 경우 고객센터로 연락 부탁드립니다.</p>
+              <div class="btn-area">
+                <a href="javascript:;" class="lyClose btn btn-style-s1">신규</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1">저장</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1">삭제</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide">엑셀업로드</a>
+              </div>
+              <div class="excel-wrap">
+                * 명함신청 그리드영역
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //주문서 저장 팝업 -->
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
+  <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../../js/ui-front.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /* ==========================================================================
+          공통 js (ui-front.js)
+      ========================================================================== */
+      /* 레이아웃 */
+      allCategoryBtn(); // gnb 전체카테고리 열고 닫기
+      layoutCategory(); // 카테고리 레이어 이벤트
+      realtimeSearchSlide(); //header 실시간검색 swiper(plugin)
+      // quickTopBtn(); // 스크롤 최상단으로 이동
+      // quickFloating(); //퀵 플로팅 모바일 펼치기 js
+
+      /* 컨텐츠 공통 */
+      tab(); // 탭 
+      toggleBtn(); // 토글버튼
+      accordion(); // 아코디언
+      /* ==========================================================================
+          현재페이지에서만 사용 js
+      ========================================================================== */
+      lyOpen('cartCardPopup');
+
+    
+    });
+  </script>
+  <!-- javascript -->
+</body>
+
+</html>
