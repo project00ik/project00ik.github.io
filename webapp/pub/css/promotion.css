@@ -129,10 +129,9 @@
 .pop-cart-addr1 ul li > div.btn-wrap .btn:last-child{margin-top: 10px;}
 .pop-cart-addr1 ul li > .check-style2{padding-left: 0;padding-right: 20px;}
 .pop-cart-addr1 ul li > .check-style2 input + i{display: block;margin-top: 20px;}
-.pop-restock .pop-cart-addr2 .pop-write{text-align: right;}
-.pop-restock .pop-cart-addr2 .pop-mo-check{margin-bottom: 10px;text-align: left;}
-.pop-restock .pop-cart-addr2 .pop-mo-check .check-style1{display: block;}
-.pop-restock .pop-cart-addr2 .pop-mo-check .check-style1:last-child{margin-top: 10px;}
+.pop-restock .pop-cart-addr2 {text-align: right;}
+.pop-restock .pop-cart-addr2 .pop-mo-check{margin-top: 30px;}
+.pop-restock .pop-cart-addr2 .pop-write{margin-top: 10px;}
 .pop-restock .pop-cart-addr2 .pop-write > ul{padding:20px  0 30px}
 .pop-restock .tab-area .tab-style1 > li:first-child {margin-left: 0;}
 .pop-namecard > p{margin-top: 0;text-align: left;}
@@ -191,9 +190,13 @@
   .pop-layout .pop-write.pop-cart-addr1 ul li > .check-style2 input + i{margin-top: 0;}
   .pop-layout .pop-write.pop-cart-addr1 ul li.none{padding:70px 0}
   .pop-restock .pop-cart-addr2 .pop-write{text-align: left;margin-top: 20px;}
+  .pop-restock .pop-cart-addr2 .pop-mo-check{margin: 20px 0 10px;text-align: left;}
+  .pop-restock .pop-cart-addr2 .pop-mo-check .check-style1{display: block;}
+  .pop-restock .pop-cart-addr2 .pop-mo-check .check-style1:last-child{margin-top: 10px;}
   .lyPopup .popup-cont .lyPopCont .pop-namecard .btn-area{border:none;display: block;height: auto;}
   .lyPopup .popup-cont .lyPopCont .pop-namecard .btn-area a{width: auto;}
   .lyPopup .popup-cont .lyPopCont .pop-namecard .excel-wrap{margin-top: 10px;}
+  
 
   /* 장바구니 관리 */
   .mypage-cart-list .list-con{padding-top: 20px;border-bottom: none;}
