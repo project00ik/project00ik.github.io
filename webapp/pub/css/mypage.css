@@ -24,7 +24,6 @@
 /* ==========================================================================
     장바구니
 ========================================================================== */
-/* cart.css */
 .cart-order-list {padding: 20px 0 20px;}
 .cart-order-list .tit-area {padding-bottom: 10px; margin-bottom: 0; border-bottom: 2px solid #000;}
 .cart-order-list .cart-list-con .list-con .list-tit {position: relative;}
@@ -34,8 +33,6 @@
 .cart-order-list .unit-cart .normal-price {margin: 0;}
 
 /* 장바구니 주문서 */
-.tit-type2 .sub-txt {font-size: 16px; color: #000;}
-.tit-type2 .sub-txt b {vertical-align: baseline;}
 .cart-list-con .list-con .list-tit .btn-slide-open {position: absolute; top: 50%; right: 20px; transform:translateY(-50%);}
 .cart-content .join-list-con {padding: 20px 0 30px;}
 .cart-content .join-list-con ~ .join-list-con {padding: 20px 0 30px;}
@@ -223,7 +220,6 @@
     .cart-order-list .order-delivery {padding: 0 20px;}
     .cart-order-list .order-delivery ul li {flex-direction: column;}
     .cart-order-list .order-delivery ul li > label {font-size: 14px; padding: 0 0 5px 0; line-height: 17px;}
-    .cart-order-list .order-delivery ul li > label {}
     .cart-order-list .order-delivery ul li .form-layout {flex-direction: column;}
     .cart-order-list .order-delivery ul li .form-layout .input {width: 100%;}
     .cart-order-list .order-delivery ul li .form-layout .form-de-order {width: 100%; flex-wrap: wrap;}

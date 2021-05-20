@@ -353,11 +353,13 @@ button.btn-style-s1 {line-height:25px;}
 /* .tit-type1 > b {font-weight:700;} */
 .tit-area {display:flex; align-items:flex-end; flex-wrap: wrap;justify-content:space-between; margin-bottom:40px;}
 .tit-area .tit-type1 {margin-bottom:0;}
-.tit-area > * {margin-bottom: 0;} /* 정리필요 */
+.tit-area > * {margin-bottom: 0;}
 .tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
 .tit-area2 {display: flex; align-items: flex-end;}
 .tit-type2 {font-size:24px; color:#000;}
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
+.tit-type2 .sub-txt {font-size: 16px; color: #000;}
+.tit-type2 .sub-txt b {vertical-align: baseline;}
 .tit-type2-1 {font-size: 20px; color: #000;}
 .tit-type2-1 .count {vertical-align:top; color: #346dd0; font-weight: 700;}
 .tit-type3 {width:100%; height:36px; line-height:36px; font-size:16px; text-align:center; color:#000;}
@@ -401,6 +403,11 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-style3 .tabBtn.on::after {content:""; width:100%; height:4px; background:#346dd0; display:inline-block; position:absolute; bottom:0px; left:0; z-index:1;}
 .tab-area .tab-cont {width:100%; padding:30px 0}
 
+.tab-area .tab-style4 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; text-align: center;}
+.tab-area .tab-style4 > li + li {margin-left:12px;}
+.tab-area .tab-style4 .tabBtn > a {padding: 12px 25px; border-radius: 21px; font-size:16px; font-weight: 500; background: #f5f5f5; cursor:pointer; display:inline-block;}
+.tab-area .tab-style4 .tabBtn.on > a {color:#fff; background: #000;}
+
 .product .tab-area .tab-cont {padding-bottom: 0;}
 
 /* 토글 */
@@ -442,6 +449,7 @@ select.select:disabled {background:url(../images/common/arrow_select_disabled.sv
 /* select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #e5e5e5; color:#d7d7d7;} */
 select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
 
+input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 16px center no-repeat;}
 
 .form-layout {width:100%; display:flex;}
 .form-layout .input {flex:1;}
@@ -613,6 +621,20 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .unit-type1 .normal-price {margin-top:6px; font-size: 12px; color: #999; text-decoration: line-through;}
 .unit-type1 .normal-price > b {font-weight: 400; font-size: 16px; vertical-align: text-bottom;}
 .unit-type1 .check-style2 {position: absolute; top:20px; left:20px; z-index:8;}
+
+.unit-type2 {width:100%; height:410px; position:relative; }
+.unit-type2 > a {width:100%; display: block;}
+.unit-type2 .unit-area {width:100%;}
+.unit-type2 .unit-area > dt {width:100%; background:#f5f5f5; position: relative;}
+.unit-type2 .unit-area > dt > img {width:100%;}
+.unit-type2 .unit-area > dd {width:100%; padding:16px 0 0;}
+.unit-type2 .unit-area .unit-title {width:100%; height:50px; font-size:20px; font-weight: 500;}
+.unit-type2 .unit-area .date-area {display:-webkit-box; display:-ms-flexbox; display:flex; align-items:flex-end;padding-top: 3px; }
+.unit-type2 .unit-area .date-area .date {font-size:14px; color:#333; display:inline-block;}
+.unit-type2 .unit-area .date-area .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
+.unit-type2 .unit-area .date-area .dday {font-size:14px; color:#346dd0; font-weight: 500; display:inline-block; margin-left: 10px;}
+.unit-type2 .unit-area .date-area .dday.end {color: #eb3030;}
+
 
 
 /* 상품리스트 */
@@ -905,7 +927,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:16px;}
     .tab-area .tab-style3 .tabBtn {font-size:16px; line-height:47px; padding-bottom:3px;}
     .tab-area .tab-style3 .tabBtn.on::after {height:3px;}
-    .tabArea.tabSlide {}
+    .tab-area .tab-style4 > li {margin: 0 0 12px 10px;}
+    .tab-area .tab-style4 > li:first-child {margin-left: 20px;}
+    .tab-area .tab-style4 > li:last-child {margin-right: 20px;}
+    .tab-area .tab-style4 .tabBtn {padding: 10px 20px; font-size: 14px;}
     .product .tab-area .tab-cont {padding-bottom: 0;}
 
     /* 텍스트 관련 */
@@ -968,6 +993,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .product-list-wrap .best-list > li.product-1st {width:100%; padding:0 10px; margin:0 0 15px;}
     .best-list .unit-type1 .unit-area {padding:0;}
     .best-list .unit-type1 .unit-layer {height:0; margin:0;}
+
+    .unit-type2 {height: auto; padding-bottom: 30px;}
+    .unit-type2 .unit-area .unit-title {height: 38px; font-size: 16px;}
+    .unit-type2 .unit-area .date-area {padding-top: 8px;}
     
     .product-list-wrap .best-list > li {padding:10px;}
     .product-list-wrap .best-list > li::after {width:24px; height:24px; line-height:24px; top:10px; left:10px; font-size:16px;}
@@ -996,6 +1025,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     /* 폼요소 */
     input.input {height: 36px; line-height: 36px;}
+    input.datepicker {background: none;}
     select.select {line-height: 34px; height: 36px;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}

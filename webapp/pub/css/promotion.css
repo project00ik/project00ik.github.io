@@ -1,22 +1,3 @@
-/* 공통 */
-
-/* ==========================================================================
-    유닛 관련
-========================================================================== */
-/* 유닛 */
-.unit-type2 {width:100%; height:410px; position:relative; }
-.unit-type2 > a {width:100%; display: block;}
-.unit-type2 .unit-area {width:100%;}
-.unit-type2 .unit-area > dt {width:100%; background:#f5f5f5; position: relative;}
-.unit-type2 .unit-area > dt > img {width:100%;}
-.unit-type2 .unit-area > dd {width:100%; padding:16px 0 0;}
-.unit-type2 .unit-area .unit-title {width:100%; height:50px; font-size:20px; font-weight: 500;}
-.unit-type2 .unit-area .date-area {display:-webkit-box; display:-ms-flexbox; display:flex; align-items:flex-end;padding-top: 3px; }
-.unit-type2 .unit-area .date-area .date {font-size:14px; color:#333; display:inline-block;}
-.unit-type2 .unit-area .date-area .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
-.unit-type2 .unit-area .date-area .dday {font-size:14px; color:#346dd0; font-weight: 500; display:inline-block; margin-left: 10px;}
-.unit-type2 .unit-area .date-area .dday.end {color: #eb3030;}
-
 /* ==========================================================================
     프로모션
 ========================================================================== */
@@ -155,19 +136,8 @@
 
 @media only screen and (max-width: 800px){
   /* ==========================================================================
-    유닛 관련
-========================================================================== */
-/* 유닛 */
-  .unit-type2 {height: auto; padding-bottom: 30px;}
-  .unit-type2 .unit-area .unit-title {height: 38px; font-size: 16px;}
-  .unit-type2 .unit-area .date-area {padding-top: 8px;}
-
-
-
-
-  /* ==========================================================================
     프로모션
-========================================================================== */
+  ========================================================================== */
   .promotion-cont {margin-top: 0;}
   .promotion-cont .event-empty {padding: 50px 0; margin: 0 20px;}
   .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}  

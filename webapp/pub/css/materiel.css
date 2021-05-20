@@ -1,12 +1,3 @@
-/* 공통 */
-/* 탭 */
-.tab-area .tab-style4 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; text-align: center;}
-.tab-area .tab-style4 > li + li {margin-left:12px;}
-.tab-area .tab-style4 .tabBtn {}
-.tab-area .tab-style4 .tabBtn > a {padding: 12px 25px; border-radius: 21px; font-size:16px; font-weight: 500; background: #f5f5f5; cursor:pointer; display:inline-block;}
-.tab-area .tab-style4 .tabBtn.on > a {color:#fff; background: #000;}
-
-
 /* ==========================================================================
     자재일괄구매
 ========================================================================== */
@@ -35,19 +26,9 @@
 
 
 @media only screen and (max-width: 800px){
-  /* 공통 */
-  /* 탭 */
-  .tab-area .tab-style4 > li {margin: 0 0 12px 10px;}
-  .tab-area .tab-style4 > li:first-child {margin-left: 20px;}
-  .tab-area .tab-style4 > li:last-child {margin-right: 20px;}
-  .tab-area .tab-style4 .tabBtn {padding: 10px 20px; font-size: 14px;}
-  
-
-
-
   /* ==========================================================================
     자재일괄구매
-========================================================================== */
+  ========================================================================== */
   .materiel-banner {margin-bottom: 30px;}
   .materiel-banner .ban-text-area {left: 28px;}
   .materiel-banner .ban-text-area p {font-size: 18px; line-height: 1.2;}
