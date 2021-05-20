@@ -34,7 +34,7 @@
 .suggestion-goods .list-con .list-in > li > label{width: 150px;}
 .suggestion-goods .list-con .list-in > li div{margin-right: 40px;}
 .suggestion-goods .list-con .list-in > li div.suggestion-date{margin-right: 0px;max-width: 530px;}
-.suggestion-goods .list-con .list-in > li div.suggestion-date div{display: flex;}
+.suggestion-goods .list-con .list-in > li div.suggestion-date div{display: flex;flex: 1;}
 .suggestion-goods .list-con .list-in > li div:last-child{margin-right: 0px;}
 .suggestion-goods .list-con .list-in > li div.form-search{margin-right: 5px;width: 50%;}
 .suggestion-goods .list-con .list-in > li.name div{max-width: 323px;}
