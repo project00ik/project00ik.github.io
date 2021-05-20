@@ -326,7 +326,7 @@ function tab(){ // 탭 관련 js
 function scrollTop(){
   // 스크롤탭 fixed 고정
   var $wTop = $(window).scrollTop();
-  var $contTop = $('.materiel-list').offset().top - 134;
+  var $contTop = $('.materiel-list').offset().top - 143;
   var $hdH = $('.header').height();
   var $tab = $('.tab-btn-list');
   if ($wTop < $contTop){
