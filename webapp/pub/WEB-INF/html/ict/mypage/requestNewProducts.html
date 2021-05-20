@@ -169,16 +169,15 @@
         <div class="my-main">
           <p class="tit-type1-2 pc-hide">신규상품요청</p>
 
-          <div class="join-list-con suggestion-goods">
+          <div class="join-list-con">
             <div class="tit-area2">
               <p class="tit-type2">신규상품요청</p>
             </div>
-            
-            <div class="list-con">
-              <ul class="list-in">
-                <li>
+            <div class="list-con bt-btn-line">
+              <ul class="list-in list-half-style">
+                <li class="list-w100">
                   <label for="">요청일</label>
-                  <div class="form-layout suggestion-date">
+                  <div class="form-layout">
                     <select class="select" name="" id="">
                       <option value="">요청일자</option>
                       <option value="">당일</option>
@@ -186,9 +185,9 @@
                       <option value="">한달</option>
                       <option value="">세달</option>
                     </select>
-                    <div>
+                    <div class="form-inline">
                       <input type="text" class="datepicker" value="">
-                      <em>-</em>
+                      <em class="bar">-</em>
                       <input type="text" class="datepicker" value="">
                     </div>
                   </div>
@@ -198,6 +197,8 @@
                   <div class="form-layout">
                     <input type="number" name="" class="input" value="">
                   </div>
+                </li>
+                <li>
                   <label for="">진행상태</label>
                   <div class="form-layout">
                     <select class="select" name="" id="">
@@ -227,6 +228,8 @@
                   <div class="form-layout">
                     <input type="text" name="" class="input" value="" placeholder="">
                   </div>
+                </li>
+                <li>
                   <label for="">요청명</label>
                   <div class="form-layout">
                     <input type="text" name="" class="input" value="">
@@ -237,41 +240,42 @@
                   <div class="form-layout">
                     <input type="text" name="" class="input" value="">
                   </div>
+                </li>
+                <li>
                   <label for="">요청사업장</label>
-                  <div class="form-layout ">
-                    <div class="form-layout form-search">
-                      <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngUserPopup')">검색</button>
-                    </div>
+                  <div class="form-layout form-search">
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
                   </div>
                 </li>
                 <li>
                   <label for="">요청부서</label>
-                  <div class="form-layout ">
-                    <div class="form-layout form-search">
-                      <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngUserPopup')">검색</button>
-                    </div>
-                  </div>
-                  <label for="">요청자</label>
-                  <div class="form-layout ">
-                    <div class="form-layout form-search">
-                      <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngUserPopup')">검색</button>
-                    </div>
+                  <div class="form-layout form-search">
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
                   </div>
                 </li>
-                <li class="btn-right">  
-                  <button class="btn btn-style-m3">조회</button>  
+                <li>
+                  <label for="">요청자</label>
+                  <div class="form-layout form-search">
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                  </div>
                 </li>
               </ul>
+              <div class="btn-r-area">
+                <button class="btn btn-style-m3">조회</button>
+              </div>
             </div>
-            <div class="btn-right">
-              <a href="javascript:;" class="btn btn-style-m1">제안하기</a>  
-              <a href="javascript:;" class="btn btn-style-m1">마스킹해제</a>  
-            </div>
-            <div class="excel-wrap">
-                그리드영역
+            <div class="list-con list-file-con m-line-hide">
+              <div class="btn-r-area">
+                <a href="javascript:;" class="btn btn-style-m4">신규</a>
+                <a href="javascript:;" class="btn btn-style-m1">상품일괄요청</a>
+                <a href="javascript:;" class="btn btn-style-m1">기등록매핑취소</a>  
+              </div>
+              <div class="excel-wrap">
+                  그리드영역
+              </div>
             </div>
         </div>
 
