@@ -88,9 +88,9 @@
 .pop-orderlist > .orderlist-wrap ul li:first-child{padding-top:0;}
 .pop-orderlist > .orderlist-wrap ul li > div{display: flex;}
 .pop-orderlist > .orderlist-wrap ul li > div img{width: 65px;height: 65px;}
-.pop-orderlist > .orderlist-wrap ul li > div > div {padding:6px 20px 10px 20px;width: calc(100% - 65px);}
+.pop-orderlist > .orderlist-wrap ul li > div > div {padding:9px 20px 10px 20px;width: calc(100% - 65px);}
 .pop-orderlist > .orderlist-wrap ul li > div > div p{margin-bottom: 10px;}
-.pop-orderlist > .orderlist-wrap ul li > div em{color: #666;font-size: 14px;}
+.pop-orderlist > .orderlist-wrap ul li > div em{color: #666;font-size: 14px;vertical-align: top;}
 .pop-orderlist > .orderlist-wrap ul li > div em:last-child{padding-left: 10px;}
 .pop-orderlist > .orderlist-wrap ul li > div em:last-child::before{content: "";display: inline-block;width: 1px;height:11px;background:#BBBBBB;margin-right: 8px;}
 .pop-cart .radio-wrap {margin-top: 10px;}
