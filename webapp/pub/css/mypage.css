@@ -33,6 +33,13 @@
 .cart-order-list .unit-cart .normal-price {margin: 0;}
 
 /* 장바구니 주문서 */
+
+.list-con .list-in .two-form .form-layout > :first-child {flex:1;}
+.list-con .list-in .two-form .form-layout > :last-child {margin-left: 5px; width: 118px;}
+.list-con .list-in.bdt-none {border-top: 0;}
+.list-con .list-in .two-m4-btn {display: flex;}
+.list-con .list-in .two-m4-btn .btn {margin-left: 5px;}
+
 .cart-list-con .list-con .list-tit .btn-slide-open {position: absolute; top: 50%; right: 20px; transform:translateY(-50%);}
 .cart-content .join-list-con {padding: 20px 0 30px;}
 .cart-content .join-list-con ~ .join-list-con {padding: 20px 0 30px;}
@@ -40,11 +47,9 @@
 .cart-content .join-list-con .list-con .list-in {border-bottom: 0; margin-top: 0;}
 .cart-content .join-list-con .list-con .list-in .btn-tooltip {vertical-align: top; margin-top: 0;}
 .cart-content .join-list-con .list-con .list-in .tooltip-box {width: 232px;}
-.cart-content .join-list-con .list-con .list-in.bdt-none {border-top: 0;}
 .cart-content .join-list-con .list-con .list-in .form-layout {max-width: 613px;} 
 .cart-content .cart-order-list .toolsize .tooltip-box {width: 232px; left: auto; right: 0;}
-.join-list-con .list-con .list-in .two-form .form-layout > :first-child {flex:1;}
-.join-list-con .list-con .list-in .two-form .form-layout > :last-child {margin-left: 5px; width: 118px;}
+
 .cart-order-list .tit-area + .cart-list-con {margin-top: 20px;}
 .cart-order-list .cart-list-con + .cart-list-con {margin-top: 20px;}
 .cart-order-list .cart-list-con .tit-area {border-bottom: 0;}
@@ -74,6 +79,7 @@
 .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div .btn {margin-left: 5px;}
 .cart-pay-area {margin-top: 20px; padding: 20px; background: #fafafa; display: flex; align-items: center;}
 .cart-pay-area > p {font-size: 16px; color: #000;}
+.cart-pay-area > p span {vertical-align: top; display: inline-block;}
 .cart-pay-area .radio-style1 {margin-left: 50px;}
 .cart-pay-area .radio-style1 > span {font-size: 16px;}
 .after-pay-area {position: relative; margin: 20px 0 0 0; padding: 0 15px;}
@@ -155,35 +161,37 @@
 .mypage-cont .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 18px;}
 
 /* 회원정보관리 */
-.mypage-cont .my-main .join-list-con .form-layout {max-width: 503px;}
-.mypage-cont .my-main .join-list-con .form-list-checkradio li {width: 33.333%;}
-.mypage-cont .my-main .join-list-con .list-btn-area .form-layout {max-width: 100%;}
-.mypage-cont .my-main .btn-area-c {padding-top: 70px;}
-.mypage-cont .my-main .join-list-con .list-con .list-in > li > label {width: 130px;}
-.mypage-cont .my-main .join-list-con .join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
-.mypage-cont .my-main .join-list-con .bt-btn-line {padding-top: 0;}
-.mypage-cont .my-main .join-list-con .bt-btn-line .list-in {border-top: 0; border-bottom: 0; margin-top: 0;}
-.mypage-cont .my-main .join-list-con .bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
-.mypage-cont .my-main .join-list-con .bt-btn-line .list-half-style li {width: 50%;}
-.mypage-cont .my-main .join-list-con .list-file-con .btn-r-area {padding: 0 0 20px;}
-.mypage-cont .my-main .join-list-con .my-leave {padding: 30px 20px; border-bottom: 1px solid #d7d7d7;}
-.mypage-cont .my-main .join-list-con .my-leave .leave-tit {padding-bottom: 20px; font-size: 16px; font-weight: 500; color: #000;}
-.mypage-cont .my-main .join-list-con .my-leave ul {padding-bottom: 30px;}
-.mypage-cont .my-main .join-list-con .my-leave ul li {font-size: 16px; line-height: 26px; color: #000;}
-.mypage-cont .my-main .join-list-con .my-leave .textarea {height: 109px;}
-.mypage-cont .my-main .join-list-con .leave-check-area {padding: 20px 20px 0;}
+.list-half-style li {width: 50%;}
+.form-list-checkradio li {width: 33.333%;}
+.list-btn-area .form-layout {max-width: 100%;}
+.join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
+.list-con.bt-btn-line {padding-top: 0;}
+.list-con.bt-btn-line .list-in {border-top: 0; border-bottom: 0; margin-top: 0;}
+.list-con.bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
+.list-file-con .btn-r-area {padding: 0 0 20px;}
 
-.mypage-cont .my-main .list-delivery ul li {display: flex; align-items: center; height: 106px; padding: 0 20px; border-bottom: 1px solid #d7d7d7;}
-.mypage-cont .my-main .list-delivery ul li > div {margin-left: 50px;}
-.mypage-cont .my-main .list-delivery ul li > div:first-child {margin-left: 0;}
-.mypage-cont .my-main .list-delivery ul li > div p {font-size: 16px; color: #000;}
-.mypage-cont .my-main .list-delivery ul li .de-name {width: 75px; text-align: center;}
-.mypage-cont .my-main .list-delivery ul li .de-name p {font-weight: 500; padding-top: 6px;}
-.mypage-cont .my-main .list-delivery ul li .de-address {flex:1;}
-.mypage-cont .my-main .list-delivery ul li .de-address span {display: inline-block; font-size: 14px; color: #666;}
-.mypage-cont .my-main .list-delivery ul li .de-btn-area {font-size: 0; padding-bottom: 0;}
-.mypage-cont .my-main .list-delivery ul li .de-btn-area .btn {display: block;}
-.mypage-cont .my-main .list-delivery ul li .de-btn-area .btn + .btn {margin-top: 10px;}
+.mypage-cont .my-main .join-list-con .form-layout {max-width: 503px;}
+.mypage-cont .my-main .join-list-con .list-con .list-in > li > label {width: 130px;}
+.mypage-cont .my-main .btn-area-c {padding-top: 70px;}
+
+.my-leave {padding: 30px 20px; border-bottom: 1px solid #d7d7d7;}
+.my-leave .leave-tit {padding-bottom: 20px; font-size: 16px; font-weight: 500; color: #000;}
+.my-leave ul {padding-bottom: 30px;}
+.my-leave ul li {font-size: 16px; line-height: 26px; color: #000;}
+.my-leave .textarea {height: 109px;}
+.leave-check-area {padding: 20px 20px 0;}
+
+.list-delivery ul li {display: flex; align-items: center; height: 106px; padding: 0 20px; border-bottom: 1px solid #d7d7d7;}
+.list-delivery ul li > div {margin-left: 50px;}
+.list-delivery ul li > div:first-child {margin-left: 0;}
+.list-delivery ul li > div p {font-size: 16px; color: #000;}
+.list-delivery ul li .de-name {width: 75px; text-align: center;}
+.list-delivery ul li .de-name p {font-weight: 500; padding-top: 6px;}
+.list-delivery ul li .de-address {flex:1;}
+.list-delivery ul li .de-address span {display: inline-block; font-size: 14px; color: #666;}
+.list-delivery ul li .de-btn-area {font-size: 0; padding-bottom: 0;}
+.list-delivery ul li .de-btn-area .btn {display: block;}
+.list-delivery ul li .de-btn-area .btn + .btn {margin-top: 10px;}
 
 
 
@@ -213,8 +221,8 @@
     ========================================================================== */
     .cart-content .join-list-con {padding: 20px 0;}
     .cart-content .join-list-con ~ .join-list-con {padding: 0 0 20px 0;}
-    .cart-content .selection-area {padding-left: 0;}
-    .cart-content .selection-area .selection-item {padding: 0;}
+    .selection-area {padding-left: 0;}
+    .selection-area .selection-item {padding: 0;}
     .cart-content .join-list-con .list-con .list-in .tooltip-box {right: auto; left: 0; width: 181px;}
     .cart-content .cart-order-list .toolsize {margin-top: 10px;}
     .cart-content .cart-order-list .toolsize .tooltip-box {width: 152px; right: auto; left: 0; }
@@ -245,6 +253,7 @@
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {width: 100%;}
     .cart-pay-area {margin: 30px 20px 20px; flex-wrap: wrap;}
     .cart-pay-area > p {width: 100%;}
+    .cart-pay-area > p span {display: none;}
     .cart-pay-area .radio-style1 {margin: 20px 0 0 0; width: 50%;}
     .cart-pay-area .radio-style1 > span {font-size: 15px;}
     .notice-txt {padding: 0 20px;}
@@ -252,6 +261,9 @@
     .after-pay-area {padding: 0; margin-top: 30px;}
     .after-pay-area .swiper-slide {width: 370px !important;}
     .after-pay-area .afpay-box .afpay-txt p {font-size: 15px;}
+    
+    .list-con .list-in .two-form .form-layout > :last-child {width: 112px;}
+    .list-con .list-in .w-fixed {width: 112px;}
 
 
 
@@ -305,26 +317,26 @@
 
 
     /* 회원정보관리 */
+    .list-half-style li {width: 100%;}
     .mypage-cont .my-main .btn-area-c {padding-top: 50px;}
     .mypage-cont .my-main .btn-full-area {padding: 0; border-top: 0;}
-    .mypage-cont .my-main .join-list-con .join-txt-normal {font-size: 14px; margin: 0 20px;}
-    .mypage-cont .my-main .join-list-con .bt-btn-line .list-half-style li {width: 100%;}
-    .mypage-cont .my-main .join-list-con .bt-btn-line .btn-r-area {padding: 0 20px 20px;}
-    .mypage-cont .my-main .join-list-con .list-file-con .btn-r-area {padding: 0 20px 10px;}
-    .mypage-cont .my-main .join-list-con .list-file-con.m-line-hide {border-bottom: 0;}
-    .mypage-cont .my-main .join-list-con .my-leave {padding: 20px;}
-    .mypage-cont .my-main .join-list-con .my-leave .leave-tit {padding-bottom: 12px;}
-    .mypage-cont .my-main .join-list-con .my-leave ul li {font-size: 14px; line-height: 24px;}
+    .join-txt-normal {font-size: 14px; margin: 0 20px;}
+    .bt-btn-line .btn-r-area {padding: 0 20px 20px;}
+    .list-file-con .btn-r-area {padding: 0 20px 10px;}
+    .list-file-con.m-line-hide {border-bottom: 0;}
+    .my-leave {padding: 20px;}
+    .my-leave .leave-tit {padding-bottom: 12px;}
+    .my-leave ul li {font-size: 14px; line-height: 24px;}
 
-    .mypage-cont .my-main .list-delivery {margin-bottom: 20px;}
-    .mypage-cont .my-main .list-delivery ul li {padding: 20px; height: auto; flex-direction: column; align-items: flex-start;}
-    .mypage-cont .my-main .list-delivery ul li > div {margin-left: 0; padding-bottom: 2px;}
-    .mypage-cont .my-main .list-delivery ul li > div p {font-size: 15px;}
-    .mypage-cont .my-main .list-delivery ul li .de-address {padding-bottom: 10px;}
-    .mypage-cont .my-main .list-delivery ul li .de-address span {font-size: 13px;}
-    .mypage-cont .my-main .list-delivery ul li .de-name {text-align: left; width: auto;}
-    .mypage-cont .my-main .list-delivery ul li .de-btn-area .btn {display: inline-block;}
-    .mypage-cont .my-main .list-delivery ul li .de-btn-area .btn + .btn {margin-top: 0; margin-left: 10px;}
+    .list-delivery {margin-bottom: 20px;}
+    .list-delivery ul li {padding: 20px; height: auto; flex-direction: column; align-items: flex-start;}
+    .list-delivery ul li > div {margin-left: 0; padding-bottom: 2px;}
+    .list-delivery ul li > div p {font-size: 15px;}
+    .list-delivery ul li .de-address {padding-bottom: 10px;}
+    .list-delivery ul li .de-address span {font-size: 13px;}
+    .list-delivery ul li .de-name {text-align: left; width: auto;}
+    .list-delivery ul li .de-btn-area .btn {display: inline-block;}
+    .list-delivery ul li .de-btn-area .btn + .btn {margin-top: 0; margin-left: 10px;}
     
     .btn-r-area.mo-hide {display: none;}
 
