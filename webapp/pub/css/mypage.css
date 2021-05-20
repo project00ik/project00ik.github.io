@@ -34,7 +34,7 @@
 
 /* 장바구니 주문서 */
 
-.list-con .list-in .one-form {}
+.list-con .list-in .one-form {width: 100%;}
 .list-con .list-in .two-form .form-layout > :first-child {flex:1;}
 .list-con .list-in .two-form .form-layout > :last-child {margin-left: 5px; width: 118px;}
 .list-con .list-in.bdt-none {border-top: 0;}
@@ -49,6 +49,9 @@
 .cart-content .list-con .list-in .btn-tooltip {vertical-align: top; margin-top: 0;}
 .cart-content .list-con .list-in .tooltip-box {width: 232px;}
 .cart-content .list-con .list-in .form-layout {max-width: 613px;} 
+.cart-content .list-con .list-in .one-form .form-layout {max-width: 380px;}
+.cart-content .list-con .list-in .form-layout label + label {margin-left: 30px;}
+.cart-content .list-con .list-in .form-layout .radio-style1 > span {color: #666; font-weight: normal;}
 .cart-content .cart-order-list .toolsize .tooltip-box {width: 232px; left: auto; right: 0;}
 
 .cart-order-list .tit-area + .cart-list-con {margin-top: 20px;}
@@ -222,6 +225,7 @@
     ========================================================================== */
     .cart-content .join-list-con {padding: 20px 0;}
     .cart-content .join-list-con ~ .join-list-con {padding: 0 0 20px 0;}
+    .cart-content .list-con .list-in .one-form .form-layout {max-width: 100%;}
     .selection-area {padding-left: 0;}
     .selection-area .selection-item {padding: 0;}
     .cart-content .join-list-con .list-con .list-in .tooltip-box {right: auto; left: 0; width: 181px;}
