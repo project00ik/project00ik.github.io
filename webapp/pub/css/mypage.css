@@ -77,11 +77,12 @@
 .cart-pay-area .radio-style1 {margin-left: 50px;}
 .cart-pay-area .radio-style1 > span {font-size: 16px;}
 .after-pay-area {position: relative; margin: 20px 0 0 0; padding: 0 15px;}
-.after-pay-area .af-arrow-prev {top: 50%; transform: translateY(-50%);}
-.after-pay-area .af-arrow-next {top: 50%; transform: translateY(-50%);}
-.after-pay-area .afpay-box {padding: 30px; border: 1px solid #346dd0; background: #fff; border-radius: 10px;}
+.after-pay-area [class^=af-arrow] {top: 50%; transform: translateY(-50%);}
+.after-pay-area .afpay-box {padding: 30px; border: 1px solid #707070; background: #fff; border-radius: 10px;}
+.after-pay-area .afpay-box.on {border: 1px solid #346dd0;}
 .after-pay-area .afpay-box .afpay-txt {padding-top: 10px;}
 .after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 22px; color: #000;}
+.after-pay-area .afpay-box .radio-style1 {width: 100%;}
 
 
 .pay-agree-check {text-align: center; padding: 70px 0 50px;}
@@ -248,7 +249,9 @@
     .cart-pay-area .radio-style1 > span {font-size: 15px;}
     .notice-txt {padding: 0 20px;}
     .pay-agree-check {padding: 30px 20px;}
-    
+    .after-pay-area {padding: 0; margin-top: 30px;}
+    .after-pay-area .swiper-slide {width: 370px !important;}
+    .after-pay-area .afpay-box .afpay-txt p {font-size: 15px;}
 
 
 
@@ -335,6 +338,8 @@
 @media only screen and (max-width:480px){
     .notice-wrap .cont-notice .service-area {background-size: 65px auto;}
     .notice-wrap .cont-notice .service-area .ser-call .call-time span {display: block;}
+    
+    .after-pay-area .swiper-slide {width: 280px !important;}
 }
 
 

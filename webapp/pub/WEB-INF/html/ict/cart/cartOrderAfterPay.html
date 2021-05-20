@@ -710,20 +710,100 @@
         </div>
 
 
-
-        <!-- 결제방법 -->
-        <div class="cart-pay-area">
-          <p>결제방법(선결제)</p>
-          <label class="radio-style1"><input type="radio" name=""><i></i><span>신용카드</span></label>
-          <label class="radio-style1"><input type="radio" name=""><i></i><span>가상계좌</span></label>
-          <label class="radio-style1"><input type="radio" name=""><i></i><span>간편결제</span></label>
+        <!-- 후결제계정 -->
+        <div class="after-pay-area">
+          <div class="swiper-container afterPaySlide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="afpay-box">
+                  <label class="radio-style1"><input type="radio" name="af"><i></i>
+                    <div class="afpay-txt">
+                      <p>계정 : 에이비엘생명보험 사무용품</p>
+                      <p>총예산 : 500,000</p>
+                      <p>총구매액 : 0</p>
+                      <p>잔액 : 467,029</p>
+                      <p>승인대기 : 32,971</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="afpay-box">
+                  <label class="radio-style1"><input type="radio" name="af"><i></i>
+                    <div class="afpay-txt">
+                      <p>계정 : 에이비엘생명보험 생활용품</p>
+                      <p>총예산 : 1,000,000</p>
+                      <p>총구매액 : 0</p>
+                      <p>잔액 : 50,000</p>
+                      <p>승인대기 : 0</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="afpay-box">
+                  <label class="radio-style1"><input type="radio" name="af"><i></i>
+                    <div class="afpay-txt">
+                      <p>계정 : 에이비엘생명보험 위생용품</p>
+                      <p>총예산 : 1,000,000,000</p>
+                      <p>총구매액 : 500,000,000</p>
+                      <p>잔액 : 500,000,000</p>
+                      <p>승인대기 : 0</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="afpay-box">
+                  <label class="radio-style1"><input type="radio" name="af"><i></i>
+                    <div class="afpay-txt">
+                      <p>계정 : 에이비엘생명보험 사무용품</p>
+                      <p>총예산 : 500,000</p>
+                      <p>총구매액 : 0</p>
+                      <p>잔액 : 467,029</p>
+                      <p>승인대기 : 32,971</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="afpay-box">
+                  <label class="radio-style1"><input type="radio" name="af"><i></i>
+                    <div class="afpay-txt">
+                      <p>계정 : 에이비엘생명보험 생활용품</p>
+                      <p>총예산 : 1,000,000</p>
+                      <p>총구매액 : 0</p>
+                      <p>잔액 : 50,000</p>
+                      <p>승인대기 : 0</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="afpay-box">
+                  <label class="radio-style1"><input type="radio" name="af"><i></i>
+                    <div class="afpay-txt">
+                      <p>계정 : 에이비엘생명보험 위생용품</p>
+                      <p>총예산 : 1,000,000,000</p>
+                      <p>총구매액 : 500,000,000</p>
+                      <p>잔액 : 500,000,000</p>
+                      <p>승인대기 : 0</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination pc-hide"></div>
+          </div>
+          <div class="af-arrow-prev slide-arrow-prev"></div>
+          <div class="af-arrow-next slide-arrow-next"></div>
         </div>
-        <p class="notice-txt">입고처리 후 세금계산서가 발행되므로 신용카드 또는 현금영수증으로는 국세청에 부가세신고를 하지 마시기 바랍니다.</p>
-        <!--// 결제방법 -->
+        <!-- //후결제계정 -->
+
 
 
         <div class="pay-agree-check">
-          <label class="check-style1"><input type="checkbox" name=""><i></i><span>위 주문 내용을 확인하였으며, 결제에 동의합니다.</span></label>
+          <label class="check-style1"><input type="checkbox" name="rd"><i></i><span>위 주문 내용을 확인하였으며, 결제에 동의합니다.</span></label>
         </div>
 
         <div class="btn-area-c mo-pd">
@@ -810,6 +890,50 @@
       ========================================================================== */
       toggleSlideArea(); // 토글영역
 
+
+
+
+      // 후결제계정 
+      var afterPaySlide = new Swiper('.afterPaySlide', {
+          centeredSlides: false,
+          slidesPerGroupSkip: 1,
+          grabCursor: true,
+          navigation: {
+            nextEl: '.af-arrow-next',
+            prevEl: '.af-arrow-prev',
+          },
+          pagination: { el: '.swiper-pagination', clickable: true },
+          breakpoints: {
+            // 화면의 넓이가 800 이상일 때 
+            800: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            // 화면의 넓이가 320 이상일 때 
+            320: {
+                spaceBetween: 10,
+                freemode: false,
+                centeredSlides: true,
+                slidesPerView: "auto",
+            },
+          }
+      });
+
+      afRadioCheck = function(){
+        //후결제계정 radio 선택
+        $('.afpay-box .radio-style1').each(function(){
+          $(this).bind('click', function(){
+            var chk = $(this).find('input')
+            $('.afpay-box .radio-style1').closest('.afpay-box').removeClass('on')
+            if (chk.is(":checked") == true){
+              $(this).closest('.afpay-box').addClass('on');
+            } 
+          })
+        })
+      }
+      afRadioCheck(); //(슬라이드 아래쪽위치해야함)
+
+     
     });
   </script>
   <!-- javascript -->
