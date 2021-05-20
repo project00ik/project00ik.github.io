@@ -163,16 +163,16 @@
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
 .form-list-checkradio li {width: 33.333%;}
-.join-list-con .list-btn-area .form-layout {max-width: 100%;}
+.list-btn-area .form-layout {max-width: 100%;}
 .join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
-.join-list-con .list-con.bt-btn-line {padding-top: 0;}
-.join-list-con .list-con.bt-btn-line .list-in {border-top: 0; border-bottom: 0; margin-top: 0;}
-.join-list-con .list-con.bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
+.list-con.bt-btn-line {padding-top: 0;}
+.list-con.bt-btn-line .list-in {border-top: 0; border-bottom: 0; margin-top: 0;}
+.list-con.bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
 .list-file-con .btn-r-area {padding: 0 0 20px;}
 
 .mypage-cont .my-main .join-list-con .form-layout {max-width: 503px;}
-.mypage-cont .my-main .btn-area-c {padding-top: 70px;}
 .mypage-cont .my-main .join-list-con .list-con .list-in > li > label {width: 130px;}
+.mypage-cont .my-main .btn-area-c {padding-top: 70px;}
 
 .my-leave {padding: 30px 20px; border-bottom: 1px solid #d7d7d7;}
 .my-leave .leave-tit {padding-bottom: 20px; font-size: 16px; font-weight: 500; color: #000;}
@@ -320,10 +320,10 @@
     .list-half-style li {width: 100%;}
     .mypage-cont .my-main .btn-area-c {padding-top: 50px;}
     .mypage-cont .my-main .btn-full-area {padding: 0; border-top: 0;}
-    .mypage-cont .my-main .join-list-con .join-txt-normal {font-size: 14px; margin: 0 20px;}
-    .mypage-cont .my-main .join-list-con .bt-btn-line .btn-r-area {padding: 0 20px 20px;}
-    .mypage-cont .my-main .join-list-con .list-file-con .btn-r-area {padding: 0 20px 10px;}
-    .mypage-cont .my-main .join-list-con .list-file-con.m-line-hide {border-bottom: 0;}
+    .join-txt-normal {font-size: 14px; margin: 0 20px;}
+    .bt-btn-line .btn-r-area {padding: 0 20px 20px;}
+    .list-file-con .btn-r-area {padding: 0 20px 10px;}
+    .list-file-con.m-line-hide {border-bottom: 0;}
     .my-leave {padding: 20px;}
     .my-leave .leave-tit {padding-bottom: 12px;}
     .my-leave ul li {font-size: 14px; line-height: 24px;}
