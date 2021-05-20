@@ -3,7 +3,7 @@
 .tit-area3 {display: flex; align-items: center; justify-content: space-between;}
 .join-txt3 {font-size: 16px; color: #666; padding-left: 12px;}
 .btn-style-m4 {width: 68px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
-.notice-txt {font-size: 14px; color: #666; margin-top: 20px;}
+.notice-txt {font-size: 14px; color: #666; margin-top: 20px; text-indent: -8px; margin-left: 16px;}
 .notice-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
 /* promotion.css */
 .pop-ip-area .form-address {width: calc(100% - 190px);}
@@ -76,8 +76,17 @@
 .cart-pay-area > p {font-size: 16px; color: #000;}
 .cart-pay-area .radio-style1 {margin-left: 50px;}
 .cart-pay-area .radio-style1 > span {font-size: 16px;}
+.after-pay-area {position: relative; margin: 20px 0 0 0; padding: 0 15px;}
+.after-pay-area .af-arrow-prev {top: 50%; transform: translateY(-50%);}
+.after-pay-area .af-arrow-next {top: 50%; transform: translateY(-50%);}
+.after-pay-area .afpay-box {padding: 30px; border: 1px solid #346dd0; background: #fff; border-radius: 10px;}
+.after-pay-area .afpay-box .afpay-txt {padding-top: 10px;}
+.after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 22px; color: #000;}
+
+
 .pay-agree-check {text-align: center; padding: 70px 0 50px;}
 .cart-content .pay-agree-check + .btn-area-c {margin-top: 0;}
+
 
 
 
@@ -212,7 +221,7 @@
     .cart-list-con .list-con .list-tit .sub-txt {margin: 10px 0 0 0; display: block; font-size: 15px;}
     .cart-list-con .unit-cart .unit-under-count {margin: 10px 0 0 135px;}
     
-    .cart-order-list {padding: 0;}
+    .cart-order-list {padding: 0 0 20px 0;}
     .cart-order-list .tit-area {padding-bottom: 20px; border-bottom: 0;}
     .cart-order-list .tit-area + .cart-list-con {margin-top: 0;}
     .cart-order-list .unit-cart {padding: 20px; align-items: flex-start;}
@@ -227,13 +236,18 @@
     .cart-order-list .order-delivery ul li .form-layout .form-de-order .input-w1 {width: 110px;}
     .cart-order-list .order-delivery ul li .form-layout .form-de-order .input-w1 + span {width: auto; font-size: 15px; line-height: 36px; height: 36px;}
     .cart-order-list .order-delivery ul li .form-layout .in-de-right {width: 100%; margin-top: 10px; justify-content: flex-start;}
-    .cart-order-list .order-delivery ul li .form-layout .in-de-right .btn {width: 50%;}
+    .cart-order-list .order-delivery ul li .form-layout .in-de-right .btn {width: 100%;}
     .cart-order-list .order-delivery ul li .form-layout .in-de-right > * {margin-left: 10px;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right {flex-direction: column; align-items: flex-start; padding-top: 20px; width: 100%;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label {font-size: 14px; padding: 0 0 5px 0; line-height: 17px;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right .input {max-width: 100%;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {width: 100%;}
-    
+    .cart-pay-area {margin: 30px 20px 20px; flex-wrap: wrap;}
+    .cart-pay-area > p {width: 100%;}
+    .cart-pay-area .radio-style1 {margin: 20px 0 0 0; width: 50%;}
+    .cart-pay-area .radio-style1 > span {font-size: 15px;}
+    .notice-txt {padding: 0 20px;}
+    .pay-agree-check {padding: 30px 20px;}
     
 
 
