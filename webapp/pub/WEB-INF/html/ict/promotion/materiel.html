@@ -281,7 +281,7 @@
         <div class="materiel-list">
           <div class="tab-area scrollTab">
             <ul class="tab-btn-list tab-style4">
-              <li class="tabBtn on" id="meterialCont1"><a href="#section-01" class="menu-01">볼트</a></li>
+              <li class="tabBtn" id="meterialCont1"><a href="#section-01" class="menu-01">볼트</a></li>
               <li class="tabBtn" id="meterialCont2"><a href="#section-02" class="menu-02">너트</a></li>
               <li class="tabBtn" id="meterialCont3"><a href="#section-03" class="menu-03">건설공구</a></li>
               <li class="tabBtn" id="meterialCont4"><a href="#section-04" class="menu-04">설비자재</a></li>
@@ -3198,48 +3198,46 @@
       // });
       
       // 스크롤이동 이벤트
-      (function (global, $) { 
-        var $menu = $('.tab-btn-list li.tabBtn');
-        var $contents = $('.scrollCont');
-        var $doc = $('html, body');
-        var winW = $(window).width();
+      var $menu = $('.tab-btn-list li.tabBtn');
+      var $contents = $('.scrollCont');
+      var $doc = $('html, body');
+      var winW = $(window).width();
 
-        // 스크롤 여유분
-        if (winW > 800){
-          var depPd = 278;
-          var btnPd = 328;
-        } else {
-          var depPd = 240;
-          var btnPd = 290;
-        }
-        
-        $(function () { 
-          // 해당 섹션으로 스크롤 이동 
-          $menu.on('click','a', function(e){ 
-            var $target = $(this).parent(), 
-            idx = $target.index(), 
-            section = $contents.eq(idx), 
-            offsetTop = section.offset().top - depPd; 
-            $doc.stop().animate({ scrollTop :offsetTop }, 800); 
-            return false;
-          });
-        }); 
-        // menu class 추가 
-        $(window).scroll(function(){ 
-          var scltop = $(window).scrollTop();
-          $.each($contents, function(idx, item){ 
-            var $target = $contents.eq(idx), 
-            i = $target.index(), 
-            targetTop = $target.offset().top - btnPd; 
-            if (targetTop <= scltop) { 
-              $menu.removeClass('on'); 
-              $menu.eq(idx).addClass('on'); 
-            } if (!(200 <= scltop)) { 
-              $menu.removeClass('on'); 
-            } 
-          }) 
-        }); 
-      }(window, window.jQuery));
+      // 스크롤 여유분
+      if (winW > 800){
+        var depPd = 278;
+        var btnPd = 328;
+      } else {
+        var depPd = 240;
+        var btnPd = 290;
+      }
+      
+      $(function () { 
+        // 해당 섹션으로 스크롤 이동 
+        $menu.on('click','a', function(e){ 
+          var $target = $(this).parent(), 
+          idx = $target.index(), 
+          section = $contents.eq(idx), 
+          offsetTop = section.offset().top - depPd; 
+          $doc.stop().animate({ scrollTop :offsetTop }, 800); 
+          return false;
+        });
+      }); 
+      // menu class 추가 
+      $(window).scroll(function(){ 
+        var scltop = $(window).scrollTop();
+        $contents.each(function(idx, item){ 
+          var $target = $contents.eq(idx);
+          var i = $target.index();
+          targetTop = $target.offset().top - btnPd; 
+          if (targetTop <= scltop) { 
+            $menu.removeClass('on'); 
+            $menu.eq(idx).addClass('on'); 
+          } if (!(200 <= scltop)) { 
+            $menu.removeClass('on'); 
+          } 
+        }) 
+      }); 
       /* 스크롤 이동 탭 [E] */
     });
     
