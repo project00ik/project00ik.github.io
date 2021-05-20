@@ -202,8 +202,8 @@
     .pop-suggestion .user-search .pop-mo-btn .btn {width: 100%;}
     .pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 10px;}
     .user-search.tit-area3 {flex-direction: column; align-items: start;}
-    .pop-password .user-search .pop-mo-check {margin: 10px 0 10px;}
-    .pop-password .user-search .pop-mo-check label + label {margin-left: 20px;}
+    .pop-password .user-search .pop-mo-check {display: block;margin: 10px 0 10px;text-align: left;}
+    .pop-password .user-search .pop-mo-check label + label {margin: 10px 0 0;}
 
 
     
