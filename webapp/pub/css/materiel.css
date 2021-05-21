@@ -55,6 +55,12 @@
 .total-price .info-txt {font-size:14px;}
 .total-price .price {color: #346dd0; font-size: 14px;}
 .total-price .price b {font-size: 22px; vertical-align: text-bottom; font-weight: 700;}
+.chk-list {position: relative;}
+.chk-list .check-style2 {margin-top:-15px; position: absolute; top:50%; left:20px; z-index:1;}
+.chk-list .list-in {margin-top:0; padding-left:40px; border-top:1px solid #d7d7d7; border-bottom:0; position: relative;}
+.chk-list .req {padding:0;}
+.list-con .chk-list .list-in > li > label {width:141px;}
+.chk-list.chk-list-detail {background:#fafafa;}
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     신규상품요청
