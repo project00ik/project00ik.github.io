@@ -275,6 +275,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-slide-open.on .tg-info-txt:after {content:"전체 간단보기"; font-size:16px;}
 .btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-style-ml2.on {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-mml1 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
@@ -440,7 +441,7 @@ button.btn-style-s1 {line-height:25px;}
 :-ms-input-placeholder {color:#bbb; opacity:1;}
 :-mos-input-placeholder {color:#bbb; opacity:1;}
 
-input.input {width:100%; height:38px; padding:0 12px; line-height:38px; border:1px solid #bbb; font-size:14px; color: #000; background:#fff;}
+input.input {width:100%; height:38px; padding:0 12px; line-height:38px; border:1px solid #bbb; font-size:14px; color: #666; background:#fff;}
 input.input:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
 input.input:read-only {background:#fafafa; border:1px solid #bbb; color:#666;}
 input.input:read-only::placeholder {color:#666;}

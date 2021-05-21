@@ -62,6 +62,7 @@
 .list-con .chk-list .list-in > li > label {width:141px;}
 .list-con .btn-detail {margin-top:13px;}
 .chk-list.chk-list-detail {background:#fafafa;}
+.chk-list .form-phone .select {padding:0 20px 0 12px;}
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     신규상품요청
