@@ -9,7 +9,7 @@
 .cart-top .step-wrap > ul > li p span {background:#D7D7D7 ;color:#fff;margin-right:10px;font-size:16px;text-align:center;display:inline-block;width:40px;line-height:40px;border-radius:50%;}
 .cart-top .step-wrap > ul > li.on p  {color:#346DD0 ;}
 .cart-top .step-wrap > ul > li.on p span {background:#346DD0; color:#fff;}
-.cart-content .tit-type1-2 > em  {font-size:20px; font-weight:normal; vertical-align:text-bottom;}
+.cart-content .tit-type1-2 > em  {font-size:20px; font-weight:normal;}
 .cart-list-con {}
 .cart-list-con .tit-area {margin-bottom:30px;}
 .cart-list-con + .cart-list-con {margin-top:100px;}
