@@ -6,9 +6,7 @@
 .notice-txt {font-size: 14px; color: #666; margin-top: 20px; text-indent: -8px; margin-left: 16px;}
 .notice-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
 
-
-
-
+.tab-area.pd-cont-none .tab-cont {padding: 0;}
 
 
 /* ==========================================================================
@@ -85,7 +83,7 @@
 .list-file-con .btn-r-area {padding: 0 0 20px;}
 
 /* .mypage-cont .my-main .join-list-con .form-layout {max-width: 503px;} */
-.mypage-cont .my-main .join-list-con .list-con .list-in > li > label {width: 130px;}
+.mypage-cont .list-con .list-in > li > label {width: 130px;}
 .mypage-cont .my-main .btn-area-c {padding-top: 70px;}
 
 .my-leave {padding: 30px 20px; border-bottom: 1px solid #d7d7d7;}
@@ -106,6 +104,22 @@
 .list-delivery ul li .de-btn-area {font-size: 0; padding-bottom: 0;}
 .list-delivery ul li .de-btn-area .btn {display: block;}
 .list-delivery ul li .de-btn-area .btn + .btn {margin-top: 10px;}
+
+/* 나의리뷰 */
+.top-flex-area {padding: 30px 0 20px; display: flex; border-bottom: 1px solid #bbb;}
+.top-flex-area .form-layout {margin-left: 20px;}
+.top-flex-area .form-layout .btn {margin-left: 5px;}
+
+.my-detail.detail-review {border-top: 1px solid #bbb; margin-top: 20px;}
+.my-detail.detail-review ul {border: 0;}
+.my-detail.detail-review ul li {padding: 0; border-bottom: 0;}
+.my-detail.detail-review > ul > li {border-bottom: 1px solid #bbb;}
+.my-detail.detail-review ul li:hover {background: none;}
+.my-detail .unit-cart {padding: 30px 0; justify-content: space-between;}
+.my-detail .unit-cart .unit-area .product-name {width: 644px;}
+.my-detail .unit-cart .standard {width: 644px;}
+.my-detail .unit-cart .unit-under-btn {width: 118px; padding: 0; display: flex; align-items: center;}
+
 
 
 
