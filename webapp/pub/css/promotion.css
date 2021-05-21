@@ -117,10 +117,13 @@
 .pop-cart-print .table-area.table-style1 table tbody td.total i{padding:0 7px;}
 .pop-restock .pop-write td .before-num {display: block;}
 .before-num {display: block;}
-.before-num p{padding-left: 15px;position: relative;line-height: 19px}
-.before-num p::before{content: "1.";position: absolute;top:0;left: 0;}
-.before-num p:nth-child(2):before{content: "2."}
-.before-num p:nth-child(3):before{content: "3."}
+.before-num ul li{padding-left: 15px;position: relative;line-height: 19px}
+.before-num ul li::before{content: "1.";position: absolute;top:0;left: 0;}
+.before-num ul li:nth-child(2):before{content: "2."}
+.before-num ul li:nth-child(3):before{content: "3."}
+.before-num ul li:nth-child(4):before{content: "4."}
+.before-num ul li:nth-child(5):before{content: "5."}
+.before-num ul li:nth-child(6):before{content: "6."}
 .pop-cart-addr1 ul li{display: flex;padding:20px 0;border-top: 1px solid #BBBBBB;}
 .pop-cart-addr1 ul li.none{display: block;text-align: center;padding:100px 0;}
 .pop-cart-addr1 ul li.none p{padding-top:80px;background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
