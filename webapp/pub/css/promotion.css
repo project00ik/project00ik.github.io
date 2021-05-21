@@ -23,6 +23,18 @@
 .promotion-detail .promt-cont img {max-width: 100%;}
 .promt-product-list .tit-area {margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
 
+.pop-ip-area .form-address {width: calc(100% - 190px);}
+.pop-ip-area .form-address .form-layout input + button {margin-left: 5px;}
+.pop-suggestion .user-search .pop-mo-form {display: flex; flex:1;}
+.pop-suggestion .user-search .pop-mo-form .form-area {width: 100%;}
+.pop-suggestion .user-search .pop-mo-btn {display: flex; margin-left: 5px;}
+.pop-suggestion .user-search .pop-mo-btn .btn {margin-left: 0;}
+.pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 5px;} 
+.pop-password .user-search .pop-mo-check {display: flex;}
+.pop-password .user-search .pop-mo-check label + label {margin-left: 30px;}
+.pop-password .tit-area3 + .pop-write {margin-top: 10px;}
+.pop-password .pop-ip-area  {align-items: flex-start;}
+
 
 
 /* 열린소싱상품제안 */
@@ -97,6 +109,15 @@
   .promotion-detail .promt-top .promt-date span {font-size: 14px;}
   .promotion-detail .promt-cont {padding: 30px 36px; border-bottom:10px solid #f5f5f5;}
   .promt-product-list .tit-area {border-bottom: 0; padding-bottom: 0; align-items: center;}
+
+  .pop-ip-area .form-address {width: 100%;}
+  .pop-suggestion .user-search {flex-wrap: wrap;}
+  .pop-suggestion .user-search .pop-mo-btn {width: 100%; margin: 10px 0 0 0;}
+  .pop-suggestion .user-search .pop-mo-btn .btn {width: 100%;}
+  .pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 10px;}
+  .user-search.tit-area3 {flex-direction: column; align-items: start;}
+  .pop-password .user-search .pop-mo-check {display: block;margin: 10px 0 10px;text-align: left;}
+  .pop-password .user-search .pop-mo-check label + label {margin: 10px 0 0;}
 
 
 
