@@ -218,6 +218,9 @@
 /* btn-r-area2 PC에서는 오른쪽정렬 / 모바일에서는 왼쪽정렬 형 */
 .btn-r-area2 {display: flex; justify-content: flex-end; padding:20px 0;}
 .btn-r-area2 .btn + .btn {margin-left: 5px;}
+/* btn-r-area3 PC에서는 오른쪽정렬 / 모바일에서는 여백없이 붙는 버튼 */
+.btn-r-area3 {display: flex; justify-content: flex-end; padding:0 0 20px;} /* 리스트 하단 버튼 */
+.btn-r-area3 > .btn + .btn {margin-left:10px;}
 .btn-full-area {width:100%; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .btn-full-area .btn + .btn {margin-left:10px;}
 .btn-full-area > .btn {flex:1;}
@@ -420,10 +423,6 @@ button.btn-style-s1 {line-height:25px;}
 .align-area > .right {float:right; text-align:right;}
 
 /* 폼요소 */
-.form-layout {}
-.form-layout + .form-layout {margin-top:10px;}
-.form-area + .form-area {margin-top:10px;}
-
 .spinner {width:112px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative; background:#fff;}
 .spinner input {width:100%; height:38px; line-height:38px; text-align:center; font-size:16px; vertical-align:top; font-weight:500; color:#666;}
 .spinner .down {width:38px; height:38px; position:absolute; top:0; left:0; z-index:1; font-size:0; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
@@ -450,6 +449,15 @@ select.select:disabled {background:url(../images/common/arrow_select_disabled.sv
 select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
 
 input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 12px center no-repeat;}
+input[type="date"]::-webkit-clear-button, 
+input[type="date"]::-webkit-inner-spin-button {display: none;}
+input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:none;} 
+
+/* 폼 레이아웃 */
+.form-layout {}
+.form-layout + .form-layout {margin-top:10px;}
+.form-area + .form-area {margin-top:10px;}
+[class^=form-layout] .bar {font-size: 16px; color: #666; height: 35px; line-height: 33px; padding: 0 5px; display: inline-block; vertical-align: middle;}
 
 .form-layout {width:100%; display:flex;}
 .form-layout .input {flex:1;}
@@ -465,6 +473,14 @@ input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px;
 .form-layout.form-email .input + .select {margin-left:5px;}
 .form-layout .w-auto {flex:inherit; width:auto;}
 .form-layout .bar {font-size: 16px; color: #666;}
+.form-layout3 {display:flex;}
+.form-layout3 > * {width:100%; flex:1;}
+.form-layout3 .form-inline {width:100%; display:flex; }
+.bt-btn-line .list-half-style .list-w100 {width:100%; display: flex;}
+.list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; flex:1;}
+.list-w100 .form-layout3 .form-inline {display:flex; flex:1;}
+.list-con .list-in .btn-right {width:100%; display:block; text-align: right;}
+.select.w127 {width:127px; flex: none; margin-right:10px;}
 
 .form-phone .select {width: 86px; flex: inherit;}
 .form-phone .input {flex:1;}
@@ -584,6 +600,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 /* 파일업로드(as-is그대로 영역) */
 .file-upload-area {width:100%; min-height:100px; display:block; border:1px solid #bbb;}
+
+
 
 /* ==========================================================================
     유닛 관련
@@ -905,6 +923,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .history-bak {width:18px; height:18px; font-size:0; display:inline-block; position: absolute; top:9px; left:20px; z-index:1; background: url(../images/common/arrow_history_bak.svg) 0 0 no-repeat;}
     .btn-r-area2 {padding:20px; justify-content:start;}
     .btn-r-area > .btn {flex:1; width:100%;}
+    .btn-r-area3 {padding:0 20px 10px;}
+    .btn-r-area3 > .btn {width:100%; flex:1; min-width:auto;}
+    .btn-r-area3 > .btn + .btn {margin-left:-1px;}
 
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
@@ -1025,7 +1046,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     /* 폼요소 */
     input.input {height: 36px; line-height: 36px;}
-    input.datepicker {background: none;}
+    input.datepicker {background: url(../images/common/mo_icon_date.svg) right 12px center no-repeat;}
     select.select {line-height: 34px; height: 36px;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
@@ -1041,6 +1062,11 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .check-style1 > span {font-size: 14px;}
     .check-style2 > span {font-size: 14px;}
     .form-layout .bar {font-size: 14px;}
+    .list-w100 .form-layout3 {width:100%; display:block; flex:none;}
+    .list-w100 .form-layout3 .form-inline {margin-top:10px;}
+    .list-w100 .form-layout3 .form-inline .datepicker {}
+    .form-layout3 .w127 {width:100%;}
+    
 
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
