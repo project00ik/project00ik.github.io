@@ -107,18 +107,36 @@
 
 /* 나의리뷰 */
 .top-flex-area {padding: 30px 0 20px; display: flex; border-bottom: 1px solid #bbb;}
-.top-flex-area .form-layout {margin-left: 20px;}
+.top-flex-area .form-layout {flex: inherit; max-width: 500px; margin-left: 20px;}
 .top-flex-area .form-layout .btn {margin-left: 5px;}
 
-.my-detail.detail-review {border-top: 1px solid #bbb; margin-top: 20px;}
-.my-detail.detail-review ul {border: 0;}
-.my-detail.detail-review ul li {padding: 0; border-bottom: 0;}
-.my-detail.detail-review > ul > li {border-bottom: 1px solid #bbb;}
+.my-detail.detail-review {margin-top: 20px; padding-bottom: 30px;}
+.my-detail.detail-review ul li {padding: 0;}
 .my-detail.detail-review ul li:hover {background: none;}
+.my-detail.detail-review ul li .review-text {max-width: 688px;}
+.my-detail.detail-review ul li .review-satisfaction-area {flex-direction: column;}
+.my-detail.detail-review ul li .review-satisfaction-area .satis-small {padding-left: 0;}
+.my-detail.detail-review ul li .review-satisfaction-area .satis-large:after {display: none;}
+.my-detail .unit-cart .unit-under-btn li {border-bottom: 0;}
+
+.my-rew-cont {position: relative; padding: 30px 44px 30px 30px; margin-bottom:30px; min-height:174px; background: #fafafa;}
+
+.my-detail.detail-review ul li .review-btns {font-size: 0; width: 118px; position: absolute; top: 50%; right: 30px; transform: translateY(-50%);}
+.my-detail.detail-review ul li .review-btns .btn + .btn {margin-top: 10px;}
+.my-detail.detail-review ul li .review-front-img {bottom: auto; top: 50%; right: 178px; transform: translateY(-50%);}
+.my-detail.detail-review ul li .review-text {margin: 0; padding: 20px 0 0 0;} 
+.my-detail.detail-review ul li .review-satisfaction-area .satis-small {padding-top: 20px;display: none;}
+.my-detail.detail-review ul li.on {background: #fff;}
+.my-detail.detail-review ul li.on .review-btns {top: 30px; transform:none;}
+.my-detail.detail-review ul li.on .review-satisfaction-area .satis-small {display: inherit;}
+.my-detail.detail-review ul li.on .review-text {max-width: 778px;}
+
+
 .my-detail .unit-cart {padding: 30px 0; justify-content: space-between;}
-.my-detail .unit-cart .unit-area .product-name {width: 644px;}
-.my-detail .unit-cart .standard {width: 644px;}
-.my-detail .unit-cart .unit-under-btn {width: 118px; padding: 0; display: flex; align-items: center;}
+.my-detail .unit-cart .unit-area .product-name {width: 630px;}
+.my-detail .unit-cart .standard {width: 630px;}
+.my-detail .unit-cart .unit-under-btn {display: flex; align-items: center; border: 0;}
+
 
 
 

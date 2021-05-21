@@ -108,7 +108,7 @@
 .detail-review ul li .review-info p {margin-right: 40px; width: 60px; font-size: 14px; line-height: 14px; color: #999;}
 .detail-review ul li .review-info p:last-child {margin-right: 0; width: auto;}
 .detail-review ul li .review-satisfaction-area {display: flex;}
-.detail-review ul li .review-satisfaction-area .satis-large {padding-right: 40px; display: flex; justify-content: space-between; position: relative;}
+.detail-review ul li .review-satisfaction-area .satis-large {padding-right: 40px; display: flex; position: relative;}
 .detail-review ul li .review-satisfaction-area .satis-large:after {content: ''; display: inline-block; position: absolute; top: 6px; right: 0; width: 1px; height: 16px; background: #d7d7d7;}
 .detail-review ul li .review-satisfaction-area .satis-large .tit {width: 83px; margin-right: 10px; font-size: 18px; line-height: normal; color: #000;}
 .detail-review ul li .review-satisfaction-area .satis-small {padding-left: 40px; display: flex;}
@@ -116,7 +116,7 @@
 .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list .tit {margin-right: 10px; font-size: 16px; line-height: normal; color: #333; }
 .detail-review ul li .review-option {display: flex; padding-top: 25px;}
 .detail-review ul li .review-option p {font-size: 18px; line-height: 20px; color: #999; padding-right: 10px;}
-.detail-review ul li .review-text {display: block; margin-top: 10px; padding: 0 100px 6px 0; font-size: 16px; line-height: 19px; color: #000;}
+.detail-review ul li .review-text {max-width: 1000px; display: block; margin-top: 10px; padding-bottom: 6px; font-size: 16px; line-height: 19px; color: #000;}
 .detail-review ul li .review-front-img {position: absolute; bottom: 20px; right: 0;}
 .detail-review ul li .review-front-img img {max-width: 70px; max-height: 70px; background: #d7d7d7;}
 .detail-review ul li .review-cont-img {display: none;}
@@ -426,7 +426,6 @@
     .detail-review ul li .review-info {padding-bottom: 6px;}
     .detail-review ul li .review-info p {font-size: 12px; margin-right: 20px;}
     .detail-review ul li .review-satisfaction-area {display: block;}
-    .detail-review ul li .review-satisfaction-area .satis-large {justify-content: flex-start;}
     .detail-review ul li .review-satisfaction-area .satis-large:after {display: none;}
     .detail-review ul li .review-satisfaction-area .satis-large .tit {font-size: 15px; width: auto;}
     .detail-review ul li .review-satisfaction-area .satis-small {padding-top: 5px; padding-left: 0; flex-wrap: wrap;}
