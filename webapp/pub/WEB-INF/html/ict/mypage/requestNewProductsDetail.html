@@ -234,14 +234,15 @@
                 </p>
               </div>
               <div class="cart-list-con">
-                <div class="list-con">
+                <div class="list-con allChkArea allSlideTgArea">
                   <div class="list-tit">
-                    <label class="check-style2"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
-                    <button class="btn btn-slide-open "><span class="tg-info-txt">전체 간단보기</span></button>
+                    <label class="check-style2 allChk"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
+                    <button class="btn btn-slide-open allSlideBtn"><span class="tg-info-txt">전체상품 상세보기</span></button>
                   </div>
-                  <div class="">
+                  <!-- 상품추가시 생성 영역 -->
+                  <div class="tgSlide">
                     <div class="chk-list">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                       <ul class="list-in list-half-style">
                         <li>
                           <label for="">상품명 <i class="req">*</i></label>
@@ -290,82 +291,204 @@
                           <div class="form-layout">
                             <input type="number" name="" class="input" value="" placeholder="제조사를 입력해 주세요.">
                           </div>
+                        </li>
+                        <li class="list-btn">
+                          <button class="btn btn-detail tgSlideBtn">상세내용</button>
                         </li>
                       </ul>
                     </div>
-                    <div class="chk-list chk-list-detail">
-                      <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                    <div class="chk-list chk-list-detail tgSlideCont">
                       <ul class="list-in list-half-style">
                         <li>
-                          <label for="">상품명 <i class="req">*</i></label>
-                          <div class="form-layout">
-                            <input type="number" name="" class="input" value="" placeholder="상품명을 입력해 주세요.">
-                          </div>
-                        </li>
-                        <li>
-                          <label for="">모델명 <i class="req">*</i></label>
-                          <div class="form-layout">
-                            <input type="number" name="" class="input" value="" placeholder="모델명을 입력해 주세요.">
-                          </div>
-                        </li>
-                        <li>
-                          <label for="">규격 <i class="req">*</i></label>
-                          <div class="form-layout">
-                            <input type="number" name="" class="input" value="" placeholder="규격을 입력해 주세요.">
-                          </div>
-                        </li>
-                        <li>
-                          <label for="">수량 <i class="req">*</i></label>
-                          <div class="form-layout">
-                            <div class="in-de-order">
-                              <div class="spinner">
-                                <input type="text" value="1" maxlength="3" title="수량조절">
-                                <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
-                              </div>
-                              <span class="bar">EA</span>
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <label for="">예산단가<span class="sub-txt">(VAT별도) </span><i class="req">*</i></label>
+                          <label for="">사용용도</label>
                           <div class="form-layout">
                             <input type="number" name="" class="input" value="" placeholder="">
                           </div>
                         </li>
                         <li>
-                          <label for="">금액</label>
+                          <label for="">관련SITE</label>
                           <div class="form-layout">
                             <input type="number" name="" class="input" value="" placeholder="">
                           </div>
                         </li>
                         <li>
-                          <label for="">제조사 <i class="req">*</i></label>
+                          <label for="">상품별요구사항</label>
                           <div class="form-layout">
-                            <input type="number" name="" class="input" value="" placeholder="제조사를 입력해 주세요.">
+                            <input type="number" name="" class="input" value="" placeholder="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">원산지코드</label>
+                          <div class="form-layout form-search">
+                            <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                            <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">협력사 지정</label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="협력사지정 입력후 첨부파일을 등록할수 있습니다.">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">협력사 연락처</label>
+                          <div class="form-layout form-phone">
+                            <select class="select">
+                              <option value="" selected="">02</option>
+                              <option value="">010</option>
+                            </select>
+                            <span class="bar">-</span>
+                            <input type="number" name="" maxlength="4" class="input" value="5443">
+                            <span class="bar">-</span>
+                            <input type="number" name="" maxlength="4" class="input" value="4421">
+                          </div>
+                        </li>
+                        <li class="list-w100">
+                          <label for="">협력사 첨부파일</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="">
+                            <button class="btn btn-style-m1">업로드 / 삭제</button>
+                          </div>
+                        </li>
+                        <li class="list-w100">
+                          <label for="">상품 첨부파일</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="">
+                            <button class="btn btn-style-m1">업로드 / 삭제</button>
                           </div>
                         </li>
                       </ul>
                     </div>
                   </div>
+                  <!--// 상품추가시 생성 영역 -->
+                  <!-- 상품추가시 생성 영역 -->
+                  <div class="tgSlide">
+                    <div class="chk-list">
+                      <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                      <ul class="list-in list-half-style">
+                        <li>
+                          <label for="">상품명 <i class="req">*</i></label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="상품명을 입력해 주세요.">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">모델명 <i class="req">*</i></label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="모델명을 입력해 주세요.">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">규격 <i class="req">*</i></label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="규격을 입력해 주세요.">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">수량 <i class="req">*</i></label>
+                          <div class="form-layout">
+                            <div class="in-de-order">
+                              <div class="spinner">
+                                <input type="text" value="1" maxlength="3" title="수량조절">
+                                <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+                              </div>
+                              <span class="bar">EA</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">예산단가<span class="sub-txt">(VAT별도) </span><i class="req">*</i></label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">금액</label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">제조사 <i class="req">*</i></label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="제조사를 입력해 주세요.">
+                          </div>
+                        </li>
+                        <li class="list-btn">
+                          <button class="btn btn-detail tgSlideBtn">상세내용</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="chk-list chk-list-detail tgSlideCont">
+                      <ul class="list-in list-half-style">
+                        <li>
+                          <label for="">사용용도</label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">관련SITE</label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">상품별요구사항</label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">원산지코드</label>
+                          <div class="form-layout form-search">
+                            <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                            <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">협력사 지정</label>
+                          <div class="form-layout">
+                            <input type="number" name="" class="input" value="" placeholder="협력사지정 입력후 첨부파일을 등록할수 있습니다.">
+                          </div>
+                        </li>
+                        <li>
+                          <label for="">협력사 연락처</label>
+                          <div class="form-layout form-phone">
+                            <select class="select">
+                              <option value="" selected="">02</option>
+                              <option value="">010</option>
+                            </select>
+                            <span class="bar">-</span>
+                            <input type="number" name="" maxlength="4" class="input" value="5443">
+                            <span class="bar">-</span>
+                            <input type="number" name="" maxlength="4" class="input" value="4421">
+                          </div>
+                        </li>
+                        <li class="list-w100">
+                          <label for="">협력사 첨부파일</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="">
+                            <button class="btn btn-style-m1">업로드 / 삭제</button>
+                          </div>
+                        </li>
+                        <li class="list-w100">
+                          <label for="">상품 첨부파일</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="">
+                            <button class="btn btn-style-m1">업로드 / 삭제</button>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--// 상품추가시 생성 영역 -->
                 </div>
-                <!--// 장바구니 목록 -->
-                
-              </div>
-              <div class="btn-r-area">
-                <button class="btn btn-style-m3">조회</button>
               </div>
             </div>
-            <div class="list-con list-file-con m-line-hide">
-              <div class="btn-r-area3">
-                <a href="javascript:;" class="btn btn-style-m4">신규</a>
-                <a href="javascript:;" class="btn btn-style-m1">상품일괄요청</a>
-                <a href="javascript:;" class="btn btn-style-m1">기등록매핑취소</a>  
-              </div>
-              <div class="file-con">
-                <div class="in-grid-size w-all">
-                  그리드영역
-                </div>
-              </div>
+            <div class="btn-area-c">
+              <button class="lyClose btn btn-style-ml1">삭제</button>
+              <button class="lyClose btn btn-style-ml2">임시저장</button>
             </div>
         </div>
 
@@ -534,11 +657,8 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       toggleSlideArea(); // 토글영역
-      toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
-      $(window).resize(function(){
-        toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
-      })
-            
+      allChecked(); // all checked
+      allSlideTgArea(); // 신규요청 전체 간단보기 이벤트
 
 
     });

@@ -47,7 +47,7 @@
     신규상품요청
 ========================================================================== */
 .request-info {width:100%; margin-top: 10px; padding:20px 0; border-top:1px solid #bbb; display:flex; justify-content: space-between;}
-.request-info .ea {font-size: 16px;}
+.request-info .ea {font-size: 16px; line-height:26px;}
 .request-info .ea .tit {font-weight: 500; vertical-align: top;}
 .request-info .ea > b {color: #346dd0; font-weight: normal; vertical-align: top;}
 .total-price {}
@@ -60,6 +60,7 @@
 .chk-list .list-in {margin-top:0; padding-left:40px; border-top:1px solid #d7d7d7; border-bottom:0; position: relative;}
 .chk-list .req {padding:0;}
 .list-con .chk-list .list-in > li > label {width:141px;}
+.list-con .btn-detail {margin-top:13px;}
 .chk-list.chk-list-detail {background:#fafafa;}
 @media only screen and (max-width: 800px){
   /* ==========================================================================

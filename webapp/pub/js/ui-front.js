@@ -411,6 +411,33 @@ function toggleSlideArea(){
   });
 }
 
+function allSlideTgArea(){
+  // 신규요청 전체 간단보기 이벤트
+  $('.allSlideTgArea').each(function(){
+    $(this).find('.allSlideBtn').on('click', function(){
+      var $allBt = $(this);
+      $allBt.toggleClass('on');
+      if($allBt.hasClass('on')){
+        $('.allSlideTgArea .tgSlideBtn').addClass('on');
+        $('.allSlideTgArea .tgSlideCont').slideDown();
+      } else {
+        $('.allSlideTgArea .tgSlideBtn').removeClass('on');
+        $('.allSlideTgArea .tgSlideCont').slideUp();
+      }
+    });
+    // 신규요청 상세 내용 개별 클릭시 전체상품 상세보기 버튼 on/off 이벤트
+    $(this).find(".tgSlide").each(function(){
+      $(this).find('.tgSlideBtn').on('click', function(){
+        if($('.allSlideTgArea .tgSlideBtn.on').length < 1){
+          $('.allSlideBtn').removeClass('on');
+        } else {
+          $('.allSlideBtn').addClass('on');
+        }
+      });
+    });
+  });
+}
+
 function toggleAreaClose(){
   // 닫기 버튼에  onclick="toggleAreaClose()" 넣어서 사용
   $('.tgAreaCont').hide();

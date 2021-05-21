@@ -285,6 +285,9 @@ button.btn-style-s1 {line-height:25px;}
 .tooltip-box > p {font-size: 13px; color: #666;}
 .tooltip-close {width:18px; height:18px; background: url(../images/common/btn_tooltip_close.svg) 0 0 no-repeat; display:inline-block; font-size:0; position: absolute; top:5px; right:5px; z-index: 1;}
 .btn-refresh {width: 36px; height: 36px; margin-left:5px; display:inline-block; font-size:0; background: url(../images/common/btn_refresh.svg) 0 0 no-repeat;}
+.btn-detail {font-size:14px; line-height:21px;}
+.btn-detail::after {content:''; width: 18px; height: 21px; margin-left:5px; display:inline-block; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0; vertical-align: top;}
+.btn-detail.on::after {transform: rotate(180deg);}
 
 /* 플래그 */
 .flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 7px;}
@@ -478,7 +481,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout3 {display:flex;}
 .form-layout3 > * {width:100%; flex:1;}
 .form-layout3 .form-inline {width:100%; display:flex; }
-.bt-btn-line .list-half-style .list-w100 {width:100%; display: flex;}
+.list-con .list-in .list-w100 {width:100%; display: flex;}
 .bt-btn-line .list-half-style .list-line {border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
 .list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; flex:1;}
 .list-w100 .form-layout3 .form-inline {display:flex; flex:1;}
@@ -491,6 +494,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .list-con > .tit-type2-1:first-child {padding-top:0;}
 .list-con .tit-area3 {align-items: flex-end;}
 .list-con .list-in > li > label .sub-txt {font-size:14px; margin-left:0; line-height:1.1;}
+.list-con .list-in > li.list-btn {justify-content: flex-end;}
 
 textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px; resize: none;}
 textarea.textarea:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
