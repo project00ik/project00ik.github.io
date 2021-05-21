@@ -271,6 +271,8 @@ button.btn-style-s1 {line-height:25px;}
 .btn-slide-open .tg-info-txt {margin-right:5px; font-weight:500; font-size:16px; color:#666; vertical-align:top; line-height:1.1;}
 .btn-slide-open::after {content:''; width: 18px; height: 18px; display:inline-block; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0;}
 .btn-slide-open.on::after {transform: rotate(180deg);}
+.btn-slide-open.on .tg-info-txt {font-size:0;}
+.btn-slide-open.on .tg-info-txt:after {content:"전체 간단보기"; font-size:16px;}
 .btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
