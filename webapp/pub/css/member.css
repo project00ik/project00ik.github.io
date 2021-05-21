@@ -19,6 +19,7 @@
 .list-con {padding-top: 30px;}
 .join-list-con ~ .join-list-con {padding-top: 50px;}
 .list-con .list-in {margin-top: 10px; padding-top: 20px; border-top: 1px solid #bbb; border-bottom: 1px solid #d7d7d7;}
+.join-content .list-con .list-btn-area .form-list-checkradio li {width: 25%;}
 .list-con .list-in > li {padding: 0 20px 20px 20px; display: flex; align-items: center;}
 .list-con .list-in > li > label {width: 180px; font-size: 16px; display: block;}
 .list-con .list-in > li input + button {margin-left: 5px;} 

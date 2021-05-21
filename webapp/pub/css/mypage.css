@@ -80,6 +80,14 @@
 .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {display: flex;}
 .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div .input {flex:1;}
 .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div .btn {margin-left: 5px;}
+.cart-order-list .order-delivery ul li .order-de-title {font-size: 16px; color: #000; font-weight: 500; width: 176px; padding-left: 20px;}
+.cart-order-list .order-delivery ul li .order-de-txt {font-size: 14px; color: #666;}
+.cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row {display: flex;}
+.cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row + .de-txt-row {padding-top: 10px;}
+.cart-order-list .order-delivery ul li .order-de-txt p {margin-left: 10px;}
+.cart-order-list .order-delivery ul li .order-de-txt p:first-child {margin-left: 0;}
+.cart-order-list .order-delivery ul li .order-de-txt p:before {content: ''; display: inline-block; width: 1px; height: 12px; background: #bbb; margin-right: 10px;}
+.cart-order-list .order-delivery ul li .order-de-txt p:first-child::before {display: none;}
 .cart-pay-area {margin-top: 20px; padding: 20px; background: #fafafa; display: flex; align-items: center;}
 .cart-pay-area > p {font-size: 16px; color: #000;}
 .cart-pay-area > p span {vertical-align: top; display: inline-block;}
@@ -170,7 +178,7 @@
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
-.form-list-checkradio li {width: 33.333%;}
+.list-con .list-btn-area .form-list-checkradio li {width: 33.333%;}
 .list-btn-area .form-layout {max-width: 100%;}
 .join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
 .list-con.bt-btn-line {padding-top: 0;}
@@ -178,7 +186,7 @@
 .list-con.bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
 .list-file-con .btn-r-area {padding: 0 0 20px;}
 
-.mypage-cont .my-main .join-list-con .form-layout {max-width: 503px;}
+/* .mypage-cont .my-main .join-list-con .form-layout {max-width: 503px;} */
 .mypage-cont .my-main .join-list-con .list-con .list-in > li > label {width: 130px;}
 .mypage-cont .my-main .btn-area-c {padding-top: 70px;}
 
