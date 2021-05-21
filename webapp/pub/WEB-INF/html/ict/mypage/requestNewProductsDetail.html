@@ -172,98 +172,80 @@
             <div class="tit-area2">
               <p class="tit-type2">신규상품요청</p>
             </div>
-            <div class="list-con bt-btn-line">
+            <div class="list-con">
+              <p class="tit-type2-1">기본정보</p>
               <ul class="list-in list-half-style">
-                <li class="list-w100">
-                  <label for="">요청일</label>
-                  <div class="form-layout3">
-                    <select class="select w127" name="" id="" >
-                      <option value="">요청일자</option>
-                      <option value="">당일</option>
-                      <option value="">일주일</option>
-                      <option value="">한달</option>
-                      <option value="">세달</option>
-                    </select>
-                    <div class="form-inline">
-                      <input type="text" class="datepicker mo-hide" value="">
-                      <input type="date" class="datepicker pc-hide" value="">
-                      <em class="bar">-</em>
-                      <input type="text" class="datepicker mo-hide" value="">
-                      <input type="date" class="datepicker pc-hide" value="">
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <label for="">상품명</label>
+                <li class="list-w100 list-line">
+                  <label for="">요청명 </label>
                   <div class="form-layout">
-                    <input type="number" name="" class="input" value="">
-                  </div>
-                </li>
-                <li>
-                  <label for="">진행상태</label>
-                  <div class="form-layout">
-                    <select class="select" name="" id="">
-                      <option value="">전체</option>
-                      <option value="">임시저장</option>
-                      <option value="">검토승인요청(중)</option>
-                      <option value="">승인거부</option>
-                      <option value="">요청</option>
-                      <option value="">운영사접수</option>
-                      <option value="">접수거부</option>
-                      <option value="">입찰중</option>
-                      <option value="">견적중</option>
-                      <option value="">상품등록중</option>
-                      <option value="">기등록상품</option>
-                      <option value="">고객사승인요청</option>
-                      <option value="">견적유찰</option>
-                      <option value="">고객사반려</option>
-                      <option value="">상품등록완료</option>
-                      <option value="">신규상품승인요청</option>
-                      <option value="">고객사승인반려</option>
-                      <option value="">신규상품승인완료</option>
-                    </select>
-                  </div>
-                </li>
-                <li>
-                  <label for="">요청번호</label>
-                  <div class="form-layout">
-                    <input type="text" name="" class="input" value="" placeholder="">
-                  </div>
-                </li>
-                <li>
-                  <label for="">요청명</label>
-                  <div class="form-layout">
-                    <input type="text" name="" class="input" value="">
-                  </div>
-                </li>
-                <li>
-                  <label for="">관리번호</label>
-                  <div class="form-layout">
-                    <input type="text" name="" class="input" value="">
-                  </div>
-                </li>
-                <li>
-                  <label for="">요청사업장</label>
-                  <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
-                  </div>
-                </li>
-                <li>
-                  <label for="">요청부서</label>
-                  <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                    <input type="text" name="" class="input" value="" placeholder="요청명을 입력해 주세요.">
                   </div>
                 </li>
                 <li>
                   <label for="">요청자</label>
-                  <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="홍길동" placeholder="" readonly="readonly">
+                  </div>
+                </li>
+                <li>
+                  <label for="">연락처</label>
+                  <div class="form-layout form-phone">
+                    <select class="select">
+                      <option value="" selected>02</option>
+                      <option value="">010</option>
+                    </select>
+                    <span class="bar">-</span>
+                    <input type="number" name="" maxlength="4" class="input" value="5443">
+                    <span class="bar">-</span>
+                    <input type="number" name="" maxlength="4" class="input" value="4421">
+                  </div>
+                </li>
+                <li>
+                  <label for="">이메일</label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="test@tes.com" placeholder="">
+                  </div>
+                </li>
+                <li>
+                  <label for="">사업장</label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="케이티커머스" placeholder="" readonly="readonly">
+                  </div>
+                </li>
+                <li>
+                  <label for="">부서</label>
+                  <div class="form-layout">
+                    <input type="text" name="" class="input" value="IT정보보안팀" placeholder="" readonly="readonly">
                   </div>
                 </li>
               </ul>
+              <div class="tit-area3">
+                <p class="tit-type2-1">상품정보</p>
+                <p class="right-area">
+                  <button class="btn btn-small-blue">상품추가</button>
+                </p>
+              </div>
+              <div class="request-info">
+                <p class="ea"><span class="tit">요청상품</span> : <b>2</b>개</p>
+                <p class="total-price">
+                  <span class="tit">구매총액</span>
+                  <span class="info-txt">(VAT별도): </span>
+                  <span class="price"><b>100,000</b>원</span>
+                </p>
+              </div>
+              <div class="cart-list-con">
+                <div class="list-con tgSlide open">
+                  <p class="list-tit">
+                    <label class="check-style2"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
+                    <button class="btn btn-slide-open tgSlideBtn on">더보기</button>
+                  </p>
+                  <div class="chk-list tgSlideCont">
+                    
+                  </div>
+                </div>
+                <!--// 장바구니 목록 -->
+                
+              </div>
               <div class="btn-r-area">
                 <button class="btn btn-style-m3">조회</button>
               </div>
@@ -447,6 +429,13 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       toggleSlideArea(); // 토글영역
+      toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
+      $(window).resize(function(){
+        toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
+      })
+            
+
+
     });
   </script>
   <!-- javascript -->
