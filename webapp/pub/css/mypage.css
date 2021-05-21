@@ -33,7 +33,6 @@
 .cart-order-list .unit-cart .normal-price {margin: 0;}
 
 /* 장바구니 주문서 */
-
 .list-con .list-in .one-form {width: 100%;}
 .list-con .list-in .two-form .form-layout > :first-child {flex:1;}
 .list-con .list-in .two-form .form-layout > :last-child {margin-left: 5px; width: 118px;}
@@ -41,7 +40,7 @@
 .list-con .list-in .two-m4-btn {display: flex;}
 .list-con .list-in .two-m4-btn .btn {margin-left: 5px;}
 
-.cart-list-con .list-con .list-tit .btn-slide-open {position: absolute; top: 50%; right: 20px; transform:translateY(-50%);}
+.cart-list-con .list-con .list-tit .btn-slide-open {position: absolute; top: 50%; right: 20px; margin-top: -9px;}
 .cart-content .join-list-con {padding: 20px 0 30px;}
 .cart-content .join-list-con ~ .join-list-con {padding: 20px 0 30px;}
 .cart-content .list-con {padding-top: 0;}
@@ -94,9 +93,14 @@
 .after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 22px; color: #000;}
 .after-pay-area .afpay-box .radio-style1 {width: 100%;}
 
-
 .pay-agree-check {text-align: center; padding: 70px 0 50px;}
 .cart-content .pay-agree-check + .btn-area-c {margin-top: 0;}
+
+/* 주문완료 */
+.cart-order-done {display: flex; justify-content: center; flex-direction: column; text-align: center; width: 100%; height: 217px; margin-bottom: 30px; background: #fafafa;}
+.cart-order-done .done-txt1 {font-size: 24px; color: #000; font-weight: bold; line-height: 22px; padding-bottom: 20px;}
+.cart-order-done .done-txt2 {font-size: 16px; color: #000; line-height: 22px; padding-bottom: 10px;}
+.cart-order-done .done-txt2 span {font-weight: 500; color: #346dd0; padding-left: 20px;}
 
 
 
@@ -202,9 +206,9 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
+    /* 공통 */
     .join-txt3 {font-size: 14px; display: block; padding: 10px 0 0 0;}
     .btn-style-m4 {height: 36px;}
-
 
 
 
@@ -269,6 +273,10 @@
     
     .list-con .list-in .two-form .form-layout > :last-child {width: 112px;}
     .list-con .list-in .w-fixed {width: 112px;}
+
+    .cart-order-done {height: 169px; margin-bottom: 20px;}
+    .cart-order-done .done-txt1 {font-size: 18px;}
+    .cart-order-done .done-txt2 {font-size: 15px;}
 
 
 
