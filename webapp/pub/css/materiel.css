@@ -46,11 +46,7 @@
 /* ==========================================================================
     신규상품요청
 ========================================================================== */
-.bt-btn-line .list-half-style li.list-w100 {width:100%; display: flex;}
-.list-con .list-in > li.list-w100 .form-layout {margin-right: 0px; max-width: 529px; flex:1;}
-.list-con .list-in > li.list-w100 .form-layout .form-inline {display:flex; flex:1;}
-.list-con .list-in > li.list-w100 .form-layout select{width:127px;margin-right: 5px;flex:none}
-.list-con .list-in > li.btn-right {width:100%; display:block; text-align: right;}
+
 
 @media only screen and (max-width: 800px){
   /* ==========================================================================

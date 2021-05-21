@@ -1,0 +1,9 @@
+<svg id="ic_mo_calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="area" width="24" height="24" fill="none"/>
+  <g id="icon" transform="translate(0 1)">
+    <rect id="_00" data-name="00" width="18" height="14" rx="3" transform="translate(3 5)" fill="none" stroke="#bbb" stroke-width="2"/>
+    <rect id="_00-2" data-name="00" width="18" height="2" transform="translate(3 9)" fill="#bbb"/>
+    <rect id="_00-3" data-name="00" width="2" height="6" rx="1" transform="translate(6 2)" fill="#bbb"/>
+    <rect id="_00-4" data-name="00" width="2" height="6" rx="1" transform="translate(16 2)" fill="#bbb"/>
+  </g>
+</svg>
