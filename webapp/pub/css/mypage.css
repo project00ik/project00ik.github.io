@@ -30,7 +30,7 @@
 .cart-order-list .unit-cart {padding: 30px 0; align-items: center;}
 .cart-order-list .unit-cart .unit-under-btn {padding: 0;}
 .cart-order-list .unit-cart .unit-area .price-area {margin-top: 16px;}
-.cart-order-list .unit-cart .normal-price {margin: 0;}
+.cart-order-list .unit-cart .normal-price {margin-left: 0;}
 
 /* 장바구니 주문서 */
 .list-con .list-in .one-form {width: 100%;}
@@ -268,6 +268,9 @@
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label {font-size: 14px; padding: 0 0 5px 0; line-height: 17px;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right .input {max-width: 100%;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {width: 100%;}
+    .cart-order-list .order-delivery ul li .order-de-title {font-size: 14px; padding: 0 0 10px 0;}
+    .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row {display: inherit;}
+    .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row p {display: inline;}
     .cart-pay-area {margin: 30px 20px 20px; flex-wrap: wrap;}
     .cart-pay-area > p {width: 100%;}
     .cart-pay-area > p span {display: none;}
@@ -285,6 +288,7 @@
     .cart-order-done {height: 169px; margin-bottom: 20px;}
     .cart-order-done .done-txt1 {font-size: 18px;}
     .cart-order-done .done-txt2 {font-size: 15px;}
+
 
 
 
