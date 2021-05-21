@@ -193,12 +193,12 @@
           </div>
           <div class="tgSlideCont" style="display: block;">
             <div class="btn-r-area2">
-              <button class="btn btn-small3-line">상신의견입력</button>
-              <button class="btn btn-small3-line">구매사유작성</button>
-              <button class="btn btn-small3-line mo-hide">첨부파일등록</button>
-              <button class="btn btn-small3-line mo-hide">엑셀다운로드</button>
-              <button class="btn btn-small3-line mo-hide">견적서</button>
-              <button class="btn btn-small3-line mo-hide">프린트</button>
+              <button class="btn btn-small3-line" onclick="lyOpen('cartWritePopup02')">상신의견입력</button>
+              <button class="btn btn-small3-line" onclick="lyOpen('cartWritePopup03')">구매사유작성</button>
+              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('cartWritePopup04')">첨부파일등록</button>
+              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('')">엑셀다운로드</button>
+              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('cartEstimatePopup')">견적서</button>
+              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('cartPrintPopup')">프린트</button>
             </div>
             <div class="list-con">
               <ul class="list-in list-half-style">
@@ -301,13 +301,16 @@
                     <div class="form-search">
                       <input type="text" name="" class="input" value="[주소] 서울특별시 강남구 광평로47길 28" placeholder="" readonly="readonly">
                     </div>
-                    <button class="btn btn-style-m1">배송지 목록</button>
+                    <button class="btn btn-style-m1" onclick="lyOpen('cartAddrPopup')">배송지 목록</button>
                   </div>
                 </li>
-                <li>
+                <li  class="two-form">
                   <label for="">배송메모</label>
                   <div class="form-layout">
-                    <input type="text" name="" class="input" value="" placeholder="※ 400자 이하로 입력해 주세요">
+                    <div class="form-search">
+                      <input type="text" name="" class="input" value="" placeholder="※ 400자 이하로 입력해 주세요" readonly="readonly">
+                    </div>
+                    <button class="btn btn-style-m1" onclick="lyOpen('cartWritePopup')">입력</button>
                   </div>
                 </li>
               </ul>
@@ -371,14 +374,14 @@
                         <div class="form-layout">
                           <div class="form-de-order">
                             <input type="text" name="" class="input" value="" readonly="readonly">
-                            <button class="btn btn-style-m1">배송지 목록</button> 
+                            <button class="btn btn-style-m1" onclick="lyOpen('cartAddrPopup')">배송지 목록</button> 
                             <div class="in-de-order">
                               <input type="number" name="" class="input input-w1" value="1">
                               <span class="bar">EA</span>
                             </div>
                           </div>
                           <div class="in-de-right">
-                            <button class="btn btn-style-m3">배송지/수량 일괄등록</button>
+                            <button class="btn btn-style-m3" onclick="lyOpen('cartExcelPopup02')">배송지/수량 일괄등록</button>
                             <button class="btn btn-style-m1">배송지 추가</button>
                           </div>
                         </div>
@@ -440,14 +443,14 @@
                         <div class="form-layout">
                           <div class="form-de-order">
                             <input type="text" name="" class="input" value="" readonly="readonly">
-                            <button class="btn btn-style-m1">배송지 목록</button> 
+                            <button class="btn btn-style-m1" onclick="lyOpen('cartAddrPopup')">배송지 목록</button> 
                             <div class="in-de-order">
                               <input type="number" name="" class="input input-w1" value="1">
                               <span class="bar">EA</span>
                             </div>
                           </div>
                           <div class="in-de-right">
-                            <button class="btn btn-style-m3">배송지/수량 일괄등록</button>
+                            <button class="btn btn-style-m3" onclick="lyOpen('cartExcelPopup02')">배송지/수량 일괄등록</button>
                             <button class="btn btn-style-m1">배송지 추가</button>
                           </div>
                         </div>
@@ -459,7 +462,7 @@
                             <input type="text" name="" class="input" value="" placeholder="※ 400자 이하로 입력해 주세요">
                           </div>
                           <div class="in-de-right">
-                            <button class="btn btn-style-m1">명함정보 작성</button>
+                            <button class="btn btn-style-m1" onclick="lyOpen('cartCardPopup')">명함정보 작성</button>
                           </div>
                         </div>
                       </li>
@@ -500,14 +503,14 @@
                         <div class="form-layout">
                           <div class="form-de-order">
                             <input type="text" name="" class="input" value="" readonly="readonly">
-                            <button class="btn btn-style-m1">배송지 목록</button> 
+                            <button class="btn btn-style-m1" onclick="lyOpen('cartAddrPopup')">배송지 목록</button> 
                             <div class="in-de-order">
                               <input type="number" name="" class="input input-w1" value="1">
                               <span class="bar">PACK</span>
                             </div>
                           </div>
                           <div class="in-de-right">
-                            <button class="btn btn-style-m3">배송지/수량 일괄등록</button>
+                            <button class="btn btn-style-m3" onclick="lyOpen('cartExcelPopup02')">배송지/수량 일괄등록</button>
                             <button class="btn btn-style-m1">배송지 추가</button>
                           </div>
                         </div>
@@ -561,14 +564,14 @@
                         <div class="form-layout">
                           <div class="form-de-order">
                             <input type="text" name="" class="input" value="" readonly="readonly">
-                            <button class="btn btn-style-m1">배송지 목록</button> 
+                            <button class="btn btn-style-m1" onclick="lyOpen('cartAddrPopup')">배송지 목록</button> 
                             <div class="in-de-order">
                               <input type="number" name="" class="input input-w1" value="1">
                               <span class="bar">EA</span>
                             </div>
                           </div>
                           <div class="in-de-right">
-                            <button class="btn btn-style-m3">배송지/수량 일괄등록</button>
+                            <button class="btn btn-style-m3" onclick="lyOpen('cartExcelPopup02')">배송지/수량 일괄등록</button>
                             <button class="btn btn-style-m1">배송지 추가</button>
                           </div>
                         </div>
@@ -583,7 +586,7 @@
                             <label for="" class="laW2">첨부파일</label>
                             <div>
                               <input type="number" name="" class="input" value="">
-                              <button class="btn btn-style-m4 ">등록</button>
+                              <button class="btn btn-style-m4" onclick="lyOpen('cartWritePopup04')">등록</button>
                             </div>
                           </div>
                         </div>
@@ -726,7 +729,7 @@
         </div>
 
         <div class="btn-area-c mo-pd">
-          <button class="btn btn-style-ml1">저장하기</button>
+          <button class="btn btn-style-ml1" onclick="lyOpen('cartOrderlistPopup')">저장하기</button>
           <button class="btn btn-style-ml2">결제하기</button>
         </div>
       </div>
@@ -759,8 +762,556 @@
       </div>
     </footer>
   </div>
-
-
+<!-- 상신의견 팝업 -->
+<div class="lyPopupWrap popup-type-s" id="cartWritePopup02">
+  <!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle">
+          <p>상신의견 입력</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-cart">
+            <div class="textarea-wrap count">
+              <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
+              <p class="cot"><b>0</b> / 1,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+          <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //상신의견 팝업 -->
+<!-- 구매사유 팝업 -->
+<div class="lyPopupWrap popup-type-s" id="cartWritePopup03">
+  <!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle">
+          <p>구매사유 입력</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-cart">
+            <div class="textarea-wrap count">
+              <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
+              <p class="cot"><b>0</b> / 1,000</p>
+            </div>
+            <div class="radio-wrap">
+              <label class="radio-style1"><input type="radio" name="rd" checked><i></i><span>전체 공개</span></label>
+              <label class="radio-style1"><input type="radio" name="rd"><i></i><span>구매 시 공개</span></label>
+              <label class="radio-style1"><input type="radio" name="rd"><i></i><span>운영사 공개</span></label>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+          <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //구매사유 팝업 -->
+  <!-- 첨부파일 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartWritePopup04">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>첨부파일 등록</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-cart-file">
+              * 첨부파일등록 솔루션 적용
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //첨부파일 팝업 -->
+  <!-- 견적서 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartEstimatePopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>견적서</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-cart-estimate">
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">인쇄</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //견적서 팝업 -->
+    <!-- 프린트 팝업 -->
+    <div class="lyPopupWrap popup-type-m" id="cartPrintPopup">
+      <!-- id 값 버튼과 연결해주세요. -->
+      <div class="lyPopup">
+        <div class="popup-wrap">
+          <div class="popup-cont">
+            <div class="lyTitle">
+              <p>프린트</p>
+              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+            </div>
+            <div class="lyPopCont">
+              <div class="pop-layout pop-cart-print">
+                <p class="date">출력일자 :<em> 2021-05-13</em></p>
+                <div class="table-area table-style1">
+                  <table>
+                    <colgroup>
+                      <col style="width: 16%;">
+                      <col style="width: 35%;">
+                      <col style="width: 16%;">
+                      <col style="">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <th>실주문자</th>
+                        <td>홍길동</td>
+                        <th>결재자</th>
+                        <td><span>업무지원및부동산관리부</span>,
+                          <span>전여진</span></td>
+                      </tr>
+                      <tr>
+                        <th>참조자</th>
+                        <td>이순신</td>
+                        <th>구매사유</th>
+                        <td>업무용</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="table-area table-style1">
+                  <table>
+                    <colgroup>
+                      <col style="width: ;">
+                      <col style="width: ;">
+                      <col style="width: 10%;">
+                      <col style="width: 15%;">
+                      <col style="width: 10%;">
+                      <col style="width: 15%;">
+                      <col style="width: 13%;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>상품코드</th>
+                        <th>상품명<br/>대표규격/단위</th>
+                        <th>수량</th>
+                        <th>단가</th>
+                        <th>금액</th>
+                        <th>비용부서</th>
+                        <th>제조사</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="center">
+                          <a href="#">10363791</a>
+                        </td>
+                        <td>
+                            <a href="#">액자</a>
+                            <p>210*297mm(A4), 미색, 민자틀 / EA</p>
+                        </td>
+                        <td class="center">
+                          111
+                        </td>
+                        <td>
+                          <p>3,164</p>
+                          (VAT포함)
+                        </td>
+                        <td class="center">
+                          3,164
+                        </td>
+                        <td>
+                          업무지원및부동산관리부
+                        </td>
+                        <td class="center">
+                          알파
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="7" class="addr">
+                          <span class="addr-name">배송지 : 수령인 - 전여진</span>
+                          <span>주소 - 서울시 영등포구 **** 대한민국</span>
+                          <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="center"3><a href="#">10382460</a></td>
+                        <td>
+                            <a href="#">명함</a>
+                            <p>아르떼울트라화이트 210g, 200EA/BOX, 인쇄: 앞-1도+1도(별색), 뒤-4도, ABL전용 / BOX</p>
+                        </td>
+                        <td class="center">
+                          1111
+                        </td>
+                        <td>
+                          <p>7,164</p>
+                          (VAT포함)
+                        </td>
+                        <td class="center">
+                          7,164
+                        </td>
+                        <td>
+                          업무지원및부동산관리부
+                        </td>
+                        <td class="center">
+                          시중품품품
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="7" class="addr">
+                          <span class="addr-name">배송지 : 수령인 - 전여진</span>
+                          <span>주소 - 서울시 영등포구 **** 대한민국</span>
+                          <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="7" class="total">
+                          <p>품목수 : <em>2</em>건<i></i>총수량 : <em>2</em>개<i></i>합계 : <em>10,888</em>원 (VAT 포함)</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="btn-area">
+              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">인쇄</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //프린트 팝업 -->
+    <!--배송지 목록 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartAddrPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>배송지 목록</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-register pop-restock">
+              <div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn on" data-tab="tab1">주소록</li>
+									<li class="tabBtn" data-tab="tab2">배송지 등록/수정</li>
+								</ul>
+                <!--주소록-->
+								<div class="tab-cont tabCont active" id="tab1">
+									<div class="pop-layout pop-write pop-cart-addr1">
+                    <div>
+                      <ul>
+                        <li>
+                          <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                          <div>
+                            <span>유재석재석</span><span class="num">010-1234-5678</span>
+                            <p>서울특별시 강남구 광평로47길 28 4층 KT커머스 IT정보보안팀 내 ICT 구축 프로젝트 리앙에이지 기획팀</p>
+                          </div>
+                          <div class="btn-wrap">
+                            <button class="btn btn-style-s1">수정</button>
+                            <button class="btn btn-style-s1">삭제</button>
+                          </div>
+                        </li>
+                        <li>
+                          <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                          <div>
+                            <span>강호동</span><span class="num">010-1234-5678</span>
+                            <p>서서울특별시 강남구 광평로47길 28 4층 KT커머스 IT정보보안팀</p>
+                          </div>
+                          <div class="btn-wrap">
+                            <button class="btn btn-style-s1">수정</button>
+                            <button class="btn btn-style-s1">삭제</button>
+                          </div>
+                        </li>
+                        <li>
+                          <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                          <div>
+                            <span>신동엽</span><span class="num">010-1234-5678</span>
+                            <p>서서울특별시 강남구 광평로47길 28 4층 KT커머스 IT정보보안팀</p>
+                          </div>
+                          <div class="btn-wrap">
+                            <button class="btn btn-style-s1">수정</button>
+                            <button class="btn btn-style-s1">삭제</button>
+                          </div>
+                        </li>
+                        <li class="none">
+                          <p>등록된 배송지가 없습니다.<br/>신규 배송지 등록 후 이용바랍니다.</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="" class="btn btn-style-m2">선택</a>
+                  </div>
+								</div>
+                <!--//주소록-->
+                <!--배송지 등록수정-->
+								<div class="tab-cont tabCont" id="tab2">
+                  <div class="pop-layout pop-password pop-cart-addr2">
+                    <div class="pop-mo-check">
+                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>대표 배송지로 지정</span></label>
+                      <label class="check-style1"><input type="checkbox" name=""><i></i><span>자주 쓰는 배송지로 지정</span></label>
+                    </div>
+                    <div class="pop-layout pop-write">
+                      <ul>
+                        <li>
+                          <div class="pop-ip-area">
+                            <label for="">수령인<i class="req">*</i></label>
+                            <div class="form-layout">
+                              <input type="password" class="input" value="">
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="pop-ip-area">
+                            <label for="">휴대폰 번호<i class="req">*</i></label>
+                            <div class="form-layout form-phone">
+                              <select class="select">
+                                <option value="">02</option>
+                                <option value="02">02</option>
+                              </select>
+                              <span class="bar">-</span>
+                              <input type="number" name="" maxlength="4" class="input" value="">
+                              <span class="bar">-</span>
+                              <input type="number" name="" maxlength="4" class="input" value="">
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="pop-ip-area">
+                            <label for="">전화번호</label>
+                            <div class="form-layout form-phone">
+                              <select class="select">
+                                <option value="">02</option>
+                                <option value="02">02</option>
+                              </select>
+                              <span class="bar">-</span>
+                              <input type="number" name="" maxlength="4" class="input" value="">
+                              <span class="bar">-</span>
+                              <input type="number" name="" maxlength="4" class="input" value="">
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="pop-ip-area">
+                            <label for="">주소<i class="req">*</i></label>
+                            <div class="form-address">
+                              <div class="form-layout">
+                                <input type="text" name="" class="input" value="" readonly="readonly">
+                                <button class="btn btn-style-m1">우편번호 찾기</button>
+                              </div>
+                              <div class="form-layout">
+                                <input type="text" name="" class="input" value="" readonly="readonly">
+                              </div>
+                              <div class="form-layout">
+                                <input type="text" name="" class="input" value="">
+                              </div>
+                            </div form-address>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m1">닫기</a>
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">저장      </a>
+                  </div>
+								</div>
+                <!--//배송지 등록수정-->
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //배송지 목록 팝업 -->
+  <!--상품별 일괄등록 엑셀 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartExcelPopup02">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>상품별 배송지/수량 일괄등록 엑셀업로드</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-register pop-restock">
+              <div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn on" data-tab="tab1">파일선택</li>
+									<li class="tabBtn" data-tab="tab2">엑셀조회</li>
+								</ul>
+								<div class="tab-cont tabCont active" id="tab1">
+									<div class="pop-write">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>파일선택</th>
+                          <td>
+                            <button class="btn form-down-btn">양식 다운로드</button>
+                            <div class="filebox">
+                              <input class="upload-name input " value="" readonly>
+                              <label for="file">파일 선택</label> 
+                              <input type="file" id="file"> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="input">
+                          <th>추가설명</th>
+                          <td>
+                            <div class="before-num">
+                              <ul>
+                                <li>양식의 필수항목은 모두 등록해 주시기 바랍니다.<br/>(필수항목 : 인수자 명,우편번호,주소,상세주소,인수자 휴대폰번호,배송지수량)</li>
+                                <li>전화 또는 핸드폰은 '-' 를 포함하여 입력해 주십시오.</li>
+                                <li>수량은 숫자만 입력해 주십시오.</li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
+                  </div>
+								</div>
+								<div class="tab-cont tabCont" id="tab2">
+                  <div class="pop-write">
+                    <div class="excel-wrap">
+                      그리드 영역
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
+                  </div>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //상품별 일괄등록 엑셀 팝업 -->
+<!-- 배송메모 팝업 -->
+<div class="lyPopupWrap popup-type-s" id="cartWritePopup">
+  <!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle">
+          <p>배송메모</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-cart">
+            <div class="textarea-wrap count">
+              <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
+              <p class="cot"><b>0</b> / 400</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+          <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //배송메모 팝업 -->
+<!-- 명함 신청 팝업 -->
+<div class="lyPopupWrap popup-type-m" id="cartCardPopup">
+  <!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle center">
+          <p>명함 신청</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-account pop-namecard">             
+            <p>※ 명함정보 작성 시 주문자의 필수정보 기재가 어려운 경우 고객센터로 연락 부탁드립니다.</p>
+            <div class="btn-area">
+              <a href="javascript:;" class="lyClose btn btn-style-s1">신규</a>
+              <a href="javascript:;" class="lyClose btn btn-style-s1">저장</a>
+              <a href="javascript:;" class="lyClose btn btn-style-s1">삭제</a>
+              <a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide">엑셀업로드</a>
+            </div>
+            <div class="excel-wrap">
+              * 명함신청 그리드영역
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //명함 신청 팝업 -->
+<!-- 주문서 저장 팝업 -->
+<div class="lyPopupWrap popup-type-s" id="orderlistPopup">
+  <!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle center">
+          <p>주문서 저장</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-account pop-orderlist">
+            <p class="account-tit">현재 주문서를 저장할 수 있습니다.</p>
+            <p>저장된 주문서는 장바구니에서 다시 불러올 수 있습니다.<br/>
+              마이페이지 > 나의쇼핑 > 임시주문서관리에서 확인가능합니다.</p>
+            <div class="input">
+              <label>주문서명</label>
+              <div class="form-layout">
+                <input type="text" class="input" value="" placeholder="최대 20자까지 입력 가능">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-area">
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">취소</a>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //주문서 저장 팝업 -->
 
   <!-- 퀵메뉴 -->
   <!-- <div class="quick-menu">
