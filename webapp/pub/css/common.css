@@ -477,6 +477,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout3 > * {width:100%; flex:1;}
 .form-layout3 .form-inline {width:100%; display:flex; }
 .bt-btn-line .list-half-style .list-w100 {width:100%; display: flex;}
+.bt-btn-line .list-half-style .list-line {border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
 .list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; flex:1;}
 .list-w100 .form-layout3 .form-inline {display:flex; flex:1;}
 .list-con .list-in .btn-right {width:100%; display:block; text-align: right;}
@@ -484,6 +485,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 
 .form-phone .select {width: 86px; flex: inherit;}
 .form-phone .input {flex:1;}
+.list-con .tit-type2-1 {padding-top:30px;}
+.list-con > .tit-type2-1:first-child {padding-top:0;}
+.list-con .tit-area3 {align-items: flex-end;}
 
 textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px; resize: none;}
 textarea.textarea:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
