@@ -349,14 +349,14 @@
                             <label for="">협력사 첨부파일</label>
                             <div class="form-layout">
                               <input type="text" name="" class="input" value="">
-                              <button class="btn btn-style-m1">업로드 / 삭제</button>
+                              <button class="btn btn-style-m1" onclick="lyOpen('fileUpload')">업로드 / 삭제</button>
                             </div>
                           </li>
                           <li class="list-w100">
                             <label for="">상품 첨부파일</label>
                             <div class="form-layout">
                               <input type="text" name="" class="input" value="">
-                              <button class="btn btn-style-m1">업로드 / 삭제</button>
+                              <button class="btn btn-style-m1" onclick="lyOpen('fileUpload')">업로드 / 삭제</button>
                             </div>
                           </li>
                         </ul>
@@ -471,14 +471,14 @@
                             <label for="">협력사 첨부파일</label>
                             <div class="form-layout">
                               <input type="text" name="" class="input" value="">
-                              <button class="btn btn-style-m1">업로드 / 삭제</button>
+                              <button class="btn btn-style-m1" onclick="lyOpen('fileUpload')">업로드 / 삭제</button>
                             </div>
                           </li>
                           <li class="list-w100">
                             <label for="">상품 첨부파일</label>
                             <div class="form-layout">
                               <input type="text" name="" class="input" value="">
-                              <button class="btn btn-style-m1">업로드 / 삭제</button>
+                              <button class="btn btn-style-m1" onclick="lyOpen('fileUpload')">업로드 / 삭제</button>
                             </div>
                           </li>
                         </ul>
@@ -489,12 +489,12 @@
                 </div>
               </div>
             </div>
-            <div class="btn-area-c">
+            <div class="btn-area-c btn-layout3">
               <button class="lyClose btn btn-style-ml1">삭제</button>
               <button class="lyClose btn btn-style-ml2">임시저장</button>
             </div>
             <!-- 임시저장 후 노출되는 버튼 style -->
-            <div class="btn-area-c">
+            <div class="btn-area-c btn-layout3">
               <button class="lyClose btn btn-style-ml1">삭제</button>
               <button class="lyClose btn btn-style-ml2 on">임시저장</button>
               <button class="lyClose btn btn-style-ml2">요청하기</button>
@@ -662,6 +662,26 @@
   </div>
 </div>
 <!-- //국가 조회 팝업 -->
+
+<!-- 업로드 팝업 -->
+<div class="lyPopupWrap popup-type-m" id="fileUpload"><!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle">
+          <p>타이틀</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="file-upload-area" style="height:300px;">
+            as-is 업로드 사용 영역
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--// 업로드 팝업 -->
 
 
   <!-- 퀵메뉴 -->
