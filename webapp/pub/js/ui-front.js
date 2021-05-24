@@ -482,17 +482,11 @@ function radioToggle(){
 
 function reviewToggle() {
   // 리뷰토글
-  $('.review-text').each(function () {
-    $(this).on('click', function (e) {
+  $('.detail-review').each(function () {
+    $(this).find('.review-text').on('click', function (e) {
       e.preventDefault();
       var $reviewActive = $(this);
-      $reviewActive.closest('li').toggleClass('on')
-      $reviewActive.closest('li').siblings().removeClass('on');
-      if ($reviewActive.hasClass('on')) {
-        $reviewActive.closest('li').removeClass('on');
-      } else {
-        $reviewActive.closest('li').addClass('on');
-      }
+      $('.detail-review ul > li').not($reviewActive.closest('li').addClass('on')).removeClass('on');
     })
   });
 }
