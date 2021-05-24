@@ -105,7 +105,6 @@
 .join-content .login-wrap.find .radio-select select.select{width: 86px;}
 .join-content .login-wrap.find .radio-select .form-email select.select{width: 118px;flex: none;}
 .join-content .login-wrap.find #tab2 .radio-select .form-phone input{width: 130px;flex: none;}
-.join-content .login-wrap.find #tab2 .radio-select .bar{line-height: 48px;}
 .join-content .login-wrap.find .radio-select > a{margin: 50px auto 0;width: 198px; display: block;}
 .join-content .login-wrap.find .form-area + button{margin-left: 5px;}
 .join-content .login-wrap.find #tab2 .radio-select .vc-input{display: flex;}
@@ -203,7 +202,7 @@
     .join-content .complete-wrap{width: 100%;margin: 70px auto;}
     .join-content .complete-wrap .complete-txt{margin: 30px 0;font-size: 16px;}
     .join-content .complete-wrap .btn-full-area{border:none;}
-    .join-content .member-tit{font-size: 22px;line-height: 27px;margin-top: 70px;}
+    .join-content .member-tit{font-size: 22px;line-height: 27px;margin-top: 70px; font-weight: 500;}
     .join-content .member-sub-tit{font-size: 16px;line-height: 19px;}
     .join-content .member-sub-tit em{display: block;}
     .join-content .member-select-box {width:100%;margin:30px auto;padding:0 30px;flex-direction: column;}
@@ -233,8 +232,10 @@
     .join-content .login-wrap.find .radio-select > a {width: 100%;height:42px;line-height: 40px;margin-top: 30px;}
     .join-content .login-wrap.find .radio-select select.select{background:url(../images/common/arrow_select.svg) top 10px right 10px no-repeat #fff}
     .join-content .login-wrap.find #tab2 .radio-select .form-phone input{flex:1; width: inherit;}
-    .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px;height: 36px;line-height: 34px;}
-    .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px;height: 36px;line-height: 34px;}
+    .join-content .login-wrap.find .form-phone {}
+    .join-content .login-wrap.find .form-phone .btn-style-m1 {width:68px; min-width:auto;}
+    .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px; min-width:auto; height: 36px;line-height: 34px;}
+    .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px; min-width:auto; height: 36px;line-height: 34px;}
     .join-content .login-wrap.privacy{width: 100%;padding:50px 20px}
     .join-content .login-wrap.privacy > p {font-size: 18px;}
     .join-content .login-wrap.privacy > p em{display: block;}

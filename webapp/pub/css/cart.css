@@ -375,8 +375,8 @@
     .cart-content .join-list-con {padding: 20px 0;}
     .cart-content .join-list-con ~ .join-list-con {padding: 0 0 20px 0;}
     .cart-content .list-con .list-in .one-form .form-layout {max-width: 100%;}
-    .selection-area {padding-left: 0;}
-    .selection-area .selection-item {padding: 0;}
+    .cart-content .selection-area {padding-left: 0;}
+    .cart-content .selection-area .selection-item {padding: 0;}
     .cart-content .join-list-con .list-con .list-in .tooltip-box {right: auto; left: 0; width: 181px;}
     .cart-content .cart-order-list .toolsize {margin-top: 10px;}
     .cart-content .cart-order-list .toolsize .tooltip-box {width: 152px; right: auto; left: 0; }
