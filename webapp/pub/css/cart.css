@@ -162,6 +162,7 @@
 .lyPopup .popup-cont .lyPopCont .pop-namecard .excel-wrap{margin-top: 20px;height: 340px}
 
 /* 장바구니 관리 */
+.mypage-cart-list .tit-type2-1 {font-weight: 400;}
 .mypage-cart-list .list-con{position: relative;padding-top: 30px;}
 .mypage-cart-list .list-con > p{font-size: 16px;line-height: 28px;}
 .mypage-cart-list .list-con button{position: absolute;top:30px;right:0}
