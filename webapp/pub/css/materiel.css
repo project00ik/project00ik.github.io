@@ -51,7 +51,7 @@
 .request-info .ea .tit {font-weight: 500; vertical-align: top;}
 .request-info .ea > b {color: #346dd0; font-weight: normal; vertical-align: top;}
 .total-price {}
-.total-price .tit {font-size:16px;}
+.total-price .tit {font-size:16px; font-weight:500;}
 .total-price .info-txt {font-size:14px;}
 .total-price .price {color: #346dd0; font-size: 14px;}
 .total-price .price b {font-size: 22px; vertical-align: text-bottom; font-weight: 700;}
@@ -63,10 +63,21 @@
 .list-con .btn-detail {margin-top:13px;}
 .chk-list.chk-list-detail {background:#fafafa;}
 .chk-list .form-phone .select {padding:0 20px 0 12px;}
+
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     신규상품요청
   ========================================================================== */
-  
-
+  .list-con .tit-area3 {margin:0 20px;}
+  .list-con .tit-area3 .tit-type2-1 {padding-left:0;}
+  .request-info {width:auto; margin:10px 20px 0;}
+  .request-info .ea {font-size:14px;}
+  .total-price .tit {font-size:14px;}
+  .total-price .info-txt {font-size:12px;}
+  .total-price .price b {font-size:20px;}
+  .chk-list .list-in {margin:0; padding:56px 20px 0; border-bottom:0;}
+  .chk-list .check-style2 {margin-top:0; top:20px;}
+  .list-con .btn-detail {display:none;}
+  .chk-list.chk-list-detail {display:none; height:0; overflow: hidden;}
 }

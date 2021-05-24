@@ -267,7 +267,8 @@ button.btn-style-s1 {line-height:25px;}
 
 .btn-area-c {font-size: 0; text-align: center;}
 .btn-area-c .btn + .btn {margin-left: 10px;}
-.sub-content .btn-area-c {padding:70px 0 0; font-size: 0; text-align: center;}
+.sub-content .btn-area-c {margin: 0 20px; padding:70px 0 0; font-size: 0; text-align: center;}
+
 .btn-slide-open {font-size:0;}
 .btn-slide-open .tg-info-txt {margin-right:5px; font-weight:500; font-size:16px; color:#666; vertical-align:top; line-height:1.1;}
 .btn-slide-open::after {content:''; width: 18px; height: 18px; display:inline-block; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0;}
@@ -950,13 +951,14 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-r-area3 {padding:0 20px 10px;}
     .btn-r-area3 > .btn {width:100%; flex:1; min-width:auto;}
     .btn-r-area3 > .btn + .btn {margin-left:-1px;}
-    .sub-content .btn-area-c {padding: 50px 0 0;}
+    .sub-content .btn-area-c {padding: 50px 0 0;  display: flex;}
+    .sub-content .btn-area-c .btn {height:42px; line-height:41px; flex: 1; min-width: auto; font-size:16px;}
 
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
 
     /* 모바일 fixed */
-    .mo-fixed-btn {width:100%; padding:20px; position:fixed; bottom:0; left:0; z-index:10; background:#fff; border-top:1px solid #d7d7d7;}
+    .sub-content .mo-fixed-btn {width:100%; margin:0; padding:20px; position:fixed; bottom:0; left:0; z-index:10; background:#fff; border-top:1px solid #d7d7d7;}
 
     /* 테이블 */
     .table-area col.w21 {width:112px;}

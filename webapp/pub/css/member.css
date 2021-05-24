@@ -41,7 +41,6 @@
 .list-con .join-agree .agree-area .agree-tit {position: relative; padding: 20px; border: 1px solid #d7d7d7;}
 .list-con .join-agree .agree-area .agree-tit .btn-slide-open {position: absolute; top: 18px; right: 12px; width: 30px; height: 30px;}
 .list-con .join-agree .agree-area .agree-cont {padding: 20px; border: 1px solid #d7d7d7; border-top: 0; font-size: 14px; line-height: 22px; text-align: left; color: #666; height: 125px; overflow-y: auto;}
-.join-content .btn-area-c {padding: 70px 0 0;}
 
 .con-normal-info {padding-top: 0;}
 .con-normal-info .list-in {margin-top: 0; border-top: 0; display: flex; flex-wrap: wrap;}
@@ -154,9 +153,6 @@
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
-    .join-content .btn-area-c {margin: 0 20px;}
-    .btn-area-c {display: flex;}
-    .btn-area-c .btn {height:42px; line-height:41px; flex: 1; min-width: auto; font-size:16px;}
     .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
     .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
     .join-list-con .tit-area2 .join-txt {margin:3px 0 0 10px;}
@@ -189,7 +185,6 @@
     .list-con .join-agree .agree-area .agree-tit {padding: 18px 40px 18px 20px; word-break: keep-all;}
     .list-con .join-agree .agree-area .agree-cont {font-size: 12px; line-height: 1.4;}
     .join-agree-con .list-con {padding: 20px 20px 0 20px; border-bottom: 0;}
-    .join-content .btn-area-c {padding: 50px 0 0;}
 
     .con-normal-info .list-in {padding-top: 0; flex-direction: column;}
     .con-normal-info .list-in > li {width: 100%;}
