@@ -158,10 +158,12 @@
     .join-content .tit-type1-2 {margin-bottom: 0;}
     .join-list-con {padding-top: 16px;}
     .join-list-con ~ .join-list-con {padding-top: 16px;}
+    .join-content .join-list-con .list-con {border-bottom: 10px solid #f5f5f5;}
+    .join-content .join-list-con.join-agree-con .list-con {border-bottom: 0;}
     .join-list-con .tit-area {padding-bottom: 16px; border-bottom: 1px solid #000; align-items: center;}
     .join-list-con .tit-area2 {padding: 0 20px 15px; border-bottom: 1px solid #000;}
     .join-list-con .tit-area2 .join-txt {padding-left: 10px; line-height: 100%;}
-    .list-con {padding-top: 20px; border-bottom: 10px solid #f5f5f5;}
+    .join-list-con .btn-area-c {padding-top:20px;}
     .list-con .tit-type2-1 {padding: 0 20px;}
     .list-con .list-in {margin-left: 20px; margin-right: 20px; border-bottom: 0;}
     /* .join-list-con .list-con .list-in > li {display: block; padding: 0 0 20px 0;} */

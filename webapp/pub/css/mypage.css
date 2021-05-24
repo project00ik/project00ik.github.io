@@ -202,6 +202,7 @@
     /* 회원정보관리 */
     .list-half-style li {width: 100%;}
     .mypage-cont .my-main .btn-area-c {padding-top: 50px;}
+    .mypage-cont .my-main .btn-area-c.btn-cont-in {padding-top: 0;}
     .mypage-cont .my-main .btn-full-area {padding: 0; border-top: 0;}
     .join-txt-normal {font-size: 14px; margin: 0 20px;}
     .bt-btn-line .btn-r-area {padding: 0 20px 20px;}
