@@ -644,7 +644,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .table-area col.w21 {width:21%;}
 
 /* 파일업로드(as-is그대로 영역) */
-.file-upload-area {width:100%; min-height:100px; display:block; border:1px solid #bbb;}
+.file-upload-area {width:100%; min-height:100px; display:block; border:1px solid #bbb; overflow:auto;}
 
 
 
