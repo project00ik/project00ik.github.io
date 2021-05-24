@@ -125,5 +125,5 @@ input::-webkit-search-results-decoration{
   html, body {min-height:100%;}
   img {width:100%;}
   .pc-hide {display:block;}
-  .mo-hide {display:none;}
+  .mo-hide {display:none !important;}
 }

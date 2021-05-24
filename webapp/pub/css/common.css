@@ -1060,7 +1060,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     /* 폼요소 */
     input.input {height: 36px; line-height: 36px;}
-    input.datepicker {background: url(../images/common/mo_icon_date.svg) right 12px center no-repeat;}
+    input.datepicker {line-height: 34px; height: 36px; background: url(../images/common/mo_icon_date.svg) right 12px center no-repeat; }
     select.select {line-height: 34px; height: 36px;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
