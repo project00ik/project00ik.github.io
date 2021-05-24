@@ -244,6 +244,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-m1 {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-m2 {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-m3 {width:auto; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; padding: 0 21px; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-m4 {width: 68px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-l1 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#346dd0; background:#fff; border:1px solid #346dd0;}
 .btn-style-l2 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#fff; background:#346dd0;}
 .btn-style-l3 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#d7d7d7; background:#fafafa; border:1px solid #e5e5e5;}
@@ -359,14 +360,15 @@ button.btn-style-s1 {line-height:25px;}
 .tit-center-area {width:100%; padding-right:100px; position:relative;}
 .tit-center-area .left-area [class^="tit"] {width:100%; text-align:center;}
 .tit-center-area .right-area {position:absolute; top:50%; right:0; transform:translateY(-50.4%); text-align:right;}
-.tit-type1 {font-size:34px; color:#000;}
-.tit-type1-1 {font-size: 28px; color: #000; margin-bottom: 50px;}
-/* .tit-type1 > b {font-weight:700;} */
+
 .tit-area {display:flex; align-items:flex-end; flex-wrap: wrap;justify-content:space-between; margin-bottom:40px;}
 .tit-area .tit-type1 {margin-bottom:0;}
 .tit-area > * {margin-bottom: 0;}
-.tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
 .tit-area2 {display: flex; align-items: flex-end;}
+.tit-area3 {display: flex; align-items: center; justify-content: space-between;}
+.tit-type1 {font-size:34px; color:#000;}
+.tit-type1-1 {font-size: 28px; color: #000; margin-bottom: 50px;}
+.tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
 .tit-type2 {font-size:24px; color:#000;}
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
 .tit-type2 .sub-txt {font-size: 16px; color: #000;}
@@ -386,6 +388,7 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area {position: relative;}
 .tabArea .tabCont {display:none;}
 .tabArea .tabCont.active {display:block;}
+.tab-area.pd-cont-none .tab-cont {padding: 0;}
 .tabSlide .tabCont {display:none;}
 .tabSlide .tabCont.active {display:block;}
 /* .tabArea.tabSlide {position:relative; height:526px;}
@@ -429,6 +432,7 @@ button.btn-style-s1 {line-height:25px;}
 .align-area {width:100%; display:inline-block;}
 .align-area > .left {float:left;}
 .align-area > .right {float:right; text-align:right;}
+.mo-full {display: flex;} /* pc:flex - mo:width100% */
 
 /* 폼요소 */
 .spinner {width:112px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative; background:#fff;}
@@ -466,6 +470,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout + .form-layout {margin-top:10px;}
 .form-area + .form-area {margin-top:10px;}
 [class^=form-layout] .bar {font-size: 16px; color: #666; height: 35px; line-height: 33px; padding: 0 5px; display: inline-block; vertical-align: middle;}
+
 
 .form-layout {width:100%; display:flex;}
 .form-layout .input {flex:1;}
@@ -924,6 +929,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-style-m1 {height: 36px;}/* 추가 */
     .btn-style-m2 {height: 36px;}/* 추가 */
     .btn-style-m3 {height: 36px; width: 100%;}
+    .btn-style-m4 {height: 36px;}
     .btn-style-mm1 {width: 100%;}
     .btn-style-mm2 {width: 100%;}
 
@@ -1057,6 +1063,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     /* 컨텐츠 레이아웃 */
     .align-area > .left {width:100%; float:inherit;}
     .align-area > .right {width:100%; float:inherit; text-align:left;}
+    .mo-full {width: 100%;}/* pc:flex - mo:width100% */
 
     /* 폼요소 */
     input.input {height: 36px; line-height: 36px;}
