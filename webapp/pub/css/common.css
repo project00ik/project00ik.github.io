@@ -373,7 +373,7 @@ button.btn-style-s1 {line-height:25px;}
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
 .tit-type2 .sub-txt {font-size: 16px; color: #000;}
 .tit-type2 .sub-txt b {vertical-align: baseline;}
-.tit-type2-1 {font-size: 20px; color: #000;}
+.tit-type2-1 {font-size: 20px; color: #000; font-weight:500;}
 .tit-type2-1 .count {vertical-align:top; color: #346dd0; font-weight: 700;}
 .tit-type3 {width:100%; height:36px; line-height:36px; font-size:16px; text-align:center; color:#000;}
 .sub-txt {margin-left:7px;}
@@ -433,6 +433,8 @@ button.btn-style-s1 {line-height:25px;}
 .align-area > .left {float:left;}
 .align-area > .right {float:right; text-align:right;}
 .mo-full {display: flex;} /* pc:flex - mo:width100% */
+.divider {display:none;}
+
 
 /* 폼요소 */
 .spinner {width:112px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative; background:#fff;}
@@ -503,6 +505,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .list-con .tit-area3 {align-items: flex-end;}
 .list-con .list-in > li > label .sub-txt {font-size:14px; margin-left:0; line-height:1.1;}
 .list-con .list-in > li.list-btn {justify-content: flex-end;}
+.list-con .list-in > li > label {font-weight:500;}
+.list-con .list-tit {font-weight:500;}
 
 textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px; resize: none;}
 textarea.textarea:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
@@ -1064,6 +1068,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .align-area > .left {width:100%; float:inherit;}
     .align-area > .right {width:100%; float:inherit; text-align:left;}
     .mo-full {width: 100%;}/* pc:flex - mo:width100% */
+    .divider {display:block; width:100%; height:10px; margin-bottom:20px; background:#f5f5f5;}
+    .divider + [class^="tit-"] {margin-top:-4px !important;}
 
     /* 폼요소 */
     input.input {height: 36px; line-height: 36px;}
