@@ -39,7 +39,8 @@
 
 /* 열린소싱상품제안 */
 .suggestion-goods .list-con{padding-top:0px;}
-.suggestion-goods .list-con > p {padding-top: 30px;}
+.suggestion-goods .list-con  > .tit-type2-1:first-child {padding-top: 30px;}
+.suggestion-goods .list-con .tit-type2-1 {padding-top:0;}
 .suggestion-goods .list-con .list-in{margin-top:0px;border-top:none;}
 .suggestion-goods .list-con > p + .list-in{margin-top: 10px;border-top: 1px solid #bbb;}
 .suggestion-goods .list-con > .suggestion-tit + .list-in{margin-top: 10px;border-top: 1px solid #bbb;}
@@ -127,5 +128,6 @@
   .pop-suggestion ul li{padding: 5px 0;}
   .pop-suggestion .point-color2{margin-top: 15px;}
 
-
+  /* 열린소싱상품제안 */
+  .suggestion-goods {width:986px;}
 }
