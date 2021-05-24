@@ -212,7 +212,6 @@
 .btn {display:inline-block;}
 .btn-area {width:100%; font-size:0;}
 .btn-area .btn + .btn {margin-left:10px;}
-.btn-area-c {text-align: center;}
 .btn-r-area {display: flex; justify-content: flex-end; padding-top: 20px;} /* 리스트 하단 버튼 */
 .btn-r-area .btn + .btn {margin-left: 10px;}
 /* btn-r-area2 PC에서는 오른쪽정렬 / 모바일에서는 왼쪽정렬 형 */
@@ -266,8 +265,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-like-l.on {}
 .btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s;}
 
-.btn-area-c {font-size: 0;}
+.btn-area-c {font-size: 0; text-align: center;}
 .btn-area-c .btn + .btn {margin-left: 10px;}
+.sub-content .btn-area-c {padding:70px 0 0; font-size: 0; text-align: center;}
 .btn-slide-open {font-size:0;}
 .btn-slide-open .tg-info-txt {margin-right:5px; font-weight:500; font-size:16px; color:#666; vertical-align:top; line-height:1.1;}
 .btn-slide-open::after {content:''; width: 18px; height: 18px; display:inline-block; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0;}
@@ -500,6 +500,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 
 .form-phone .select {width: 86px; flex: inherit;}
 .form-phone .input {flex:1;}
+.list-area .list-con {}
 .list-con .tit-type2-1 {padding-top:30px;}
 .list-con > .tit-type2-1:first-child {padding-top:0;}
 .list-con .tit-area3 {align-items: flex-end;}
@@ -926,8 +927,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-del {background: url(../images/common/mo_btn_del.svg) 0 0 no-repeat;}
     .tit-type1-1 {font-size:20px; margin-bottom:16px;}
     .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px}
-    .main .btn-more-black2 {position: inherit;  top:inherit; left: inherit; z-index: inherit;}
-
+    
     .btn-style-ml1 {font-size: 16px;}
     .btn-style-ml2 {width: 100%;}
     .btn-style-m1 {height: 36px;}/* 추가 */
@@ -950,6 +950,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-r-area3 {padding:0 20px 10px;}
     .btn-r-area3 > .btn {width:100%; flex:1; min-width:auto;}
     .btn-r-area3 > .btn + .btn {margin-left:-1px;}
+    .sub-content .btn-area-c {padding: 50px 0 0;}
 
     /* 모바일 padding */    
     .mo-pd {padding:0 20px; display: flex;}
@@ -1093,7 +1094,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .list-w100 .form-layout3 .form-inline {margin-top:10px;}
     .list-w100 .form-layout3 .form-inline .datepicker {}
     .form-layout3 .w127 {width:100%;}
-    
+    .list-area .list-con {border-bottom:0;}
 
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
