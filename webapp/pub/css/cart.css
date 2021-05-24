@@ -364,11 +364,10 @@
     
 
     /* 장바구니 관리 */
-    .mypage-cart-list .list-con{padding-top: 20px;border-bottom: none;}
+    .mypage-cart-list .list-con{padding:20px 0 10px; border-bottom: none;}
     .mypage-cart-list .list-con > p{font-size: 14px;}
     .mypage-cart-list .list-con button{position: relative;top:0;margin:0 20px;}
-    .join-list-con.mypage-cart-list .list-con .list-in > li {display: flex;width: 100%;}
-    .mypage-cont .my-main .mypage-cart-list .btn-area-c{padding: 50px 20px 20px;}
+    .mypage-cart-list .list-con .list-in > li {display: flex; width: 100%; padding:0; margin-bottom:20px; flex-direction: row; align-items: center;}
     .mypage-cart-list .btn-style-mm1, .mypage-cart-list .btn-style-mm2{width:calc(50% - 5px);}
 
     /* 주문완료 */
