@@ -35,14 +35,7 @@
             <div class="half-box">
                 <div class="search-word">
                   <div class="s-tit">최근검색어</div>
-                  <div class="s-list">
-                    <ul>
-                      <li><a href="javascript:;">철근</a><a href="javascript:;" class="del">삭제</a></li>
-                      <li><a href="javascript:;">테이프</a><a href="javascript:;" class="del">삭제</a></li>
-                      <li><a href="javascript:;">설비제품</a><a href="javascript:;" class="del">삭제</a></li>
-                      <li><a href="javascript:;">관리도구</a><a href="javascript:;" class="del">삭제</a></li>
-                    </ul>
-                  </div>
+                  <div class="list-none"><p>최근 검색어가 없습니다.</p></div>
                 </div>
                 <div class="hit-word">
                   <div class="s-tit">인기검색어</div>
@@ -63,7 +56,6 @@
                 </div>
             </div>
             <div class="search-bt">
-                <a href="javascript:;">최근 검색어 전체 삭제</a>
                 <a href="javascript:;" class="close">닫기</a>
             </div>
           </div>
@@ -281,15 +273,7 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      function searchBox(){
-        var $hdSearch = $('.header-cont .search-area .inp-area input.inp');
-        $hdSearch.focus(function(){
-          alert('1')
-        })
 
-          
-      }
-      searchBox();
       
     });
   </script>
