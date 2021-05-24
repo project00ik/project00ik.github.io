@@ -159,6 +159,7 @@
     .btn-area-c .btn {height:42px; line-height:41px; flex: 1; min-width: auto; font-size:16px;}
     .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
     .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
+    .join-list-con .tit-area2 .join-txt {margin:3px 0 0 10px;}
     .join-content .tit-type1-2 {margin-bottom: 0;}
     .join-list-con {padding-top: 16px;}
     .join-list-con ~ .join-list-con {padding-top: 16px;}
@@ -259,7 +260,8 @@
 
 @media only screen and (max-width:480px){
     .join-list-con .req {padding: 0;}
-    .join-list-con .tit-area2 {flex-direction: column;align-items: flex-start;}
-    
-    .join-list-con .tit-area2 .join-txt {margin: 3px 0 0 0;}
 }
+
+@media only screen and  (max-width:320px){ /* iphoneSE */
+    .join-list-con .tit-area2 {flex-direction: column;align-items: flex-start;}
+    .join-list-con .tit-area2 .join-txt {margin-left:0;}
