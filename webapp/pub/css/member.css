@@ -157,14 +157,14 @@
     .join-content .btn-area-c {margin: 0 20px;}
     .btn-area-c {display: flex;}
     .btn-area-c .btn {height:42px; line-height:41px; flex: 1; min-width: auto; font-size:16px;}
+    .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
+    .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
     .join-content .tit-type1-2 {margin-bottom: 0;}
     .join-list-con {padding-top: 16px;}
     .join-list-con ~ .join-list-con {padding-top: 16px;}
     .join-list-con .tit-area {padding-bottom: 16px; border-bottom: 1px solid #000; align-items: center;}
     .join-list-con .tit-area2 {padding: 0 20px 15px; border-bottom: 1px solid #000;}
     .join-list-con .tit-area2 .join-txt {padding-left: 10px; line-height: 100%;}
-    .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
-    .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
     .list-con {padding-top: 20px; border-bottom: 10px solid #f5f5f5;}
     .list-con .tit-type2-1 {padding: 0 20px;}
     .list-con .list-in {margin-left: 20px; margin-right: 20px; border-bottom: 0;}
@@ -183,8 +183,9 @@
     .list-con .form-address .btn-style-m1 {width: 112px;}
     .list-con .form-list-checkradio {flex-direction: column;}
     .list-con .form-list-checkradio li {width: 100%;}
+    .join-content .list-con .list-btn-area .form-list-checkradio li {width: 100%;}
     .list-con .join-agree .agree-area .agree-cont {height: 112px;}
-    .list-con .join-agree .agree-area .agree-tit {padding: 18px 20px;}
+    .list-con .join-agree .agree-area .agree-tit {padding: 18px 40px 18px 20px; word-break: keep-all;}
     .list-con .join-agree .agree-area .agree-cont {font-size: 12px; line-height: 1.4;}
     .join-agree-con .list-con {padding: 20px 20px 0 20px; border-bottom: 0;}
     .join-content .btn-area-c {padding: 50px 0 0;}
@@ -254,4 +255,11 @@
     .lyPopup .popup-cont .lyTitle.center{padding:0px 44px}
     .pop-account > span em {display: block;vertical-align: top;}
     .pop-account > p em {display: block;vertical-align: top;}
+}
+
+@media only screen and (max-width:480px){
+    .join-list-con .req {padding: 0;}
+    .join-list-con .tit-area2 {flex-direction: column;align-items: flex-start;}
+    
+    .join-list-con .tit-area2 .join-txt {margin: 3px 0 0 0;}
 }
