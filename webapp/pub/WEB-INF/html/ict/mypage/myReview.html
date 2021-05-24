@@ -228,7 +228,7 @@
                         </a>
                         <ul class="unit-under-btn">
                           <li>
-                            <a href="#리뷰 작성하기" class="btn btn-buynow">리뷰 작성하기</a>
+                            <a href="#리뷰 작성하기"  onclick="lyOpen('reviewWritePopup')" class="btn btn-buynow">리뷰 작성하기</a>
                           </li>
                         </ul>
                       </div>
@@ -299,7 +299,7 @@
                           <img src="../../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
                         </div>
                         <div class="review-btns">
-                          <a href="#수정" class="btn btn-style-m1">수정</a>
+                          <a href="#수정" onclick="lyOpen('reviewWritePopupModify');" class="btn btn-style-m1">수정</a>
                           <a href="#삭제" class="btn btn-style-m1">삭제</a>
                         </div>
                       </div>
@@ -574,7 +574,7 @@
                 <!-- MO 페이지네이션 -->
                 <button class="mobile-paging pc-hide">더보기</button>
                 <!--// MO 페이지네이션 -->
-                
+
               </div>
             </div>
 
@@ -724,6 +724,304 @@
     <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
   </div> -->
   <!--// 퀵메뉴 -->
+
+
+
+  <!-- 리뷰작성 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="reviewWritePopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>리뷰작성</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-review-write">
+              <ul>
+                <li class="pop-product">
+                  <div class="pro-img-area"><img src="../../../../images/main/img_review_ex.png" alt="상품이미지"></div>
+                  <div class="pro-text-area">
+                    <p class="pro-name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                    <p class="pro-option">6.5인치 / 3700RPM</p>
+                    <div class="pro-price">
+                      <p><b>100,000</b><span> 원</span></p>
+                      <p>/ 1개</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="pop-satis">
+                  <b class="satis-tit">상품 리뷰 평점</b>
+                  <div class="pro-satis-list">
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">가격</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">품질</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">배송</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">서비스</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-text-review">
+                  <p class="pop-layout-txt">상품 후기를 남겨주세요.</p>
+                  <div class="textarea-wrap count">
+                    <textarea class="textarea" name="" id="" placeholder="다른 분들의 보다 나은 선택을 위해  솔직한 리뷰를 남겨주세요."></textarea>
+                    <p class="cot"><b>0</b> / 3000</p>
+                  </div>
+                </li>
+                <li class="pro-upload">
+                  <p class="pop-layout-txt">상품 사진 첨부 또는 동영상 URL를 업로드해 보세요.</p>
+                  <p class="pop-layout-txt2">첨부파일은 JPG, GIF, PNG만 가능하며, 파일당 최대 10MB, 5개까지 등록가능합니다. <br />상품과 무관한 사진을 첨부한
+                    경우, 통보 없이 삭제될 수 있습니다.</p>
+                  <!-- 이미지 업로드 영역 -->
+                  <div class="upload-area">
+                    <!-- 썸네일 -->
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <!--// 썸네일 -->
+                    <!-- 이미지 추가버튼 -->
+                    <div class="img-upload-btn">
+                      <label>
+                        <input type="file" id="input_imgs" multiple />
+                      </label>
+                    </div>
+                    <!--// 이미지 추가버튼 -->
+                  </div>
+                  <!--// 이미지 업로드 영역 -->
+                  <div class="upload-url">
+                    <label for="videourl">동영상 URL</label>
+                    <input type="text" class="input" id="videourl" name="" value="" placeholder="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">등록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 리뷰작성 팝업 -->
+
+  <!-- 리뷰수정 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="reviewWritePopupModify">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>리뷰수정</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-review-write">
+              <ul>
+                <li class="pop-product">
+                  <div class="pro-img-area"><img src="../../../../images/main/img_review_ex.png" alt="상품이미지"></div>
+                  <div class="pro-text-area">
+                    <p class="pro-name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                    <p class="pro-option">6.5인치 / 3700RPM</p>
+                    <div class="pro-price">
+                      <p><b>100,000</b><span> 원</span></p>
+                      <p>/ 1개</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="pop-satis">
+                  <b class="satis-tit">상품 리뷰 평점</b>
+                  <div class="pro-satis-list">
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">가격</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">품질</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">배송</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">서비스</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-text-review">
+                  <p class="pop-layout-txt">상품 후기를 남겨주세요.</p>
+                  <div class="textarea-wrap count">
+                    <textarea class="textarea" name="" id="" placeholder="다른 분들의 보다 나은 선택을 위해  솔직한 리뷰를 남겨주세요."></textarea>
+                    <p class="cot"><b>0</b> / 3000</p>
+                  </div>
+                </li>
+                <li class="pro-upload">
+                  <p class="pop-layout-txt">상품 사진 첨부 또는 동영상 URL를 업로드해 보세요.</p>
+                  <p class="pop-layout-txt2">첨부파일은 JPG, GIF, PNG만 가능하며, 파일당 최대 10MB, 5개까지 등록가능합니다. <br />상품과 무관한 사진을 첨부한
+                    경우, 통보 없이 삭제될 수 있습니다.</p>
+                  <!-- 이미지 업로드 영역 -->
+                  <div class="upload-area">
+                    <!-- 썸네일 -->
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <!--// 썸네일 -->
+                    <!-- 이미지 추가버튼 -->
+                    <div class="img-upload-btn">
+                      <label>
+                        <input type="file" id="input_imgs" multiple />
+                      </label>
+                    </div>
+                    <!--// 이미지 추가버튼 -->
+                  </div>
+                  <!--// 이미지 업로드 영역 -->
+                  <div class="upload-url">
+                    <label for="videourl">동영상 URL</label>
+                    <input type="text" class="input" id="videourl" name="" value="" placeholder="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">등록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 리뷰수정 팝업 -->
+
+
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
