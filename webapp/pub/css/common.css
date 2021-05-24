@@ -45,7 +45,7 @@
 .search-box .search-bt {display: flex; justify-content: space-between; padding: 20px; border-top: 1px solid #000;}
 .search-box .search-bt a {font-size: 14px; color: #666;}
 .search-box .search-bt .close {padding-right: 23px; background: url(../images/common/mo_btn_tooltip_close.svg) right 0 no-repeat;}
-.search-box .list-none {height: 100%; display: flex; align-items: center;}
+.search-box .list-none {height: calc(100% - 20px); display: flex; align-items: center; justify-content: center;}
 .search-box .list-none p {font-size: 16px; color: #999; text-align: center; line-height: 22px; padding-top: 80px; background:url(../images/common/icon_none2.svg) top center no-repeat;}
 
 /* gnb */
@@ -574,7 +574,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .radio-style1 input:disabled + i {background: #fafafa; border: 1px solid #e5e5e5;}
 .radio-style1 input:disabled + i::after {display:none; background:#e5e5e5;}
 .radio-style1 input:checked:disabled + i::after {display:inline-block;}
-.radio-style1 > span {margin-left:7px; font-weight:500; font-size:14px;}
+.radio-style1 > span {margin-left:7px; font-size:14px;}
 .radio-style1 .num {vertical-align:text-bottom; font-weight:400; line-height:1.4;}
 
 .radio-style2 {width:100%; position:relative; display:inline-block;}
