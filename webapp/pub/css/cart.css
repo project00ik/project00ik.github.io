@@ -2,13 +2,13 @@
 /* 장바구니 */
 .cart-top  {display:flex;margin-bottom:30px;}
 .cart-top .step-wrap {margin-left:auto;}
-.cart-top .step-wrap > ul {display:flex;}
-.cart-top .step-wrap > ul > li  {margin-left:60px;position:relative;}
-.cart-top .step-wrap > ul > li::before {content:'';position:absolute;top:0;left:-38px;width:18px;height:40px;background:url(../images/common/arrow_step.svg) top 50% left 50% no-repeat;}
-.cart-top .step-wrap > ul > li:first-child::before {display:none}
-.cart-top .step-wrap > ul > li p span {background:#D7D7D7 ;color:#fff;margin-right:10px;font-size:16px;text-align:center;display:inline-block;width:40px;line-height:40px;border-radius:50%;}
-.cart-top .step-wrap > ul > li.on p  {color:#346DD0 ;}
-.cart-top .step-wrap > ul > li.on p span {background:#346DD0; color:#fff;}
+.step-wrap > ul {display:flex;}
+.step-wrap > ul > li  {margin-left:60px;position:relative;}
+.step-wrap > ul > li::before {content:'';position:absolute;top:0;left:-38px;width:18px;height:40px;background:url(../images/common/arrow_step.svg) top 50% left 50% no-repeat;}
+.step-wrap > ul > li:first-child::before {display:none}
+.step-wrap > ul > li p span {background:#D7D7D7 ;color:#fff;margin-right:10px;font-size:16px;text-align:center;display:inline-block;width:40px;line-height:40px;border-radius:50%;}
+.step-wrap > ul > li.on p  {color:#346DD0 ;}
+.step-wrap > ul > li.on p span {background:#346DD0; color:#fff;}
 .cart-content .tit-type1-2 > em  {font-size:20px; font-weight:normal;}
 .cart-list-con {}
 .cart-list-con .tit-area {margin-bottom:30px;}
