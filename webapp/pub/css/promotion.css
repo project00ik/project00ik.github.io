@@ -130,4 +130,5 @@
 
   /* 열린소싱상품제안 */
   .suggestion-goods {width:986px;}
+  .pop-account.pop-suggestion  > .form-area{width: 100%;}
 }
