@@ -60,6 +60,8 @@
 .chk-list .list-in {margin-top:0; padding-left:40px; border-top:1px solid #d7d7d7; border-bottom:0; position: relative;}
 .chk-list .req {padding:0;}
 .list-con .chk-list .list-in > li > label {width:141px;}
+.list-con .radio-style1 > span {margin-left:10px; color:#000; font-size:16px;}
+.list-con .radio-style1 + .radio-style1 {margin-left:50px;}
 .list-con .btn-detail {margin-top:13px;}
 .chk-list.chk-list-detail {background:#fafafa;}
 .chk-list .form-phone .select {padding:0 20px 0 12px;}
@@ -84,4 +86,26 @@
   .chk-list.chk-list-detail {display:none; height:0; overflow: hidden;}
   .request-number {font-size:14px;}
   .request-number .num {margin-left:5px;}
+}
+
+/* ==========================================================================
+    주문현황
+========================================================================== */
+.btn-open {width:auto; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; padding: 0 12px; color:#000; background:#fff; border:1px solid #000;}
+.btn-open::before {content:""; width:18px; height:35px; line-height:35px; background: url(../images/common/icon_plus_black.svg) 50% 50% no-repeat; display:inline-block; line-height:1.1; vertical-align: top;}
+.btn-open.on {font-size: 0;}
+.btn-open.on::before {background: url(../images/common/icon_minus_black.svg) 50% 50% no-repeat;}
+.btn-open.on::after {content:"닫기"; font-size:14px; vertical-align: top;}
+.w127 {width:127px;}
+.orderFormeTgView .list-in {height:295px; overflow:hidden;}
+.orderFormeTgView.open .list-in {height:auto;}
+.lybox-area {position: relative;}
+.lybox-wrap {width:800px; position: absolute; top:100%; left:0; background:#fff; border: 1px solid #bbb;  z-index:10;}
+.lybox-wrap .chk-area {width:100%; font-size:0;}
+.lybox-wrap .chk-area > li {width:132px; display:inline-block; font-size:14px;}
+@media only screen and (max-width: 800px){
+  /* ==========================================================================
+    주문현황
+  ========================================================================== */
+  .btn-open {height:36px; line-height:35px; }  
 }
