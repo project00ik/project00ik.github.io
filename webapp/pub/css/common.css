@@ -30,7 +30,8 @@
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 
 /* 검색박스 */
-.search-box {position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #000;}
+.search-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #000;}
+.search-box.on {display: block;}
 .search-box .half-box {display: flex;}
 .search-box .half-box > div {position: relative; width: 100%; padding: 20px;}
 .search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background: #000;}
@@ -805,6 +806,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .search-box .search-bt {padding: 16px 20px;}
     .search-box .search-bt a {font-size: 13px; line-height: 15px;}
     .search-box .list-none p {word-break:keep-all; line-height: 18px; width: 90px; font-size: 14px; padding: 60px 0 0 0; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
+    .search-box .half-box .s-list ul li:last-child {padding-bottom: 0;}
 
     .gnb-wrap .gnb-area {width:100%; height:48px; padding:0 0 0 66px;}
     .gnb-wrap .gnb-area .gnb {width:100%; margin-left:0; white-space:nowrap; overflow-y:hidden; overflow-x:auto;}
