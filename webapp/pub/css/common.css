@@ -30,8 +30,8 @@
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 
 /* 검색박스 */
-.search-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #000;}
 .search-box.on {display: block;}
+.search-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #000;}
 .search-box .half-box {display: flex;}
 .search-box .half-box > div {position: relative; width: 100%; padding: 20px;}
 .search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background: #000;}
