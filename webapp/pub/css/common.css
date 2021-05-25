@@ -519,7 +519,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; flex:1;}
 .list-w100 .form-layout3 .form-inline {display:flex; flex:1;}
 .list-con .list-in .btn-right {width:100%; display:block; text-align: right;}
-.select.w127 {width:127px; flex: none; margin-right:10px;}
+.select.w127 {width:127px; flex: none; margin-right:5px;}
 
 .form-phone .select {width: 86px; flex: inherit;}
 .form-phone .input {flex:1;}
