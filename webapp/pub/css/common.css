@@ -757,6 +757,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .img-upload-btn > label input {width:100%; display:inline-block; opacity:0;}
 .upload-area .upload-thumbnail + .upload-thumbnail,
 .upload-area .upload-thumbnail + .img-upload-btn {margin-left:10px;}
+.upload-area.excel-wrap{height: 80px;font-size: 16px;padding:0;margin-top: 16px;}
 
 /* 첨부파일 업로드 */
 .filebox{display: flex;}
