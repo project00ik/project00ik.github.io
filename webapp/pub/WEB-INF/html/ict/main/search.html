@@ -28,7 +28,7 @@
         <div class="search-area">
           <div class="inp-area">
             <input type="search" name="" id="" class="inp" placeholder="기업 자재 일괄 구매는 ICTMALL에서!!!">
-            <button class="del">삭제</button>
+            <button class="btn-del">삭제</button>
           </div>
           <button class="btn btn-search">검색</button>
           <div class="search-box">
@@ -67,6 +67,29 @@
                 <a href="javascript:;" class="close">닫기</a>
             </div>
           </div>
+          <div class="word-box">
+            <div class="word-words">
+              <a href="javascript:;"><span>안전</span>테이프</a>
+              <a href="javascript:;"><span>안전</span>띠</a>
+              <a href="javascript:;"><span>안전</span>보호구함</a>
+              <a href="javascript:;"><span>안전</span>용품</a>
+            </div>
+            <div class="word-list category">
+              <ul>
+                <li><a href="javascript:;">안전/보호구 > 안전화 <span class="mo-hide">(123)</span></a><button class="btn btn-word">카테고리</button></li>
+                <li><a href="javascript:;">안전/보호구 > 안전장갑 <span class="mo-hide">(123)</span></a><button class="btn btn-word">카테고리</button></li>
+                <li><a href="javascript:;">안전/보호구 > 방진/방독마스크 <span class="mo-hide">(123)</span></a><button class="btn btn-word">카테고리</button></li>
+              </ul>
+            </div>
+            <div class="word-list special">
+              <ul>
+                <li><a href="javascript:;">공사장 사고 예방에 꼭 필요한 안전 장비 공사장 사고 예방에 꼭 필요한 안전 장비 공사장 사고 예방에 꼭 필요한 안전 장비</a><button class="btn btn-word">기획전</button></li>
+                <li><a href="javascript:;">우리의 손을 보호하는 다양한 장갑</a><button class="btn btn-word">기획전</button></li>
+                <li><a href="javascript:;">화재 예방 필수 장비 100선</a><button class="btn btn-word">기획전</button></li>
+              </ul>
+            </div>
+          </div>
+          
         </div>
         <div class="right-area">
           <div class="icon-btn cart">
@@ -194,7 +217,7 @@
                     </div>
                   </li>
                 </ul>
-                <button class="layer-close realtimeLyClose">닫기</button>
+                <!-- <button class="layer-close realtimeLyClose">닫기</button> -->
               </div>
             </div>
           </ul>
@@ -281,15 +304,50 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      function searchBox(){
-        var $hdSearch = $('.header-cont .search-area .inp-area input.inp');
-        $hdSearch.focus(function(){
-          alert('1')
-        })
+   
+        
 
-          
+      function searchBox(){
+        //상단 검색박스 펼침
+        var $hdSearch = $('.header-cont .search-area .inp-area');
+        var $closeBtn = $('.search-bt .close');
+        var $searchBox = $('.search-box');
+        $hdSearch.on('click', function(e){
+          searchValue()
+          $searchBox.addClass("on");
+          $closeBtn.click(function(){
+            $('.search-box').removeClass('on');
+          })
+          $('body').mouseup(function(e){
+            if($searchBox.has(e.target).length === 0){
+              $searchBox.removeClass('on');
+            }
+          })
+        })
       }
-      searchBox();
+      searchBox(); //상단 검색박스 펼침
+
+
+      function searchValue(){
+        $(document).on("keyup",".search-area .inp-area .inp",function () { 
+          $(".search-area .inp-area .btn-del").toggle(Boolean($(this).val()));
+          var $ipValue = $('.search-area .inp-area .inp').val();
+          if($('.search-area .inp-area .inp').val().length > 0){
+            $('.word-box').addClass('on');
+            $('.search-box').removeClass('on');
+          } else {
+            $('.word-box').removeClass('on');
+            $('.search-box').addClass('on');
+            
+            if($('.word-box').is('.on')){
+              $('.search-box').removeClass('on');
+            }
+          }
+        });
+      }
+
+      
+      
       
     });
   </script>

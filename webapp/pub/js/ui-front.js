@@ -696,6 +696,12 @@ function realtimeSearchSlide(){
     realtimeSearch.autoplay.start();
     $('.realtimeLayer').hide();
   })
+  $('body').mouseup(function(e){
+    if($('.realtimeLayer').has(e.target).length === 0){
+      $('.realtimeLayer').hide();
+      realtimeSearch.autoplay.start();
+    }
+  })
 }
 
 
