@@ -114,7 +114,7 @@
   /* ==========================================================================
     주문현황
   ========================================================================== */
-  .btn-open {height:36px; line-height:35px; }  
+  .btn-open {height:36px; padding:0 21px; line-height:35px;}
   .orderFormeTgView .list-in {height:578px;}
   .lybox-wrap {width:calc(100% - 40px); margin:10px 20px 0; padding:20px; top:245px; left:0;}
   .lybox-wrap .chk-area {margin-left:0;}
