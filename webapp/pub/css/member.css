@@ -187,7 +187,7 @@
     .list-con .join-agree .agree-area .agree-cont {font-size: 12px; line-height: 1.4;}
     .join-agree-con .list-con {padding: 20px 20px 0 20px; border-bottom: 0;}
 
-    .con-normal-info .list-in {padding-top: 0; flex-direction: column;}
+    .con-normal-info .list-in {padding-top: 20px; flex-direction: column;}
     .con-normal-info .list-in > li {width: 100%;}
     .con-normal-info .list-in .list-w60 {width: 100%;}
     .con-normal-info .list-in .list-w60 .w60-flexbox {width: 190px;}

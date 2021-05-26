@@ -274,6 +274,23 @@ function buyNowLyClose(){
   $('.ly-buyNowLy').removeClass('open');
 }
 
+function lyboxWrap(){
+  // 주문상태 레이어 이벤트
+  $('.lyboxbtn').on('click', function(){
+    $('.lyboxbtn').not($(this).toggleClass('on')).hide();
+    if($(this).hasClass('on')){
+      $('.lyboxWrap').slideDown();
+    } else {
+      $('.lyboxWrap').hide();  
+    }
+  });
+  $('.lyboxClose').on('click', function(){
+    $('.lyboxbtn').removeClass('on');
+    $(this).closest('.lyboxWrap').hide();
+  })
+}
+
+
 function detailLyClose() {
   // 닫기 버튼에  onclick="detailLyClose()" 넣어서 사용
   $('.option-ly-btn').show();
@@ -488,6 +505,22 @@ function reviewToggle() {
       var $reviewActive = $(this);
       $('.detail-review ul > li').not($reviewActive.closest('li').addClass('on')).removeClass('on');
     })
+  });
+}
+
+function orderFormeTgView(){
+  // 주문현황 폼영역 열고 닫기
+  $('.orderFormeTgView').each(function(){
+    var $targetScrollPoint = $('.formeTgScrollPoint').offset().top - 300;
+    $(this).find('.formTgBtn').on('click', function(){
+      $(this).toggleClass('on');
+      if($(this).hasClass('on')){
+        $('.orderFormeTgView').addClass('open');
+      } else {
+        $('.orderFormeTgView').removeClass('open');
+        $('html, body').stop().animate({ scrollTop: $targetScrollPoint }, 300);
+      }
+    });
   });
 }
 

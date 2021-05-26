@@ -63,6 +63,8 @@
 .list-con .radio-style1 > span {margin-left:10px; color:#000; font-size:16px;}
 .list-con .radio-style1 + .radio-style1 {margin-left:50px;}
 .list-con .btn-detail {margin-top:13px;}
+.mypage-cont .list-file-con {padding-top:20px;}
+
 .chk-list.chk-list-detail {background:#fafafa;}
 .chk-list .form-phone .select {padding:0 20px 0 12px;}
 .request-number {font-size:16px; font-weight: 500; color:#666; display:inline-block;}
@@ -82,6 +84,7 @@
   .total-price .price b {font-size:20px;}
   .chk-list .list-in {margin:0; padding:56px 20px 0; border-bottom:0;}
   .chk-list .check-style2 {margin-top:0; top:20px;}
+  .list-con .btn-r-area .btn {width:50%; flex:1; min-width:auto;}
   .list-con .btn-detail {display:none;}
   .chk-list.chk-list-detail {display:none; height:0; overflow: hidden;}
   .request-number {font-size:14px;}
@@ -100,12 +103,20 @@
 .orderFormeTgView .list-in {height:295px; overflow:hidden;}
 .orderFormeTgView.open .list-in {height:auto;}
 .lybox-area {position: relative;}
-.lybox-wrap {width:800px; position: absolute; top:100%; left:0; background:#fff; border: 1px solid #bbb;  z-index:10;}
-.lybox-wrap .chk-area {width:100%; font-size:0;}
-.lybox-wrap .chk-area > li {width:132px; display:inline-block; font-size:14px;}
+.lybox-wrap {display:none; width:800px; padding:30px; position: absolute; top:168px; left:150px; background:#fff; border: 1px solid #bbb;  z-index:10;}
+.lybox-wrap .tit {font-weight:500; font-size:16px;}
+.lybox-wrap .chk-area {width:calc(100% + 20px); font-size:0; margin-left:-20px;}
+.lybox-wrap .chk-area > li {width:132px; margin:20px 0 0 19px; display:inline-block; font-size:14px;}
+.lybox-wrap .chk-area .check-style1 > span {font-size:14px; color:#666;}
+.lyboxClose {width:24px; height:24px; font-size:0; background: url(../images/common/btn_cate_ly_close.svg) 50% 50% no-repeat; display:inline-block; position: absolute; top:9px; right:9px;}
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     주문현황
   ========================================================================== */
   .btn-open {height:36px; line-height:35px; }  
+  .orderFormeTgView .list-in {height:578px;}
+  .lybox-wrap {width:calc(100% - 40px); margin:10px 20px 0; padding:20px; top:245px; left:0;}
+  .lybox-wrap .chk-area {margin-left:0;}
+  .lybox-wrap .chk-area > li {width:50%; margin-left:0;}
 }

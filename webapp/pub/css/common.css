@@ -1004,8 +1004,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-style-mm2 {width: 100%;}
 
     /* 모바일 버튼 퍼센트형 */
-    .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; margin-top:-10px;}
-    .btn-mo-percent .btn {margin-left:10px; margin-top:10px;}
+    .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; padding-bottom:0;}
+    .btn-mo-percent .btn {margin-left:10px; margin-bottom:10px;}
     .btn-mo-percent .btn.mo-btn-w100 {width:calc(100% - 10px); flex:calc(100% - 10px) 1 1 !important; min-width:auto;}
     .btn-mo-percent .btn.mo-btn-w50 {width:calc(50% - 10px); flex:calc(50% - 10px) 1 1 !important; min-width:auto;}
 
