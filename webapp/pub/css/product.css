@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* ==========================================================================
     상품상세
 ========================================================================== */
@@ -369,6 +368,19 @@
 .ly-buyNowLy .option-ly-btn-open {width:24px; height:24px; background: url(../images/common/btn_close_s.svg) 0 0 no-repeat; top:16px; left:inherit; right:16px;}
 
 /* ==========================================================================
+   검색결과페이지
+   ========================================================================== */
+.result-content .tit-area {margin-bottom: 30px;}
+.relevant-words {margin-bottom: 20px; padding: 20px 30px; border: 1px solid #d7d7d7;display: flex; }
+.relevant-words .tit p {width: 135px; font-size: 16px; color: #000;}
+.relevant-words .tit p:after {content: ''; display: inline-block; width: 1px; height: 10px; margin: 0 30px; background: #bbb;}
+.relevant-words .cont {flex:1; margin: 0 -15px -18px; font-size: 0;}
+.relevant-words .cont a {display: inline-block; margin: 0 15px 16px; font-size: 16px; color: #999;}
+.search-product-result .tit-area {margin-bottom: 30px;}
+
+
+
+/* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
 @media only screen and (max-width:1200px){
@@ -590,6 +602,23 @@
     .ly-buyNowLy .btn-area {padding:20px;}
     .ly-buyNowLy .btn-area .btn-style-ml2 {width:100%; height:42px; line-height:41px;}
     .ly-buyNowLy .cart-select-area {width:calc(100% + 40px); margin:20px -20px 0; position: inherit; padding:20px 20px 0; border-top:1px solid #d7d7d7;}
+
+    /* ==========================================================================
+   검색결과페이지
+   ========================================================================== */
+   .result-content {margin-top: 16px;}
+   .result-content .tit-area {margin-bottom: 16px;}
+   .relevant-words {width: 100%; overflow-x: auto; margin-bottom: 0; border-left: 0; border-right: 0; border-top: 10px solid #f5f5f5; border-bottom: 1px solid #f5f5f5;}
+   .relevant-words .tit p {width: 106px; font-size: 14px;}
+   .relevant-words .tit p:after {margin: 0 20px;}
+   .relevant-words .cont {width: 100%; white-space: nowrap;}
+   .relevant-words .cont a {font-size: 14px; margin: 0 10px 16px;}
+   .search-product-result .tit-area {margin: 10px 0 20px;}
+
+
+
+
+
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 }
