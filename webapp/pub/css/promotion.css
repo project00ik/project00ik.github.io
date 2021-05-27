@@ -114,7 +114,7 @@
 .mystate-con .product-info-list .list-con .list-in > li.w100 {width: 100%}
 .mystate-con .product-info-list .list-con .list-in > li > label{width: 170px; align-self: flex-start;}
 .mystate-con .product-info-list .list-con .list-in > li p{color:#666;flex:1}
-.mystate-con .product-info-list .list-con .list-in > li p a{color:#346DD0;text-decoration: underline;}
+.mystate-con .product-info-list .list-con .list-in > li p a{color:#346DD0;text-decoration: underline ;}
 .mystate-con .product-info-list > .list-con ul{border-bottom: 1px solid #d7d7d7;}
 .mystate-con .product-info-list > .list-con ul:last-child{border-bottom: 0}
 .mystate-con .product-info-list .list-con .btn-r-area3 {margin-bottom: 20px;}
