@@ -1596,7 +1596,7 @@
                     <label for="">협력사</label>
                     <div class="form-layout form-search">
                       <input type="text" class="input">
-                      <button class="btn btn-search2">검색</button>
+                      <button class="btn btn-search2" onclick="inLyOpen('myMngPartnersPopup')">검색</button>
                     </div>
                   </div>
                 </li>
@@ -1926,6 +1926,46 @@
   </div>
   <!--// 상품정보 수정요청 팝업 -->
 
+  <!-- 협력사 조회 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myMngPartnersPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>협력사 조회</p>
+            <a href="javascript:;" class="inLyClose btn btn-close">닫기</a><!-- 닫기 이벤트 class : inLyClose -->
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-suggestion">
+              <div class="user-search">
+                <div class="pop-mo-form">
+                  <select class="select" name="" id="">
+                    <option value="">사업장</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div class="form-area">
+                    <input type="text" class="input" name="" value="" placeholder="">
+                  </div>
+                </div>
+                <div class="pop-mo-btn">
+                  <button class="btn btn-style-m2 inLyClose">조회</button>
+                  <button class="btn btn-style-m1">초기화</button>
+                </div>
+              </div>
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //협력사 조회 팝업 -->
+
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -1954,6 +1994,7 @@
       reviewToggle(); //리뷰토글
       toggleSlideArea(); // // 토글영역(slide모션)(상품문의)
       pagination(); // 페이지네이션
+      inLyClose(); // 팝업안에 팝업 닫기
       
       // 상품상세 슬라이드
       // 썸네일

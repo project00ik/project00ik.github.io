@@ -235,6 +235,24 @@ function lyClose(){
   $('.lyPopupWrap').removeClass('open');
 }
 
+function inLyOpen(id) {
+  // 팝업안에 팝업
+  var $lyAcive = $('#' + id);
+  $lyAcive.fadeIn();
+  $lyAcive.addClass('open');
+}
+
+function inLyClose(){
+  // 팝업안에 팝업 닫기
+  $('.inLyClose').each(function(){
+    $(this).on('click', function(){
+      $(this).closest('.lyPopupWrap').hide();
+      $(this).closest('.lyPopupWrap').removeClass('open');
+    })
+  });
+}
+
+
 function detailOptionLy(){
   // 상품상세 옵션 레이어 이벤트
   $('.detailLyBtn').on('click', function () {
