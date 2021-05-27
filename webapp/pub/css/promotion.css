@@ -119,6 +119,14 @@
 .mystate-con .product-info-list > .list-con ul:last-child{border-bottom: 0}
 .mystate-con .product-info-list .list-con .btn-r-area3 {margin-bottom: 20px;}
 
+/* 마이페이지 주문현황 팝업*/
+.pop-myState .pop-layout > ul{border: none;}
+.pop-myState .pop-layout > ul li{border: none;}
+.pop-myState .pop-layout > ul li:first-child{padding-top: 0;}
+.pop-myState .pop-layout > ul li label{width: 180px;padding-left: 0;}
+.pop-myState .btn-r-area3{padding-top: 10px;}
+.pop-myState .my-state-txt{margin-bottom: 20px;}
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     프로모션
@@ -176,5 +184,9 @@
   .mystate-con .product-info-list .list-con .btn-r-area3 {margin-bottom: 0;}
   .mystate-con .product-info-list .list-con .tgSlide{border-bottom: 0;}
   
+  /* 마이페이지 주문현황 팝업*/
+.pop-myState .btn-r-area3{padding:10px 0 20px;}
+.pop-myState .btn-r-area3 > .btn + .btn{margin-left:10px ;}
+
   
 }

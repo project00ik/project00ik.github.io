@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="wrap mypage">
+  <div class="wrap">
     <header class="header">
       <div class="header-top">
         <a href="#" class="bul-bar">로그아웃</a>
@@ -57,8 +57,8 @@
           <div class="cate-area">
             <button class="btn-cate btnCate">전체카테고리</button>
             <button class="btn-cate moBtnCate">전체카테고리</button>
-        </div>
-        <!--// header 카테고리 -->
+          </div>
+          <!--// header 카테고리 -->
           <div class="gnb">
             <ul>
               <li><a href="#">브랜드</a></li>
@@ -198,73 +198,34 @@
       </div>
     </footer>
   </div>
-
-  <!-- 배송지관리 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngDeliveryPopup">
+  <!-- 주문상품취소 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="cartWritePopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>상품 조회</p>
+          <div class="lyTitle">
+            <p>주문상품취소</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
             <div class="pop-layout pop-myState">
-              <div class="pop-layout pop-write">
-                <ul>
-                  <li>
-                    <div class="pop-ip-area">
-                      <label for="">상품명</label>
-                      <div class="form-layout">
-                        <input type="text" class="input" value="">
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pop-ip-area">
-                      <label for="">상품코드</label>
-                      <div class="form-layout">
-                        <input type="text" class="input" value="">
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pop-ip-area">
-                      <label for="">상품모델</label>
-                      <div class="form-layout">
-                        <input type="text" class="input" value="">
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pop-ip-area">
-                      <label for="">상품규격</label>
-                      <div class="form-layout">
-                        <input type="text" class="input" value="">
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="btn-r-area3">
-                <a href="javascript:;" class="btn btn-style-m1">조회</a>
-                <a href="javascript:;" class="btn btn-style-m2">초기화</a>
+              <p class="my-state-txt">주문취소사유</p>
+              <div class="textarea-wrap count">
+                <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
+                <p class="cot"><b>0</b> / 400</p>
               </div>
             </div>
-            <div class="excel-wrap">
-              * 상품 조회 그리드 영역
-            </div>
+          </div>
+          <div class="btn-area">
+            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //배송지관리 조회 팝업 -->
-
-
-
-
+  <!-- //주문상품취소 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -288,9 +249,10 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('myMngDeliveryPopup');
+      lyOpen('cartWritePopup');
 
-    
+
+
     });
   </script>
   <!-- javascript -->
