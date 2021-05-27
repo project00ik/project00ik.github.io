@@ -244,7 +244,7 @@
                   <div class="form-layout">
                     <div class="form-search w127">
                       <input type="text" name="" class="input" value="10004" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                      <button class="btn btn-search2" onclick="lyOpen('myMngPartnersPopup')">검색</button>
                     </div>
                     <input type="text" name="" class="input ml5" value="대륙상사" placeholder="" readonly="readonly">
                   </div>
@@ -484,35 +484,6 @@
     </footer>
   </div>
 
-  <!-- 기등록 취소 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="mypageSuggestionPopup6">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle">
-            <p>기등록 취소 의견</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-cart">
-              <div class="textarea-wrap count">
-                <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
-                <p class="cot"><b>0</b> / 400</p>
-              </div>
-            </div>
-          </div>
-          <div class="btn-area">
-            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //기등록 취소 팝업 -->
-
-
   <!-- 고객사 사업장 조회 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="myMngOfficePopup">
     <!-- id 값 버튼과 연결해주세요. -->
@@ -632,6 +603,46 @@
     </div>
   </div>
   <!-- //고객사 사용자 조회 팝업 -->
+
+  <!-- 협력사 조회 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myMngPartnersPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>협력사 조회</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-suggestion">
+              <div class="user-search">
+                <div class="pop-mo-form">
+                  <select class="select" name="" id="">
+                    <option value="">협력사명</option>
+                    <option value="">협력사코드</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div class="form-area">
+                    <input type="text" class="input" name="" value="" placeholder="">
+                  </div>
+                </div>
+                <div class="pop-mo-btn">
+                  <button class="btn btn-style-m2">조회</button>
+                  <button class="btn btn-style-m1">초기화</button>
+                </div>
+              </div>
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //협력사 조회 팝업 -->
 
 
 
