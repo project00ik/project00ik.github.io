@@ -341,44 +341,56 @@
 
       function searchBox(){
         //상단 검색박스 펼침
-        var $hdSearch = $('.header-cont .search-area .inp-area');
-        var $closeBtn = $('.search-bt .close');
-        var $searchBox = $('.search-box');
-        $hdSearch.on('click', function(e){
-          searchValue()
-          $searchBox.addClass("on");
-          $closeBtn.click(function(){
-            $('.search-box').removeClass('on');
+        
+        var hdSearchArea = $('.header-cont .search-area');
+        var searchBox = $('.header-cont .search-box');
+        var wordBox = $('.header-cont .word-box');
+        var ipHdSearch = $('.header-cont .search-area .inp-area .inp');
+        var ipValue = $('.header-cont .search-area .inp-area .inp').val();
+        var ipDelBtn = $(".header-cont .search-area .inp-area .btn-del");
+        var closeBtn = $('.header-cont .search-bt .close');
+
+        ipHdSearch.focus(function(e){
+        
+          // val값삭제
+          $(document).on("keyup",".header-cont .search-area .inp-area .inp",function () { 
+            ipDelBtn.toggle(Boolean($(this).val()));
+            searchBox.addClass("on");
+            if($(this).val().length > 0){ //val값 있을때
+              wordBox.addClass('on');
+              searchBox.removeClass('on');
+
+              
+              
+              ipDelBtn.click(function(){ //val 삭제버튼 클릭
+                ipHdSearch.val('');
+                wordBox.removeClass('on');
+                searchBox.addClass('on');
+              })
+            } else { //val값 없을때
+              
+              searchBox.addClass("on");
+              wordBox.removeClass('on');
+            }
+          });
+          
+          searchBox.addClass("on");
+          closeBtn.click(function(){
+            searchBox.removeClass("on");
           })
           $('body').mouseup(function(e){
-            if($searchBox.has(e.target).length === 0){
-              $searchBox.removeClass('on');
+            if(hdSearchArea.has(e.target).length === 0){
+              searchBox.removeClass('on');
             }
           })
+
+
         })
+
+
       }
       searchBox(); //상단 검색박스 펼침
 
-
-      function searchValue(){
-        $(document).on("keyup",".search-area .inp-area .inp",function () { 
-          $(".search-area .inp-area .btn-del").toggle(Boolean($(this).val()));
-          var $ipValue = $('.search-area .inp-area .inp').val();
-          if($('.search-area .inp-area .inp').val().length > 0){
-            $('.word-box').addClass('on');
-            $('.search-box').removeClass('on');
-          } else {
-            $('.word-box').removeClass('on');
-            $('.search-box').addClass('on');
-            
-            if($('.word-box').is('.on')){
-              $('.search-box').removeClass('on');
-            }
-          }
-        });
-      }
-
-      
       
       
     });
