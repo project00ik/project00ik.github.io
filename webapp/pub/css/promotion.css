@@ -129,6 +129,46 @@
 .pop-myState .pop-write + .tit-type2-1{padding-top: 30px;margin-top: 10px;border-top: 1px solid #BBBBBB;}
 .pop-myState .textarea-wrap{width: 100%;}
 
+/* 보험 */
+.insurance-cont .promt-banner{margin-bottom: 100px;}
+.insurance-cont .tab-style3{width: 600px;margin: 0 auto;}
+.insurance-cont .tab-style3 > li{width: 50%;}
+.insurance-cont .tit-txt{font-size:28px;text-align: center;}
+.insurance-cont .tit-txt + .sub-txt{margin-top: 30px;}
+.insurance-cont .sub-txt{font-size: 18px;text-align: center;}
+.insurance-cont .sub-txt em{color:#346DD0;text-align: center;vertical-align: top;}
+.insurance-cont .tab-cont{padding-top: 70px;}
+.insurance-cont .report01{display: flex;padding:70px 50px 100px}
+.insurance-cont .report01 > div{width: calc(50% - 9px);}
+.insurance-cont .report01 > div:last-child{margin-left: 18px;}
+.insurance-cont .report01 > div > p{background: #2D3A52;border-radius: 24px;line-height: 48px;font-size: 16px; color:#fff;width: 298px;margin: 0 auto;text-align: center;z-index: 9;position: relative;}
+.insurance-cont .report01 > div:last-child > p{background: #346DD0;}
+.insurance-cont .report01 .report-box {width:100%;;margin-top: -24px;z-index: 10;border-radius: 10px;background:#F5F5F5;height: 540px;}
+.insurance-cont .report01 .report01-img {width: 247px;margin: 0 auto;padding-top:97px;}
+.insurance-cont .report01 .report01-img .circle{width:110px; line-height: 110px;border-radius: 50%;font-size: 16px;background:#2D3A52;text-align: center;color:#fff;margin: 0 auto;}
+.insurance-cont .report01 .report01-img .request{position: relative;;padding: 16px 0 45px;background:url(../images/common/insur_arr_01.svg) 34px 10px no-repeat;}
+.insurance-cont .report01 .report01-img .request::after{content: "";width:8px;height:60px;display: inline-block;background:url(../images/common/insur_arr_02.svg) 0 0 no-repeat;position: absolute;top:10px;left:114px;}
+.insurance-cont .report01 .report01-img div span{display: inline-block;background: #fff;width: 70px;border:1px solid #BBBBBB;border-radius: 17px;font-size: 14px;text-align: center;line-height: 34px;margin: 0 9px 20px 0}
+.insurance-cont .report01 .report01-img div span:nth-child(4){margin-left: 40px;}
+.insurance-cont .report01 .dot {width: 285px;margin: 0 auto;padding: 50px 0 30px}
+.insurance-cont .report01 .dot ul li::before{content: "";display: inline-block;width: 4px; height: 4px;border-radius: 50%; background:#999;margin-right: 8px;vertical-align: super;}
+.insurance-cont .report01 .report02-img {width:470px;margin:0 auto;padding-top: 54px;}
+.insurance-cont .report01 .report02-img .group-img{background:#cedaee;padding:18px 30px;border-radius: 35px;position: relative;}
+.insurance-cont .report01 .report02-img .group-img:after{content: "";position: absolute;bottom:-12px;right: 100px;width: 14px;height: 12px;background:url(../images/common/insur_arr_05.svg) 0 0 no-repeat;}
+.insurance-cont .report01 .report02-img .group-img.insur{background:#e5e5e5;}
+.insurance-cont .report01 .report02-img .group-img.insur:after{display: none;}
+.insurance-cont .report01 .report02-img .group-img span{line-height: 34px;text-align: center;width: 70px;display: inline-block;border-radius: 17px;margin-left: 11px;background: #fff;}
+.insurance-cont .report01 .report02-img .group-img span:first-child{margin-left: 0}
+.insurance-cont .report01 .report02-img div:nth-child(2) {padding:10px 0 0;}
+.insurance-cont .report01 .report02-img div p{text-align: right;padding-right: 50px;margin: 10px 0;}
+.insurance-cont .report01 .report02-img div .circle{width:110px; line-height: 110px;border-radius: 50%;font-size: 16px;background:#2D3A52;text-align: center;color:#fff;display: inline-block;margin-left: 30px;}
+.insurance-cont .report01 .report02-img div .circle.kt{background:#346DD0;margin-left: 0;}
+.insurance-cont .report01 .report02-img div .arr-03{padding-top:18px;background:url(../images/common/insur_arr_03.svg) 50% 0 no-repeat;display: inline-block;margin-top: 30px;width: calc(100% - 305px);text-align: center;}
+.insurance-cont .report01 .report02-img div .arr-04{background:url(../images/common/insur_arr_04.svg) top 0 right 100px no-repeat;line-height: 42px;padding-right: 0;}
+.insurance-cont .report01 .report02-img + .dot {width: 326px;margin: 0 auto;padding: 30px 0}
+
+
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     프로모션
@@ -194,4 +234,41 @@
   .pop-myState .pop-layout > ul li label{font-size: 14px;}
 
   
+  /* 보험 */
+  .insurance-cont .tab-style3{width: 100%}
+  .insurance-cont .tab-style3 > li{width: 50%;}
+  .insurance-cont .report01{padding:0 20px;display: block;}
+  .insurance-cont .report01 .report-box{height:auto}
+  .insurance-cont .report01 > div{width: 100%;}
+  .insurance-cont .report01 > div:last-child{margin-left: 0;margin-top: 30px;}
+  .insurance-cont .report01 .report01-img{padding-top:40px}
+  .insurance-cont .report01 .dot{padding-top:10px}
+  .insurance-cont .report01 .report02-img .group-img:after{right:38px}
+  .insurance-cont .report01 .report02-img .group-img span{margin-left: 8px;margin-bottom: 10px;}
+  .insurance-cont .report01 .report02-img div p{padding-right: 0;}
+  .insurance-cont .report01 .report02-img div .circle{margin-left: 0;width: 90px; line-height: 90px;}
+  .insurance-cont .report01 .report02-img div .arr-03{width: calc(100% - 188px);background-size: 96px auto;}
+  .insurance-cont .report01 .report02-img div .arr-04{background:url(../images/common/insur_arr_04.svg) top 0 right 40px no-repeat;padding-right: 57px;}
+  
+}
+@media only screen and  (min-height:812px){ /* iphoneX */
+
+}
+@media only screen and (max-width:768px){ /* ipad */
+
+}
+@media only screen and (max-width:760px){
+}
+
+@media only screen and (max-width:480px){
+  .insurance-cont .report01 .report02-img{width: calc(100% - 40px);}
+}
+@media only screen and (max-width:414px){ /* iphone plus */
+
+}
+@media only screen and  (max-width:375px){ /* iphone6 */
+
+}
+@media only screen and  (max-width:360px){ /* galaxy */
+
 }

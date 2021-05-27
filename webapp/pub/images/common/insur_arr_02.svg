@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="60" viewBox="0 0 8 60">
+  <g id="arrow" transform="translate(-676 -1077)">
+    <line id="선_3" data-name="선 3" y2="51" transform="translate(680 1077)" fill="none" stroke="#999" stroke-width="1" stroke-dasharray="2"/>
+    <path id="다각형_4" data-name="다각형 4" d="M4,0,8,7H0Z" transform="translate(684 1137) rotate(180)" fill="#bbb"/>
+  </g>
+</svg>
