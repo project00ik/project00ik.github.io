@@ -412,8 +412,8 @@ button.btn-style-s1 {line-height:25px;}
 .tit-type1-1 {font-size: 28px; color: #000; margin-bottom: 50px;}
 .tit-type1-2 {font-size: 28px; color: #000; font-weight: bold;}
 .tit-type1-3 {font-size: 28px; color: #000;}
-.tit-type1-3 b {color: #346dd0; vertical-align: middle; height: 41px; display: inline-block;}
-.tit-type1-3 span {font-size: 24px; vertical-align: baseline; line-height: 41px; display: inline-block;}
+.tit-type1-3 b {color: #346dd0; vertical-align: baseline;}
+.tit-type1-3 span {font-size: 24px; vertical-align: baseline;}
 .tit-type2 {font-size:24px; font-weight: 500; color:#000;}
 .tit-type2 .count {display: inline-block; margin-left: 5px; font-size: 24px; color: #346dd0; font-weight: 500; line-height: 24px; vertical-align: baseline;}
 .tit-type2 .sub-txt {font-size: 16px; color: #000; vertical-align: top; line-height: 28px;}
