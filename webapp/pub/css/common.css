@@ -1060,6 +1060,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     /* 텍스트 관련 */
     .tit-area {padding:0 20px;}
+    .tit-area {margin-bottom: 16px;} /* 정리필요 */
     .tit-type1 {font-size:22px;}
     .tit-type1-2 {width:100%; padding:8px 38px; font-size: 16px; font-weight: 500; text-align: center; margin-bottom: 0; border-bottom: 1px solid #d7d7d7; position: fixed; top:176px; left:0; z-index: 10; background:#fff;}
     .tit-type1-3 {font-size: 18px;}
@@ -1071,8 +1072,6 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .tit-type2-1 .right-area {right:20px;}
     .tit-type3 {font-size:16px;}
     
-
-    .tit-area {margin-bottom: 16px;} /* 정리필요 */
 
     /* 공통 아이콘 */
     .icon-new {width:14px; height:14px; line-height:14px;}
