@@ -968,7 +968,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
     .popup-cont .pop-layout-txt {font-size: 15px;}
     .popup-cont .pop-layout-txt2 {font-size: 13px;}
-    .pop-layout > ul > li {padding: 16px 0;}
+    .pop-layout > ul > li:first-child {padding-top: 0;}
+    .pop-layout > ul > li {padding: 10px 0;}
 
 
     

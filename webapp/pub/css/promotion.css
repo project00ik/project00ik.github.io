@@ -188,8 +188,10 @@
   .mystate-con .product-info-list .list-con .tgSlide{border-bottom: 0;}
   
   /* 마이페이지 주문현황 팝업*/
-.pop-myState .btn-r-area3{padding:10px 0 20px;}
-.pop-myState .btn-r-area3 > .btn + .btn{margin-left:10px ;}
+  .pop-myState .tit-type2-1{font-size: 18px;}
+  .pop-myState .btn-r-area3{padding:10px 0 20px;}
+  .pop-myState .btn-r-area3 > .btn + .btn{margin-left:10px ;}
+  .pop-myState .pop-layout > ul li label{font-size: 14px;}
 
   
 }
