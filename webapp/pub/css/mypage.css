@@ -147,6 +147,14 @@
     /* 공통 */
     .join-txt3 {font-size: 14px; display: block; padding: 10px 0 0 0;}
 
+    /* 마이페이지 메인 */
+    .mypage-cont .main-style {}
+    /* 마이페이지 서브 */
+    .mypage-cont .tit-area2:first-child {display:none;}
+    .mypage-cont .join-list-con {padding-top:0;}
+
+    /* 주문현황 */
+    .btn-r-area3.mypage-step {margin-top:-10px;}
 
     /* ==========================================================================
         마이페이지

@@ -43,6 +43,7 @@
 }
 
 
+
 /* ==========================================================================
     신규상품요청
 ========================================================================== */
@@ -119,4 +120,11 @@
   .lybox-wrap {width:calc(100% - 40px); margin:10px 20px 0; padding:20px; top:245px; left:0;}
   .lybox-wrap .chk-area {margin-left:0;}
   .lybox-wrap .chk-area > li {width:50%; margin-left:0;}
+
+  /* 공통 */
+  /* 마이페이지 메인 */
+  .mypage-cont .main-style {}
+  /* 마이페이지 서브 */
+  .mypage-cont .tit-area2:first-child {display:none;}
+  .mypage-cont .join-list-con {padding-top:0;}
 }
