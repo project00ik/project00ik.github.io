@@ -300,6 +300,7 @@
     /* 장바구니 유닛 */
     .unit-cart .check-style2 {margin-top:0; top:20px; left:20px; z-index:8;}
     .unit-cart {padding:50px 20px 20px; flex-direction:column;}
+    .unit-cart > a {width: 100%;}
     .unit-cart .unit-area {}
     .unit-cart .unit-area > dt {width:125px; height:125px;}
     .unit-cart .unit-area > dt .soldeout-txt {font-size:14px;}

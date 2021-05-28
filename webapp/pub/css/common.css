@@ -242,6 +242,10 @@
 .result-none .b-txt b {color: #346dd0; vertical-align: baseline;}
 .result-none .s-txt {font-size: 16px; color: #999; line-height: 22px;}
 
+/* 결과없음(리스트) */
+.result-none-list {width:100%; text-align: center; padding: 100px 0;}
+.result-none-list .no-txt {padding: 80px 0 0 0; font-size: 16px; color: #999; line-height: 22px; background:url(../images/common/icon_none2.svg) center 0 no-repeat;}
+
 /* 바로구매 장바구니 팝업 */
 .ly-buyNowLy {display:none; width:100%; height:100%; position:fixed; top:0; left:0; z-index:999;}
 .buyNowLyDim {width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,0.6); position:fixed; top:0; left:0; z-index:99;}
@@ -458,7 +462,7 @@ button.btn-style-s1 {line-height:25px;}
 
 .tab-area .tab-style2 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap;}
 .tab-area .tab-style2 > li + li {margin-left:36px;}
-.tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:18px; position:relative;}
+.tab-area .tab-style2 .tabBtn {cursor: pointer; padding-bottom:5px; font-size:18px; position:relative;}
 .tab-area .tab-style2 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style2 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
 
@@ -466,7 +470,7 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display:flex; justify-content:space-around; position:relative;}
 .tab-area .tab-style3::after {content:''; width:100%; height:1px; display:inline-block; background:#d7d7d7; position:absolute; bottom:0; left:0;}
 .tab-area .tab-style3 > li {width:25%; text-align:center; cursor:pointer;}
-.tab-area .tab-style3 .tabBtn {padding-bottom:4px; font-size:20px; line-height:51px; position:relative;}
+.tab-area .tab-style3 .tabBtn {cursor: pointer; padding-bottom:4px; font-size:20px; line-height:51px; position:relative;}
 .tab-area .tab-style3 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style3 .tabBtn.on::after {content:""; width:100%; height:4px; background:#346dd0; display:inline-block; position:absolute; bottom:0px; left:0; z-index:1;}
 .tab-area .tab-cont {width:100%; padding:30px 0}
@@ -985,6 +989,10 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .result-none {padding: 24px 20px 60px;}
     .result-none .b-txt {font-size: 18px; padding: 60px 0 10px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
     .result-none .s-txt {font-size: 14px; line-height: 18px;}
+
+    /* 결과없음(리스트) */
+    .result-none-list {padding: 70px 0 100px;}
+    .result-none-list .no-txt {padding: 60px 0 0 0; font-size: 14px; line-height: 18px; background:url(../images/common/mo_icon_none2.svg) center 0 no-repeat; }
 
     
 

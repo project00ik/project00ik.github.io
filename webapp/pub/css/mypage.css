@@ -273,7 +273,7 @@
     .btn-r-area.mo-hide {display: none;}
 
     /* 나의리뷰 */
-    .top-flex-area {padding: 4px 20px 20px; flex-direction: column;}
+    .top-flex-area {padding: 20px; flex-direction: column;}
     .top-flex-area .form-layout {margin: 10px 0 0 0; max-width: 100%;}
     .top-flex-area .rd-btn-area {display: flex;}
     .top-flex-area .rd-btn-area .rd-btn {flex:1;}
