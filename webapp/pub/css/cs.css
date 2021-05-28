@@ -72,12 +72,13 @@
   .interested-list > li {padding:18px 54px 18px 50px;}
   .interested-list > li .chk-area {left:10px;}
   .interested-list .txt-area .txt {font-size: 14px;}
+  .mypage-cont .my-main .product-result.wish-list .tit-area {border:0; padding-bottom:5px;}
 }
 
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     고객센터 layout
-========================================================================== */
+  ========================================================================== */
   .cs-cont .cs-menu {position: relative; width: 100%; padding: 50px 0 0;}
   .cs-cont .cs-menu .cs-logo {display: none;}
   .cs-cont .cs-menu .cs-menu-list > ul {padding-left: 0; border-top: 10px solid #f5f5f5; border-bottom: 10px solid #f5f5f5;}
