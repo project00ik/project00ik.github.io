@@ -220,6 +220,7 @@
     .mypage-cont .my-menu .my-menu-list .list-deps > li:first-child {border-top: 1px solid #d7d7d7;}
     .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 0; border-top: 1px solid #e5e5e5;}
     .mypage-cont .my-menu .my-menu-list .list-deps > li > a {padding: 12px 20px; font-size: 14px;}
+    .mypage-cont .my-menu .my-menu-list .list-deps > li.on > a {color:#666; font-weight:400;}
 
     .mypage-cont .my-main {margin-left: 0;}
     .mypage-cont .my-main .my-top-area {margin-bottom: 20px; border-radius: 0; padding: 20px; height: 153px; flex-direction: column; align-items: flex-start; justify-content: flex-start;}
