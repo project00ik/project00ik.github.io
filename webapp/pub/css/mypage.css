@@ -147,7 +147,7 @@
 .total-price .price b {font-size: 22px; vertical-align: text-bottom; font-weight: 700;}
 .chk-list {position: relative;}
 .chk-list .check-style2 {margin-top:-15px; position: absolute; top:50%; left:20px; z-index:1;}
-.chk-list .list-in {margin-top:0; padding-left:40px; border-top:1px solid #d7d7d7; border-bottom:0; position: relative;}
+.list-con .chk-list .list-in {margin-top:0; padding-left:40px; border-top:1px solid #d7d7d7; border-bottom:0; position: relative;}
 .chk-list .req {padding:0;}
 .list-con .chk-list .list-in > li > label {width:141px;}
 .list-con .radio-style1 > span {margin-left:10px; color:#000; font-size:16px;}
