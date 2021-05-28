@@ -348,6 +348,7 @@ button.btn-style-s1 {line-height:25px;}
 .flag-txt.brown {color:#c67043; border:1px solid #c67043;}
 .flag-txt.green {color:#239587; border:1px solid #239587;}
 .flag-txt.black {color:#000; border:1px solid #bbb;}
+.flag-txt.gray {color:#000; background:#e5e5e5;}
 .flag-txt.flag-hide {display:none;}
 .proList .flag-txt.flag-hide {display:inline-block;}
 
