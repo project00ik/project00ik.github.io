@@ -52,7 +52,7 @@
 .con-normal-info .list-in > li {width: 33.333%;}
 .con-normal-info .list-in > li > label {width: 120px;}
 
-.list-file-con .file-con {margin: 10px 0; border: 1px solid #d7d7d7; display: flex;}
+.list-file-con .file-con {margin: 10px 0; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; display: flex;}
 .list-file-con .file-con .in-grid-size {background: #f5f5f5; min-height: 280px; overflow-y: hidden; overflow-x: auto;}
 .list-file-con .file-con .in-grid-size.w-460 {width: 460px; margin-right: 10px;}
 .list-file-con .file-con .in-grid-size.w-all {flex:1;}
