@@ -1,0 +1,74 @@
+/* ==========================================================================
+    고객센터 layout
+========================================================================== */
+.cs-cont {position: relative; min-height: 1000px;}
+.cs-cont .cs-menu {position: absolute; top: 0; left: 0; width: 164px;}
+.cs-cont .cs-menu .cs-logo {display: flex; justify-content: center; margin-bottom: 60px; align-items: center; width: 164px; height: 160px; border-radius: 80px 80px 0px 80px; background: #2d3a52;}
+.cs-cont .cs-menu .cs-logo p {font-weight: bold; font-size: 32px; line-height: 35px; text-align: center; color: #fff;}
+.cs-cont .cs-menu .cs-menu-list ul:after {content: ""; display: block; clear: both;}
+.cs-cont .cs-menu .cs-menu-list a {display: block;}
+.cs-cont .cs-menu .cs-menu-list > ul {padding-left: 20px;}
+.cs-cont .cs-menu .cs-menu-list > ul > li {padding-bottom: 24px;}
+.cs-cont .cs-menu .cs-menu-list > ul > li > a {font-weight: 500; font-size: 16px; color: #666; font-weight: 400;}
+.cs-cont .cs-menu .cs-menu-list > ul > li.on > a {color:#346dd0; font-weight: 500;}
+.cs-cont .cs-menu .cs-info {width:100%; padding-top:24px; margin-top:36px; border-top:1px solid #000; }
+.cs-cont .cs-content {margin-left: 214px;}
+.cs-info dl {}
+.cs-info dl > dt {font-size: 14px; color: #666; font-weight: 500;}
+.cs-info dl > dd {font-size: 26px; color: #000;}
+.cs-info dl > dd > p {font-size: 14px; color: #666; font-weight: 400;}
+.cs-info dl > dd .cs-tel {padding:6px 0; font-size: 26px; color: #000; font-weight: 700;}
+
+
+
+/* ==========================================================================
+    공지사항
+========================================================================== */
+.list-top-search {margin-top:20px; display:flex; justify-content: flex-end;}
+.list-top-search .form-search {width:320px; flex:320px 1 1;}
+.notice-list-area {width:100%; margin-top:20px; border-bottom:1px solid #bbb;}
+.notice-list {width:100%; border-top:1px solid #bbb;}
+.notice-list > li {width:100%; padding:18px 114px 18px 76px; position: relative;}
+.notice-list > li .ellipsis {width:auto; max-width:100%;}
+.notice-list > li + li {border-top: 1px solid #e5e5e5;}
+.notice-list > li .list-flag {position: absolute; top:18px; left:20px; z-index:1;}
+.notice-list .txt-area {width:100%;}
+.notice-list .txt-area {display:inline-block; font-size:0;}
+.notice-list .txt-area .txt {padding-right:25px; font-size: 16px; position: relative; display:inline-block;}
+.notice-list .txt-area .txt .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; position: absolute; top:5px; right:0; font-size:0;}
+.notice-list .txt-area .date {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
+
+@media only screen and (max-width: 800px){
+  /* ==========================================================================
+    고객센터 layout
+========================================================================== */
+  .cs-cont .cs-menu {position: relative; width: 100%; padding: 50px 0 0;}
+  .cs-cont .cs-menu .cs-logo {display: none;}
+  .cs-cont .cs-menu .cs-menu-list > ul {padding-left: 0; border-top: 10px solid #f5f5f5; border-bottom: 10px solid #f5f5f5;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li {padding-bottom: 0; position: relative;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li + li {border-top: 1px solid #e5e5e5;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li > a {padding: 16px 48px 16px 20px; font-size: 14px;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li.on > a {color:#666; font-weight:400;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li::after {content: ''; width:18px; height:18px; background: url(../images/common/mo_arrow_gnb_link.svg) 50% 50% no-repeat; display:inline-block; position: absolute; top:16px; right:20px;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li > a.acdBtn {background-position: right 20px center;}
+  .cs-cont .cs-menu .cs-menu-list > ul > li > a.acdBtn.on {background-position: right 20px center;}
+  .cs-cont .cs-content {margin-left:0;}
+  .cs-info dl > dd {font-size: 0;}
+  .cs-info dl > dd > p {vertical-align: top;}
+  .cs-cont .cs-menu .cs-info {margin-top:0; padding:20px; border-top:0; border-bottom: 10px solid #f5f5f5; text-align: center;}
+  .cs-info .cs-time {display:inline-block;}
+  .cs-info .cs-closed {margin-left:10px; padding-left:10px; position:relative; display:inline-block;}
+  .cs-info .cs-closed::before {content:''; width:1px; height:8px; display:inline-block; background:#bbb; position: absolute; top:5px; left:0;}
+
+  /* ==========================================================================
+    공지사항
+  ========================================================================== */
+  .list-top-search {padding:0 20px;}
+  .list-top-search .right-area {width:100%; flex:1;}
+  .notice-list-area {padding:0 20px;}
+  .notice-list > li .list-flag {top:50%; left:0; transform: translateY(-50.4%);}
+  .notice-list > li {padding-right:20px; padding-left:42px;}
+  .notice-list .txt-area .date {margin-top:5px; font-size:13px; position: relative; top:inherit; right:inherit; z-index: inherit; text-align: left;}
+  .notice-list .txt-area .txt {font-size:14px;}
+  .notice-list .txt-area .txt .new {top:3px;}
+}
