@@ -28,7 +28,7 @@
         <div class="search-area">
           <div class="inp-area">
             <input type="search" name="" id="" class="inp" placeholder="기업 자재 일괄 구매는 ICTMALL에서!!!">
-            <button class="btn-del">삭제</button>
+            <button class="del">삭제</button>
           </div>
           <button class="btn btn-search">검색</button>
           <!-- 검색, 자동완성 -->
@@ -336,44 +336,19 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-   
+      searchBox(); //상단 검색박스 펼침
         
 
       function searchBox(){
         //상단 검색박스 펼침
-        
         var hdSearchArea = $('.header-cont .search-area');
         var searchBox = $('.header-cont .search-box');
         var wordBox = $('.header-cont .word-box');
         var ipHdSearch = $('.header-cont .search-area .inp-area .inp');
         var ipValue = $('.header-cont .search-area .inp-area .inp').val();
-        var ipDelBtn = $(".header-cont .search-area .inp-area .btn-del");
+        var ipDelBtn = $(".header-cont .search-area .inp-area .del");
         var closeBtn = $('.header-cont .search-bt .close');
-
         ipHdSearch.focus(function(e){
-        
-          // val값삭제
-          $(document).on("keyup",".header-cont .search-area .inp-area .inp",function () { 
-            ipDelBtn.toggle(Boolean($(this).val()));
-            searchBox.addClass("on");
-            if($(this).val().length > 0){ //val값 있을때
-              wordBox.addClass('on');
-              searchBox.removeClass('on');
-
-              
-              
-              ipDelBtn.click(function(){ //val 삭제버튼 클릭
-                ipHdSearch.val('');
-                wordBox.removeClass('on');
-                searchBox.addClass('on');
-              })
-            } else { //val값 없을때
-              
-              searchBox.addClass("on");
-              wordBox.removeClass('on');
-            }
-          });
-          
           searchBox.addClass("on");
           closeBtn.click(function(){
             searchBox.removeClass("on");
@@ -383,15 +358,31 @@
               searchBox.removeClass('on');
             }
           })
-
-
+          $(document).on("keyup",".header-cont .search-area .inp-area .inp",function () {  // val값삭제
+            ipDelBtn.toggle(Boolean($(this).val()));
+            searchBox.addClass("on");
+            if($(this).val().length > 0){ //val값 있을때
+              wordBox.addClass('on');
+              searchBox.removeClass('on');
+              ipDelBtn.click(function(){ //val 삭제버튼 클릭
+                ipHdSearch.val('');
+                wordBox.removeClass('on');
+                ipDelBtn.toggle(Boolean($(this).val()));
+              })
+              $('body').mouseup(function(e){
+                if(hdSearchArea.has(e.target).length === 0){
+                  wordBox.removeClass('on');
+                }
+              })
+            } else { //val값 없을때
+              searchBox.addClass("on");
+              wordBox.removeClass('on');
+            }
+          });
         })
-
-
       }
-      searchBox(); //상단 검색박스 펼침
-
       
+
       
     });
   </script>

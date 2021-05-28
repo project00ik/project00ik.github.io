@@ -48,6 +48,7 @@
 .search-box .search-bt .close {position: absolute; top: 50%; transform: translateY(-50%); right: 20px; padding-right: 23px; background: url(../images/common/mo_btn_tooltip_close.svg) right 0 no-repeat;}
 .search-box .list-none {height: calc(100% - 20px); display: flex; align-items: center; justify-content: center;}
 .search-box .list-none p {font-size: 16px; color: #999; text-align: center; line-height: 22px; padding-top: 80px; background:url(../images/common/icon_none2.svg) top center no-repeat;}
+.header-cont .search-area .inp-area .del {display:none;position: absolute; top: 50%; right: 40px; transform: translateY(-50%); width: 18px; height: 18px; font-size: 0; background:url(../images/common/btn_del.svg) 0 0 no-repeat}
 
 .word-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 30px 20px; background: #fff; border: 1px solid #000;}
 .word-box.on {display: block;}
@@ -845,6 +846,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .word-box .word-words {padding-bottom: 16px;}
     .word-box .word-list {padding: 16px 0;}
     .word-box .word-list ul li {padding-bottom: 13px;}
+    .header-cont .search-area .inp-area .del {right: 34px;}
 
 
     .gnb-wrap .gnb-area {width:100%; height:48px; padding:0 0 0 66px;}
