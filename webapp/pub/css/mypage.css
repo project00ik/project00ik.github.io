@@ -69,6 +69,19 @@
 .mypage-cont .unit-type1 .unit-area > dt {width: 219px; height: 219px;}
 .mypage-cont .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 18px;}
 
+/* 나의활동 */
+.pop-sLabel .pop-layout > ul{border: none;}
+.pop-sLabel .pop-layout > ul li{border: none;}
+.pop-sLabel .pop-layout > ul li:first-child{padding-top: 0;}
+.pop-sLabel .pop-layout > ul li label{width: 130px;padding-left: 0;}
+.pop-sLabel .btn-r-area3{padding-top: 10px;}
+.pop-sLabel .my-state-txt{margin-bottom: 20px;}
+.pop-sLabel .tit-type2-1{padding-bottom: 10px;margin-bottom: 20px;border-bottom: 1px solid #BBBBBB;}
+.pop-sLabel .pop-write + .tit-type2-1{padding-top: 30px;margin-top: 10px;border-top: 1px solid #BBBBBB;}
+.pop-sLabel .textarea-wrap{width: 100%;}
+.pop-sLabel .pop-ip-area label + .form-layout {width: 100%;}
+
+
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
 .list-con .list-btn-area .form-list-checkradio li {width: 33.333%;}
@@ -246,6 +259,13 @@
     .mypage-cont .my-main.main-style .tit-area {margin-bottom: 20px;}
     .mypage-cont .my-main.main-style .product-list-wrap .tit-area {margin-bottom: 15px;}
 
+
+    /* 나의활동 */
+    .pop-sLabel .tit-type2-1{font-size: 18px;}
+    .pop-sLabel .btn-r-area3{padding:10px 0 20px;}
+    .pop-sLabel .btn-r-area3 > .btn + .btn{margin-left:10px ;}
+    .pop-sLabel .pop-layout > ul li label{font-size: 14px;}
+  
 
     /* 회원정보관리 */
     .list-half-style li {width: 100%;}
