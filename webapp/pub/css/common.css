@@ -554,12 +554,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout.form-email .input + .select {margin-left:5px;}
 .form-layout .w-auto {flex:inherit; width:auto;}
 .form-layout .bar {font-size: 16px; color: #666;}
-.form-layout3 {display:flex;}
+.form-layout3 {display:flex; width: 100%; flex:1;}
 .form-layout3 > * {width:100%; flex:1;}
 .form-layout3 .form-inline {width:100%; display:flex; }
 .list-con .list-in .list-w100 {width:100%; display: flex;}
 .bt-btn-line .list-half-style .list-line {border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
-.list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; flex:1;}
+.list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; }
 .list-w100 .form-layout3 .form-inline {display:flex; flex:1;}
 .list-con .list-in .btn-right {width:100%; display:block; text-align: right;}
 .select.w127 {width:127px; flex: none; margin-right:5px;}
@@ -1206,9 +1206,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .check-style1 > span {font-size: 14px;}
     .check-style2 > span {font-size: 14px;}
     .form-layout .bar {font-size: 14px;}
-    .list-w100 .form-layout3 {width:100%; display:block; flex:none;}
-    .list-w100 .form-layout3 .form-inline {margin-top:10px;}
-    .list-w100 .form-layout3 .form-inline .datepicker {}
+    .form-layout3 {width:100%; display:block; flex:none;}
+    .form-layout3 .form-inline {margin-top:10px;}
     .form-layout3 .w127 {width:100%;}
     .list-area .list-con {border-bottom:0;}
 
