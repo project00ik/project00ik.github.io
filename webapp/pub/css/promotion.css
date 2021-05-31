@@ -146,53 +146,55 @@
 .insurance-cont .tab-cont{padding-top: 70px;}
 .insurance-cont .circle{width:110px; line-height: 110px;border-radius: 50%;font-size: 16px;background:#2D3A52;text-align: center;color:#fff;margin: 0 auto;}
 .insurance-cont .report01{display: flex;padding:70px 50px 100px}
-.insurance-cont .report01 > div{width: calc(50% - 9px);}
+.insurance-cont .report01 > div{width: calc(50% - 9px);position: relative;}
 .insurance-cont .report01 > div:last-child{margin-left: 18px;}
 .insurance-cont .report01 > div > p{background: #2D3A52;border-radius: 24px;line-height: 48px;font-size: 16px; color:#fff;width: 298px;margin: 0 auto;text-align: center;z-index: 9;position: relative;}
 .insurance-cont .report01 > div:last-child > p{background: #346DD0;}
-.insurance-cont .report01 .report-box {width:100%;;margin-top: -24px;z-index: 10;border-radius: 10px;background:#F5F5F5;height: 540px;}
+.insurance-cont .report01 .report-box {width:100%;margin-top: -24px;z-index: 10;border-radius: 10px;background:#F5F5F5;height: 515px;}
 .insurance-cont .report01 .report01-img {width: 247px;margin: 0 auto;padding-top:97px;}
-.insurance-cont .report01 .report01-img .request{position: relative;;padding: 16px 0 45px;background:url(../images/common/insur_arr_01.svg) 34px 10px no-repeat;}
-.insurance-cont .report01 .report01-img .request::after{content: "";width:8px;height:60px;display: inline-block;background:url(../images/common/insur_arr_02.svg) 0 0 no-repeat;position: absolute;top:10px;left:114px;}
-.insurance-cont .report01 .report01-img div span{display: inline-block;background: #fff;width: 70px;border:1px solid #BBBBBB;border-radius: 17px;font-size: 14px;text-align: center;line-height: 34px;margin: 0 9px 20px 0}
-.insurance-cont .report01 .report01-img div span:nth-child(4){margin-left: 40px;}
-.insurance-cont .report01 .dot {width: 285px;margin: 0 auto;padding: 50px 0 30px}
+.insurance-cont .report01 .report01-img .request{position: relative;;padding: 16px 0 45px;background:url(../images/common/insur_arr_01.svg) 40px 9px no-repeat;font-size: 15px;}
+.insurance-cont .report01 .report01-img .request::after{content: "";width:8px;height:60px;display: inline-block;background:url(../images/common/insur_arr_02.svg) 0 0 no-repeat;position: absolute;top:10px;left:50%;}
+.insurance-cont .report01 .report01-img div span{display: inline-block;background: #fff;width: 70px;border:1px solid #BBBBBB;border-radius: 17px;font-size: 14px;text-align: center;line-height: 34px;margin: 0 11px 19px 0}
+.insurance-cont .report01 .report01-img div span:first-child{margin-left: 7px;}
+.insurance-cont .report01 .report01-img div span:nth-child(3){margin-right: 0px;}
+.insurance-cont .report01 .report01-img div span:nth-child(4){margin-left: 50px;}
+.insurance-cont .report01 .dot {padding:0 128px;margin-top: 48px;}
 .insurance-cont .report01 .dot ul li::before{content: "";display: inline-block;width: 4px; height: 4px;border-radius: 50%; background:#999;margin-right: 8px;vertical-align: super;}
 .insurance-cont .report01 .report02-img {width:470px;margin:0 auto;padding-top: 54px;}
 .insurance-cont .report01 .report02-img .group-img{background:#cedaee;padding:18px 30px;border-radius: 35px;position: relative;}
 .insurance-cont .report01 .report02-img .group-img:after{content: "";position: absolute;bottom:-12px;right: 100px;width: 14px;height: 12px;background:url(../images/common/insur_arr_05.svg) 0 0 no-repeat;}
 .insurance-cont .report01 .report02-img .group-img.insur{background:#e5e5e5;}
 .insurance-cont .report01 .report02-img .group-img.insur:after{display: none;}
-.insurance-cont .report01 .report02-img .group-img span{line-height: 34px;text-align: center;width: 70px;display: inline-block;border-radius: 17px;margin-left: 11px;background: #fff;}
+.insurance-cont .report01 .report02-img .group-img span{font-size: 14px;line-height: 34px;text-align: center;width: 70px;display: inline-block;border-radius: 17px;margin-left: 11px;background: #fff;}
 .insurance-cont .report01 .report02-img .group-img span:first-child{margin-left: 0}
 .insurance-cont .report01 .report02-img div:nth-child(2) {padding:10px 0 0;}
-.insurance-cont .report01 .report02-img div p{text-align: right;padding-right: 50px;margin: 10px 0;}
+.insurance-cont .report01 .report02-img div p{text-align: right;padding-right: 50px;margin: 10px 0;font-size: 15px;}
 .insurance-cont .report01 .report02-img div .circle{width:110px; line-height: 110px;border-radius: 50%;font-size: 16px;background:#2D3A52;text-align: center;color:#fff;display: inline-block;margin-left: 30px;}
 .insurance-cont .report01 .report02-img div .circle.kt{background:#346DD0;margin-left: 0;}
-.insurance-cont .report01 .report02-img div .arr-03{padding-top:18px;background:url(../images/common/insur_arr_03.svg) 50% 0 no-repeat;display: inline-block;margin-top: 30px;width: calc(100% - 305px);text-align: center;}
-.insurance-cont .report01 .report02-img div .arr-04{background:url(../images/common/insur_arr_04.svg) top 0 right 100px no-repeat;line-height: 42px;padding-right: 0;}
-.insurance-cont .report01 .report02-img + .dot {width: 326px;margin: 0 auto;padding: 30px 0}
+.insurance-cont .report01 .report02-img div .arr-03{font-size:15px;padding-top:18px;background:url(../images/common/insur_arr_03.svg) 50% 0 no-repeat;display: inline-block;margin-top: 30px;width: calc(100% - 305px);text-align: center;}
+.insurance-cont .report01 .report02-img div .arr-04{font-size:15px;background:url(../images/common/insur_arr_04.svg) top 0 right 100px no-repeat;line-height: 42px;padding-right: 0;}
+.insurance-cont .report01 .report02-img + .dot {padding:0 107px;margin-top: 30px;}
 
 .insurance-cont .report02 > div{width: 970px;margin: 0 auto;}
 .insurance-cont .report02-01 div{margin-top: 70px;}
-.insurance-cont .report02-01 ul{}
 .insurance-cont .report02-01 ul li{display: flex;margin-bottom: 10px;}
 .insurance-cont .report02-01 ul li span{width: 200px;;text-align:center;line-height: 57px;background:#346DD0;color:#fff;}
 .insurance-cont .report02-01 ul li span em{vertical-align: top;}
 .insurance-cont .report02-01 ul li p{line-height: 57px;background:#fff;margin-left: 10px;flex:1;padding-left: 20px;word-break: keep-all;}
 .insurance-cont .report02-02 > div{display: flex;margin-top: 50px;}
-.insurance-cont .report02-02 div.left{border-right:1px solid #999;margin: 25px 0;padding-right: 30px;}
-.insurance-cont .report02-02 div.left .circle{margin-top: 25px;position: relative;background:#346DD0;}
-.insurance-cont .report02-02 div.left .circle::after{content: "";width:30px;height: 1px;background: #999;position: absolute;top:55px;right:-30px}
+.insurance-cont .report02-02 div.left{border-right:1px solid #999;margin: 25px 0 24px;padding-right: 30px;}
+.insurance-cont .report02-02 div.left .circle{margin-top: 10px;position: relative;background:#346DD0;width: 140px;line-height: 140px;}
+.insurance-cont .report02-02 div.left .circle::after{content: "";width:30px;height: 1px;background: #999;position: absolute;top:70px;right:-30px}
 .insurance-cont .report02-02 div.text {display: flex;flex:1}
 .insurance-cont .report02-02 div.text > div p{margin-bottom: 30px;}
 .insurance-cont .report02-02 div.text > div p:last-child{margin-bottom: 0px;}
 .insurance-cont .report02-02 div.text > div.tit p{width: 170px;line-height: 50px; color: #fff;background:#666;border-radius: 25px;text-align: center;margin-left: 30px;position: relative;}
 .insurance-cont .report02-02 div.text > div.tit p::before{content: "";width:30px;height: 1px;background: #999;display: inline-block;position: absolute;top:25px;left: -30px;}
 .insurance-cont .report02-02 div.text > div.txt {flex:1}
-.insurance-cont .report02-02 div.text > div.txt p{line-height: 49px;background:#fff;border:1px solid #333;border-radius: 25px;color:#666;font-size: 15px;text-align: center;margin-left: 30px;position: relative;}
+.insurance-cont .report02-02 div.text > div.txt p{line-height: 49px;height: 50px;background:#fff;border:1px solid #333;border-radius: 25px;color:#666;font-size: 15px;text-align: center;margin-left: 30px;position: relative;}
 .insurance-cont .report02-02 div.text > div.txt p::before{content: "";width:30px;height: 1px;background:url(../images/common/insur_line.svg) 0 0 no-repeat ;position: absolute;top:25px;left: -30px;}
 
+.insurance-cont .report03 {margin-top: 70px;}
 .insurance-cont .report03 > div > ul {display: flex;}
 .insurance-cont .report03 > div > ul > li {margin-left: -30px;flex: 1;}
 .insurance-cont .report03 > div > ul > li:first-child {margin-left: 0px;}
@@ -212,17 +214,22 @@
 .insurance-cont .report03 div.txt p{text-align: center;color:#346DD0;margin: 20px 0;}
 .insurance-cont .report03 div.txt p em{vertical-align: top;display: block;}
 .insurance-cont .report03 div.txt > div{width: 141px;margin: 0 auto;}
-.insurance-cont .report03 div.txt > div ul li{position: relative;padding-left: 15px;font-size: 14px;}
+.insurance-cont .report03 div.txt > div ul li{position: relative;padding-left: 15px;font-size: 14px;color: #666;}
 .insurance-cont .report03 div.txt > div ul li::before{content: "1.";position: absolute;top:0;left: 0;}
 .insurance-cont .report03 div.txt > div ul li:nth-child(2):before{content: "2."}
 .insurance-cont .report03 div.txt > div ul li:nth-child(3):before{content: "3."}
 .insurance-cont .report03 div.txt > div ul li:nth-child(4):before{content: "4."}
 .insurance-cont .report03 div.txt > div ul li:nth-child(5):before{content: "5."}
 
+
+/* .sub-content.insurance-cont .inner > div{padding-bottom: 100px;} */
+.insurance-cont .suggestion-goods .list-con .list-in > li > label{width: 180px;}
+.insurance-cont .suggestion-goods textarea.textarea{height: 219px;}
 .insurance-cont .suggestion-goods .list-con .list-in > li div{flex:inherit;width: 645px;}
 .insurance-cont .suggestion-goods .check-style1{margin-right: 50px;}
 .insurance-cont .suggestion-goods .notice-wrap{background: transparent;margin:20px 0 70px;}
-.insurance-cont .suggestion-goods .notice-wrap p{font-size: 15px;color:#666}
+.insurance-cont .suggestion-goods .notice-wrap p{padding-left: 10px;font-size: 15px;color:#666}
+.insurance-cont .suggestion-goods .notice-wrap p::before{content: "*";display: inline-block;margin-left: -9px;padding-right: 3px;}
 
 
 @media only screen and (max-width: 800px){
@@ -291,52 +298,65 @@
 
   
   /* 보험 */
-  .insurance-cont .tab-cont{padding-top: 50px;}
+  .insurance-cont .tab-cont{padding: 50px 0 0;}
+  .sub-content.insurance-cont .promt-banner{width: 100%;margin: 0 auto;}
   .sub-content.insurance-cont .inner{width: 100%;padding:0 20px}
-  .sub-content.insurance-cont .inner > div{padding-bottom: 60px;}
+  .sub-content.insurance-cont .inner > div{padding: 0 0 60px;}
+  .sub-content.insurance-cont .inner .join-list-con .tit-area2 {padding: 0 0 15px;font-size: 18px;}
+  .insurance-cont .circle{width: 95px;line-height:95px;font-size: 15px;}
   .insurance-cont .tit-txt{padding-top: 60px;font-size: 22px;}
   .insurance-cont .sub-txt{font-size: 16px;word-break: keep-all;}
   .insurance-cont .tit-txt + .sub-txt{margin-top: 20px;}
   .insurance-cont .tab-style3{width: 100%}
   .insurance-cont .tab-style3 > li{width: 50%;}
   .insurance-cont .report01{padding:0 ;display: block;margin-top: 40px;}
+  .insurance-cont .report01 > div > p{font-size: 15px;line-height: 40px;}
+  .insurance-cont .report01 .report-box{margin-top: -20px;}
   .insurance-cont .report01 .report-box{height:auto}
   .insurance-cont .report01 > div{width: 100%;}
   .insurance-cont .report01 > div:last-child{margin-left: 0;margin-top: 30px;}
   .insurance-cont .report01 .report01-img{padding-top:40px}
-  .insurance-cont .report01 .dot{padding-top:10px}
+  .insurance-cont .report01 .dot{margin-top: 10px;padding:0 0 30px;text-align: center;font-size: 15px;}
+  .insurance-cont .report01 .dot ul li::before{display: none;}
+  .insurance-cont .report01 .report01-img .request{font-size: 14px;}
+  .insurance-cont .report01 .report02-img + .dot{margin-top: 40px;padding:0 0 30px;}
   .insurance-cont .report01 .report02-img .group-img:after{right:38px}
   .insurance-cont .report01 .report02-img .group-img span{margin-left: 8px;margin-bottom: 10px;}
-  .insurance-cont .report01 .report02-img div p{padding-right: 0;}
-  .insurance-cont .report01 .report02-img div .circle{margin-left: 0;width: 90px; line-height: 90px;}
-  .insurance-cont .report01 .report02-img div .arr-03{width: calc(100% - 188px);background-size: 96px auto;}
-  .insurance-cont .report01 .report02-img div .arr-04{background:url(../images/common/insur_arr_04.svg) top 0 right 40px no-repeat;padding-right: 57px;}
+  .insurance-cont .report01 .report02-img .group-img span:nth-child(4){margin-left: 41px;}
+  .insurance-cont .report01 .report02-img .group-img span:nth-child(n + 4){margin-bottom: 0px;}
+  .insurance-cont .report01 .report02-img div p{padding-right: 0;font-size: 14px;}
+  .insurance-cont .report01 .report02-img div .circle{margin-left: 0;width: 90px; line-height: 90px;font-size: 15px;}
+  .insurance-cont .report01 .report02-img div .arr-03{width: calc(100% - 188px);background-size: 96px auto;font-size: 14px;}
+  .insurance-cont .report01 .report02-img div .arr-04{background:url(../images/common/insur_arr_04.svg) top 0 right 40px no-repeat;padding-right: 57px;font-size: 14px;}
+  
   .insurance-cont .report02 > div{ width: 100%;}
   .insurance-cont .report02-01 ul li span{width:100px;line-height: 19px;padding:30px 0}
   .insurance-cont .report02-01 ul li span em{display: block;}
   .insurance-cont .report02-01 ul li p{line-height: 19px; padding:22px 24px 21px}
-
   .insurance-cont .report02-01 div{margin-top: 40px;}
   .insurance-cont .report02 > div.report02-02 {width: 320px; margin: 0 auto;}
   .insurance-cont .report02-02 > div{display: block;margin-top: 30px;}
   .insurance-cont .report02-02 div.left{border-bottom: 1px solid #999;border-right: 0;padding:0 0 15px 0;margin: 0 48px 15px 50px}
-  .insurance-cont .circle{width: 95px;line-height:95px;}
+  .insurance-cont .report02-02 div.left .circle{margin-top: 30px;width: 95px;line-height: 95px;}
   .insurance-cont .report02-02 div.left .circle::after{width:1px;height: 15px;top:auto;bottom: -15px;right:50%}
   .insurance-cont .report02-02 div.text{flex-direction: column;}
   .insurance-cont .report02-02 > div > div > div{display: flex;flex-direction: initial;}
-  .insurance-cont .report02-02 div.text > div.tit p{margin: 0 0 0 10px;border-radius: 25px  25px 0 0;}
-  .insurance-cont .report02-02 div.text > div.txt p{margin: 0 0 0 10px;border-radius: 0 0 25px 25px;flex:1;font-size:14px;line-height: 18px;padding:10px 8px;}
+  .insurance-cont .report02-02 div.text > div.tit p{margin: 0 0 0 10px;border-radius: 25px  25px 0 0;font-size: 15px;line-height: 48px;}
+  .insurance-cont .report02-02 div.text > div.txt p{margin: 0 0 0 10px;border-radius: 0 0 25px 25px;flex:1;font-size:14px;line-height: 18px;padding:10px 8px;height:auto;}
   .insurance-cont .report02-02 div.text > div.txt p em{vertical-align: top;display: inline-block;}
   .insurance-cont .report02-02 > div:last-child div.txt p{word-break: keep-all;}
   .insurance-cont .report02-02 div.text > div.txt p::before{display: none;}
   .insurance-cont .report02-02 div.text p:first-child{margin-left: 0px !important;}
   .insurance-cont .report02-02 div.text > div.tit p::before{width: 1px;height:15px;top:-15px;left: 50%;}
+  .insurance-cont .report02-01 ul li{display: table;font-size: 15px;}
+  .insurance-cont .report02-01 ul li span{display: table-cell;}
+  .insurance-cont .report02-01 ul li p{display: table-cell;}
 
-  .insurance-cont .report03 {width: 280px;margin: 0 auto;padding-top: 40px;}
+  .sub-content.insurance-cont .inner > div.report03 {width: 280px;margin: 40px auto 0;padding:0 0 20px}
   .insurance-cont .report03 > div > ul{flex-direction: column;}
   .insurance-cont .report03 > div > ul > li{margin-left: 0;}
   .insurance-cont .report03 > div > ul > li div.num{display: flex;}
-  .insurance-cont .report03 > div > ul > li div.num p{margin-top: 0;line-height: 40px;margin-left: 15px;flex: 1;}
+  .insurance-cont .report03 > div > ul > li div.num p{margin-top: 0;line-height: 40px;margin-left: 15px;flex: 1;font-size: 15px;}
   .insurance-cont .report03 > div > ul > li div.num p::before{width: 25px;height:1px;top:20px;left: -15px;}
   .insurance-cont .report03 > div > ul > li div.num span::after{display: none;}
   .insurance-cont .report03 div.txt{border:none;margin: 0;padding-left:55px;position: relative;padding-bottom: 20px;height: auto;}
@@ -346,13 +366,19 @@
   .insurance-cont .report03 ul li:nth-child(4) div.txt::before{background:url(../images/common/insur_line_04.svg) 0 0 no-repeat ;}
   .insurance-cont .report03 ul li:nth-child(5) div.txt::before{background:url(../images/common/insur_line_04.svg) 0 0 no-repeat ;}
   .insurance-cont .report03 ul li:last-child .txt::before{display: none;}
-  .insurance-cont .report03 div.txt p{text-align: left;margin: 15px 0 10px;}
+  .insurance-cont .report03 div.txt p{text-align: left;margin: 15px 0 10px;font-size: 15px;}
   .insurance-cont .report03 div.txt p em{display: inline-block;}
   .insurance-cont .report03 div.txt > div{width: 100%;margin: 0;}
 
-  .insurance-cont .suggestion-goods {width: 100%;}
-  .insurance-cont .suggestion-goods .list-con .list-in > li div {width: 100%;}
-  
+  .insurance-cont .suggestion-goods {width: 100%;padding-bottom: 0 !important;}
+  .insurance-cont .suggestion-goods .textarea.textarea{height:230px}
+  .insurance-cont .suggestion-goods .list-con .list-in {margin: 0;}
+  .insurance-cont .suggestion-goods .list-con .list-in > li div {width: 100%;max-width: 100%;}
+  .insurance-cont .suggestion-goods .notice-wrap{margin-bottom: 50px;}
+  .insurance-cont .suggestion-goods .notice-wrap p{font-size: 14px;}
+  .insurance-cont .suggestion-goods .list-con .list-in > li > label{width: 180px;}
+  .sub-content.insurance-cont .btn-area-c{margin:0 0;padding-bottom: 0 !important;}
+
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 
