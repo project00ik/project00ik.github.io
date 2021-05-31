@@ -24,6 +24,7 @@
 /* ==========================================================================
     공지사항
 ========================================================================== */
+/* 목록 */
 .list-top-search {margin-top:20px; display:flex; justify-content: flex-end;}
 .list-top-search .form-search {width:320px; flex:320px 1 1;}
 .notice-list-area {width:100%; margin-top:20px; border-bottom:1px solid #bbb;}
@@ -37,7 +38,9 @@
 .notice-list .txt-area .txt {padding-right:25px; font-size: 16px; position: relative; display:inline-block;}
 .notice-list .txt-area .txt .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; position: absolute; top:5px; right:0; font-size:0;}
 .notice-list .txt-area .date {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
-
+/* 상세 */
+.notice-detail-area {}
+.notice-detail {}
 
 /* ==========================================================================
     관심카테고리 (마이페이지)
