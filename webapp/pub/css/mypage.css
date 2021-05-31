@@ -82,15 +82,7 @@
 .pop-sLabel .excel-wrap {min-height:auto;}
 .pop-sLabel .excel-wrap ~ .excel-wrap {margin-top: 20px; min-height:auto;}
 
-
-
-
-/* .pop-sLabel .btn-r-area3{padding-top: 10px;} */
-/* .pop-sLabel .my-state-txt{margin-bottom: 20px;} */
-/* .pop-sLabel .tit-type2-1{padding-bottom: 10px;margin-bottom: 20px;border-bottom: 1px solid #BBBBBB;} */
-/* .pop-sLabel .pop-write + .tit-type2-1{padding-top: 30px;margin-top: 10px;border-top: 1px solid #BBBBBB;} */
-/* .pop-sLabel .textarea-wrap{width: 100%;} */
-
+/* 정산 */
 
 
 
@@ -178,7 +170,6 @@
 .list-con .radio-style1 > span {margin-left:10px; color:#000; font-size:16px;}
 .list-con .radio-style1 + .radio-style1 {margin-left:50px;}
 .list-con .btn-detail {margin-top:13px;}
-.mypage-cont .list-file-con {padding-top:20px;}
 
 .chk-list.chk-list-detail {background:#fafafa;}
 .chk-list .form-phone .select {padding:0 20px 0 12px;}
