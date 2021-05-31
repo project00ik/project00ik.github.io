@@ -66,18 +66,23 @@
 /* 나의활동 */
 .pop-layout .pop-list-half {display: flex; flex-wrap: wrap; justify-content: space-between;}
 .pop-layout .pop-list-half > .pop-ip-area {max-width: 300px;}
-
-.pop-sLabel {margin-bottom: 20px;}
+.pop-layout .pop-list-half > .pop-ip-area.btn-r-area {padding: 0;}
 .pop-sLabel > ul {border: none;}
 .pop-sLabel > ul li {border: none;}
 .pop-sLabel > ul > li:first-child {padding-top: 0;}
-.pop-sLabel  .pop-ip-area > label {width: 120px; padding-left: 0;}
+.pop-sLabel > ul > li:last-child {padding-bottom: 0;}
+.pop-sLabel .pop-ip-area > label {width: 120px; padding-left: 0;}
+.pop-sLabel .pop-ip-area label {line-height: 100%;}
 .pop-sLabel .pop-ip-area label + .form-layout {width: calc(100% - 120px);}
 .pop-sLabel .textarea {height: 109px;}
-.excel-wrap.h120 {min-height: 120px;}
-.excel-wrap.h150 {min-height: 150px;}
-.excel-wrap + .excel-wrap {margin-top: 20px;}
+.pop-sLabel .btn-r-area {padding: 0;}
+.pop-sLabel .top-line-grid {border-top: 1px solid #bbb; padding: 20px 0;}
+.pop-sLabel > ul + .top-line-grid {margin-top: 20px;}
 .excel-wrap + .right-txt {margin-top: 20px;}
+.pop-sLabel > ul + .excel-wrap {margin-top: 30px;}
+.pop-sLabel .excel-wrap {min-height:auto;}
+.pop-sLabel .excel-wrap ~ .excel-wrap {margin-top: 20px; min-height:auto;}
+
 
 
 
@@ -269,12 +274,11 @@
 
 
     /* 나의활동 */
-    .pop-sLabel {margin-bottom: 10px;}
     .pop-sLabel .pop-ip-area label + .form-layout {width: 100%;}
     .pop-layout .pop-list-half > .pop-ip-area {max-width: 100%;}
     .pop-layout .pop-list-half > .pop-ip-area + .pop-ip-area {padding-top: 20px;}
+    .pop-sLabel > ul + .excel-wrap {margin-top: 20px;}
     .right-txt + .red-txt {margin-top: 20px;}
-    
   
 
     /* 회원정보관리 */
