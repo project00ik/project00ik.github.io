@@ -352,7 +352,7 @@
   .insurance-cont .report02-01 ul li span{display: table-cell;}
   .insurance-cont .report02-01 ul li p{display: table-cell;}
 
-  .sub-content.insurance-cont .inner > div.report03 {width: 283px;margin: 40px auto 0;padding:0 0 20px}
+  .sub-content.insurance-cont .inner > div.report03 {width: 284px;margin: 40px auto 0;padding:0 0 20px}
   .insurance-cont .report03 > div > ul{flex-direction: column;}
   .insurance-cont .report03 > div > ul > li{margin-left: 0;}
   .insurance-cont .report03 > div > ul > li div.num{display: flex;}
@@ -360,11 +360,11 @@
   .insurance-cont .report03 > div > ul > li div.num p::before{width: 25px;height:1px;top:20px;left: -15px;}
   .insurance-cont .report03 > div > ul > li div.num span::after{display: none;}
   .insurance-cont .report03 div.txt{border:none;margin: 0;padding-left:55px;position: relative;padding-bottom: 20px;height: auto;}
-  .insurance-cont .report03 ul li div.txt::before{content: "";width:8px;height: 124px;background:url(../images/common/insur_line_03.svg) 0 0 no-repeat ;position: absolute;top:0px;left:15px;}
+  .insurance-cont .report03 ul li div.txt::before{content: "";width:8px;height: 124px;background:url(../images/common/insur_line_03.svg) 0 0 no-repeat ;position: absolute;top:-5px;left:15px;}
   .insurance-cont .report03 ul li:nth-child(2) div.txt::before{background:url(../images/common/insur_line_04.svg) 0 0 no-repeat ;}
   .insurance-cont .report03 ul li:nth-child(3) div.txt::before{background:url(../images/common/insur_line_05.svg) 0 0 no-repeat ;}
   .insurance-cont .report03 ul li:nth-child(4) div.txt::before{background:url(../images/common/insur_line_04.svg) 0 0 no-repeat ;}
-  .insurance-cont .report03 ul li:nth-child(5) div.txt::before{background:url(../images/common/insur_line_04.svg) 0 0 no-repeat ;}
+  .insurance-cont .report03 ul li:nth-child(5) div.txt::before{background:url(../images/common/insur_line_05.svg) 0 0 no-repeat ;}
   .insurance-cont .report03 ul li:last-child .txt::before{display: none;}
   .insurance-cont .report03 div.txt p{text-align: left;margin: 15px 0 10px;font-size: 15px;}
   .insurance-cont .report03 div.txt p em{display: inline-block;vertical-align: top;padding-left: 5px;}
