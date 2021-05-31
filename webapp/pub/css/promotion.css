@@ -298,6 +298,7 @@
 
   
   /* 보험 */
+  .sub-content.insurance-cont{margin-top: 0;}
   .insurance-cont .tab-cont{padding: 50px 0 0;}
   .sub-content.insurance-cont .promt-banner{width: 100%;margin: 0 auto;}
   .sub-content.insurance-cont .inner{width: 100%;padding:0 20px}
