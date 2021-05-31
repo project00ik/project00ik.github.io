@@ -175,7 +175,6 @@
     .list-con .list-half-style {flex-direction: column; align-items: flex-start; margin: 10px 20px 0;}
     .list-con .list-half-style li {width: 100%;}
     .list-con .mem-info-list li .form-layout {width: 100%;}
-    .list-con .mem-info-list li .form-checkradio {padding-top: 8px;}
     .list-con .mem-info-list .ip-only .form-layout {width: 100%;}
     .list-con .mem-info-list li .form-layout .input {flex:1;}
     .list-con .form-address .btn-style-m1 {width: 112px;}

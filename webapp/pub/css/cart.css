@@ -194,7 +194,7 @@
 .cart-content .join-list-con ~ .join-list-con {padding: 20px 0 30px;}
 .cart-content .list-con {padding-top: 0;}
 .cart-content .list-con .list-in {border-bottom: 0; margin-top: 0;}
-.cart-content .list-con .list-in .btn-tooltip {vertical-align: top; margin-top: 0;}
+.cart-content .list-con .list-in .btn-tooltip {vertical-align: top; margin-top: 10px;}
 .cart-content .list-con .list-in .tooltip-box {width: 232px;}
 .cart-content .list-con .list-in .form-layout {max-width: 613px;} 
 .cart-content .list-con .list-in .one-form .form-layout {max-width: 380px;}
@@ -284,6 +284,7 @@
     .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y:60px;}
     .cart-list-con .list-con ul {}
     .wish-list-con .list-con ul {border-top:1px solid #000; border-bottom:none; }
+    .cart-content .list-con .list-in .btn-tooltip {margin-top: 0;}
 
     .cart-total-area {width:auto; margin:10px 20px 0; padding:0 0 20px; border-top:1px solid #000; border-bottom:1px solid #d7d7d7; background:none; flex-direction:column;}
     .cart-total-area dl {margin-top:20px;}

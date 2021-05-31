@@ -72,7 +72,6 @@
 .pop-sLabel > ul > li:first-child {padding-top: 0;}
 .pop-sLabel > ul > li:last-child {padding-bottom: 0;}
 .pop-sLabel .pop-ip-area > label {width: 120px; padding-left: 0;}
-.pop-sLabel .pop-ip-area label {line-height: 100%;}
 .pop-sLabel .pop-ip-area label + .form-layout {width: calc(100% - 120px);}
 .pop-sLabel .textarea {height: 109px;}
 .pop-sLabel .btn-r-area {padding: 0;}
@@ -278,7 +277,7 @@
     .pop-layout .pop-list-half > .pop-ip-area {max-width: 100%;}
     .pop-layout .pop-list-half > .pop-ip-area + .pop-ip-area {padding-top: 20px;}
     .pop-sLabel > ul + .excel-wrap {margin-top: 20px;}
-    .right-txt + .red-txt {margin-top: 20px;}
+    .pop-sLabel .red-txt {margin-top: 20px;}
   
 
     /* 회원정보관리 */
