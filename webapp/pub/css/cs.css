@@ -25,7 +25,8 @@
     공지사항
 ========================================================================== */
 /* 목록 */
-.list-top-search {margin-top:20px; display:flex; justify-content: flex-end;}
+.new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; font-size:0;}
+.list-top-search {padding-top:20px; display:flex; justify-content: flex-end;}
 .list-top-search .form-search {width:320px; flex:320px 1 1;}
 .notice-list-area {width:100%; margin-top:20px; border-bottom:1px solid #bbb;}
 .notice-list {width:100%; border-top:1px solid #bbb;}
@@ -36,11 +37,34 @@
 .notice-list .txt-area {width:100%;}
 .notice-list .txt-area {display:inline-block; font-size:0;}
 .notice-list .txt-area .txt {padding-right:25px; font-size: 16px; position: relative; display:inline-block;}
-.notice-list .txt-area .txt .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; position: absolute; top:5px; right:0; font-size:0;}
+.notice-list .txt-area .txt .new {position: absolute; top:5px; right:0; font-size:0;}
 .notice-list .txt-area .date {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
 /* 상세 */
-.notice-detail-area {}
-.notice-detail {}
+.notice-detail-area {overflow: hidden;}
+.notice-detail {width:100%;}
+.notice-detail > dt {width:100%; padding:18px 114px 18px 76px; position: relative; border-bottom:1px solid #d7d7d7;}
+.notice-detail > dt .new {margin:-5px 0 0 10px;}
+.notice-detail .list-flag {position: absolute; top:18px; left:20px; z-index:1;}
+.notice-detail .date  {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
+.notice-detail > dd {width:100%;}
+.notice-detail .notice-file-upload {width: 100%; display:flex; align-items: center;}
+.notice-detail .notice-file-upload > dt {width:99px; padding-left:20px; font-size:16px; font-weight: 400;}
+.notice-detail .notice-file-upload > dd {flex:1; background:#f5f5f5; overflow: auto;}
+.notice-detail .html-area {width:100%; padding:30px 20px; word-break: keep-all; font-size:16px; color:#666; line-height:19px;}
+.notice-detail .notice-bt-list {margin-top: 30px; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;}
+.notice-detail .notice-bt-list > li {padding:18px 20px 18px 76px; position: relative;}
+.notice-detail .notice-bt-list > li + li {border-top: 1px solid #e5e5e5;}
+.notice-detail .notice-bt-list .tit {width:76px; font-size: 14px; color: #666; position: absolute; top:50%; left:20px; z-index:1; transform: translateY(-50.4%);}
+.notice-detail .notice-bt-list .txt-area {font-size: 16px; color: #000;}
+.notice-detail .notice-bt-list .txt-area > span {display: inline-block;}
+.notice-detail .notice-bt-list .txt {width:100%; font-size: 16px; color:#000;  vertical-align: top;}
+
+/* ==========================================================================
+    자주묻는질문
+========================================================================== */
+.qna-search {margin-top:20px; padding: 20px; background: #f5f5f5;}
+.qna-search .info-txt {margin-bottom:10px; font-size: 16px; color: #000;}
+.qna-search .form-search {width:460px;}
 
 /* ==========================================================================
     관심카테고리 (마이페이지)
@@ -93,6 +117,8 @@
   .cs-cont .cs-menu .cs-menu-list > ul > li > a.acdBtn {background-position: right 20px center;}
   .cs-cont .cs-menu .cs-menu-list > ul > li > a.acdBtn.on {background-position: right 20px center;}
   .cs-cont .cs-content {margin-left:0;}
+  .cs-cont .tit-area2 {display:none;}
+  .cs-cont .join-list-con {padding-top:0;}
   .cs-info dl > dd {font-size: 0;}
   .cs-info dl > dd > p {vertical-align: top;}
   .cs-cont .cs-menu .cs-info {margin-top:0; padding:20px; border-top:0; border-bottom: 10px solid #f5f5f5; text-align: center;}
@@ -103,7 +129,9 @@
   /* ==========================================================================
     공지사항
   ========================================================================== */
-  .list-top-search {padding:0 20px;}
+  .new {width:13px; height:13px; background-size:100% auto;}
+  /* 목록 */
+  .list-top-search {padding:20px 20px 0;}
   .list-top-search .right-area {width:100%; flex:1;}
   .notice-list-area {padding:0 20px;}
   .notice-list > li .list-flag {top:50%; left:0; transform: translateY(-50.4%);}
@@ -111,4 +139,16 @@
   .notice-list .txt-area .date {margin-top:5px; font-size:13px; position: relative; top:inherit; right:inherit; z-index: inherit; text-align: left;}
   .notice-list .txt-area .txt {font-size:14px;}
   .notice-list .txt-area .txt .new {top:3px;}
+  /* 상세 */
+  .notice-detail-area {margin:0 20px;}
+  .notice-detail {margin-top:20px; border-top:1px solid #000;}
+  .notice-detail > dt {padding:12px 12px 12px 42px; font-size: 14px;}
+  .notice-detail .list-flag {left:0;}
+  .notice-detail .date {margin-top: 6px; font-size:13px; text-align:left; position: inherit; z-index:inherit;}
+  .notice-detail > dt .new {margin:-3px 0 0 5px;}
+  .notice-detail .html-area {padding:20px 0; font-size: 14px; line-height:17px;}
+  .notice-detail .notice-file-upload > dt {display:none;}
+  .notice-detail .notice-bt-list > li {padding:18px 0 18px 42px;}
+  .notice-detail .notice-bt-list .tit {left:0; font-size:12px;}
+  .notice-detail .notice-bt-list .txt {font-size:14px;}
 }
