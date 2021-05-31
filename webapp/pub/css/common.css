@@ -656,7 +656,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .table-area.table-style1 table tr {border-bottom:1px solid #D7D7D7;}
 .table-area.table-style1 table th,
 .table-area.table-style1 table td {height:60px; padding:10px;}
-.table-area.table-style1 table th {border-left:1px solid #D7D7D7; background:#f7f7f7; font-weight:normal;}
+.table-area.table-style1 table th {border-left:1px solid #D7D7D7; background:#f5f5f5; font-weight:normal;}
 .table-area.table-style1 table th:first-child {border-left:none;}
 .table-area.table-style1 table td {border-left:1px solid #D7D7D7;}
 .table-area.table-style1 table td:first-child {border-left:none;}
@@ -678,8 +678,18 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 .table-area.table-style3 table tr {border-bottom:1px solid #D7D7D7;}
 .table-area.table-style3 table th,
 .table-area.table-style3 table td {padding:16px 30px; text-align:left;}
-.table-area.table-style3 table th {background:#f7f7f7; font-weight:normal;}
+.table-area.table-style3 table th {background:#f5f5f5; font-weight:normal;}
 .table-area.table-style3 table tr {border-bottom:1px solid #D7D7D7;}
+
+/* 간격작은 테이블 */
+.table-area.table-style4 {border-top:1px solid #000; }
+.table-area.table-style4 table {color:#000; font-size:16px; line-height: 19px; text-align: center;}
+.table-area.table-style4 table th,
+.table-area.table-style4 table td {padding: 10px 0; border-bottom: 1px solid #d7d7d7; font-weight:normal;}
+.table-area.table-style4 table th {border-left: 1px solid #d7d7d7; background: #f5f5f5;}
+.table-area.table-style4 table th:first-child {border-left:none;}
+.table-area.table-style4 table td {border-left:1px solid #D7D7D7;}
+.table-area.table-style4 table td:first-child {border-left:none;}
 
 .table-info {margin-top:16px; color:#999; font-size:14px;}
 
