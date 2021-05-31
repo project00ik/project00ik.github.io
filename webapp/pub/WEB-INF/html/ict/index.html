@@ -1,5 +1,3 @@
-s<!DOCTYPE html>
-<html>
 	<!DOCTYPE html>
 	<html lang="ko">
 	<head>
@@ -19,21 +17,21 @@ s<!DOCTYPE html>
 			.guide h1 {font-size: 2em; padding: 0.67em 0; color: #666; font-weight: 500; text-align: center;}
 			.guide th{padding:6px 0 7px;border:1px solid #ccc;background:#999;font-size:13px;color:#fff;}
 			.guide td{padding:4px 10px 5px;border:1px solid #ccc;font-size:13px; text-align:center;}
-			.guide td > a {text-decoration: underline;}
+			.guide td a {text-decoration: underline;}
 			.guide td:nth-child(9) {text-align:left;}
-			.guide tr.cms > td:last-child:before {content:'CMS'; padding:1px 3px; margin-right:3px; color:#fff; background:#009999; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
-			.guide tr.new > td:last-child:before {content:'NEW'; padding:1px 3px; margin-right:3px; color:#fff; background:red; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
-			.guide tr.del > td {color:#ccc;}
-			.guide tr.del > td > a {}
-			.guide tr.del > td span,
-			.guide tr.del > td::after {background:#ededed !important;}
-			.guide tr.del > td b {color:inherit;}
-			.guide tr.finish > td {background:#fff;}
-			.guide tr.mod > td {background:#d6ffff;}
-			.guide tr.ing > td {background:#ccffff;}
-			.guide tr.line > td {border-top:2px solid #ccc;}
-			.guide tr.no-mb > td {background:#e5ebf1;}
-			.guide tr.no-mb.finish > td {background:#f5faff;}
+			.guide tr.cms td:last-child:before {content:'CMS'; padding:1px 3px; margin-right:3px; color:#fff; background:#009999; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
+			.guide tr.new td:last-child:before {content:'NEW'; padding:1px 3px; margin-right:3px; color:#fff; background:red; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
+			.guide tr.del td {color:#ccc;}
+			.guide tr.del td a {}
+			.guide tr.del td span,
+			.guide tr.del td::after {background:#ededed !important;}
+			.guide tr.del td b {color:inherit;}
+			.guide tr.finish td {background:#fff;}
+			.guide tr.mod td {background:#d6ffff;}
+			.guide tr.ing td {background:#ccffff;}
+			.guide tr.line td {border-top:2px solid #ccc;}
+			.guide tr.no-mb td {background:#e5ebf1;}
+			.guide tr.no-mb.finish td {background:#f5faff;}
 			.guide .link {color:#145e95; text-align: left;}
 			.guide nav ul {float: left; padding: 0; margin: 0; margin-bottom: 20px; border: 1px solid #666;}
 			.guide nav ul:after {content: ''; clear: both; display: block;}
@@ -44,13 +42,13 @@ s<!DOCTYPE html>
 			.guide nav ul li.active a {color:#fff;}
 			.guide b {color: #c24d41}
 			.guideInfo {width:100%; overflow:hidden; margin-bottom:20px;}
-			.guideInfo > p {min-width:150px; height:20px; padding:4px 0; font-size:12px; float:left; text-align:center;}
-			.guideInfo > p:last-child {width:350px;}
-			.guideInfo > .mod {background:#d6ffff;}
-			.guideInfo > .finish {background:#fff;}
-			.guideInfo > .no-mb {background:#f5faff;}
-			.guideInfo > p span,
-			.guideInfo > p span:after {vertical-align: top; margin:0;}
+			.guideInfo p {min-width:150px; height:20px; padding:4px 0; font-size:12px; float:left; text-align:center;}
+			.guideInfo p:last-child {width:350px;}
+			.guideInfo .mod {background:#d6ffff;}
+			.guideInfo .finish {background:#fff;}
+			.guideInfo .no-mb {background:#f5faff;}
+			.guideInfo p span,
+			.guideInfo p span:after {vertical-align: top; margin:0;}
 			span.new {padding:1px 3px; margin-right:3px; color:#fff; background:red; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold; text-indent:initial;}
 			span.cms {padding:1px 3px; margin-right:3px; color:#fff; background:#009999; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
 			span.hd {padding:1px 3px; margin-right:3px; color:#fff; background:#6600cc; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold;}
@@ -61,10 +59,10 @@ s<!DOCTYPE html>
 			.guide tr:hover td,
 			.guide tr.finish:hover td {background:#fff0f0}
 			.modiList {padding-left:70px;}
-			.modiList > li {text-indent:-70px; font-size:13px;}
+			.modiList li {text-indent:-70px; font-size:13px;}
 			.guide .input {padding:1px 3px; margin-right:3px; color:#fff; background:#6600cc; border-radius:3px; display:inline-block; font-size:11px; font-weight:bold; text-indent:initial;}
 			.guideInfoBox {width:100%; padding:20px; margin-bottom:30px; border:1px solid #666; background:#fff; line-height:1.5; font-size:12px;}
-			.guideInfoBox > p {font-size:12px;}
+			.guideInfoBox p {font-size:12px;}
 			.design a {color:#9999cc;}
 		</style>
 	</head>
@@ -728,7 +726,7 @@ s<!DOCTYPE html>
 				</td>
 				<td class="memo">
 					<ul class="modiList">
-						<li>05.06 수정 : 유닛 플래그 및 세일가 정상가 추가
+						<li>05.06 수정 : 유닛 플래그 및 세일가 정상가 추가</li>
 					</ul>
 				</td>
 				<td class="design"><a href="https://xd.adobe.com/view/d3be2ccf-387a-4f4f-acc3-d79d4daa07d4-86ed/" target="_blank">디자인보기</a></td>
@@ -818,7 +816,7 @@ s<!DOCTYPE html>
 				<td class="date">05.06</td>
 				<td class="memo">
 					<ul class="modiList">
-						<li>05.25 수정 : 파일첨부 as-is 그대로 사용으로 변경 ></li>
+						<li>05.25 수정 : 파일첨부 as-is 그대로 사용으로 변경</li>
 					</ul>
 				</td>
 				<td class="design"><a href="https://xd.adobe.com/view/9c5be2e0-46a3-4653-8a5e-f17bf7e5b5b7-c908/" target="_blank">디자인보기</a></td>
@@ -939,7 +937,7 @@ s<!DOCTYPE html>
 				<td class="memo">
 					<ul class="modiList">
 						<li>05.07 수정 : 유닛 플래그 및 세일가 정상가 추가<br/>
-							05.28 수정 : 찜한 상품 >> 관심상품 으로 타이틀변경
+							05.28 수정 : 찜한 상품 → 관심상품 으로 타이틀변경</li>
 					</ul>
 				</td>
 				<td class="design"><a href="https://xd.adobe.com/view/217db764-af46-4652-837c-b1a6931e1a52-742e/" target="_blank">디자인보기</a></td>
@@ -1045,7 +1043,7 @@ s<!DOCTYPE html>
 				<td class="date">05.18</td>
 				<td class="memo">
 					<ul class="modiList">
-						<li> 05.24수정 : 'btn-area-c'에 'btn-cont-in'class 추가 ></li>
+						<li> 05.24수정 : 'btn-area-c'에 'btn-cont-in'class 추가</li>
 					</ul>
 				</td>
 				<td class="design"><a href="https://xd.adobe.com/view/d76d5e60-d817-418d-9e58-2849e3bc5f5f-823e/" target="_blank">디자인보기</a></td>
@@ -1135,7 +1133,7 @@ s<!DOCTYPE html>
 				<td class="date">05.18</td>
 				<td class="memo">
 					<ul class="modiList">
-						<li> 수정 : 'btn-area-c'에 'btn-cont-in'class 추가 ></li>
+						<li> 수정 : 'btn-area-c'에 'btn-cont-in'class 추가</li>
 					</ul>
 				</td>
 				<td class="design"><a href="https://xd.adobe.com/view/d76d5e60-d817-418d-9e58-2849e3bc5f5f-823e/" target="_blank">디자인보기</a></td>
