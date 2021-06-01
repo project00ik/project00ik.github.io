@@ -25,7 +25,7 @@
     공지사항
 ========================================================================== */
 /* 목록 */
-.new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; font-size:0;}
+.notice-list .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; font-size:0;}
 .list-top-search {padding-top:20px; display:flex; justify-content: flex-end;}
 .list-top-search .form-search {width:320px; flex:320px 1 1;}
 .notice-list-area {width:100%; margin-top:20px; border-bottom:1px solid #bbb;}
@@ -65,6 +65,18 @@
 .qna-search {margin-top:20px; padding: 20px; background: #f5f5f5;}
 .qna-search .info-txt {margin-bottom:10px; font-size: 16px; color: #000;}
 .qna-search .form-search {width:460px;}
+.qna-list-area {border-top:1px solid #bbb; border-bottom:1px solid #bbb; font-size:16px;}
+.qna-list-area dl > dt {padding:18px 48px 18px 60px; position: relative;}
+.qna-list-area dl > dt::after {content:""; width:18px; height:18px; margin-top:-9px; display: inline-block; background: url(../images/common/btn_filter_more.svg) 0 0 no-repeat; position: absolute; top:50%; right:20px;}
+.qna-list-area dl > dt.on::after {transform: rotate(-180deg);}
+.qna-list-area dl > dt .qna-num {line-height: 19px; position: absolute; top:50%; left:20px; font-weight:700; color:#346dd0; transform: translateY(-50.4%);}
+.qna-list-area dl > dt b {vertical-align: top;}
+.qna-list-area dl > dd {display:none; border-top:1px solid #e5e5e5; padding: 18px 20px 18px 60px; background: #fafafa;}
+.qna-list-area dl + dl {border-top:1px solid #e5e5e5;}
+
+.questions-list {margin-top:70px;}
+.questions-list .tab-btn-list {margin-bottom:30px;}
+
 
 /* ==========================================================================
     관심카테고리 (마이페이지)
@@ -151,4 +163,17 @@
   .notice-detail .notice-bt-list > li {padding:18px 0 18px 42px;}
   .notice-detail .notice-bt-list .tit {left:0; font-size:12px;}
   .notice-detail .notice-bt-list .txt {font-size:14px;}
+  /* ==========================================================================
+    자주묻는질문
+  ========================================================================== */
+  .qna-search {background:none; padding:20px 20px 3px;}
+  .qna-search .info-txt {font-size:14px;}
+  .qna-search .form-search {width:100%;}
+
+  .qna-list-area {margin:0 20px; font-size: 14px;}
+  .qna-list-area dl > dt {padding: 18px 38px 18px 38px;}
+  .qna-list-area dl > dd {padding: 18px 38px 18px 38px;}
+  .qna-list-area dl > dt .qna-num {left:10px;}
+  .qna-list-area dl > dt::after {right:10px;}
+  .questions-list {margin-top:50px;}
 }
