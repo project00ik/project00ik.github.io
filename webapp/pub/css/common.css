@@ -1124,7 +1124,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .tit-type2-1 .right-area {right:20px;}
     .tit-type3 {font-size:16px;}
     .join-txt3 {font-size: 14px; display: block; padding: 10px 0 0 0;}
-    
+    .sub-tit-area {padding:0 20px;}
 
     /* 공통 아이콘 */
     .icon-new {width:14px; height:14px; line-height:14px;}
