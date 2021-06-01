@@ -177,8 +177,8 @@
                 <li class="list-w100">
                   <label for="">유형</label>
                   <div class="form-layout">
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio" checked=""><i></i><span>입고처리대상</span></label>
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>입고현황</span></label>
+                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>입고처리대상</span></label>
+                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio" checked=""><i></i><span>입고현황</span></label>
                   </div>
                 </li>
                 <li class="list-w100">
@@ -240,8 +240,47 @@
             </div>
             <div class="list-con bt-btn-line">
               <ul class="list-in list-half-style">
+                <li class="list-w100">
+                  <label for="">입고일</label>
+                  <div class="form-layout3">
+                    <select class="select w127" name="" id="" >
+                      <option value="">1개월</option>
+                      <option value="">당일</option>
+                      <option value="">일주일</option>
+                      <option value="">한달</option>
+                      <option value="" selected>세달</option>
+                    </select>
+                    <div class="form-inline">
+                      <input type="text" class="datepicker mo-hide" value="2021-04-18">
+                      <input type="date" class="datepicker pc-hide" value="2021-04-18">
+                      <em class="bar">-</em>
+                      <input type="text" class="datepicker mo-hide" value="2021-04-25">
+                      <input type="date" class="datepicker pc-hide" value="2021-04-25">
+                    </div>
+                  </div>
+                </li>
                 <li>
-                  <label for="">배송구분</label>
+                  <label for="">입고상태</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="" >
+                      <option value="" selected>전체</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">반품/교환여부</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="" >
+                      <option value="" selected>전체</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">정산유무</label>
                   <div class="form-layout">
                     <select class="select" name="" id="" >
                       <option value="" selected>전체</option>
@@ -256,9 +295,11 @@
               </div>
             </div>
             <div class="list-con list-file-con m-line-hide">
-              <div class="btn-r-area">
-                <button class="btn btn-style-m1">입고처리</button>
-                <button class="btn btn-style-m1">미수령신고</button>
+              <div class="btn-r-area btn-mo-percent">
+                <button class="btn btn-style-m1 mo-btn-w50">입고취소</button>
+                <button class="btn btn-style-m1 mo-btn-w50">반품/교환요청</button>
+                <button class="btn btn-style-m1 mo-btn-w50">명세서출력</button>
+                <button class="btn btn-style-m1 mo-btn-w50">리뷰작성</button>
               </div>
               <div class="file-con">
                 <div class="in-grid-size w-all">
