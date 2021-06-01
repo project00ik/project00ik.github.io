@@ -93,6 +93,7 @@
 .join-txt-normal {font-size: 16px; color: #000; word-break: keep-all;}
 .list-con.bt-btn-line {padding-top: 0;}
 .list-con.bt-btn-line .list-in {border-top: 0; border-bottom: 0; margin-top: 0;}
+.list-con.bt-btn-line + .bt-btn-line .list-in {border-top: 1px solid #d7d7d7;}
 .list-con.bt-btn-line .btn-r-area {padding: 0 20px 20px 0; border-bottom: 1px solid #d7d7d7;}
 .list-file-con .btn-r-area {padding: 0 0 20px;}
 
