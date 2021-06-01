@@ -167,42 +167,62 @@
     <section class="container">
       <div class="sub-content cs-cont">
         <div class="cs-content">
-          <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>운영사접근동의</p>
+          <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>설문참여</p>
           <div class="join-list-con">
             <div class="tit-area2">
-              <p class="tit-type2">운영사접근동의</p>
+              <p class="tit-type2">설문참여</p>
             </div>
             <div class="list-con bt-btn-line">
               <ul class="list-in list-half-style">
                 <li>
-                  <label for="">운영자명 <i class="req">*</i></label>
-                  <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="">
-                    <button class="btn btn-search2" onclick="lyOpen('myMngUserPopup')">검색</button>
-                  </div>
-                </li>
-                <li>
-                  <label for="">접근시간 <i class="req">*</i></label>
+                  <label for="">년도</label>
                   <div class="form-layout">
                     <select class="select" name="" id="" >
-                      <option value="" selected>1일</option>
-                      <option value="">2일</option>
-                      <option value="">3일</option>
-                      <option value="">4일</option>
-                      <option value="">5일</option>
+                      <option value="" selected>2021</option>
+                      <option value="">2020</option>
+                      <option value="">2019</option>
+                      <option value="">2018</option>
+                      <option value="">2017</option>
                     </select>
                   </div>
                 </li>
-                <li class="list-w100">
-                  <label for="">사유</label>
+                <li>
+                  <label for="">설문명</label>
                   <div class="form-layout">
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio" checked=""><i></i><span>시스템이용문의</span></label>
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>주문문의</span></label>
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>반품, 입고, 정산, 환불문의</span></label>
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>기타</span></label>
+                    <input type="number" name="" class="input" value="">
+                  </div>
+                </li>
+                <li>
+                  <label for="">설문상태</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="">
+                      <option value="" selected>전체</option>
+                      <option value="">설문진행중</option>
+                      <option value="">설문종료</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">작성상태</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="">
+                      <option value="" selected>전체</option>
+                      <option value="">작성</option>
+                      <option value="">미작성</option>
+                    </select>
                   </div>
                 </li>
               </ul>
+              <div class="btn-r-area">
+                <button class="btn btn-style-m3">조회</button>
+              </div>
+            </div>
+            <div class="list-con list-file-con m-line-hide">
+              <div class="file-con">
+                <div class="in-grid-size w-all">
+                  그리드영역
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -222,10 +242,10 @@
               <li>
                 <a href="#">1:1문의</a>
               </li>
-              <li class="mo-hide on">
+              <li class="mo-hide">
                 <a href="#">운영사접근동의</a>
               </li>
-              <li class="mo-hide">
+              <li class="mo-hide on">
                 <a href="#">설문참여</a>
               </li>
             </ul>
@@ -295,48 +315,6 @@
     <a href="#" class="qk-quicktop"><u></u><span>TOp</span></a>
   </div> -->
   <!--// 퀵메뉴 -->
-
-
-  <!-- 운영사 사용자 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngUserPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>운영사 사용자</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="" selected>사용자ID</option>
-                    <option value="">사용자명</option>
-                    <option value="">법인</option>
-                    <option value="">사업본부</option>
-                    <option value="">부서</option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //고객사 사용자 조회 팝업 -->
 
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
