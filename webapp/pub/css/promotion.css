@@ -165,7 +165,7 @@
 .insurance-cont .report01 .report02-img .group-img:after{content: "";position: absolute;bottom:-12px;right: 100px;width: 14px;height: 12px;background:url(../images/common/insur_arr_05.svg) 0 0 no-repeat;}
 .insurance-cont .report01 .report02-img .group-img.insur{background:#e5e5e5;}
 .insurance-cont .report01 .report02-img .group-img.insur:after{display: none;}
-.insurance-cont .report01 .report02-img .group-img span{font-size: 14px;line-height: 34px;text-align: center;width: 70px;display: inline-block;border-radius: 17px;margin-left: 11px;background: #fff;}
+.insurance-cont .report01 .report02-img .group-img span{font-size: 14px;line-height: 34px;text-align: center;width: 70px;display: inline-block;border-radius: 17px;margin:0 0 10px 11px;background: #fff;}
 .insurance-cont .report01 .report02-img .group-img span:first-child{margin-left: 0}
 .insurance-cont .report01 .report02-img div:nth-child(2) {padding:10px 0 0;}
 .insurance-cont .report01 .report02-img div p{text-align: right;padding-right: 50px;margin: 10px 0;font-size: 15px;}
