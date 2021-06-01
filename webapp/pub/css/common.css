@@ -683,13 +683,15 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 /* 간격작은 테이블 */
 .table-area.table-style4 {border-top:1px solid #000; }
-.table-area.table-style4 table {color:#000; font-size:16px; line-height: 19px; text-align: center;}
+.table-area.table-style4 table {color:#000; font-size:16px; line-height: 19px;}
 .table-area.table-style4 table th,
-.table-area.table-style4 table td {padding: 10px 0; border-bottom: 1px solid #d7d7d7; font-weight:normal;}
-.table-area.table-style4 table th {border-left: 1px solid #d7d7d7; background: #f5f5f5;}
+.table-area.table-style4 table td {border-bottom: 1px solid #d7d7d7; font-weight:normal;}
+.table-area.table-style4 table th {text-align: center; padding: 10px 0; border-left: 1px solid #d7d7d7; background: #f5f5f5;}
 .table-area.table-style4 table th:first-child {border-left:none;}
-.table-area.table-style4 table td {border-left:1px solid #D7D7D7;}
+.table-area.table-style4 table td {text-align: left; padding: 10px; border-left:1px solid #D7D7D7;}
 .table-area.table-style4 table td:first-child {border-left:none;}
+.table-area.table-style4 table .ta-c {text-align: center;}
+.table-area.table-style4 table .ta-r {text-align: right;}
 
 .table-info {margin-top:16px; color:#999; font-size:14px;}
 
