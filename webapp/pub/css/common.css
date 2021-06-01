@@ -234,6 +234,10 @@
 .form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
 .form-layout.form-flexnone {display: block;}
 
+.column-ip-area {padding-bottom: 20px;}
+.column-ip-area label {display: block; padding-bottom: 10px; font-size: 16px; color: #000;}
+.column-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
+
 .excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px; overflow-y: hidden; overflow-x: auto;}
 
 /* 결과없음(제품) */
@@ -583,7 +587,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .list-con .list-in > li > label {font-weight:500; line-height: 38px;}
 .list-con .list-tit {font-weight:500;}
 
-textarea.textarea {width:100%; height:163px; padding:16px; border:1px solid #bbb; font-size:14px; resize: none;}
+textarea.textarea {width:100%; height:200px; padding:12px; border:1px solid #bbb; font-size:14px; resize: none;}
 textarea.textarea:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
 textarea.textarea:read-only {background:#fafafa; border:1px solid #bbb; color:#666;}
 textarea.textarea:read-only::placeholder {color:#666;}
@@ -592,9 +596,8 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
 
 /* textarea */
 .textarea-wrap {position: relative;}
-.textarea-wrap.count textarea {padding-bottom: 40px;}
-.textarea-wrap.count .cot {text-align: right; font-size: 14px; color: #999; padding-top: 5px;}
-.textarea-wrap.count .cot b {vertical-align: top;}
+textarea + .cot {text-align: right; font-size: 14px; color: #999; padding-top: 5px;}
+textarea + .cot b {vertical-align: top;}
 
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
@@ -1001,6 +1004,9 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .pop-ip-area label {line-height:inherit; padding-bottom: 8px;}
     .pop-ip-area .form-checkradio label {padding-bottom: 0;}
     
+    .column-ip-area label {font-size: 14px; padding-bottom: 5px;}
+    .column-ip-area label .req {font-size: 14px; margin-left: 3px;}
+
     .form-search input.input {height: 36px; line-height: 36px;}
     .form-search .btn-search2 {width: 34px; height: 34px;}
 
@@ -1008,6 +1014,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .popup-cont .pop-layout-txt2 {font-size: 13px;}
     .pop-layout > ul > li:first-child {padding-top: 0;}
     .pop-layout > ul > li {padding: 10px 0;}
+
 
     /* 결과없음(제품) */
     .result-none {padding: 24px 20px 60px;}
@@ -1051,7 +1058,7 @@ textarea.textarea:read-only:focus {border-color:#bbb;}
     .btn-style-mm2 {width: 100%;}
 
     /* 모바일 버튼 퍼센트형 */
-    .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; padding-bottom:0;}
+    .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; padding-bottom:0 !important;}
     .btn-mo-percent .btn {margin-left:10px; margin-bottom:10px;}
     .btn-mo-percent .btn.mo-btn-w100 {width:calc(100% - 10px); flex:calc(100% - 10px) 1 1 !important; min-width:auto;}
     .btn-mo-percent .btn.mo-btn-w50 {width:calc(50% - 10px); flex:calc(50% - 10px) 1 1 !important; min-width:auto;}

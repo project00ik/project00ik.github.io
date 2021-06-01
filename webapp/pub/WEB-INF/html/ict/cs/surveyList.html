@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html lang="ko">
 
 <head>
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="gnb-wrap">
-        <div class="gnb-area gnbPC">
+        <div class="gnb-area gnbpC">
           <!-- header 카테고리 
             [작업 시 참고 내용 (카테고리 총 3개)]
             1. pc용 카테고리 2개 : header 카테고리와 메인 고정 카테고리 (메인에만 카테고리 2개 / 서브페이지는 header영역만 1개)
@@ -75,7 +75,7 @@
                     <div class="realtime-area">
                       <a href="javascript:;">
                         <em class="num">1</em>
-                        <span class="txt ellipsis">PCV 절연테이프</span>
+                        <span class="txt ellipsis">pCV 절연테이프</span>
                       </a>
                     </div>
                   </div>
@@ -120,7 +120,7 @@
                     <div class="realtime-area">
                       <a href="javascript:;">
                         <em class="num">1</em>
-                        <span class="txt ellipsis">PCV 절연테이프</span>
+                        <span class="txt ellipsis">pCV 절연테이프</span>
                       </a>
                     </div>
                   </li>
@@ -165,88 +165,50 @@
       </div>
     </header>
     <section class="container">
-      <div class="sub-content mypage-cont">
-        <div class="my-main">
-          <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>입고현황</p>
+      <div class="sub-content cs-cont">
+        <div class="cs-content">
+          <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>설문참여</p>
           <div class="join-list-con">
             <div class="tit-area2">
-              <p class="tit-type2">입고현황</p>
-            </div>
-            <div class="list-con bt-btn-line">
-              <ul class="list-in list-half-style">
-                <li class="list-w100">
-                  <label for="">유형</label>
-                  <div class="form-layout">
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio" checked=""><i></i><span>입고처리대상</span></label>
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>입고현황</span></label>
-                  </div>
-                </li>
-                <li class="list-w100">
-                  <label for="">주문일</label>
-                  <div class="form-layout3">
-                    <select class="select w127" name="" id="" >
-                      <option value="" selected>1개월</option>
-                      <option value="">당일</option>
-                      <option value="">일주일</option>
-                      <option value="">한달</option>
-                      <option value="">세달</option>
-                    </select>
-                    <div class="form-inline">
-                      <input type="text" class="datepicker mo-hide" value="2021-04-18">
-                      <input type="date" class="datepicker pc-hide" value="2021-04-18">
-                      <em class="bar">-</em>
-                      <input type="text" class="datepicker mo-hide" value="2021-04-25">
-                      <input type="date" class="datepicker pc-hide" value="2021-04-25">
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <label for="">주문검색</label>
-                  <div class="form-layout">
-                    <select class="select w127" name="" id="" >
-                      <option value="" selected>거래명세번호</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                    <input type="text" name="" class="input" value="" placeholder="">
-                  </div>
-                </li>
-                <li>
-                  <label for="">대상자</label>
-                  <div class="form-layout">
-                    <select class="select w127" name="" id="" >
-                      <option value="" selected>주문자</option>
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                    <input type="text" name="" class="input" value="" placeholder="">
-                  </div>
-                </li>
-                <li>
-                  <label for="">사업장</label>
-                  <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
-                  </div>
-                </li>
-                <li>
-                  <label for="">부서</label>
-                  <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
-                  </div>
-                </li>
-              </ul>
+              <p class="tit-type2">설문참여</p>
             </div>
             <div class="list-con bt-btn-line">
               <ul class="list-in list-half-style">
                 <li>
-                  <label for="">배송구분</label>
+                  <label for="">년도</label>
                   <div class="form-layout">
                     <select class="select" name="" id="" >
+                      <option value="" selected>2021</option>
+                      <option value="">2020</option>
+                      <option value="">2019</option>
+                      <option value="">2018</option>
+                      <option value="">2017</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">설문명</label>
+                  <div class="form-layout">
+                    <input type="number" name="" class="input" value="">
+                  </div>
+                </li>
+                <li>
+                  <label for="">설문상태</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="">
                       <option value="" selected>전체</option>
-                      <option value=""></option>
-                      <option value=""></option>
+                      <option value="">설문진행중</option>
+                      <option value="">설문종료</option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">작성상태</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="">
+                      <option value="" selected>전체</option>
+                      <option value="">작성</option>
+                      <option value="">미작성</option>
                     </select>
                   </div>
                 </li>
@@ -256,10 +218,6 @@
               </div>
             </div>
             <div class="list-con list-file-con m-line-hide">
-              <div class="btn-r-area">
-                <button class="btn btn-style-m1">입고처리</button>
-                <button class="btn btn-style-m1">미수령신고</button>
-              </div>
               <div class="file-con">
                 <div class="in-grid-size w-all">
                   그리드영역
@@ -269,93 +227,38 @@
           </div>
         </div>
 
-        <div class="my-menu">
-          <div class="my-logo">
-            <p>MY<br />ICT</p>
+        <div class="cs-menu">
+          <div class="cs-logo">
+            <p>고객<br />센터</p>
           </div>
-          <div class="my-menu-list acdArea">
+          <div class="cs-menu-list">
             <ul>
               <li>
-                <a href="#" class="acdBtn">신규요청</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
+                <a href="#">공지사항</a>
               </li>
               <li>
-                <a href="#" class="acdBtn">주문/배송조회</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
+                <a href="#">자주묻는질문</a>
               </li>
               <li>
-                <a href="#" class="acdBtn">입고</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
+                <a href="#">1:1문의</a>
               </li>
-              <li>
-                <a href="#" class="acdBtn">예산</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
+              <li class="mo-hide">
+                <a href="#">운영사접근동의</a>
               </li>
-              <li>
-                <a href="#" class="acdBtn">나의 활동</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="acdBtn">1:1 문의</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="acdBtn">나의 카테고리</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="acdBtn">나의 관심뉴스</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="acdBtn">정산</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="acdBtn">결제관리</a>
-                <ul class="list-deps acdCont">
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="acdBtn">회원정보 관리</a><!-- on 활성화 -->
-                <ul class="list-deps acdCont" style="display: block;">
-                  <li><a href="#">회원관리</a></li><!-- on 활성화 -->
-                  <li><a href="#">회원정보 수정</a></li>
-                  <li><a href="#">비밀번호변경</a></li>
-                  <li><a href="#">배송지관리</a></li>
-                  <li><a href="#">회원탈퇴</a></li>
-                </ul>
+              <li class="mo-hide on">
+                <a href="#">설문참여</a>
               </li>
             </ul>
+          </div>
+          <div class="cs-info">
+            <dl>
+              <dt>고객센터 이용안내</dt>
+              <dd>
+                <p class="cs-tel"><a href="tel:1577-3712">1577-3712</a></p>
+                <p class="cs-time">평일 09:00~18:00</p>
+                <p class="cs-closed">주말/공휴일 휴무</p>
+              </dd>
+            </dl>
           </div>
         </div>
       </div>
@@ -384,16 +287,13 @@
             <span>통신판매신고 : 강남-1568</span>
             <span>개인정보최고책임자 : 김태기 본부</span>
           </div>
-          <p class="copyright">COPYRIGHT ⓒ kt commerce ALL RIGHTS RESERVED.</p>
+          <p class="copyright">COpYRIGHT ⓒ kt commerce ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>
   </div>
+
   
-
-
-
-
   <!-- 퀵메뉴 -->
   <!-- <div class="quick-menu">
     <div class="qk-group">
@@ -412,11 +312,9 @@
         <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
     </div>
     <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
-    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOp</span></a>
   </div> -->
   <!--// 퀵메뉴 -->
-
-  
 
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
@@ -441,8 +339,7 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      
-
+  
     });
   </script>
   <!-- javascript -->

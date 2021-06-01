@@ -170,22 +170,15 @@
           <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>입고현황</p>
           <div class="join-list-con">
             <div class="tit-area2">
-              <p class="tit-type2">입고현황</p>
+              <p class="tit-type2">반품/교환현황</p>
             </div>
             <div class="list-con bt-btn-line">
               <ul class="list-in list-half-style">
                 <li class="list-w100">
-                  <label for="">유형</label>
-                  <div class="form-layout">
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio" checked=""><i></i><span>입고처리대상</span></label>
-                    <label class="radio-style1"><input type="radio" name="rd" id="" class="radio"><i></i><span>입고현황</span></label>
-                  </div>
-                </li>
-                <li class="list-w100">
-                  <label for="">주문일</label>
+                  <label for="">날짜</label>
                   <div class="form-layout3">
                     <select class="select w127" name="" id="" >
-                      <option value="" selected>1개월</option>
+                      <option value="" selected>요청일</option>
                       <option value="">당일</option>
                       <option value="">일주일</option>
                       <option value="">한달</option>
@@ -201,21 +194,20 @@
                   </div>
                 </li>
                 <li>
-                  <label for="">주문검색</label>
+                  <label for="">진행상태</label>
                   <div class="form-layout">
-                    <select class="select w127" name="" id="" >
+                    <select class="select" name="" id="" >
                       <option value="" selected>거래명세번호</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
-                    <input type="text" name="" class="input" value="" placeholder="">
                   </div>
                 </li>
                 <li>
-                  <label for="">대상자</label>
+                  <label for="">주문검색</label>
                   <div class="form-layout">
                     <select class="select w127" name="" id="" >
-                      <option value="" selected>주문자</option>
+                      <option value="" selected>거래명세번호</option>
                       <option value=""></option>
                       <option value=""></option>
                     </select>
@@ -236,12 +228,32 @@
                     <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="list-con bt-btn-line">
-              <ul class="list-in list-half-style">
                 <li>
-                  <label for="">배송구분</label>
+                  <label for="">대상자</label>
+                  <div class="form-layout form-search">
+                    <select class="select w127" name="" id="" >
+                      <option value="" selected>주문자</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                    <input type="text" name="" class="input" value="" placeholder="">
+                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                  </div>
+                </li>
+                <li>
+                  <label for="">반품/교환 구분</label>
+                  <div class="form-layout">
+                    <select class="select" name="" id="" >
+                      <option value="" selected>전체</option>
+                      <option value=""></option>
+                      <option value=""></option>
+                    </select>
+                  </div>
+                </li>
+                <li>
+                  <label for="">반품/교환여부</label>
                   <div class="form-layout">
                     <select class="select" name="" id="" >
                       <option value="" selected>전체</option>
@@ -256,9 +268,9 @@
               </div>
             </div>
             <div class="list-con list-file-con m-line-hide">
-              <div class="btn-r-area">
-                <button class="btn btn-style-m1">입고처리</button>
-                <button class="btn btn-style-m1">미수령신고</button>
+              <div class="btn-r-area btn-mo-percent">
+                <button class="btn btn-style-m1">반품/교환 취소</button>
+                <button class="btn btn-style-m1">반품/교환 출력</button>
               </div>
               <div class="file-con">
                 <div class="in-grid-size w-all">
