@@ -208,7 +208,7 @@
                   <label for="">부서</label>
                   <div class="form-layout form-search">
                     <input type="text" name="" class="input" value="" placeholder="">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                    <button class="btn btn-search2" onclick="lyOpen('myMngSectionPopup')">검색</button>
                   </div>
                 </li>
                 <li>
@@ -441,46 +441,48 @@
   </div>
   
 
-  <!-- 고객사 부서 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myCalculatePopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>고객사 부서 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a><!-- 닫기 이벤트 class : inLyClose -->
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">부서</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
+
+<!-- 고객사 부서 조회 팝업 -->
+<div class="lyPopupWrap popup-type-m" id="myMngSectionPopup">
+  <!-- id 값 버튼과 연결해주세요. -->
+  <div class="lyPopup">
+    <div class="popup-wrap">
+      <div class="popup-cont">
+        <div class="lyTitle center">
+          <p>고객사 부서 조회</p>
+          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+        </div>
+        <div class="lyPopCont">
+          <div class="pop-layout pop-suggestion">
+            <div class="user-search">
+              <div class="pop-mo-form">
+                <select class="select" name="" id="">
+                  <option value="">부서</option>
+                  <option value=""></option>
+                  <option value=""></option>
+                  <option value=""></option>
+                </select>
+                <div class="form-area">
+                  <input type="text" class="input" name="" value="" placeholder="">
                 </div>
               </div>
-              <div class="excel-wrap" style="height:240px;">
-                그리드
+              <div class="pop-mo-btn">
+                <button class="btn btn-style-m2">조회</button>
+                <button class="btn btn-style-m1">초기화</button>
               </div>
+            </div>
+            <div class="excel-wrap">
+              그리드
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //고객사 부서 조회 팝업 -->
-  
+</div>
+<!-- //고객사 부서 조회 팝업 -->
+
+
 
 
 
