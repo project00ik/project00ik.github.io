@@ -465,13 +465,13 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-btn-list > li {display:inline-block; font-size:16px;}
 .tab-area .tab-style1 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap;}
 .tab-area .tab-style1 > li + li {margin-left:24px;}
-.tab-area .tab-style1 .tabBtn {padding-bottom:5px; font-size:16px; position:relative; cursor:pointer;}
+.tab-area .tab-style1 .tabBtn {padding-bottom:5px; font-size:16px; position:relative; cursor:pointer; color:#999;}
 .tab-area .tab-style1 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style1 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
 
 .tab-area .tab-style2 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap;}
 .tab-area .tab-style2 > li + li {margin-left:36px;}
-.tab-area .tab-style2 .tabBtn {cursor: pointer; padding-bottom:5px; font-size:18px; position:relative;}
+.tab-area .tab-style2 .tabBtn {cursor: pointer; padding-bottom:5px; font-size:18px; position:relative; color:#999;}
 .tab-area .tab-style2 .tabBtn.on {color:#346dd0; font-weight:500;}
 .tab-area .tab-style2 .tabBtn.on::after {content:""; width:100%; height:2px; background:#346dd0; display:inline-block; position:absolute; bottom:0; left:0; z-index:1;}
 
@@ -479,8 +479,8 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-style3 {width:100%; overflow-y:hidden; overflow-x:auto; white-space:nowrap; display:flex; justify-content:space-around; position:relative;}
 .tab-area .tab-style3::after {content:''; width:100%; height:1px; display:inline-block; background:#d7d7d7; position:absolute; bottom:0; left:0;}
 .tab-area .tab-style3 > li {width:25%; text-align:center; cursor:pointer;}
-.tab-area .tab-style3 .tabBtn {cursor: pointer; padding-bottom:4px; font-size:20px; line-height:51px; position:relative;}
-.tab-area .tab-style3 .tabBtn.on {color:#346dd0; font-weight:500;}
+.tab-area .tab-style3 .tabBtn {cursor: pointer; padding-bottom:4px; font-size:20px; line-height:51px; position:relative; color:#999;}
+.tab-area .tab-style3 .tabBtn.on {color:#000; font-weight:500;}
 .tab-area .tab-style3 .tabBtn.on::after {content:""; width:100%; height:4px; background:#346dd0; display:inline-block; position:absolute; bottom:0px; left:0; z-index:1;}
 .tab-area .tab-cont {width:100%; padding:30px 0}
 
