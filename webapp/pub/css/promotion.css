@@ -124,7 +124,7 @@
 .pop-myState .pop-layout > ul li:first-child{padding-top: 0;}
 .pop-myState .pop-layout > ul li label{width: 180px;padding-left: 0;}
 .pop-myState .btn-r-area3{padding-top: 10px;}
-.pop-myState .my-state-txt{margin-bottom: 20px;}
+.pop-myState .my-state-txt{margin-bottom: 10px;}
 .pop-myState .tit-type2-1{padding-bottom: 10px;margin-bottom: 20px;border-bottom: 1px solid #BBBBBB;}
 .pop-myState .pop-write + .tit-type2-1{padding-top: 30px;margin-top: 10px;border-top: 1px solid #BBBBBB;}
 .pop-myState .textarea-wrap{width: 100%;}
@@ -429,15 +429,21 @@
   .service-content .service-info-01 .box p:last-child{font-size: 18px;}
   .service-content .service-info-01 .box-02{font-size: 14px;padding:50px 20px 0}
   .service-content .service-info-01 .box-02 p{font-size: 18px;}
-  .service-content .service-info-02 {padding:0 20px}
-  .service-content .service-info-02 > div{flex-direction: column;background:url(../images/common/info_img15.svg) 90px 106px no-repeat;margin-bottom: 0;}
+  .service-content .service-info-02 {padding:0 20px;margin-bottom: 70px;}
+  .service-content .service-info-02 > div{flex-direction: column;background:url(../images/common/info_img15.svg) 90px 106px repeat-y;margin-bottom: 0;}
   .service-content .service-info-02 > div > div{margin-left: 37px;padding:11px 0 11px 135px;background-size: 105px;background-position-x: 0;margin-bottom: 40px;text-align: left;}
+  .service-content .service-info-02 > div > div:last-child{margin-bottom: 0px;}
   .service-content .service-info-02 > div > div.icon-02{background-size: 105px;background-position-x: 0;}
   .service-content .service-info-02 > div > div.icon-03{background-size: 105px;background-position-x: 0;}
-  .service-content .service-info-02 > span{width: 100%;}
+  .service-content .service-info-02 > span{width: 100%;margin-top: 40px;}
   .sub-content.service-content > div > div.service-info-03 > div{flex-direction: column;}
-  .service-content .service-info-03 > div > div{width: 315px;margin: 0 auto;}
-  .service-content .service-info-03 > div > div.box-04{margin: 20px auto 0;}
+  .service-content .bg{background:url(../images/common/info_bg02_m.png) 0 0 no-repeat;background-size:100% auto;}
+  .service-content .service-info-03 > div > div{width: 315px;height:170px;margin: 0 auto;padding-top: 57px;}
+  .service-content .service-info-03 > div > div.box-04{margin: 20px auto 70px;padding-top: 47px;}
+  .service-content .service-info-04 > div{flex-flow:row wrap;padding:0 20px}
+  .service-content .service-info-04 > div div{width: calc(50% - 8px);}
+  .service-content .service-info-05 > div{flex-direction: column;padding: 0 20px;}
+  .service-content .service-info-05 > div div{width: 100%;margin: 0;margin-bottom: 20px;}
 
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
