@@ -330,7 +330,7 @@
                     <!--// 상품링크 -->
                     <ul class="unit-under-btn">
                       <li>
-                        <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup')">재입고알림</a>
+                        <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
                       </li>
                     </ul>
                   </div>
@@ -971,6 +971,84 @@
     </div>
   </div>
   <!--// 장바구니 레이어 -->
+
+  <!--재입고 알림 신청 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="restockPopup2">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>재입고 알림 신청</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-restock">
+              <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
+              <div class="pop-write">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">상품정보</th>
+                      <td>
+                        <div>
+                          <label>상품코드</label>
+                          <div>
+                            <p>102622887</p>
+                          </div>
+                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>
+                          <label>상품명</label>
+                          <div>
+                            <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="input">
+                      <th rowspan="3">알림 수신자 정보</th>
+                      <td>
+                        <div class="input">
+                          <label>수신자 성명</label>
+                          <div class="form-layout">
+                            <input type="text" class="input" value="김상현" readonly="">
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="input">
+                      <td>
+                        <div>
+                          <label>메일주소</label>
+                          <div class="form-layout">
+                            <input type="text" class="input" value="61781104991@null.com" >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //재입고 알림 신청 팝업 -->
   
   
   <!-- javascript -->

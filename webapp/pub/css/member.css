@@ -181,6 +181,7 @@
     .list-con .form-address .btn-style-m1 {width: 112px;}
     .list-con .form-list-checkradio {flex-direction: column;}
     .list-con .form-list-checkradio li {width: 100%;}
+    .list-con .list-btn-area .form-list-checkradio li {width: 100%;}
     .join-content .list-con .list-btn-area .form-list-checkradio li {width: 100%;}
     .list-con .join-agree .agree-area .agree-cont {height: 112px;}
     .list-con .join-agree .agree-area .agree-tit {padding: 18px 40px 18px 20px; word-break: keep-all;}

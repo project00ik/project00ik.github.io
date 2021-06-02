@@ -72,7 +72,6 @@ function searchBox(){
   var hdSearchArea = $('.header-cont .search-area');
   var searchBox = $('.header-cont .search-box');
   var searchBoxWordAll = $('.header-cont .search-box .search-word .s-list > ul > li');
-  var searchBoxWordDel = $('.header-cont .search-box .search-word .s-list .del');
   var wordBox = $('.header-cont .word-box');
   var ipHdSearch = $('.header-cont .search-area .inp-area .inp');
   var ipValue = $('.header-cont .search-area .inp-area .inp').val();
@@ -81,7 +80,8 @@ function searchBox(){
   var alldelBtn = $('.header-cont .search-bt .all-del');
   ipHdSearch.focus(function(e){
     searchBox.addClass("on");
-    searchBoxWordDel.each(function(){
+    $('.del').each(function(){
+      // 최근검색어 삭제
       $(this).click(function(){
         $(this).closest('li').css('display','none');
       })
@@ -123,6 +123,18 @@ function searchBox(){
 searchBox(); //상단 검색박스 펼침
 
 });
+
+function delBtn(){
+  // 옵션 삭제
+  $('.btn.btn-del').each(function(){
+    $(this).click(function(){
+      $(this).closest('div').css('display','none');
+    })
+  })
+}
+
+
+    
 
 function allCategoryBtn(){
   // gnb 전체카테고리 열고 닫기
@@ -797,12 +809,12 @@ function realtimeSearchSlide(){
   $('.gnb-right-area').mouseover(function (){
     $(this).addClass('on');
     realtimeSearch.autoplay.stop();
-    $('.realtimeLayer').slideDown();
+    $('.realtimeLayer').show();
   });
   $('.gnb-right-area').mouseleave(function (){
     $(this).removeClass('on');
     realtimeSearch.autoplay.start();
-    $('.realtimeLayer').slideUp();
+    $('.realtimeLayer').hide();
   });
   // $('body').mouseup(function(e){
   //   if($('.realtimeLayer').has(e.target).length === 0){

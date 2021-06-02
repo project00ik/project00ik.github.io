@@ -7,7 +7,7 @@
 .pro-detail-photo {width:590px; font-size:14px; display:inline-block;}
 .pro-detail-slide {width:100%; padding-left:90px; position: relative;}
 .pro-detail-slide .swiper-container {width: 100%; margin-left: auto; margin-right: auto;}
-.pro-detail-slide .swiper-slide {background-size: cover; background-position: center; overflow: hidden;}    
+.pro-detail-slide .swiper-slide {background-size: cover; background-position: center; overflow: hidden; cursor: pointer;}    
 .pro-detail-slide .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 .pro-detail-slide .swiper-slide .product-img {width:500px; height:500px; overflow: hidden;}
 .pro-detail-slide .productDetaileSlide {width:70px; height:390px; position:absolute; top:0; left:0; z-index:1;}
@@ -35,8 +35,8 @@
 .pro-detail-info .table-area {margin-top:10px;}
 .option-area {margin-top:20px;}
 .option-result {margin-top:20px;}
-.option-box {width:100%; margin-top: 10px; padding:16px; position: relative; background: #f5f5f5;}
-.option-box:first-child {margin-top:0;}
+.option-box {width:100%; margin-bottom: 10px; padding:16px; position: relative; background: #f5f5f5;}
+.option-box:last-child {margin-bottom:0;}
 .option-box .btn-del {position: absolute; top:16px; right:16px;}
 .option-box .option-name {padding-right: 26px; font-size:14px;}
 .option-box .option-name > p {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
@@ -411,7 +411,7 @@
     .pro-detail-info .group-buying .buying {float: right;}
     .pro-detail-info .satis-large {margin-top:8px;}
     .pro-detail-info .table-area {margin-top:18px;}
-    .option-box {padding:16px 20px; margin-top:5px;}
+    .option-box {padding:16px 20px; margin-bottom:5px;}
     .option-box .option-name {font-size:13px;}
     .option-box .normal-price {font-size:13px;}
     .option-box .option-price {margin-top:16px; height:79px; padding-top:12px; align-items: flex-end;}
