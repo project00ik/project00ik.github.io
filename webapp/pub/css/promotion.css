@@ -275,6 +275,14 @@
 .service-content .service-info-05 > div span{line-height: 49px;width: 100%;display: inline-block;color:#fff;background:#346DD0;}
 .service-content .service-info-05 > div p{padding:44px 0 43px;border: 1px solid #346DD0;line-height: 19px;}
 
+/* 개인정보처리방침 */
+.policy-content > div {width: 320px;}
+.policy-content > ul {padding-bottom:30px}
+.policy-content > ul > li {padding-top: 20px;}
+.policy-content > ul > li  p{font-size: 24px;padding-top: 10px;}
+.policy-content > ul > li > ul > li{margin-top: 10px;}
+.policy-content > ul > li > ul > li:first-child{margin-top: 0px;}
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     프로모션
@@ -447,6 +455,13 @@
   .service-content .service-info-05 > div div{width: 100%;margin: 0;margin-bottom: 20px;}
   .service-content .service-info-04 > div span{font-size: 15px;line-height: 40px;width: 112px;margin: 167px auto 0;}
   .service-content .service-info-04 > div div:nth-child(5), .service-content .service-info-04 > div div:nth-child(6){margin-bottom: 0;}
+
+  /* 개인정보처리방침 */
+  .policy-content{padding:0px 20px 30px;}
+  .policy-content > ul > li  {font-size: 15px}
+  .policy-content > ul > li  p{font-size: 16px}
+  .policy-content > ul > li > ul > li{font-size: 15px}
+  .policy-content > div{width: 100%;}
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
 
