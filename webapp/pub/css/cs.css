@@ -1,7 +1,7 @@
 /* ==========================================================================
     고객센터 layout
 ========================================================================== */
-.cs-cont {position: relative; min-height: 1000px;}
+.cs-cont {position: relative; min-height: 593px;}
 .cs-cont .cs-menu {position: absolute; top: 0; left: 0; width: 164px;}
 .cs-cont .cs-menu .cs-logo {display: flex; justify-content: center; margin-bottom: 60px; align-items: center; width: 164px; height: 160px; border-radius: 80px 80px 0px 80px; background: #2d3a52;}
 .cs-cont .cs-menu .cs-logo p {font-weight: bold; font-size: 32px; line-height: 35px; text-align: center; color: #fff;}
