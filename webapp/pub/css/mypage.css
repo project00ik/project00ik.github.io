@@ -56,6 +56,7 @@
 .mypage-cont .my-main .my-boardlist ul li a > div {font-size: 16px; color: #000;}
 .mypage-cont .my-main .my-boardlist ul li a > div.done {color: #999;}
 .mypage-cont .my-main .my-boardlist ul li a > p {width: 326px; font-size: 16px; color: #000;}
+.mypage-cont .my-main .my-boardlist ul li a > p em{vertical-align: top;padding-right: 5px;font-weight: 500;}
 .mypage-cont .my-main .my-boardlist ul li a > span {font-size: 14px; color: #666;}
 .mypage-cont .my-main .board-faq .my-boardlist ul li a > p {width: 100%;}
 .mypage-cont .product-list-wrap {max-width: 986px; margin-bottom: 100px;}
