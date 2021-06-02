@@ -794,22 +794,22 @@ function realtimeSearchSlide(){
       loop: true
     })
   }
-  $('.realTimeMore').mouseover(function (){
+  $('.gnb-right-area').mouseover(function (){
     $(this).addClass('on');
     realtimeSearch.autoplay.stop();
     $('.realtimeLayer').slideDown();
   });
-  $('.realtimeLayer').mouseleave(function (){
+  $('.gnb-right-area').mouseleave(function (){
     $(this).removeClass('on');
     realtimeSearch.autoplay.start();
     $('.realtimeLayer').slideUp();
   });
-  $('body').mouseup(function(e){
-    if($('.realtimeLayer').has(e.target).length === 0){
-      $('.realtimeLayer').hide();
-      realtimeSearch.autoplay.start();
-    }
-  })
+  // $('body').mouseup(function(e){
+  //   if($('.realtimeLayer').has(e.target).length === 0){
+  //     $('.realtimeLayer').hide();
+  //     realtimeSearch.autoplay.start();
+  //   }
+  // })
 }
 
 
