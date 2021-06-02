@@ -465,7 +465,7 @@
   .service-content .service-info-05 > div p{font-size: 15px;}
 
   /* 개인정보처리방침 */
-  .policy-content{padding:0px 20px 30px;}
+  .policy-content{padding:0px 20px;}
   .policy-content > ul > li  {font-size: 15px}
   .policy-content > ul > li  p{font-size: 16px}
   .policy-content > ul > li > ul > li{font-size: 15px}
