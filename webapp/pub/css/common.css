@@ -40,6 +40,7 @@
 .search-box .half-box .s-list ul li {display: flex; justify-content: space-between; padding-bottom: 20px;}
 .search-box .half-box .s-list ul li:last-child {padding-bottom: 10px;}
 .search-box .half-box .s-list ul li a {font-size: 16px; color: #000;}
+.search-box .half-box .s-list ul li a:hover {color: #346dd0sss;}
 .search-box .half-box .search-word .s-list ul li .del {font-size: 0; width: 18px; height: 18px; background: url(../images/common/mo_btn_tooltip_close.svg) 0 0 no-repeat;}
 .search-box .half-box .hit-word .s-list ul li a {display: flex;}
 .search-box .half-box .hit-word .s-list ul li .num {width: 20px; text-align: center; font-weight: 500; color: #346dd0; display: inline-block; font-style: normal; vertical-align: baseline; margin-right: 10px;}

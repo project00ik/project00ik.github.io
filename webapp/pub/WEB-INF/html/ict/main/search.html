@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="search-bt">
-                <a href="javascript:;">최근 검색어 전체 삭제</a>
+                <a href="javascript:;" class="all-del">최근 검색어 전체 삭제</a>
                 <a href="javascript:;" class="close">닫기</a>
             </div>
           </div>
@@ -343,13 +343,24 @@
         //상단 검색박스 펼침
         var hdSearchArea = $('.header-cont .search-area');
         var searchBox = $('.header-cont .search-box');
+        var searchBoxWordAll = $('.header-cont .search-box .search-word .s-list > ul > li');
+        var searchBoxWordDel = $('.header-cont .search-box .search-word .s-list .del');
         var wordBox = $('.header-cont .word-box');
         var ipHdSearch = $('.header-cont .search-area .inp-area .inp');
         var ipValue = $('.header-cont .search-area .inp-area .inp').val();
         var ipDelBtn = $(".header-cont .search-area .inp-area .del");
         var closeBtn = $('.header-cont .search-bt .close');
+        var alldelBtn = $('.header-cont .search-bt .all-del');
         ipHdSearch.focus(function(e){
           searchBox.addClass("on");
+          searchBoxWordDel.each(function(){
+            $(this).click(function(){
+              $(this).closest('li').css('display','none');
+            })
+          })
+          alldelBtn.click(function(){
+            searchBoxWordAll.css('display','none');
+          });
           closeBtn.click(function(){
             searchBox.removeClass("on");
           })
