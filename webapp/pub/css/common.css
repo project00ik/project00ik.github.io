@@ -125,13 +125,13 @@
 .gnb-right-area .real-time-search {height:48px; padding-right:20px; position:relative;}
 .gnb-right-area .real-time-search .swiper-container {height:48px;}
 .gnb-right-area .real-time-search .realtime-search-slide {height:48px; overflow:hidden;}
-.gnb-right-area .real-time-search .real-time-more {width:18px; height:18px; display:inline-block; background:url(../images/common/arrow_realtime_search.svg) 0 0 no-repeat; position:absolute; top:16px; right:0; font-size:0;}
+.gnb-right-area .real-time-search .real-time-more {width:18px; height:18px; display:inline-block; background:url(../images/common/arrow_realtime_search.svg) 0 0 no-repeat; position:absolute; top:14px; right:0; font-size:0;}
 .gnb-right-area .real-time-search .realtime-area {width:100%; height:100%; padding:14px 0 14px 32px; position:relative;}
 .gnb-right-area .real-time-search .realtime-area .num {width:20px; height:20px; text-align:center; line-height:19px; font-size: 14px; font-weight: 500; color:#fff; background:#12b5cf; position:absolute; top:14px; left:0; z-index:1;}
 .gnb-right-area .real-time-search .realtime-area .txt {font-size: 14px; line-height: 20px;}
 .gnb-right-area .real-time-search .realtime-area .txt:hover {color: #346dd0;}
 .gnb-right-area .real-time-search .real-time-layer {display:none; width:190px; padding:20px; position:absolute; top:0; right:0; z-index:1; background:#fff; color:#000; border:1px solid #d7d7d7;}
-.real-time-search .real-time-layer .layer-close {display: none; font-size: 0;width:20px; height:20px; display:inline-block; position:absolute; top:5px; right:5px; font-size:0; background:url(../images/common/btn_close_s.svg) 0 0 no-repeat; background-size:100% auto;}
+.real-time-search .real-time-layer .layer-close {display: none; font-size: 0;width:20px; height:20px; position:absolute; top:5px; right:5px; font-size:0; background:url(../images/common/btn_close_s.svg) 0 0 no-repeat; background-size:100% auto;}
 .real-time-search .real-time-layer .all-list .realtime-area {padding:0 0 10px 32px;}
 .real-time-search .real-time-layer .all-list li:last-child .realtime-area {padding-bottom: 0;}
 .real-time-search .real-time-layer .all-list .realtime-area .num {top:0;}
@@ -222,7 +222,7 @@
 .popup-type-m .lyPopup .popup-cont .lyPopCont {max-height:calc(100vh - 265px); overflow-x:hidden; overflow-y:auto;}
 .popup-type-s .lyPopup .popup-cont .lyPopCont {max-height:500px; min-height:119px;}
 
-.popup-cont .pop-layout-txt {font-size: 16px; color: #000; line-height: 16px; padding-bottom: 10px;}
+.popup-cont .pop-layout-txt {font-size: 16px; color: #000; line-height: 19px; padding-bottom: 10px;}
 .popup-cont .lyPopCont > .pop-layout-txt {padding-bottom: 16px;}
 .popup-cont .pop-layout-txt2 {font-size: 14px; color: #999; line-height: 18px;}
 .pop-layout > ul {border-top: 1px solid #000;}
