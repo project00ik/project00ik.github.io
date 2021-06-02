@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <div class="wrap">
+  <div class="wrap mypage">
     <header class="header">
       <div class="header-top">
         <a href="#" class="bul-bar">로그아웃</a>
@@ -57,8 +57,8 @@
           <div class="cate-area">
             <button class="btn-cate btnCate">전체카테고리</button>
             <button class="btn-cate moBtnCate">전체카테고리</button>
-          </div>
-          <!--// header 카테고리 -->
+        </div>
+        <!--// header 카테고리 -->
           <div class="gnb">
             <ul>
               <li><a href="#">브랜드</a></li>
@@ -198,42 +198,154 @@
       </div>
     </footer>
   </div>
-  <!-- 미수령 신고 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="myNotReceive">
+
+  <!-- 반품/교환 요청 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myReturnPopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
-          <div class="lyTitle">
-            <p>미수령 신고</p>
+          <div class="lyTitle center">
+            <p>반품/교환 요청</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
             <div class="pop-layout pop-myState">
-
-              <div class="column-ip-area">
-                <label for="">미수령 신고일자<i class="req">*</i></label>
-                <div class="form-layout">
-                  <input type="text" class="datepicker" value="" id="">
-                </div>
+              <p class="tit-type2-1">주문정보</p>
+              <div class="pop-layout pop-write">
+                <ul>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">주문번호</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="MR20210319-38520" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">상품코드</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="10035839" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">상품명</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="볼펜" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">규격</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="흑색, 0.7mm, 캡식, 12EA/PACK, 유성" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">입고일자</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="2021.05.16" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">입고수량</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="1" readonly>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
 
-              <p class="my-state-txt">신고 사유</p>
-              <div class="textarea-wrap">
-                <textarea class="textarea" name="" style="resize: none;" placeholder="※ 1000자 이내로 입력해 주십시오."></textarea>
-                <p class="cot"><b>0</b> / 1000</p>
+              <p class="tit-type2-1">반품/교환정보</p>
+              <div class="pop-layout pop-write">
+                <ul>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">구분<i class="req">*</i></label>
+                      <div class="form-layout">
+                        <select class="select" name="" id="">
+                          <option value="">반품</option>
+                          <option value="">교환</option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환유형<i class="req">*</i></label>
+                      <div class="form-layout">
+                        <select class="select" name="" id="">
+                          <option value="">단순변심</option>
+                          <option value="">상품불량</option>
+                          <option value="">상품 오배송</option>
+                          <option value="">기타</option>
+
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환요청일</label>
+                      <div class="form-layout">
+                        <input type="text" class="datepicker mo-hide" value="">
+                        <input type="date" class="datepicker pc-hide" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">수거예정일</label>
+                      <div class="form-layout">
+                        <input type="text" class="datepicker mo-hide" value="">
+                        <input type="date" class="datepicker pc-hide" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환 수량</label>
+                      <div class="form-layout">
+                        <input type="number" class="input" value="1">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환 사유</label>
+                      <div class="form-layout">
+                        <div class="textarea-wrap count">
+                          <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
+                          <p class="cot"><b>0</b> / 400</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="btn-area">
-            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">요청</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //미수령 신고 팝업 -->
+  <!-- //반품/교환 요청 팝업 -->
+
+
+
+
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -257,10 +369,9 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('myNotReceive');
+      lyOpen('myReturnPopup');
 
-
-
+    
     });
   </script>
   <!-- javascript -->

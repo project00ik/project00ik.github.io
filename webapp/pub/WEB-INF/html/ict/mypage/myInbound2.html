@@ -213,27 +213,27 @@
                 </li>
                 <li>
                   <label for="">대상자</label>
-                  <div class="form-layout">
+                  <div class="form-layout form-search">
                     <select class="select w127" name="" id="" >
                       <option value="" selected>주문자</option>
-                      <option value=""></option>
-                      <option value=""></option>
+                      <option value="">인수자</option>
                     </select>
-                    <input type="text" name="" class="input" value="" placeholder="">
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('myMngUserPopup')">검색</button>
                   </div>
                 </li>
                 <li>
                   <label for="">사업장</label>
                   <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
                   </div>
                 </li>
                 <li>
                   <label for="">부서</label>
                   <div class="form-layout form-search">
-                    <input type="text" name="" class="input" value="" placeholder="">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('myMngSectionPopup')">검색</button>
                   </div>
                 </li>
               </ul>
@@ -244,7 +244,6 @@
                   <label for="">입고일</label>
                   <div class="form-layout3">
                     <select class="select w127" name="" id="" >
-                      <option value="">1개월</option>
                       <option value="">당일</option>
                       <option value="">일주일</option>
                       <option value="">한달</option>
@@ -264,8 +263,9 @@
                   <div class="form-layout">
                     <select class="select" name="" id="" >
                       <option value="" selected>전체</option>
-                      <option value=""></option>
-                      <option value=""></option>
+                      <option value="">입고대기</option>
+                      <option value="">입고</option>
+                      <option value="">부분입고</option>
                     </select>
                   </div>
                 </li>
@@ -274,8 +274,8 @@
                   <div class="form-layout">
                     <select class="select" name="" id="" >
                       <option value="" selected>전체</option>
-                      <option value=""></option>
-                      <option value=""></option>
+                      <option value="">Y</option>
+                      <option value="">N</option>
                     </select>
                   </div>
                 </li>
@@ -284,8 +284,8 @@
                   <div class="form-layout">
                     <select class="select" name="" id="" >
                       <option value="" selected>전체</option>
-                      <option value=""></option>
-                      <option value=""></option>
+                      <option value="">Y</option>
+                      <option value="">N</option>
                     </select>
                   </div>
                 </li>
@@ -296,10 +296,10 @@
             </div>
             <div class="list-con list-file-con m-line-hide">
               <div class="btn-r-area btn-mo-percent">
-                <button class="btn btn-style-m1 mo-btn-w50">입고취소</button>
-                <button class="btn btn-style-m1 mo-btn-w50">반품/교환요청</button>
-                <button class="btn btn-style-m1 mo-btn-w50">명세서출력</button>
-                <button class="btn btn-style-m1 mo-btn-w50">리뷰작성</button>
+                <button class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('myInboundCancelPopup')">입고취소</button>
+                <button class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('myReturnPopup')">반품/교환요청</button>
+                <button class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('')">명세서출력</button>
+                <button class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('reviewWritePopup')">리뷰작성</button>
               </div>
               <div class="file-con">
                 <div class="in-grid-size w-all">
@@ -430,6 +430,457 @@
       </div>
     </footer>
   </div>
+
+  <!-- 고객사 사용자 조회 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myMngUserPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>고객사 사용자 조회</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-suggestion">
+              <div class="user-search">
+                <div class="pop-mo-form">
+                  <select class="select" name="" id="">
+                    <option value="">사용자</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div class="form-area">
+                    <input type="text" class="input" name="" value="" placeholder="">
+                  </div>
+                </div>
+                <div class="pop-mo-btn">
+                  <button class="btn btn-style-m2">조회</button>
+                  <button class="btn btn-style-m1">초기화</button>
+                </div>
+              </div>
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //고객사 사용자 조회 팝업 -->
+
+  <!-- 고객사 사업장 조회 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myMngOfficePopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>고객사 사업장 조회</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-suggestion">
+              <div class="user-search">
+                <div class="pop-mo-form">
+                  <select class="select" name="" id="">
+                    <option value="">사업장</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div class="form-area">
+                    <input type="text" class="input" name="" value="" placeholder="">
+                  </div>
+                </div>
+                <div class="pop-mo-btn">
+                  <button class="btn btn-style-m2">조회</button>
+                  <button class="btn btn-style-m1">초기화</button>
+                </div>
+              </div>
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //고객사 사업장 조회 팝업 -->
+
+  <!-- 고객사 부서 조회 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myMngSectionPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>고객사 부서 조회</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-suggestion">
+              <div class="user-search">
+                <div class="pop-mo-form">
+                  <select class="select" name="" id="">
+                    <option value="">부서</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div class="form-area">
+                    <input type="text" class="input" name="" value="" placeholder="">
+                  </div>
+                </div>
+                <div class="pop-mo-btn">
+                  <button class="btn btn-style-m2">조회</button>
+                  <button class="btn btn-style-m1">초기화</button>
+                </div>
+              </div>
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //고객사 부서 조회 팝업 -->
+
+  <!-- 리뷰작성 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="reviewWritePopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>리뷰작성</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-review-write">
+              <ul>
+                <li class="pop-product">
+                  <div class="pro-img-area"><img src="../../../../images/main/img_review_ex.png" alt="상품이미지"></div>
+                  <div class="pro-text-area">
+                    <p class="pro-name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                    <p class="pro-option">6.5인치 / 3700RPM</p>
+                    <div class="pro-price">
+                      <p><b>100,000</b><span> 원</span></p>
+                      <p>/ 1개</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="pop-satis">
+                  <b class="satis-tit">상품 리뷰 평점</b>
+                  <div class="pro-satis-list">
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">가격</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">품질</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">배송</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                    <div class="pro-satis-con">
+                      <p class="rating-tit">서비스</p>
+                      <div class="rating-btn-area">
+                        <div>
+                          <button class="btn-star-b btnStar">별점1</button>
+                          <button class="btn-star-b btnStar">별점2</button>
+                          <button class="btn-star-b btnStar">별점3</button>
+                          <button class="btn-star-b btnStar">별점4</button>
+                          <button class="btn-star-b btnStar">별점5</button>
+                        </div>
+                        <i class="icon-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pro-text-review">
+                  <p class="pop-layout-txt">상품 후기를 남겨주세요.</p>
+                  <div class="textarea-wrap count">
+                    <textarea class="textarea" name="" id="" placeholder="다른 분들의 보다 나은 선택을 위해  솔직한 리뷰를 남겨주세요."></textarea>
+                    <p class="cot"><b>0</b> / 3000</p>
+                  </div>
+                </li>
+                <li class="pro-upload">
+                  <p class="pop-layout-txt">상품 사진 첨부 또는 동영상 URL를 업로드해 보세요.</p>
+                  <p class="pop-layout-txt2">첨부파일은 JPG, GIF, PNG만 가능하며, 파일당 최대 10MB, 5개까지 등록가능합니다. <br />상품과 무관한 사진을 첨부한
+                    경우, 통보 없이 삭제될 수 있습니다.</p>
+                  <!-- 이미지 업로드 영역 -->
+                  <div class="upload-area">
+                    <!-- 썸네일 -->
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <div class="upload-thumbnail">
+                      <span class="img-thumbnail">
+                        <img src="../../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+                      </span>
+                      <button class="img-del-btn">삭제</button>
+                    </div>
+                    <!--// 썸네일 -->
+                    <!-- 이미지 추가버튼 -->
+                    <div class="img-upload-btn">
+                      <label>
+                        <input type="file" id="input_imgs" multiple />
+                      </label>
+                    </div>
+                    <!--// 이미지 추가버튼 -->
+                  </div>
+                  <!--// 이미지 업로드 영역 -->
+                  <div class="upload-url">
+                    <label for="videourl">동영상 URL</label>
+                    <input type="text" class="input" id="videourl" name="" value="" placeholder="">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">등록</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// 리뷰작성 팝업 -->
+
+  <!-- 입고취소 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="myInboundCancelPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>입고취소</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-myState">
+
+              <div class="column-ip-area">
+                <label for="">입고취소유형</label>
+                <div class="form-layout">
+                  <select class="select" name="" id="" >
+                    <option value="" selected>품질불량</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+
+              <p class="my-state-txt">입고취소사유</p>
+              <div class="textarea-wrap">
+                <textarea class="textarea" name="" style="resize: none;" placeholder="※ 1000자 이내로 입력해 주십시오."></textarea>
+                <p class="cot"><b>0</b> / 1000</p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //입고취소 팝업 -->
+
+  <!-- 반품/교환 요청 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myReturnPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>반품/교환 요청</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-myState">
+              <p class="tit-type2-1">주문정보</p>
+              <div class="pop-layout pop-write">
+                <ul>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">주문번호</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="MR20210319-38520" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">상품코드</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="10035839" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">상품명</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="볼펜" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">규격</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="흑색, 0.7mm, 캡식, 12EA/PACK, 유성" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">입고일자</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="2021.05.16" readonly>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">입고수량</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="1" readonly>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <p class="tit-type2-1">반품/교환정보</p>
+              <div class="pop-layout pop-write">
+                <ul>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">구분<i class="req">*</i></label>
+                      <div class="form-layout">
+                        <select class="select" name="" id="">
+                          <option value="">반품</option>
+                          <option value="">교환</option>
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환유형<i class="req">*</i></label>
+                      <div class="form-layout">
+                        <select class="select" name="" id="">
+                          <option value="">단순변심</option>
+                          <option value="">상품불량</option>
+                          <option value="">상품 오배송</option>
+                          <option value="">기타</option>
+
+                        </select>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환요청일</label>
+                      <div class="form-layout">
+                        <input type="text" class="datepicker mo-hide" value="">
+                        <input type="date" class="datepicker pc-hide" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">수거예정일</label>
+                      <div class="form-layout">
+                        <input type="text" class="datepicker mo-hide" value="">
+                        <input type="date" class="datepicker pc-hide" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환 수량</label>
+                      <div class="form-layout">
+                        <input type="number" class="input" value="1">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">반품/교환 사유</label>
+                      <div class="form-layout">
+                        <div class="textarea-wrap count">
+                          <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
+                          <p class="cot"><b>0</b> / 400</p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">요청</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //반품/교환 요청 팝업 -->
   
 
 
