@@ -54,6 +54,7 @@
 .word-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 30px 20px; background: #fff; border: 1px solid #000;}
 .word-box.on {display: block;}
 .word-box a {display: block; font-size: 16px; color: #000;}
+.word-box a:hover {color: #346dd0;}
 .word-box .word-words {padding-bottom: 20px;}
 .word-box .word-words a {margin-bottom: 10px;}
 .word-box .word-words a:last-child {margin-bottom: 0;}

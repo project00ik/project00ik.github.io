@@ -794,17 +794,16 @@ function realtimeSearchSlide(){
       loop: true
     })
   }
-  $('.realTimeMore').on('click', function (){
+  $('.realTimeMore').mouseover(function (){
     $(this).addClass('on');
     realtimeSearch.autoplay.stop();
     $('.realtimeLayer').slideDown();
-
   });
-  $('.realtimeLyClose').on('click', function (){
+  $('.realtimeLayer').mouseleave(function (){
     $(this).removeClass('on');
     realtimeSearch.autoplay.start();
-    $('.realtimeLayer').hide();
-  })
+    $('.realtimeLayer').slideUp();
+  });
   $('body').mouseup(function(e){
     if($('.realtimeLayer').has(e.target).length === 0){
       $('.realtimeLayer').hide();
