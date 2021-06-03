@@ -31,7 +31,7 @@
 .list-con .mem-info-list li .form-phone.form-layout .input {flex: 1;}
 .list-con .mem-info-list .ip-only .form-layout {width: 380px;}
 .list-con .mem-info-list li .form-layout .input {flex: inherit;}
-.list-con .mem-info-list li .form-email input.input {flex: inherit; width: 100%;}
+.list-con .mem-info-list li .form-email input.input {flex: 1; width: 100%;}
 .list-con .mem-info-list li .form-email .select {width: 118px;}
 .list-con .form-list-checkradio {display: flex; flex-wrap: wrap; margin-bottom: -22px; width: 100%;}
 .list-con .form-list-checkradio li {width: 25%; margin-bottom: 22px;}

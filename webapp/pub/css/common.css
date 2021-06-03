@@ -236,6 +236,7 @@
 .form-search input.input {padding-right: 36px;}
 .form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
 .form-layout.form-flexnone {display: block;}
+.form-layout.form-flexnone .form-email select {width: 118px;}
 
 .column-ip-area {padding-bottom: 20px;}
 .column-ip-area label {display: block; padding-bottom: 10px; font-size: 16px; color: #000;}
@@ -565,8 +566,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout .input-price.disabled {color:#d7d7d7; background: #fafafa;}
 .form-layout .input-price input.input:disabled {color:#d7d7d7; background:none;}
 .form-layout .bar {height:35px; line-height:33px; padding:0 5px; display:inline-block; vertical-align:middle;}
+.form-layout.form-email .input {flex: 1;}
 .form-layout.form-email .input + .input {margin-left:5px;}
-.form-layout.form-email .input + .select {margin-left:5px;}
+.form-layout.form-email .input + .select {flex: inherit; margin-left:5px;}
 .form-layout .w-auto {flex:inherit; width:auto;}
 .form-layout .bar {font-size: 16px; color: #666;}
 .form-layout3 {display:flex; width: 100%; flex:1;}
