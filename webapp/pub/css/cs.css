@@ -25,7 +25,8 @@
     공지사항
 ========================================================================== */
 /* 목록 */
-.notice-list .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; font-size:0;}
+.notice-list .new,
+.notice-detail .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; font-size:0;}
 .list-top-search {padding-top:20px; display:flex; justify-content: flex-end;}
 .list-top-search .form-search {width:320px; flex:320px 1 1;}
 .notice-list-area {width:100%; margin-top:20px; border-bottom:1px solid #bbb;}
@@ -47,11 +48,11 @@
 .notice-detail .list-flag {position: absolute; top:18px; left:20px; z-index:1;}
 .notice-detail .date  {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
 .notice-detail > dd {width:100%;}
-.notice-detail .notice-file-upload {width: 100%; display:flex; align-items: center;}
+.notice-detail .notice-file-upload {width: 100%; margin-bottom: 30px; display:flex; align-items: center;}
 .notice-detail .notice-file-upload > dt {width:99px; padding-left:20px; font-size:16px; font-weight: 400;}
 .notice-detail .notice-file-upload > dd {flex:1; background:#f5f5f5; overflow: auto;}
 .notice-detail .html-area {width:100%; padding:30px 20px; word-break: keep-all; font-size:16px; color:#666; line-height:19px;}
-.notice-detail .notice-bt-list {margin-top: 30px; border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;}
+.notice-detail .notice-bt-list {border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;}
 .notice-detail .notice-bt-list > li {padding:18px 20px 18px 76px; position: relative;}
 .notice-detail .notice-bt-list > li + li {border-top: 1px solid #e5e5e5;}
 .notice-detail .notice-bt-list .tit {width:76px; font-size: 14px; color: #666; position: absolute; top:50%; left:20px; z-index:1; transform: translateY(-50.4%);}
@@ -99,6 +100,18 @@
 .mypage-cont .my-main .product-result.wish-list {margin-top:30px;}
 .mypage-cont .my-main .product-result .tit-area {padding-bottom:20px; border-bottom:1px solid #d7d7d7;}
 
+/* ==========================================================================
+    뉴스 (공지사항 notice-list와 함께 사용)
+========================================================================== */
+.notice-list.news-list > li {padding:18px 114px 18px 20px;}
+.notice-detail.news-detail > dt {padding:18px 114px 18px 20px;}
+.notice-detail.news-detail > dt .star-area {width:40px; font-size:0; color:#666; text-align: right; position: absolute; top:50%; right:16px; z-index:1; transform: translateY(-50.4%);}
+.news-detail .news-box {padding:20px 0; border:1px solid #d7d7d7; border-top:0;}
+.news-box .justify-list {font-size:0;}
+.news-box .justify-list > li {width:50%; padding:10px 30px; display:inline-flex;}
+.news-box .justify-list > li > p {flex:1; font-size:16px; display: inline-block; color:#666;}
+.news-box .justify-list > li .tit {flex:none; width:118px; color:#000; font-weight: 500;}
+.arrow-link {padding-right:23px; background: url(../images/common/btn_more.svg) 100% 50% no-repeat;}
 @media only screen and (max-width: 800px){
   /* ==========================================================================
       관심카테고리 (마이페이지)
@@ -141,20 +154,21 @@
   /* ==========================================================================
     공지사항
   ========================================================================== */
-  .new {width:13px; height:13px; background-size:100% auto;}
+  .notice-list .new,
+  .notice-detail .new {width:13px; height:13px; background-size:100% auto;}
   /* 목록 */
   .list-top-search {padding:20px 20px 0;}
   .list-top-search .right-area {width:100%; flex:1;}
   .notice-list-area {padding:0 20px;}
   .notice-list > li .list-flag {top:50%; left:0; transform: translateY(-50.4%);}
-  .notice-list > li {padding-right:20px; padding-left:42px;}
+  .notice-list > li {padding-right:0; padding-left:42px;}
   .notice-list .txt-area .date {margin-top:5px; font-size:13px; position: relative; top:inherit; right:inherit; z-index: inherit; text-align: left;}
-  .notice-list .txt-area .txt {font-size:14px;}
-  .notice-list .txt-area .txt .new {top:3px;}
+  .notice-list .txt-area .txt {padding-right: 18px; font-size:14px;}
+  .notice-list .txt-area .txt .new {top:4px;}
   /* 상세 */
   .notice-detail-area {margin:0 20px;}
   .notice-detail {margin-top:20px; border-top:1px solid #000;}
-  .notice-detail > dt {padding:12px 12px 12px 42px; font-size: 14px;}
+  .notice-detail > dt {padding:12px 0 12px 42px; font-size: 14px;}
   .notice-detail .list-flag {left:0;}
   .notice-detail .date {margin-top: 6px; font-size:13px; text-align:left; position: inherit; z-index:inherit;}
   .notice-detail > dt .new {margin:-3px 0 0 5px;}
@@ -163,6 +177,14 @@
   .notice-detail .notice-bt-list > li {padding:18px 0 18px 42px;}
   .notice-detail .notice-bt-list .tit {left:0; font-size:12px;}
   .notice-detail .notice-bt-list .txt {font-size:14px;}
+  /* 뉴스 */
+  .notice-detail.news-detail > dt {padding:12px 33px 12px 0;}
+  .notice-detail.news-detail > dt .star-area {right:0;}
+  .news-detail .news-box {padding: 10px 0;}
+  .news-box .justify-list > li {width:100%; padding:10px 20px;}
+  .news-box .justify-list > li > p {font-size: 14px; text-align: right;}
+  .news-box .justify-list > li .tit {text-align: left;}
+  .arrow-link {padding-right:18px;}
   /* ==========================================================================
     자주묻는질문
   ========================================================================== */
