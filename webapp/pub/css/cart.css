@@ -49,6 +49,7 @@
 .pop-restock .pop-write .input td div label {line-height:38px;}
 .pop-restock .pop-write .input td div.form-layout {display:block;width:calc(100% - 100px);}
 .pop-restock .pop-write  .req{color: #346dd0;font-style: normal;vertical-align: top;padding: 0 3px;}
+.pop-restock .tab-area .pop-write th{width: 120px;text-align: center;padding: 20px 0;}
 
 .pop-restock.pop-register  {text-align:left;}
 .pop-restock .tab-area .tab-cont {padding:0;}
