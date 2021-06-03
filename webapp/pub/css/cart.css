@@ -48,6 +48,7 @@
 .pop-restock .pop-write td strong {color:#346DD0;}
 .pop-restock .pop-write .input td div label {line-height:38px;}
 .pop-restock .pop-write .input td div.form-layout {display:block;width:calc(100% - 100px);}
+.pop-restock .pop-write  .req{color: #346dd0;font-style: normal;vertical-align: top;padding: 0 3px;}
 
 .pop-restock.pop-register  {text-align:left;}
 .pop-restock .tab-area .tab-cont {padding:0;}
@@ -129,7 +130,8 @@
 .pop-cart-print .table-area.table-style1 table tbody td.total{background:#F5F5F5;text-align: right;padding:20px}
 .pop-cart-print .table-area.table-style1 table tbody td.total em{color: #346DD0;vertical-align: top;}
 .pop-cart-print .table-area.table-style1 table tbody td.total i{padding:0 7px;}
-.pop-restock .pop-write td .before-num {display: block;}
+.pop-restock .pop-write td .before-num {display: block;margin-right: -20px;}
+.pop-restock .pop-write td .before-num em{vertical-align: top;color:#346DD0;}
 .before-num {display: block;}
 .before-num ul li{padding-left: 15px;position: relative;line-height: 19px}
 .before-num ul li::before{content: "1.";position: absolute;top:0;left: 0;}
