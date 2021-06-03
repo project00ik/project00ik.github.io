@@ -41,6 +41,12 @@
 .list-con .join-agree .agree-area .agree-tit {position: relative; padding: 20px; border: 1px solid #d7d7d7;}
 .list-con .join-agree .agree-area .agree-tit .btn-slide-open {position: absolute; top: 18px; right: 12px; width: 30px; height: 30px;}
 .list-con .join-agree .agree-area .agree-cont {padding: 20px; border: 1px solid #d7d7d7; border-top: 0; font-size: 14px; line-height: 22px; text-align: left; color: #666; height: 125px; overflow-y: auto;}
+.half-list-box {display: flex; justify-content: space-between;}
+.half-list-box > div {flex: 1;}
+.half-list-box > div:last-child {margin-left: 20px;}
+.half-list-box .list-con .tit-area3 {align-items: center; padding-bottom: 10px;}
+.half-list-box .list-con .tit-type2 .sub-txt {margin-left: 0;}
+.half-list-box .list-con .btn-r-area {padding-bottom: 0;}
 
 .con-normal-info {padding-top: 0;}
 .con-normal-info .list-in {margin-top: 0; border-top: 0; display: flex; flex-wrap: wrap;}
@@ -56,6 +62,7 @@
 .list-file-con .file-con .in-grid-size {background: #f5f5f5; min-height: 280px; overflow-y: hidden; overflow-x: auto;}
 .list-file-con .file-con .in-grid-size.w-460 {width: 460px; margin-right: 10px;}
 .list-file-con .file-con .in-grid-size.w-all {flex:1;}
+.list-file-con .file-con.mt0 {margin-top: 0;}
 
 /* 팝업 주소검색 */
 #addressPopup .lyPopup .lyPopCont{padding:0}
@@ -187,6 +194,15 @@
     .list-con .join-agree .agree-area .agree-tit {padding: 18px 40px 18px 20px; word-break: keep-all;}
     .list-con .join-agree .agree-area .agree-cont {font-size: 12px; line-height: 1.4;}
     .join-agree-con .list-con {padding: 20px 20px 0 20px; border-bottom: 0;}
+
+    .half-list-box {display: block;}
+    .half-list-box .list-file-con:first-child .file-con {margin-bottom: 0;}
+    .half-list-box .list-file-con:last-child {padding-top: 0;}
+    .half-list-box .list-con .tit-area3 {display: block;}
+    .half-list-box .list-con .tit-area3 .tit-type2 .sub-txt {margin-top: 0;}
+    .half-list-box .list-con .btn-r-area {justify-content: start; padding: 10px 0 0 0;}
+    .half-list-box .list-con .btn-r-area .btn {flex: none; width: 68px;}
+    .half-list-box > div:last-child {margin-left: 0;}
 
     .con-normal-info .list-in {padding-top: 20px; flex-direction: column;}
     .con-normal-info .list-in > li {width: 100%;}

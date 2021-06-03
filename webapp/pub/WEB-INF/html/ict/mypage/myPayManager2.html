@@ -167,129 +167,46 @@
     <section class="container">
       <div class="sub-content mypage-cont">
         <div class="my-main">
-          <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>자산정보관리</p>
+          <p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>부서관리</p>
           <div class="join-list-con">
             <div class="tit-area2">
-              <p class="tit-type2">자산정보관리</p>
+              <p class="tit-type2">부서관리</p>
             </div>
             <div class="list-con bt-btn-line">
               <ul class="list-in list-half-style">
                 <li>
-                  <label for="">사업장코드</label>
+                  <label for="">부서코드</label>
                   <div class="form-layout">
-                    <input type="text" class="input" value="KTC0003" readonly="readonly">
+                    <input type="text" class="input" value="">
                   </div>
                 </li>
                 <li>
-                  <label for="">사업장명</label>
+                  <label for="">부서명</label>
                   <div class="form-layout">
-                    <input type="text" class="input" value="케이티커머스" readonly="readonly">
+                    <input type="text" class="input" value="">
                   </div>
                 </li>
                 <li>
-                  <label for="">사업자번호</label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="" readonly="readonly">
-                  </div>
-                </li>
-                <li>
-                  <label for="">법인등록번호</label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="" readonly="readonly">
-                  </div>
-                </li>
-                <li>
-                  <label for="">부서명<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="영업지원팀">
-                  </div>
-                </li>
-                <li>
-                  <label for="">법인형태<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <select class="select" name="" id="" >
-                      <option value="" selected>코스닥상장</option>
-                      <option value="">코스닥상장1</option>
-                      <option value="">코스닥상장2</option>
-                    </select>
-                  </div>
-                </li>
-                <li>
-                  <label for="">설립일자</label>
-                  <div class="form-layout">
-                    <input type="text" class="datepicker" value="2021-04-25">
-                  </div>
-                </li>
-                <li>
-                  <label for="">대표이사<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="홍길동">
-                  </div>
-                </li>
-                <li>
-                  <label for="">업종<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="컴퓨터/인터넷">
-                  </div>
-                </li>
-                <li>
-                  <label for="">업태<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="도소매">
-                  </div>
-                </li>
-                <li>
-                  <label for="">종업원수</label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="100">
-                  </div>
-                </li>
-                <li class="two-form">
-                  <label for="">우편번호<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="135220" readonly="readonly">
-                    <button class="btn btn-style-m1">우편번호 찾기</button>
-                  </div>
-                </li>
-                <li>
-                  <label for="">주소<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="서울 강남구 수서동" readonly="readonly">
-                  </div>
-                </li>
-                <li>
-                  <label for="">상세주소<i class="req">*</i></label>
-                  <div class="form-layout">
-                    <input type="text" class="input" value="734번지 KT수서지점 4층">
-                  </div>
-                </li>
-                <li>
-                  <label for="">대표전화번호<i class="req">*</i></label>
-                  <div class="form-layout form-phone">
-                    <select class="select">
-                      <option value="">02</option>
-                      <option value="02">02</option>
-                    </select>
-                    <span class="bar">-</span>
-                    <input type="number" name="" maxlength="4" class="input" value="1234">
-                    <span class="bar">-</span>
-                    <input type="number" name="" maxlength="4" class="input" value="4567">
-                  </div>
-                </li>
-                <li>
-                  <label for="">대표FAX</label>
-                  <div class="form-layout form-phone">
-                    <select class="select">
-                      <option value="">02</option>
-                      <option value="02">02</option>
-                    </select>
-                    <span class="bar">-</span>
-                    <input type="number" name="" maxlength="4" class="input" value="1234">
-                    <span class="bar">-</span>
-                    <input type="number" name="" maxlength="4" class="input" value="4567">
+                  <label for="">상위부서</label>
+                  <div class="form-layout form-search">
+                    <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
                   </div>
                 </li>
               </ul>
+              <div class="btn-r-area">
+                <button class="btn btn-style-m3">조회</button>
+              </div>
+            </div>
+          </div>
+          <div class="list-con list-file-con m-line-hide">
+            <div class="btn-r-area">
+              <button class="btn btn-style-m3" onclick="lyOpen('')">신규</button>
+            </div>
+            <div class="file-con">
+              <div class="in-grid-size w-all">
+                그리드영역
+              </div>
             </div>
           </div>
           <div class="btn-area-c">

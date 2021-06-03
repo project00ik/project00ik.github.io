@@ -232,6 +232,7 @@
 .pop-ip-area > label {width: 132px; padding-left: 20px;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 .pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
+.form-half > * {width: 50%;}
 .form-search {position: relative;}
 .form-search input.input {padding-right: 36px;}
 .form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
@@ -581,7 +582,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .list-con .list-in .btn-right {width:100%; display:block; text-align: right;}
 .select.w127 {width:127px; flex: none; margin-right:5px;}
 
-.form-phone .select {width: 86px; flex: inherit;}
+.form-phone .select {width: 86px; flex: none;}
 .form-phone .input {flex:1;}
 .list-area .list-con {}
 .list-con .tit-type2-1 {padding-top:30px;}
