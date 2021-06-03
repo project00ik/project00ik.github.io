@@ -198,77 +198,33 @@
       </div>
     </footer>
   </div>
-  <!--일괄등록 엑셀업로드 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="mypageExcelPopup">
+  <!-- 결재의견 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="mypageWritePopup02">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
           <div class="lyTitle">
-            <p>일괄등록</p>
+            <p>결재의견</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
-            <div class="pop-layout pop-register pop-restock">
-              <div class="tab-area tabArea">
-								<ul class="tab-btn-list tab-style1">
-									<li class="tabBtn on" data-tab="tab1">파일선택</li>
-									<li class="tabBtn" data-tab="tab2">엑셀조회</li>
-								</ul>
-								<div class="tab-cont tabCont active" id="tab1">
-									<div class="pop-write">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <th>파일선택<i class="req">*</i></th>
-                          <td>
-                            <button class="btn form-down-btn">양식 다운로드</button>
-                            <div class="filebox">
-                              <input class="upload-name input " value="" readonly>
-                              <label for="file">파일 선택</label> 
-                              <input type="file" id="file"> 
-                            </div>
-                          </td>
-                        </tr>
-                        <tr class="input">
-                          <th>추가설명</th>
-                          <td>
-                            <div class="before-num">
-                              <ul>
-                                <li><em>결재유형코드, 사용구분코드</em>는 필수 항목입니다.</li>
-                                <li><em>결재자순번</em>은 한 결재선에서 중복순번이 없도록 입력하셔야 합니다.</li>
-                                <li>코드표는 <em>GUIDE</em> 시트에 표시되어 있습니다.</li>
-                                <li><em>결재자</em>를 지정할 때 결재자순번과 결재자구분코드를 필수로 입력하셔야 합니다.</li>
-                                <li><em>결재담당자ID</em>는 결재사용구분코드가 사용자(U)일 때만 입력하셔야 합니다.<br/>- 위의 Template Excel 파일은 다운로드하여 사용하셔도 됩니다.</li>
-                              </ul>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="btn-area">
-                    <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
-                  </div>
-								</div>
-								<div class="tab-cont tabCont" id="tab2">
-                  <div class="pop-write">
-                    <div class="excel-wrap">
-                      그리드 영역
-                    </div>
-                  </div>
-                  <div class="btn-area">
-                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
-                  </div>
-								</div>
-							</div>
+            <div class="pop-layout pop-cart">
+              <div class="textarea-wrap count">
+                <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
+                <p class="cot"><b>0</b> / 1,000</p>
+              </div>
             </div>
+          </div>
+          <div class="btn-area">
+            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //일괄등록 엑셀업로드 팝업 -->
+  <!-- //결재의견 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -292,9 +248,10 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('mypageExcelPopup');
+      lyOpen('mypageWritePopup02');
 
-      fileupload();//파일업로드
+
+
     });
   </script>
   <!-- javascript -->
