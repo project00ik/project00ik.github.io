@@ -125,16 +125,13 @@ searchBox(); //상단 검색박스 펼침
 });
 
 function delBtn(){
-  // 옵션 삭제
+  // 삭제 이벤트 (검색어/상품 옵션 등)
   $('.btn.btn-del').each(function(){
     $(this).click(function(){
       $(this).closest('div').css('display','none');
     })
   })
 }
-
-
-    
 
 function allCategoryBtn(){
   // gnb 전체카테고리 열고 닫기
@@ -362,6 +359,14 @@ function buyNowLyClose(){
   $('.ly-buyNowLy').removeClass('open');
 }
 
+function optionResultHeight(){
+  // 바로구매/장바구니 팝업 옵션 높이 제어 js
+  $('.option-wrap .option-area').each(function(){
+    var $selectLeng = $(this).find('>.form-area').length;
+    $(this).closest('.option-wrap').find('.option-result').addClass('selLeng'+ $selectLeng);
+  });
+}
+    
 function lyboxWrap(){
   // 주문상태 레이어 이벤트
   $('.lyboxbtn').on('click', function(){

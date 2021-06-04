@@ -499,7 +499,7 @@
           </div>
           <!-- 옵션 선택 영역 -->
           <div class="option-area">
-            <div class="form-area">
+            <!-- <div class="form-area">
               <select class="select">
                 <option value="" selected>옵션을 선택해 주세요.</option>
                 <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
@@ -511,6 +511,12 @@
                 <option value="">6.5인치 / 3700RPM</option>
               </select>
             </div>
+            <div class="form-area">
+              <select class="select">
+                <option value="" selected>옵션을 선택해 주세요.</option>
+                <option value="">6.5인치 / 3700RPM</option>
+              </select>
+            </div> -->
           </div>
           <!--// 옵션 선택 영역 -->
           <!-- 옵션 선택 시 노출 영역 -->
@@ -533,51 +539,7 @@
                   <p class="price"><b>100,000</b>원</p>
                 </li>
               </ul>
-              <button class="btn btn-del">옵션삭제</button>
-            </div>
-            <!--// 옵션 -->
-            <!-- 옵션 -->
-            <div class="option-box">
-              <div class="option-name">
-                <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
-                <p class="option">6.5인치 / 3700RPM</p>
-              </div>
-              <ul class="option-price">
-                <li>
-                  <div class="spinner">
-                    <input type="text" value="999" maxlength="3" title="수량조절">
-                    <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
-                  </div>
-                  <p class="minimum-order">(최소 주문수량 1개)</p>
-                </li>
-                <li>
-                  <p class="normal-price">99,900,000</p>
-                  <p class="price"><b>89,910,000</b>원</p>
-                </li>
-              </ul>
-              <button class="btn btn-del">옵션삭제</button>
-            </div>
-            <!--// 옵션 -->
-            <!-- 옵션 -->
-            <div class="option-box">
-              <div class="option-name">
-                <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
-                <p class="option">6.5인치 / 3700RPM</p>
-              </div>
-              <ul class="option-price">
-                <li>
-                  <div class="spinner">
-                    <input type="text" value="999" maxlength="3" title="수량조절">
-                    <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
-                  </div>
-                  <p class="minimum-order">(최소 주문수량 1개)</p>
-                </li>
-                <li>
-                  <p class="normal-price">99,900,000</p>
-                  <p class="price"><b>89,910,000</b>원</p>
-                </li>
-              </ul>
-              <button class="btn btn-del">옵션삭제</button>
+              <!-- <button class="btn btn-del">옵션삭제</button> -->
             </div>
             <!--// 옵션 -->
           </div>
@@ -684,7 +646,13 @@
             <div class="form-area">
               <select class="select">
                 <option value="" selected>옵션을 선택해 주세요.</option>
-                <option value="">6.5인치 / 3700RPM</option>
+                <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
+              </select>
+            </div>
+            <div class="form-area">
+              <select class="select">
+                <option value="" selected>옵션을 선택해 주세요.</option>
+                <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
               </select>
             </div>
           </div>
@@ -887,8 +855,9 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      delBtn(); // 옵션 삭제
-      detailOptionLy(); // 장바구니 옵션 레이어 이벤트(상품상세 옵션레이어 이벤트랑 동일)
+      delBtn(); // 바로구매/장바구니 팝업 옵션 삭제
+      optionResultHeight(); // 바로구매/장바구니 팝업 옵션 높이 제어 js
+      
       // 바로구매/장바구니 상품슬라이드
       // 썸네일
       $('.pro-detail-slide').each(function(){

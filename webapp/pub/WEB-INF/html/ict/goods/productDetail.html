@@ -316,6 +316,12 @@
                       <option value="">6.5인치 / 3700RPM</option>
                     </select>
                   </div>
+                  <div class="form-area">
+                    <select class="select">
+                      <option value="" selected>옵션을 선택해 주세요.</option>
+                      <option value="">6.5인치 / 3700RPM</option>
+                    </select>
+                  </div>
                 </div>
                 <!--// 옵션 선택 영역 -->
                 <!-- 옵션 선택 시 노출 영역 -->
@@ -1288,95 +1294,103 @@
   <!-- 모바일 옵션 영역 [S] -->
   <!-- 상품상세 옵션 레이어 -->
   <div class="ly-detail">
-    <button class="option-ly-btn-open" onclick="detailLyClose()">옵션보기</button>
-    <!-- 옵션 선택 영역 -->
-    <div class="option-area">
-      <div class="form-area">
-        <select class="select">
-          <option value="" selected>옵션을 선택해 주세요.</option>
-          <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
-        </select>
+    <div class="option-wrap">
+      <button class="option-ly-btn-open" onclick="detailLyClose()">옵션보기</button>
+      <!-- 옵션 선택 영역 -->
+      <div class="option-area">
+        <div class="form-area">
+          <select class="select">
+            <option value="" selected>옵션을 선택해 주세요.</option>
+            <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
+          </select>
+        </div>
+        <div class="form-area">
+          <select class="select">
+            <option value="" selected>옵션을 선택해 주세요.</option>
+            <option value="">6.5인치 / 3700RPM</option>
+          </select>
+        </div>
+        <div class="form-area">
+          <select class="select">
+            <option value="" selected>옵션을 선택해 주세요.</option>
+            <option value="">6.5인치 / 3700RPM</option>
+          </select>
+        </div>
       </div>
-      <div class="form-area">
-        <select class="select">
-          <option value="" selected>옵션을 선택해 주세요.</option>
-          <option value="">6.5인치 / 3700RPM</option>
-        </select>
+      <!--// 옵션 선택 영역 -->
+      <!-- 옵션 선택 시 노출 영역 -->
+      <div class="option-result">
+        <!-- 옵션 -->
+        <div class="option-box">
+          <div class="option-name">
+            <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+            <p class="option">6.5인치 / 3700RPM</p>
+          </div>
+          <ul class="option-price">
+            <li>
+              <div class="spinner">
+                <input type="text" value="1" maxlength="3" title="수량조절">
+                <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+              </div>
+              <p class="minimum-order">(최소 주문수량 1개)</p>
+            </li>
+            <li>
+              <p class="price"><b>100,000</b>원</p>
+              <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
+            </li>
+          </ul>
+          <button class="btn btn-del">옵션삭제</button>
+        </div>
+        <!--// 옵션 -->
+        <!-- 옵션 -->
+        <div class="option-box">
+          <div class="option-name">
+            <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+            <p class="option">6.5인치 / 3700RPM</p>
+          </div>
+          <ul class="option-price">
+            <li>
+              <div class="spinner">
+                <input type="text" value="999" maxlength="3" title="수량조절">
+                <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+              </div>
+              <p class="minimum-order">(최소 주문수량 1개)</p>
+            </li>
+            <li>
+              <p class="normal-price">99,900,000</p>
+              <p class="price"><b>89,910,000</b>원</p>
+              <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
+            </li>
+          </ul>
+          <button class="btn btn-del">옵션삭제</button>
+        </div>
+        <!--// 옵션 -->
+        <!-- 옵션 -->
+        <div class="option-box">
+          <div class="option-name">
+            <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+            <p class="option">6.5인치 / 3700RPM</p>
+          </div>
+          <ul class="option-price">
+            <li>
+              <div class="spinner">
+                <input type="text" value="999" maxlength="3" title="수량조절">
+                <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+              </div>
+              <p class="minimum-order">(최소 주문수량 1개)</p>
+            </li>
+            <li>
+              <p class="normal-price">99,900,000</p>
+              <p class="price"><b>89,910,000</b>원</p>
+              <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
+            </li>
+          </ul>
+          <button class="btn btn-del">옵션삭제</button>
+        </div>
+        <!--// 옵션 -->
       </div>
+      <!--// 옵션 선택 시 노출 영역 -->
     </div>
-    <!--// 옵션 선택 영역 -->
-    <!-- 옵션 선택 시 노출 영역 -->
-    <div class="option-result">
-      <!-- 옵션 -->
-      <div class="option-box">
-        <div class="option-name">
-          <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
-          <p class="option">6.5인치 / 3700RPM</p>
-        </div>
-        <ul class="option-price">
-          <li>
-            <div class="spinner">
-              <input type="text" value="1" maxlength="3" title="수량조절">
-              <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
-            </div>
-            <p class="minimum-order">(최소 주문수량 1개)</p>
-          </li>
-          <li>
-            <p class="price"><b>100,000</b>원</p>
-            <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
-          </li>
-        </ul>
-        <button class="btn btn-del">옵션삭제</button>
-      </div>
-      <!--// 옵션 -->
-      <!-- 옵션 -->
-      <div class="option-box">
-        <div class="option-name">
-          <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
-          <p class="option">6.5인치 / 3700RPM</p>
-        </div>
-        <ul class="option-price">
-          <li>
-            <div class="spinner">
-              <input type="text" value="999" maxlength="3" title="수량조절">
-              <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
-            </div>
-            <p class="minimum-order">(최소 주문수량 1개)</p>
-          </li>
-          <li>
-            <p class="normal-price">99,900,000</p>
-            <p class="price"><b>89,910,000</b>원</p>
-            <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
-          </li>
-        </ul>
-        <button class="btn btn-del">옵션삭제</button>
-      </div>
-      <!--// 옵션 -->
-      <!-- 옵션 -->
-      <div class="option-box">
-        <div class="option-name">
-          <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
-          <p class="option">6.5인치 / 3700RPM</p>
-        </div>
-        <ul class="option-price">
-          <li>
-            <div class="spinner">
-              <input type="text" value="999" maxlength="3" title="수량조절">
-              <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
-            </div>
-            <p class="minimum-order">(최소 주문수량 1개)</p>
-          </li>
-          <li>
-            <p class="normal-price">99,900,000</p>
-            <p class="price"><b>89,910,000</b>원</p>
-            <a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
-          </li>
-        </ul>
-        <button class="btn btn-del">옵션삭제</button>
-      </div>
-      <!--// 옵션 -->
-    </div>
-    <!--// 옵션 선택 시 노출 영역 -->
     <!-- 총 구매 금액 -->
     <div class="product-total">
       <p class="tit">총 구매 금액</p>
@@ -1999,7 +2013,8 @@
       toggleSlideArea(); // // 토글영역(slide모션)(상품문의)
       pagination(); // 페이지네이션
       inLyClose(); // 팝업안에 팝업 닫기
-      delBtn(); // 옵션 삭제
+      delBtn(); // 삭제 이벤트 (검색어/상품 옵션 등)
+      optionResultHeight(); // 바로구매/장바구니 팝업 옵션 높이 제어 js
       
       // 상품상세 슬라이드
       // 썸네일
