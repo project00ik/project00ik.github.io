@@ -101,22 +101,28 @@
 .mystate-con .step-wrap > ul > li{margin-left: 57px;}
 .mystate-con .step-wrap > ul > li:first-child{margin-left: 27px;}
 .mystate-con .step-wrap > ul > li p{color:#999;}
-.mystate-con  .state-text{background:#F5F5F5;margin-top: 20px;}
-.mystate-con  .state-text p{line-height: 89px;font-size: 24px;text-align: center;}
-.mystate-con  .state-text p em{vertical-align: top;color:#346DD0}
+.mystate-con .state-text{background:#F5F5F5;margin-top: 20px;}
+.mystate-con .state-text p{line-height: 89px;font-size: 24px;text-align: center;}
+.mystate-con .state-text p em{vertical-align: top;color:#346DD0}
 .mystate-con .product-info-list .list-con{padding-top:0}
 .mystate-con .product-info-list .list-con .tgSlide{border-bottom: 1px solid #d7d7d7;}
 .mystate-con .product-info-list .list-con .tgSlide .tgSlideCont .list-in{margin: 0;padding:0;border: none;}
 .mystate-con .product-info-list .list-con .tgSlide .tgSlideBtn{font-size: 14px;}
 .mystate-con .product-info-list .list-con .tgSlide .tgSlideBtn.on{font-size: 0px;}
-.mystate-con .product-info-list .list-con .list-in {border-bottom: none;}
+.mystate-con .product-info-list .list-con .list-in {border-bottom: 0;}
+.mystate-con .product-info-list .list-con .list-in + .list-in {margin-top: 0; border-top: 1px solid #d7d7d7;}
+.mystate-con .product-info-list .list-con .list-in:last-child {border-bottom: 1px solid #d7d7d7;}
+.mystate-con .product-info-list .list-con .list-in > li {align-items: flex-start;}
+.mystate-con .product-info-list .list-con .list-in > li .small-tit {font-size: 16px; color: #000; font-weight: 500;}
 .mystate-con .product-info-list .list-con .list-in > li.w100 {width: 100%}
-.mystate-con .product-info-list .list-con .list-in > li > label{width: 170px; align-self: flex-start;}
+.mystate-con .product-info-list .list-con .list-in > li > label{width: 170px; align-self: flex-start; line-height: 19px;}
 .mystate-con .product-info-list .list-con .list-in > li p{color:#666;flex:1;word-break: keep-all;}
 .mystate-con .product-info-list .list-con .list-in > li p a{color:#346DD0;text-decoration: underline ;}
 .mystate-con .product-info-list > .list-con ul{border-bottom: 1px solid #d7d7d7;}
-.mystate-con .product-info-list > .list-con ul:last-child{border-bottom: 0}
 .mystate-con .product-info-list .list-con .btn-r-area3 {margin-bottom: 20px;}
+.mystate-con .product-info-total {display: flex; justify-content: flex-end; padding: 20px; margin-top: 20px; background: #f5f5f5; font-size: 16px; color: #000;}
+.mystate-con .product-info-total > *:before {content: ''; display: inline-block; width: 1px; height: 12px; background: #bbb; margin: 0 10px;}
+.mystate-con .product-info-total > p:first-child:before {display: none;}
 
 /* 마이페이지 주문현황 팝업 */
 .pop-myState .pop-layout > ul{border: none;}
@@ -321,6 +327,8 @@
 
   /* 마이페이지 주문현황 */
   .mystate-con > .list-area > .list-con > div {border-bottom:10px solid #F5F5F5 ;}
+  .mystate-con .product-info-list.mo-line-thin {border-bottom: 0 !important;}
+  .mystate-con .product-info-list.mo-line-thin .list-con .list-in:last-child  {border-bottom: 1px solid #d7d7d7 !important;}
   .mystate-con .list-area .list-con .btn-r-area3{padding-bottom: 20px;}
   .mystate-con .list-area .list-con > .btn-r-area3 > .btn {width: 50%;flex:auto}
   .mystate-con .list-area .list-con > .btn-r-area3 > .btn + .btn{margin-left: 10px;}
@@ -329,7 +337,9 @@
   .mystate-con .step-wrap > ul > li p{font-size: 15px;}
   .mystate-con .step-wrap .state-text p{line-height: 78px;font-size: 18px;}
   .mystate-con .product-info-list .list-con .list-in {margin:10px 20px 0;padding-top:20px;}
+  .mystate-con .product-info-list .list-con .list-in:last-child {border-bottom: 0;}
   .mystate-con .product-info-list .list-con .list-in > li {justify-items: flex-end;flex-direction: initial;}
+  .mystate-con .product-info-list .list-con .list-in > li .small-tit {text-align: left; font-size: 15px;}
   .mystate-con .product-info-list .list-con .list-in > li > label{width: 130px;}
   .mystate-con .product-info-list .list-con .list-in > li p{width: calc(100% - 130px);font-size: 14px;text-align: right;}
   .mystate-con .product-info-list .list-con .tgSlide .tgSlideCont .list-in{padding:0 20px;}
@@ -340,6 +350,11 @@
   .mystate-con .step-wrap > ul > li span{display: block;margin: 0 auto 10px;}
   .mystate-con .product-info-list .list-con .btn-r-area3 {margin-bottom: 0;}
   .mystate-con .product-info-list .list-con .tgSlide{border-bottom: 0;}
+  .mystate-con .divider + .list-area .list-con {padding-top: 0;}
+  .mystate-con .product-info-total {font-size: 15px; flex-wrap: wrap; margin: 20px 20px 0;}
+  .mystate-con .product-info-total .total {width: 100%; text-align: right; padding-top: 10px;}
+  .mystate-con .product-info-total .total:before {display: none;}
+  .mystate-con .product-info-total > *:before {height: 10px;}
   
   /* 마이페이지 주문현황 팝업*/
   .pop-myState .tit-type2-1{font-size: 18px;}
