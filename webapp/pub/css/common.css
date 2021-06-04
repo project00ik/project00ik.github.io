@@ -965,6 +965,7 @@ textarea + .cot b {vertical-align: top;}
 
     /* 퀵메뉴 */
     .quick-menu {top:auto; right:20px; bottom:20px;}
+    .quick-menu.non-footer-quick {bottom:103px;}
     .quick-menu span {display:none;}
     .quick-menu a {width:40px; height:40px;}
     .quick-menu u {width:24px; height:24px;}

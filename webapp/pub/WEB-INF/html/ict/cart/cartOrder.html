@@ -734,7 +734,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer-wrap">
+    <footer class="footer-wrap mo-hide">
       <div class="footer"><div class="footer-top">
           <ul>
             <li>회사소개</li>
@@ -762,65 +762,88 @@
       </div>
     </footer>
   </div>
-<!-- 상신의견 팝업 -->
-<div class="lyPopupWrap popup-type-s" id="cartWritePopup02">
-  <!-- id 값 버튼과 연결해주세요. -->
-  <div class="lyPopup">
-    <div class="popup-wrap">
-      <div class="popup-cont">
-        <div class="lyTitle">
-          <p>상신의견 입력</p>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-        </div>
-        <div class="lyPopCont">
-          <div class="pop-layout pop-cart">
-            <div class="textarea-wrap count">
-              <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
-              <p class="cot"><b>0</b> / 1,000</p>
+
+  <!-- 퀵메뉴 -->
+  <div class="quick-menu non-footer-quick">
+    <div class="qk-group">
+        <a href="#" class="qk-notify">
+            <u></u><span>알림</span>
+            <div class="noti-txt">
+                <p class="mo-hide">배송중인 상품이 있습니다.</p>
+                <p class="pc-hide">1</p>
+            </div>
+        </a>
+        <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
+        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
+        <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+        <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
+        <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
+    </div>
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+  </div>
+  <!--// 퀵메뉴 -->
+  
+  <!-- 상신의견 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="cartWritePopup02">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>상신의견 입력</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-cart">
+              <div class="textarea-wrap count">
+                <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
+                <p class="cot"><b>0</b> / 1,000</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-area">
-          <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+          <div class="btn-area">
+            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- //상신의견 팝업 -->
-<!-- 구매사유 팝업 -->
-<div class="lyPopupWrap popup-type-s" id="cartWritePopup03">
-  <!-- id 값 버튼과 연결해주세요. -->
-  <div class="lyPopup">
-    <div class="popup-wrap">
-      <div class="popup-cont">
-        <div class="lyTitle">
-          <p>구매사유 입력</p>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-        </div>
-        <div class="lyPopCont">
-          <div class="pop-layout pop-cart">
-            <div class="textarea-wrap count">
-              <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
-              <p class="cot"><b>0</b> / 1,000</p>
-            </div>
-            <div class="radio-wrap">
-              <label class="radio-style1"><input type="radio" name="rd" checked><i></i><span>전체 공개</span></label>
-              <label class="radio-style1"><input type="radio" name="rd"><i></i><span>구매 시 공개</span></label>
-              <label class="radio-style1"><input type="radio" name="rd"><i></i><span>운영사 공개</span></label>
+  <!-- //상신의견 팝업 -->
+  <!-- 구매사유 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="cartWritePopup03">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>구매사유 입력</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-cart">
+              <div class="textarea-wrap count">
+                <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오."></textarea>
+                <p class="cot"><b>0</b> / 1,000</p>
+              </div>
+              <div class="radio-wrap">
+                <label class="radio-style1"><input type="radio" name="rd" checked><i></i><span>전체 공개</span></label>
+                <label class="radio-style1"><input type="radio" name="rd"><i></i><span>구매 시 공개</span></label>
+                <label class="radio-style1"><input type="radio" name="rd"><i></i><span>운영사 공개</span></label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-area">
-          <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+          <div class="btn-area">
+            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- //구매사유 팝업 -->
+  <!-- //구매사유 팝업 -->
   <!-- 첨부파일 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="cartWritePopup04">
     <!-- id 값 버튼과 연결해주세요. -->
@@ -867,148 +890,148 @@
     </div>
   </div>
   <!-- //견적서 팝업 -->
-    <!-- 프린트 팝업 -->
-    <div class="lyPopupWrap popup-type-m" id="cartPrintPopup">
-      <!-- id 값 버튼과 연결해주세요. -->
-      <div class="lyPopup">
-        <div class="popup-wrap">
-          <div class="popup-cont">
-            <div class="lyTitle">
-              <p>프린트</p>
-              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-            </div>
-            <div class="lyPopCont">
-              <div class="pop-layout pop-cart-print">
-                <p class="date">출력일자 :<em> 2021-05-13</em></p>
-                <div class="table-area table-style1">
-                  <table>
-                    <colgroup>
-                      <col style="width: 16%;">
-                      <col style="width: 35%;">
-                      <col style="width: 16%;">
-                      <col>
-                    </colgroup>
-                    <tbody>
-                      <tr>
-                        <th>실주문자</th>
-                        <td>홍길동</td>
-                        <th>결재자</th>
-                        <td><span>업무지원및부동산관리부</span>,
-                          <span>전여진</span></td>
-                      </tr>
-                      <tr>
-                        <th>참조자</th>
-                        <td>이순신</td>
-                        <th>구매사유</th>
-                        <td>업무용</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="table-area table-style1">
-                  <table>
-                    <colgroup>
-                      <col>
-                      <col>
-                      <col style="width: 10%;">
-                      <col style="width: 15%;">
-                      <col style="width: 10%;">
-                      <col style="width: 15%;">
-                      <col style="width: 13%;">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th>상품코드</th>
-                        <th>상품명<br/>대표규격/단위</th>
-                        <th>수량</th>
-                        <th>단가</th>
-                        <th>금액</th>
-                        <th>비용부서</th>
-                        <th>제조사</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="center">
-                          <a href="#">10363791</a>
-                        </td>
-                        <td>
-                            <a href="#">액자</a>
-                            <p>210*297mm(A4), 미색, 민자틀 / EA</p>
-                        </td>
-                        <td class="center">
-                          111
-                        </td>
-                        <td>
-                          <p>3,164</p>
-                          (VAT포함)
-                        </td>
-                        <td class="center">
-                          3,164
-                        </td>
-                        <td>
-                          업무지원및부동산관리부
-                        </td>
-                        <td class="center">
-                          알파
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="7" class="addr">
-                          <span class="addr-name">배송지 : 수령인 - 전여진</span>
-                          <span>주소 - 서울시 영등포구 **** 대한민국</span>
-                          <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="center"><a href="#">10382460</a></td>
-                        <td>
-                            <a href="#">명함</a>
-                            <p>아르떼울트라화이트 210g, 200EA/BOX, 인쇄: 앞-1도+1도(별색), 뒤-4도, ABL전용 / BOX</p>
-                        </td>
-                        <td class="center">
-                          1111
-                        </td>
-                        <td>
-                          <p>7,164</p>
-                          (VAT포함)
-                        </td>
-                        <td class="center">
-                          7,164
-                        </td>
-                        <td>
-                          업무지원및부동산관리부
-                        </td>
-                        <td class="center">
-                          시중품품품
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="7" class="addr">
-                          <span class="addr-name">배송지 : 수령인 - 전여진</span>
-                          <span>주소 - 서울시 영등포구 **** 대한민국</span>
-                          <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="7" class="total">
-                          <p>품목수 : <em>2</em>건<i></i>총수량 : <em>2</em>개<i></i>합계 : <em>10,888</em>원 (VAT 포함)</p>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+  <!-- 프린트 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartPrintPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>프린트</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-cart-print">
+              <p class="date">출력일자 :<em> 2021-05-13</em></p>
+              <div class="table-area table-style1">
+                <table>
+                  <colgroup>
+                    <col style="width: 16%;">
+                    <col style="width: 35%;">
+                    <col style="width: 16%;">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>실주문자</th>
+                      <td>홍길동</td>
+                      <th>결재자</th>
+                      <td><span>업무지원및부동산관리부</span>,
+                        <span>전여진</span></td>
+                    </tr>
+                    <tr>
+                      <th>참조자</th>
+                      <td>이순신</td>
+                      <th>구매사유</th>
+                      <td>업무용</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-area table-style1">
+                <table>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col style="width: 10%;">
+                    <col style="width: 15%;">
+                    <col style="width: 10%;">
+                    <col style="width: 15%;">
+                    <col style="width: 13%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>상품코드</th>
+                      <th>상품명<br/>대표규격/단위</th>
+                      <th>수량</th>
+                      <th>단가</th>
+                      <th>금액</th>
+                      <th>비용부서</th>
+                      <th>제조사</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="center">
+                        <a href="#">10363791</a>
+                      </td>
+                      <td>
+                          <a href="#">액자</a>
+                          <p>210*297mm(A4), 미색, 민자틀 / EA</p>
+                      </td>
+                      <td class="center">
+                        111
+                      </td>
+                      <td>
+                        <p>3,164</p>
+                        (VAT포함)
+                      </td>
+                      <td class="center">
+                        3,164
+                      </td>
+                      <td>
+                        업무지원및부동산관리부
+                      </td>
+                      <td class="center">
+                        알파
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="addr">
+                        <span class="addr-name">배송지 : 수령인 - 전여진</span>
+                        <span>주소 - 서울시 영등포구 **** 대한민국</span>
+                        <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="center"><a href="#">10382460</a></td>
+                      <td>
+                          <a href="#">명함</a>
+                          <p>아르떼울트라화이트 210g, 200EA/BOX, 인쇄: 앞-1도+1도(별색), 뒤-4도, ABL전용 / BOX</p>
+                      </td>
+                      <td class="center">
+                        1111
+                      </td>
+                      <td>
+                        <p>7,164</p>
+                        (VAT포함)
+                      </td>
+                      <td class="center">
+                        7,164
+                      </td>
+                      <td>
+                        업무지원및부동산관리부
+                      </td>
+                      <td class="center">
+                        시중품품품
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="addr">
+                        <span class="addr-name">배송지 : 수령인 - 전여진</span>
+                        <span>주소 - 서울시 영등포구 **** 대한민국</span>
+                        <p>배송메모 : 1층 보관함에 맡겨주세요.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="7" class="total">
+                        <p>품목수 : <em>2</em>건<i></i>총수량 : <em>2</em>개<i></i>합계 : <em>10,888</em>원 (VAT 포함)</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="btn-area">
-              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">인쇄</a>
-            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">인쇄</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- //프린트 팝업 -->
-    <!--배송지 목록 팝업 -->
+  </div>
+  <!-- //프린트 팝업 -->
+  <!--배송지 목록 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="cartAddrPopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
@@ -1021,13 +1044,13 @@
           <div class="lyPopCont">
             <div class="pop-layout pop-register pop-restock">
               <div class="tab-area tabArea">
-								<ul class="tab-btn-list tab-style1">
-									<li class="tabBtn on" data-tab="tab1">주소록</li>
-									<li class="tabBtn" data-tab="tab2">배송지 등록/수정</li>
-								</ul>
+                <ul class="tab-btn-list tab-style1">
+                  <li class="tabBtn on" data-tab="tab1">주소록</li>
+                  <li class="tabBtn" data-tab="tab2">배송지 등록/수정</li>
+                </ul>
                 <!--주소록-->
-								<div class="tab-cont tabCont active" id="tab1">
-									<div class="pop-layout pop-write pop-cart-addr1">
+                <div class="tab-cont tabCont active" id="tab1">
+                  <div class="pop-layout pop-write pop-cart-addr1">
                     <div>
                       <ul>
                         <li>
@@ -1072,10 +1095,10 @@
                   <div class="btn-area">
                     <a href="javascript:;" onclick="" class="btn btn-style-m2">선택</a>
                   </div>
-								</div>
+                </div>
                 <!--//주소록-->
                 <!--배송지 등록수정-->
-								<div class="tab-cont tabCont" id="tab2">
+                <div class="tab-cont tabCont" id="tab2">
                   <div class="pop-layout pop-password pop-cart-addr2">
                     <div class="pop-mo-check">
                       <label class="check-style1"><input type="checkbox" name=""><i></i><span>대표 배송지로 지정</span></label>
@@ -1145,9 +1168,9 @@
                     <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m1">닫기</a>
                     <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">저장      </a>
                   </div>
-								</div>
+                </div>
                 <!--//배송지 등록수정-->
-							</div>
+              </div>
             </div>
           </div>
         </div>
@@ -1168,12 +1191,12 @@
           <div class="lyPopCont">
             <div class="pop-layout pop-register pop-restock">
               <div class="tab-area tabArea">
-								<ul class="tab-btn-list tab-style1">
-									<li class="tabBtn on" data-tab="tab1">파일선택</li>
-									<li class="tabBtn" data-tab="tab2">엑셀조회</li>
-								</ul>
-								<div class="tab-cont tabCont active" id="tab1">
-									<div class="pop-write">
+                <ul class="tab-btn-list tab-style1">
+                  <li class="tabBtn on" data-tab="tab1">파일선택</li>
+                  <li class="tabBtn" data-tab="tab2">엑셀조회</li>
+                </ul>
+                <div class="tab-cont tabCont active" id="tab1">
+                  <div class="pop-write">
                     <table>
                       <tbody>
                         <tr>
@@ -1205,8 +1228,8 @@
                   <div class="btn-area">
                     <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
                   </div>
-								</div>
-								<div class="tab-cont tabCont" id="tab2">
+                </div>
+                <div class="tab-cont tabCont" id="tab2">
                   <div class="pop-write">
                     <div class="excel-wrap">
                       그리드 영역
@@ -1215,8 +1238,8 @@
                   <div class="btn-area">
                     <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
                   </div>
-								</div>
-							</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1224,116 +1247,96 @@
     </div>
   </div>
   <!-- //상품별 일괄등록 엑셀 팝업 -->
-<!-- 배송메모 팝업 -->
-<div class="lyPopupWrap popup-type-s" id="cartWritePopup">
-  <!-- id 값 버튼과 연결해주세요. -->
-  <div class="lyPopup">
-    <div class="popup-wrap">
-      <div class="popup-cont">
-        <div class="lyTitle">
-          <p>배송메모</p>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-        </div>
-        <div class="lyPopCont">
-          <div class="pop-layout pop-cart">
-            <div class="textarea-wrap count">
-              <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
-              <p class="cot"><b>0</b> / 400</p>
+  <!-- 배송메모 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="cartWritePopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>배송메모</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-cart">
+              <div class="textarea-wrap count">
+                <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 400자 이내로 입력해 주십시오."></textarea>
+                <p class="cot"><b>0</b> / 400</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-area">
-          <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- //배송메모 팝업 -->
-<!-- 명함 신청 팝업 -->
-<div class="lyPopupWrap popup-type-m" id="cartCardPopup">
-  <!-- id 값 버튼과 연결해주세요. -->
-  <div class="lyPopup">
-    <div class="popup-wrap">
-      <div class="popup-cont">
-        <div class="lyTitle center">
-          <p>명함 신청</p>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-        </div>
-        <div class="lyPopCont">
-          <div class="pop-layout pop-account pop-namecard">             
-            <p>※ 명함정보 작성 시 주문자의 필수정보 기재가 어려운 경우 고객센터로 연락 부탁드립니다.</p>
-            <div class="btn-area">
-              <a href="javascript:;" class="lyClose btn btn-style-s1">신규</a>
-              <a href="javascript:;" class="lyClose btn btn-style-s1">저장</a>
-              <a href="javascript:;" class="lyClose btn btn-style-s1">삭제</a>
-              <a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide">엑셀업로드</a>
-            </div>
-            <div class="excel-wrap">
-              * 명함신청 그리드영역
-            </div>
+          <div class="btn-area">
+            <!-- <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">닫기</a> -->
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- //명함 신청 팝업 -->
-<!-- 주문서 저장 팝업 -->
-<div class="lyPopupWrap popup-type-s" id="orderlistPopup">
-  <!-- id 값 버튼과 연결해주세요. -->
-  <div class="lyPopup">
-    <div class="popup-wrap">
-      <div class="popup-cont">
-        <div class="lyTitle center">
-          <p>주문서 저장</p>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-        </div>
-        <div class="lyPopCont">
-          <div class="pop-layout pop-account pop-orderlist">
-            <p class="account-tit">현재 주문서를 저장할 수 있습니다.</p>
-            <p>저장된 주문서는 장바구니에서 다시 불러올 수 있습니다.<br/>
-              마이페이지 &gt; 나의쇼핑 &gt; 임시주문서관리에서 확인가능합니다.</p>
-            <div class="input">
-              <label>주문서명</label>
-              <div class="form-layout">
-                <input type="text" class="input" value="" placeholder="최대 20자까지 입력 가능">
+  <!-- //배송메모 팝업 -->
+  <!-- 명함 신청 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartCardPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>명함 신청</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-account pop-namecard">             
+              <p>※ 명함정보 작성 시 주문자의 필수정보 기재가 어려운 경우 고객센터로 연락 부탁드립니다.</p>
+              <div class="btn-area">
+                <a href="javascript:;" class="lyClose btn btn-style-s1">신규</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1">저장</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1">삭제</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide">엑셀업로드</a>
+              </div>
+              <div class="excel-wrap">
+                * 명함신청 그리드영역
               </div>
             </div>
           </div>
         </div>
-        <div class="btn-area">
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">취소</a>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+      </div>
+    </div>
+  </div>
+  <!-- //명함 신청 팝업 -->
+  <!-- 주문서 저장 팝업 -->
+  <div class="lyPopupWrap popup-type-s" id="orderlistPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>주문서 저장</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-account pop-orderlist">
+              <p class="account-tit">현재 주문서를 저장할 수 있습니다.</p>
+              <p>저장된 주문서는 장바구니에서 다시 불러올 수 있습니다.<br/>
+                마이페이지 &gt; 나의쇼핑 &gt; 임시주문서관리에서 확인가능합니다.</p>
+              <div class="input">
+                <label>주문서명</label>
+                <div class="form-layout">
+                  <input type="text" class="input" value="" placeholder="최대 20자까지 입력 가능">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m1">취소</a>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- //주문서 저장 팝업 -->
+  <!-- //주문서 저장 팝업 -->
 
-  <!-- 퀵메뉴 -->
-  <!-- <div class="quick-menu">
-    <div class="qk-group">
-        <a href="#" class="qk-notify">
-            <u></u><span>알림</span>
-            <div class="noti-txt">
-                <p class="mo-hide">배송중인 상품이 있습니다.</p>
-                <p class="pc-hide">1</p>
-            </div>
-        </a>
-        <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
-        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
-        <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
-        <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
-        <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
-        <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
-    </div>
-    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
-    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
-  </div> -->
-  <!--// 퀵메뉴 -->
+
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>

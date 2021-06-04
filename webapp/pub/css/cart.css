@@ -275,7 +275,7 @@
 /* 모바일 시작 */
 @media only screen and (max-width:800px) {
     /* 장바구니 */
-    .cart-content {margin:36px 0 113px;}
+    .cart-content {margin:36px 0 213px;}
     .cart-top {margin-bottom:0;}
     .cart-content .tit-type1-2 em  {font-size:16px;line-height:19px;vertical-align:top;}
     .cart-list-con + .cart-list-con {margin-top:30px;}
@@ -417,7 +417,7 @@
     .cart-pay-area .radio-style1 {margin: 20px 0 0 0; width: 50%;}
     .cart-pay-area .radio-style1 > span {font-size: 15px;}
     .notice-txt {padding: 0 20px;}
-    .pay-agree-check {padding: 30px 20px;}
+    .pay-agree-check {padding: 30px 20px 0;}
     .after-pay-area {padding: 0; margin-top: 30px;}
     .after-pay-area .swiper-slide {width: 370px !important;}
     .after-pay-area .afpay-box .afpay-txt p {font-size: 15px;}
@@ -428,6 +428,8 @@
     .cart-order-done {height: 169px; margin-bottom: 20px;}
     .cart-order-done .done-txt1 {font-size: 18px;}
     .cart-order-done .done-txt2 {font-size: 15px;}
+
+    .cart-content .btn-area-c {margin-top:0;}
 
 
     
