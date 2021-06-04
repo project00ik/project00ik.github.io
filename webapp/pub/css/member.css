@@ -173,6 +173,7 @@
     .join-list-con .btn-area-c {padding-top:20px;}
     .list-con {padding-top: 20px;}
     .list-con .tit-type2-1 {padding: 0 20px;}
+    .list-con .tit-area4 .tit-type2-1 {padding: 0 0 10px 0;}
     .list-con .list-in {margin-left: 20px; margin-right: 20px; border-bottom: 0;}
     /* .join-list-con .list-con .list-in > li {display: block; padding: 0 0 20px 0;} */
     .list-con .list-in > li.mo-hide {display: none;}
