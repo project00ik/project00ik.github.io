@@ -185,7 +185,7 @@
                   <label for="">사업장</label>
                   <div class="form-layout form-search">
                     <input type="text" name="" class="input" value="케이티커머스" placeholder="" readonly="readonly">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                    <button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
                   </div>
                 </li>
                 <li>
@@ -193,7 +193,7 @@
                   <div class="form-layout form-half">
                     <div class="form-search">
                       <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2">검색</button>
+                      <button class="btn btn-search2" onclick="lyOpen('myMngUserPopup')">검색</button>
                     </div>
                     <input type="text" name="" class="input ml5" value="" placeholder="" readonly="readonly">
                   </div>
@@ -202,7 +202,7 @@
                   <label for="">부서</label>
                   <div class="form-layout form-search">
                     <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
-                    <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                    <button class="btn btn-search2" onclick="lyOpen('myMngSectionPopup')">검색</button>
                   </div>
                 </li>
                 <li>
@@ -238,7 +238,7 @@
                   <button class="btn btn-style-m4" onclick="lyOpen('')">추가</button>
                   <button class="btn btn-style-m4" onclick="lyOpen('')">삭제</button>
                   <button class="btn btn-style-m4" onclick="lyOpen('')">저장</button>
-                  <button class="btn btn-style-m1" onclick="lyOpen('')">일괄등록</button>
+                  <button class="btn btn-style-m1" onclick="lyOpen('mypageExcelPopup')">일괄등록</button>
                 </div>
               </div>
               <div class="file-con">
@@ -254,7 +254,7 @@
                   <p class="sub-txt">결재자 지정</p>
                 </div>
                 <div class="btn-r-area">
-                  <button class="btn btn-style-m4" onclick="lyOpen('')">추가</button>
+                  <button class="btn btn-style-m4" onclick="lyOpen('myMngUserPopup2')">추가</button>
                   <button class="btn btn-style-m4" onclick="lyOpen('')">삭제</button>
                   <button class="btn btn-style-m4" onclick="lyOpen('')">저장</button>
                 </div>
@@ -430,6 +430,46 @@
   </div>
   <!-- //고객사 사용자 조회 팝업 -->
 
+  <!-- 고객사 사용자 조회 팝업(선택) -->
+  <div class="lyPopupWrap popup-type-m" id="myMngUserPopup2">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>고객사 사용자 조회</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-suggestion">
+              <div class="user-search">
+                <div class="pop-mo-form">
+                  <select class="select" name="" id="">
+                    <option value="">사용자</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <div class="form-area">
+                    <input type="text" class="input" name="" value="" placeholder="">
+                  </div>
+                </div>
+                <div class="pop-mo-btn">
+                  <button class="btn btn-style-m2">조회</button>
+                  <button class="btn btn-style-m1">선택</button>
+                </div>
+              </div>
+              <div class="excel-wrap">
+                그리드
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //고객사 사용자 조회 팝업 -->
+
   <!-- 고객사 사업장 조회 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="myMngOfficePopup">
     <!-- id 값 버튼과 연결해주세요. -->
@@ -510,41 +550,77 @@
   </div>
   <!-- //고객사 부서 조회 팝업 -->
 
-  <!-- 미수령 신고 팝업 -->
-  <div class="lyPopupWrap popup-type-s" id="myNotReceivePopup">
+  <!--일괄등록 엑셀업로드 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="mypageExcelPopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
           <div class="lyTitle">
-            <p>미수령 신고</p>
+            <p>일괄등록</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
-            <div class="pop-layout pop-myState">
-
-              <div class="column-ip-area">
-                <label for="">미수령 신고일자<i class="req">*</i></label>
-                <div class="form-layout">
-                  <input type="text" class="datepicker" value="" id="">
-                </div>
-              </div>
-
-              <p class="my-state-txt">신고 사유</p>
-              <div class="textarea-wrap">
-                <textarea class="textarea" name="" style="resize: none;" placeholder="※ 1000자 이내로 입력해 주십시오."></textarea>
-                <p class="cot"><b>0</b> / 1000</p>
-              </div>
+            <div class="pop-layout pop-register pop-restock">
+              <div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn on" data-tab="tab1">파일선택</li>
+									<li class="tabBtn" data-tab="tab2">엑셀조회</li>
+								</ul>
+								<div class="tab-cont tabCont active" id="tab1">
+									<div class="pop-write">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>파일선택<i class="req">*</i></th>
+                          <td>
+                            <button class="btn form-down-btn">양식 다운로드</button>
+                            <div class="filebox">
+                              <input class="upload-name input " value="" readonly>
+                              <label for="file">파일 선택</label> 
+                              <input type="file" id="file"> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="input">
+                          <th>추가설명</th>
+                          <td>
+                            <div class="before-num">
+                              <ul>
+                                <li><em>결재유형코드, 사용구분코드</em>는 필수 항목입니다.</li>
+                                <li><em>결재자순번</em>은 한 결재선에서 중복순번이 없도록 입력하셔야 합니다.</li>
+                                <li>코드표는 <em>GUIDE</em> 시트에 표시되어 있습니다.</li>
+                                <li><em>결재자</em>를 지정할 때 결재자순번과 결재자구분코드를 필수로 입력하셔야 합니다.</li>
+                                <li><em>결재담당자ID</em>는 결재사용구분코드가 사용자(U)일 때만 입력하셔야 합니다.<br/>- 위의 Template Excel 파일은 다운로드하여 사용하셔도 됩니다.</li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
+                  </div>
+								</div>
+								<div class="tab-cont tabCont" id="tab2">
+                  <div class="pop-write">
+                    <div class="excel-wrap">
+                      그리드 영역
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
+                  </div>
+								</div>
+							</div>
             </div>
-          </div>
-          <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //미수령 신고 팝업 -->
+  <!-- //일괄등록 엑셀업로드 팝업 -->
   
 
 
