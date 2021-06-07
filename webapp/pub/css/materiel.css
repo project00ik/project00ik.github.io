@@ -8,15 +8,13 @@
 .materiel-banner .ban-text-area p b {display: block; font-weight: bold;}
 
 .materiel-cont .bulk-purchase-wrap {background: none;}
-.materiel-list {padding: 70px 0 0 0;}
 .materiel-cont .tit-area {margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #d7d7d7;}
 .materiel-cont .tit-area .tit-type2 + div {font-size: 0;}
 .materiel-cont .tit-area .tit-type2 + div button {margin-left: 5px;}
 .materiel-cont .tab-area .tab-cont {padding: 30px 0 40px;}
-
-.tab-btn-list.fixed {position: fixed; max-width: 1200px; background: #fff; z-index: 10; padding: 30px 0;}
-.tab-btn-list.fixed + .tab-cont {margin-top: 43px;}
-
+.materiel-cont .materiel-list {padding: 70px 0 0 0;}
+.materiel-cont .tab-btn-list.fixed {position: fixed; max-width: 1200px; background: #fff; z-index: 10; padding: 30px 0;}
+.materiel-cont .tab-btn-list.fixed + .tab-cont {margin-top: 43px;}
 
 .materiel-cont .bulk-purchase-slide .swiper-slide.on .bulk-img-area > dt {border: 4px solid #346dd0;}
 .materiel-cont .bulk-purchase-slide .swiper-slide.on .bulk-img-area > dd {color: #346dd0; font-weight: 500;}
@@ -30,12 +28,12 @@
   .materiel-banner .ban-text-area {left: 28px;}
   .materiel-banner .ban-text-area p {font-size: 18px; line-height: 1.2;}
   .materiel-cont {margin-top: 0;}
-  .materiel-list {padding: 50px 0 0;}
+  .materiel-cont .materiel-list {margin-top: 20px; padding: 30px 0 0;}
   .materiel-cont .tit-area {margin: 0 20px 5px; padding: 0 0 10px 0; align-items: center;}
   .materiel-cont .tit-area .tit-type2 + div button {margin-left: 5px;}
-  .materiel-cont .tab-area .tab-cont {padding: 30px 0 40px;}
-  .tab-btn-list.fixed {padding: 20px 0 10px;}
-  .tab-btn-list.fixed + .tab-cont {margin-top: 55px;}
+  .materiel-cont .tab-area .tab-cont {padding: 20px 0 10px;}
+  .materiel-cont .tab-btn-list.fixed {padding: 20px 0 10px;}
+  .materiel-cont.tab-btn-list.fixed + .tab-cont {margin-top: 55px;}
   .materiel-cont .tab-btn-list.tab-style4 .tabBtn {padding:0;}
   .materiel-cont .tab-btn-list.tab-style4 .tabBtn > a {padding: 10px 20px;}
   .materiel-cont .bulk-purchase-slide .swiper-slide.on .bulk-img-area > dt {border: 2px solid #346dd0;}

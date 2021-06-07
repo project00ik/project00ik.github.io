@@ -14,7 +14,7 @@
 .promt-list-wrap .promt-list > li {width:33.333%; padding:0 7px; display:inline-block;}
 
 .promotion-detail .promt-top {display: flex; justify-content: space-between; align-items: flex-end; font-size: 0; padding-bottom: 10px; border-bottom: 1px solid #d7d7d7; }
-.promotion-detail .promt-top p {max-width: 940px; height: 29px; font-size: 24px; color: #000; font-weight: 500;}
+.promotion-detail .promt-top p {width: 940px; height: 29px; font-size: 24px; color: #000; font-weight: 500;}
 .promotion-detail .promt-top .promt-date span {font-size: 16px; color: #999;}
 .promotion-detail .promt-top .promt-date .dday {color: #346dd0; font-weight: 500; margin-left: 10px;}
 .promotion-detail .promt-top .promt-date .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
@@ -35,7 +35,10 @@
 .pop-password .tit-area3 + .pop-write {margin-top: 10px;}
 .pop-password .pop-ip-area  {align-items: flex-start;}
 
-     
+/* 기획전 */
+.special-wrap .promt-cont {padding-bottom: 30px; margin-bottom: 0;}
+.special-wrap .materiel-cont .materiel-list {margin-top: 0;}
+
 /* 열린소싱상품제안 */
 .suggestion-goods .list-con{padding-top:0px;}
 .suggestion-goods .list-con  > .tit-type2-1:first-child {padding-top: 30px;}
@@ -321,6 +324,8 @@
   .pop-suggestion ul li{padding: 5px 0;}
   .pop-suggestion .point-color2{margin-top: 15px;}
 
+  /* 기획전 */
+  
   /* 열린소싱상품제안 */
   .suggestion-goods {width:986px;}
   .pop-account.pop-suggestion  > .form-area{width: 100%;}
