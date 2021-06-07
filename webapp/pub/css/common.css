@@ -160,7 +160,7 @@
 .footer .footer-cont .copyright {margin-top:16px; font-size:14px; color:#999;}
 
 /* 퀵메뉴 */
-.quick-menu {position:fixed; right:0; top:175px; z-index:99;}
+.quick-menu {margin-right:-694px; position:fixed; right:50%; top:185px; z-index:99;}
 .quick-menu a {overflow:visible; position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; width:70px; height:70px; margin-bottom:1px; background:#000;}
 .quick-menu u {display:inline-block; width:36px; height:36px;}
 .quick-menu span {display:block; margin:2px 0 4px; font-size:13px; line-height:14px; color:#fff;}
@@ -965,7 +965,7 @@ textarea + .cot b {vertical-align: top;}
     .footer .footer-cont .copyright {font-size:13px;}
 
     /* 퀵메뉴 */
-    .quick-menu {top:auto; right:20px; bottom:20px;}
+    .quick-menu {margin-right:0; top:auto; right:20px; bottom:20px;}
     .quick-menu.non-footer-quick {bottom:103px;}
     .quick-menu span {display:none;}
     .quick-menu a {width:40px; height:40px;}
