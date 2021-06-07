@@ -279,11 +279,17 @@
 /* btn-r-area3 PC에서는 오른쪽정렬 / 모바일에서는 여백없이 붙는 버튼 */
 .btn-r-area3 {display: flex; justify-content: flex-end; padding:0 0 20px;} /* 리스트 하단 버튼 */
 .btn-r-area3 > .btn + .btn {margin-left:10px;}
+/* btn-r-area4 PC 모바일 모두 오른쪽 정렬 */
+.btn-r-area4 {display: flex; justify-content: flex-end;}
+.popup-wrap .btn-r-area4 {margin:-10px 0 10px;}
 .btn-full-area {width:100%; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .btn-full-area .btn + .btn {margin-left:10px;}
 .btn-full-area > .btn {flex:1;}
 .btn-search {width:36px; height:36px; display:inline-block; font-size:0; background:url(../images/common/btn_search.svg) 50% 50% no-repeat;}
 .btn-search2 {width: 24px; height: 24px; font-size: 0; background: url(../images/common/btn_search2.svg) center center no-repeat;}
+.add-btn-area {margin-bottom:10px; font-size:0;}
+.add-btn-area .btn + .btn {margin-left:5px;}
+.pop-mo-btn .btn + .btn {margin-left:7px;}
 .icon-btn + .icon-btn {margin-left:30px;}
 .icon-btn.cart {position:relative; background:url(../images/common/icon_cart.svg) 50% 50% no-repeat;}
 .icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px}
@@ -354,6 +360,8 @@ button.btn-style-s1 {line-height:25px;}
 .btn-detail {font-size:14px; line-height:21px;}
 .btn-detail::after {content:''; width: 18px; height: 21px; margin-left:5px; display:inline-block; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0; vertical-align: top;}
 .btn-detail.on::after {transform: rotate(180deg);}
+.btn-plus {width:28px; height:28px; display:inline-block; background: url(../images/common/icon_plus_black.svg) 50% 50% no-repeat; font-size:0; border:1px solid #000;}
+.btn-minus {width:28px; height:28px; display:inline-block; background: url(../images/common/icon_minus_black.svg) 50% 50% no-repeat; font-size:0; border:1px solid #000;}
 
 /* 플래그 */
 .flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 7px;}
@@ -1089,6 +1097,7 @@ textarea + .cot b {vertical-align: top;}
     .btn-r-area3 {padding:0 20px 10px;}
     .btn-r-area3 > .btn {width:100%; flex:1; min-width:auto;}
     .btn-r-area3 > .btn + .btn {margin-left:-1px;}
+    .btn-r-area4 > .btn + .btn {}
     .sub-content .btn-area-c {padding: 50px 0 0;  display: flex;}
     .sub-content .btn-area-c .btn {width:100%; min-width: auto; height:42px; line-height:41px; font-size:16px;}
     .sub-content .btn-area-c.btn-layout3 {flex-wrap: wrap;}
