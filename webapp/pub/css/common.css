@@ -174,7 +174,8 @@
 .quick-menu .qk-quick u {background:url(../images/common/icon_st_quick.svg) 0 0 no-repeat;}
 .quick-menu .qk-request u {background:url(../images/common/icon_st_request.svg) 0 0 no-repeat;}
 .quick-menu .qk-quicktop u {background:url(../images/common/icon_st_quicktop.svg) 0 0 no-repeat;}
-.quick-menu .noti-txt {position:absolute; top:19px; right:57px; width:auto; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);}
+.quick-menu .noti-txt {display:none; position:absolute; top:19px; right:57px; width:auto; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);}
+.main-body .quick-menu .noti-txt {display:block;}
 .quick-menu .noti-txt p {white-space:nowrap; }
 .quick-menu .noti-txt:after {content:''; display:inline-block; position:absolute; top:50%; right:-2px; margin-top:-5px; width:10px; height:10px; transform:rotate(45deg); background:#12b5cf;}
 .quick-menu .qk-group-show {display:none;}
