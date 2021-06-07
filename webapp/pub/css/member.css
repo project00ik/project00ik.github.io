@@ -64,9 +64,6 @@
 .list-file-con .file-con .in-grid-size.w-all {flex:1;}
 .list-file-con .file-con.mt0 {margin-top: 0;}
 
-/* 팝업 주소검색 */
-#addressPopup .lyPopup .lyPopCont{padding:0}
-.btn.pc-hide {display:none;}
 
 /* 회원가입 */               
 .join-content .member-tit{text-align: center;font-size: 34px;line-height: 4 1px;font-weight: bold;margin-top: 120px;padding:0 20px}
@@ -252,7 +249,6 @@
     .join-content .login-wrap.find .radio-select > a {width: 100%;height:42px;line-height: 40px;margin-top: 30px;}
     .join-content .login-wrap.find .radio-select select.select{background:url(../images/common/arrow_select.svg) top 10px right 10px no-repeat #fff}
     .join-content .login-wrap.find #tab2 .radio-select .form-phone input{flex:1; width: inherit;}
-    .join-content .login-wrap.find .form-phone {}
     .join-content .login-wrap.find .form-phone .btn-style-m1 {width:68px; min-width:auto;}
     .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px; min-width:auto; height: 36px;line-height: 34px;}
     .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px; min-width:auto; height: 36px;line-height: 34px;}
@@ -272,6 +268,7 @@
     .lyPopup .popup-cont .lyTitle.center{padding:0px 44px}
     .pop-account > span em {display: block;vertical-align: top;}
     .pop-account > p em {display: block;vertical-align: top;}
+
 }
 
 @media only screen and (max-width:480px){

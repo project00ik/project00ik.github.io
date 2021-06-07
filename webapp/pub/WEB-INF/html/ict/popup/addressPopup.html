@@ -199,18 +199,120 @@
     </footer>
   </div>
  <!-- 주소검색 팝업 -->
- <div class="lyPopupWrap popup-type-s" id="addressPopup">
+ <div class="lyPopupWrap popup-type-m" id="addressPopup">
   <!-- id 값 버튼과 연결해주세요. -->
   <div class="lyPopup">
     <div class="popup-wrap">
       <div class="popup-cont">
         <div class="lyTitle">
-          <p>도로명 또는 지번주소 검색</p>
+          <p>우편번호 찾기</p>
           <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
         </div>
         <div class="lyPopCont">
           <div class="pop-layout pop-address">
-            다음 우편번호 API 
+            <div>
+              <div class="inp-area">
+                <input type="search" name="" id="" class="inp" placeholder="도로명 또는 지번주소 검색">
+                <button class="del" style="display: inline-block;">삭제</button>
+                <button class="btn btn-search">검색</button>
+              </div>
+              <div class="address-list">
+                <ul>
+                  <li>
+                    <a href="#">서울특별시 강남구 광평로 220-9(수서동)</a>
+                    <div>
+                      <span>지번</span>
+                      <span>서울특별시 강남구 수서동 464-10</span>
+                    </div>
+                    <div>
+                      <span>우편번호</span>
+                      <span>06362</span>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">서울특별시 강남구 광평로 51길 49(수서동, 수서주공영구임대아파트)</a>
+                    <div class="old">
+                      <span>지번</span>
+                      <span>서울특별시 강남구 수서동 707 수서주공영구임대아파트</span>
+                    </div>
+                    <div>
+                      <span>우편번호</span>
+                      <span>06362</span>
+                      <div class="acdArea">
+                        <div class="btn acdBtn">
+                          상세건물
+                        </div>
+                        <div class="acdCont">
+                          <div>
+                            <span>상세건물</span>
+                            <div>
+                              101동, 102동, 103동, 104동, 105동, 106동, 107동, 108동, 109동, 110동, 111동, 112동, 113동, 114동, 세원유치원, 수서3단지 경로당, 수서명화종합사회복지관, 주공영구임대(아)종합상가
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">서울특별시 강남구 광평로 51길 49(수서동, 수서주공영구임대아파트)</a>
+                    <div class="old">
+                      <span>지번</span>
+                      <span>서울특별시 강남구 수서동 707 수서주공영구임대아파트</span>
+                    </div>
+                    <div>
+                      <span>우편번호</span>
+                      <span>06362</span>
+                      <div class="acdArea">
+                        <div class="btn acdBtn">
+                          <span class="apt">APT</span>
+                          상세건물
+                        </div>
+                        <div class="acdCont">
+                          <div>
+                            <span>상세건물</span>
+                            <div>
+                              101동, 102동, 103동, 104동, 105동, 106동, 107동, 108동, 109동, 110동, 111동, 112동, 113동, 114동, 세원유치원, 수서3단지 경로당, 수서명화종합사회복지관, 주공영구임대(아)종합상가
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="none">
+                    <p>검색 결과가 없습니다.</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- pc 페이지네이션 -->
+              <div class="paging mo-hide">
+                <a href="#" class="btn prev">previous</a>
+                <a href="#" class="btn on">1</a>
+                <a href="#" class="btn ">2</a>
+                <a href="#" class="btn ">3</a>
+                <a href="#" class="btn ">4</a>
+                <a href="#" class="btn ">5</a>
+                <a href="#" class="btn ">6</a>
+                <a href="#" class="btn ">7</a>
+                <a href="#" class="btn ">8</a>
+                <a href="#" class="btn ">9</a>
+                <a href="#" class="btn ">10</a>
+                <a href="#" class="btn next active">Next</a>
+              </div>
+              <!--// pc 페이지네이션 -->
+              <!-- mo 페이지네이션 -->
+              <button class="mobile-paging pc-hide">
+                더보기
+              </button>
+              <!-- //mo 페이지네이션 -->
+              <div class="address-info">
+                  <p>아래와 같은 조합을 이용하시면 더욱 정확한 결과가 검색됩니다.</p>
+                  <div>
+                    <p>- 도로명 + 건물번호 입력 (예: 광평로 47길 28)</p>
+                    <p>- 읍/면/동/리 + 지번 입력 (예: 수서동 527)</p>
+                    <p>- 건물명 입력 (예: 강남소방서)</p>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
@@ -242,6 +344,23 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('addressPopup');
+
+      $(".pop-address .inp-area .del").css("display","none")
+      var ipDelBtn = $(".pop-address .inp-area .del");
+      var ipHdSearch = $('.pop-address .inp-area .inp');
+      $(document).on("keyup",".pop-address .inp-area .inp",function () {  // val값삭제
+      ipDelBtn.toggle(Boolean($(this).val()));
+      if($(this).val().length > 0){ //val값 있을때
+        ipDelBtn.click(function(){ //val 삭제버튼 클릭
+          ipHdSearch.val('');
+          ipDelBtn.toggle(Boolean($(this).val()));
+        })
+      } else { //val값 없을때
+        searchBox.addClass("on");
+        wordBox.removeClass('on');
+      }
+    });
+    
     });
   </script>
   <!-- javascript -->
