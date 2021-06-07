@@ -438,6 +438,7 @@ button.btn-style-s1 {line-height:25px;}
 .tit-area2 {display: flex; align-items: flex-end;}
 .tit-area3 {display: flex; align-items: center; justify-content: space-between;}
 .tit-area4 {display: flex; align-items: center; justify-content: space-between;}
+.tit-area5 {display: flex; padding: 0 0 20px 0; margin: 0 0 20px 0; border-bottom: 2px solid #000;}
 .list-con .tit-area4 > * {padding-top: 0; margin-top: 0;}
 .tit-type1 {font-size:34px; color:#000;}
 .tit-type1-1 {font-size: 28px; color: #000; margin-bottom: 50px;}
@@ -1139,6 +1140,7 @@ textarea + .cot b {vertical-align: top;}
     .tit-area {margin-bottom: 16px;}
     .tit-area4 {flex-direction: column; align-items: flex-start; padding: 0 20px;}
     .tit-area4 .btn-mo-percent {width: 100%;}
+    .tit-area5 {padding: 0 20px 20px;}
     .tit-type1 {font-size:22px;}
     .tit-type1-2 {width:100%; padding:8px 38px; font-size: 16px; font-weight: 500; text-align: center; margin-bottom: 0; border-bottom: 1px solid #d7d7d7; position: fixed; top:176px; left:0; z-index: 10; background:#fff;}
     .tit-type1-3 {font-size: 18px;}
