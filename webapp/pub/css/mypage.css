@@ -84,6 +84,9 @@
 .pop-sLabel .excel-wrap {min-height:auto;}
 .pop-sLabel .excel-wrap ~ .excel-wrap {margin-top: 20px; min-height:auto;}
 
+.pop-sLabel.labelW-xs .pop-ip-area > label {width: 88px; padding-left: 0;}
+.pop-sLabel.labelW-xs .pop-ip-area label + .form-layout {width: calc(100% - 88px);}
+
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
