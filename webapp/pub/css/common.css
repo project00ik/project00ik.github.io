@@ -49,7 +49,7 @@
 .search-box .search-bt .close {position: absolute; top: 50%; transform: translateY(-50%); right: 20px; padding-right: 23px; background: url(../images/common/mo_btn_tooltip_close.svg) right 0 no-repeat;}
 .search-box .list-none {height: calc(100% - 20px); display: flex; align-items: center; justify-content: center;}
 .search-box .list-none p {font-size: 16px; color: #999; text-align: center; line-height: 22px; padding-top: 80px; background:url(../images/common/icon_none2.svg) top center no-repeat;}
-.header-cont .search-area .inp-area .del {display:none;position: absolute; top: 50%; right: 40px; transform: translateY(-50%); width: 18px; height: 18px; font-size: 0; background:url(../images/common/btn_del.svg) 0 0 no-repeat}
+.header-cont .search-area .inp-area .del {display:none; position: absolute; top: 50%; right: 40px; transform: translateY(-50%); width: 18px; height: 18px; font-size: 0; background:url(../images/common/btn_del.svg) 0 0 no-repeat;}
 
 .word-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 30px 20px; background: #fff; border: 1px solid #000;}
 .word-box.on {display: block;}
@@ -237,6 +237,10 @@
 .form-search {position: relative;}
 .form-search input.input {padding-right: 36px;}
 .form-search .btn-search2 {width: 36px; height: 36px; position: absolute; top: 1px; right: 1px;}
+.form-search.search-type-del {position: relative; font-size: 16px;}
+.form-search.search-type-del input{width: 100%;height: 36px;padding: 0 76px 0 12px;line-height: 38px;font-size: 14px;color: #666;background: #fff;}
+.form-search.search-type-del .del{visibility: hidden; position: absolute;top: 50%;right: 46px;transform: translateY(-50%);width: 18px;height: 18px;font-size: 0; background: url(../images/common/btn_del.svg) 0 0 no-repeat;}
+
 .form-layout.form-flexnone {display: block;}
 .form-layout.form-flexnone .form-email select {width: 118px;}
 
@@ -286,7 +290,7 @@
 .btn-full-area .btn + .btn {margin-left:10px;}
 .btn-full-area > .btn {flex:1;}
 .btn-search {width:36px; height:36px; display:inline-block; font-size:0; background:url(../images/common/btn_search.svg) 50% 50% no-repeat;}
-.btn-search2 {width: 24px; height: 24px; font-size: 0; background: url(../images/common/btn_search2.svg) center center no-repeat;}
+.btn-search2 {width: 24px; height: 24px; font-size: 0; background: url(../images/common/btn_search2.svg) 0 center no-repeat;}
 .add-btn-area {margin-bottom:10px; font-size:0;}
 .add-btn-area .btn + .btn {margin-left:5px;}
 .pop-mo-btn .btn + .btn {margin-left:7px;}
@@ -1030,6 +1034,8 @@ textarea + .cot b {vertical-align: top;}
 
     .form-search input.input {height: 36px; line-height: 36px;}
     .form-search .btn-search2 {width: 34px; height: 34px;}
+    .form-search.search-type-del .input {padding-right:71px;}
+    .form-search.search-type-del .del{right: 41px;transform: translateY(-50%);width: 18px;height: 18px;font-size: 0; background: url(../images/common/mo_btn_del.svg) 0 0 no-repeat;}
 
     .popup-cont .pop-layout-txt {font-size: 15px;}
     .popup-cont .pop-layout-txt2 {font-size: 13px;}

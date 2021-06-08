@@ -64,9 +64,10 @@ $(document).ready(function (){
     });
   })
 
-  /* ==========================================================================
-   header 검색박스
-========================================================================== */
+  searchBox(); //상단 검색박스 펼침
+  // searchInputBox(); // 검색 input clear
+});
+
 function searchBox(){
   //상단 검색박스 펼침
   var hdSearchArea = $('.header-cont .search-area');
@@ -120,9 +121,31 @@ function searchBox(){
     });
   })
 }
-searchBox(); //상단 검색박스 펼침
 
-});
+function searchInputBox(){
+  // 검색 input clear
+  $('.form-search').each(function(){
+    $(this).find('.input').on('keyup focus', function(){
+      $(this).siblings('.del').attr('style', 'visibility: visible');
+      if($(this).val().length == 0){
+        $(this).siblings('.del').attr('style', 'visibility: hidden');
+      } else {
+        $(this).siblings('.del').attr('style', 'visibility: visible');
+      }
+    });
+    $(this).find('.del').on('click touchstart', function(){
+      $(this).closest('.form-search').find('.input').val('');
+      $(this).closest('.form-search').find('.del').attr('style', 'visibility: hidden');
+      return false;
+    });
+    $(this).find('.input').on('blur', function(){
+      setTimeout(function() {
+        $('.del').attr('style', 'visibility: hidden');
+      }, 300);
+    });
+    
+  });
+}
 
 function delBtn(){
   // 삭제 이벤트 (검색어/상품 옵션 등)

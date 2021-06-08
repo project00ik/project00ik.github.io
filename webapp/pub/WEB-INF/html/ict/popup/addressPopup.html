@@ -211,11 +211,14 @@
         <div class="lyPopCont">
           <div class="pop-layout pop-address">
             <div>
-              <div class="inp-area">
-                <input type="search" name="" id="" class="inp" placeholder="도로명 또는 지번주소 검색">
-                <button class="del" style="display: inline-block;">삭제</button>
-                <button class="btn btn-search">검색</button>
+              <!-- 검색영역 -->
+              <div class="form-search search-type-del">
+                <input type="search" name="" id="" class="input" placeholder="도로명 또는 지번주소 검색">
+                <button class="del">삭제</button>
+                <button class="btn btn-search2">검색</button>
               </div>
+              <!--// 검색영역 -->
+              <!-- 결과 있음(주소목록) -->
               <div class="address-list">
                 <ul>
                   <li>
@@ -289,9 +292,9 @@
                       </div>
                     </div>
                   </li>
-                  <li class="none">
+                  <!-- <li class="none">
                     <p>검색 결과가 없습니다.</p>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <!-- pc 페이지네이션 -->
@@ -315,14 +318,24 @@
                 더보기
               </button>
               <!-- //mo 페이지네이션 -->
+              <!--// 결과 있음(주소목록) -->
+              <!-- 결과 없음 -->
+              <div class="address-list">
+                <ul>
+                  <li class="none">
+                    <p>검색 결과가 없습니다.</p>
+                  </li>
+                </ul>
+              </div>
               <div class="address-info">
-                  <p>아래와 같은 조합을 이용하시면 더욱 정확한 결과가 검색됩니다.</p>
-                  <div>
-                    <p>- 도로명 + 건물번호 입력 (예: 광평로 47길 28)</p>
-                    <p>- 읍/면/동/리 + 지번 입력 (예: 수서동 527)</p>
-                    <p>- 건물명 입력 (예: 강남소방서)</p>
-                  </div>
+                <p>아래와 같은 조합을 이용하시면 더욱 정확한 결과가 검색됩니다.</p>
+                <div>
+                  <p>- 도로명 + 건물번호 입력 (예: 광평로 47길 28)</p>
+                  <p>- 읍/면/동/리 + 지번 입력 (예: 수서동 527)</p>
+                  <p>- 건물명 입력 (예: 강남소방서)</p>
                 </div>
+              </div>
+              <!--// 결과 없음 -->
             </div>
           </div>
         </div>
@@ -355,22 +368,7 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('addressPopup');
-
-      $(".pop-address .inp-area .del").css("display","none")
-      var ipDelBtn = $(".pop-address .inp-area .del");
-      var ipHdSearch = $('.pop-address .inp-area .inp');
-      $(document).on("keyup",".pop-address .inp-area .inp",function () {  // val값삭제
-      ipDelBtn.toggle(Boolean($(this).val()));
-      if($(this).val().length > 0){ //val값 있을때
-        ipDelBtn.click(function(){ //val 삭제버튼 클릭
-          ipHdSearch.val('');
-          ipDelBtn.toggle(Boolean($(this).val()));
-        })
-      } else { //val값 없을때
-        searchBox.addClass("on");
-        wordBox.removeClass('on');
-      }
-    });
+      searchInputBox(); // 검색 input clear
     
     });
   </script>
