@@ -35,28 +35,30 @@
 .pop-password .tit-area3 + .pop-write {margin-top: 10px;}
 .pop-password .pop-ip-area  {align-items: flex-start;}
 
-/* 기획전 */
+/* 기획전 카운트다운 */
 .special-wrap .promt-cont {padding-bottom: 30px; margin-bottom: 0;}
 .special-wrap .materiel-cont .materiel-list {margin-top: 0;}
-
-/* 카운트다운 */
-.special-dday .flipper {font-size: 50px !important; color: #fff; font-weight: bold;}
-.special-dday .flipper .flipper-d {padding-right: 65px;}
+.special-dday {text-align: center; padding: 20px 20px 30px;}
+.special-dday .dday-tit {padding-bottom: 30px; font-size: 28px; color: #2d3a52; font-weight: 500;}
+.special-dday .dday-date {padding: 30px 0; font-size: 16px; color: #000;}
+.special-dday .dday-box {width: 750px; margin: 0 auto; padding: 20px; display: flex; background: #f5f5f5;}
+.special-dday .dday-box b {font-size: 16px; color: #000; font-weight: 500; padding-right: 50px;}
+.special-dday .dday-box .in-txt {flex:1; display: flex; justify-content: space-between;}
+.special-dday .dday-box .in-txt p {font-size: 15px; color: #000;}
+.special-dday .dday-box .in-txt p:before {content: ''; display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: #666; margin-right: 5px; vertical-align: middle;}
+.special-dday .flipper {display: inline-block; font-size: 50px !important; color: #fff; font-weight: bold;}
 .special-dday .flipper .flipper-dd {padding-right: 65px;}
-.special-dday .flipper .flipper-ddd {padding-right: 65px;}
-.special-dday .flipper .flipper-d + .flipper-delimiter {display: none;}
 .special-dday .flipper .flipper-dd + .flipper-delimiter {display: none;}
-.special-dday .flipper .flipper-ddd + .flipper-delimiter {display: none;}
 .special-dday .flipper .flipper-group label {transform:none; position: absolute; top: 0; right: 0; left: auto; width: 60px; font-size: 45px; padding-top: 0; line-height: 80px;border-radius: 5px; background: #12b5cf;}
-.special-dday .flipper .flipper-group.flipper-delimiter {padding: 0 10px;}
-.special-dday .flipper .digit-next {background: #12b5cf; width: 60px;}
-.special-dday .flipper .digit-top {background: #12b5cf; width: 60px;}
-.special-dday .flipper .digit-top2 {background: #12b5cf; width: 60px;}
-.special-dday .flipper .digit-top.r {background: #1094a8;}
-.special-dday .flipper .digit-bottom {background: #12b5cf; width: 60px;}
-.special-dday .flipper .digit-bottom.r {background: #1094a8;}
-.special-dday .flipper .flipper-delimiter {color: #2d3a52; line-height: 80px;}
+.special-dday .flipper .flipper-group.flipper-delimiter {color: #2d3a52; line-height: 73px; padding: 0 10px;}
 .special-dday .flipper .flipper-group .flipper-digit {border-radius: 5px;}
+.special-dday .flipper .flipper-group .flipper-digit > div {width: 60px;}
+.special-dday .flipper .digit-next {background: #12b5cf;}
+.special-dday .flipper .digit-top {background: #12b5cf;}
+.special-dday .flipper .digit-top2 {background: #12b5cf;}
+.special-dday .flipper .digit-top.r {background: #1094a8;}
+.special-dday .flipper .digit-bottom {background: #12b5cf;}
+.special-dday .flipper .digit-bottom.r {background: #1094a8;}
 .special-dday .flipper .flipper-HH {margin-left: 15px;}
 
 
@@ -314,6 +316,19 @@
 .policy-content > ul > li > ul > li{margin-top: 10px;}
 .policy-content > ul > li > ul > li:first-child{margin-top: 0px;}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     프로모션
@@ -346,7 +361,25 @@
   .pop-suggestion ul li{padding: 5px 0;}
   .pop-suggestion .point-color2{margin-top: 15px;}
 
-  /* 기획전 */
+  /* 기획전 카운트다운 */
+  .special-dday {padding: 20px 20px 50px;}
+  .special-dday .dday-tit {font-size: 18px; padding-bottom: 20px;}
+  .special-dday .dday-date {font-size: 15px;}
+  .special-dday .dday-box {width: 100%; flex-direction: column; text-align: left;}
+  .special-dday .dday-box b {font-size: 15px; padding-right: 0; margin-bottom: 10px;}
+  .special-dday .dday-box .in-txt {flex-direction: column;}
+  .special-dday .dday-box .in-txt p {font-size: 14px; margin-bottom: 6px;}
+  .special-dday .flipper {position: relative; padding-top: 65px; font-size: 28px !important;}
+  .special-dday .flipper .flipper-dd {position: absolute; top: 0; left: 50%; transform: translateX(-50%);padding-right: 47px;}
+  .special-dday .flipper .flipper-group .flipper-digit > div {width: 42px;}
+  .special-dday .flipper .flipper-group label {font-size: 25px; width: 42px; line-height: 55px;}
+  .special-dday .flipper .flipper-digit {height: 1.96em;}
+  .special-dday .flipper .digit-next {height: 1.96em;}
+  .special-dday .flipper .digit-next {padding-top: 0.5em; padding-bottom: 0.5em;}
+  .special-dday .flipper .digit-top {padding-top: 0.5em;}
+  .special-dday .flipper .flipper-group.flipper-delimiter {line-height: 55px; padding: 0 4px;}
+
+
   
   /* 열린소싱상품제안 */
   .suggestion-goods {width:986px;}

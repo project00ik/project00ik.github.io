@@ -5,7 +5,7 @@
   line-height: 100%;
   padding: 0;
   margin: 0;
-  height: 1.6em;
+  /* height: 1.6em; */
 }
 .flipper.flipper-invisible {
   font-size: 0px !important;
@@ -31,13 +31,24 @@
   text-align: center;
   padding-top: .5em;
 }
+.flipper-group label:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 50%;
+  display: block;
+  z-index: 30;
+  left: 0;
+  right: 0;
+}
 
 .flipper-digit {
   white-space: nowrap;
   position: relative;
   padding: 0;
   margin: 0;
-  display: inline-block;
+  display: block;
   float: left;
   height: 1.6em;
   overflow-y: hidden;
@@ -53,7 +64,8 @@
   padding: 0;
   margin: 0;
   color: #fff;
-  min-width: .1em;
+  /* min-width: .1em; */
+  min-width: 5px;
   white-space: nowrap;
   display: block;
   padding-top: 0.3em;
@@ -221,7 +233,7 @@
 .flipper-digit:after {
   content: "";
   position: absolute;
-  height: 2px;
+  height: 1px;
   background: rgba(255, 255, 255, 0.3);
   top: 50%;
   display: block;
