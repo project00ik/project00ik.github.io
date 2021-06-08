@@ -199,49 +199,59 @@
     </footer>
   </div>
 
-  <!-- 계정조회 팝업 -->
+  <!-- 예산신규등록 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="accountInquiryPopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
           <div class="lyTitle center">
-            <p>계정조회</p>
+            <p>예산신규등록</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
-            <div class="pop-layout pop-sLabel labelW-xs">
-              <ul>
-                <li>
-                  <div class="pop-ip-area">
-                    <label for="">회사</label>
-                    <div class="form-layout">
-                      <input type="text" name="" class="input" value="" placeholder="" disabled>
-                    </div>
-                  </div>
-                </li>
-                <li class="pop-list-half">
-                  <div class="pop-ip-area">
-                    <label for="">계정코드</label>
-                    <div class="form-layout">
-                      <input type="text" name="" class="input" value="" placeholder="">
-                    </div>
-                  </div>
-                  <div class="pop-ip-area">
-                    <label for="">계정명</label>
-                    <div class="form-layout">
-                      <input type="text" name="" class="input" value="" placeholder="">
-                    </div>
-                  </div>
-                </li>
+            <div class="tab-area tabArea">
+              <ul class="tab-btn-list tab-style1">
+                <li class="tabBtn on" data-tab="tab1">기준설정</li>
+                <li class="tabBtn" data-tab="tab2">예산등록</li>
               </ul>
-              <div class="btn-r-area top-line-grid">
-                <button class="btn btn-style-m2">조회</button>
+              <div class="tab-cont tabCont active" id="tab1">
+                <div class="pop-line-form">
+                  <div class="pop-layout pop-sLabel labelW-xs">
+                    <ul>
+                      <li>
+                        <div class="pop-ip-area">
+                          <label for="">회사</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="" placeholder="" disabled>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">계정코드</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="" placeholder="">
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">계정명</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="" placeholder="">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="excel-wrap" style="height:240px;">
+                  * 그리드 영역
+                </div>
               </div>
-              <div class="excel-wrap" style="height:240px;">
-                * 그리드 영역
+              <div class="tab-cont tabCont" id="tab2">
               </div>
             </div>
+            
           </div>
           <div class="btn-area">
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">닫기</a>
@@ -250,7 +260,7 @@
       </div>
     </div>
   </div>
-  <!-- //계정조회 팝업 -->
+  <!-- //예산신규등록 팝업 -->
 
 
 
