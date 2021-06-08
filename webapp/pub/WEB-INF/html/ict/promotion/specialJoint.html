@@ -178,7 +178,7 @@
           </div>
 
           <!-- <div class="event-empty">
-            <p>등록된 기획전이 없습니다.</p>
+            <p>등록된 상품이 없습니다.</p>
           </div> -->
           
 
@@ -213,13 +213,12 @@
                   <div class="tit-area">
                     <p class="tit-type2">소분류 1</p>
                     <div>
-                      <label class="btn btn-check-line allChk"><input type="checkbox" name=""><span>전체선택</span></label>
                       <button class="btn btn-small2-line">담기</button>
                     </div>
                   </div>
                   <!-- 상품리스트 -->
                   <div class="product-list-wrap">
-                    <div class="product-list">
+                    <div class="product-list best-100">
                       <li>
                         <div class="unit-type1">
                           <dl class="unit-area">
@@ -243,6 +242,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -264,12 +266,9 @@
                         </div>
                       </li>
                       <li>
-                        <!-- 품절일 경우 -->
                         <div class="unit-type1">
                           <dl class="unit-area">
-                            <dt class="soldeout">
-                              <span class="soldeout-txt">SOLD<br>OUT</span>
-                              <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
                             </dt>
                             <dd>
                               <div class="flag-area">
@@ -290,6 +289,9 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
                             </dd>
                           </dl>
                           <div class="unit-layer">
@@ -298,12 +300,16 @@
                             <!--// 상품링크 -->
                             <ul class="unit-under-btn">
                               <li>
-                                <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                                <a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')">장바구니</a>
+                                <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                               </li>
                             </ul>
                           </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                         </div>
-                        <!--// 품절일 경우 -->
                       </li>
                       <li>
                         <div class="unit-type1">
@@ -328,6 +334,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -372,48 +381,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -458,48 +427,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -543,6 +472,101 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -572,13 +596,12 @@
                   <div class="tit-area">
                     <p class="tit-type2">소분류 2</p>
                     <div>
-                      <label class="btn btn-check-line allChk"><input type="checkbox" name=""><span>전체선택</span></label>
                       <button class="btn btn-small2-line">담기</button>
                     </div>
                   </div>
                   <!-- 상품리스트 -->
                   <div class="product-list-wrap">
-                    <div class="product-list">
+                    <div class="product-list best-100">
                       <li>
                         <div class="unit-type1">
                           <dl class="unit-area">
@@ -602,6 +625,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -623,12 +649,9 @@
                         </div>
                       </li>
                       <li>
-                        <!-- 품절일 경우 -->
                         <div class="unit-type1">
                           <dl class="unit-area">
-                            <dt class="soldeout">
-                              <span class="soldeout-txt">SOLD<br>OUT</span>
-                              <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
                             </dt>
                             <dd>
                               <div class="flag-area">
@@ -649,6 +672,9 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
                             </dd>
                           </dl>
                           <div class="unit-layer">
@@ -657,12 +683,16 @@
                             <!--// 상품링크 -->
                             <ul class="unit-under-btn">
                               <li>
-                                <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                                <a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')">장바구니</a>
+                                <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                               </li>
                             </ul>
                           </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                         </div>
-                        <!--// 품절일 경우 -->
                       </li>
                       <li>
                         <div class="unit-type1">
@@ -687,6 +717,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -731,48 +764,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -817,48 +810,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -902,6 +855,101 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -931,13 +979,12 @@
                   <div class="tit-area">
                     <p class="tit-type2">소분류 3</p>
                     <div>
-                      <label class="btn btn-check-line allChk"><input type="checkbox" name=""><span>전체선택</span></label>
                       <button class="btn btn-small2-line">담기</button>
                     </div>
                   </div>
                   <!-- 상품리스트 -->
                   <div class="product-list-wrap">
-                    <div class="product-list">
+                    <div class="product-list best-100">
                       <li>
                         <div class="unit-type1">
                           <dl class="unit-area">
@@ -961,6 +1008,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -982,12 +1032,9 @@
                         </div>
                       </li>
                       <li>
-                        <!-- 품절일 경우 -->
                         <div class="unit-type1">
                           <dl class="unit-area">
-                            <dt class="soldeout">
-                              <span class="soldeout-txt">SOLD<br>OUT</span>
-                              <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
                             </dt>
                             <dd>
                               <div class="flag-area">
@@ -1008,6 +1055,9 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
                             </dd>
                           </dl>
                           <div class="unit-layer">
@@ -1016,12 +1066,16 @@
                             <!--// 상품링크 -->
                             <ul class="unit-under-btn">
                               <li>
-                                <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                                <a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')">장바구니</a>
+                                <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                               </li>
                             </ul>
                           </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                         </div>
-                        <!--// 품절일 경우 -->
                       </li>
                       <li>
                         <div class="unit-type1">
@@ -1046,6 +1100,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1090,48 +1147,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1176,48 +1193,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1261,6 +1238,101 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1290,13 +1362,12 @@
                   <div class="tit-area">
                     <p class="tit-type2">소분류 4</p>
                     <div>
-                      <label class="btn btn-check-line allChk"><input type="checkbox" name=""><span>전체선택</span></label>
                       <button class="btn btn-small2-line">담기</button>
                     </div>
                   </div>
                   <!-- 상품리스트 -->
                   <div class="product-list-wrap">
-                    <div class="product-list">
+                    <div class="product-list best-100">
                       <li>
                         <div class="unit-type1">
                           <dl class="unit-area">
@@ -1320,6 +1391,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1341,12 +1415,9 @@
                         </div>
                       </li>
                       <li>
-                        <!-- 품절일 경우 -->
                         <div class="unit-type1">
                           <dl class="unit-area">
-                            <dt class="soldeout">
-                              <span class="soldeout-txt">SOLD<br>OUT</span>
-                              <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
                             </dt>
                             <dd>
                               <div class="flag-area">
@@ -1367,6 +1438,9 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
                             </dd>
                           </dl>
                           <div class="unit-layer">
@@ -1375,12 +1449,16 @@
                             <!--// 상품링크 -->
                             <ul class="unit-under-btn">
                               <li>
-                                <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                                <a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')">장바구니</a>
+                                <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                               </li>
                             </ul>
                           </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                         </div>
-                        <!--// 품절일 경우 -->
                       </li>
                       <li>
                         <div class="unit-type1">
@@ -1405,6 +1483,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1449,48 +1530,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1535,48 +1576,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1620,6 +1621,101 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1649,13 +1745,12 @@
                   <div class="tit-area">
                     <p class="tit-type2">소분류 5</p>
                     <div>
-                      <label class="btn btn-check-line allChk"><input type="checkbox" name=""><span>전체선택</span></label>
                       <button class="btn btn-small2-line">담기</button>
                     </div>
                   </div>
                   <!-- 상품리스트 -->
                   <div class="product-list-wrap">
-                    <div class="product-list">
+                    <div class="product-list best-100">
                       <li>
                         <div class="unit-type1">
                           <dl class="unit-area">
@@ -1679,6 +1774,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1700,12 +1798,9 @@
                         </div>
                       </li>
                       <li>
-                        <!-- 품절일 경우 -->
                         <div class="unit-type1">
                           <dl class="unit-area">
-                            <dt class="soldeout">
-                              <span class="soldeout-txt">SOLD<br>OUT</span>
-                              <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
                             </dt>
                             <dd>
                               <div class="flag-area">
@@ -1726,6 +1821,9 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
                             </dd>
                           </dl>
                           <div class="unit-layer">
@@ -1734,12 +1832,16 @@
                             <!--// 상품링크 -->
                             <ul class="unit-under-btn">
                               <li>
-                                <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                                <a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')">장바구니</a>
+                                <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                               </li>
                             </ul>
                           </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                         </div>
-                        <!--// 품절일 경우 -->
                       </li>
                       <li>
                         <div class="unit-type1">
@@ -1764,6 +1866,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1808,48 +1913,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1894,48 +1959,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -1979,6 +2004,101 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -2008,13 +2128,12 @@
                   <div class="tit-area">
                     <p class="tit-type2">소분류 6</p>
                     <div>
-                      <label class="btn btn-check-line allChk"><input type="checkbox" name=""><span>전체선택</span></label>
                       <button class="btn btn-small2-line">담기</button>
                     </div>
                   </div>
                   <!-- 상품리스트 -->
                   <div class="product-list-wrap">
-                    <div class="product-list">
+                    <div class="product-list best-100">
                       <li>
                         <div class="unit-type1">
                           <dl class="unit-area">
@@ -2038,6 +2157,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -2059,12 +2181,9 @@
                         </div>
                       </li>
                       <li>
-                        <!-- 품절일 경우 -->
                         <div class="unit-type1">
                           <dl class="unit-area">
-                            <dt class="soldeout">
-                              <span class="soldeout-txt">SOLD<br>OUT</span>
-                              <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
                             </dt>
                             <dd>
                               <div class="flag-area">
@@ -2085,6 +2204,9 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
                             </dd>
                           </dl>
                           <div class="unit-layer">
@@ -2093,12 +2215,16 @@
                             <!--// 상품링크 -->
                             <ul class="unit-under-btn">
                               <li>
-                                <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                                <a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')">장바구니</a>
+                                <a href="#찜하기" class="btn btn-like tgBtn">찜하기</a>
                               </li>
                             </ul>
                           </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                         </div>
-                        <!--// 품절일 경우 -->
                       </li>
                       <li>
                         <div class="unit-type1">
@@ -2123,6 +2249,9 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -2167,48 +2296,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -2253,48 +2342,8 @@
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
                               </div>
-                            </dd>
-                          </dl>
-                          <div class="unit-layer">
-                            <!-- 상품링크 -->
-                            <a href="#상품링크" class="unit-link"></a>
-                            <!--// 상품링크 -->
-                            <ul class="unit-under-btn">
-                              <li>
-                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
-                              </li>
-                              <li>
-                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
-                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
-                              </li>
-                            </ul>
-                          </div>
-                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="unit-type1">
-                          <dl class="unit-area">
-                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
-                            </dt>
-                            <dd>
-                              <div class="flag-area">
-                                <div class="flag-txt blue">MD추천</div>
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">공동구매</div>
-                                <!-- 
-                                <div class="flag-txt blue">특가전</div>
-                                <div class="flag-txt blue">최저가</div>
-                                <div class="flag-txt blue">신규출시</div>
-                                -->
-                              </div>
-                              <p class="brand">Aimsak</p>
-                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
-                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
-                              <p class="normal-price"><b>99,900,000</b>원</p>
-                              <div class="price-area">
-                                <p class="price"><b>100,000</b>원</p>
-                                <p class="sale">10%</p>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -2338,6 +2387,101 @@
                               <div class="price-area">
                                 <p class="price"><b>100,000</b>원</p>
                                 <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
+                              </div>
+                            </dd>
+                          </dl>
+                          <div class="unit-layer">
+                            <!-- 상품링크 -->
+                            <a href="#상품링크" class="unit-link"></a>
+                            <!--// 상품링크 -->
+                            <ul class="unit-under-btn">
+                              <li>
+                                <a href="javascript:;" class="btn btn-buynow">바로구매</a>
+                              </li>
+                              <li>
+                                <a href="javascript:;" class="btn btn-cart">장바구니</a>
+                                <a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="unit-type1">
+                          <dl class="unit-area">
+                            <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                            </dt>
+                            <dd>
+                              <div class="flag-area">
+                                <div class="flag-txt blue">MD추천</div>
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">공동구매</div>
+                                <!-- 
+                                <div class="flag-txt blue">특가전</div>
+                                <div class="flag-txt blue">최저가</div>
+                                <div class="flag-txt blue">신규출시</div>
+                                -->
+                              </div>
+                              <p class="brand">Aimsak</p>
+                              <p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+                                6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                              <p class="normal-price"><b>99,900,000</b>원</p>
+                              <div class="price-area">
+                                <p class="price"><b>100,000</b>원</p>
+                                <p class="sale">10%</p>
+                              </div>
+                              <div class="volume-area">
+                                <p>한정수량 1,000개 /<span class="count">798개</span></p>
                               </div>
                             </dd>
                           </dl>
@@ -2427,8 +2571,10 @@
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../../../../js/ui-front.js"></script>
-  <script type="text/javascript" src="../../../../js/jquery.flipper-responsive.js"></script>
-  <link rel="stylesheet" href="../../../../css/flipper-countdown.css">
+
+
+  <script type="text/javascript" src="../../../../js/jquery.flipper-responsive.js"></script><!-- 카운트다운 -->
+  <link rel="stylesheet" href="../../../../css/flipper-countdown.css"><!-- 카운트다운 -->
   
   <script type="text/javascript">
     $(document).ready(function () {

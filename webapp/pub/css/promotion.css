@@ -36,6 +36,14 @@
 .pop-password .pop-ip-area  {align-items: flex-start;}
 
 /* 기획전 카운트다운 */
+.best-100 .unit-type1 {height: 537px;}
+.best-100 .unit-type1 .unit-area .volume-area {border-top: 1px solid #d7d7d7; margin-top: 6px; padding-top: 6px;}
+.best-100 .unit-type1 .unit-area .volume-area p {font-size: 16px; color: #000; vertical-align: top;}
+.best-100 .unit-type1 .unit-area .volume-area p .count {color: #346dd0; font-weight: 500; vertical-align: top; padding-left: 5px;}
+
+
+
+
 .special-wrap .promt-cont {padding-bottom: 30px; margin-bottom: 0;}
 .special-wrap .materiel-cont .materiel-list {margin-top: 0;}
 .special-dday {text-align: center; padding: 20px 20px 30px;}
@@ -362,6 +370,8 @@
   .pop-suggestion .point-color2{margin-top: 15px;}
 
   /* 기획전 카운트다운 */
+  .best-100 .unit-type1 {height: auto;}
+  .best-100 .unit-type1 .unit-area .volume-area p {font-size: 13px;}
   .special-dday {padding: 20px 20px 50px;}
   .special-dday .dday-tit {font-size: 18px; padding-bottom: 20px;}
   .special-dday .dday-date {font-size: 15px;}
@@ -378,6 +388,7 @@
   .special-dday .flipper .digit-next {padding-top: 0.5em; padding-bottom: 0.5em;}
   .special-dday .flipper .digit-top {padding-top: 0.5em;}
   .special-dday .flipper .flipper-group.flipper-delimiter {line-height: 55px; padding: 0 4px;}
+  .special-dday .flipper .flipper-HH {margin-left: 0;}
 
 
   
@@ -563,6 +574,9 @@
 }
 @media only screen and  (max-width:375px){ /* iphone6 */
   .insurance-cont .report01 .report02-img .group-img span{margin-left: 0px;}
+
+  /* 기획전 카운트다운 */
+  .special-dday .flipper .flipper-group .flipper-digit > div {width: 36px;}
 }
 @media only screen and  (max-width:360px){ /* galaxy */
 
