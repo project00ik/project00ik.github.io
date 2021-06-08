@@ -274,19 +274,19 @@
 .pop-address .address-list ul li{position: relative;border-bottom: 1px solid #D7D7D7;padding: 20px 0;}
 .pop-address .address-list ul li a:hover{color:#346DD0;text-decoration: underline;}
 .pop-address .address-list ul li > div{margin-top: 6px;position: relative;}
-.pop-address .address-list ul li > div span{font-size: 14px;}
+.pop-address .address-list ul li > div:first-child{margin-top: 12px;}
+.pop-address .address-list ul li > div span{font-size: 14px;line-height: 17px;}
 .pop-address .address-list ul li > div.old{margin-top: 12px;font-size: 16px;display: flex;}
 .pop-address .address-list ul li > div.old span:last-child{width: calc(100% - 75px);}
 .pop-address .address-list ul li > div > span:first-child{width: 75px;display: inline-block;}
 .pop-address .address-list ul li:first-child{border-top: 1px solid #D7D7D7;}
 .pop-address .address-list ul li.none {border-top:none;padding:80px 0 100px;text-align: center;}
 .pop-address .address-list ul li.none p{font-size: 16px;color:#999;padding-top:80px;background: url(../images/common/icon_none2.svg) 50% 0 no-repeat;}
-.pop-address .address-list .acdArea {background: #F5F5F5;margin-top:10px;}
-.pop-address .address-list .acdArea .acdBtn{position: absolute;top: 0;right:0;padding-right: 20px;font-size: 14px;}
-.pop-address .address-list .acdArea .acdBtn .apt{display: inline-block;margin-right: 5px;line-height: 15px;padding:2px 7px 3px;border-radius: 10px;border: 1px solid #346DD0;color:#346DD0;}
+.pop-address .address-list .acdArea .acdBtn{position: absolute;top: 2px;right:0;padding-right: 20px;font-size: 14px;}
+.pop-address .address-list .acdArea .acdBtn .apt{display: inline-block;margin-right: 5px;font-size: 12px;line-height: 14px;padding:2px 6px 2px;margin-top: -3px;border-radius: 10px;border: 1px solid #346DD0;color:#346DD0;}
 .pop-address .address-list .acdArea .acdBtn::after{content: "";width: 18px; height: 18px;margin-top: -9px; display: inline-block;position: absolute;top: 50%;right: 0;background:url(../images/common/btn_filter_more2.svg) 100% 0 no-repeat;}
 .pop-address .address-list .acdArea .acdBtn.on::after{transform:rotate(-180deg)}
-.pop-address .address-list .acdArea .acdCont{padding:12px 10px;display: none;}
+.pop-address .address-list .acdArea .acdCont{padding:12px 10px;margin-top:10px;display: none;background: #F5F5F5;}
 .pop-address .address-list .acdArea .acdCont > div{display: table;font-size: 14px;line-height: 17px;}
 .pop-address .address-list .acdArea .acdCont > div span{display: table-cell;margin-right: 10px;width: 62px;vertical-align: top;}
 .pop-address .paging{margin:30px 0}
