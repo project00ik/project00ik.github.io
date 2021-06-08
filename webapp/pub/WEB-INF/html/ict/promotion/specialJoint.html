@@ -178,7 +178,7 @@
           </div>
 
           <div class="special-dday">
-            <div class="dday countdown" id="countdown"></div>
+            <div class="flipper" data-reverse="true" data-datetime="2021-06-10 00:00:00" data-template="dd|HH|ii|ss" data-labels="일" id="myFlipper"></div>
           </div>
 
           <div class="materiel-cont">
@@ -2411,6 +2411,8 @@
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="../../../../js/ui-front.js"></script>
+  <script type="text/javascript" src="../../../../js/jquery.flipper-responsive.js"></script>
+  <link rel="stylesheet" href="../../../../css/flipper-countdown.css">
   
   <script type="text/javascript">
     $(document).ready(function () {
@@ -2485,7 +2487,8 @@
       }); 
       /* 스크롤 이동 탭 [E] */
 
-
+      /* 카운트다운 js */
+      $('#myFlipper').flipper('init');
       
     })
     
