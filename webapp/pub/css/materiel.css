@@ -20,6 +20,13 @@
 .materiel-cont .bulk-purchase-slide .swiper-slide.on .bulk-img-area > dd {color: #346dd0; font-weight: 500;}
 
 
+/* 에러페이지 */
+.error-content {width: 606px;margin: 120px auto 0;text-align: center;}
+.error-content .error-tit{padding-top: 90px;font-size: 28px;background:url(../images/common/icon_none2.svg) 50% 0 no-repeat;}
+.error-content span{color: #999;padding: 30px 0;display: inline-block;}
+.error-content .box{width: 500px;margin: 0 auto;background:#FAFAFA;line-height: 56px;}
+.error-content .box i{font-style:normal;color:#346DD0;vertical-align: top;}
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
     자재일괄구매
@@ -38,4 +45,12 @@
   .materiel-cont .tab-btn-list.tab-style4 .tabBtn > a {padding: 10px 20px;}
   .materiel-cont .bulk-purchase-slide .swiper-slide.on .bulk-img-area > dt {border: 2px solid #346dd0;}
   .materiel-cont .swiper-scrollbar {background:#d7d7d7;}
+
+  /* 에러페이지 */
+  .error-content {width: 100%;margin: 60px 0px;padding:0 20px}
+  .error-content .box{width: 280px;line-height: 36px;font-size: 14px;}
+  .error-content .error-tit{font-size: 18px;padding-top:70px;background-size: 50px auto;}
+  .error-content span{font-size: 14px;line-height: 18px;padding-top: 10px;width: 267px;}
+  .error-content .box i{font-style:normal;color:#346DD0;vertical-align: top;}
+  .error-content.sub-content .btn-area-c{margin: 0;}
 }
