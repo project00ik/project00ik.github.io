@@ -60,6 +60,7 @@
 .con-normal-info .list-in > li > label {width: 120px;}
 
 .list-file-con .file-con {margin: 10px 0; display: flex;}
+.popup-wrap .list-file-con .file-con {margin:0;}
 .list-file-con .file-con .in-grid-size {background: #f5f5f5; min-height: 280px; overflow-y: hidden; overflow-x: auto;}
 .list-file-con .file-con .in-grid-size.w-460 {width: 460px; margin-right: 10px;}
 .list-file-con .file-con .in-grid-size.w-all {flex:1;}
