@@ -522,6 +522,7 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-style4 .tabBtn.on > a {color:#fff; background: #000;}
 
 .product .tab-area .tab-cont {padding-bottom: 0;}
+.popup-wrap .tab-area .tab-cont {padding-bottom:0;}
 
 /* 토글 */
 .tgSlideCont,
