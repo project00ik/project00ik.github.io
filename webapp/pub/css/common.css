@@ -219,7 +219,7 @@
 .lyPopup .popup-cont .lyTitle .btn-close {width:24px; height:24px; display:inline-block; background:url(../images/common/btn_popup_close.svg) 0 0 no-repeat; font-size:0; position:absolute; top:15px; right:30px; z-index:1;} 
 .lyPopup .lyPopCont {padding:30px;}
 .lyPopup .popup-cont .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
-.lyPopup .popup-cont .lyPopCont .btn-area {padding:20px 0 0; border:0;}
+.lyPopup .popup-cont .lyPopCont .btn-area {padding:30px 0 0; border:0;}
 .popup-type-m .lyPopup .popup-cont .lyPopCont {max-height:calc(100vh - 265px); overflow-x:hidden; overflow-y:auto;}
 .popup-type-s .lyPopup .popup-cont .lyPopCont {max-height:500px; min-height:119px;}
 
