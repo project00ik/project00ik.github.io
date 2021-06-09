@@ -216,37 +216,86 @@
                 <li class="tabBtn" data-tab="tab2">예산등록</li>
               </ul>
               <div class="tab-cont tabCont active" id="tab1">
+                <!-- 기준설정 -->
                 <div class="pop-line-form">
                   <div class="pop-layout pop-sLabel labelW-xs">
                     <ul>
-                      <li>
+                      <li class="pop-list-half">
                         <div class="pop-ip-area">
-                          <label for="">회사</label>
+                          <label for="">법인코드</label>
                           <div class="form-layout">
-                            <input type="text" name="" class="input" value="" placeholder="" disabled>
+                            <input type="text" name="" class="input" value="" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">법인명</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KT커머스" placeholder="" disabled="disabled">
                           </div>
                         </div>
                       </li>
                       <li class="pop-list-half">
                         <div class="pop-ip-area">
-                          <label for="">계정코드</label>
-                          <div class="form-layout">
-                            <input type="text" name="" class="input" value="" placeholder="">
+                          <label for="">사업장코드</label>
+                          <div class="form-layout form-search">
+                            <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
+                            <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
                           </div>
                         </div>
                         <div class="pop-ip-area">
-                          <label for="">계정명</label>
+                          <label for="">사업장명</label>
                           <div class="form-layout">
-                            <input type="text" name="" class="input" value="" placeholder="">
+                            <input type="text" name="" class="input" value="케이티커머스" placeholder="" readonly="readonly">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">예산년</label>
+                          <div class="form-layout">
+                            <div class="form-layout3">
+                              <select class="select" name="" id="" >
+                                <option value="" selected>2021</option>
+                                <option value=""></option>
+                              </select>
+                            </div>
+                            <label class="check-style1 ml20"><input type="checkbox" name=""><i></i><span>연속지정</span></label>
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">기간구분</label>
+                          <div class="form-layout">
+                            <select class="select" name="" id="" >
+                              <option value="" selected>2021</option>
+                              <option value=""></option>
+                            </select>
                           </div>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
-                <div class="excel-wrap" style="height:240px;">
-                  * 그리드 영역
+                <div class="pop-line-form">
+                  <div class="pop-layout-gride">
+                    <div class="pop-ip-area">
+                      <label for="">사업장명</label>
+                      <div class="form-layout"><button class="btn btn-style-m4">추가</button></div>
+                    </div>
+                    <div class="excel-wrap" style="height:240px;">
+                      * 그리드 영역
+                    </div>
+                  </div>
+                  <div class="pop-layout-gride">
+                    <div class="pop-ip-area">
+                      <label for="">사업장명</label>
+                      <div class="form-layout"><button class="btn btn-style-m4">추가</button></div>
+                    </div>
+                    <div class="excel-wrap" style="height:240px;">
+                      * 그리드 영역
+                    </div>
+                  </div>
                 </div>
+                <!--// 기준설정 -->
               </div>
               <div class="tab-cont tabCont" id="tab2">
               </div>

@@ -119,6 +119,7 @@ input::-webkit-search-results-decoration{
 
 .ml5 {margin-left:5px !important;}
 .ml10 {margin-left:10px !important;}
+.ml20 {margin-left:20px !important;}
 
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
