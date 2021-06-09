@@ -719,6 +719,7 @@ textarea + .cot b {vertical-align: top;}
 
 /* 간격작은 테이블 */
 .table-area.table-style4 {border-top:1px solid #000; }
+.table-area.table-style4 table.ta-c td {text-align: center;}
 .table-area.table-style4 table {color:#000; font-size:16px; line-height: 19px;}
 .table-area.table-style4 table th,
 .table-area.table-style4 table td {border-bottom: 1px solid #d7d7d7; font-weight:normal;}
@@ -729,8 +730,9 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style4 table td {text-align: left; padding: 10px; border-left:1px solid #D7D7D7;}
 .table-area.table-style4 table td:first-child {border-left:none;}
 .table-area.table-style4 table td:last-child {border-right:none;}
-.table-area.table-style4 table .ta-c {text-align: center;}
-.table-area.table-style4 table .ta-r {text-align: right;}
+.table-area.table-style4 table .ta-c {text-align: center !important;}
+.table-area.table-style4 table .ta-r {text-align: right !important;}
+.table-area.table-style4 table .ta-l {text-align: left !important;}
 
 .table-info {margin-top:16px; color:#999; font-size:14px;}
 
