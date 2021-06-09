@@ -36,11 +36,14 @@
 .pop-password .pop-ip-area  {align-items: flex-start;}
 
 /* 기획전 카운트다운 */
-.best-100 .unit-type1 {height: 537px;}
-.best-100 .unit-type1 .unit-area .volume-area {border-top: 1px solid #d7d7d7; margin-top: 6px; padding-top: 6px;}
-.best-100 .unit-type1 .unit-area .volume-area p {font-size: 16px; color: #000; vertical-align: top;}
-.best-100 .unit-type1 .unit-area .volume-area p .count {color: #346dd0; font-weight: 500; vertical-align: top; padding-left: 5px;}
+.joint-list .unit-type1 {height: 537px;}
+.joint-list .unit-type1 .unit-area .volume-area {border-top: 1px solid #d7d7d7; margin-top: 6px; padding-top: 6px;}
+.joint-list .unit-type1 .unit-area .volume-area p {font-size: 16px; color: #000; vertical-align: top;}
+.joint-list .unit-type1 .unit-area .volume-area p .count {color: #346dd0; font-weight: 500; vertical-align: top; padding-left: 5px;}
 
+/* 베스트100 */
+.best-100 .unit-type1 .unit-area .li-num {position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; text-align: center; font-size: 16px; color: #fff; font-weight: 500; line-height: 32px; background: #000; z-index: 8;}
+.best-100 .unit-type1 .unit-area .li-num.top10 {background: #346dd0;}
 
 
 
@@ -370,8 +373,8 @@
   .pop-suggestion .point-color2{margin-top: 15px;}
 
   /* 기획전 카운트다운 */
-  .best-100 .unit-type1 {height: auto;}
-  .best-100 .unit-type1 .unit-area .volume-area p {font-size: 13px;}
+  .joint-list .unit-type1 {height: auto;}
+  .joint-list .unit-type1 .unit-area .volume-area p {font-size: 13px;}
   .special-dday {padding: 20px 20px 50px;}
   .special-dday .dday-tit {font-size: 18px; padding-bottom: 20px;}
   .special-dday .dday-date {font-size: 15px;}
@@ -390,7 +393,8 @@
   .special-dday .flipper .flipper-group.flipper-delimiter {line-height: 55px; padding: 0 4px;}
   .special-dday .flipper .flipper-HH {margin-left: 0;}
 
-
+  /* 베스트100 */
+  .best-100 .unit-type1 .unit-area .li-num {top: 5px; right: 5px; width: 24px; height: 24px; font-size: 13px; line-height: 24px;}
   
   /* 열린소싱상품제안 */
   .suggestion-goods {width:986px;}
