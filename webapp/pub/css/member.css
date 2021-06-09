@@ -46,6 +46,7 @@
 .half-list-box > div:last-child {margin-left: 20px;}
 .half-list-box .list-con .tit-area3 {align-items: center; padding-bottom: 10px;}
 .half-list-box .list-con .tit-type2 .sub-txt {margin-left: 0;}
+.popup-wrap .half-list-box .list-con .tit-type2 .sub-txt {min-width:88px;}
 .half-list-box .list-con .btn-r-area {padding-bottom: 0;}
 
 .con-normal-info {padding-top: 0;}
