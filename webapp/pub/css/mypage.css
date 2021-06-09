@@ -87,6 +87,7 @@
 .pop-sLabel.labelW-xs .pop-ip-area > label {width: 88px; padding-left: 0; display: inline-block;}
 .pop-sLabel.labelW-xs .pop-ip-area label + .form-layout {width: calc(100% - 88px);}
 .pop-line-form {padding:30px 0; border-top:1px solid #bbb; border-bottom:1px solid #bbb;}
+.pop-line-form .list-con {padding-top:0;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline {display:flex;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline .datepicker {flex:1;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline.w441 {width:441px}
