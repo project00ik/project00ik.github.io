@@ -86,7 +86,10 @@
 
 .pop-sLabel.labelW-xs .pop-ip-area > label {width: 88px; padding-left: 0; display: inline-block;}
 .pop-sLabel.labelW-xs .pop-ip-area label + .form-layout {width: calc(100% - 88px);}
-.pop-line-form {padding:30px 0; border-top:1px solid #bbb;}
+.pop-line-form {padding:30px 0; border-top:1px solid #bbb; border-bottom:1px solid #bbb;}
+.pop-sLabel.labelW-xs .pop-ip-area .form-inline {display:flex;}
+.pop-sLabel.labelW-xs .pop-ip-area .form-inline .datepicker {flex:1;}
+.pop-sLabel.labelW-xs .pop-ip-area .form-inline.w441 {width:441px}
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
@@ -215,7 +218,6 @@
 .remaining-card .justify-list .remaining .price > b {color:#346dd0;}
 .remaining-card .justify-list .state .price > b {font-weight: 400;}
 .remaining-card .justify-list .state > p {color:#666;}
-
 
 
 /* 모바일 시작 */

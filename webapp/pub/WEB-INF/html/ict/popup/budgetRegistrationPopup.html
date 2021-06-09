@@ -224,7 +224,7 @@
                         <div class="pop-ip-area">
                           <label for="">법인코드</label>
                           <div class="form-layout">
-                            <input type="text" name="" class="input" value="" placeholder="" disabled="disabled">
+                            <input type="text" name="" class="input" value="KTC0002" placeholder="" disabled="disabled">
                           </div>
                         </div>
                         <div class="pop-ip-area">
@@ -239,7 +239,7 @@
                           <label for="">사업장코드</label>
                           <div class="form-layout form-search">
                             <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
-                            <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
+                            <button class="btn btn-search2" onclick="inLyOpen('')">검색</button>
                           </div>
                         </div>
                         <div class="pop-ip-area">
@@ -266,45 +266,124 @@
                           <label for="">기간구분</label>
                           <div class="form-layout">
                             <select class="select" name="" id="" >
+                              <option value="" selected>월간</option>
+                              <option value="">분기</option>
+                              <option value="">반기</option>
+                              <option value="">연간</option>
+                              <option value="">일간</option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- 기간구분 월간/분기/반기/연간/ 선택시 select 노출 -->
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">기간값</label>
+                          <div class="form-layout">
+                            <select class="select" name="" id="" >
                               <option value="" selected>2021</option>
                               <option value=""></option>
                             </select>
                           </div>
                         </div>
                       </li>
+                      <!--// 기간구분 월간/분기/반기/연간/ 선택시 select 노출 -->
+                      <!-- 기간구분 일간 선택시 datepicker 노출 -->
+                      <li>
+                        <div class="pop-ip-area">
+                          <label for="">기간값</label>
+                          <div class="form-layout">
+                            <div class="form-inline w441">
+                              <input type="text" class="datepicker mo-hide" value="">
+                              <input type="date" class="datepicker pc-hide" value="">
+                              <em class="bar">-</em>
+                              <input type="text" class="datepicker mo-hide" value="">
+                              <input type="date" class="datepicker pc-hide" value="">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <!--// 기간구분 일간 선택시 datepicker 노출 -->
                     </ul>
                   </div>
                 </div>
-                <div class="pop-line-form">
-                  <div class="pop-layout-gride">
-                    <div class="pop-ip-area">
-                      <label for="">사업장명</label>
-                      <div class="form-layout"><button class="btn btn-style-m4">추가</button></div>
+                <div class="half-list-box">
+                  <div class="list-con list-file-con">
+                    <div class="tit-area3">
+                      <div class="tit-type2">
+                        <p class="sub-txt">부서지정</p>
+                      </div>
+                      <div class="btn-r-area">
+                        <button class="btn btn-style-m4" onclick="inLyOpen('')">추가</button>
+                      </div>
                     </div>
-                    <div class="excel-wrap" style="height:240px;">
-                      * 그리드 영역
-                    </div>
-                  </div>
-                  <div class="pop-layout-gride">
-                    <div class="pop-ip-area">
-                      <label for="">사업장명</label>
-                      <div class="form-layout"><button class="btn btn-style-m4">추가</button></div>
-                    </div>
-                    <div class="excel-wrap" style="height:240px;">
-                      * 그리드 영역
+                    <div class="file-con">
+                      <div class="in-grid-size w-all" style="height:180px;">
+                        부서 리스트 그리드영역
+                      </div>
                     </div>
                   </div>
+                  <div class="divider"></div>
+                  <div class="list-con list-file-con">
+                    <div class="tit-area3">
+                      <div class="tit-type2">
+                        <p class="sub-txt">계정지정</p>
+                      </div>
+                      <div class="btn-r-area">
+                        <div class="form-layout3">
+                          <input type="text" name="" class="input" value="" placeholder="">
+                          <button class="btn btn-style-m4 ml5">검색</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="file-con">
+                      <div class="in-grid-size w-all" style="height:180px;">
+                        계정 리스트 그리드영역
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-area">
+                  <a href="javascript:;" class="btn btn-style-m2" onclick="lyNextTab()">다음</a>
                 </div>
                 <!--// 기준설정 -->
               </div>
               <div class="tab-cont tabCont" id="tab2">
+                <div class="pop-line-form">
+                  <div class="pop-layout pop-sLabel labelW-xs">
+                    <ul>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">법인코드</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KTC0002" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">법인명</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KT커머스" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="excel-wrap" style="height:240px;">
+                  * 그리드 영역
+                </div>
+                
+                <!-- 예산등록 -->
+                <div class="btn-area">
+                  <a href="javascript:;" class="btn btn-style-m1" onclick="lyPrevTab()">이전</a>
+                  <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+                </div>
+                <!--// 예산등록 -->
               </div>
             </div>
             
           </div>
-          <div class="btn-area">
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">닫기</a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -338,9 +417,25 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('accountInquiryPopup');
-
+      inLyClose(); // 팝업안에 팝업 닫기
     
     });
+
+    function lyNextTab(){
+      // 다음버튼 클릭 이벤트(첫번째 탭으로 이동)
+      $('.tabBtn').removeClass('on');
+      $('.tabBtn').eq(1).addClass('on');
+      $('.tabCont').removeClass('active');
+      $('.tabCont').eq(1).addClass('active');
+    }
+
+    function lyPrevTab(){
+      // 이전버튼 클릭 이벤트(두번쨰 탭으로 이동)
+      $('.tabBtn').removeClass('on');
+      $('.tabBtn').eq(0).addClass('on');
+      $('.tabCont').removeClass('active');
+      $('.tabCont').eq(0).addClass('active');
+    }
   </script>
   <!-- javascript -->
 </body>
