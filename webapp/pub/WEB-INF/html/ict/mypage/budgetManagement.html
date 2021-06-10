@@ -228,7 +228,7 @@
                   <div class="form-layout">
                     <div class="form-search w127">
                       <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngPartnersPopup')">검색</button>
+                      <button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
                     </div>
                     <input type="text" name="" class="input ml5" value="KT커머스" placeholder="" readonly="readonly">
                   </div>
@@ -238,7 +238,7 @@
                   <div class="form-layout">
                     <div class="form-search w127">
                       <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngPartnersPopup')">검색</button>
+                      <button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
                     </div>
                     <input type="text" name="" class="input ml5" value="KT커머스" placeholder="" readonly="readonly">
                   </div>
@@ -248,7 +248,7 @@
                   <div class="form-layout">
                     <div class="form-search w127">
                       <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngPartnersPopup')">검색</button>
+                      <button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
                     </div>
                     <input type="text" name="" class="input ml5" value="KT커머스" placeholder="" readonly="readonly">
                   </div>
@@ -258,7 +258,7 @@
                   <div class="form-layout">
                     <div class="form-search w127">
                       <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
-                      <button class="btn btn-search2" onclick="lyOpen('myMngPartnersPopup')">검색</button>
+                      <button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
                     </div>
                     <input type="text" name="" class="input ml5" value="KT커머스" placeholder="" readonly="readonly">
                   </div>
@@ -270,13 +270,13 @@
             </div>
             <div class="list-con list-file-con m-line-hide">
               <div class="btn-r-area btn-mo-percent">
-                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w100">신규등록</a>
+                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w100" onclick="lyOpen('accountInquiryPopup')">신규등록</a>
                 <a href="javascript:;" class="btn btn-style-m4 mo-btn-w50">저장</a>
                 <a href="javascript:;" class="btn btn-style-m4 mo-btn-w50">삭제</a>
-                <a href="javascript:;" class="btn btn-style-m4 mo-btn-w50">집계</a>
-                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w50">예산복사</a>
-                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w50">예산이월</a>
-                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w50">예산 일괄입력</a>
+                <a href="javascript:;" class="btn btn-style-m4 mo-btn-w50" onclick="lyOpen('budgetAggregationPopup')">집계</a>
+                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('budgetCopyPopup')">예산복사</a>
+                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('budgetCarryOverPopup')">예산이월</a>
+                <a href="javascript:;" class="btn btn-style-m1 mo-btn-w50" onclick="lyOpen('excelUploadPopup')">예산 일괄입력</a>
               </div>
               <div class="file-con">
                 <div class="in-grid-size w-all">
@@ -408,6 +408,526 @@
     </footer>
   </div>
 
+  <!-- 예산신규등록 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="accountInquiryPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>예산신규등록</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="tab-area tabArea">
+              <ul class="tab-btn-list tab-style1">
+                <li class="tabBtn on" data-tab="tab1">기준설정</li>
+                <li class="tabBtn" data-tab="tab2">예산등록</li>
+              </ul>
+              <div class="tab-cont tabCont active" id="tab1">
+                <!-- 기준설정 -->
+                <div class="pop-line-form">
+                  <div class="pop-layout pop-sLabel labelW-xs">
+                    <ul>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">법인코드</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KTC0002" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">법인명</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KT커머스" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">사업장코드</label>
+                          <div class="form-layout form-search">
+                            <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
+                            <button class="btn btn-search2" onclick="inLyOpen('myMngOfficePopup')">검색</button>
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">사업장명</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="케이티커머스" placeholder="" readonly="readonly">
+                          </div>
+                        </div>
+                      </li>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">예산년</label>
+                          <div class="form-layout">
+                            <div class="form-layout3">
+                              <select class="select" name="" id="" >
+                                <option value="" selected>2021</option>
+                                <option value=""></option>
+                              </select>
+                            </div>
+                            <label class="check-style1 ml20"><input type="checkbox" name=""><i></i><span>연속지정</span></label>
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">기간구분</label>
+                          <div class="form-layout">
+                            <select class="select" name="" id="" >
+                              <option value="" selected>월간</option>
+                              <option value="">분기</option>
+                              <option value="">반기</option>
+                              <option value="">연간</option>
+                              <option value="">일간</option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- 기간구분 월간/분기/반기/연간/ 선택시 select 노출 -->
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">기간값</label>
+                          <div class="form-layout">
+                            <select class="select" name="" id="" >
+                              <option value="" selected>2021</option>
+                              <option value=""></option>
+                            </select>
+                          </div>
+                        </div>
+                      </li>
+                      <!--// 기간구분 월간/분기/반기/연간/ 선택시 select 노출 -->
+                      <!-- 기간구분 일간 선택시 datepicker 노출 -->
+                      <li>
+                        <div class="pop-ip-area">
+                          <label for="">기간값</label>
+                          <div class="form-layout">
+                            <div class="form-inline w441">
+                              <input type="text" class="datepicker mo-hide" value="">
+                              <input type="date" class="datepicker pc-hide" value="">
+                              <em class="bar">-</em>
+                              <input type="text" class="datepicker mo-hide" value="">
+                              <input type="date" class="datepicker pc-hide" value="">
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <!--// 기간구분 일간 선택시 datepicker 노출 -->
+                    </ul>
+                  </div>
+                </div>
+                <div class="half-list-box">
+                  <div class="list-con list-file-con">
+                    <div class="tit-area3">
+                      <div class="tit-type2">
+                        <p class="sub-txt">부서지정</p>
+                      </div>
+                      <div class="btn-r-area">
+                        <button class="btn btn-style-m4">추가</button>
+                      </div>
+                    </div>
+                    <div class="file-con">
+                      <div class="in-grid-size w-all">
+                        부서 리스트 그리드영역
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="list-con list-file-con">
+                    <div class="tit-area3">
+                      <div class="tit-type2">
+                        <p class="sub-txt">계정지정</p>
+                      </div>
+                      <div class="btn-r-area">
+                        <div class="form-layout3">
+                          <input type="text" name="" class="input" value="" placeholder="">
+                          <button class="btn btn-style-m4 ml5">검색</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="file-con">
+                      <div class="in-grid-size w-all">
+                        계정 리스트 그리드영역
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-area">
+                  <a href="javascript:;" class="btn btn-style-m2" onclick="lyNextTab()">다음</a>
+                </div>
+                <!--// 기준설정 -->
+              </div>
+              <div class="tab-cont tabCont" id="tab2">
+                <div class="pop-line-form">
+                  <div class="pop-layout pop-sLabel labelW-xs">
+                    <ul>
+                      <li class="pop-list-half">
+                        <div class="pop-ip-area">
+                          <label for="">법인코드</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KTC0002" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                        <div class="pop-ip-area">
+                          <label for="">법인명</label>
+                          <div class="form-layout">
+                            <input type="text" name="" class="input" value="KT커머스" placeholder="" disabled="disabled">
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="half-list-box">
+                  <div class="list-con list-file-con">
+                    <div class="tit-area3">
+                      <div class="tit-type2">
+                        <p class="sub-txt">부서지정</p>
+                      </div>
+                      <div class="btn-r-area">
+                        <button class="btn btn-style-m4">추가</button>
+                      </div>
+                    </div>
+                    <div class="file-con">
+                      <div class="in-grid-size w-all">
+                        부서 리스트 그리드영역
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-bottom-form">
+                  <div class="ip-area-s">
+                    <label for="">부서그룹</label>
+                    <div class="form-layout w102">
+                      <input type="text" name="" class="input" value="" placeholder="">
+                    </div>
+                  </div>
+                  <div class="ip-area-s">
+                    <label for="">계정그룹</label>
+                    <div class="form-layout w102">
+                      <input type="text" name="" class="input" value="" placeholder="">
+                    </div>
+                  </div>
+                  <div class="ip-area-s">
+                    <label for="">한도금액</label>
+                    <div class="form-layout w102">
+                      <input type="text" name="" class="input" value="" placeholder="">
+                    </div>
+                    <button class="btn btn-style-m4 ml5">일괄지정</button>
+                  </div>
+                </div>
+                <!-- 예산등록 -->
+                <div class="btn-area">
+                  <a href="javascript:;" class="btn btn-style-m1" onclick="lyPrevTab()">이전</a>
+                  <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">저장</a>
+                </div>
+                <!--// 예산등록 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //예산신규등록 팝업 -->
+  
+  <!-- 예산집계 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="budgetAggregationPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>예산집계</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="tab-area tabArea">
+              <ul class="tab-btn-list tab-style1">
+                <li class="tabBtn on" data-tab="tab2-1">부서별</li>
+                <li class="tabBtn" data-tab="tab2-2">그룹별</li>
+              </ul>
+              <div class="tab-cont tabCont active" id="tab2-1">
+                <div class="half-list-box">
+                  <div class="list-file-con">
+                    <div class="file-con">
+                      <div class="in-grid-size w-all">
+                        부서별 예산집계 리스트 그리드
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-cont tabCont" id="tab2-2">
+                <div class="half-list-box">
+                  <div class="list-file-con">
+                    <div class="file-con">
+                      <div class="in-grid-size w-all">
+                        그룹별 예산집계 리스트 그리드
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //예산집계 팝업 -->
+
+  <!-- 예산복사 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="budgetCopyPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>예산복사</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-sLabel labelW-xs">
+              <ul>
+                <li class="pop-list-half2">
+                  <div class="pop-ip-area">
+                    <label for="">사업장<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <div class="form-search w127">
+                        <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
+                        <button class="btn btn-search2" onclick="inLyOpen('myMngOfficePopup')">검색</button>
+                      </div>
+                      <input type="text" name="" class="input ml5" value="KT커머스" placeholder="" readonly="readonly">
+                    </div>
+                  </div>
+                  <div class="pop-ip-area">
+                    <label for="">예산년<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <div class="form-layout3">
+                        <select class="select" name="" id="" >
+                          <option value="" selected>2021</option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pop-list-half2">
+                  <div class="pop-ip-area">
+                    <label for="">기간구분<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <select class="select" name="" id="" >
+                        <option value="" selected>월간</option>
+                        <option value="">분기</option>
+                        <option value="">반기</option>
+                        <option value="">연간</option>
+                        <option value="">일간</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="pop-ip-area">
+                    <label for="">기간값<i class="req">*</i></label>
+                    <div class="form-layout">
+                      <select class="select" name="" id="" >
+                        <option value="" selected>2021</option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="half-list-box">
+              <div class="list-con list-file-con">
+                <div class="grid-search-area">
+                  <div class="form-layout3">
+                    <input type="text" name="" class="input" value="" placeholder="">
+                    <button class="btn btn-style-m4 ml5">검색</button>
+                  </div>
+                </div>
+                <div class="file-con">
+                  <div class="in-grid-size w-all">
+                    예산복사 리스트 그리드영역
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" class="btn btn-style-m2">저장</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //예산복사 팝업 -->
+
+  <!-- 예산이월 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="budgetCarryOverPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>예산이월</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-sLabel labelW-xs">
+              <ul>
+                <li class="pop-list-half2">
+                  <div class="pop-ip-area">
+                    <label for="">사업장</label>
+                    <div class="form-layout">
+                      <div class="form-search w127">
+                        <input type="text" name="" class="input" value="KTC0002" placeholder="" readonly="readonly">
+                        <button class="btn btn-search2" onclick="inLyOpen('myMngOfficePopup')">검색</button>
+                      </div>
+                      <input type="text" name="" class="input ml5" value="KT커머스" placeholder="" readonly="readonly">
+                    </div>
+                  </div>
+                  <div class="pop-ip-area">
+                    <label for="">예산년</label>
+                    <div class="form-layout">
+                      <div class="form-layout3">
+                        <select class="select" name="" id="" disabled>
+                          <option value="" selected>2021</option>
+                          <option value=""></option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="pop-list-half2">
+                  <div class="pop-ip-area">
+                    <label for="">부서</label>
+                    <div class="form-layout">
+                      <div class="form-search w127">
+                        <input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+                        <button class="btn btn-search2" onclick="inLyOpen('myMngOfficePopup')">검색</button>
+                      </div>
+                      <input type="text" name="" class="input ml5" value="" placeholder="" readonly="readonly">
+                    </div>
+                  </div>
+                  <div class="pop-ip-area">
+                    <label for="">기간구분</label>
+                    <div class="form-layout">
+                      <select class="select" name="" id="" >
+                        <option value="" selected>월간</option>
+                        <option value="">분기</option>
+                        <option value="">반기</option>
+                        <option value="">연간</option>
+                        <option value="">일간</option>
+                      </select>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="half-list-box">
+              <div class="list-con list-file-con">
+                <div class="file-con">
+                  <div class="in-grid-size w-all">
+                    예산이월 리스트 그리드영역
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-bottom-form align-r">
+              <div class="ip-area-s">
+                <label for="">계정명</label>
+                <div class="form-layout w370">
+                  <select class="select" name="" id="" >
+                    <option value="" selected>이월대상 예산이 없습니다.</option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <p class="pop-info-txt"><em>*</em> 다른 계정으로 예산을 이월할 경우, 우측 계정을 선택해 주십시오.<br>계정을 선택안하면 체크 된 예산과 같은 계정의 예산으로 자동 이월됩니다.</p>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" class="btn btn-style-m2">저장</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //예산이월 팝업 -->
+
+  <!-- 엑셀업로드 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="excelUploadPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>엑셀 업로드</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-register pop-restock">
+              <div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn on" data-tab="tab3-1">업로드</li>
+									<li class="tabBtn" data-tab="tab3-2">엑셀조회</li>
+								</ul>
+								<div class="tab-cont tabCont active" id="tab3-1">
+									<div class="pop-write">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>파일선택<i class="req">*</i></th>
+                          <td>
+                            <button class="btn form-down-btn">양식 다운로드</button>
+                            <div class="filebox">
+                              <input class="upload-name input " value="" readonly>
+                              <label for="file">파일 선택</label> 
+                              <input type="file" id="file"> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="input">
+                          <th>추가설명</th>
+                          <td>
+                            <div class="before-num">
+                              <ul>
+                                <li>반드시<em>양식에 맞춰서</em>작성하셔야 합니다.</li>
+                                <li><em>xls 파일</em>만 업로드 가능합니다.</li>
+                                <li>입력 항목 중 부서그룹, 계정그룹은 <em>선택 입력</em> 항목입니다.<br>
+                                  - 위의 Template Excel 파일은 다운로드하여 사용하셔도 됩니다.
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;"  onclick="lyNextTab()" class="btn btn-style-m2">업로드</a>
+                  </div>
+								</div>
+								<div class="tab-cont tabCont" id="tab3-2">
+                  <div class="pop-write">
+                    <div class="excel-wrap">
+                      그리드 영역
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
+                  </div>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- // 엑셀업로드 팝업 -->
+
   <!-- 고객사 사업장 조회 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="myMngOfficePopup">
     <!-- id 값 버튼과 연결해주세요. -->
@@ -416,7 +936,7 @@
         <div class="popup-cont">
           <div class="lyTitle center">
             <p>고객사 사업장 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+            <a href="javascript:;" class="inLyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
             <div class="pop-layout pop-suggestion">
@@ -447,127 +967,6 @@
     </div>
   </div>
   <!-- //고객사 사업장 조회 팝업 -->
-
-  <!-- 고객사 부서 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngSectionPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>고객사 부서 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">부서</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //고객사 부서 조회 팝업 -->
-
-  <!-- 고객사 사용자 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngUserPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>고객사 사용자 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">사용자</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //고객사 사용자 조회 팝업 -->
-  
-  <!-- 협력사 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngPartnersPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>협력사 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">협력사명</option>
-                    <option value="">협력사코드</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //협력사 조회 팝업 -->
-  
 
 
   <!-- 퀵메뉴 -->
@@ -611,13 +1010,17 @@
       tab() // 탭 
       toggleBtn(); // 토글버튼
       accordion(); // 아코디언
+      inLyClose(); // 팝업안에 팝업 닫기
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
       orderFormeTgView(); // 주문현황 폼영역 열고 닫기
       lyboxWrap(); // 주문상태 레이어 이벤트
+      
     });
+    
   </script>
+
   <!-- javascript -->
 </body>
 

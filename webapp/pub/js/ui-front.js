@@ -780,6 +780,31 @@ function fileupload(){
   });
 }
 
+function lyNextTab(){
+  // 팝업 다음버튼 클릭 이벤트(첫번째 탭으로 이동)
+  $('.tabArea').each(function(){
+    var tabNextBt = $(this).find('.tabBtn');
+    var tabNextCt = $(this).find('.tabCont');
+    tabNextBt.removeClass('on');
+    tabNextBt.eq(1).addClass('on');
+    tabNextCt.removeClass('active');
+    tabNextCt.eq(1).addClass('active');
+  });
+  
+}
+
+function lyPrevTab(){
+  // 팝업 이전버튼 클릭 이벤트(두번쨰 탭으로 이동)
+  $('.tabArea').each(function(){
+    var tabPrevBt = $(this).find('.tabBtn');
+    var tabPrevCt = $(this).find('.tabCont');
+    tabPrevBt.removeClass('on');
+    tabPrevBt.eq(0).addClass('on');
+    tabPrevCt.removeClass('active');
+    tabPrevCt.eq(0).addClass('active');
+  });
+}
+
 
 
 // function btnTooltip(){

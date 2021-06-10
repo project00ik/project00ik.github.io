@@ -199,7 +199,7 @@
     </footer>
   </div>
   <!-- 엑셀업로드 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="mypageExcelPopup">
+  <div class="lyPopupWrap popup-type-m" id="excelUploadPopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
@@ -292,17 +292,11 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-      lyOpen('mypageExcelPopup');
+      lyOpen('excelUploadPopup');
 
       fileupload();//파일업로드
     });
-    function lyNextTab(){
-      // 다음버튼 클릭 이벤트(두번째 탭으로 이동)
-      $('.tabBtn').removeClass('on');
-      $('.tabBtn').eq(1).addClass('on');
-      $('.tabCont').removeClass('active');
-      $('.tabCont').eq(1).addClass('active');
-    }
+    
   </script>
   <!-- javascript -->
 </body>
