@@ -91,9 +91,9 @@
 .unit-cart .normal-price > b {font-weight:400; font-size:16px; vertical-align:text-bottom;}
 .unit-cart .check-style2 {margin-top:-11px; position:absolute; top:50%; left:20px; z-index:8;}
 
-.unit-cart .unit-area .del-area {}
-.unit-cart .unit-area .del-area .in-del-txt {margin-top: 20px; padding-bottom: 10px; font-size: 12px; color: #666;}
-.unit-cart .unit-area .del-area .del-box {display: inline-block; position: relative; padding: 6px 5px 5px 7px; font-size: 14px; color: #fff; font-weight: 500; background: #12b5cf;}
+.unit-cart .unit-area .del-area {display: flex; flex-wrap: wrap;}
+.unit-cart .unit-area .del-area .in-del-txt {flex: 1px; width: 100%; margin-top: 20px; padding-bottom: 10px; font-size: 12px; color: #666;}
+.unit-cart .unit-area .del-area .del-box {margin-left: 5px; display: inline-block; position: relative; padding: 6px 5px 5px 7px; font-size: 14px; color: #fff; font-weight: 500; background: #12b5cf;}
 .unit-cart .unit-area .del-area .del-box .info-txt {display: inline-block; margin-right: 3px; line-height: 18px; vertical-align: top;}
 .unit-cart .unit-area .del-area .del-box .del {font-size: 0; display: inline-block; width: 18px; height: 18px; background: url(../images/common/btn_del_white.svg) 0 0 no-repeat;}
 
@@ -367,6 +367,7 @@
     .unit-cart .unit-area .sale {margin-left: 0;}
     .unit-cart .normal-price {margin-right: 10px;}
     .unit-cart .unit-area .price {margin-right: 10px;}
+
 
     /* quick주문 */
     .top-write-box {flex-wrap: wrap; margin-bottom: 0;}
