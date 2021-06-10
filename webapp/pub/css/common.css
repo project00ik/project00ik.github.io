@@ -29,6 +29,13 @@
 .header-cont .right-area {position:absolute; top:5px; right:0; font-size:0;}
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 
+/* 장바구니박스 */
+.cart-box {position: absolute; top: 0; right: 0; padding: 20px; border: 1px solid #000; background: #fff;}
+.cart-box .cart-in-list li {padding-bottom: 10px;}
+.cart-box .cart-in-list li:last-child {padding-bottom: 0;}
+.cart-box .cart-in-list li a {display: block;}
+.cart-box .cart-in-list li a p {font-size: 14px; color: #000;}
+
 /* 검색박스 */
 .search-box.on {display: block;}
 .search-box {display: none; position: absolute; top: 38px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #000;}

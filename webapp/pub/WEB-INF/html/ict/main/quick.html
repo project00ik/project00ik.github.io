@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>kt commerce</title>
+  <meta charset="utf-8" />
+  <meta property="og:title" content="ktcommerce" />
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body> 
+  <div class="wrap">
+    <header class="header">
+      <div class="header-top">
+        <a href="#" class="bul-bar">로그아웃</a>
+        <a href="#" class="bul-bar">고객센터</a>
+      </div>
+      <div class="header-cont">
+        <h1 class="logo"><a href="#"><img src="../../../../images/layout/logo_ictmall.png" alt="ICTMALL 로고"></a>
+        </h1>
+        <div class="search-area">
+          <div class="inp-area">
+            <input type="search" name="" id="" class="inp" placeholder="기업 자재 일괄 구매는 ICTMALL에서!!!">
+            <button class="del">삭제</button>
+          </div>
+          <button class="btn btn-search">검색</button>
+        </div>
+        <div class="right-area">
+          <div class="icon-btn cart">
+            <a href="#">
+              장바구니
+              <span class="cart-num">99</span>
+            </a>
+          </div>
+          <div class="icon-btn member">
+            <a href="#">
+              개인
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-area gnbPC">
+          <!-- header 카테고리 
+            [작업 시 참고 내용 (카테고리 총 3개)]
+            1. pc용 카테고리 2개 : header 카테고리와 메인 고정 카테고리 (메인에만 카테고리 2개 / 서브페이지는 header영역만 1개)
+            2. mobile용 카테고리 1개 : 레이어팝업 형태로 제일 하단에 위치함
+          -->
+          <!-- header 카테고리 -->
+          <div class="cate-area">
+            <button class="btn-cate btnCate">전체카테고리</button>
+            <button class="btn-cate moBtnCate">전체카테고리</button>
+        </div>
+        <!--// header 카테고리 -->
+          <div class="gnb">
+            <ul>
+              <li><a href="#">브랜드</a></li>
+              <li><a href="#">베스트</a></li>
+              <li><a href="#">특가 세일</a></li>
+              <li><a href="#">이벤트</a></li>
+            </ul>
+          </div>
+          <ul class="gnb-right-area">
+            <div class="real-time-search">
+              <div class="swiper-container realtimeSearchSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="real-time-more realTimeMore">실시간 검색 더보기</button>
+              <div class="real-time-layer realtimeLayer">
+                <ul class="all-list">
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <button class="layer-close realtimeLyClose">닫기</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="sub-content cart-content">
+        <div class="cart-top">
+          <p class="tit-type1-2">QUICK 주문</p>
+        </div>
+        <div class="cart-list-con">
+          <div class="top-write-box">
+            <label for="">상품코드 입력</label>
+            <div class="form-layout">
+              <input type="text" name="" class="input" value="" placeholder="10013098">
+              <button class="btn btn-style-m3 ml5">확인</button>
+            </div>
+            <p class="notice-txt">주문수량은 최초 1개로 설정되고, 주문수정 클릭후 수정가능합니다.</p>
+          </div>
+          <div class="tit-area">
+            <p class="left-area">
+              <label class="check-style2"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
+              <span class="sub-txt">(주문 상품수 : <b>2</b>건<i class="bar-verti"></i>총 수량 : <b>5</b>개)</span>
+            </p>
+            <div class="right-area">
+              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('registerPopup')">상품 일괄 업로드</button>
+            </div>
+          </div>
+          <!-- 장바구니 목록 -->
+          <div class="list-con">
+            <ul>
+              <li>
+                <div class="unit-cart">
+                  <a href="#상품링크" class="unit-link">
+                    <dl class="unit-area">
+                      <dt>
+                        <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                      </dt>
+                      <dd>
+                        <p class="brand">Aimsak</p>
+                        <p class="product-name">BL22T806 해머드릴 21.6V
+                          6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                        <p class="standard">W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색</p>
+                        <div class="option-area">
+                          <p class="code">상품코드 : 10013098</p>
+                          <p class="option">구매옵션 : 6.5인치/3700RPM</p>
+                        </div>
+                        <p class="order-quantity">주문수량 : 1 (최소주문:1PACK)</p>
+                        <div class="price-area">
+                          <div class="flag-txt blue">볼륨DC</div>
+                          <p class="price"><b>100,000</b>원</p>
+                          <p class="normal-price"><b>99,900,000</b>원</p>
+                          <p class="sale"><b>90,000</b>원</p>
+                        </div>
+                      </dd>
+                    </dl>
+                  </a>
+                  <ul class="unit-under-btn">
+                    <li class="del">
+                      <a href="#삭제" class="btn btn-style-m1">삭제</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="btn btn-style-m1" onclick="buyNowLy('orderModiLayer')">주문수정</a>
+                      <a href="#바로구매" class="btn btn-buynow">바로구매</a>
+                    </li>
+                  </ul>
+                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                </div>
+              </li>
+              <li>
+                <div class="unit-cart">
+                  <a href="#상품링크" class="unit-link">
+                    <dl class="unit-area">
+                      <dt class="soldeout">
+                        <span class="soldeout-txt">SOLD<br>OUT</span>
+                        <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                      </dt>
+                      <dd>
+                        <p class="brand">Aimsak</p>
+                        <p class="product-name">BL22T806 해머드릴 21.6V
+                          6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                        <p class="standard">W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색</p>
+                        <div class="option-area">
+                          <p class="code">상품코드 : 10013098</p>
+                          <p class="option">구매옵션 : 6.5인치/3700RPM</p>
+                        </div>
+                        <p class="order-quantity">주문수량 : 1 (최소주문:1PACK)</p>
+                        <div class="price-area">
+                          <div class="flag-txt blue">볼륨DC</div>
+                          <p class="price"><b>100,000</b>원</p>
+                          <p class="normal-price"><b>99,900,000</b>원</p>
+                          <p class="sale"><b>90,000</b>원</p>
+                        </div>
+                      </dd>
+                    </dl>
+                  </a>
+                  <ul class="unit-under-btn">
+                    <li class="del">
+                      <a href="#삭제" class="btn btn-style-m1">삭제</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
+                    </li>
+                  </ul>
+                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                </div>
+              </li>
+              <li>
+                <div class="unit-cart">
+                  <a href="#상품링크" class="unit-link">
+                    <dl class="unit-area">
+                      <dt>
+                        <img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                      </dt>
+                      <dd>
+                        <p class="brand">Aimsak</p>
+                        <p class="product-name">BL22T806 해머드릴 21.6V
+                          6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                        <p class="standard">W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색</p>
+                        <div class="option-area">
+                          <p class="code">상품코드 : 10013098</p>
+                          <p class="option">구매옵션 : 6.5인치/3700RPM</p>
+                        </div>
+                        <p class="order-quantity">주문수량 : 1 (최소주문:1PACK)</p>
+                        <div class="price-area">
+                          <div class="flag-txt blue">볼륨DC</div>
+                          <p class="price"><b>100,000</b>원</p>
+                          <p class="normal-price"><b>99,900,000</b>원</p>
+                          <p class="sale"><b>90,000</b>원</p>
+                        </div>
+                      </dd>
+                    </dl>
+                  </a>
+                  <ul class="unit-under-btn">
+                    <li class="del">
+                      <a href="#삭제" class="btn btn-style-m1">삭제</a>
+                    </li>
+                    <li>
+                      <a href="javascript:;" class="btn btn-style-m1" onclick="buyNowLy('orderModiLayer')">주문수정</a>
+                      <a href="#바로구매" class="btn btn-buynow">바로구매</a>
+                    </li>
+                  </ul>
+                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--// 장바구니 목록 -->
+
+          <!-- 목록 하단버튼 -->
+          <div class="btn-r-area2">
+            <button class="btn btn-small-line">선택상품 삭제</button>
+            <button class="btn btn-small-line">품절상품 삭제</button>
+          </div>
+          <!--// 목록 하단버튼 -->
+        </div>
+        <!-- 결제예정금액 -->
+        <div class="cart-total-area">
+          <dl>
+            <dt>총 주문금액</dt>
+            <dd>
+              <p class="price"><b>100,000</b>원</p>
+            </dd>
+          </dl>
+          <dl>
+            <dt>총 할인금액</dt>
+            <dd>
+              <p class="price"><b>70,000</b>원</p>
+            </dd>
+          </dl>
+          <dl class="total">
+            <dt>결제예정금액</dt>
+            <dd>
+              <p class="price"><b>210,000</b>원</p>
+              <p class="info-txt">(VAT포함 231,000원)</p>
+            </dd>
+          </dl>
+        </div>
+        <!--// 결제예정금액 -->
+        <div class="btn-area-c mo-fixed-btn">
+          <button class="btn btn-style-ml1">장바구니</button>
+          <button class="btn btn-style-ml2">바로구매</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-wrap mo-hide">
+      <div class="footer"><div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>이용약관</li>
+            <li><b class="point-color1">개인정보처리방침</b></li>
+          </ul>
+          <ul class="question">
+            <li>상담문의 <a href="tel:1577-3712" class="phone-link">1577-3712</a></li>
+            <li>이메일문의 <a href="mailto:ktcommerce@kt.com" class="mail-link">ktcommerce@kt.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-cont">
+          <p class="footet-logo">
+            <img src="../../../../images/layout/logo_footer.png" alt="kt commerce 로고">
+          </p>
+          <div class="footer-info">
+            <span>서울시 강남구 광평로 47길 28 <br class="pc-hide">KT수서지점 4층 케이티커머스(주)</span>
+            <span>대표이사 : 조창환</span><br class="mo-hide">
+            <span>사업자등록번호 : 107-86-18163</span>
+            <span>통신판매신고 : 강남-1568</span>
+            <span>개인정보최고책임자 : 김태기 본부</span>
+          </div>
+          <p class="copyright">COPYRIGHT ⓒ kt commerce ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- 퀵메뉴 -->
+  <div class="quick-menu non-footer-quick">
+    <div class="qk-group">
+        <a href="#" class="qk-notify">
+            <u></u><span>알림</span>
+            <div class="noti-txt">
+                <p class="mo-hide">배송중인 상품이 있습니다.</p>
+                <p class="pc-hide">1</p>
+            </div>
+        </a>
+        <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
+        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
+        <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+        <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
+        <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
+    </div>
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+  </div>
+  <!--// 퀵메뉴 -->
+
+  <!-- 주문수정 레이어 -->
+  <div class="ly-buyNowLy" id="orderModiLayer">
+    <div class="ly-buyNowLy-wrap">
+      <div class="ly-buyNowLy-cont">
+        <div class="pro-detail-slide">
+          <!-- 상품 슬라이드 Swiper -->
+          <div class="swiper-container productDetaileSlide2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-img">
+                  <img src="../../../../images/product/img_review_ex.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-img">
+                  <img src="../../../../images/product/img_review_ex2.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-img">
+                  <img src="../../../../images/product/img_review_ex3.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-img">
+                  <img src="../../../../images/product/img_review_ex.png" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-img">
+                  <img src="../../../../images/product/img_review_ex2.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--// 상품 슬라이드 Swiper -->
+          <!-- 썸네일 슬라이드 Swiper -->
+          <div class="swiper-container productDetaileSlide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../../../../images/product/img_review_ex.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../../../../images/product/img_review_ex2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../../../../images/product/img_review_ex3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../../../../images/product/img_review_ex.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../../../../images/product/img_review_ex2.png" />
+              </div>
+            </div>
+            <div class="swiper-button-prev">이전</div>
+            <div class="swiper-button-next">다음</div>
+          </div>
+          <!--// 썸네일 슬라이드 Swiper -->
+        </div>
+        <div class="option-wrap">
+          <button class="option-ly-btn-open" onclick="buyNowLyClose()">닫기</button>
+          <div class="pro-detail-info">
+            <p class="brand">DeWalt</p>
+            <p class="product-name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+            <div class="price-area align-area">
+              <div class="left">
+                <p class="normal-price"><b>99,900,000</b>원</p>
+                <p class="price"><b>100,000</b>원</p>
+                <span class="flag-txt blue ">볼륨DC</span>
+              </div>
+            </div>
+          </div>
+          <!-- 옵션 선택 영역 -->
+          <div class="option-area">
+            <div class="form-area">
+              <select class="select">
+                <option value="" selected>옵션을 선택해 주세요.</option>
+                <option value="">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</option>
+              </select>
+            </div>
+            <div class="form-area">
+              <select class="select">
+                <option value="" selected>옵션을 선택해 주세요.</option>
+                <option value="">6.5인치 / 3700RPM</option>
+              </select>
+            </div>
+          </div>
+          <!--// 옵션 선택 영역 -->
+          <!-- 옵션 선택 시 노출 영역 -->
+          <div class="option-result">
+            <!-- 옵션 -->
+            <div class="option-box">
+              <div class="option-name">
+                <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                <p class="option">6.5인치 / 3700RPM</p>
+              </div>
+              <ul class="option-price">
+                <li>
+                  <div class="spinner">
+                    <input type="text" value="1" maxlength="3" title="수량조절">
+                    <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+                  </div>
+                  <p class="minimum-order">(최소 주문수량 1개)</p>
+                </li>
+                <li>
+                  <p class="price"><b>100,000</b>원</p>
+                </li>
+              </ul>
+              <button class="btn btn-del">옵션삭제</button>
+            </div>
+            <!--// 옵션 -->
+            <!-- 옵션 -->
+            <div class="option-box">
+              <div class="option-name">
+                <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                <p class="option">6.5인치 / 3700RPM</p>
+              </div>
+              <ul class="option-price">
+                <li>
+                  <div class="spinner">
+                    <input type="text" value="999" maxlength="3" title="수량조절">
+                    <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+                  </div>
+                  <p class="minimum-order">(최소 주문수량 1개)</p>
+                </li>
+                <li>
+                  <p class="normal-price">99,900,000</p>
+                  <p class="price"><b>89,910,000</b>원</p>
+                </li>
+              </ul>
+              <button class="btn btn-del">옵션삭제</button>
+            </div>
+            <!--// 옵션 -->
+            <!-- 옵션 -->
+            <div class="option-box">
+              <div class="option-name">
+                <p class="name">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                <p class="option">6.5인치 / 3700RPM</p>
+              </div>
+              <ul class="option-price">
+                <li>
+                  <div class="spinner">
+                    <input type="text" value="999" maxlength="3" title="수량조절">
+                    <a href="javascript:;" class="down">-</a><a href="javascript:;" class="up">+</a>
+                  </div>
+                  <p class="minimum-order">(최소 주문수량 1개)</p>
+                </li>
+                <li>
+                  <p class="normal-price">99,900,000</p>
+                  <p class="price"><b>89,910,000</b>원</p>
+                </li>
+              </ul>
+              <button class="btn btn-del">옵션삭제</button>
+            </div>
+            <!--// 옵션 -->
+          </div>
+          <!--// 옵션 선택 시 노출 영역 -->
+          <!-- 총 구매 금액 -->
+          <div class="product-total">
+            <p class="tit">총 구매 금액</p>
+            <div class="total-price">
+              <p class="price"><b>90,010,000</b>원</p>
+              <p class="price-info">(VAT포함 110,000원)</p>
+            </div>
+          </div>
+          <!--// 총 구매 금액 -->
+        </div>
+      </div>
+      <div class="btn-area">
+        <a href="javascript:;" onclick="buyNowLyClose()" class="lyClose btn btn-style-ml2">바로구매</a>
+      </div>
+    </div>
+  </div>
+  <!--// 주문수정 레이어 -->
+  <!--상품일괄등록 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="registerPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>상품일괄등록</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-register pop-restock">
+              <div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn on" data-tab="tab1">파일선택</li>
+									<li class="tabBtn" data-tab="tab2">엑셀조회</li>
+								</ul>
+								<div class="tab-cont tabCont active" id="tab1">
+									<div class="pop-write">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>파일선택</th>
+                          <td>
+                            <button class="btn form-down-btn">양식 다운로드</button>
+                            <div class="filebox">
+                              <input class="upload-name input " value="" readonly>
+                              <label for="file">파일 선택</label> 
+                              <input type="file" id="file"> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="input">
+                          <th>추가설명</th>
+                          <td>
+                            양식의 필수항목은 모두 등록해 주시기 바랍니다.<br/>(필수항목 : 상품코드, 수량)
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
+                  </div>
+								</div>
+								<div class="tab-cont tabCont" id="tab2">
+                  <div class="pop-write">
+                    <div class="excel-wrap">
+                      그리드 영역
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
+                  </div>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //상품일괄등록 팝업 -->
+  <!-- 주문서 불러오기 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="orderlistPopup2">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>주문서 불러오기</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-orderlist">
+              <div class="user-search">
+                <select class="select" name="" id="">
+                  <option value="">저장하신 주문서를 선택해 주세요.</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                </select>
+              </div>
+              <p class="ex">※ 저장된 주문서의 수정/삭제는 마이페이지 &gt; 나의쇼핑 &gt; 임시주문서관리에서 확인가능합니다.</p>
+              <div class="orderlist-wrap">
+                <ul>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)DCS391N 전동스킬 18V 충전 원형톱(베어툴)DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div>
+                      <img src="../../../../images/product/img_review_ex.png">
+                      <div>
+                        <p class="ellipsis">DCS391N 전동스킬 18V 충전 원형톱(베어툴)</p>
+                        <em>6.5인치/3700RPM</em>
+                        <em>1 EA</em>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //주문서 불러오기 팝업 -->
+
+    <!--재입고 알림 신청 팝업 -->
+    <div class="lyPopupWrap popup-type-m" id="restockPopup2">
+      <!-- id 값 버튼과 연결해주세요. -->
+      <div class="lyPopup">
+        <div class="popup-wrap">
+          <div class="popup-cont">
+            <div class="lyTitle">
+              <p>재입고 알림 신청</p>
+              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+            </div>
+            <div class="lyPopCont">
+              <div class="pop-layout pop-restock">
+                <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
+                <div class="pop-write">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th rowspan="2">상품정보</th>
+                        <td>
+                          <div>
+                            <label>상품코드</label>
+                            <div>
+                              <p>102622887</p>
+                            </div>
+                            
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div>
+                            <label>상품명</label>
+                            <div>
+                              <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="input">
+                        <th rowspan="3">알림 수신자 정보</th>
+                        <td>
+                          <div class="input">
+                            <label>수신자 성명</label>
+                            <div class="form-layout">
+                              <input type="text" class="input" value="김상현" readonly="">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="input">
+                        <td>
+                          <div>
+                            <label>메일주소</label>
+                            <div class="form-layout">
+                              <input type="text" class="input" value="61781104991@null.com" >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="btn-area">
+              <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //재입고 알림 신청 팝업 -->
+
+    
+  <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
+  <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../../js/ui-front.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /* ==========================================================================
+          공통 js (ui-front.js)
+      ========================================================================== */
+      /* 레이아웃 */
+      allCategoryBtn(); // gnb 전체카테고리 열고 닫기
+      layoutCategory(); // 카테고리 레이어 이벤트
+      realtimeSearchSlide(); //header 실시간검색 swiper(plugin)
+      // quickTopBtn(); // 스크롤 최상단으로 이동
+      // quickFloating(); //퀵 플로팅 모바일 펼치기 js
+
+      /* 컨텐츠 공통 */
+      tab(); // 탭 
+      toggleBtn(); // 토글버튼
+      accordion(); // 아코디언
+      
+      /* ==========================================================================
+      현재페이지에서만 사용 js
+      ========================================================================== */
+      delBtn(); // 옵션 삭제
+      buyNowLy(); // 주문수정 레이어 팝업
+      // 주문수정 상품슬라이드
+      // 썸네일
+      $('.pro-detail-slide').each(function(){
+        var productDetaileSlide = new Swiper($(this).find('.productDetaileSlide'), {
+          direction: 'horizontal',
+          spaceBetween: 10,
+          slidesPerView: 5,
+          touchRatio: 0,//드래그 금지
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          observer: true,
+          observeParents: true,
+        });
+        // 상품이미지
+        var productDetaileSlide2 = new Swiper($(this).find('.productDetaileSlide2'), {
+          spaceBetween: 10,
+          observer: true,
+          touchRatio: 0,//드래그 금지
+          observeParents: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: productDetaileSlide,
+          },
+        });
+      });
+    });
+  </script>
+  <!-- javascript -->
+</body>
+
+</html>
