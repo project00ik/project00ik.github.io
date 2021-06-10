@@ -48,7 +48,7 @@
 .pop-restock .pop-write td strong {color:#346DD0;}
 .pop-restock .pop-write .input td div label {line-height:38px;}
 .pop-restock .pop-write .input td div.form-layout {display:block;width:calc(100% - 100px);}
-.pop-restock .pop-write  .req{color: #346dd0;font-style: normal;vertical-align: top;padding: 0 3px;}
+.pop-restock .pop-write .req{color: #346dd0;font-style: normal;vertical-align: top;padding: 0 3px;}
 .pop-restock .tab-area .pop-write th{width: 120px;text-align: center;padding: 20px 0;}
 
 .pop-restock.pop-register  {text-align:left;}
@@ -95,8 +95,8 @@
 .top-write-box {display: flex; align-items: center; padding: 20px; margin-bottom: 30px; background: #f5f5f5;}
 .top-write-box .form-layout {width: 393px; margin: 0 20px;}
 .top-write-box .notice-txt {margin-top: 0;}
-
-
+.quick-con .list-con {border-top: 0;}
+.quick-con .result-none2 {border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;}
 
 
 /* 장바구니 팝업*/
@@ -315,7 +315,7 @@
     .cart-list-con .tit-area .check-style2 > span {font-size:15px;}
     .cart-list-con .right-area {position:absolute; top:30px; left:20px; z-index:1;}
     .cart-list-con .list-con + .list-con {margin-top:20px;}
-    .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y:60px;}
+    .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y:70px; background-size: 50px 50px;}
     .cart-list-con .list-con ul {}
     .wish-list-con .list-con ul {border-top:1px solid #000; border-bottom:none; }
     .cart-content .list-con .list-in .btn-tooltip {margin-top: 0;}
@@ -360,6 +360,17 @@
     .unit-cart .unit-area .sale {margin-left: 0;}
     .unit-cart .normal-price {margin-right: 10px;}
     .unit-cart .unit-area .price {margin-right: 10px;}
+
+    /* quick주문 */
+    .top-write-box {flex-wrap: wrap; margin-bottom: 0;}
+    .top-write-box .form-layout {flex: 1; margin: 0 0 0 20px;}
+    .top-write-box .notice-txt {width: 100%; padding: 10px 0 0 0;}
+    .quick-con .tit-area {padding-top: 20px;}
+    .quick-con .quick-none {border: 0;}
+    .quick-con .quick-none > ul > li {border: 0; display: flex; justify-content: center;}
+    .quick-con .result-none2 {position: absolute; top: 50%; left: 0; border: 0;}
+    .color-none .btn-style-ml1 {border: 1px solid #e5e5e5; background: #fafafa; color: #d7d7d7;}
+    .color-none .btn-style-ml2 {background: #d7d7d7; color: #fff;}
 
     /* 장바구니 팝업 */
     .pop-restock  {text-align:left;}

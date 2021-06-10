@@ -259,9 +259,13 @@
 
 /* 결과없음(제품) */
 .result-none {padding: 60px 20px 100px; text-align: center;}
-.result-none .b-txt {font-size: 28px; color: #000; padding: 90px 0 30px; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
+.result-none .b-txt {font-size: 28px; color: #000; padding: 80px 0 30px; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
 .result-none .b-txt b {color: #346dd0; vertical-align: baseline;}
 .result-none .s-txt {font-size: 16px; color: #999; line-height: 22px;}
+
+/* 결과없음(상품) */
+.result-none2 {padding: 150px 20px; text-align: center;}
+.result-none2 .no-txt {font-size: 16px; color: #999; line-height: 22px; padding: 80px 0 30px;  background: url(../images/common/icon_cart_02.svg) center 0 no-repeat;}
 
 /* 결과없음(리스트) */
 .result-none-list {width:100%; text-align: center; padding: 100px 0;}
@@ -447,7 +451,7 @@ button.btn-style-s1 {line-height:25px;}
 .right-txt {font-size: 14px; color: #666; text-align: right; line-height: 17px;}
 .right-txt span {color: #346DD0; vertical-align: baseline;}
 
-/* - 타이틀 */
+/* 타이틀 */
 .tit-center-area {width:100%; padding-right:100px; position:relative;}
 .tit-center-area .left-area [class^="tit"] {width:100%; text-align:center;}
 .tit-center-area .right-area {position:absolute; top:50%; right:0; transform:translateY(-50.4%); text-align:right;}
@@ -1068,6 +1072,10 @@ textarea + .cot b {vertical-align: top;}
     .result-none {padding: 24px 20px 60px;}
     .result-none .b-txt {font-size: 18px; padding: 60px 0 10px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
     .result-none .s-txt {font-size: 14px; line-height: 18px;}
+
+    /* 결과없음(상품) */
+    .result-none2 {padding: 0 20px; width: 100%;}
+    .result-none2 .no-txt {font-size: 14px; line-height: 18px; padding: 60px 0 10px; background-size: 50px 50px;}
 
     /* 결과없음(리스트) */
     .result-none-list {padding: 70px 0 100px;}
