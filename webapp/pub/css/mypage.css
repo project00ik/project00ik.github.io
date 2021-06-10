@@ -69,6 +69,10 @@
 .pop-layout .pop-list-half {display: flex; flex-wrap: wrap; justify-content: space-between;}
 .pop-layout .pop-list-half > .pop-ip-area {max-width: 300px;}
 .pop-layout .pop-list-half > .pop-ip-area.btn-r-area {padding: 0;}
+.pop-layout .pop-list-half2 {display: flex; flex-wrap: wrap; justify-content: space-between;}
+.pop-layout .pop-list-half2 > .pop-ip-area {max-width: 391px;}
+.pop-layout .pop-list-half2 > .pop-ip-area:last-child {max-width: 209px;}
+.pop-layout .pop-list-half2 > .pop-ip-area.btn-r-area {padding: 0;}
 .pop-sLabel > ul {border: none;}
 .pop-sLabel > ul li {border: none;}
 .pop-sLabel > ul > li:first-child {padding-top: 0;}
@@ -91,13 +95,20 @@
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline {display:flex;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline .datepicker {flex:1;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline.w441 {width:441px}
-.grid-bottom-form {padding-top:20px; overflow: hidden;}
-.grid-bottom-form .ip-area-s {display:inline-block; float: left; font-size:0;}
+.grid-bottom-form {padding-top:20px; overflow: hidden; font-size:0;}
+.grid-bottom-form.align-r {text-align: right;}
+.grid-bottom-form.align-r label {text-align: left;}
+.grid-bottom-form .ip-area-s {display:inline-block;}
 .grid-bottom-form .ip-area-s + .ip-area-s {margin-left:14px;}
 .grid-bottom-form label {width:72px; display:inline-block; font-size:16px;}
 .grid-bottom-form .form-layout {display: inline-block;}
 .grid-bottom-form .form-layout .input {font-size: 14px;}
 .grid-bottom-form .form-layout.w102 {width:102px;}
+.grid-bottom-form .form-layout.w370 {width:370px;}
+.grid-search-area {width:100%; margin-bottom:10px; display: flex; justify-content: flex-end;}
+.grid-search-area .form-layout3 {max-width:310px;}
+.pop-info-txt {margin-top:20px; text-indent:-9px; padding-left:9px; font-size: 14px; color:#666;}
+.pop-info-txt > em {color: #346dd0; vertical-align: top;}
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
