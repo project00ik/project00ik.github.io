@@ -30,11 +30,11 @@
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 
 /* 장바구니박스 */
-.cart-box {position: absolute; top: 0; right: 0; padding: 20px; border: 1px solid #000; background: #fff;}
+.cart-box {position: absolute; top: 53px; right: -66px; width: 158px; padding: 20px; border: 1px solid #000; background: #fff; z-index: 101;}
 .cart-box .cart-in-list li {padding-bottom: 10px;}
 .cart-box .cart-in-list li:last-child {padding-bottom: 0;}
 .cart-box .cart-in-list li a {display: block;}
-.cart-box .cart-in-list li a p {font-size: 14px; color: #000;}
+.cart-box .cart-in-list li a p {font-size: 14px; color: #000; line-height: 17px; background: url('../images/common/mo_arrow_gnb_d1_on.svg') right center no-repeat;}
 
 /* 검색박스 */
 .search-box.on {display: block;}
