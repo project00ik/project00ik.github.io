@@ -43,7 +43,7 @@
 .list-con .join-agree .agree-area .agree-cont {padding: 20px; border: 1px solid #d7d7d7; border-top: 0; font-size: 14px; line-height: 22px; text-align: left; color: #666; height: 125px; overflow-y: auto;}
 .half-list-box {display: flex; justify-content: space-between;}
 .half-list-box > div {flex: 1;}
-.half-list-box > .list-file-con + .list-file-con {margin-left: 20px;}
+.half-list-box > div + div {margin-left: 20px;}
 .half-list-box .list-con .tit-area3 {align-items: center; padding-bottom: 10px;}
 .half-list-box .list-con .tit-type2 .sub-txt {margin-left: 0;}
 .popup-wrap .half-list-box .list-con .tit-type2 .sub-txt {min-width:88px;}
