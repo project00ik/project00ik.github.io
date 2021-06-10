@@ -160,7 +160,7 @@
 .footer .footer-cont .copyright {margin-top:16px; font-size:14px; color:#999;}
 
 /* 퀵메뉴 */
-.quick-menu {margin-right:-704px; position:fixed; right:50%; top:166px; z-index:99;}
+.quick-menu {margin-right:-704px; position:fixed; right:50%; top:166px; z-index:98;}
 .quick-menu a {overflow:visible; position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; width:70px; height:70px; margin-bottom:1px; background:#000;}
 .quick-menu u {display:inline-block; width:36px; height:36px;}
 .quick-menu span {display:block; margin:2px 0 4px; font-size:13px; line-height:14px; color:#fff;}
@@ -819,13 +819,14 @@ textarea + .cot b {vertical-align: top;}
 .product-list-wrap .best-list > li.product-1st::after {content:"1"; width:50px; height:50px; font-size:32px; line-height:50px; background:#346dd0; top:0; left:0;}
 .best-list .unit-type1 {height:459px;}
 .best-list .product-1st .unit-type1 {padding:0; border:1px solid #d7d7d7;}
-.best-list .product-1st .unit-area > dt.on {animation-duration:3s; animation-name:scaleImg; opacity:1; transform:scale(1);}
+.best-list .unit-area > dt {overflow: hidden;}
+.best-list .unit-area > dt.on img {animation-duration:1s; animation-name:scaleImg;}
 @keyframes scaleImg {
     0% {
         transform:scale(1);
     }
     50% {
-        transform:scale(1.3);
+        transform:scale(1.1);
     }
     100% {
         transform:scale(1);

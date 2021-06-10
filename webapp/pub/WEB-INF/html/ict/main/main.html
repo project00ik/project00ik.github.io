@@ -19343,6 +19343,16 @@
                 }
 
             });
+
+            //  이미지 hover 
+            $('.best-list li').each(function(){
+                $(this).on('mouseenter',function(){
+                    $(this).find('.unit-area dt').addClass('on');
+                })
+                $(this).on('mouseleave',function(){
+                    $(this).find('.unit-area dt').removeClass('on');
+                })
+            });
         });
     </script>
     <!-- javascript -->
