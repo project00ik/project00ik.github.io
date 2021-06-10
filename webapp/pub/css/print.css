@@ -143,7 +143,6 @@ input::-webkit-search-results-decoration{
 .table-print table tr.no-line th:first-child {border-left: 1px solid #d7d7d7;}
 .table-print table tr.no-line td {border-left: 0; border-right: 0; padding: 13px 5px;}
 .table-print table tr.no-line td:last-child {border-right: 1px solid #d7d7d7;}
-.table-print table .row-txt {writing-mode:tb-rl;}
 
 
 
