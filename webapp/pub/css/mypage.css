@@ -91,6 +91,8 @@
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline {display:flex;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline .datepicker {flex:1;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline.w441 {width:441px}
+.grid-bottom-form {}
+.grid-bottom-form .ip-area-s {}
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}

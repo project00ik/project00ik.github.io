@@ -44,6 +44,7 @@
 .half-list-box {display: flex; justify-content: space-between;}
 .half-list-box > div {flex: 1;}
 .half-list-box > div + div {margin-left: 20px;}
+.half-list-box .divider {margin-left:0;}
 .half-list-box .list-con .tit-area3 {align-items: center; padding-bottom: 10px;}
 .half-list-box .list-con .tit-type2 .sub-txt {margin-left: 0;}
 .popup-wrap .half-list-box .list-con .tit-type2 .sub-txt {min-width:88px;}
