@@ -736,8 +736,8 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style4 table .ta-l {text-align: left !important;}
 /* 견적서 테이블 */
 .table-area table.thin-style {font-size: 13px; border: 1px solid #d7d7d7; border-top: 0;}
-.table-area table.thin-style td {padding: 5px; text-align: center;}
-.table-area table.thin-style th {padding: 5px 0;}
+.table-area table.thin-style td {padding: 5px; text-align: center; height: 49px;}
+.table-area table.thin-style th {padding: 5px 0; height: 49px;}
 .table-area table.thin-style .img-stamp {max-width:40px;}
 
 .table-info {margin-top:16px; color:#999; font-size:14px;}
