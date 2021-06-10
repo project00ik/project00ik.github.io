@@ -91,8 +91,13 @@
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline {display:flex;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline .datepicker {flex:1;}
 .pop-sLabel.labelW-xs .pop-ip-area .form-inline.w441 {width:441px}
-.grid-bottom-form {}
-.grid-bottom-form .ip-area-s {}
+.grid-bottom-form {padding-top:20px; overflow: hidden;}
+.grid-bottom-form .ip-area-s {display:inline-block; float: left; font-size:0;}
+.grid-bottom-form .ip-area-s + .ip-area-s {margin-left:14px;}
+.grid-bottom-form label {width:72px; display:inline-block; font-size:16px;}
+.grid-bottom-form .form-layout {display: inline-block;}
+.grid-bottom-form .form-layout .input {font-size: 14px;}
+.grid-bottom-form .form-layout.w102 {width:102px;}
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
