@@ -374,6 +374,7 @@
     .unit-cart .unit-area .del-area {width: 100%; height: 30px; margin-bottom: 10px;}
     .unit-cart .del-area .del-box-cont {width: calc(100% + 20px); white-space:nowrap; overflow-y:hidden; overflow-x:auto;}
     .unit-cart .del-area .del-box-cont .del-box {margin-bottom: 10px;}
+    .unit-cart .del-area .del-box-cont .del-box:last-child {margin-right:20px;} 
 
 
     /* quick주문 */
