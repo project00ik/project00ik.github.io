@@ -74,7 +74,6 @@
 .main .bidding-info-box .date {margin-top:30px; color:#666;}
 
 
-
 /* ==========================================================================
     메인 공지사항
 ========================================================================== */
@@ -114,6 +113,24 @@
 .last-banner-wrap ul li a {display: block;}
 .last-banner-wrap ul li a img{padding: 0 36px}
 .last-banner-wrap ul li:first-child a img{padding-left: 0}
+
+/* 알림메시지함 */
+.pop-alarm .pop-alarm-top{display: flex;}
+.pop-alarm .pop-alarm-top p{font-size: 14px; color:#666;}
+.pop-alarm .alarmlist-wrap .list-top-area{padding:30px 0;}
+.pop-alarm .alarmlist-wrap .rd-tab-area > li + li{margin-left:36px}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li{padding:20px 0;border-bottom:1px solid #D7D7D7;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li:first-child{border-top:1px solid #D7D7D7;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div{display: flex;justify-content: space-between;margin-bottom: 10px;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div span{position: relative;font-size: 16px;color:#346DD0;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div span::after{content: "";position: absolute;top:2px;right:-10px;width:6px;height:6px;border-radius: 50%;background:#12B5CF;display: inline-block;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div span.read::after{display: none;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div .time{font-size: 14px;color:#999;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div .time::after{display: none;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li.none{border:none;padding: 200px 0;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li.none p{padding-top: 80px;font-size: 18px;color:#999999;text-align: center;background:url(../images/common/icon_none2.svg) 50% 0 no-repeat;}
+.pop-alarm .alarmlist-wrap .paging{margin: 30px 0 0;}
+.lyPopup .popup-cont .lyPopCont.pop-alarm .btn-area{padding: 0;flex:1;text-align: right;border:none}
 
 
 
@@ -206,6 +223,20 @@
     .last-banner-wrap ul {padding: 0 20px;flex-wrap: nowrap;overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none;}
     .last-banner-wrap ul::-webkit-scrollbar {display: none;}
     .last-banner-wrap ul li a img{padding: 0 10px;width: auto;height:30px}
+
+    /* 알림메시지함 */
+    .pop-alarm .pop-alarm-top{flex-direction: column;}
+    .lyPopup .popup-cont .lyPopCont.pop-alarm .btn-area{margin-top: 10px;}
+    .lyPopup .popup-cont .lyPopCont.pop-alarm .btn-area a {width: 118px;flex:initial;}
+    .pop-alarm .alarmlist-wrap .list-top-area{padding-bottom: 20px;}
+    .pop-alarm .alarmlist-wrap .list-top-area .rd-tab-area{padding:0}
+    .pop-alarm .alarmlist-wrap .rd-tab-area > li + li{margin-left: 24px;}
+    .pop-alarm .alarmlist-wrap .alarmlistCont ul li.none {padding:180px 0 0;}
+    .pop-alarm .alarmlist-wrap .alarmlistCont ul li.none p{font-size: 14px;padding-top: 60px;background-size: 50px auto;}
+    .pop-alarm .alarmlist-wrap .rd-tab-area .rd-tab input:checked + span{color:#346dd0}
+    .pop-alarm .alarmlist-wrap .rd-tab-area .rd-tab > span{font-size: 15px;color:#999;}
+    .pop-alarm .alarmlist-wrap .mobile-paging{margin: 30px 0 0;width: 100%;}
+    
 
 }
 
