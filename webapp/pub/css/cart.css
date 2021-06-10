@@ -291,7 +291,7 @@
 .pop-address .address-list .acdArea .acdCont{padding:12px 10px;margin-top:10px;display: none;background: #F5F5F5;}
 .pop-address .address-list .acdArea .acdCont > div{display: table;font-size: 14px;line-height: 17px;}
 .pop-address .address-list .acdArea .acdCont > div span{display: table-cell;margin-right: 10px;width: 62px;vertical-align: top;}
-.pop-address .paging{margin:30px 0}
+.pop-address .paging{margin:0;padding:30px 0}
 
 
 /* ==========================================================================
