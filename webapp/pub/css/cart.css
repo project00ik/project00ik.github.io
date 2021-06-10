@@ -91,6 +91,10 @@
 .unit-cart .normal-price > b {font-weight:400; font-size:16px; vertical-align:text-bottom;}
 .unit-cart .check-style2 {margin-top:-11px; position:absolute; top:50%; left:20px; z-index:8;}
 
+.unit-cart .unit-area .del-area .del-box {position: relative; padding: 5px; font-size: 14px; color: #fff; font-weight: 500; background: #12b5cf;}
+.unit-cart .unit-area .del-area .del-box .del {font-size: 0; position: absolute; top: 0; right: 0; width: 18px; height: 18px; background: url(../images/common/btn_del_white.svg) 0 0 no-repeat;}
+
+
 /* quick주문 */
 .top-write-box {display: flex; align-items: center; padding: 20px; margin-bottom: 30px; background: #f5f5f5;}
 .top-write-box .form-layout {width: 393px; margin: 0 20px;}
