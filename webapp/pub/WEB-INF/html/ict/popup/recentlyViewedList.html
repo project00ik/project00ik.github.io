@@ -213,11 +213,11 @@
             <div class="pop-layout pop-recently-view">
               <div class="jusitfy-info-area">
                 <p class="txt">고객님께서 최근 본 상품입니다.</p>
-                <button class="btn btn-small-line">전체삭제</button>
+                <button class="btn btn-small-line deleteAllBtn">전체삭제</button>
               </div>
               <div class="recently-list-wrap">
-                <ul class="recently-list">
-                  <li>
+                <ul class="recently-list delArea">
+                  <li class="delCont">
                     <div class="unit-recently">
                       <a href="#상품링크">
                         <dl class="unit-area">
@@ -234,11 +234,11 @@
                           </dd>
                         </dl>
                       </a>
-                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-del delBtn">삭제</button>
                       <button class="btn btn-like-m tgBtn">찜하기</button>
                     </div>
                   </li>
-                  <li>
+                  <li class="delCont">
                     <div class="unit-recently">
                       <a href="#상품링크">
                         <dl class="unit-area">
@@ -255,11 +255,11 @@
                           </dd>
                         </dl>
                       </a>
-                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-del delBtn">삭제</button>
                       <button class="btn btn-like-m tgBtn">찜하기</button>
                     </div>
                   </li>
-                  <li>
+                  <li class="delCont">
                     <div class="unit-recently">
                       <a href="#상품링크">
                         <dl class="unit-area">
@@ -276,11 +276,11 @@
                           </dd>
                         </dl>
                       </a>
-                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-del delBtn">삭제</button>
                       <button class="btn btn-like-m tgBtn">찜하기</button>
                     </div>
                   </li>
-                  <li>
+                  <li class="delCont">
                     <div class="unit-recently">
                       <a href="#상품링크">
                         <dl class="unit-area">
@@ -297,11 +297,11 @@
                           </dd>
                         </dl>
                       </a>
-                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-del delBtn">삭제</button>
                       <button class="btn btn-like-m tgBtn">찜하기</button>
                     </div>
                   </li>
-                  <li>
+                  <li class="delCont">
                     <div class="unit-recently">
                       <a href="#상품링크">
                         <dl class="unit-area">
@@ -318,7 +318,7 @@
                           </dd>
                         </dl>
                       </a>
-                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-del delBtn">삭제</button>
                       <button class="btn btn-like-m tgBtn">찜하기</button>
                     </div>
                   </li>
@@ -354,7 +354,7 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-
+      deleteArea(); // 삭제 이벤트 (공통 : 최근 본 상품)
       lyOpen('recentlyViewedList');
 
 

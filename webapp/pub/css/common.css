@@ -870,7 +870,7 @@ textarea + .cot b {vertical-align: top;}
 /* 최근 본 상품 */
 .jusitfy-info-area {display:flex; align-items:center; flex-wrap: wrap;justify-content:space-between;}
 .jusitfy-info-area .txt {font-size:14px; color:#666;}
-.recently-list-wrap {margin-top: 10px; border-top:1px solid #bbb;}
+.recently-list-wrap {min-height:873px; margin-top: 10px; border-top:1px solid #bbb;}
 .recently-list-wrap .recently-list {}
 .recently-list-wrap .recently-list > li {padding:20px 0; border-bottom:1px solid #d7d7d7;}
 .recently-list-wrap.non-recently {border: 0;}

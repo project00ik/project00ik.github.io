@@ -84,11 +84,11 @@ function searchBox(){
     $('.del').each(function(){
       // 최근검색어 삭제
       $(this).click(function(){
-        $(this).closest('li').css('display','none');
+        $(this).closest('li').remove();
       })
     })
     alldelBtn.click(function(){
-      searchBoxWordAll.css('display','none');
+      searchBoxWordAll.remove();
     });
     closeBtn.click(function(){
       searchBox.removeClass("on");
@@ -148,11 +148,30 @@ function searchInputBox(){
 }
 
 function delBtn(){
-  // 삭제 이벤트 (검색어/상품 옵션 등)
-  $('.btn.btn-del').each(function(){
-    $(this).click(function(){
-      $(this).closest('div').css('display','none');
+  // 삭제 이벤트 (장바구니 옵션 등)
+  $('.del-box-cont .btn.btn-del').each(function () {
+    $(this).click(function () {
+      $(this).closest('.del-box').remove();
     })
+  });
+  // 삭제 이벤트 (바로구매/장바구니 옵션 등)
+  $('.option-result .btn.btn-del').each(function () {
+    $(this).click(function () {
+      $(this).closest('.option-box').remove();
+    })
+  });
+}
+
+function deleteArea() {
+  // 삭제 이벤트 (공통 : 최근 본 상품)
+  $('.delBtn').each(function () {
+    $(this).click(function () {
+      console.log('test')
+      $(this).closest('.delCont').remove();
+    })
+  });
+  $('.deleteAllBtn').on('click', function(){
+    $('.delArea').find('.delCont').remove();
   })
 }
 
