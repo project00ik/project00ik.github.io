@@ -166,7 +166,6 @@ function deleteArea() {
   // 삭제 이벤트 (공통 : 최근 본 상품)
   $('.delBtn').each(function () {
     $(this).click(function () {
-      console.log('test')
       $(this).closest('.delCont').remove();
     })
   });
