@@ -873,7 +873,7 @@ textarea + .cot b {vertical-align: top;}
 .recently-list-wrap .recently-list > li {padding:20px 0; border-bottom:1px solid #d7d7d7;}
 .recently-list-wrap .recently-list > li .list-none {padding:180px 0 100px;text-align:center;background:url(../images/common/icon_cart_02.svg) top 100px left 50% no-repeat;color:#999;}
 .unit-recently {width:100%; position: relative; padding:0 64px 0 85px;}
-.unit-recently .unit-area {min-height:65px;}
+.unit-recently .unit-area {width: 100%; min-height:65px; display: flex; justify-content: center; flex-direction:column;}
 .unit-recently .unit-area > dt {width: 65px; height: 65px; background: #f5f5f5; position: absolute; top:0; left:0; z-index:1;}
 .unit-recently .unit-area > dt img {width:100%;}
 .unit-recently .unit-area > dd {width:100%;}
@@ -882,9 +882,9 @@ textarea + .cot b {vertical-align: top;}
 .unit-recently .unit-area .price-area .flag-txt {margin-right:10px}
 .unit-recently .unit-area .price {font-size:14px; color:#000; display:inline-block;}
 .unit-recently .unit-area .price > b {vertical-align:text-bottom; font-weight:700; font-size:22px;}
-.unit-recently .unit-area .sale {margin:0 0 0 10px; color:#eb3030; text-align:right; display:inline-block; font-size:14px; text-align:left; }
+.unit-recently .unit-area .sale {margin:0; color:#eb3030; text-align:right; display:inline-block; font-size:14px; text-align:left; }
 .unit-recently .unit-area .sale > b {font-size:22px; vertical-align:text-bottom; font-weight:700;}
-.unit-recently .normal-price {margin-top:6px; margin-left:10px; font-size:12px; color:#999; text-decoration:line-through; display:inline-block;}
+.unit-recently .normal-price {margin-top:6px; margin-right:10px; font-size:12px; color:#999; text-decoration:line-through; display:inline-block;}
 .unit-recently .normal-price > b {font-weight:400; font-size:16px; vertical-align:text-bottom;}
 .unit-recently .btn-del {position:absolute; top:0; right:23px; z-index:1;}
 .unit-recently .btn-like-m {position:absolute; bottom:0; right:20px; z-index:1;}
@@ -1300,6 +1300,9 @@ textarea + .cot b {vertical-align: top;}
     /* 최근 본 상품 */
     .unit-recently .btn-del {right:3px;}
     .unit-recently .btn-like-m {right:0;}
+    .unit-recently .unit-area .sale > b {font-size:20px;}
+    .unit-recently .unit-area .price > b {font-size:20px;}
+    .unit-recently .unit-area .price-area {margin-top:5px;}
 
     /* 파일 업로드 */
     .img-upload-btn > label {width: 63px; height: 63px;}
