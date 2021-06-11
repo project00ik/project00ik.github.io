@@ -376,7 +376,7 @@
   <!-- 퀵메뉴 -->
   <div class="quick-menu non-footer-quick">
     <div class="qk-group">
-        <a href="#" class="qk-notify">
+        <a href="javascript:;" onclick="lyOpen('alarmPopup')" class="qk-notify">
             <u></u><span>알림</span>
             <div class="noti-txt">
                 <p class="mo-hide">배송중인 상품이 있습니다.</p>
@@ -384,7 +384,8 @@
             </div>
         </a>
         <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
-        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="javascript:;" onclick="lyOpen('nonRecentlyViewedList')" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="javascript:;" onclick="lyOpen('recentlyViewedList')" class="qk-history on"><u><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"></u><span>최근본상품</span></a>
         <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
         <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
         <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>
@@ -739,83 +740,399 @@
   </div>
   <!-- //주문서 불러오기 팝업 -->
 
-    <!--재입고 알림 신청 팝업 -->
-    <div class="lyPopupWrap popup-type-m" id="restockPopup2">
-      <!-- id 값 버튼과 연결해주세요. -->
-      <div class="lyPopup">
-        <div class="popup-wrap">
-          <div class="popup-cont">
-            <div class="lyTitle">
-              <p>재입고 알림 신청</p>
-              <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-            </div>
-            <div class="lyPopCont">
-              <div class="pop-layout pop-restock">
-                <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
-                <div class="pop-write">
-                  <table>
-                    <tbody>
-                      <tr>
-                        <th rowspan="2">상품정보</th>
-                        <td>
+  <!--재입고 알림 신청 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="restockPopup2">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>재입고 알림 신청</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-restock">
+              <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
+              <div class="pop-write">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">상품정보</th>
+                      <td>
+                        <div>
+                          <label>상품코드</label>
                           <div>
-                            <label>상품코드</label>
-                            <div>
-                              <p>102622887</p>
-                            </div>
-                            
+                            <p>102622887</p>
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
+                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div>
+                          <label>상품명</label>
                           <div>
-                            <label>상품명</label>
-                            <div>
-                              <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
-                            </div>
+                            <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
                           </div>
-                        </td>
-                      </tr>
-                      <tr class="input">
-                        <th rowspan="3">알림 수신자 정보</th>
-                        <td>
-                          <div class="input">
-                            <label>수신자 성명</label>
-                            <div class="form-layout">
-                              <input type="text" class="input" value="김상현" readonly="">
-                            </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="input">
+                      <th rowspan="3">알림 수신자 정보</th>
+                      <td>
+                        <div class="input">
+                          <label>수신자 성명</label>
+                          <div class="form-layout">
+                            <input type="text" class="input" value="김상현" readonly="">
                           </div>
-                        </td>
-                      </tr>
-                      <tr class="input">
-                        <td>
-                          <div>
-                            <label>메일주소</label>
-                            <div class="form-layout">
-                              <input type="text" class="input" value="61781104991@null.com" >
-                            </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="input">
+                      <td>
+                        <div>
+                          <label>메일주소</label>
+                          <div class="form-layout">
+                            <input type="text" class="input" value="61781104991@null.com" >
                           </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="btn-area">
-              <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //재입고 알림 신청 팝업 -->
+
+  <!-- 최근 본 상품 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="recentlyViewedList">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>최근 본 상품</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-recently-view">
+              <div class="jusitfy-info-area">
+                <p class="txt">고객님께서 최근 본 상품입니다.</p>
+                <button class="btn btn-small-line">전체삭제</button>
+              </div>
+              <div class="recently-list-wrap">
+                <ul class="recently-list">
+                  <li>
+                    <div class="unit-recently">
+                      <a href="#상품링크">
+                        <dl class="unit-area">
+                          <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                          </dt>
+                          <dd>
+                            <p class="product-name ellipsis">BL22T806 해머드릴 21.6V
+                              6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                            <div class="price-area">
+                              <p class="price"><b>100,000</b>원</p>
+                              <!-- <p class="normal-price"><b>99,900,000</b>원</p>
+                                <p class="sale"><b>90,000</b>원</p> -->
+                            </div>
+                          </dd>
+                        </dl>
+                      </a>
+                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-like-m tgBtn">찜하기</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit-recently">
+                      <a href="#상품링크">
+                        <dl class="unit-area">
+                          <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                          </dt>
+                          <dd>
+                            <p class="product-name ellipsis">BL22T806 해머드릴 21.6V
+                              6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                            <div class="price-area">
+                              <!-- <p class="price"><b>100,000</b>원</p> -->
+                              <p class="normal-price"><b>100,000</b>원</p>
+                              <p class="sale"><b>90,000</b>원</p>
+                            </div>
+                          </dd>
+                        </dl>
+                      </a>
+                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-like-m tgBtn">찜하기</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit-recently">
+                      <a href="#상품링크">
+                        <dl class="unit-area">
+                          <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                          </dt>
+                          <dd>
+                            <p class="product-name ellipsis">BL22T806 해머드릴 21.6V
+                              6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                            <div class="price-area">
+                              <p class="price"><b>100,000</b>원</p>
+                              <!-- <p class="normal-price"><b>99,900,000</b>원</p>
+                                <p class="sale"><b>90,000</b>원</p> -->
+                            </div>
+                          </dd>
+                        </dl>
+                      </a>
+                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-like-m tgBtn">찜하기</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit-recently">
+                      <a href="#상품링크">
+                        <dl class="unit-area">
+                          <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                          </dt>
+                          <dd>
+                            <p class="product-name ellipsis">BL22T806 해머드릴 21.6V
+                              6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                            <div class="price-area">
+                              <p class="price"><b>100,000</b>원</p>
+                              <!-- <p class="normal-price"><b>99,900,000</b>원</p>
+                                <p class="sale"><b>90,000</b>원</p> -->
+                            </div>
+                          </dd>
+                        </dl>
+                      </a>
+                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-like-m tgBtn">찜하기</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit-recently">
+                      <a href="#상품링크">
+                        <dl class="unit-area">
+                          <dt><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+                          </dt>
+                          <dd>
+                            <p class="product-name ellipsis">BL22T806 해머드릴 21.6V
+                              6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+                            <div class="price-area">
+                              <p class="price"><b>100,000</b>원</p>
+                              <!-- <p class="normal-price"><b>99,900,000</b>원</p>
+                                <p class="sale"><b>90,000</b>원</p> -->
+                            </div>
+                          </dd>
+                        </dl>
+                      </a>
+                      <button class="btn btn-del">삭제</button>
+                      <button class="btn btn-like-m tgBtn">찜하기</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- //재입고 알림 신청 팝업 -->
+  </div>
+  <!-- //최근 본 상품 팝업 -->
+  <!-- 최근 본 상품 팝업(상품없음) -->
+  <div class="lyPopupWrap popup-type-m" id="nonRecentlyViewedList">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>최근 본 상품</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-recently-view">
+              <div class="recently-list-wrap non-recently">
+                <ul class="recently-list">
+                  <li>
+                    <p class="list-none">최근 본 상품이 없습니다.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //최근 본 상품 팝업 -->
+
+  <!-- 알림메세지함 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="alarmPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>알림메시지함</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-alarm">
+              <div class="pop-alarm-top">
+                <p class="ex">알림 내역은 수신일로부터 30일간 보관됩니다.</p>
+                <div class="btn-area">
+                  <a href="javascript:;" class="lyClose btn btn-small-line2">모두 읽음 표시</a>
+                  <a href="javascript:;" class="lyClose btn btn-small-line2">읽은 알림 삭제</a>
+                </div>
+              </div>
+              <div class="alarmlist-wrap">
+                <div class="list-top-area">
+                  <ul class="rd-tab-area">
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab" checked="">
+                        <span>전체</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>배송</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>입고</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>결재</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>상품</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>세금계산서</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>VOC</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="rd-tab">
+                        <input type="radio" name="rdTab">
+                        <span>기타</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="alarmlistCont">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div>
+                          <span class="read">[배송]</span>
+                          <!--읽은 메시지 일때 class 추가-->
+                          <span class="time">7시간전</span>
+                        </div>
+                        <p>주문하신 "알파 멀티마우스패드 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구 외 3건" 배송이 완료되었습니다.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div>
+                          <span class="">[배송]</span>
+                          <span class="time">7시간전</span>
+                        </div>
+                        <p>주문하신 "알파 멀티마우스패드 어쩌구저쩌구어쩌구저쩌구어쩌구저쩌구 외 3건" 배송이 완료되었습니다.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div>
+                          <span class="">[결재]</span>
+                          <span class="time">7시간전</span>
+                        </div>
+                        <p>주문자 "홍길동"에 대한 결재가 상신되었습니다.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div>
+                          <span class="read">[결재]</span>
+                          <!--읽은 메시지 일때 class 추가-->
+                          <span class="time">23시간전</span>
+                        </div>
+                        <p>주문자 "홍길동"에 대한 결재가 상신되었습니다.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div>
+                          <span class="read">[입고]</span>
+                          <!--읽은 메시지 일때 class 추가-->
+                          <span class="time">1일전</span>
+                        </div>
+                        <p>배송완료 주문에 대한 입고처리가 되지 않아 입고요청 드립니다.</p>
+                      </a>
+                    </li>
+                    <li class="none">
+                      <p>최근 30일간 알림메시지가 없습니다.</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- PC 페이지네이션 -->
+                <div class="paging mo-hide">
+                  <a href="#" class="btn prev">previous</a>
+                  <a href="#" class="btn on">1</a>
+                  <a href="#" class="btn ">2</a>
+                  <a href="#" class="btn ">3</a>
+                  <a href="#" class="btn ">4</a>
+                  <a href="#" class="btn ">5</a>
+                  <a href="#" class="btn ">6</a>
+                  <a href="#" class="btn ">7</a>
+                  <a href="#" class="btn ">8</a>
+                  <a href="#" class="btn ">9</a>
+                  <a href="#" class="btn ">10</a>
+                  <a href="#" class="btn next active">Next</a>
+                </div>
+                <!--// PC 페이지네이션 -->
+                <!-- MO 페이지네이션 -->
+                <button class="mobile-paging pc-hide">
+                  더보기
+                </button>
+                <!--// MO 페이지네이션 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //알림메세지함 팝업 -->
 
     
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
