@@ -169,7 +169,7 @@
         <div class="cart-top">
           <p class="tit-type1-2"><a href="javascript:;" onclick="history.back()" class="history-bak pc-hide">뒤로가기</a>QUICK 주문</p>
         </div>
-        <div class="cart-list-con quick-con">
+        <div class="cart-list-con quick-con allChkArea">
           <div class="top-write-box">
             <label for="">상품코드 입력</label>
             <div class="form-layout">
@@ -180,7 +180,7 @@
           </div>
           <div class="tit-area">
             <p class="left-area">
-              <label class="check-style2"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
+              <label class="check-style2 allChk"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
               <span class="sub-txt">(주문 상품수 : <b>2</b>건<i class="bar-verti"></i>총 수량 : <b>5</b>개)</span>
             </p>
             <div class="right-area">
@@ -225,7 +225,7 @@
                       <a href="#바로구매" class="btn btn-buynow">바로구매</a>
                     </li>
                   </ul>
-                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                  <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                 </div>
               </li>
               <li>
@@ -263,7 +263,7 @@
                       <a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')">재입고알림</a>
                     </li>
                   </ul>
-                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                  <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                 </div>
               </li>
               <li>
@@ -301,7 +301,7 @@
                       <a href="#바로구매" class="btn btn-buynow">바로구매</a>
                     </li>
                   </ul>
-                  <label class="check-style2"><input type="checkbox" name=""><i></i></label>
+                  <label class="check-style2 chk"><input type="checkbox" name=""><i></i></label>
                 </div>
               </li>
             </ul>
@@ -1161,6 +1161,7 @@
       delBtn(); // 옵션 삭제
       buyNowLy(); // 주문수정 레이어 팝업
       deleteArea(); // 삭제 이벤트 (공통 : 최근 본 상품)
+      allChecked(); // all checked
       
       // 주문수정 상품슬라이드
       // 썸네일
