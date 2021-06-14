@@ -160,8 +160,8 @@
   .list-top-search {padding:20px 20px 0;}
   .list-top-search .right-area {width:100%; flex:1;}
   .notice-list-area {padding:0 20px;}
-  .notice-list > li .list-flag {top:50%; left:0; transform: translateY(-50.4%);}
   .notice-list > li {padding-right:0; padding-left:42px;}
+  .notice-list > li .list-flag {top:50%; left:0; transform: translateY(-50.4%);}
   .notice-list .txt-area .date {margin-top:5px; font-size:13px; position: relative; top:inherit; right:inherit; z-index: inherit; text-align: left;}
   .notice-list .txt-area .txt {padding-right: 18px; font-size:14px;}
   .notice-list .txt-area .txt .new {top:4px;}
@@ -178,6 +178,9 @@
   .notice-detail .notice-bt-list .tit {left:0; font-size:12px;}
   .notice-detail .notice-bt-list .txt {font-size:14px;}
   /* 뉴스 */
+  .list-top-search .form-search {width:100%; flex: 1;}
+  .notice-list.news-list > li {padding:18px 0;}
+  .notice-list.news-list .txt-area .date {margin-top:6px;}
   .notice-detail.news-detail > dt {padding:12px 33px 12px 0;}
   .notice-detail.news-detail > dt .star-area {right:0;}
   .news-detail .news-box {padding: 10px 0;}
