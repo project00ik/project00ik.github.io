@@ -29,6 +29,7 @@
 .header-cont .right-area {position:absolute; top:5px; right:0; font-size:0;}
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 .header-cont .right-area .icon-btn > a {width:36px; height:36px; display: block;}
+.header-cont .right-area .icon-btn a {width:36px; height:36px; display:inline-block;}
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
@@ -229,7 +230,8 @@
 .popup-type-xs .lyPopup .popup-wrap .popup-cont {width:360px;}
 .lyPopup .popup-cont .lyTitle {width:100%; height:54px; padding:0 54px 0 30px; line-height:54px; font-size:18px; color:#fff; font-weight:500; color:#fff; background:#346dd0; position:relative;}
 .lyPopup .popup-cont .lyTitle .btn-close {width:24px; height:24px; display:inline-block; background:url(../images/common/btn_popup_close.svg) 0 0 no-repeat; font-size:0; position:absolute; top:15px; right:30px; z-index:1;} 
-.lyPopup .lyPopCont {padding:30px;}
+.lyPopup .lyPopCont {padding:30px 30px 0;}
+.lyPopup .lyPopCont::after {content: ""; width: 100%; height:30px; display: block;}
 .lyPopup .popup-cont .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
 .lyPopup .popup-cont .lyPopCont .btn-area {padding:30px 0 0; border:0;}
 .popup-type-m .lyPopup .popup-cont .lyPopCont {max-height:calc(100vh - 265px); overflow-x:hidden; overflow-y:auto;}
