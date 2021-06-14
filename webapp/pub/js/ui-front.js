@@ -66,12 +66,9 @@ $(document).ready(function (){
 
   searchBox(); //상단 검색박스 펼침
   // searchInputBox(); // 검색 input clear
-
   cartMainPop();//메인 장바구니 팝업
 
-
 });
-
 
 function cartMainPop(){
   //메인 장바구니 팝업
@@ -83,12 +80,15 @@ function cartMainPop(){
       }
     })
   }
-  
 }
-
 // $(winow).resize(function(){
 //   cartMainPop();
 // })
+function cartlyClose(){
+  //메인 장바구니 팝업닫기
+  $('.cart-box').siblings('.tgBtn').removeClass('on');
+}
+
 
 function searchBox(){
   //상단 검색박스 펼침
