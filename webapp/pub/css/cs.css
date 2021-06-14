@@ -178,6 +178,7 @@
   .notice-detail .notice-bt-list .tit {left:0; font-size:12px;}
   .notice-detail .notice-bt-list .txt {font-size:14px;}
   /* 뉴스 */
+  .news-cont .join-list-con {padding-top:0;}
   .list-top-search .form-search {width:100%; flex: 1;}
   .notice-list.news-list > li {padding:18px 0;}
   .notice-list.news-list .txt-area .date {margin-top:6px;}
