@@ -303,6 +303,24 @@
 .pop-address .paging{margin:0;padding:30px 0}
 
 
+/* 팝업 결재승인자 추가 */
+.approval-add p i{font-style: normal;color:#346DD0;vertical-align: top;}
+.approval-add p + table{margin-top: 10px;}
+.approval-add .jusitfy-info-area {margin-top: 10px;font-size: 15px;}
+.approval-add .jusitfy-info-area + .approval-table{margin-top: 45px;}
+.approval-add .jusitfy-info-area .btn-small-line{width: 56px;}
+.approval-add .jusitfy-info-area .btn-small-line2{height: 38px;}
+.approval-add .jusitfy-info-area .pop-ip-area{width:calc(100% - 123px);}
+.approval-add .jusitfy-info-area .pop-ip-area label{padding-left: 0;width: 70px;}
+.approval-add .jusitfy-info-area .pop-ip-area .form-search{flex:1}
+.approval-add .approval-table {border-bottom: 1px solid #D7D7D7;padding-bottom: 14px;}
+.approval-add table th{background:#F5F5F5;border-top: 1px solid #000;border-left: 1px solid #D7D7D7;line-height: 59px;font-size: 16px;}
+.approval-add table th:first-child{border-left: none;}
+.approval-add table td{text-align: center;line-height: 34px;font-size: 16px;}
+.approval-add table tr.td-start td{padding-top: 14px;}
+.lyPopup .popup-cont .lyPopCont .approval-add .btn-area{text-align: right;}
+
+
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
