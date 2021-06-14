@@ -28,13 +28,16 @@
 .header-cont .search-area .btn-search {position:absolute; top:0; right:0;}
 .header-cont .right-area {position:absolute; top:5px; right:0; font-size:0;}
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
+.header-cont .right-area .icon-btn > a {width:36px; height:36px; display: block;}
 
 /* 장바구니박스 */
-.cart-box {position: absolute; top: 53px; right: -66px; width: 158px; padding: 20px; border: 1px solid #000; background: #fff; z-index: 101;}
+.header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
+.cart-box {display: none; position: absolute; top: 53px; right: -66px; width: 158px; padding: 20px; border: 1px solid #000; background: #fff; z-index: 101;}
 .cart-box .cart-in-list li {padding-bottom: 10px;}
 .cart-box .cart-in-list li:last-child {padding-bottom: 0;}
 .cart-box .cart-in-list li a {display: block;}
-.cart-box .cart-in-list li a p {font-size: 14px; color: #000; line-height: 17px; background: url('../images/common/mo_arrow_gnb_d1_on.svg') right center no-repeat;}
+.cart-box .cart-in-list li a p {padding-right: 26px; font-size: 14px; color: #000; line-height: 18px; background: url('../images/common/btn_more.svg') right center no-repeat; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.cart-box .cart-in-list li a p.mng {background: url('../images/common/icon_gear.svg') right center no-repeat;}
 
 /* 검색박스 */
 .search-box.on {display: block;}
@@ -947,6 +950,10 @@ textarea + .cot b {vertical-align: top;}
     .icon-btn + .icon-btn {margin-left:20px;}
     .inp-area .inp {font-size:15px;}
     .inp-area .btn-del {right: 34px;}
+
+    /* 장바구니박스 */
+    .cart-box {width: 100%; height: 100vh; position: fixed; top: 0; left: 0;}
+
     /* 검색박스 */
     .search-box {width: 100%; top: 36px;}
     .search-box .half-box .s-tit {font-size: 14px; padding-bottom: 16px;}

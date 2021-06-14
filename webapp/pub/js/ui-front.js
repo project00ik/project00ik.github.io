@@ -66,7 +66,29 @@ $(document).ready(function (){
 
   searchBox(); //상단 검색박스 펼침
   // searchInputBox(); // 검색 input clear
+
+  cartMainPop();//메인 장바구니 팝업
+
+
 });
+
+
+function cartMainPop(){
+  //메인 장바구니 팝업
+  var winW = $(window).width();
+  if(winW > 800){
+    $('body').mouseup(function(e){
+      if($('.cart-box').has(e.target).length === 0){
+        $('.cart-box').siblings('.tgBtn').removeClass('on');
+      }
+    })
+  }
+  
+}
+
+// $(winow).resize(function(){
+//   cartMainPop();
+// })
 
 function searchBox(){
   //상단 검색박스 펼침
@@ -75,7 +97,6 @@ function searchBox(){
   var searchBoxWordAll = $('.header-cont .search-box .search-word .s-list > ul > li');
   var wordBox = $('.header-cont .word-box');
   var ipHdSearch = $('.header-cont .search-area .inp-area .inp');
-  var ipValue = $('.header-cont .search-area .inp-area .inp').val();
   var ipDelBtn = $(".header-cont .search-area .inp-area .del");
   var closeBtn = $('.header-cont .search-bt .close');
   var alldelBtn = $('.header-cont .search-bt .all-del');
