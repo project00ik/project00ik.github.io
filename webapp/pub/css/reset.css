@@ -85,7 +85,7 @@ input[type="date"]::-webkit-outer-spin-button {-webkit-appearance:none; margin:0
 [disabled] {cursor:default;}
 [disabled] {cursor:default; opacity:1; -webkit-text-fill-color:inherit;}
 
-select {-webkit-appearance:none; -moz-appearance:none; appearance:none;}
+select {-webkit-appearance:none; -moz-appearance:none; appearance:none; cursor: pointer;}
 select::-ms-expand {display:none;}
 hr, caption {display:none;}
 legend      {position:absolute; height:0; font-size:0px; line-height:0; overflow:hidden; text-indent:-20000px; }
