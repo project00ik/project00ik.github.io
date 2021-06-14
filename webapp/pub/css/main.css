@@ -223,9 +223,9 @@
     .last-banner-wrap ul li a img{padding: 0 10px;width: auto;height:30px}
 
     /* 알림메시지함 */
-    .pop-alarm .pop-alarm-top{flex-direction: column;}
-    .lyPopup .popup-cont .lyPopCont.pop-alarm .btn-area{margin-top: 10px;}
-    .lyPopup .popup-cont .lyPopCont.pop-alarm .btn-area a {width: 118px;flex:initial;}
+    .pop-alarm .jusitfy-info-area{flex-direction: column;align-items: flex-start;}
+    .lyPopup .popup-cont .pop-alarm .btn-area{margin-top: 10px;}
+    .lyPopup .popup-cont .pop-alarm .btn-area button{width: 118px;flex:initial;}
     .pop-alarm .alarmlist-wrap .list-top-area{padding-bottom: 20px;}
     .pop-alarm .alarmlist-wrap .list-top-area .rd-tab-area{padding:0}
     .pop-alarm .alarmlist-wrap .rd-tab-area > li + li{margin-left: 24px;}
