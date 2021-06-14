@@ -115,8 +115,6 @@
 .last-banner-wrap ul li:first-child a img{padding-left: 0}
 
 /* 알림메시지함 */
-.pop-alarm .pop-alarm-top{display: flex;}
-.pop-alarm .pop-alarm-top p{font-size: 14px; color:#666;}
 .pop-alarm .alarmlist-wrap .list-top-area{padding:30px 0;}
 .pop-alarm .alarmlist-wrap .rd-tab-area > li + li{margin-left:36px}
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li{padding:20px 0;border-bottom:1px solid #D7D7D7;}
