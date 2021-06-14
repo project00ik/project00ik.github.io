@@ -87,6 +87,9 @@
 .pop-sLabel > ul + .excel-wrap {margin-top: 30px;}
 .pop-sLabel .excel-wrap {min-height:auto;}
 .pop-sLabel .excel-wrap ~ .excel-wrap {margin-top: 20px; min-height:auto;}
+.pop-sLabel .jusitfy-info-area {margin: 30px 0;}
+.pop-sLabel .jusitfy-info-area .txt{color: #000;}
+.pop-sLabel .jusitfy-info-area .btn-small-line{width: 68px;height: 38px;}
 
 .pop-sLabel.labelW-xs .pop-ip-area > label {width: 88px; padding-left: 0; display: inline-block;}
 .pop-sLabel.labelW-xs .pop-ip-area label + .form-layout {width: calc(100% - 88px);}
@@ -109,6 +112,7 @@
 .grid-search-area .form-layout3 {max-width:310px;}
 .pop-info-txt {margin-top:20px; text-indent:-9px; padding-left:9px; font-size: 14px; color:#666;}
 .pop-info-txt > em {color: #346dd0; vertical-align: top;}
+
 
 /* 회원정보관리 */
 .list-half-style li {width: 50%;}
@@ -307,7 +311,9 @@
     .pop-layout .pop-list-half > .pop-ip-area + .pop-ip-area {padding-top: 20px;}
     .pop-sLabel > ul + .excel-wrap {margin-top: 20px;}
     .pop-sLabel .red-txt {margin-top: 20px;}
-  
+    .pop-sLabel .jusitfy-info-area {margin: 20px 0;}
+    .pop-sLabel .jusitfy-info-area .txt{font-size: 13px;}
+    .pop-sLabel .jusitfy-info-area .btn-small-line{height: 36px;margin-top: 20px;}
 
     /* 회원정보관리 */
     .list-half-style li {width: 100%;}
