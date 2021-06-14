@@ -135,11 +135,8 @@
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
- @media only screen and (max-width:1200px){
-}
-
 @media only screen and (max-width:1024px){ /* ipad pro*/
-
+    /* .main.wrap {width:1200px;} */
 }
 /* 모바일 시작 */
 @media only screen and (max-width:800px){

@@ -938,7 +938,7 @@ textarea + .cot b {vertical-align: top;}
    Media Queries for Responsive Design.
    ========================================================================== */
 @media only screen and (max-width:1024px){ /* ipad pro*/
-    .wrap {width:1200px;}
+    .wrap {min-width:1240px;}
     .header .header-cont {width:100%; margin:0 0 20px;}
     .header-cont .logo {left:24px;}
     .header-cont .right-area {right:20px;}
