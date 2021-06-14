@@ -932,11 +932,34 @@ textarea + .cot b {vertical-align: top;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
-@media only screen and (max-width:1200px){
-}
-
 @media only screen and (max-width:1024px){ /* ipad pro*/
-
+    .wrap {width:1200px;}
+    .header .header-cont {width:100%; margin:0 0 20px;}
+    .header-cont .logo {left:24px;}
+    .header-cont .right-area {right:20px;}
+    .gnb-wrap .gnb-area {width:100%;}
+    .gnb-wrap .gnb-area .gnb-right-area {width:165px; right:20px;}
+    
+    /* 퀵메뉴 */
+    .quick-menu {margin-right:0; top:auto; right:20px; bottom:20px;}
+    .quick-menu.non-footer-quick {bottom:103px;}
+    .quick-menu span {display:none;}
+    .quick-menu a {width:40px; height:40px;}
+    .quick-menu u {width:24px; height:24px;}
+    .quick-menu .qk-notify u {background:url(../images/common/mo_icon_st_notify.svg) 0 0 no-repeat;}
+    .quick-menu .qk-lookmark u {background:url(../images/common/mo_icon_st_lookmark.svg) 0 0 no-repeat;}
+    .quick-menu .qk-history u {background:url(../images/common/mo_icon_st_history.svg) 0 0 no-repeat;}
+    .quick-menu .qk-favorite u {background:url(../images/common/mo_icon_st_favorite.svg) 0 0 no-repeat;}
+    .quick-menu .qk-speech u {background:url(../images/common/mo_icon_st_speech.svg) 0 0 no-repeat;}
+    .quick-menu .qk-quick u {background:url(../images/common/mo_icon_st_quick.svg) 0 0 no-repeat;}
+    .quick-menu .qk-request u {background:url(../images/common/mo_icon_st_request.svg) 0 0 no-repeat;}
+    .quick-menu .qk-quicktop u {background:url(../images/common/mo_icon_st_quicktop.svg) 0 0 no-repeat;}
+    .quick-menu .qk-group {display:none;}
+    .quick-menu .qk-group-show {display:flex;}
+    .quick-menu .qk-group-show u {background:url(../images/common/mo_icon_plus_big_w.svg) 0 0 no-repeat;  transition:all 0.3s ease;}
+    .quick-menu .qk-group-show.on u {transform:rotate(45deg);}
+    .quick-menu .noti-txt {top:-5px; right:-5px; width:22px; height:22px; line-height:22px; font-size:12px; padding:0; text-align:center;}
+    .quick-menu .noti-txt:after {display:none;}
 }
 
 /* 모바일 시작 */
@@ -1051,26 +1074,7 @@ textarea + .cot b {vertical-align: top;}
     .footer .footer-cont .footer-info > span + span::before {display:none;}
     .footer .footer-cont .copyright {font-size:13px;}
 
-    /* 퀵메뉴 */
-    .quick-menu {margin-right:0; top:auto; right:20px; bottom:20px;}
-    .quick-menu.non-footer-quick {bottom:103px;}
-    .quick-menu span {display:none;}
-    .quick-menu a {width:40px; height:40px;}
-    .quick-menu u {width:24px; height:24px;}
-    .quick-menu .qk-notify u {background:url(../images/common/mo_icon_st_notify.svg) 0 0 no-repeat;}
-    .quick-menu .qk-lookmark u {background:url(../images/common/mo_icon_st_lookmark.svg) 0 0 no-repeat;}
-    .quick-menu .qk-history u {background:url(../images/common/mo_icon_st_history.svg) 0 0 no-repeat;}
-    .quick-menu .qk-favorite u {background:url(../images/common/mo_icon_st_favorite.svg) 0 0 no-repeat;}
-    .quick-menu .qk-speech u {background:url(../images/common/mo_icon_st_speech.svg) 0 0 no-repeat;}
-    .quick-menu .qk-quick u {background:url(../images/common/mo_icon_st_quick.svg) 0 0 no-repeat;}
-    .quick-menu .qk-request u {background:url(../images/common/mo_icon_st_request.svg) 0 0 no-repeat;}
-    .quick-menu .qk-quicktop u {background:url(../images/common/mo_icon_st_quicktop.svg) 0 0 no-repeat;}
-    .quick-menu .qk-group {display:none;}
-    .quick-menu .qk-group-show {display:flex;}
-    .quick-menu .qk-group-show u {background:url(../images/common/mo_icon_plus_big_w.svg) 0 0 no-repeat;  transition:all 0.3s ease;}
-    .quick-menu .qk-group-show.on u {transform:rotate(45deg);}
-    .quick-menu .noti-txt {top:-5px; right:-5px; width:22px; height:22px; line-height:22px; font-size:12px; padding:0; text-align:center;}
-    .quick-menu .noti-txt:after {display:none;}
+    
 
     /* 공통 */
     /* 팝업 */
