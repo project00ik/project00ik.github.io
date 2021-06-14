@@ -548,6 +548,10 @@ button.btn-style-s1 {line-height:25px;}
 .tab-area .tab-style4 .tabBtn > a {padding: 12px 25px; border-radius: 21px; font-size:16px; font-weight: 500; background: #f5f5f5; cursor:pointer; display:inline-block;}
 .tab-area .tab-style4 .tabBtn.on > a {color:#fff; background: #000;}
 
+.tab-area .tab-style5 {width:100%; position: relative; z-index: 1;}
+.tab-area .tab-style5 .tabBtn {cursor: pointer; border: 1px solid #000; width: 20%; text-align: center; font-size: 14px; color: #000; height: 38px; line-height: 38px; z-index: 1; margin-right: -1px;}
+.tab-area .tab-style5 .tabBtn.on {color: #346dd0; font-weight: 500; border: 1px solid red; position: relative; z-index: 2; margin-left: 0;}
+
 .product .tab-area .tab-cont {padding-bottom: 0;}
 .popup-wrap .tab-area .tab-cont {padding-bottom:0;}
 
