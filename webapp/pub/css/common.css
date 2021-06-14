@@ -247,6 +247,7 @@
 .pop-ip-area > label {width: 132px; padding-left: 20px; font-weight: 500;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 .pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
+
 .form-half > * {width: 50%;}
 .form-search {position: relative;}
 .form-search input.input {padding-right: 36px;}
@@ -263,6 +264,9 @@
 .column-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 
 .excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px; overflow-y: hidden; overflow-x: auto;}
+
+.pop-tax .pop-ip-area > label {width: 150px; padding-left: 0;}
+.pop-tax .pop-ip-area label + .form-layout {width: calc(100% - 150px);}
 
 /* 결과없음(제품) */
 .result-none {padding: 60px 20px 100px; text-align: center;}
@@ -461,6 +465,7 @@ button.btn-style-s1 {line-height:25px;}
 .notice-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
 .right-txt {font-size: 14px; color: #666; text-align: right; line-height: 17px;}
 .right-txt span {color: #346DD0; vertical-align: baseline;}
+.pop-txt {font-size: 14px; color: #666; padding: 20px 0;}
 
 /* 타이틀 */
 .tit-center-area {width:100%; padding-right:100px; position:relative;}
@@ -1120,6 +1125,10 @@ textarea + .cot b {vertical-align: top;}
     .pop-layout > ul > li:first-child {padding-top: 0;}
     .pop-layout > ul > li {padding: 10px 0;}
 
+    .pop-tax .pop-ip-area label {font-size: 14px;}
+    .pop-tax .pop-ip-area label + .form-layout {width: 100%;}
+    
+
 
     /* 결과없음(제품) */
     .result-none {padding: 24px 20px 60px;}
@@ -1250,6 +1259,7 @@ textarea + .cot b {vertical-align: top;}
     .tit-type2-1 .right-area {right:20px;}
     .tit-type3 {font-size:16px;}
     .join-txt3 {font-size: 14px; display: block; padding: 10px 0 0 0;}
+    .pop-txt {font-size: 13px; padding: 10px 0 20px;}
     .sub-tit-area {padding:0 20px;}
 
     /* 공통 아이콘 */
