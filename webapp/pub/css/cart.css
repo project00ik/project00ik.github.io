@@ -40,7 +40,7 @@
 /* 장바구니 팝업 */
 .pop-restock  {text-align:center;}
 .pop-restock > span {font-size:24px;font-weight:bold;}
-.pop-restock .pop-write {margin-top:30px;text-align:left;}
+.pop-restock .pop-write {margin-top:30px;text-align:left; border-bottom: 1px solid #D7D7D7;}
 .pop-restock .pop-write th {font-weight:normal;background:#FAFAFA;padding:20px 30px 20px 20px;width:137px;border-top:1px solid #D7D7D7;border-right:1px solid #D7D7D7;}
 .pop-restock .pop-write td {font-size:15px;color:#666;padding:20px;border-top:1px solid #D7D7D7;}
 .pop-restock .pop-write td div {display:flex;}
