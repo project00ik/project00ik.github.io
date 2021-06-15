@@ -974,9 +974,9 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu .noti-txt:after {display:none;}
 
     /* 모바일 세로정렬 line-height */
-    select.select.sel-s {line-height:28px;}
+    select.select.sel-s {line-height:27px;}
     .flag-txt {line-height:20px;}
-    .btn-small2-line {line-height:28px;}
+    .btn-small2-line {line-height:27px;}
     .unit-type1 .unit-layer .unit-under-btn .btn-buynow {line-height:30px;}
     
 }
@@ -1323,7 +1323,7 @@ textarea + .cot b {vertical-align: top;}
     .unit-type1 .unit-layer .unit-under-btn .btn-like {width:24px; height:100%; font-size:0; margin-left:10px; background:url(../images/common/mo_icon_like_g.svg) 50% 50% no-repeat;}
     .unit-type1 .unit-layer .unit-under-btn .btn-like.on {background:url(../images/common/mo_icon_like_g_on.svg) 50% 50% no-repeat;}
     .unit-type1 .unit-layer {display:block;}
-    .best-list .unit-type1 {height:307px; overflow: inherit;}
+    .best-list .unit-type1 {height:auto; overflow: inherit;}
     .product-1st .flag-area {margin-bottom:6px;}
     .product-1st .flag-area .flag-txt {width:58px; height:20px; line-height:20px; font-size:12px;}
     .product-1st .unit-type1 .unit-area > dd {padding:20px;}

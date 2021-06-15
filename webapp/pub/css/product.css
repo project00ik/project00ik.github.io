@@ -199,7 +199,7 @@
 .product-detail .text-info ul li{font-size: 16px; color:#666;margin-top: 5px;padding-left: 10px;}
 .product-detail .text-info ul li:before{content: "-";display: inline-block;margin-left: -10px;padding-right: 4px;}
 
-/* 상품상세 팝업*/
+/* 상품상세 팝업 */
 .popup-cont .lyPopCont > .pop-layout-txt {color: #666;}
 .popup-cont .pop-layout-txt3 {margin-top: 10px;font-size: 14px; color: #999;}
 .popup-cont .file-upload-btn > label{display: inline-block; width: 118px; height: 36px;border:1px solid #000; margin-left: 5px;text-align: center;line-height: 34px;}
@@ -525,6 +525,7 @@
     #cartPopup .lyPopup .lyPopCont{padding:20px 20px 0}
     #cartPopup .btn-area02 a{width:calc(50% - 5px);}
     #pricerequestPopup input.input:read-only{width: 100%;}
+    .pop-cart .cart-select button{width: 68px; height: 36px; line-height: 35px;}
     .btn.pc-hide {display:block;}
     .btn.mo-hide {display:none;}
 
