@@ -391,6 +391,9 @@
 
 
 @media only screen and (max-width:1024px){ /* ipad pro*/
+    .btn-filter-detail::before {margin-top:0;}
+    /* 상품목록 버튼 */
+    .filter-price .btn-style-m1 {width:68px; min-width:68px; height:36px; line-height: 36px;}
 }
 
 /* 모바일 시작 */
@@ -554,7 +557,6 @@
     .filter-detail-area .right-area {margin:16px 0 0;}
     .filter-price > li {width:100%; position: relative;}
     .filter-price > li + li {margin-top:10px;}
-    .filter-price .btn-style-m1 {width:68px; min-width:68px; height:36px; line-height: 35px;}
     .filter-price > li:first-child .cont,
     .filter-price > li:last-child .cont {width: 100%; margin-top:10px;}
     .btn-refresh {width:24px; height:24px; background: url(../images/common/mo_btn_refresh.svg) 50% 50% no-repeat; position: absolute; top:0; left:94px;}

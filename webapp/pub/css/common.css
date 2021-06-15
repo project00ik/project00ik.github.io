@@ -972,6 +972,13 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu .qk-group-show.on u {transform:rotate(45deg);}
     .quick-menu .noti-txt {top:-5px; right:-5px; width:22px; height:22px; line-height:22px; font-size:12px; padding:0; text-align:center;}
     .quick-menu .noti-txt:after {display:none;}
+
+    /* 모바일 세로정렬 line-height */
+    select.select.sel-s {line-height:28px;}
+    .flag-txt {line-height:20px;}
+    .btn-small2-line {line-height:28px;}
+    .unit-type1 .unit-layer .unit-under-btn .btn-buynow {line-height:30px;}
+    
 }
 
 @media only screen and (max-width:1024px){ /* ipad pro*/
@@ -1307,7 +1314,7 @@ textarea + .cot b {vertical-align: top;}
 
     .unit-type1 .unit-layer {width:100%; height:30px; margin:5px 0 25px; border:0; position:inherit; top:inherit; left:inherit; z-index:inherit; display:block;}
     .unit-type1 .unit-layer .unit-link {width:100%; height:80vw; position:absolute; bottom:30px; left:0; z-index:5;}
-    .unit-type1 .unit-layer .unit-under-btn {height:30px; padding:0 5px; margin-top:11px; line-height:30px;background:none;}
+    .unit-type1 .unit-layer .unit-under-btn {height:30px; padding:0 5px; margin-top:11px; line-height:31px;background:none;}
     .unit-type1 .unit-layer .unit-under-btn > li > a {display:inline-block; color:#000; line-height:28px;}
     .unit-type1 .unit-layer .unit-under-btn > li {text-align:left;}
     .unit-type1 .unit-layer .unit-under-btn > li + li  {border-left:0; text-align:right;}
