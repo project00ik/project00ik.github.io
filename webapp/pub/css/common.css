@@ -394,7 +394,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-minus {width:28px; height:28px; display:inline-block; background: url(../images/common/icon_minus_black.svg) 50% 50% no-repeat; font-size:0; border:1px solid #000;}
 
 /* 플래그 */
-.flag-txt {display:inline-block; width:auto; height:20px; line-height:18px; font-size:12px; text-align:center; border-radius:10px; padding:0 7px;}
+.flag-txt {display:inline-block; width:auto; height:20px; line-height:19px; font-size:12px; text-align:center; border-radius:10px; padding:0 7px;}
 .flag-txt ~ .flag-txt {margin-left:6px;}
 .flag-txt.blue {color:#fff; background:#346dd0;}
 .flag-txt.purple {color:#a340bf; border:1px solid #a340bf;}
@@ -1286,7 +1286,7 @@ textarea + .cot b {vertical-align: top;}
 
     /* 플래그 */
     .flag-txt ~ .flag-txt {margin-left:2px;}
-    .flag-txt {height:18px; padding:0 7px; font-size:10px; line-height:16px; text-align: center;}
+    .flag-txt {height:18px; padding:0 7px; font-size:10px; line-height:17px; text-align: center;}
 
     /* 별점 */
     .rating .star-s {vertical-align: top;}
