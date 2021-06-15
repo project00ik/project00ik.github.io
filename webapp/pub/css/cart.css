@@ -40,7 +40,8 @@
 /* 장바구니 팝업 */
 .pop-restock  {text-align:center;}
 .pop-restock > span {font-size:24px;font-weight:bold;}
-.pop-restock .pop-write {margin-top:30px;text-align:left; border-bottom: 1px solid #D7D7D7;}
+.pop-restock .pop-write {margin-top:30px;text-align:left;}
+.pop-restock .pop-write table {border-bottom: 1px solid #D7D7D7;}
 .pop-restock .pop-write th {font-weight:normal;background:#FAFAFA;padding:20px 30px 20px 20px;width:137px;border-top:1px solid #D7D7D7;border-right:1px solid #D7D7D7;}
 .pop-restock .pop-write td {font-size:15px;color:#666;padding:20px;border-top:1px solid #D7D7D7;}
 .pop-restock .pop-write td div {display:flex;}
@@ -106,6 +107,8 @@
 .top-write-box .notice-txt {margin-top: 0;}
 .quick-con .list-con {border-top: 0;}
 .quick-con .result-none2 {border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;}
+.pop-layout.pop-write > ul > li:first-child {padding-top: 10px;}
+
 
 
 /* 장바구니 팝업*/
@@ -271,7 +274,7 @@
 /* 주문완료 */
 .cart-order-done {display: flex; justify-content: center; flex-direction: column; text-align: center; width: 100%; height: 217px; margin-bottom: 30px; background: #fafafa;}
 .cart-order-done .done-txt1 {font-size: 24px; color: #000; font-weight: bold; line-height: 22px; padding-bottom: 20px;}
-.cart-order-done .done-txt2 {font-size: 16px; color: #000; line-height: 22px; padding-bottom: 10px;}
+.cart-order-done .done-txt2 {font-size: 16px; color: #000; line-height: 19px; padding-bottom: 10px;}
 .cart-order-done .done-txt2 span {font-weight: 500; color: #346dd0; padding-left: 20px;}
 
 
@@ -342,7 +345,7 @@
     .cart-list-con .tit-area .check-style2 > span {font-size:15px;}
     .cart-list-con .right-area {position:absolute; top:30px; left:20px; z-index:1;}
     .cart-list-con .list-con + .list-con {margin-top:20px;}
-    .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y:70px; background-size: 50px 50px;}
+    .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y:70px; background-size: 50px 50px; font-size: 14px;}
     .cart-list-con .list-con ul {}
     .wish-list-con .list-con ul {border-top:1px solid #000; border-bottom:none; }
     .cart-content .list-con .list-in .btn-tooltip {margin-top: 0;}
@@ -418,6 +421,7 @@
     .pop-restock .pop-write .input td div {line-height:19px}
     .pop-restock .pop-write .input td div label {line-height:19px}
     .pop-restock .pop-write .input td div.form-layout {width:100%;}
+    .pop-cart-addr1 ul li.none p {background-size: 50px 50px; padding: 60px 0 0 0; font-size: 14px; line-height: 18px;}
 
       
     /* 장바구니 주문서 팝업*/
