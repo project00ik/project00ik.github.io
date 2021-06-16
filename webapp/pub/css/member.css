@@ -217,8 +217,8 @@
     .list-con .mem-info-list li .form-address .btn-style-m1 {width: 112px;}
     .list-file-con {padding-bottom: 20px;}
     .list-file-con .file-con {margin: 10px 20px; display: block; border: 0;}
-    .list-file-con .file-con .in-grid-size {height: auto; min-height: 480px;}
-    .list-file-con .file-con .in-grid-size.w-460 {width: 100%; margin: 0 0 10px 0; min-height: 240px;}
+    .list-file-con .file-con .in-grid-size {height: auto;}
+    .list-file-con .file-con .in-grid-size.w-460 {width: 100%; margin: 0 0 10px 0;}
 
     /* 회원가입 */
     .join-content .complete-wrap{width: 100%;margin: 70px auto;}
