@@ -116,6 +116,8 @@
 .cate-layer .depth4-layer {left:220px; background:#fff;}
 .cate-layer .depth3-layer,
 .cate-layer .depth4-layer {height:475px; display:none;}
+.cate-layer .first .depth3-layer,
+.cate-layer .first .depth4-layer {display:block;}
 .cate-layer .depth3-layer.active,
 .cate-layer .depth4-layer.active {display:block;}
 .cate-layer .depth4-layer .d4-list {width:440px; height:503px; display:-webkit-box; display:-ms-flexbox; display:flex; flex-direction:column; flex-wrap:wrap; justify-content:left; position:relative; overflow:hidden;}
