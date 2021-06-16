@@ -147,7 +147,7 @@
     .main .main-slide-area .swiper-slide .slide-img-area {display:none;}
     .main .main-slide-area .swiper-slide .mo-slide-img-area {display:block;}
     .main .main-slide-area .swiper-scrollbar {width:calc(100% - 70px); margin-left:0; left:35px; bottom:40px;}
-    .bulk-purchase-slide .swiper-container {height:157px;}
+    .bulk-purchase-slide .swiper-container {height:150px;}
     .bulk-purchase-wrap .cont-bulk-purchase {width:100%; padding:40px 0;}
     .bulk-purchase-slide {padding:0;}
     .bulk-purchase-slide .swiper-slide {width:116px !important;}
