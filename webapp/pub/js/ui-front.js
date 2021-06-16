@@ -304,6 +304,22 @@ function layoutCategory(){
       });
     });
   });
+  
+  $pcCateLyArea.each(function () {
+    $(this).find('.depth-list').each(function(){
+      
+      var $depthBtnFirst = $(this).find('> li').eq(0);
+      $depthBtnFirst.addClass('first');
+      // $depthBtnFirst.find('> .depthBtn').addClass('on');
+      $depthBtnFirst.find('> .depthCont').addClass('active');
+      // $depthBtnFirst.siblings().find(' > .depthBtn').removeClass('on');
+      // $depthBtnFirst.find('> .depthBtn').addClass('on');
+      // $depthBtnFirst.siblings().find('.depthCont').removeClass('active');
+      // $depthBtnFirst.find('> .depthCont').addClass('active');
+    
+    });
+  
+  });
 
   // PC 카테고리 depth 별 hover 시 닫기 버튼 노출
   $('.main-visual-cate').on('mouseover', function(){
