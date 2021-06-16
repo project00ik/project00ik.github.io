@@ -112,10 +112,10 @@
 .cate-layer .depthBtn.on {color:#346dd0;}
 .cate-layer .depthCont {height:100%; position:absolute; top:0; z-index:1; background:#fff;}
 .cate-layer .depthCont::before {content:""; width:1px; height:457px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:0;}
-.cate-layer .depth3-layer {left:220px;}
-.cate-layer .depth4-layer {left:220px;}
+.cate-layer .depth3-layer {left:220px; background:#fff;}
+.cate-layer .depth4-layer {left:220px; background:#fff;}
 .cate-layer .depth3-layer,
-.cate-layer .depth4-layer {display:none;}
+.cate-layer .depth4-layer {height:475px; display:none;}
 .cate-layer .depth3-layer.active,
 .cate-layer .depth4-layer.active {display:block;}
 .cate-layer .depth4-layer .d4-list {width:440px; height:503px; display:-webkit-box; display:-ms-flexbox; display:flex; flex-direction:column; flex-wrap:wrap; justify-content:left; position:relative; overflow:hidden;}
