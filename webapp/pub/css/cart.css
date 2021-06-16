@@ -30,7 +30,7 @@
 .cart-total-area dl > dd {}
 .cart-total-area .price {font-size:22px;}
 .cart-total-area .price > b {font-size:32px; font-weight:700; vertical-align:text-bottom;}
-.cart-total-area dl + dl {border-left:1px solid #d7d7d7;}
+/* .cart-total-area dl + dl {border-left:1px solid #d7d7d7;} */
 .cart-total-area dl + dl::before {content:""; width:30px; height:30px; background:url(../images/common/icon_cart_minus.svg) 50% 50% no-repeat #000; display:inline-block; border-radius:50%; overflow:hidden; position:absolute; top:50%; left:-15px; z-index:1; transform:translateY(-50%);}
 .cart-total-area dl.total::before {content:""; width:30px; height:30px; background:url(../images/common/icon_cart_total.svg) 50% 50% no-repeat #000; display:inline-block;}
 .cart-total-area .info-txt {font-size:14px; color:#999;}
