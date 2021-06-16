@@ -211,6 +211,7 @@
     .notice-wrap .cont-notice .service-area .ser-box ul .sc-question u {background: url(../images/common/mo_icon_cs_question.svg) center bottom no-repeat;}
     .notice-wrap .cont-notice .service-area .ser-box ul .sc-faq u {background: url(../images/common/mo_icon_cs_faq.svg) center bottom no-repeat;}
     .notice-wrap .cont-notice .service-area .ser-box ul .sc-delivery u {background: url(../images/common/mo_icon_cs_delivery.svg) center bottom no-repeat;}
+    .notice-wrap .cont-notice .service-area .ser-box ul .sc-return u {background: url(../images/common/mo_icon_cs_return.svg) center bottom no-repeat;height: 39px;}
     
     .main .btn-area-c {padding: 0; display:block;}
     .main .btn-area-c .btn-more-black2 {height:28px; line-height: 26px; font-size: 14px; position: inherit;  top:inherit; left: inherit; z-index: inherit;}
