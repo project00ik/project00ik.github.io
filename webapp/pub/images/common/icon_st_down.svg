@@ -1,0 +1,8 @@
+<svg id="ic_quick_download" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect id="area" width="36" height="36" fill="none"/>
+  <g id="icon" transform="translate(-14 -6)">
+    <rect id="_00" data-name="00" width="20" height="2" rx="1" transform="translate(22 33)" fill="#fff"/>
+    <path id="_00-2" data-name="00" d="M22,17l7,6,7-6" transform="translate(3 8)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect id="_00-3" data-name="00" width="2" height="16" rx="1" transform="translate(31 14)" fill="#fff"/>
+  </g>
+</svg>

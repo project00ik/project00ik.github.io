@@ -1,0 +1,8 @@
+<svg id="ic_mo_quick_download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="area" width="24" height="24" fill="none"/>
+  <g id="icon" transform="translate(-20 -8)">
+    <rect id="_00" data-name="00" width="18" height="2" rx="1" transform="translate(23 28)" fill="#fff"/>
+    <path id="_00-2" data-name="00" d="M22,17l6,6,6-6" transform="translate(4 3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect id="_00-3" data-name="00" width="2" height="14" rx="1" transform="translate(31 11)" fill="#fff"/>
+  </g>
+</svg>

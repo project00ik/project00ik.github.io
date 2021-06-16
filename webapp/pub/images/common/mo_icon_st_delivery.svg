@@ -1,0 +1,9 @@
+<svg id="ic_mo_quick_inquiry" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="area" width="24" height="24" fill="none"/>
+  <g id="icon" transform="translate(-5 -2)">
+    <path id="패스_203" data-name="패스 203" d="M17,8,8,13l9,5,9-5Z" transform="translate(0 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_204" data-name="패스 204" d="M7,16v8.842L16,30l9-5.158V16" transform="translate(1 -6)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_205" data-name="패스 205" d="M18,20v8" transform="translate(-1 -5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <path id="패스_206" data-name="패스 206" d="M13,20V14.923L22.5,9.5" transform="translate(-1 -3)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>
