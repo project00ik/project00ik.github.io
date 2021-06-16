@@ -103,6 +103,7 @@
 .notice-wrap .cont-notice .service-area .ser-box ul .sc-question u {background: url(../images/common/icon_cs_question.svg) center bottom no-repeat;}
 .notice-wrap .cont-notice .service-area .ser-box ul .sc-faq u {background: url(../images/common/icon_cs_faq.svg) center bottom no-repeat;}
 .notice-wrap .cont-notice .service-area .ser-box ul .sc-delivery u {background: url(../images/common/icon_cs_delivery.svg) center bottom no-repeat;}
+.notice-wrap .cont-notice .service-area .ser-box ul .sc-return u {background: url(../images/common/icon_cs_return.svg) center bottom no-repeat;height:46px}
 .notice-wrap .cont-notice .service-area .ser-box ul li p {padding-top: 12px; font-size: 15px; line-height: 15px; color: #000;}
 
 /* 하단배너 */
