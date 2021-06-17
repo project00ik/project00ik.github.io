@@ -13774,7 +13774,8 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-
+      delBtn(); // 바로구매/장바구니 팝업 옵션 삭제
+      optionResultHeight(); // 바로구매/장바구니 팝업 옵션 높이 제어 js
       liNum = function(){
         //리스트 번호
         var $proli = $('.product-list').find('li');
@@ -13787,6 +13788,35 @@
         })
       }
       liNum();//리스트 번호
+
+      // 바로구매/장바구니 상품슬라이드
+      // 썸네일
+      $('.pro-detail-slide').each(function(){
+        var productDetaileSlide = new Swiper($(this).find('.productDetaileSlide'), {
+          direction: 'horizontal',
+          spaceBetween: 10,
+          slidesPerView: 5,
+          watchSlidesVisibility: true,
+          watchSlidesProgress: true,
+          observer: true,
+          observeParents: true,
+          touchRatio: 0,//드래그 금지
+        });
+        // 상품이미지
+        var productDetaileSlide2 = new Swiper($(this).find('.productDetaileSlide2'), {
+          spaceBetween: 0,
+          touchRatio: 0,//드래그 금지
+          observer: true,
+          observeParents: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: productDetaileSlide,
+          },
+        });
+      });
      
       
   
