@@ -286,8 +286,10 @@ function layoutCategory(){
     $('.d2Layer').removeClass('active');
     $('.partition-area .depthBtn').removeClass('on');
     $('.partition-area .depthCont').removeClass('active');
-    // hover시 2depth 첫번째 on처리
+    // hover시 2depth, 3depth 첫번째 on처리
     $('.d2-list > li.first > .depthBtn').addClass('on');
+    $('.d3-list > li.first > .depthBtn').addClass('on');
+    // 1depth on 이벤트
     if ($d1Bt.hasClass('on')){
       $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
     } else {
