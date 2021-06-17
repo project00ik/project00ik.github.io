@@ -708,9 +708,9 @@ function accordion(){
       var $acdBtnParent = $(this).parent();
       $acdBt.not($acdActive.toggleClass('on')).removeClass('on');
       if($acdBtnParent.hasClass('acdBtnArea')){
-        $acdCt.not($acdActive.parent().parent().find($acdCt).slideToggle()).hide();
+        $acdCt.not($acdActive.parent().parent().find($acdCt).slideToggle()).slideUp();
       } else {
-        $acdCt.not($acdActive.parent().find($acdCt).slideToggle()).hide();
+        $acdCt.not($acdActive.parent().find($acdCt).slideToggle()).slideUp();
       }
     })
 	});
