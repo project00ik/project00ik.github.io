@@ -988,8 +988,8 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu .qk-down u {background:url(../images/common/mo_icon_st_down.svg) 0 0 no-repeat;}
     .quick-menu .qk-group {display:none;}
     .quick-menu .qk-group-show {display:flex;}
-    .quick-menu .qk-group-show u {background:url(../images/common/mo_icon_st_plus.svg) 0 0 no-repeat;  transition:all 0.3s ease;}
-    .quick-menu .qk-group-show.on u {transform:rotate(45deg);}
+    .quick-menu .qk-group-show u {background:url(../images/common/mo_icon_st_plus.svg) 0 0 no-repeat;  transition:all 0.3s ease; transform:rotate(45deg);}
+    .quick-menu .qk-group-show.on u {transform:rotate(0);}
     .quick-menu .noti-txt {top:-5px; right:-5px; width:22px; height:22px; line-height:22px; font-size:12px; padding:0; text-align:center;}
     .quick-menu .noti-txt:after {display:none;}
 
