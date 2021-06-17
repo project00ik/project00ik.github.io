@@ -282,7 +282,12 @@ function layoutCategory(){
   $pcCateLyArea.find('.d1Btn').on('mouseover', function(){
     var $d1Bt = $(this);
     $(this).closest('.cate-layer').find('.d1Btn').not($d1Bt.addClass('on')).removeClass('on');
+    // 초기화
     $('.d2Layer').removeClass('active');
+    $('.partition-area .depthBtn').removeClass('on');
+    $('.partition-area .depthCont').removeClass('active');
+    // hover시 2depth 첫번째 on처리
+    $('.d2-list > li.first > .depthBtn').addClass('on');
     if ($d1Bt.hasClass('on')){
       $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
     } else {
@@ -305,20 +310,14 @@ function layoutCategory(){
     });
   });
   
+  // PC 카테고리 depth 별 첫번째 펼침 처리
   $pcCateLyArea.each(function () {
     $(this).find('.depth-list').each(function(){
-      
       var $depthBtnFirst = $(this).find('> li').eq(0);
       $depthBtnFirst.addClass('first');
-      // $depthBtnFirst.find('> .depthBtn').addClass('on');
+      $('.d2-list').find('> li').eq(0).find('> .depthBtn').addClass('on');
       $depthBtnFirst.find('> .depthCont').addClass('active');
-      // $depthBtnFirst.siblings().find(' > .depthBtn').removeClass('on');
-      // $depthBtnFirst.find('> .depthBtn').addClass('on');
-      // $depthBtnFirst.siblings().find('.depthCont').removeClass('active');
-      // $depthBtnFirst.find('> .depthCont').addClass('active');
-    
     });
-  
   });
 
   // PC 카테고리 depth 별 hover 시 닫기 버튼 노출
