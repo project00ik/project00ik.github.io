@@ -49,10 +49,10 @@
 .option-box .minimum-order {margin-top:3px; font-size: 13px; color: #666;}
 .option-box .normal-price {font-size: 16px; color: #999; text-decoration:line-through;}
 .product-total {margin-top:20px; padding:20px 0 40px; border-top:1px solid #000; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
-.product-total .tit {flex: 1; font-size: 23px; font-weight: 500; color: #333;}
+.product-total .tit {flex: 1; font-size: 20px; font-weight: 500; color: #333;}
 .product-total .total-price {flex: 2; text-align: right;}
-.product-total .total-price .price {font-size: 28px;}
-.product-total .total-price .price > b {font-size: 42px; font-weight:700; vertical-align: text-bottom;}
+.product-total .total-price .price {font-size: 20px; font-weight: 500;}
+.product-total .total-price .price > b {font-size: 28px; font-weight:700; vertical-align: text-bottom; display: inline-block; padding-right: 2px;}
 .product-total .price-info {font-size: 14px; color: #999;}
 
 .product-banner-area {width:100%; margin:100px 0; display:-webkit-box; display:-ms-flexbox; display:flex;}
@@ -362,9 +362,6 @@
 .ly-buyNowLy .option-result.selLeng2 {height:231px;}
 .ly-buyNowLy .option-result.selLeng3 {height:183px;}
 .ly-buyNowLy .product-total {padding-bottom:0;}
-.ly-buyNowLy .product-total .tit {font-size:20px;}
-.ly-buyNowLy .product-total .total-price .price {font-size:20px;}
-.ly-buyNowLy .product-total .total-price .price > b {font-size:28px;}
 .ly-buyNowLy .cart-select-area {width:390px; padding-top:24px; position: absolute; bottom:146px; left:30px;}
 .ly-buyNowLy .cart-select-area .tit {margin-bottom:10px; font-size: 16px;}
 .ly-buyNowLy .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
@@ -438,9 +435,9 @@
     .product-banner-area > li + li {margin-left:0; margin-top:10px;}
     .action-bar {display:block;}
     .option-pc-area {display:none;}
-    .product-total .total-price .price {font-size: 22px;}
-    .product-total .total-price .price > b {font-size: 32px;}
-    .product-total .price-info {margin-top:5px; font-size:12px;}
+    .product-total .total-price .price {font-size: 20px;}
+    .product-total .total-price .price > b {font-size: 28px;}
+    .product-total .price-info {font-size:12px;}
     .product-total .tit {font-size:18px;}
     .option-box .btn-del {top:14px; right:14px;}
     .personalization-area {margin:60px 0 120px; padding:0 15px;}
@@ -602,9 +599,6 @@
     .ly-buyNowLy .pro-detail-info {display:none;}
     .ly-buyNowLy .option-result {height:222px; overflow-x: hidden; overflow-y: auto;}
     .ly-buyNowLy .product-total {padding-bottom:0;}
-    .ly-buyNowLy .product-total .tit {font-size:20px;}
-    .ly-buyNowLy .product-total .total-price .price {font-size:20px;}
-    .ly-buyNowLy .product-total .total-price .price > b {font-size:28px;}
     .ly-buyNowLy .cart-select-area {margin-top:24px;}
     .ly-buyNowLy .cart-select-area .tit {margin-bottom:10px; font-size: 16px;}
     .ly-buyNowLy .btn-area {overflow:hidden; padding:30px; text-align:center; border-top:1px solid #d7d7d7;}
