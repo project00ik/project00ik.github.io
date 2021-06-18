@@ -260,12 +260,13 @@
 .cart-pay-area > p span {vertical-align: top; display: inline-block;}
 .cart-pay-area .radio-style1 {margin-left: 50px;}
 .cart-pay-area .radio-style1 > span {font-size: 16px;}
-.after-pay-area {position: relative; margin: 20px 0 0 0; padding: 0 15px;}
+.after-pay-area {position: relative; margin: 20px 0 0 0; }
 .after-pay-area [class^=af-arrow] {top: 50%; transform: translateY(-50%);}
-.after-pay-area .afpay-box {padding: 30px; border: 1px solid #707070; background: #fff; border-radius: 10px;}
-.after-pay-area .afpay-box.on {border: 1px solid #346dd0;}
+.after-pay-area .swiper-slide {padding: 0 15px 15px;}
+.after-pay-area .afpay-box {padding: 30px; background: url(../images/common/img_card_bg.png) 0 0 no-repeat; background-size: 370px 199px; border-radius: 10px;}
+.after-pay-area .afpay-box.on {box-shadow: 8px 8px 8px rgba(52, 109, 208, 0.2);}
 .after-pay-area .afpay-box .afpay-txt {padding-top: 10px;}
-.after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 22px; color: #000;}
+.after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 21px; color: #fff;}
 .after-pay-area .afpay-box .radio-style1 {width: 100%;}
 .pay-agree-check {text-align: center; padding: 70px 0 0;}
 .cart-content .pay-agree-check + .btn-area-c {margin-top: 0;}
@@ -504,7 +505,8 @@
     .notice-txt {padding: 0 20px;}
     .pay-agree-check {padding: 30px 20px 0;}
     .after-pay-area {padding: 0; margin-top: 30px;}
-    .after-pay-area .swiper-slide {width: 370px !important;}
+    .after-pay-area .swiper-slide {width: 370px !important; padding: 0 10px 10px;}
+    .after-pay-area .afpay-box {background-size: 100% 100%;}
     .after-pay-area .afpay-box .afpay-txt p {font-size: 15px;}
     
     .list-con .list-in .two-form .form-layout > :last-child {width: 112px;}
