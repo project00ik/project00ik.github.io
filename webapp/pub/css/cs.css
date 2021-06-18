@@ -128,10 +128,14 @@ ICTMALL 고객만족도 조사
 .cs-cont .survey-list ul li > div>div{position:absolute;top:50%;left: 0;margin-top: -12px;}
 .cs-cont .survey-list ul li .num{width: 60px;text-align: center;}
 .cs-cont .survey-list ul li .text{width: 380px;}
+.cs-cont .survey-list ul li .text span{display: block;}
+.cs-cont .survey-list ul li .text span:first-child{font-weight: 500;margin-bottom: 6px;}
 .cs-cont .survey-list ul li .radio-wrap{flex:1;margin-left: 30px;}
 .cs-cont .survey-list ul li .radio-wrap .radio-style1 + .radio-style1{margin-left:30px;}
-.cs-cont .survey-list ul li .text-100{flex:1;}
-.cs-cont .survey-list ul li .text-100 textarea{margin-top: 10px;height: 109px;}
+.cs-cont .survey-list ul li .text.w100{flex:1;}
+.cs-cont .survey-list ul li .text.w100 span{display: inline-block;}
+.cs-cont .survey-list ul li .text.w100 span:first-child{margin-bottom:0px;}
+.cs-cont .survey-list ul li .text.w100 textarea{margin-top: 10px;height: 109px;}
 
 @media only screen and (max-width: 800px){
   /* ==========================================================================
