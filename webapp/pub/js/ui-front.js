@@ -533,6 +533,18 @@ function scrollTop(){
   }
 }
 
+function cartFixedBtn(){
+  // 장바구니 fixed 고정 버튼 영역 
+  var $winSrollTop = $(window).scrollTop();
+  var $scrollPoint = $('.footer-wrap').offset().top - 1100;
+  var $fixBtnArea = $('.cart-floating-box');
+  if ($winSrollTop < $scrollPoint){
+    $fixBtnArea.show();
+  } else {
+    $fixBtnArea.hide();
+  }
+}
+
 function ratingBtnArea(){
   // 포토리뷰 별점버튼 js
   $('.rating-btn-area').find('.btnStar').each(function(){

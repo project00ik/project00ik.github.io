@@ -481,10 +481,50 @@
           </dl>
         </div>
         <!--// 결제예정금액 -->
+
+        <!-- PC 장바구니 floating 영역 -->
+        <div class="cart-floating-box">
+          <div class="cart-floating-cont">
+            <!-- 결제예정금액 -->
+            <div class="cart-total-floating">
+              <dl>
+                <dt>총 주문금액</dt>
+                <dd>
+                  <p class="price"><b>100,000</b>원</p>
+                </dd>
+              </dl>
+              <dl>
+                <dt>총 할인금액</dt>
+                <dd>
+                  <p class="price"><b>70,000</b>원</p>
+                </dd>
+              </dl>
+              <dl class="total">
+                <dt>결제예정금액</dt>
+                <dd>
+                  <p class="price"><b>210,000</b>원</p>
+                  <p class="info-txt">(VAT포함 231,000원)</p>
+                </dd>
+              </dl>
+            </div>
+            <!--// 결제예정금액 -->
+            <!-- 버튼영역 -->
+            <div class="right-area">
+              <button class="btn btn-style-m1">선택상품 주문</button>
+              <button class="btn btn-style-m2">전체상품 주문</button>
+            </div>
+            <!--// 버튼영역 -->
+          </div>
+        </div>
+        <!--// PC 장바구니 floating 영역 -->
+
+        <!-- 모바일 버튼영역 -->
         <div class="btn-area-c mo-fixed-btn">
           <button class="btn btn-style-ml1">선택상품 주문</button>
           <button class="btn btn-style-ml2">전체상품 주문</button>
         </div>
+        <!--// 모바일 버튼영역 -->
+        
       </div>
     </section>
     <footer class="footer-wrap mo-hide">
@@ -987,6 +1027,10 @@
       delBtn(); // 옵션 삭제
       buyNowLy(); // 주문수정 레이어 팝업
       allChecked(); // all checked
+
+      $(window).scroll(function() {
+        cartFixedBtn(); // 장바구니 fixed 고정 버튼 영역 
+      });
       // 주문수정 상품슬라이드
       // 썸네일
       $('.pro-detail-slide').each(function(){

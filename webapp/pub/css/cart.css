@@ -30,10 +30,25 @@
 .cart-total-area dl > dd {}
 .cart-total-area .price {font-size:22px;}
 .cart-total-area .price > b {font-size:32px; font-weight:700; vertical-align:text-bottom;}
-/* .cart-total-area dl + dl {border-left:1px solid #d7d7d7;} */
 .cart-total-area dl + dl::before {content:""; width:30px; height:30px; background:url(../images/common/icon_cart_minus.svg) 50% 50% no-repeat #000; display:inline-block; border-radius:50%; overflow:hidden; position:absolute; top:50%; left:-15px; z-index:1; transform:translateY(-50%);}
 .cart-total-area dl.total::before {content:""; width:30px; height:30px; background:url(../images/common/icon_cart_total.svg) 50% 50% no-repeat #000; display:inline-block;}
 .cart-total-area .info-txt {font-size:14px; color:#999;}
+.cart-floating-box {width:100%; height:108px; position: fixed; bottom:0; left:0; z-index:10; background: #fff; border-top:1px solid #666;;}
+.cart-floating-box .cart-floating-cont {width:1200px; margin:0 auto; padding-right:305px; position: relative;}
+.cart-floating-cont .right-area {width:305px; position: absolute; top:35px; right:30px; z-index:1; text-align: right;}
+.cart-floating-cont .right-area .btn + .btn {margin-left:7px;}
+.cart-floating-cont .cart-total-floating {font-size:0; padding:27px 0 24px 20px;}
+.cart-total-floating dl {font-size:0; display: inline-block; position:relative;}
+.cart-total-floating dl > dt {margin-bottom:0; margin-right:16px; font-weight:500; font-size:16px; display: inline-block;}
+.cart-total-floating dl > dd { display: inline-block;}
+.cart-total-floating dl + dl {margin-left:42px; padding-left:42px;}
+.cart-total-floating dl + dl::before {content:""; width:30px; height:30px; background:url(../images/common/icon_cart_minus.svg) 50% 50% no-repeat #000; display:inline-block; border-radius:50%; overflow:hidden; position:absolute; top:50%; left:-15px; z-index:1; transform:translateY(-50%);}
+.cart-total-floating dl.total::before {content:""; width:30px; height:30px; background:url(../images/common/icon_cart_total.svg) 50% 50% no-repeat #000; display:inline-block;}
+.cart-total-floating dl.total .price {margin-top:10px;}
+.cart-total-floating .price {font-size:18px;}
+.cart-total-floating .price > b {font-size:26px; font-weight:700; vertical-align:text-bottom;}
+.cart-total-floating .info-txt {font-size:12px; color:#999; font-weight: 400;}
+
 
 /* .cart-content .btn-area-c {margin-top:70px;} */
 
@@ -333,6 +348,19 @@
    Media Queries for Responsive Design.
    ========================================================================== */
 @media only screen and (max-width:1200px) {
+    .cart-floating-box {height:auto; border-top-color:#d7d7d7;}
+    .cart-total-floating {display: none;}
+    .cart-total-floating dl {display:none;}
+    .cart-total-floating dl + dl {margin-left:0; padding-left:0;}
+    .cart-total-floating dl.total {display:block;}
+    .cart-total-floating dl.total::before {display:none;}
+    .cart-floating-box .cart-floating-cont {width:100%; padding:20px;}
+    .cart-floating-cont .right-area {width:100%; text-align: center; position:inherit; top:inherit; right:inherit;}
+    /* .cart-floating-cont .right-area .btn {min-width:198px; height:48px; line-height:47px; font-size:16px;} */
+    .cart-floating-box {border-top-color:#d7d7d7;}
+    .cart-floating-cont .right-area {display: flex;}
+    .cart-floating-cont .right-area .btn {flex:1; min-width:198px; height:48px; line-height:47px; font-size:16px;}
+
 }
 
 
