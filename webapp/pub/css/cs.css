@@ -21,8 +21,6 @@
 .cs-info dl > dd > p {font-size: 14px; color: #666; font-weight: 400;}
 .cs-info dl > dd .cs-tel {padding:6px 0; font-size: 26px; color: #000; font-weight: 700;}
 
-
-
 /* ==========================================================================
     공지사항
 ========================================================================== */
@@ -46,7 +44,7 @@
 .notice-detail-area {overflow: hidden;}
 .notice-detail {width:100%;}
 .notice-detail > dt {width:100%; padding:18px 114px 18px 76px; position: relative; border-bottom:1px solid #d7d7d7;}
-.notice-detail > dt .new {margin:-5px 0 0 10px;}
+.notice-detail > dt .new {margin:-3px 0 0 10px;}
 .notice-detail .list-flag {position: absolute; top:18px; left:20px; z-index:1;}
 .notice-detail .date  {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
 .notice-detail > dd {width:100%;}
@@ -61,6 +59,26 @@
 .notice-detail .notice-bt-list .txt-area {font-size: 16px; color: #000;}
 .notice-detail .notice-bt-list .txt-area > span {display: inline-block;}
 .notice-detail .notice-bt-list .txt {width:100%; font-size: 16px; color:#000;  vertical-align: top;}
+
+/* ==========================================================================
+    다운로드센터
+========================================================================== */
+/* 목록 */
+.cs-cont .list-top-search2 .list-con {padding-top: 20px;}
+.list-top-search2 .list-con .list-in {display: flex; border: 0; padding-top: 0; margin-top: 0;}
+.list-top-search2 .list-con .list-in > li  {padding-bottom: 0;}
+.list-top-search2 .list-con .list-in > li > label {width: 64px;}
+.list-top-search2 .list-con .list-in > li .select {width: 136px;}
+.list-top-search2 .list-con .list-in > li .input {width: 225px;}
+.notice-list.download-list > li {padding: 18px 466px 18px 20px;}
+.download-list .txt-area p {font-size: 14px; color: #666; text-align: center;}
+.download-list .txt-area .cate {position: absolute; top: 20px; right: 320px; width: 82px !Important; text-align: center;}
+.download-list .txt-area .made {position: absolute; top: 20px; right: 150px; width: 130px !Important; text-align: center;}
+.notice-detail.download-detail > dt {padding: 18px 466px 18px 20px;}
+/* 상세 */
+.download-detail .txt-area .txt {font-size: 16px; color: #000;}
+.download-detail .txt-area .cate {width:82px; font-size:14px; color:#666; text-align: center; position: absolute; top:20px; right:320px; z-index:1;}
+.download-detail .txt-area .made {width:130px; font-size:14px; color:#666; text-align: center; position: absolute; top:20px; right:150px; z-index:1;}
 
 /* ==========================================================================
     자주묻는질문
