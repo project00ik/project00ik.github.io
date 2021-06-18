@@ -131,9 +131,9 @@
 .cate-layer-wrap .btn-layer-close {width:24px; height:24px; display:inline-block; font-size:0; background:url(../images/common/btn_cate_ly_close.svg) 0 0 no-repeat; position:absolute; top:24px; right:24px; z-index:99;}
 .mo-cate-layer-wrap {display:none;}
 
-.gnb-wrap .gnb-area .gnb {margin-left:12px; color:#fff; font-size:0; float:left;}
+.gnb-wrap .gnb-area .gnb {margin-left:15px; color:#fff; font-size:0; float:left;}
 .gnb-area .gnb ul > li {display:inline-block; font-size:18px; position:relative;}
-.gnb-area .gnb ul > li > a {height:100%; line-height:48px; padding:0 48px;}
+.gnb-area .gnb ul > li > a {height:100%; line-height:48px; padding:0 28px;}
 .gnb-area .gnb ul > li + li::before {content:""; width:1px; height:14px; display:inline-block; background:#fff; vertical-align:middle; position:absolute; top:50%; left:0; transform:translateY(-50%);}
 .gnb-wrap .gnb-area .gnb-right-area {width:190px; height:48px; color:#fff; position:absolute; top:0; right:0; z-index:100;}
 .gnb-right-area .real-time-search {height:48px; padding-right:20px; position:relative;}
@@ -1051,7 +1051,7 @@ textarea + .cot b {vertical-align: top;}
     .gnb-wrap .gnb-area .gnb {width:100%; margin-left:0; white-space:nowrap; overflow-y:hidden; overflow-x:auto;}
     .gnb-area .gnb ul > li {font-size:15px;}
     .gnb-area .gnb ul > li:first-child > a {padding-left:0;}
-    .gnb-area .gnb ul > li > a {padding:0 18px; display:inline-block;}
+    .gnb-area .gnb ul > li > a {padding:0 12px; display:inline-block;}
     .gnb-wrap .gnb-area .gnb-right-area {display:none;}
     .gnb-wrap .cate-area {width:auto; position:absolute; top:12px; left:20px; float:inherit;}
     .gnb-wrap .cate-area .cate-layer-wrap {display:none;}
