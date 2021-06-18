@@ -551,6 +551,7 @@
     .pro-list-cont {margin-top:36px;}
     .pro-list-cont .location {display: none;}
     .pro-list-cont .tit-type1-2 {margin-bottom:0;}
+    .pro-list-cont .tit-type1-2 + .filter-price {border-top: 0;}
     .filter-box {height:108px; padding:0; border:0; margin:0; overflow: hidden;}
     .filter-box > ul > li {width:50%; padding:0 20px; border-bottom:1px solid #d7d7d7;}
     .filter-box > ul > li:nth-child(odd) {border-right:1px solid #d7d7d7;}
