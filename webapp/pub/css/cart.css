@@ -271,10 +271,15 @@
 .cart-content .pay-agree-check + .btn-area-c {margin-top: 0;}
 
 /* 주문완료 */
-.cart-order-done {display: flex; justify-content: center; flex-direction: column; text-align: center; width: 100%; height: 217px; margin-bottom: 30px; background: #fafafa;}
+.cart-order-done {display: flex; justify-content: center; flex-direction: column; text-align: center; width: 100%; height: 217px; margin-bottom: 20px; background: #fafafa;}
 .cart-order-done .done-txt1 {font-size: 24px; color: #000; font-weight: bold; line-height: 22px; padding-bottom: 20px;}
 .cart-order-done .done-txt2 {font-size: 16px; color: #000; line-height: 19px; padding-bottom: 10px;}
 .cart-order-done .done-txt2 span {font-weight: 500; color: #346dd0; padding-left: 20px;}
+.cart-order-cash {display: flex; height: 59px; justify-content: center; align-items: center; background: #fafafa; margin-bottom: 30px;}
+.cart-order-cash p {font-size: 16px;}
+.cart-order-cash p span {display: inline-block; vertical-align: top; padding-left: 5px;}
+.cart-order-cash p:after {content: ''; display: inline-block; width: 1px; height: 11px; background: #bbb; margin: 0 20px;}
+.cart-order-cash p:last-child::after {display: none;}
 
 
 /* 팝업 주소검색 */
@@ -508,6 +513,10 @@
     .cart-order-done {height: 169px; margin-bottom: 20px;}
     .cart-order-done .done-txt1 {font-size: 18px;}
     .cart-order-done .done-txt2 {font-size: 15px;}
+    .cart-order-cash {flex-direction: column; height: 87px;}
+    .cart-order-cash p {font-size: 14px; padding-bottom: 6px;}
+    .cart-order-cash p:last-child {padding-bottom: 0;}
+    .cart-order-cash p:after {display: none;}
 
     /* .cart-content .btn-area-c {margin-top:0;} */
 
