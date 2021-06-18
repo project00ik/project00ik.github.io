@@ -114,6 +114,25 @@
 .news-box .justify-list > li > p {flex:1; font-size:16px; display: inline-block; color:#666;}
 .news-box .justify-list > li .tit {flex:none; width:118px; color:#000; font-weight: 500;}
 .arrow-link {padding-right:23px; background: url(../images/common/btn_more.svg) 100% 50% no-repeat;}
+
+/* ==========================================================================
+ICTMALL 고객만족도 조사
+========================================================================== */
+.cs-cont .list-con{padding-top: 0;}
+.cs-cont .tab-style1{margin: 20px 0;}
+.cs-cont .tab-area .tab-cont{padding-top: 0;}
+.cs-cont .survey-box{background:#F5F5F5;padding:30px 20px}
+.cs-cont .survey-list {border-top: 1px solid #BBBBBB ;}
+.cs-cont .survey-list ul li{display: flex;padding:18px 0;border-bottom: 1px solid #E5E5E5;}
+.cs-cont .survey-list ul li > div{position: relative;}
+.cs-cont .survey-list ul li > div>div{position:absolute;top:50%;left: 0;margin-top: -12px;}
+.cs-cont .survey-list ul li .num{width: 60px;text-align: center;}
+.cs-cont .survey-list ul li .text{width: 380px;}
+.cs-cont .survey-list ul li .radio-wrap{flex:1;margin-left: 30px;}
+.cs-cont .survey-list ul li .radio-wrap .radio-style1 + .radio-style1{margin-left:30px;}
+.cs-cont .survey-list ul li .text-100{flex:1;}
+.cs-cont .survey-list ul li .text-100 textarea{margin-top: 10px;height: 109px;}
+
 @media only screen and (max-width: 800px){
   /* ==========================================================================
       관심카테고리 (마이페이지)
