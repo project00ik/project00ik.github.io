@@ -174,7 +174,7 @@
 .footer .footer-cont .copyright {margin-top:16px; font-size:14px; color:#999;}
 
 /* 퀵메뉴 */
-.quick-menu {margin-right:-704px; position:fixed; right:50%; top:166px; z-index:98;}
+.quick-menu {margin-right:-725px; position:fixed; right:50%; top:166px; z-index:98;}
 .quick-menu a {overflow:visible; position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; width:70px; height:70px; margin-bottom:1px; background:#000;}
 .quick-menu u {display:inline-block; width:36px; height:36px; margin-top: -4px;}
 .quick-menu span {display:block; font-size:11px; line-height:14px; color:#fff; margin-top: 5px;}
@@ -969,6 +969,8 @@ textarea + .cot b {vertical-align: top;}
     .cate-layer .depth4-layer .d4-list > li {width:172px; padding-right:30px;}
     .cate-layer .depth4-layer .d4-list > li .btn-star {right:5px; z-index:1;}
     .cate-layer .banner-area {float:right; margin-right:24px;}
+    .cate-layer-wrap.open::before {content:""; width:calc(100% + 420px); height:591px; background: #fff; display:inline-block; border-bottom: 1px solid #d7d7d7; position: absolute; top:0; left:-20px; z-index:0;}
+    .main-visual-cate .cate-layer-wrap.open .btn-layer-close {right:inherit; left:957px;}
 
     
     /* 퀵메뉴 */

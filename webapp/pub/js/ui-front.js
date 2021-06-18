@@ -237,6 +237,7 @@ function allCategoryLyClose(){
   $('.visualCate .d1Btn').removeClass('on');
   $('.visualCate .d2Layer').removeClass('active');
   $('.visualCate .btn-layer-close').hide();
+  $('.main-visual-cate .cate-layer-wrap').removeClass('open');
 }
 
 function layoutCategory(){
@@ -245,6 +246,7 @@ function layoutCategory(){
     $('.visualCate .d1Btn').removeClass('on');
     $('.visualCate .d2Layer').removeClass('active');
     $('.visualCate .btn-layer-close').hide();
+    $('.main-visual-cate .cate-layer-wrap').removeClass('open');
   });
 
   // 카테고리 레이어 이벤트
@@ -258,8 +260,10 @@ function layoutCategory(){
       $('.d2Layer').removeClass('active');
       if ($d1Bt.hasClass('on')){
         $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
+        $d1Bt.closest('.cate-layer-wrap').addClass('open');
       } else {
         $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
+        $d1Bt.closest('.cate-layer-wrap').removeClass('open');
       }
     });
 
@@ -293,11 +297,13 @@ function layoutCategory(){
     // 1depth on 이벤트
     if ($d1Bt.hasClass('on')){
       $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
+      $('.main-visual-cate .cate-layer-wrap').addClass('open');
     } else {
       $d1Bt.closest('.d1Area').find('.d2Layer').removeClass('active');
+      $('.main-visual-cate .cate-layer-wrap').removeClass('open');
     }
   });
-  
+
   // PC 카테고리 depth 별 hover 시 이벤트
   $pcCateLyArea.each(function () {
     $(this).find('.depth-list > li').each(function () {
