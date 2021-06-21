@@ -533,6 +533,8 @@
     .btn.mo-hide {display:none;}
 
     /* 리뷰팝업 */
+    .pop-review-write > ul > li:first-child {padding-top: 20px;}
+    .pop-review-write .pop-satis .satis-tit {font-size: 16px; padding-bottom: 10px;}
     .pop-review-write .pop-product .pro-text-area {margin-left: 10px;}
     .pop-review-write .pop-product .pro-text-area .pro-name {font-size: 14px; padding-bottom: 3px;}
     .pop-review-write .pop-product .pro-text-area .pro-option {font-size: 12px; padding-bottom: 3px;}
