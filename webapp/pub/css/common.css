@@ -394,7 +394,7 @@ button.btn-style-s1 {line-height:25px;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}
 .btn-tooltip.on {background: url(../images/common/btn_tooltip_on.svg) 0 0 no-repeat;}
 .btn-tooltip.on .tooltip-box {display:block;}
-.tooltip-box > p {font-size: 13px; color: #666;}
+.tooltip-box > p {font-size: 13px; color: #666; line-height: 16px; font-weight: normal;}
 .tooltip-close {width:18px; height:18px; background: url(../images/common/btn_tooltip_close.svg) 0 0 no-repeat; display:inline-block; font-size:0; position: absolute; top:5px; right:5px; z-index: 1;}
 .btn-refresh {width: 36px; height: 36px; margin-left:5px; display:inline-block; font-size:0; background: url(../images/common/btn_refresh.svg) 0 0 no-repeat;}
 .btn-detail {font-size:14px; line-height:21px;}
