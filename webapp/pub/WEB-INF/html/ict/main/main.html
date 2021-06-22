@@ -5230,7 +5230,7 @@
                 <div class="main-slide-area">
                     <div class="swiper-container scrollbarSlide">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide" style="background-color:#587a94;">
+                            <div class="swiper-slide" style="background-color:#D5E0D2;">
                                 <a href="#">
                                     <div class="slide-img-area">
                                         <img src="../../../../images/main/main_slide_img1.png" alt="메인 비주얼 이미지">
@@ -5240,7 +5240,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide" style="background-color:#6482a8;">
+                            <div class="swiper-slide" style="background-color:#FEF9E6;">
                                 <a href="#">
                                     <div class="slide-img-area">
                                         <img src="../../../../images/main/main_slide_img1.png" alt="메인 비주얼 이미지">
@@ -5250,7 +5250,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="swiper-slide" style="background-color:#589494;">
+                            <div class="swiper-slide" style="background-color:#C7E7FF;">
                                 <a href="#">
                                     <div class="slide-img-area">
                                         <img src="../../../../images/main/main_slide_img1.png" alt="메인 비주얼 이미지">
@@ -5261,7 +5261,14 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
+                        <!-- 인디케이터 -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                        <div class="swiper-indicator-area">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev">이전</div>
+                            <div class="swiper-button-next">다음</div>
+                        </div>
+                        <!-- 인디케이터 -->
                     </div>
                 </div>
                 <!--// 메인 비주얼 배너 슬라이드 -->
@@ -19259,15 +19266,23 @@
                 현재페이지에서만 사용 js
             ========================================================================== */
             // 메인 비주얼 영역 slide (scrollbarSlide) swiper(plugin) option
-            var scrollbarSwiper = new Swiper('.swiper-container.scrollbarSlide', {
+            var scrollbarSwiper = new Swiper('.main-slide-area .swiper-container.scrollbarSlide', {
                 slidesPerView: 1,
                 effect: 'fade',
                 centeredSlides: false,
-                slidesPerGroupSkip: 1,
-                grabCursor: true,
-                scrollbar: { el: '.swiper-scrollbar' },
-                navigation: false,
-                pagination: { el: '.swiper-pagination', clickable: true }
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
             });
 
             // 메인 공종별 자재 일괄구매 slide (bulkPurchaseSlide) swiper(plugin) option
