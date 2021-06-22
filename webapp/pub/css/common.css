@@ -29,6 +29,8 @@
 .header-cont .right-area {position:absolute; top:5px; right:0; font-size:0;}
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 .header-cont .right-area .icon-btn > a {width:36px; height:36px; display: block;}
+.header-cont .right-area .icon-btn.cart:hover {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat }
+.header-cont .right-area .icon-btn.member:hover {background:url(../images/common/icon_member_on.svg) 50% 50% no-repeat}
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
