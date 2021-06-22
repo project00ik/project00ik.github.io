@@ -357,9 +357,16 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-l3 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#d7d7d7; background:#fafafa; border:1px solid #e5e5e5;}
 .btn-style-l4 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#fff; background:#000;}
 .btn-style-l5 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#000; background:#fff; border:1px solid #000;}
+.btn-gray-line {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#666; background:#fff; border:1px solid #bbb;}
+.btn-gray-line:hover {color:  #000; border-color: #000;}
+.btn-black-line {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-black-line:hover {color: #fff; background: #000;}
+.btn-blue-bg {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-blue-bg:hover {color: #346dd0; border: 1px solid #346dd0; background: #fff;}
 .btn-del {width:18px; height:18px; background:url(../images/common/btn_del.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 .btn-small-blue {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#fff; background:#346DD0;}
 .btn-small-line {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; background:#fff; border:1px solid #000;}
+.btn-small-gline {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#666; background:#fff; border:1px solid #bbb;}
 .btn-small-line2 {width:118px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; background:#fff; border:1px solid #000;}
 .btn-small2-line {width:56px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
 .btn-small3-line {height:28px; padding:0 12px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
@@ -369,6 +376,12 @@ button.btn-style-s1 {line-height:25px;}
 .btn-xs-small {width:78px; height:20px; line-height:18px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
 .btn-word  {width:64px; height:19px; line-height:17px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
 .btn-excel-download {width:auto; line-height: 100%; padding: 12px 25px; border-radius: 21px; text-align:center; font-size:16px; font-weight: 500; color:#346DD0; border: 1px solid #346DD0;}
+.btn-buynow {width:118px; height:38px; border: 1px solid #346dd0; background:#346dd0; font-size:14px; line-height:36px;}
+.btn-buynow:hover {color: #346dd0; background: #fff;}
+.btn-restock {width:118px; height:38px; background:#000; font-size:14px; line-height:37px;}
+.btn-restock:hover {background: #666;}
+
+
 
 .btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:#fff; position: relative;}
 .btn-like-l::after {content:""; width: 36px; height: 36px; margin:-18px 0 0 -18px;  display:inline-block; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
@@ -390,7 +403,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-slide-open.on .tg-info-txt {font-size:0;}
 .btn-slide-open.on .tg-info-txt:after {content:"전체 간단보기"; font-size:16px;}
 .btn-style-ml1 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-ml1:hover {color: #fff; background: #000;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-style-ml2:hover {color: #346dd0; border: 1px solid #346dd0; background: #fff;}
 .btn-style-ml2.on {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
@@ -1218,7 +1233,7 @@ textarea + .cot b {vertical-align: top;}
     .btn-del {background: url(../images/common/mo_btn_del.svg) 0 0 no-repeat;}
     .tit-type1-1 {font-size:20px; margin-bottom:16px;}
     .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px}
-    
+    .btn-small-gline {width: auto; padding: 0 12px;}
     .btn-style-ml1 {font-size: 16px;}
     .btn-style-ml2 {width: 100%;}
     .btn-style-m1 {height: 36px;}/* 추가 */
