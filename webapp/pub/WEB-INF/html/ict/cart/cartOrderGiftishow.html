@@ -193,12 +193,12 @@
           </div>
           <div class="tgSlideCont" style="display:block;">
             <div class="btn-r-area2">
-              <button class="btn btn-small3-line" onclick="lyOpen('cartWritePopup02')">상신의견입력</button>
-              <button class="btn btn-small3-line" onclick="lyOpen('cartWritePopup03')">구매사유작성</button>
-              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('cartWritePopup04')">첨부파일등록</button>
+              <button class="btn btn-small3-line btn-color1 mo-hide" onclick="lyOpen('cartEstimatePopup')">견적서</button>
+              <button class="btn btn-small3-line btn-color1 mo-hide" onclick="lyOpen('cartPrintPopup')">프린트</button>
               <button class="btn btn-small3-line mo-hide" onclick="lyOpen('')">엑셀다운로드</button>
-              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('cartEstimatePopup')">견적서</button>
-              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('cartPrintPopup')">프린트</button>
+              <button class="btn btn-small3-line btn-color2" onclick="lyOpen('cartWritePopup02')">상신의견입력</button>
+              <button class="btn btn-small3-line btn-color2" onclick="lyOpen('cartWritePopup03')">구매사유작성</button>
+              <button class="btn btn-small3-line btn-color2 mo-hide" onclick="lyOpen('cartWritePopup04')">첨부파일등록</button>
             </div>
             <div class="list-con">
               <ul class="list-in list-half-style">
@@ -225,24 +225,11 @@
                     <button class="btn btn-style-m1">참조자 추가</button>
                   </div>
                 </li>
-                <li>
+                <li class="one-form ">
                   <label for="">비용부서</label>
                   <div class="form-layout form-search">
                     <input type="text" name="" class="input" value="업무지원 및 부동산 관리부" placeholder="" readonly="readonly">
                     <button class="btn btn-search2" onclick="lyOpen('')">검색</button>
-                  </div>
-                </li>
-                <li class="two-form">
-                  <label for="">예산</label>
-                  <div class="form-layout">
-                    <div><input type="text" name="" class="input" value="계정:총예산/총구매액/잔액/승인"  readonly="readonly"></div>
-                    <div>
-                      <select class="select"  disabled>
-                        <option value="">에이비엘</option>
-                        <option value="부서명1">부서명1</option>
-                        <option value="부서명2">부서명2</option>
-                      </select>
-                    </div>
                   </div>
                 </li>
                 <li>

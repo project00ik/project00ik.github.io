@@ -84,6 +84,7 @@
 .unit-cart .unit-area .product-name {width:754px; font-size:16px; font-weight: 500; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
 .unit-cart .unit-area .price-area {display:inline-block; font-size:0;}
 .unit-cart .unit-area .price-area .flag-txt {margin-right:10px}
+.unit-cart .unit-area .price-area .btn-tooltip {margin:0 10px 0 -7px;}
 .unit-cart .unit-area .price {font-size:14px; color:#000; display:inline-block;}
 .unit-cart .unit-area .price > b {vertical-align:text-bottom; font-weight:700; font-size:22px; line-height: 24px; padding-right: 2px;}
 .unit-cart .unit-area .sale {margin:0 0 0 10px; color:#eb3030; text-align:right; display:inline-block; font-size:14px; text-align:left; }
@@ -249,7 +250,7 @@
 .cart-order-list .order-delivery ul li .form-layout .form-de-order .in-de-order {margin-left: 5px;}
 .cart-order-list .order-delivery ul li .form-layout .form-de-order .input-w1 {width: 50px; flex: inherit;}
 .cart-order-list .order-delivery ul li .form-layout .form-de-order .input-w1 + span {width: 45px; font-size: 14px; height: 38px; line-height: 38px;}
-.cart-order-list .order-delivery ul li .form-layout .in-de-right {width: 292px; display: flex; align-items: center; justify-content: flex-end; text-align: left;}
+.cart-order-list .order-delivery ul li .form-layout .in-de-right {width: 292px; display: flex; flex:1; align-items: center; justify-content: flex-end; text-align: left;}
 .cart-order-list .order-delivery ul li .form-layout .in-de-right > * {margin-left: 5px;}
 .cart-order-list .order-delivery ul li .form-layout .in-de-right > *:first-child {margin-left: 0;}
 .cart-order-list .order-delivery ul li .form-layout .in-de-right .input {width: 118px;}
@@ -268,6 +269,11 @@
 .cart-order-list .order-delivery ul li .order-de-txt p:first-child {margin-left: 0;}
 .cart-order-list .order-delivery ul li .order-de-txt p:before {content: ''; display: inline-block; width: 1px; height: 12px; background: #bbb; margin-right: 10px;}
 .cart-order-list .order-delivery ul li .order-de-txt p:first-child::before {display: none;}
+/* 주문서 배송지 추가 */
+.add-address-wrap {width:100%;}
+.add-address-area {width:100%; display:flex;}
+.add-address-wrap .add-address-area + .add-address-area {margin-top:10px;}
+
 .cart-pay-area {margin-top: 20px; padding: 20px; background: #fafafa; display: flex; align-items: center;}
 .cart-pay-area > p {font-size: 16px; color: #000;}
 .cart-pay-area > p span {vertical-align: top; display: inline-block;}
@@ -428,6 +434,8 @@
     .unit-cart .del-area .del-box-cont {width: calc(100% + 20px); white-space:nowrap; overflow-y:hidden; overflow-x:auto;}
     .unit-cart .del-area .del-box-cont .del-box {margin-bottom: 10px;}
 
+    .unit-cart .unit-area .price-area .btn-tooltip {margin:0 calc(100% - 69px) 0 0;}
+
 
     /* quick주문 */
     .top-write-box {flex-wrap: wrap; margin-bottom: 0;}
@@ -497,13 +505,13 @@
     .cart-content .cart-order-list .toolsize .tooltip-box {width: 152px;}
     .cart-list-con .list-con .list-tit {padding:18px 20px; font-size: 16px;}
     .cart-list-con .list-con .list-tit .sub-txt {margin: 10px 0 0 0; display: block; font-size: 15px;}
-    .cart-list-con .unit-cart .unit-under-count {position: relative; top: 0; margin: 10px 0 0 135px; padding: 0; transform: inherit;}
+    .cart-list-con .unit-cart .unit-under-count {position: relative; top: 0; margin: 10px 0 0 145px; padding: 0; transform: inherit;}
     
     .cart-order-list {padding: 0 0 20px 0;}
     .cart-order-list .tit-area {padding-bottom: 20px; border-bottom: 0;}
     .cart-order-list .tit-area + .cart-list-con {margin-top: 0;}
     .cart-order-list .unit-cart {padding: 20px; align-items: flex-start;}
-    .cart-order-list .unit-cart .unit-area .price-area {margin-top: 10px;}
+    .cart-order-list .unit-cart .unit-area .price-area {width:100%; margin-top: 10px;}
     .cart-order-list .order-delivery {padding: 0 20px;}
     .cart-order-list .order-delivery ul li {flex-direction: column;}
     .cart-order-list .order-delivery ul li > label {font-size: 14px; padding: 0 0 5px 0; line-height: 17px;}
@@ -523,6 +531,7 @@
     .cart-order-list .order-delivery ul li .order-de-title {font-size: 14px; padding: 0 0 10px 0;}
     .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row {display: inherit;}
     .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row p {display: inline;}
+    .add-address-area {display:block;}
     .cart-pay-area {margin: 30px 20px 20px; flex-wrap: wrap;}
     .cart-pay-area > p {width: 100%;}
     .cart-pay-area > p span {display: none;}

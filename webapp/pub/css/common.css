@@ -380,8 +380,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-buynow:hover {color: #346dd0; background: #fff;}
 .btn-restock {width:118px; height:38px; background:#000; font-size:14px; line-height:37px;}
 .btn-restock:hover {background: #666;}
-
-
+/* 버튼 컬러 스타일 */
+.btn.btn-color1 {color:#346dd0; border-color:#346dd0;}
+.btn.btn-color2 {color:#666; border-color:#bbb;}
 
 .btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:#fff; position: relative;}
 .btn-like-l::after {content:""; width: 36px; height: 36px; margin:-18px 0 0 -18px;  display:inline-block; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
@@ -611,7 +612,7 @@ button.btn-style-s1 {line-height:25px;}
 :-ms-input-placeholder {color:#bbb; opacity:1;}
 :-mos-input-placeholder {color:#bbb; opacity:1;}
 
-input.input {width:100%; height:38px; padding:0 12px; line-height:38px; border:1px solid #bbb; font-size:14px; color: #666; background:#fff;}
+input.input {width:100%; height:38px; padding:0 12px; line-height:38px; border:1px solid #bbb; font-size:14px; color: #666; background:#fff; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 input.input:disabled {background:#fafafa; border:1px solid #e5e5e5; color:#d7d7d7;}
 input.input:read-only {background:#fafafa; border:1px solid #bbb; color:#666;}
 input.input:read-only::placeholder {color:#666;}
