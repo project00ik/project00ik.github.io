@@ -529,8 +529,6 @@
     #cartPopup .btn-area02 a{width:calc(50% - 5px);}
     #pricerequestPopup input.input:read-only{width: 100%;}
     .pop-cart .cart-select button{width: 68px; height: 36px; line-height: 35px;}
-    .btn.pc-hide {display:block;}
-    .btn.mo-hide {display:none;}
 
     /* 리뷰팝업 */
     .pop-review-write > ul > li:first-child {padding-top: 20px;}

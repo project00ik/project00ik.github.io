@@ -115,6 +115,7 @@ input::-webkit-search-results-decoration{
 	display:none;
 }
 .pc-hide {display:none;}
+.btn.pc-hide {display:none;}
 .mo-hide {display:block;}
 
 .ml5 {margin-left:5px !important;}
@@ -126,5 +127,7 @@ input::-webkit-search-results-decoration{
   html, body {min-height:100%;}
   img {width:100%;}
   .pc-hide {display:block;}
+  .btn.pc-hide {display:block;}
   .mo-hide {display:none !important;}
+  .btn.mo-hide {display:none;}
 }

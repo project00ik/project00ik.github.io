@@ -299,7 +299,6 @@
 
 
 /* 팝업 주소검색 */
-.btn.pc-hide {display:none;}
 .lyPopCont .pop-address{height:520px;}
 
 .pop-address .address-info{padding:30px 0 70px; font-size: 16px; overflow: hidden;}
