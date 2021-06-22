@@ -278,8 +278,8 @@
 .column-ip-area label {display: block; padding-bottom: 10px; font-size: 16px; color: #000;}
 .column-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 
-/* .excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px; overflow-y: hidden; overflow-x: auto;} */
-.excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px;}
+.excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px; overflow-y: hidden; overflow-x: auto;}
+/* .excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px;} */
 
 .pop-tax .pop-ip-area > label {width: 150px; padding-left: 0;}
 .pop-tax .pop-ip-area label + .form-layout {width: calc(100% - 150px);}
