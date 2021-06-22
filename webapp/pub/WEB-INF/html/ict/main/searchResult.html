@@ -358,6 +358,155 @@
           </dd>
         </dl>
         <!-- 필터영역 -->
+        <div class="filter-box">
+          <ul>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd" checked="">
+                <span><b>전체</b><em class="num">(253)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>공구박스/공구함 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>공구세트 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>공구정리대 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>공업용가위 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>공업용자석 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>그리스건/오일건 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>글구건 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>기타수공구 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>끌/정/해라/줄 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>니퍼/펜치 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>렌치및렌치세트 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>바이스 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>브러시 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>삽/넉가래 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>소켓렌치/육각렌치 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>스크류드라이버 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>스트립퍼 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>압착기 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>클램프/홀더 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>톱/톱날/대패 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>툴아답터 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>풀러 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+            <li>
+              <label class="filter-rd">
+                <input type="radio" name="filterRd">
+                <span><b>플라이어 </b><em class="num">(20)</em></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-filter-more pc-hide">더보기</button>
         <ul class="filter-price">
           <li>
             <p class="tit">가격</p>
@@ -2166,6 +2315,7 @@
       ========================================================================== */
       btnFilterDetail(); // 상세필터
       selectionDelete(); // 선택항목 삭제버튼 이벤트
+      filterBoxMore(); // 필터 더보기 버튼 이벤트
       btnListLayout(); // 상품목록 리스트형으로 보기
 
       delBtn(); // 삭제 이벤트 (검색어/상품 옵션 등)
