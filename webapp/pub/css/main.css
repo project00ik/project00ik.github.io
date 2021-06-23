@@ -20,8 +20,8 @@
 .main .main-slide-area .swiper-pagination::after {content: ""; width:1px; height:14px; margin:0 25px; background:#d7d7d7; display:inline-block; vertical-align:middle;}
 .main .main-slide-area .swiper-pagination {font-size:14px; font-weight:400;}
 .main .main-slide-area .swiper-pagination > span {font-size:20px; vertical-align:top;}
-.main .main-slide-area .swiper-pagination .swiper-pagination-current {margin-right:7px; font-weight:500;}
-.main .main-slide-area .swiper-pagination .swiper-pagination-total {margin-left:7px;}
+.main .main-slide-area .swiper-pagination .swiper-pagination-current {margin-right:4px; font-weight:500;}
+.main .main-slide-area .swiper-pagination .swiper-pagination-total {margin-left:4px;}
 .main .main-slide-area .swiper-button-prev {width:18px; height:18px; margin:0; display:inline-block; font-size:0; position:static; top:inherit; left:inherit; right:inherit; bottom:inherit; z-index:0; background:url(../images/common/arrow_visual_banner_prev.svg) 0 0 no-repeat;}
 .main .main-slide-area .swiper-button-next {width:18px; height:18px; margin:0 0 0 30px; display:inline-block; font-size:0; position:static; top:inherit; left:inherit; right:inherit; bottom:inherit; z-index:0; background:url(../images/common/arrow_visual_banner_next.svg) 0 0 no-repeat;}
 .main .main-slide-area .swiper-button-prev::after,
@@ -159,7 +159,7 @@
     .main .main-slide-area .swiper-slide .slide-img-area {display:none;}
     .main .main-slide-area .swiper-slide .mo-slide-img-area {display:block;}
     /* .main .main-slide-area .swiper-scrollbar {width:calc(100% - 70px); margin-left:0; left:35px; bottom:40px;} */
-    .main .main-slide-area .swiper-indicator-area {height:36px; left:20px; bottom:20px; margin:0; padding:0 26px; font-size:18px; line-height:36px;}
+    .main .main-slide-area .swiper-indicator-area {height:32px; left:20px; bottom:20px; margin:0; padding:0 18px; font-size:18px; line-height:32px;}
     .main .main-slide-area .swiper-button-prev,
     .main .main-slide-area .swiper-button-next {display:none;}
     .main .main-slide-area .swiper-pagination::after {display:none;}
