@@ -92,6 +92,7 @@
 .unit-cart .unit-area .price > b {vertical-align:text-bottom; font-weight:700; font-size:22px; line-height: 24px; padding-right: 2px;}
 .unit-cart .unit-area .sale {margin:0 0 0 10px; color:#eb3030; text-align:right; display:inline-block; font-size:14px; text-align:left; }
 .unit-cart .unit-area .sale > b {font-size:22px; vertical-align:text-bottom; font-weight:700; line-height: 24px; padding-right: 2px;}
+.unit-cart .unit-under-btn .btn-buynow:hover {color: #346dd0; background: #fff;}
 .unit-cart .standard {width:754px; margin:6px 0;font-size:14px; color:#999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
 .unit-cart .option-area {margin-top:6px; color:#666; font-size:0;}
 .unit-cart .option-area > p {display:inline-block; font-size:14px;}

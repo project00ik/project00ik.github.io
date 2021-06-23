@@ -377,7 +377,6 @@ button.btn-style-s1 {line-height:25px;}
 .btn-word  {width:64px; height:19px; line-height:17px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
 .btn-excel-download {width:auto; line-height: 100%; padding: 12px 25px; border-radius: 21px; text-align:center; font-size:16px; font-weight: 500; color:#346DD0; border: 1px solid #346DD0;}
 .btn-buynow {width:118px; height:38px; border: 1px solid #346dd0; background:#346dd0; font-size:14px; line-height:36px;}
-.btn-buynow:hover {color: #346dd0; background: #fff;}
 .btn-restock {width:118px; height:38px; background:#000; font-size:14px; line-height:37px;}
 .btn-restock:hover {background: #666;}
 /* 버튼 컬러 스타일 */
