@@ -159,7 +159,7 @@
     .main .main-slide-area .swiper-slide .slide-img-area {display:none;}
     .main .main-slide-area .swiper-slide .mo-slide-img-area {display:block;}
     /* .main .main-slide-area .swiper-scrollbar {width:calc(100% - 70px); margin-left:0; left:35px; bottom:40px;} */
-    .main .main-slide-area .swiper-indicator-area {height:32px; left:20px; bottom:20px; margin:0; padding:0 18px; font-size:18px; line-height:32px;}
+    .main .main-slide-area .swiper-indicator-area {height:32px; left:20px; bottom:20px; margin:0; padding:0 18px; font-size:18px; line-height:33px;}
     .main .main-slide-area .swiper-button-prev,
     .main .main-slide-area .swiper-button-next {display:none;}
     .main .main-slide-area .swiper-pagination::after {display:none;}
