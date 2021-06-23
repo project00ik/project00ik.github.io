@@ -709,7 +709,7 @@ textarea + .cot b {vertical-align: top;}
 .check-style1 .num > span {vertical-align:top;}
 
 .check-style2 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px;}
-.check-style2 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
+.check-style2 input {opacity:0; font-size:0; position:absolute; top:0; left:0; cursor: pointer;}
 .check-style2 input + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox2.svg) 50% 50% no-repeat; background-size:22px 22px; border: 0; display:inline-block;}
 .check-style2 input:checked + i {background:url(../images/common/icon_checkbox2_checked.svg) 50% 50% no-repeat; }
 .check-style2 > span {margin-left:10px; font-size: 16px; color: #000; line-height: 22px; margin-left: 10px;}
