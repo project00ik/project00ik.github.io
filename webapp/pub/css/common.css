@@ -1217,7 +1217,7 @@ textarea + .cot b {vertical-align: top;}
     /* 버튼 */
     .header-cont .search-area .btn-search {width:24px; height:24px; background:url(../images/common/mo_btn_search.svg) 50% 50% no-repeat; top:5px;}
     .icon-btn.cart {background:url(../images/common/mo_icon_cart.svg) 50% 50% no-repeat;}
-    .icon-btn.cart .cart-num {min-width:22px; height:22px; font-size:12px; line-height:18px; top:0; right:-12px;}
+    .icon-btn.cart .cart-num {min-width:22px; height:22px; font-size:12px; line-height:20px; top:0; right:-12px;}
     .icon-btn.member {background:url(../images/common/mo_icon_member.svg) 50% 50% no-repeat;}
     .btn-more-white {width:24px; height:24px; padding:0; font-size:0; border-color:#d7d7d7; background-position:center center; display:inline-block;}
     .btn-more-black {width:24px; height:24px; padding:0; font-size:0; border-color:#d7d7d7; background-position:center center;}
