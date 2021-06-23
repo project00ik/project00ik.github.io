@@ -382,6 +382,7 @@ button.btn-style-s1 {line-height:25px;}
 /* 버튼 컬러 스타일 */
 .btn.btn-color1 {color:#346dd0; border-color:#346dd0;}
 .btn.btn-color2 {color:#666; border-color:#bbb;}
+.btn.btn-color3 {color:#1840E1; border-color:#1840E1;}
 
 .btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:#fff; position: relative;}
 .btn-like-l::after {content:""; width: 36px; height: 36px; margin:-18px 0 0 -18px;  display:inline-block; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
