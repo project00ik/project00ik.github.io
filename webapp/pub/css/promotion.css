@@ -1,8 +1,8 @@
 /* ==========================================================================
     프로모션
 ========================================================================== */
-.promotion-cont .event-empty {text-align: center; border: 1px solid #d7d7d7; padding: 100px 0;}
-.promotion-cont .event-empty p {padding-top: 80px; font-size: 16px; line-height: 22px; color: #999; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
+.event-empty {text-align: center; border-top: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7; padding: 100px 0;}
+.event-empty p {padding-top: 80px; font-size: 16px; line-height: 22px; color: #999; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
 .promotion-cont .tab-area .tab-style2 {text-align: center;}
 .promt-banner {position: relative; text-align: center; margin-bottom: 50px;}
 .promt-banner img {max-width: 100%;}
@@ -35,6 +35,7 @@
 .pop-password .tit-area3 + .pop-write {margin-top: 10px;}
 .pop-password .pop-ip-area  {align-items: flex-start;}
 
+
 /* 기획전 카운트다운 */
 .joint-list .unit-type1 {height: 537px;}
 .joint-list .unit-type1 .unit-area .volume-area {border-top: 1px solid #d7d7d7; margin-top: 6px; padding-top: 6px;}
@@ -45,6 +46,10 @@
 .best-100 .unit-type1 .unit-area .li-num {position: absolute; top: 10px; right: 10px; width: 32px; height: 32px; text-align: center; font-size: 16px; color: #fff; font-weight: 500; line-height: 32px; background: #000; z-index: 8;}
 .best-100 .unit-type1 .unit-area .li-num.top10 {background: #346dd0;}
 
+/* 특가세일 */
+.sale-wrap .promt-banner {margin-bottom: 0;}
+.sale-wrap .materiel-cont .materiel-list {margin-top: 0;}
+.sale-wrap .event-empty {margin-top: 50px;}
 
 
 .special-wrap .promt-cont {padding-bottom: 30px; margin-bottom: 0;}
@@ -345,8 +350,8 @@
     프로모션
   ========================================================================== */
   .promotion-cont {margin-top: 0;}
-  .promotion-cont .event-empty {padding: 50px 0; margin: 0 20px;}
-  .promotion-cont .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}  
+  .event-empty {padding: 50px 0; margin: 0 20px;}
+  .event-empty p {padding-top: 60px; font-size: 14px; line-height: 18px; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}  
   .promt-banner .ban-text-area .ban-tit {font-size: 18px;}
   .promt-banner .ban-text-area .ban-p {font-size: 14px;}  
   .promt-list-wrap .promt-list {padding: 0 20px; width: auto;}
@@ -395,6 +400,9 @@
 
   /* 베스트100 */
   .best-100 .unit-type1 .unit-area .li-num {top: 5px; right: 5px; width: 24px; height: 24px; font-size: 13px; line-height: 24px;}
+
+  /* 특가세일 */
+  .sale-wrap .event-empty {margin-top: 30px;}
   
   /* 열린소싱상품제안 */
   .suggestion-goods {width:986px;}
