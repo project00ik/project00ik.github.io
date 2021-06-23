@@ -487,9 +487,9 @@ function tab(){ // 탭 관련 js
     var $tabName = $(this);
     var $tabBtn = $tabName.find('.tabBtn');
     var $tabCont = $tabName.find('.tabCont');
-    $tabCont.removeClass('active');
-    console.log($(this).parent());
+    // 아이디/비밀번호 찾기 예외
     if(!$(this).parent().hasClass('find')){
+      $tabCont.removeClass('active');
       $tabBtn.eq(0).addClass('on');
       $tabCont.eq(0).addClass('active');
     }
