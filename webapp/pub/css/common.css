@@ -360,9 +360,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-gray-line {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#666; background:#fff; border:1px solid #bbb;}
 .btn-gray-line:hover {color:  #000; border-color: #000;}
 .btn-black-line {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
-.btn-black-line:hover {color: #fff; background: #000;}
+.btn-black-line:hover {border-color: #000; background: #f5f5f5;}
 .btn-blue-bg {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
-.btn-blue-bg:hover {color: #346dd0; border: 1px solid #346dd0; background: #fff;}
+.btn-blue-bg:hover {border-color: #2d3a52; background: #2d3a52;}
 .btn-del {width:18px; height:18px; background:url(../images/common/btn_del.svg) 0 0 no-repeat; display:inline-block; font-size:0;}
 .btn-small-blue {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#fff; background:#346DD0;}
 .btn-small-line {width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; background:#fff; border:1px solid #000;}
