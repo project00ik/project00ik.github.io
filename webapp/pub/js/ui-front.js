@@ -536,12 +536,14 @@ function scrollTop(){
 function cartFixedBtn(){
   // 장바구니 fixed 고정 버튼 영역 
   var $winSrollTop = $(window).scrollTop();
-  var $scrollPoint = $('.footer-wrap').offset().top - 1100;
+  var $winHeight = $(window).height();
+  var $scrollPoint = $('.cart-total-area').offset().top - $winHeight + 108; /* 장바구니 floating영역 높이 값 :108 */
   var $fixBtnArea = $('.cart-floating-box');
-  if ($winSrollTop < $scrollPoint){
-    $fixBtnArea.show();
+  console.log('$winSrollTop', $winSrollTop, '$scrollPoint', $scrollPoint, '$winHeight',$winHeight)
+  if ($winSrollTop > $scrollPoint){
+    $fixBtnArea.addClass('hide');
   } else {
-    $fixBtnArea.hide();
+    $fixBtnArea.removeClass('hide');
   }
 }
 
