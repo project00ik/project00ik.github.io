@@ -488,12 +488,12 @@ function tab(){ // 탭 관련 js
     var $tabBtn = $tabName.find('.tabBtn');
     var $tabCont = $tabName.find('.tabCont');
     $tabCont.removeClass('active');
-    $tabBtn.eq(0).addClass('on');
-    $tabCont.eq(0).addClass('active');
-    // 로그인 아이디/비밀번호 찾기에서 첫번째 탭 on 처리 삭제
-    $('.login-wrap.find').find('.tabBtn').eq(0).removeClass('on');
-    $('.login-wrap.find').find('.tabCont').eq(0).removeClass('active');
-    
+    console.log($(this).parent());
+    if(!$(this).parent().hasClass('find')){
+      $tabBtn.eq(0).addClass('on');
+      $tabCont.eq(0).addClass('active');
+    }
+
     $tabBtn.on('click', function (){
       var $activeBtn = $(this);
       $activeBtn.closest('.tabArea').find('.tabBtn').removeClass('on');
