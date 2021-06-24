@@ -35,7 +35,7 @@
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
-.cart-box {display: none; position: absolute; top: 43px; right: -66px; width: 158px; height: 170px; overflow-y: auto; border: 1px solid #000; background: #fff; z-index: 101;}
+.cart-box {display: none; position: absolute; top: 41px; right: -66px; width: 158px; height: 170px; overflow-y: auto; border: 1px solid #000; background: #fff; z-index: 101;}
 .cart-box .cart-in-list {padding: 20px;}
 .cart-box .cart-in-list li {padding-bottom: 10px;}
 .cart-box .cart-in-list li:last-child {padding-bottom: 0;}
