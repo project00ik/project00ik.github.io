@@ -36,6 +36,7 @@
 .mypage-cont .my-main .my-top-area .top-member-condition > div span {font-size: 16px;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div b {display: block; padding-top: 5px; font-size: 30px;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div a {display: block; padding-top: 5px; font-size: 30px;}
+.mypage-cont .my-main .my-top-area .top-member-condition > div a:hover {color: #f0ff58;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div:first-child:before {display: none;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div:first-child b {color: #f0ff58;}
 .mypage-cont .my-main .mystep-box {width: 100%; height: 184px; margin-top: 20px; background: transparent; border: 1px solid #d7d7d7;}
@@ -289,7 +290,7 @@
     .mypage-cont .my-main .my-top-area .top-member span {font-size: 16px;}
     .mypage-cont .my-main .my-top-area .top-member-condition {width: 100%; padding-top: 20px;}
     .mypage-cont .my-main .my-top-area .top-member-condition > div {display: flex; height: 100%; align-items: center; justify-content: space-between; flex-direction: column;}
-    .mypage-cont .my-main .my-top-area .top-member-condition > div span {display: inline-block; word-break:keep-all; width: 55px; font-size: 13px;}
+    .mypage-cont .my-main .my-top-area .top-member-condition > div span {display: inline-block; word-break:keep-all; width: 100%; font-size: 13px;}
     .mypage-cont .my-main .my-top-area .top-member-condition > div b {font-size: 26px;}
     .mypage-cont .my-main .my-top-area .top-member-condition > div:before {height: 68px;}
     .mypage-cont .my-main .my-top-area + .tit-area {margin-bottom: 16px;}
