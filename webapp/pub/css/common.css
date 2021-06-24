@@ -1489,10 +1489,10 @@ textarea + .cot b {vertical-align: top;}
     .divider + [class^="tit-"] {margin-top:-4px !important;}
 
     /* 폼요소 */
-    input.input {height: 36px; line-height: 36px;}
-    input.datepicker {line-height: 34px; height: 36px; background: url(../images/common/mo_icon_date.svg) right 12px center no-repeat; }
+    input.input {height: 36px; line-height: 37px;}
+    input.datepicker {line-height: 37px; height: 36px; background: url(../images/common/mo_icon_date.svg) right 12px center no-repeat; }
     .ui-datepicker.ui-widget-content {display:none !important;}
-    select.select {line-height: 34px; height: 36px;}
+    select.select {line-height: 37px; height: 36px;}
     .check-style1 input + i {width: 20px; height: 20px;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
     .check-style2 input:checked + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2_checked.svg) 50% 50% no-repeat;}
@@ -1501,7 +1501,7 @@ textarea + .cot b {vertical-align: top;}
     .upload-area .upload-thumbnail {width: 63px; height: 63px;}
     .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}
     .spinner {width:112px; height:36px; padding:0 36px; }
-    .spinner input {height:34px; line-height:34px;}
+    .spinner input {height:34px; line-height:35px;}
     .spinner .down {width:36px; height:36px; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
     .spinner .up {width:36px; height:36px; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
     .check-style1 > span {font-size: 14px;}
