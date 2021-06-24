@@ -324,7 +324,7 @@
 .pop-address .address-list ul li.none {border-top:none;padding:80px 0 100px;text-align: center;}
 .pop-address .address-list ul li.none p{font-size: 16px;color:#999;padding-top:80px;background: url(../images/common/icon_none2.svg) 50% 0 no-repeat;}
 .pop-address .address-list .acdArea .acdBtn{position: absolute;top: 2px;right:0;padding-right: 20px;font-size: 14px;}
-.pop-address .address-list .acdArea .acdBtn .apt{display: inline-block;margin-right: 5px;font-size: 12px;line-height: 14px;padding:2px 6px 2px;margin-top: -3px;border-radius: 10px;border: 1px solid #346DD0;color:#346DD0;}
+.pop-address .address-list .acdArea .acdBtn .apt{display: inline-block;margin-right: 5px;font-size: 12px;height: 20px;line-height: 18px;padding:0 6px;margin-top: -3px;border-radius: 10px;border: 1px solid #346DD0;color:#346DD0;}
 .pop-address .address-list .acdArea .acdBtn::after{content: "";width: 18px; height: 18px;margin-top: -9px; display: inline-block;position: absolute;top: 50%;right: 0;background:url(../images/common/btn_filter_more2.svg) 100% 0 no-repeat;}
 .pop-address .address-list .acdArea .acdBtn.on::after{transform:rotate(-180deg)}
 .pop-address .address-list .acdArea .acdCont{padding:12px 10px;margin-top:10px;display: none;background: #F5F5F5;}
@@ -570,6 +570,7 @@
     .pop-address .address-list ul li.none{padding: 70px 0;}
     .pop-address .address-list ul li.none p{padding-top: 60px;background-size: 50px;font-size: 14px;}
     .pop-address .mobile-paging{margin:30px 0;width: 100%;display: inline-block;}
+    .pop-address .address-list .acdArea .acdBtn .apt{height: 18px; line-height: 19px;}
 
     .cart-floating-box {display:none;}
 }

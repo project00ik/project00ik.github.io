@@ -35,13 +35,15 @@
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
-.cart-box {display: none; position: absolute; top: 53px; right: -66px; width: 158px; height: 170px; overflow-y: auto; border: 1px solid #000; background: #fff; z-index: 101;}
+.cart-box {display: none; position: absolute; top: 41px; right: -66px; width: 158px; height: 170px; overflow-y: auto; border: 1px solid #000; background: #fff; z-index: 101;}
 .cart-box .cart-in-list {padding: 20px;}
 .cart-box .cart-in-list li {padding-bottom: 10px;}
 .cart-box .cart-in-list li:last-child {padding-bottom: 0;}
 .cart-box .cart-in-list li a {display: block;}
 .cart-box .cart-in-list li a p {padding-right: 20px; font-size: 14px; color: #000; line-height: 17px; background: url('../images/common/btn_more.svg') right center no-repeat; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.cart-box .cart-in-list li a p:hover {color: #346dd0;}
 .cart-box .cart-in-list li.mng a p {background: url('../images/common/icon_gear.svg') right center no-repeat;}
+
 
 /* 검색박스 */
 .search-box.on {display: block;}
@@ -1304,6 +1306,7 @@ textarea + .cot b {vertical-align: top;}
     .btn-style-mm1 {width: 100%;}
     .btn-style-mm2 {width: 100%;}
     .btn-excel-download {padding: 10px 20px; font-size: 14px;}
+    .btn-word {line-height: 20px;}
 
     /* 모바일 버튼 퍼센트형 */
     .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; padding-bottom:0 !important;}
@@ -1506,7 +1509,7 @@ textarea + .cot b {vertical-align: top;}
     .spinner .up {width:36px; height:36px; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
     .check-style1 > span {font-size: 14px;}
     .check-style2 > span {font-size: 14px;}
-    .form-layout .bar {font-size: 14px;}
+    .form-layout .bar {font-size: 14px; line-height: 36px;}
     .form-layout3 {width:100%; display:block; flex:none;}
     .form-layout3 .form-inline {margin-top:10px;}
     .form-layout3 .w127 {width:100%;}
