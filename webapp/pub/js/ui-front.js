@@ -77,7 +77,7 @@ function cartMainPop(){
   var winW = $(window).width();
   if(winW > 800){
     $('body').mouseup(function(e){
-      if($('.cart-box').has(e.target).length === 0){
+      if($('.icon-btn.cart').has(e.target).length === 0){
         $('.cart-box').siblings('.tgBtn').removeClass('on');
       }
     })
