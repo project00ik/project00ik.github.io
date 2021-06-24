@@ -359,7 +359,7 @@
   .promt-list-wrap .promt-list > li {width: 100%;}
 
   .promt-banner {margin-bottom: 30px;}
-  .promotion-detail {padding: 30px 0 0;}
+  .promotion-detail {margin: 30px 0 0;}
   .promotion-detail .promt-top {display: block; margin: 0 20px;}
   .promotion-detail .promt-top p {width: 100% ;font-size: 16px; line-height: 21px; height: auto; padding-bottom: 6px;}
   .promotion-detail .promt-top .promt-date span {font-size: 14px;}
