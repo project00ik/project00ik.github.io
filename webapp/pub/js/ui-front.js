@@ -482,6 +482,15 @@ function detailLyClose() {
   $('body').removeClass('detailLyOpen');
 }
 
+function tabReset(){
+  // 탭 초기화
+  console.log('test');
+  $('.tabArea .tabBtn').removeClass('on');
+  $('.tabArea .tabCont').removeClass('active');
+  $('.tabArea .tabBtn').eq(0).addClass('on');
+  $('.tabArea .tabCont').eq(0).addClass('active');
+}
+
 function tab(){ // 탭 관련 js
   $('.tabArea').each(function (){
     var $tabName = $(this);
@@ -504,6 +513,7 @@ function tab(){ // 탭 관련 js
     });
   })
 }
+
 
 // function scrollTab() {
 //   // scroll 탭 관련 js
