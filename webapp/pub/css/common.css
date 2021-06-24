@@ -1307,6 +1307,7 @@ textarea + .cot b {vertical-align: top;}
     .btn-style-mm2 {width: 100%;}
     .btn-excel-download {padding: 10px 20px; font-size: 14px;}
     .btn-word {line-height: 20px;}
+    .mobile-paging::after {margin-top: 0;}
 
     /* 모바일 버튼 퍼센트형 */
     .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; padding-bottom:0 !important;}
