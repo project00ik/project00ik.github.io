@@ -458,10 +458,10 @@
     .detail-review ul li .review-info p {font-size: 12px; margin-right: 20px;}
     .detail-review ul li .review-satisfaction-area {display: block;}
     .detail-review ul li .review-satisfaction-area .satis-large:after {display: none;}
-    .detail-review ul li .review-satisfaction-area .satis-large .tit {font-size: 15px; width: auto; line-height: 26px; align-items: flex-end;}
+    .detail-review ul li .review-satisfaction-area .satis-large .tit {font-size: 15px; width: auto; line-height: 24px; align-items: flex-end;}
     .detail-review ul li .review-satisfaction-area .satis-small {padding-top: 5px; padding-left: 0; flex-wrap: wrap;}
     .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list {width: 50%; padding-right: 0; padding-bottom: 5px; align-items: flex-start;}
-    .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list .tit {font-size: 13px;}
+    .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list .tit {font-size: 13px; line-height: 18px;}
     .detail-review ul li .review-option {padding-top: 16px; display: block;}
     .detail-review ul li .review-option p {font-size: 13px; line-height: 16px; margin-bottom: 5px;}
     .detail-review ul li .review-front-img {right: 20px;}
