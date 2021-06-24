@@ -2,7 +2,7 @@
     회원가입
 ========================================================================== */
 .join-content .tit-type1-2 {margin-bottom: 50px;}
-.join-list-con .req {font-size: 16px; color: #346dd0; font-style: normal; vertical-align: top; padding: 0 3px;}
+.join-list-con .req {display: inline-block; font-size: 16px; color: #346dd0; line-height: 100%; font-style: normal; vertical-align: baseline; padding: 0 3px;}
 .join-list-con .form-layout {flex: 1;}
 .join-list-con .tit-type3 {text-align: left; height: 24px; line-height: 24px;}
 .join-txt {font-size: 16px; color: #000; word-break: keep-all;}
@@ -164,7 +164,7 @@
 @media only screen and (max-width:800px){
     .join-txt {font-size: 14px; padding-left: 15px; text-indent: -8px; margin: 0 20px;}
     .join-txt2 {font-size: 14px; margin: 0 20px; text-align: left; padding-left: 8px; text-indent: -4px;}
-    .join-list-con .tit-area2 .join-txt {margin:3px 0 0 10px;}
+    .join-list-con .tit-area2 .join-txt {margin:0 0 0 10px;}
     .join-content .tit-type1-2 {margin-bottom: 0;}
     .join-list-con {padding-top: 16px;}
     .join-list-con ~ .join-list-con {padding-top: 16px;}
@@ -262,6 +262,7 @@
     .join-content .login-wrap.privacy > p {font-size: 18px;}
     .join-content .login-wrap.privacy > p em{display: block;}
     .join-content .login-wrap.privacy > .privacy-box p{font-size: 14px;}
+    .join-content .login-wrap.privacy > .privacy-box p::before {top: 7px;}
     .join-content .login-wrap.privacy .btn-full-area{padding:50px 0}
     .join-content .login-wrap.privacy .btn-style-l2{height:42px; line-height: 40px;}
 
