@@ -30,7 +30,7 @@
 .pro-detail-info .price-area .flag-txt {margin:3px 0 0 2px;}
 .pro-detail-info .satis-large {display:inline-block; margin-top:6px;}
 .pro-detail-info .satis-large > p {display:inline-block;}
-.pro-detail-info .satis-large .tit {margin-left:10px; font-size: 14px; text-align: right; color: #666;}
+.pro-detail-info .satis-large .tit {margin-left:10px; font-size: 14px; text-align: right; color: #666; vertical-align: middle;}
 .pro-detail-info .satis-large .tit > * {vertical-align: top;}
 .pro-detail-info .table-area {margin-top:10px;}
 .option-area {margin-top:20px;}
@@ -417,6 +417,7 @@
     .pro-detail-info .brand {font-size: 13px;}
     .pro-detail-info .product-name {font-size:20px;}
     .pro-detail-info .product-info {font-size:14px;}
+    .pro-detail-info .price-area .price > b {vertical-align: middle;}
     .pro-detail-info .group-buying {}
     .pro-detail-info .group-buying > .tit {display:block; margin-bottom:8px;}
     .pro-detail-info .group-buying .buying {float: right;}
@@ -434,6 +435,7 @@
     .ly-detail .option-result.selLeng1,
     .ly-detail .option-result.selLeng2,
     .ly-detail .option-result.selLeng3 {height:120px;} 
+    
 
     .product-total {margin-top:16px; padding:20px 0;}
     .product-banner-area {width:100%; margin:30px 0; padding:0 20px; display:block;}
@@ -458,7 +460,7 @@
     .detail-review ul li .review-satisfaction-area .satis-large:after {display: none;}
     .detail-review ul li .review-satisfaction-area .satis-large .tit {font-size: 15px; width: auto; line-height: 26px;}
     .detail-review ul li .review-satisfaction-area .satis-small {padding-top: 5px; padding-left: 0; flex-wrap: wrap;}
-    .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list {width: 50%; padding-right: 0; padding-bottom: 5px;}
+    .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list {width: 50%; padding-right: 0; padding-bottom: 5px; align-items: flex-start;}
     .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list .tit {font-size: 13px;}
     .detail-review ul li .review-option {padding-top: 16px; display: block;}
     .detail-review ul li .review-option p {font-size: 13px; line-height: 16px; margin-bottom: 5px;}
