@@ -252,7 +252,7 @@
     .join-content .login-wrap.find .radio-select > div .form-email{display: flex !important;}
     .join-content .login-wrap.find .radio-select > div > div select.select{height:36px}
     .join-content .login-wrap.find .radio-select > div > div .form-layout{display: flex;width: 100%;}
-    .join-content .login-wrap.find .radio-select > a {width: 100%;height:42px;line-height: 40px;margin-top: 30px;}
+    .join-content .login-wrap.find .radio-select > a {width: 100%;height:42px;line-height: 42px;margin-top: 30px;}
     .join-content .login-wrap.find .radio-select select.select{background:url(../images/common/arrow_select.svg) top 10px right 10px no-repeat #fff}
     .join-content .login-wrap.find #tab2 .radio-select .form-phone input{flex:1; width: inherit;}
     .join-content .login-wrap.find .form-phone .btn-style-m1 {width:68px; min-width:auto;}
