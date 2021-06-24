@@ -405,7 +405,7 @@
     .remaining-area .info-txt {margin:0 0 10px; font-size: 14px;}
     .remaining-area .remaining-card-area {padding:0;}
     .remaining-card-area .remaining-card {width:100%; margin:20px 0 0; padding:20px; font-size:14px;}
-    .remaining-card > dt {height:38px; margin-bottom:20px; font-size:15px; line-height:18px;}
+    .remaining-card > dt {height:36px; margin-bottom:20px; font-size:15px; line-height:18px;}
     .remaining-card > dd {}
     .remaining-card .justify-list > li + li {margin-top: 8px;}
 }
