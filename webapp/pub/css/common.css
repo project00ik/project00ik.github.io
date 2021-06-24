@@ -205,7 +205,55 @@
 .quick-menu .qk-quicktop u {background:url(../images/common/icon_st_quicktop.svg) 0 0 no-repeat;}
 .quick-menu .qk-delivery u {background:url(../images/common/icon_st_delivery.svg) 0 0 no-repeat;}
 .quick-menu .qk-down u {background:url(../images/common/icon_st_down.svg) 0 0 no-repeat;}
-.quick-menu .noti-txt {position:absolute; top:19px; right:57px; width:auto; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
+.quick-menu .noti-txt {display:none; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
+    
+}
+.quick-menu .noti-txt .txt {overflow: hidden;}
+.quick-menu .qk-notify {position:relative}
+.quick-menu .qk-notify::after {content:""; width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1;}
+.quick-menu .alarm-area {
+    width:auto;
+    padding-right:6px;
+    position:absolute; top:19px; right:57px;
+    display: inline-block;
+    overflow: hidden;
+    animation-name:quickNoti; 
+    animation-duration:3s;
+    animation-duration: leaner;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+.quick-menu .noti-txt p {white-space:nowrap;}
+.quick-menu .noti-txt .dot {font-size:0;
+    opacity: 1;
+    animation-name:quickDot; 
+    animation-duration:3s;
+    animation-duration: leaner;
+    animation-iteration-count:1;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+.quick-menu .noti-txt:after {content:''; display:inline-block; position:absolute; top:50%; right:3px; margin-top:-5px; width:10px; height:10px; transform:rotate(45deg); background:#12b5cf;}
+ 
+@keyframes quickNoti {
+    0% {
+        opacity:1;
+        width:0;
+        padding-right:0;
+    }
+    
+    100% {
+        opacity:1;
+        width:auto;
+        padding-right:6px;
+    }
+    /* 100% {
+        opacity: 0;
+    } */
+}
+/* .quick-menu .noti-txt {position:absolute; top:19px; right:57px; width:auto; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
     animation-name:quickNoti; 
     animation-duration:3s;
     animation-duration: leaner;
@@ -256,7 +304,7 @@
     100% {
         opacity:1;
     }
-}
+} */
 .quick-menu .qk-group-show {display:none;}
 
 /* ==========================================================================
