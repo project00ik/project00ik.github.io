@@ -1509,6 +1509,7 @@ textarea + .cot b {vertical-align: top;}
     .spinner .up {width:36px; height:36px; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
     .check-style1 > span {font-size: 14px;}
     .check-style2 > span {font-size: 14px;}
+    .form-layout .input-price .input {height: 33px; line-height: 34px;}
     .form-layout .bar {font-size: 14px; line-height: 36px;}
     .form-layout3 {width:100%; display:block; flex:none;}
     .form-layout3 .form-inline {margin-top:10px;}
