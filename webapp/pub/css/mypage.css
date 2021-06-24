@@ -387,6 +387,7 @@
     .request-number .num {margin-left:5px;}
     .list-con.bt-btn-line {border-bottom:0;}
     .cart-list-con .list-con .list-tit .btn-slide-open{display: none;}
+    .cart-list-con .list-con.allSlideTgArea .chk-list .list-in{padding:55px 0 0 0}
 
     /* ==========================================================================
         주문현황
