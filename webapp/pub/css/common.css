@@ -1295,7 +1295,8 @@ textarea + .cot b {vertical-align: top;}
     .btn-style-l4 {height:42px; line-height: 43px; font-size: 16px;}
     .btn-del {background: url(../images/common/mo_btn_del.svg) 0 0 no-repeat;}
     .tit-type1-1 {font-size:20px; margin-bottom:16px;}
-    .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px}
+    .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px;}
+    .btn-small-line {line-height: 29px;}
     .btn-small-gline {width: auto; padding: 0 12px;}
     .btn-style-ml1 {font-size: 16px;}
     .btn-style-ml2 {width: 100%;}
@@ -1305,8 +1306,10 @@ textarea + .cot b {vertical-align: top;}
     .btn-style-m4 {height: 36px; line-height: 37px;}
     .btn-style-mm1 {width: 100%;}
     .btn-style-mm2 {width: 100%;}
+    .btn-buynow {height: 36px; line-height: 37px;}
     .btn-excel-download {padding: 10px 20px; font-size: 14px;}
     .btn-word {line-height: 20px;}
+    .btn-restock {height: 36px; line-height: 37px;}
     .mobile-paging::after {margin-top: 0; vertical-align: text-bottom;}
 
     /* 모바일 버튼 퍼센트형 */
