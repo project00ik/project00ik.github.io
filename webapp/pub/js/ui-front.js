@@ -270,14 +270,14 @@ function layoutCategory(){
     });
 
     // 카테고리 depth 별 click 시 노출 이벤트
-    $cateLyArea.find('.depth-list > li').each(function () {
-      $(this).each(function(){
-        $(this).on('click', function(){
+    $cateLyArea.find('.depth-list').each(function () {
+      $(this).find('> li').each(function(){
+        $(this).find('> .depthBtn').on('click', function(){
           var $depthBtnOn = $(this);
-          $depthBtnOn.siblings().find(' > .depthBtn').removeClass('on');
-          $depthBtnOn.find('> .depthBtn').addClass('on');
-          $depthBtnOn.siblings().find('.depthCont').removeClass('active');
-          $depthBtnOn.find('> .depthCont').addClass('active');
+          $depthBtnOn.closest('li').siblings().find(' > .depthBtn').removeClass('on');
+          $depthBtnOn.closest('li').find('> .depthBtn').addClass('on');
+          $depthBtnOn.closest('li').siblings().find('.depthCont').removeClass('active');
+          $depthBtnOn.closest('li').find('> .depthCont').addClass('active');
         });
       });
     });
@@ -289,13 +289,13 @@ function layoutCategory(){
     var $d1Bt = $(this);
     $(this).closest('.cate-layer').find('.d1Btn').not($d1Bt.addClass('on')).removeClass('on');
     // 초기화
-    $('.d2Layer').removeClass('active');
-    $('.partition-area .depthBtn').removeClass('on');
-    $('.partition-area .depthCont').removeClass('active');
+    $pcCateLyArea.find('.d2Layer').removeClass('active');
+    $pcCateLyArea.find('.partition-area .depthBtn').removeClass('on');
+    $pcCateLyArea.find('.partition-area .depthCont').removeClass('active');
     // hover시 2depth, 3depth 첫번째 on처리
-    $('.d2-list > li.first > .depthBtn').addClass('on');
-    $('.d3-list > li.first > .depthBtn').addClass('on');
-    $('.d3-list > li.first > .d4Layer').addClass('active');
+    $pcCateLyArea.find('.d2-list > li.first > .depthBtn').addClass('on');
+    $pcCateLyArea.find('.d3-list > li.first > .depthBtn').addClass('on');
+    $pcCateLyArea.find('.d3-list > li.first > .d4Layer').addClass('active');
     // 1depth on 이벤트
     if ($d1Bt.hasClass('on')){
       $d1Bt.closest('.d1Area').find('.d2Layer').addClass('active');
@@ -326,7 +326,7 @@ function layoutCategory(){
     $(this).find('.depth-list').each(function(){
       var $depthBtnFirst = $(this).find('> li').eq(0);
       $depthBtnFirst.addClass('first');
-      $('.d2-list').find('> li').eq(0).find('> .depthBtn').addClass('on');
+      $pcCateLyArea.find('.d2-list').find('> li').eq(0).find('> .depthBtn').addClass('on');
       $depthBtnFirst.find('> .depthCont').addClass('active');
     });
   });
@@ -339,11 +339,14 @@ function layoutCategory(){
   
   // 모바일 카테고리 이전메뉴 보기
   $('.goback1depth').on('click', function () {
-    $('.d2Layer').removeClass('active');
+    $('.moCateLyWrap .d2Layer').removeClass('active');
   });
   $('.goback2depth').on('click', function () {
-    $('.d3Layer').removeClass('active');
-    $('.d2-list').find('.depthBtn').removeClass('on');
+    $('.moCateLyWrap .d3Layer').removeClass('active');
+    $(this).closest('.depthCont').removeClass('active');
+    $('.moCateLyWrap .d2-list').find('.depthBtn').removeClass('on');
+    $('.d3-list.acdArea').find('.acdBtn').removeClass('on');
+    $('.d3-list.acdArea').find('.acdCont').hide();
   });
 }
 
