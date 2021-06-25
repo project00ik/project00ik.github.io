@@ -26,7 +26,7 @@
 .pro-detail-info .group-buying {width:100%; margin-top:20px; padding:12px 20px; font-size:16px; color: #fff; border-radius: 21.5px 21.5px 21.5px 0px; background: #12b5cf; overflow: hidden;}
 .pro-detail-info .price-area {margin-top:20px;}
 .pro-detail-info .price-area .price {display:inline-block; font-size:22px;}
-.pro-detail-info .price-area .price > b {font-size:32px; font-weight:700; vertical-align: text-bottom;}
+.pro-detail-info .price-area .price > b {font-size:32px; font-weight:700; vertical-align: baseline;}
 .pro-detail-info .price-area .flag-txt {margin:3px 0 0 2px;}
 .pro-detail-info .satis-large {display:inline-block; margin-top:6px;}
 .pro-detail-info .satis-large > p {display:inline-block;}
@@ -45,14 +45,14 @@
 .option-box .option-price > li:last-child {flex:2; text-align: right;}
 .option-box .option-price .price {font-size:20px; display:inline-block}
 .option-box .option-price .btn-xs-small {margin-left:10px;}
-.option-box .option-price .price > b {font-size:30px; vertical-align:text-bottom; font-weight: 700;}
+.option-box .option-price .price > b {font-size:30px; vertical-align: baseline; font-weight: 700;}
 .option-box .minimum-order {margin-top:3px; font-size: 13px; color: #666;}
 .option-box .normal-price {font-size: 16px; color: #999; text-decoration:line-through;}
 .product-total {margin-top:20px; padding:20px 0 40px; border-top:1px solid #000; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .product-total .tit {flex: 1; font-size: 20px; font-weight: 500; color: #333;}
 .product-total .total-price {flex: 2; text-align: right;}
 .product-total .total-price .price {font-size: 20px; font-weight: 500;}
-.product-total .total-price .price > b {font-size: 28px; font-weight:700; vertical-align: text-bottom; display: inline-block; padding-right: 2px;}
+.product-total .total-price .price > b {font-size: 28px; font-weight:700; vertical-align: baseline; display: inline-block; padding-right: 2px;}
 .product-total .price-info {font-size: 14px; color: #999;}
 
 .product-banner-area {width:100%; margin:100px 0; display:-webkit-box; display:-ms-flexbox; display:flex;}
@@ -135,11 +135,11 @@
 .pop-review-write .pop-product .pro-text-area {margin-left: 20px; display: flex; flex-direction: column; justify-content: center;}
 .pop-review-write .pop-product .pro-text-area .pro-name {font-size: 15px; color: #000; padding-bottom: 5px;}
 .pop-review-write .pop-product .pro-text-area .pro-option {font-size: 14px; color: #666; padding-bottom: 15px;}
-.pop-review-write .pop-product .pro-text-area .pro-price {display: flex; align-items: flex-end;}
+.pop-review-write .pop-product .pro-text-area .pro-price {display: flex; align-items: center;}
 .pop-review-write .pop-product .pro-text-area .pro-price p {font-size: 14px; color: #666; line-height: 21px;}
 .pop-review-write .pop-product .pro-text-area .pro-price p + p {padding-left: 5px;}
 .pop-review-write .pop-product .pro-text-area .pro-price p b {font-size: 20px; line-height: 22px; color: #000;}
-.pop-review-write .pop-product .pro-text-area .pro-price p span {font-size: 12px; line-height: 12px; color: #000; vertical-align: text-bottom;}
+.pop-review-write .pop-product .pro-text-area .pro-price p span {font-size: 12px; line-height: 12px; color: #000; }
 .pop-review-write .pop-satis .satis-tit {display: block; font-size: 18px; line-height: 16px; color: #000; padding-bottom: 16px; text-align: center;}
 .pop-review-write .pop-satis .pro-satis-list {display: flex; flex-wrap: wrap;}
 .pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 50%; display: flex; align-items: center; justify-content: center; padding: 5px 0;}
@@ -358,7 +358,7 @@
 .ly-buyNowLy .pro-detail-info .product-name {margin-top:5px; overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-wrod; font-size:22px;}
 .ly-buyNowLy .pro-detail-info .brand {margin-top:0;}
 .ly-buyNowLy .pro-detail-info .normal-price {margin-top:10px; display:inline-block; color:#999; font-size:14px; text-decoration: line-through;}
-.ly-buyNowLy .pro-detail-info .normal-price > b {font-size:16px; font-weight: 400; vertical-align: text-bottom;}
+.ly-buyNowLy .pro-detail-info .normal-price > b {font-size:16px; font-weight: 400; vertical-align: baseline;}
 .ly-buyNowLy .pro-detail-info .price-area .price {font-size: 20px;}
 .ly-buyNowLy .pro-detail-info .price-area .price > b {font-size: 28px;}
 .ly-buyNowLy .option-result {height:222px; overflow-x: hidden; overflow-y: auto;}
@@ -417,7 +417,6 @@
     .pro-detail-info .brand {font-size: 13px;}
     .pro-detail-info .product-name {font-size:20px;}
     .pro-detail-info .product-info {font-size:14px;}
-    .pro-detail-info .price-area .price > b {vertical-align: middle;}
     .pro-detail-info .group-buying {}
     .pro-detail-info .group-buying > .tit {display:block; margin-bottom:8px;}
     .pro-detail-info .group-buying .buying {float: right;}
@@ -429,7 +428,7 @@
     .option-box .normal-price {font-size:13px;}
     .option-box .option-price {margin-top:16px; height:79px; padding-top:12px; align-items: flex-end;}
     .option-box .option-price .price {width:100%; font-size: 12px; text-align:right;}
-    .option-box .option-price .price > b {font-size: 22px; vertical-align: middle;}
+    .option-box .option-price .price > b {font-size: 22px; }
     .option-box .option-price .btn-xs-small {margin:5px 0 0;}
     .option-result {margin-top:16px;}
     .ly-detail .option-result.selLeng0 {height:auto; margin-top:0;}
@@ -445,7 +444,7 @@
     .action-bar {display:block;}
     .option-pc-area {display:none;}
     .product-total .total-price .price {font-size: 20px;}
-    .product-total .total-price .price > b {font-size: 28px; vertical-align: middle;}
+    .product-total .total-price .price > b {font-size: 28px;}
     .product-total .price-info {font-size:12px;}
     .product-total .tit {font-size:18px;}
     .option-box .btn-del {top:14px; right:14px;}
