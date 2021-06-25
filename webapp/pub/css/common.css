@@ -224,18 +224,7 @@
 }
 
 .quick-menu .noti-txt p {white-space:nowrap;}
-.quick-menu .qk-notify .dot {
-    width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1;
-    font-size:0;
-    opacity: 0;
-    animation-name:quickDot; 
-    animation-delay: 2.5s;
-    animation-duration:1s;
-    animation-duration: leaner;
-    animation-iteration-count:1;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
+.quick-menu .qk-notify .dot {width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1; font-size:0;}
 
 @keyframes quickNoti {
     0% {
@@ -252,16 +241,10 @@
     }
     100% {
         opacity: 0;
+        width: 0;
     }
 }
-@keyframes quickDot {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
+
 
 .quick-menu .qk-group-show {display:none;}
 
@@ -1083,17 +1066,7 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu .qk-group-show u {background:url(../images/common/mo_icon_st_plus.svg) 0 0 no-repeat;  transition:all 0.3s ease; transform:rotate(45deg);}
     .quick-menu .qk-group-show.on u {transform:rotate(0);}
     .quick-menu .alarm-area {display: none;}
-    .quick-menu .qk-notify .dot {width:5px; height:5px; top:8px; right:8px; opacity: 1;
-        animation : none;
-        animation-delay : 0;
-        animation-direction : normal;
-        animation-duration : 0;
-        animation-fill-mode : none;
-        animation-iteration-count : 1;
-        animation-name : none;
-        animation-play-state : running;
-        animation-timing-function : ease;
-    }
+    .quick-menu .qk-notify .dot {width:5px; height:5px; top:8px; right:8px;}
 
     /* 모바일 세로정렬 line-height */
     select.select.sel-s {line-height:29px;}
