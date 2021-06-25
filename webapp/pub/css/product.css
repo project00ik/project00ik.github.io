@@ -404,6 +404,7 @@
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
     /* 상품상세 상단 */
+    .pro-detail-cont {margin: 0 0 100px;}
     .pro-detail-photo {width:100%;}
     .pro-detail-slide .swiper-container {height:auto;}
     .pro-detail-slide {padding-left:0;}
@@ -524,7 +525,7 @@
     .popup-cont .pop-layout.pop-write-m .file-upload-btn > label {width: 68px;}
     .popup-cont .pop-layout-txt3 {margin-top: 5px;}
     .pop-ip-area .form-layout.radio label{line-height: 19px;}
-    .pop-ip-area .form-layout.radio label span{position: absolute;margin-left: 10px;}
+    .pop-ip-area .form-layout.radio label span{position: absolute;margin-left: 10px; line-height: 22px;}
     .pop-cart .add-cart{padding:110px 0 40px;background-position: 50% 40px;margin: -20px; background-size: 50px 50px; font-size: 14px;}
     .pop-cart .cart-select button{width:68px;}
     .pop-cart .cart-add-select{margin-top: 20px;}
