@@ -30,7 +30,7 @@
 .pro-detail-info .price-area .flag-txt {margin:3px 0 0 2px;}
 .pro-detail-info .satis-large {display:inline-block; margin-top:6px;}
 .pro-detail-info .satis-large > p {display:inline-block;}
-.pro-detail-info .satis-large .tit {margin-left:10px; font-size: 14px; text-align: right; color: #666; vertical-align: inherit;}
+.pro-detail-info .satis-large .tit {margin-left:10px; font-size: 14px; text-align: right; color: #666; vertical-align: middle; line-height: 24px;}
 .pro-detail-info .satis-large .tit > * {vertical-align: top;}
 .pro-detail-info .table-area {margin-top:10px;}
 .option-area {margin-top:20px;}
@@ -423,6 +423,7 @@
     .pro-detail-info .group-buying .buying {float: right;}
     .pro-detail-info .satis-large {margin-top:8px;}
     .pro-detail-info .table-area {margin-top:18px;}
+    .pro-detail-info .satis-large .tit {height: 24px; line-height: 28px;}
     .option-box {padding:16px 20px; margin-bottom:5px;}
     .option-box .option-name {font-size:13px;}
     .option-box .normal-price {font-size:13px;}
@@ -458,10 +459,10 @@
     .detail-review ul li .review-info p {font-size: 12px; margin-right: 20px;}
     .detail-review ul li .review-satisfaction-area {display: block;}
     .detail-review ul li .review-satisfaction-area .satis-large:after {display: none;}
-    .detail-review ul li .review-satisfaction-area .satis-large .tit {font-size: 15px; width: auto; line-height: 24px; align-items: flex-end;}
+    .detail-review ul li .review-satisfaction-area .satis-large .tit {font-size: 15px; width: auto; line-height: 29px; align-items: flex-end;}
     .detail-review ul li .review-satisfaction-area .satis-small {padding-top: 5px; padding-left: 0; flex-wrap: wrap;}
     .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list {width: 50%; height: 24px; padding-right: 0; padding-bottom: 5px; align-items: flex-start; vertical-align: top;}
-    .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list .tit {font-size: 13px; line-height: 18px;}
+    .detail-review ul li .review-satisfaction-area .satis-small .satis-s-list .tit {font-size: 13px; line-height: 22px;}
     .detail-review ul li .review-option {padding-top: 16px; display: block;}
     .detail-review ul li .review-option p {font-size: 13px; line-height: 16px; margin-bottom: 5px;}
     .detail-review ul li .review-front-img {right: 20px;}
@@ -565,6 +566,7 @@
     .filter-box .filter-rd > span b {max-width:calc(100% - 27px);}
     .relevant-words + .filter-box {border-top: 0;}
     .filter-price {width:100%; padding:16px 20px 0; border:0; border-top:10px solid #f5f5f5; display:block;}
+    .filter-price .tit {height: 24px; line-height: 26px;}
     .filter-detail-area {padding:0 20px 16px; border-bottom:10px solid #f5f5f5;}
     .filter-detail-area .right-area {margin:16px 0 0;}
     .filter-price > li {width:100%; position: relative;}
