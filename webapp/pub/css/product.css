@@ -603,6 +603,8 @@
     .filter-detail-box .filter-chk-list > li {width:50%; padding-top:16px;}
     .filter-detail-box > dl.sub-sort {padding-top:6px;}
     .filter-detail-box .rd-btn-area {margin-top:16px;}
+    .filter-detail-box .rd-btn-area .rd-btn{width: 31%;}
+    .filter-detail-box .rd-btn-area .rd-btn > span{width: 100%;}
 
     .rd-btn-area .rd-btn > span {width:107px; height:36px; line-height:35px;}
 
