@@ -105,7 +105,7 @@
 ========================================================================== */
 .info-top-area {padding-top:30px;}
 .info-top-area .info-txt {font-size: 16px; color:#000;}
-.list-top-chk {margin-top:24px; display:flex; justify-content:space-between;}
+.list-top-chk {padding-top:24px; display:flex; justify-content:space-between;}
 .list-top-chk .check-style1 {margin-left:20px;}
 .interested-list-area {margin-top:12px; border-bottom:1px solid #bbb;}
 .interested-list {width:100%; border-top:1px solid #bbb;}
@@ -161,11 +161,11 @@ ICTMALL 고객만족도 조사
       관심카테고리 (마이페이지)
   ========================================================================== */
   .info-top-area {padding:20px 20px 0;}
-  .list-top-chk {margin:20px 20px 0;}
+  .list-top-chk {padding:20px 20px 0;}
   .list-top-chk .check-style1 > span {font-size:16px;}
   .list-top-chk .check-style1 {margin-left: 10px;}
   .interested-list-area {margin:11px 20px 0;}
-  .interested-list > li {padding:18px 54px 18px 50px;}
+  .interested-list > li {padding:12px 54px 12px 50px;}
   .interested-list > li .chk-area {left:10px;}
   .interested-list .txt-area .txt {font-size: 14px;}
   .mypage-cont .my-main .product-result.wish-list .tit-area {border:0; padding-bottom:5px;}
