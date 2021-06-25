@@ -481,9 +481,10 @@
   .insurance-cont .report01 .report02-img div .arr-04{background:url(../images/common/insur_arr_04.svg) top 0 right 40px no-repeat;padding-right: 57px;font-size: 14px;}
   
   .insurance-cont .report02 > div{ width: 100%;}
-  .insurance-cont .report02-01 ul li span{width:100px;line-height: 19px;padding:30px 0}
+  .insurance-cont .report02-01 ul li{display: table;width:100%;font-size: 15px;}
+  .insurance-cont .report02-01 ul li span{display: table-cell;width:100px;line-height: 19px;padding:30px 0}
   .insurance-cont .report02-01 ul li span em{display: block;}
-  .insurance-cont .report02-01 ul li p{line-height: 19px; padding:22px 24px 21px}
+  .insurance-cont .report02-01 ul li p{display: table-cell;line-height: 19px; padding:22px 24px 21px}
   .insurance-cont .report02-01 div{margin-top: 40px;}
   .insurance-cont .report02 > div.report02-02 {width: 320px; margin: 0 auto;}
   .insurance-cont .report02-02 > div{display: block;margin-top: 30px;}
@@ -499,9 +500,6 @@
   .insurance-cont .report02-02 div.text > div.txt p::before{display: none;}
   .insurance-cont .report02-02 div.text p:first-child{margin-left: 0px !important;}
   .insurance-cont .report02-02 div.text > div.tit p::before{width: 1px;height:15px;top:-15px;left: 50%;}
-  .insurance-cont .report02-01 ul li{display: table;font-size: 15px;}
-  .insurance-cont .report02-01 ul li span{display: table-cell;}
-  .insurance-cont .report02-01 ul li p{display: table-cell;}
 
   .sub-content.insurance-cont .inner > div.report03 {width: 284px;margin: 40px auto 0;padding:0 0 20px}
   .insurance-cont .report03 > div > ul{flex-direction: column;}
