@@ -205,18 +205,16 @@
 .quick-menu .qk-quicktop u {background:url(../images/common/icon_st_quicktop.svg) 0 0 no-repeat;}
 .quick-menu .qk-delivery u {background:url(../images/common/icon_st_delivery.svg) 0 0 no-repeat;}
 .quick-menu .qk-down u {background:url(../images/common/icon_st_down.svg) 0 0 no-repeat;}
-.quick-menu .noti-txt {display:none; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
-    
-}
+.quick-menu .noti-txt {height:32px; margin-right:4px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; display:inline-block;}/*box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);*/
 .quick-menu .noti-txt .txt {overflow: hidden;}
 .quick-menu .qk-notify {position:relative}
-.quick-menu .qk-notify::after {content:""; width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1;}
 .quick-menu .alarm-area {
     width:auto;
-    padding-right:6px;
+    text-align: right;
     position:absolute; top:19px; right:57px;
     display: inline-block;
     overflow: hidden;
+    background: url(../images/common/arrow_quick_noti.png) 100% 50% no-repeat;
     animation-name:quickNoti; 
     animation-duration:3s;
     animation-duration: leaner;
@@ -226,75 +224,34 @@
 }
 
 .quick-menu .noti-txt p {white-space:nowrap;}
-.quick-menu .noti-txt .dot {font-size:0;
-    opacity: 1;
+.quick-menu .qk-notify .dot {
+    width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1;
+    font-size:0;
+    opacity: 0;
     animation-name:quickDot; 
-    animation-duration:3s;
+    animation-delay: 2.5s;
+    animation-duration:1s;
     animation-duration: leaner;
     animation-iteration-count:1;
     animation-direction:alternate;
     animation-fill-mode: forwards;
 }
-.quick-menu .noti-txt:after {content:''; display:inline-block; position:absolute; top:50%; right:3px; margin-top:-5px; width:10px; height:10px; transform:rotate(45deg); background:#12b5cf;}
- 
+
 @keyframes quickNoti {
     0% {
         opacity:1;
         width:0;
-        padding-right:0;
-    }
-    
-    100% {
-        opacity:1;
-        width:auto;
-        padding-right:6px;
-    }
-    /* 100% {
-        opacity: 0;
-    } */
-}
-/* .quick-menu .noti-txt {position:absolute; top:19px; right:57px; width:auto; height:32px; line-height:32px; font-size:13px; color:#fff; padding:0 12px; border-radius:16px; text-align:right; background:#12b5cf; box-shadow:5px 5px 10px rgba(0, 0, 0, 0.15);
-    animation-name:quickNoti; 
-    animation-duration:3s;
-    animation-duration: leaner;
-    animation-iteration-count:1;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-.quick-menu .qk-notify {position:relative}
-.quick-menu .qk-notify::after {content:""; width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1;
-    animation-name:quickDot; 
-    animation-duration:3s;
-    animation-duration: leaner;
-    animation-iteration-count:1;
-    animation-direction:alternate;
-    animation-fill-mode: forwards;
-}
-
-.quick-menu .noti-txt p {white-space:nowrap;}
-.quick-menu .noti-txt .dot {}
-.quick-menu .noti-txt:after {content:''; display:inline-block; position:absolute; top:50%; right:-2px; margin-top:-5px; width:10px; height:10px; transform:rotate(45deg); background:#12b5cf;}
- 
-@keyframes quickNoti {
-    0% {
-        opacity:1;
-        right:57px;
-    }
-    25% {
-        opacity:1;
-        right:100px;
     }
     50% {
         opacity:1;
-        right:57px;
+        width:327px; /* 최대글자수 26자(띄어쓰기 미포함) */
     }
-    75% {
+    80% {
         opacity:1;
-        right:57px;
+        width:327px; /* 최대글자수 26자(띄어쓰기 미포함) */
     }
     100% {
         opacity: 0;
-        right:57px;
     }
 }
 @keyframes quickDot {
@@ -304,7 +261,8 @@
     100% {
         opacity:1;
     }
-} */
+}
+
 .quick-menu .qk-group-show {display:none;}
 
 /* ==========================================================================
@@ -1124,8 +1082,18 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu .qk-group-show {display:flex;}
     .quick-menu .qk-group-show u {background:url(../images/common/mo_icon_st_plus.svg) 0 0 no-repeat;  transition:all 0.3s ease; transform:rotate(45deg);}
     .quick-menu .qk-group-show.on u {transform:rotate(0);}
-    .quick-menu .noti-txt {top:-5px; right:-5px; width:22px; height:22px; line-height:22px; font-size:12px; padding:0; text-align:center;}
-    .quick-menu .noti-txt:after {display:none;}
+    .quick-menu .alarm-area {display: none;}
+    .quick-menu .qk-notify .dot {top:8px; right:8px; opacity: 1;
+        animation : none;
+        animation-delay : 0;
+        animation-direction : normal;
+        animation-duration : 0;
+        animation-fill-mode : none;
+        animation-iteration-count : 1;
+        animation-name : none;
+        animation-play-state : running;
+        animation-timing-function : ease;
+    }
 
     /* 모바일 세로정렬 line-height */
     select.select.sel-s {line-height:29px;}
