@@ -547,7 +547,7 @@
     .pop-review-write .pop-product .pro-text-area .pro-price p b {font-size: 18px;}
     .pop-review-write .pop-product .pro-img-area img {max-width: 80px; max-height:80px;}
     .pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 100%;}
-    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {font-size: 15px;}
+    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {font-size: 15px; height: 36px; line-height: 40px;}
     .pop-review-write .pro-upload .upload-area + .upload-url {padding-top: 10px;}
     .pop-review-write .pro-upload .upload-url {flex-direction: column;}
     .pop-review-write .pro-upload .upload-url label {width: 100%; line-height: inherit; padding-bottom: 8px; font-size: 15px;}
