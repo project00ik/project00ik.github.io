@@ -168,6 +168,7 @@ ICTMALL 고객만족도 조사
   .interested-list > li {padding:13px 54px 11px 50px;}
   .interested-list > li .chk-area {left:10px;}
   .interested-list .txt-area .txt {font-size: 14px;}
+  .interested-list .txt-area .txt > a {vertical-align: top;}
   .mypage-cont .my-main .product-result.wish-list .tit-area {border:0; padding-bottom:5px;}
 }
 
