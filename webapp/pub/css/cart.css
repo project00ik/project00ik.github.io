@@ -470,7 +470,7 @@
     /* 장바구니 주문서 팝업*/
     .pop-orderlist > .input{display: flex;flex-direction: column;margin:20px 0 0}
     .pop-orderlist > .input .form-layout{width: 100%;}
-    .pop-cart .radio-wrap {margin: 10px 0 30px}
+    .pop-cart .radio-wrap {margin: 30px 0 10px}
     .pop-layout .pop-write.pop-cart-addr1{margin-top: 10px;}
     .pop-layout .pop-write.pop-cart-addr1 ul li{flex-direction: column;}
     .pop-layout .pop-write.pop-cart-addr1 ul li > div.btn-wrap{width: 122px;margin:10px 0 0;display: flex;}

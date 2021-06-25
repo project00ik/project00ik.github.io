@@ -1264,6 +1264,7 @@ textarea + .cot b {vertical-align: top;}
     /* 공통 */
     /* 팝업 */
     .lyPopup .popup-wrap {height:100%;}
+    .lyPopup .lyPopCont::after{display: none;}
     .popup-type-s .lyPopup,
     .popup-type-xs .lyPopup {padding:20px;}
     .popup-type-s .lyPopup .popup-wrap {height:auto;}
