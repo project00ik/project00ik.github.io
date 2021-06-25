@@ -429,7 +429,7 @@
     .option-box .normal-price {font-size:13px;}
     .option-box .option-price {margin-top:16px; height:79px; padding-top:12px; align-items: flex-end;}
     .option-box .option-price .price {width:100%; font-size: 12px; text-align:right;}
-    .option-box .option-price .price > b {font-size: 22px;}
+    .option-box .option-price .price > b {font-size: 22px; vertical-align: middle;}
     .option-box .option-price .btn-xs-small {margin:5px 0 0;}
     .option-result {margin-top:16px;}
     .ly-detail .option-result.selLeng0 {height:auto; margin-top:0;}
@@ -445,7 +445,7 @@
     .action-bar {display:block;}
     .option-pc-area {display:none;}
     .product-total .total-price .price {font-size: 20px;}
-    .product-total .total-price .price > b {font-size: 28px;}
+    .product-total .total-price .price > b {font-size: 28px; vertical-align: middle;}
     .product-total .price-info {font-size:12px;}
     .product-total .tit {font-size:18px;}
     .option-box .btn-del {top:14px; right:14px;}
