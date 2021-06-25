@@ -161,7 +161,7 @@
 .my-detail.detail-review ul li .review-satisfaction-area {flex-direction: column;}
 .my-detail.detail-review ul li .review-satisfaction-area .satis-small {padding-left: 0;}
 .my-detail.detail-review ul li .review-satisfaction-area .satis-large:after {display: none;}
-.my-detail.detail-review ul li .review-satisfaction-area .star-count {font-size: 18px; color: #346dd0; line-height: 24px; font-weight: 500; margin-left: 10px;}
+.my-detail.detail-review ul li .review-satisfaction-area .star-count {font-size: 18px; color: #346dd0; line-height: 25px; font-weight: 500; margin-left: 10px;}
 .my-detail.detail-review ul li .review-btns {font-size: 0; width: 118px; position: absolute; top: 50%; right: 30px; transform: translateY(-50%);}
 .my-detail.detail-review ul li .review-btns .btn + .btn {margin-top: 10px;}
 .my-detail.detail-review ul li .review-front-img {bottom: auto; top: 50%; right: 178px; transform: translateY(-50%);}
@@ -191,7 +191,7 @@
 .total-price .tit {font-size:16px; font-weight:500;}
 .total-price .info-txt {font-size:14px;}
 .total-price .price {color: #346dd0; font-size: 14px;}
-.total-price .price b {font-size: 22px; vertical-align: text-bottom; font-weight: 700;}
+.total-price .price b {font-size: 22px; vertical-align: baseline; font-weight: 700;}
 .chk-list {position: relative;}
 .chk-list .check-style2 {margin-top:-15px; position: absolute; top:50%; left:20px; z-index:1;}
 .list-con .chk-list .list-in {margin-top:0; padding-left:40px; border-top:1px solid #d7d7d7; border-bottom:0; position: relative;}
@@ -316,7 +316,7 @@
     .pop-sLabel .red-txt {margin-top: 20px;}
     .pop-sLabel .jusitfy-info-area {margin: 20px 0;}
     .pop-sLabel .jusitfy-info-area .txt{font-size: 13px;}
-    .pop-sLabel .jusitfy-info-area .btn-small-line{height: 36px;margin-top: 20px;}
+    .pop-sLabel .jusitfy-info-area .btn-small-line{height: 36px; line-height: 37px; margin-top: 20px;}
 
     /* 회원정보관리 */
     .list-half-style li {width: 100%;}
@@ -365,7 +365,7 @@
     .my-detail.detail-review ul li.on .review-btns {top: 0;}
     .my-rew-cont {padding: 20px;}
     .my-detail.detail-review ul li .review-front-img {top: 54px; right: 20px; transform: none; }
-    .my-detail.detail-review ul li .review-satisfaction-area .star-count {font-size: 15px; line-height: 24px;}
+    .my-detail.detail-review ul li .review-satisfaction-area .star-count {font-size: 15px; line-height: 26px;}
     
 
     /* ==========================================================================
@@ -392,7 +392,7 @@
     /* ==========================================================================
         주문현황
     ========================================================================== */
-    .btn-open {height:36px; padding:0 21px; line-height:35px;}
+    .btn-open {height:36px; padding:0 21px; line-height:37px;}
     .orderFormeTgView .list-in {height:578px;}
     .lybox-wrap {width:calc(100% - 40px); margin:10px 20px 0; padding:20px; top:245px; left:0;}
     .lybox-wrap .chk-area {margin-left:0;}

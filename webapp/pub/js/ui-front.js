@@ -860,6 +860,7 @@ function toggleResize(){
   var winW = $(window).width();
   var $tgcon = $('.type-slide')
   if (winW < 800){
+    $tgcon.find('.tgSlideBtn').removeClass('on');
     $tgcon.removeClass('open');
     $tgcon.find('.tgSlideCont').slideUp();
   } else {
