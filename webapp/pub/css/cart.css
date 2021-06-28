@@ -175,6 +175,7 @@
 .before-num ul li:nth-child(4):before{content: "4."}
 .before-num ul li:nth-child(5):before{content: "5."}
 .before-num ul li:nth-child(6):before{content: "6."}
+.pop-cart-addr1 {min-height:372px;}
 .pop-cart-addr1 ul li{display: flex;padding:20px 0;border-top: 1px solid #BBBBBB;}
 .pop-cart-addr1 ul li.none{display: block;text-align: center;padding:100px 0;}
 .pop-cart-addr1 ul li.none p{padding-top:80px;background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
