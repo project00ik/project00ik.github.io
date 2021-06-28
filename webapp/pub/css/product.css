@@ -344,6 +344,7 @@
 /* 바로구매 장바구니 팝업 */
 .ly-buyNowLy .ly-buyNowLy-wrap {}
 .ly-buyNowLy .ly-buyNowLy-cont {padding:30px; overflow: hidden;}
+.ly-buyNowLy .ly-buyNowLy-cont .tooltip-box {left:inherit; right:0;}
 /* .ly-buyNowLy .ly-buyNowLy-cont {padding:30px; overflow: hidden; height:628px;} */
 /* .ly-buyNowLy .ly-buyNowLy-cont .option-cont {height:328px;} */
 .ly-buyNowLy .pro-detail-slide {width:390px; height: 470px; padding-left:0; float: left;}
