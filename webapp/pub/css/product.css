@@ -217,7 +217,6 @@
 .pop-cart .cart-select{display: flex;border:none;padding:0;margin: 0;}
 .pop-cart .cart-select select{flex:1}
 .pop-cart .cart-select button{width:110px;height: 38px;line-height: 36px;text-align: center;font-size: 14px;color: #000;background: #fff;border: 1px solid #000;margin-left:5px;}
-.pop-cart .cart-add-select{margin-top: 30px; border-top:1px solid #D7D7D7;}
 .pop-cart .cart-add-select > p{margin:20px 0 16px;}
 .pop-cart .cart-add-select > span{font-size: 14px;color:#999;display: block;padding-right: 60px;}
 .pop-cart .cart-add-select .form-area{margin-bottom: 10px;}
