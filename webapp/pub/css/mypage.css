@@ -91,7 +91,6 @@
 .pop-sLabel .excel-wrap ~ .excel-wrap {margin-top: 20px; min-height:auto;}
 .pop-sLabel .jusitfy-info-area {margin: 30px 0;}
 .pop-sLabel .jusitfy-info-area .txt{color: #000;}
-.pop-sLabel .jusitfy-info-area .btn-small-line{width: 68px;height: 38px;}
 
 .pop-sLabel.labelW-xs .pop-ip-area > label {width: 88px; padding-left: 0; display: inline-block;}
 .pop-sLabel.labelW-xs .pop-ip-area label + .form-layout {width: calc(100% - 88px);}
@@ -316,7 +315,7 @@
     .pop-sLabel .red-txt {margin-top: 20px;}
     .pop-sLabel .jusitfy-info-area {margin: 20px 0;}
     .pop-sLabel .jusitfy-info-area .txt{font-size: 13px;}
-    .pop-sLabel .jusitfy-info-area .btn-small-line{height: 36px; line-height: 37px; margin-top: 20px;}
+    .pop-sLabel .jusitfy-info-area .btn-style-m4 {height: 36px; line-height: 37px; margin-top: 20px;}
 
     /* 회원정보관리 */
     .list-half-style li {width: 100%;}

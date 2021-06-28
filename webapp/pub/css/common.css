@@ -402,6 +402,11 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-l3 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#d7d7d7; background:#fafafa; border:1px solid #e5e5e5;}
 .btn-style-l4 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#fff; background:#000;}
 .btn-style-l5 {height:56px; line-height:54px; text-align:center; font-size:20px; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-l1:hover {background: #f3f8ff}
+.btn-style-l2:hover {border-color: #2d3a52; background: #2d3a52;}
+.btn-style-l4:hover {border-color: #666; background: #666;}
+.btn-style-l5:hover {background: #f5f5f5;}
+
 .btn-gray-line {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#666; background:#fff; border:1px solid #bbb;}
 .btn-gray-line:hover {color:  #000; border-color: #000;}
 .btn-black-line {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
@@ -483,7 +488,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-mml1 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mml1:hover {border-color:#000; background: #f5f5f5;}
 .btn-style-mml2 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
-.btn-style-mml1:hover {border-color:#2d3a52; background:#2d3a52;}
+.btn-style-mml2:hover {border-color:#2d3a52; background:#2d3a52;}
 
 .btn-tooltip {width: 20px; height: 20px; margin:3px 0 0 2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
 .tooltip-box {display:none; width: 183px; padding:20px; background: #fff; border: 1px solid #000; position:absolute; top:25px; left:0; z-index:2;}
