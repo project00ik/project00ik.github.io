@@ -217,7 +217,7 @@
                 <a href="javascript:;" class="lyClose btn btn-style-s1 btn-color3">신규</a>
                 <a href="javascript:;" class="lyClose btn btn-style-s1 btn-color2">저장</a>
                 <a href="javascript:;" class="lyClose btn btn-style-s1 btn-color2">삭제</a>
-                <a href="javascript:;" class="lyClose btn btn-style-s1 btn-color3 mo-hide">엑셀업로드</a>
+                <a href="javascript:;" class="lyClose btn btn-style-s1 btn-color3 mo-hide"  onclick="inLyOpen('cartExcelPopup03')">엑셀업로드</a>
               </div>
               <div class="excel-wrap">
                 * 명함신청 그리드영역
@@ -229,6 +229,79 @@
     </div>
   </div>
   <!-- //명함 신청 팝업 -->
+  <!--명함신청 엑셀업로드 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="cartExcelPopup03">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>명함신청 엑셀업로드</p>
+            <a href="javascript:;" onclick="inLyClose()" class="inLyClose btn btn-close">닫기</a><!-- 닫기 이벤트 class : inLyClose -->
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-register pop-restock">
+              <div class="tab-area tabArea">
+								<ul class="tab-btn-list tab-style1">
+									<li class="tabBtn on" data-tab="tab1">파일선택</li>
+									<li class="tabBtn" data-tab="tab2">엑셀조회</li>
+								</ul>
+								<div class="tab-cont tabCont active" id="tab1">
+									<div class="pop-write">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th>파일선택</th>
+                          <td>
+                            <button class="btn form-down-btn">양식 다운로드</button>
+                            <div class="filebox">
+                              <input class="upload-name input " value="" readonly>
+                              <label for="file">파일 선택</label> 
+                              <input type="file" id="file"> 
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="input">
+                          <th>추가설명</th>
+                          <td>
+                            <div class="before-num">
+                              <ul>
+                                <li>양식의 필수항목은 모두 등록해 주시기 바랍니다.<br/>
+                                  (필수항목 : 이름,직위,부서명,주소,주소상세,핸드폰,이메일,수량)</li>
+                                <li>명함중 단면일경우는 앞면만, 양면일 경우에는 앞면,뒷면 모두 필수항목을 입력해 주십시오.</li>
+                                <li>우편번호는 XXX-XXX 나 XXXXX 형식으로 입력해 주십시오.</li>
+                                <li>전화,팩스,핸드폰은 '-' 를 포함하여 입력해 주십시오.</li>
+                                <li>이메일은 @ . 를 포함하여 입력해 주십시오.</li>
+                                <li>수량은 숫자만 입력해 주십시오.</li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="" class="btn btn-style-m2">업로드</a>
+                  </div>
+								</div>
+								<div class="tab-cont tabCont" id="tab2">
+                  <div class="pop-write">
+                    <div class="excel-wrap">
+                      그리드 영역
+                    </div>
+                  </div>
+                  <div class="btn-area">
+                    <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2 excel-btn">저장</a>
+                  </div>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //명함신청 엑셀업로드 팝업 -->
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
@@ -253,7 +326,7 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('cartCardPopup');
-
+      inLyClose(); // 팝업안에 팝업 닫기
     
     });
   </script>
