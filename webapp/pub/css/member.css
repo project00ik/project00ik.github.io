@@ -155,7 +155,7 @@
 .pop-account > .form-area {margin-top: 30px;}
 
 .pop-loginsecurity div{width: 100%;height:76px;background: #bbb;}
-.pop-loginsecurity p{color:#666;font-size:14px;text-align: center;padding-top: 90px;background:url(../images/layout/logo_ktcommerce.png) 50% 50px no-repeat}
+.pop-loginsecurity p{color:#666;font-size:14px;text-align: center;padding:90px 0 20px;background:url(../images/layout/logo_ktcommerce.png) 50% 50px no-repeat}
 
 
 
@@ -276,7 +276,7 @@
     .lyPopup .popup-cont .lyTitle.center{padding:0px 44px}
     .pop-account > span em {display: block;vertical-align: top;}
     .pop-account > p em {display: block;vertical-align: top;}
-    .pop-loginsecurity p{padding-top: 70px;background:url(../images/layout/logo_ktcommerce.png) 50% 30px no-repeat}
+    .pop-loginsecurity p{padding:70px 0 30px;background:url(../images/layout/logo_ktcommerce.png) 50% 30px no-repeat}
 
 }
 
