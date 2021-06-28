@@ -140,6 +140,7 @@
 
 /* 마이페이지 주문현황 */
 .mystate-con .btn-r-area3{padding-bottom: 0;}
+.mystate-con .step-wrap > ul + .btn-r-area3 {padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
 .mystate-con .step-wrap{border-top:1px solid #bbb;margin-top: 10px;}
 .mystate-con .step-wrap > ul {margin: 20px 0;}
 .mystate-con .step-wrap > ul > li{margin-left: 57px;}
@@ -412,6 +413,7 @@
 
   /* 마이페이지 주문현황 */
   .mystate-con > .list-area > .list-con > div {border-bottom:10px solid #F5F5F5 ;}
+  .mystate-con .step-wrap > ul + .btn-r-area3 {border-bottom: 0;}
   .mystate-con .product-info-list.mo-line-thin {border-bottom: 0 !important;}
   .mystate-con .product-info-list.mo-line-thin .list-con .list-in:last-child  {border-bottom: 1px solid #d7d7d7 !important;}
   .mystate-con .list-area .list-con .btn-r-area3{padding-bottom: 20px;}
