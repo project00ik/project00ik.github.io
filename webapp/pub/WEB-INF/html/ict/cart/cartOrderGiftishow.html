@@ -751,7 +751,7 @@
   <!-- 퀵메뉴 -->
   <div class="quick-menu non-footer-quick">
     <div class="qk-group">
-        <a href="#" class="qk-notify">
+        <a href="javascript:;" onclick="lyOpen('alarmPopup')" class="qk-notify">
             <u></u><span>알림</span>
             <div class="noti-txt">
                 <p class="mo-hide">배송중인 상품이 있습니다.</p>
@@ -759,7 +759,8 @@
             </div>
         </a>
         <a href="#" class="qk-lookmark"><u></u><span>즐겨찾기</span></a>
-        <a href="#" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="javascript:;" onclick="lyOpen('nonRecentlyViewedList')" class="qk-history"><u></u><span>최근본상품</span></a>
+        <a href="javascript:;" onclick="lyOpen('recentlyViewedList')" class="qk-history on"><u><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"></u><span>최근본상품</span></a>
         <a href="#" class="qk-favorite"><u></u><span>관심상품</span></a>
         <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
         <a href="#" class="qk-quick"><u></u><span>QUICK<br/>주문</span></a>

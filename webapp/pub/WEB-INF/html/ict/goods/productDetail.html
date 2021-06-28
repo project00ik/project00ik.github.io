@@ -1427,6 +1427,35 @@
   <!--// 상품상세 모바일 구매버튼 영역 -->
   <!--// 모바일 옵션 영역 [E] -->
 
+  <!-- 퀵메뉴 -->
+  <div class="quick-menu non-footer-quick"><!-- 모바일 footer가 없는경우 다음과 같이 클래스 추가  <div class="quick-menu non-footer-quick'> -->
+    <div class="qk-group">
+      <a href="javascript:;" onclick="lyOpen('alarmPopup')" class="qk-notify">
+        <u></u><span>알림</span>
+        <!-- 안읽은 메세지 있는경우 노출 -->
+        <p class="dot">안읽은 메세지 있음</p>
+        <!--// 안읽은 메세지 있는경우 노출 -->
+        <!-- 알림이 있는경우 노출 -->
+        <div class="alarm-area">
+          <div class="noti-txt">
+            <p class="mo-hide txt">배송중인 상품이 있습니다.</p>
+          </div>
+        </div>
+        <!--// 알림이 있는경우 노출 -->
+      </a>
+      <a href="#" class="qk-delivery"><u></u><span class="txtH">주문/배송<br/>조회</span></a>
+      <a href="../main/quick.html" class="qk-quick"><u></u><span class="txtH"><b>QUICK</b>주문</span></a>
+      <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
+      <a href="javascript:;" onclick="lyOpen('nonRecentlyViewedList')" class="qk-history"><u></u><span>최근본상품</span></a>
+      <!-- <a href="javascript:;" onclick="lyOpen('recentlyViewedList')" class="qk-history on"><u><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"></u><span>최근본상품</span></a> -->
+      <a href="#" class="qk-down mo-hide"><u></u><span class="txtH">인증서<br/>다운로드</span></a>
+      <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+    </div>
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+  </div>
+  <!--// 퀵메뉴 -->
+
   <!-- 리뷰작성 팝업 -->
   <div class="lyPopupWrap popup-type-m" id="reviewWritePopup"><!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
@@ -1910,82 +1939,82 @@
   <!-- //협력사 조회 팝업 -->
 
   <!--재입고 알림 신청 팝업 -->
-<div class="lyPopupWrap popup-type-m" id="restockPopup2">
-  <!-- id 값 버튼과 연결해주세요. -->
-  <div class="lyPopup">
-    <div class="popup-wrap">
-      <div class="popup-cont">
-        <div class="lyTitle">
-          <p>재입고 알림 신청</p>
-          <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-        </div>
-        <div class="lyPopCont">
-          <div class="pop-layout pop-restock">
-            <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
-            <div class="pop-write">
-              <table>
-                <tbody>
-                  <tr>
-                    <th rowspan="2">상품정보</th>
-                    <td>
-                      <div>
-                        <label>상품코드</label>
+  <div class="lyPopupWrap popup-type-m" id="restockPopup2">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle">
+            <p>재입고 알림 신청</p>
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-restock">
+              <p>상품이 재입고되면 아래 메일로 알림을 드리겠습니다.</p>
+              <div class="pop-write">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">상품정보</th>
+                      <td>
                         <div>
-                          <p>102622887</p>
+                          <label>상품코드</label>
+                          <div>
+                            <p>102622887</p>
+                          </div>
+                          
                         </div>
-                        
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div>
-                        <label>상품명</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
                         <div>
-                          <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
+                          <label>상품명</label>
+                          <div>
+                            <p>DCS39IN 전동스킬 18V 충전 원형톱(베어툴)</p>
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="input">
-                    <th rowspan="3">알림 수신자 정보</th>
-                    <td>
-                      <div class="input">
-                        <label>수신자 성명</label>
-                        <div class="form-layout">
-                          <input type="text" class="input" value="김상현" readonly="">
+                      </td>
+                    </tr>
+                    <tr class="input">
+                      <th rowspan="3">알림 수신자 정보</th>
+                      <td>
+                        <div class="input">
+                          <label>수신자 성명</label>
+                          <div class="form-layout">
+                            <input type="text" class="input" value="김상현" readonly="">
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="input">
-                    <td>
-                      <div>
-                        <label>메일주소</label>
-                        <div class="form-layout">
-                          <input type="text" class="input" value="61781104991@null.com" >
+                      </td>
+                    </tr>
+                    <tr class="input">
+                      <td>
+                        <div>
+                          <label>메일주소</label>
+                          <div class="form-layout">
+                            <input type="text" class="input" value="61781104991@null.com" >
+                          </div>
                         </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <strong>*</strong>수신결과가 e-mail로 전송되므로 정확히 입력하여 주시기 바랍니다.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="btn-area">
-          <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">신청</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<!-- //재입고 알림 신청 팝업 -->
+  <!-- //재입고 알림 신청 팝업 -->
 
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>

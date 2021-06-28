@@ -416,7 +416,34 @@
     </footer>
   </div>
 
-
+  <!-- 퀵메뉴 -->
+  <div class="quick-menu non-footer-quick"><!-- 모바일 footer가 없는경우 다음과 같이 클래스 추가  <div class="quick-menu non-footer-quick'> -->
+    <div class="qk-group">
+      <a href="javascript:;" onclick="lyOpen('alarmPopup')" class="qk-notify">
+        <u></u><span>알림</span>
+        <!-- 안읽은 메세지 있는경우 노출 -->
+        <p class="dot">안읽은 메세지 있음</p>
+        <!--// 안읽은 메세지 있는경우 노출 -->
+        <!-- 알림이 있는경우 노출 -->
+        <div class="alarm-area">
+          <div class="noti-txt">
+            <p class="mo-hide txt">배송중인 상품이 있습니다.</p>
+          </div>
+        </div>
+        <!--// 알림이 있는경우 노출 -->
+      </a>
+      <a href="#" class="qk-delivery"><u></u><span class="txtH">주문/배송<br/>조회</span></a>
+      <a href="../main/quick.html" class="qk-quick"><u></u><span class="txtH"><b>QUICK</b>주문</span></a>
+      <a href="#" class="qk-request"><u></u><span>신규요청</span></a>
+      <a href="javascript:;" onclick="lyOpen('nonRecentlyViewedList')" class="qk-history"><u></u><span>최근본상품</span></a>
+      <!-- <a href="javascript:;" onclick="lyOpen('recentlyViewedList')" class="qk-history on"><u><img src="../../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"></u><span>최근본상품</span></a> -->
+      <a href="#" class="qk-down mo-hide"><u></u><span class="txtH">인증서<br/>다운로드</span></a>
+      <a href="#" class="qk-speech"><u></u><span>1:1문의</span></a>
+    </div>
+    <a href="#" class="qk-group-show tgBtn"><u></u><span>펼치기</span></a>
+    <a href="#" class="qk-quicktop"><u></u><span>TOP</span></a>
+  </div>
+  <!--// 퀵메뉴 -->
 
   <!-- javascript -->
   <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
