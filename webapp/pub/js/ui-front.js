@@ -558,7 +558,6 @@ function cartFixedBtn(){
   var $winHeight = $(window).height();
   var $scrollPoint = $('.cart-total-area').offset().top - $winHeight + 108; /* 장바구니 floating영역 높이 값 :108 */
   var $fixBtnArea = $('.cart-floating-box');
-  console.log('$winSrollTop', $winSrollTop, '$scrollPoint', $scrollPoint, '$winHeight',$winHeight)
   if ($winSrollTop > $scrollPoint){
     $fixBtnArea.addClass('hide');
   } else {
