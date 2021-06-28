@@ -459,6 +459,7 @@ button.btn-style-s1 {line-height:25px;}
 
 .btn-like-l {width:56px; height:56px; margin-right:10px; font-size:0; border:1px solid #bbb; background:#fff; position: relative;}
 .btn-like-l::after {content:""; width: 36px; height: 36px; margin:-18px 0 0 -18px;  display:inline-block; background:url(../images/common/icon_like_g.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
+.btn-like-l:hover {border-color:#000;}
 .btn-like-l.on {}
 .btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s;}
 .btn-like-m {width:24px; height:24px; font-size:0;}
