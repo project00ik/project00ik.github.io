@@ -126,6 +126,7 @@ input::-webkit-search-results-decoration{
 .print-wrap .print-con {padding:20px; margin-top: 54px;}
 .print-wrap .print-con .btn-area {text-align: right; margin-bottom: 20px;}
 .print-wrap .print-con .btn-print {min-width:118px; height:38px; line-height:35px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
+.print-wrap .print-con .btn-print:hover {border-color:#2d3a52; background:#2d3a52;}
 .table-print .table-tit {border: 1px solid #d7d7d7; border-bottom: 0; padding: 14px 0 10px; position: relative; text-align: center;}
 .table-print .table-tit p {font-size: 24px; color: #000; font-weight: bold;}
 .table-print .table-tit .img-logo {position: absolute; top: 14px; left: 10px; width: 128px; display: inline-block;}
