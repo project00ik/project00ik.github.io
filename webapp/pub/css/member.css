@@ -154,7 +154,7 @@
 .pop-account > p em {vertical-align: top;}
 .pop-account > .form-area {margin-top: 30px;}
 
-.pop-loginsecurity div{width: 100%;height:76px;background: #bbb;}
+.pop-loginsecurity div{width: 100%; max-width:302px; height:76px; margin:0 auto; background: #bbb;}
 .pop-loginsecurity p{color:#666;font-size:14px;text-align: center;padding:90px 0 20px;background:url(../images/layout/logo_ktcommerce.png) 50% 50px no-repeat}
 
 
