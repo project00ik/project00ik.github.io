@@ -190,7 +190,7 @@
 .pop-restock .pop-cart-addr2 {text-align: right;}
 .pop-restock .pop-cart-addr2 .pop-mo-check{margin-top: 30px;}
 .pop-restock .pop-cart-addr2 .pop-write{margin-top: 10px;}
-.pop-restock .pop-cart-addr2 .pop-write > ul{padding:20px  0 30px}
+.pop-restock .pop-cart-addr2 .pop-write > ul{padding:20px  0 0;}
 .pop-restock .tab-area .tab-style1 > li:first-child {margin-left: 0;}
 .pop-namecard > p{margin-top: 0;text-align: left;}
 .lyPopup .popup-cont .lyPopCont .pop-namecard .btn-area{text-align:right;}
