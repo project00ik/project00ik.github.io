@@ -430,6 +430,11 @@ button.btn-style-s1 {line-height:25px;}
 .btn.btn-color3 {color:#1840E1; border-color:#1840E1;}
 .btn.btn-color4 {color:#fff; border-color:#346dd0; background:#346dd0;}
 
+.btn.btn-style-m1:hover,
+.btn.btn-style-m3:hover,
+.btn.btn-style-m4:hover {background:#f5f5f5;}
+.btn.btn-style-m2:hover {border-color: #2d3a52; background: #2d3a52;}
+
 .btn-style-m1.btn-color1:hover,
 .btn-style-m3.btn-color1:hover,
 .btn-style-m4.btn-color1:hover {background:#f5f5f5;}
