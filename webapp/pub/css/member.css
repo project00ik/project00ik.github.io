@@ -267,6 +267,9 @@
     .join-content .login-wrap.privacy .btn-full-area{padding:50px 0}
     .join-content .login-wrap.privacy .btn-style-l2{height:42px; line-height: 40px;}
 
+    .join-content .btn-full-area .btn-style-ml1,
+    .join-content .btn-full-area .btn-style-ml2 {min-width:auto; height:42px; line-height: 43px;}
+
     /* 회원가입 팝업 */
     .pop-password > p {margin-top: 20px;}
     .pop-password > p em {display: block;vertical-align: top;}
