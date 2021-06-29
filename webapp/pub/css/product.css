@@ -156,7 +156,7 @@
 
 /* 상품상세 정보 */
 .product-detail .tab-btn-list.fixed {position: fixed; z-index: 10; max-width: 1200px; background: #fff;}
-.product-detail .tab-btn-list.fixed ~ .tab-cont {padding-top: 85px;}
+.product-detail .tab-btn-list.fixed ~ .tab-cont {padding-top: 155px;}
 .product-detail .tit-area {margin-bottom:16px;}
 .product-detail .detail-wrap > div{margin-top: 80px;position: relative;}
 .product-detail .detail-wrap > div:first-child{margin-top: 0px;}
@@ -166,6 +166,7 @@
 .product-detail .detail-wrap .table-area td span.kc{padding-left:18px;background: url(../images/common/img_kc.svg) 0 3px no-repeat;}
 .product-detail .detail-wrap .table-area td span.green{padding-left:18px;background: url(../images/common/img_green.svg) 0 6px no-repeat;}
 .product-detail .detail-wrap .table-area td span em{vertical-align: top;}
+.product-detail .tab-area .tab-cont {padding:100px 40px 0;}
 
 
 /* 상품상세 문의 */
@@ -201,6 +202,7 @@
 .product-detail .delivery-info > p{font-size: 18px;margin-top: 60px;}
 .product-detail .delivery-info > p:first-child{margin-top: 30px;}
 .product-detail .delivery-info > p b{color:#346DD0;vertical-align: top;}
+.product-detail .delivery-info .table-info {margin-top: 16px;}
 .product-detail .delivery-info .text-info{margin-top: 16px;}
 .product-detail .text-info ul{}
 .product-detail .text-info ul li{font-size: 16px; color:#666;margin-top: 5px;padding-left: 10px;}
@@ -497,6 +499,7 @@
     .product-detail .detail-wrap .table-area.w-124 th{width: 124px;}
     .product-detail .detail-wrap .table-area span{display: block;}
     .product-detail .detail-wrap .table-area th,.product-detail .detail-wrap .table-area td{font-size: 13px;text-align: left;height:auto;padding: 13px 10px 12px;border-left: none;}
+    .product-detail .tab-area .tab-cont {padding:30px 0 0;}
 
     .product-detail .tit-sub  {width: 100%;margin-top: 5px;font-size:14px;}
     .product-detail .tit-sub + a {margin-top: 10px;}
