@@ -99,7 +99,7 @@
 .cate-layer .d1-btn {padding:8px 24px; display:block; color:#fff; position:relative;}
 .cate-layer .d1-btn a {vertical-align:top;}
 .cate-layer .d1-btn.on {background:#346dd0;}
-.cate-layer .d1-btn::after {display:none; content:""; width:18px; height:18px; background:url(../images/common/arrow_gnb_d1.svg) 0 0 no-repeat; position:absolute; top:9px; right:16px;}
+.cate-layer .d1-btn::after {display:none; content:""; width:18px; height:18px; background:url(../images/common/arrow_gnb_d1.svg) 0 0 no-repeat; position:absolute; top:10px; right:16px;}
 .cate-layer .d1-btn.on::after {display:inline-block;}
 .cate-layer .d2-layer-box {display:none; width:958px; height:592px; background:#fff; position:absolute; top:0; left:242px; z-index:1;}
 .cate-layer .d2-layer-box.active {display:block;}
@@ -111,7 +111,6 @@
 .cate-layer .partition-wrap .partition-area {float:left; display:inline-block; position:relative;}
 .cate-layer .partition-area .depth-list > li {width:100%; color:#333;}
 .cate-layer .partition-area .depth-list > li > a {width:203px; padding:0 20px 14px; font-size:15px; display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
-.cate-layer .partition-area 
 .cate-layer .partition-area .depth-list {color:#333;}
 .cate-layer .depthBtn:hover {color:#346dd0;}
 .cate-layer .depthBtn.on {color:#346dd0;}
