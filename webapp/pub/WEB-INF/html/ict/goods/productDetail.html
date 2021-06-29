@@ -2121,7 +2121,7 @@
       function scrollTop2(){
         // 스크롤탭 fixed 고정
         var $wTop = $(window).scrollTop();
-        var $contTop = $('.product-detail .tabArea').offset().top - 185;
+        var $contTop = $('.product-detail .tabArea').offset().top - 156;
         var $hdH = $('.header').height();
         var $tab = $('.tab-btn-list');
         if ($wTop < $contTop){
@@ -2129,7 +2129,6 @@
         } else {
           $tab.addClass('fixed').css({'top':$hdH});
         }
-        console.log($hdH.height)
       }
 
       // 스크롤이동 이벤트
