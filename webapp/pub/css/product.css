@@ -48,6 +48,7 @@
 .option-box .option-price .price > b {font-size:30px; vertical-align: baseline; font-weight: 700;}
 .option-box .minimum-order {margin-top:3px; font-size: 13px; color: #666;}
 .option-box .normal-price {font-size: 16px; color: #999; text-decoration:line-through;}
+.pro-detail-info .option-box .normal-price {margin-right: 92px;}
 .product-total {margin-top:20px; padding:20px 0 40px; border-top:1px solid #000; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
 .product-total .tit {flex: 1; font-size: 20px; font-weight: 500; color: #333;}
 .product-total .total-price {flex: 2; text-align: right;}
