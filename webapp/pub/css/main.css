@@ -6,7 +6,7 @@
 .main-visual {position:relative;}
 .main-visual-cate .cate-area .cate-layer {position:absolute; top:48px; left:0; z-index:99;}
 .main-visual-cate {width:1200px; margin-left:-600px; position:absolute; top:0; left:50%; z-index:10;}
-.main-visual-cate .cate-area .cate-layer {top:0;}
+.main-visual-cate .cate-area .cate-layer {top:1px;}
 .main-visual-cate .btn-layer-close {display:none;}
 
 .main .main-slide-area {position:relative;}

@@ -92,8 +92,8 @@
 .cate-area .btn-cate.moBtnCate {display:none;}
 .cate-area .btn-cate {width:190px; height:48px; padding:8px 0 4px 20px; color:#f8f8f8; font-size:16px; display:inline-block; line-height:1.1; text-align:left;}
 .cate-area .btn-cate::before {content:""; width:36px; height:36px; margin-right:10px; margin-top:-4px; display:inline-block; background:url(../images/layout/btn_cate.svg) 50% 50% no-repeat; vertical-align:middle;}
-.cate-area .cate-layer {width:242px; height:592px; padding:16px 0; background:#466175; font-size:16px; line-height:1.2;}
-.gnb-wrap .cate-area .cate-layer-wrap {display:none; width:100%; height:592px; position:fixed; top:156px; left:0; z-index:100;}
+.cate-area .cate-layer {width:242px; height:591px; padding:16px 0; background:#466175; font-size:16px; line-height:1.2;}
+.gnb-wrap .cate-area .cate-layer-wrap {display:none; width:100%; height:591px; position:fixed; top:156px; left:0; z-index:100;}
 .gnb-wrap .cate-area .cate-layer-cont {width:1200px; margin:0 auto; position:relative;}
 .cate-layer .ly-go-back {display:none; position:absolute; top:0; left:0; z-index:10;}
 .cate-layer .d1-btn {padding:8px 24px; display:block; color:#fff; position:relative;}
@@ -101,12 +101,12 @@
 .cate-layer .d1-btn.on {background:#346dd0;}
 .cate-layer .d1-btn::after {display:none; content:""; width:18px; height:18px; background:url(../images/common/arrow_gnb_d1.svg) 0 0 no-repeat; position:absolute; top:10px; right:16px;}
 .cate-layer .d1-btn.on::after {display:inline-block;}
-.cate-layer .d2-layer-box {display:none; width:958px; height:592px; background:#fff; position:absolute; top:0; left:242px; z-index:1;}
+.cate-layer .d2-layer-box {display:none; width:958px; height:591px; background:#fff; position:absolute; top:0; left:242px; z-index:1;}
 .cate-layer .d2-layer-box.active {display:block;}
 .cate-layer .cate-sub-layer {display:none; width:100%; height:500px; background:#fff;}
 .gnbPC .cate-layer .d1:hover + .cate-sub-layer {display:block;}
 .cate-layer .d2-layer-box {border:1px solid #d7d7d7; border-top:0;}
-.cate-layer .d2-layer-box .tit {margin:24px 0; padding-left:24px; font-size:28px; line-height:28px; color:#000;}
+.cate-layer .d2-layer-box .tit {margin:24px 0; padding-left:20px; font-size:28px; line-height:28px; color:#000;}
 .cate-layer .d2-layer-box .partition-wrap {width:100%;}
 .cate-layer .partition-wrap .partition-area {float:left; display:inline-block; position:relative;}
 .cate-layer .partition-area .depth-list > li {width:100%; color:#333;}
