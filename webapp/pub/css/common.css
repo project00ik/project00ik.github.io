@@ -99,7 +99,7 @@
 .cate-layer .d1-btn {padding:8px 24px; display:block; color:#fff; position:relative;}
 .cate-layer .d1-btn a {vertical-align:top;}
 .cate-layer .d1-btn.on {background:#346dd0;}
-.cate-layer .d1-btn::after {display:none; content:""; width:18px; height:18px; background:url(../images/common/arrow_gnb_d1.svg) 0 0 no-repeat; position:absolute; top:8px; right:16px;}
+.cate-layer .d1-btn::after {display:none; content:""; width:18px; height:18px; background:url(../images/common/arrow_gnb_d1.svg) 0 0 no-repeat; position:absolute; top:9px; right:16px;}
 .cate-layer .d1-btn.on::after {display:inline-block;}
 .cate-layer .d2-layer-box {display:none; width:958px; height:592px; background:#fff; position:absolute; top:0; left:242px; z-index:1;}
 .cate-layer .d2-layer-box.active {display:block;}
@@ -307,7 +307,10 @@
 .popup-cont .pop-layout-txt2 {font-size: 14px; color: #999; line-height: 18px;}
 .pop-layout > ul {border-top: 1px solid #000;}
 .pop-layout > ul > li {padding: 10px 0;}
-.pop-layout > ul > li + li.pop-ip-tit {border-top: 1px solid #d7d7d7; margin-top: 20px;}
+.pop-layout > ul > li.pop-ip-tit + li {padding-top: 20px;}
+.pop-layout > ul > li:last-child {border-bottom: 1px solid #d7d7d7; padding-bottom: 20px;}
+.pop-layout > ul > li + li.pop-ip-tit {position: relative; border-top: 1px solid #d7d7d7; margin-top: 30px;}
+.pop-layout > ul > li + li.pop-ip-tit::before {content: ''; position: absolute; top: -20px; left: 0; display: block; width: 100%; height: 1px; background: #d7d7d7;}
 .pop-ip-area {display: flex; width: 100%;}
 .pop-ip-area label {font-size: 16px; line-height: 35px; color: #000;}
 .pop-ip-area > label {width: 132px; padding-left: 20px; font-weight: 500;}
