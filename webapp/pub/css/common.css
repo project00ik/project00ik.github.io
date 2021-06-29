@@ -242,6 +242,9 @@
         opacity:1;
         width:327px; /* 최대글자수 26자(띄어쓰기 미포함) */
     }
+    95% {
+        opacity:0.8;
+    }
     100% {
         opacity: 0;
         width: 0;
