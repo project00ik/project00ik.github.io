@@ -274,7 +274,7 @@
 
 .insurance-cont .suggestion-goods .list-con .list-in > li > label{width: 180px;}
 .insurance-cont .suggestion-goods textarea.textarea{height: 219px;}
-.insurance-cont .suggestion-goods .list-con .list-in > li div{flex:inherit;width: 645px;}
+.insurance-cont .suggestion-goods .list-con .list-in > li div{flex:inherit;width: 645px;max-width: 100%;}
 .insurance-cont .suggestion-goods .check-style1{margin-right: 50px;}
 .insurance-cont .suggestion-goods .notice-wrap{background: transparent;margin:20px 0 70px;}
 .insurance-cont .suggestion-goods .notice-wrap p{padding-left: 10px;font-size: 15px;color:#666}
