@@ -348,9 +348,9 @@
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow {width: 118px; height: 38px; background:#346dd0; font-size:14px; line-height:37px;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow:hover {background: #2d3a52; border-color: #2d3a52;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-cart,
-.proList .unit-type1 .unit-layer .unit-under-btn .btn-like {width: 118px; height: 38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #bbb; color:#666;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-like {width: 118px; height: 38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #000; color:#000;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-cart:hover,
-.proList .unit-type1 .unit-layer .unit-under-btn .btn-like:hover {color: #000; border-color: #000;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-like:hover {background: #f5f5f5;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like {margin-left:0;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-restock {width: 118px; height: 38px; background:#000; font-size:14px; line-height:37px;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-restock:hover {background: #666;}
