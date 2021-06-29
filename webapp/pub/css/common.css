@@ -128,7 +128,7 @@
 .cate-layer .depth4-layer .d4-list {width:406px; height:503px; display:-webkit-box; display:-ms-flexbox; display:flex; flex-direction:column; flex-wrap:wrap; justify-content:left; position:relative; overflow:hidden;}
 .cate-layer .depth4-layer .d4-list::before {content:""; width:1px; height:496px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:203px;}
 .cate-layer .depth4-layer .d4-list > li {width:203px; padding-right:55px; position:relative;}
-.cate-layer .depth4-layer .d4-list > li .depthBtn {padding-right:30px;}
+.cate-layer .depth4-layer .d4-list > li .depthBtn {padding-right:38px;}
 .cate-layer .depth4-layer .d4-list > li .btn-star {width:18px; height:18px; background:url(../images/common/icon_star_xs.svg) 0 0 no-repeat; position:absolute; top:0; right:20px; z-index:1;}
 .cate-layer .depth4-layer .d4-list > li .btn-star.on {background:url(../images/common/icon_star_xs_on.svg) 0 0 no-repeat;}
 .cate-layer .banner-area {float:right; margin-right:24px;}
@@ -306,7 +306,8 @@
 .popup-cont .lyPopCont > .pop-layout-txt {padding-bottom: 16px;}
 .popup-cont .pop-layout-txt2 {font-size: 14px; color: #999; line-height: 18px;}
 .pop-layout > ul {border-top: 1px solid #000;}
-.pop-layout > ul > li {padding: 10px 0; border-bottom: 1px solid #d7d7d7;}
+.pop-layout > ul > li {padding: 10px 0;}
+.pop-layout > ul > li + li.pop-ip-tit {border-top: 1px solid #d7d7d7; margin-top: 20px;}
 .pop-ip-area {display: flex; width: 100%;}
 .pop-ip-area label {font-size: 16px; line-height: 35px; color: #000;}
 .pop-ip-area > label {width: 132px; padding-left: 20px; font-weight: 500;}
