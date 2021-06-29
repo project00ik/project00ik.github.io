@@ -129,7 +129,9 @@
 .detail-review .detail-review-empty p {padding-top: 80px; font-size: 16px; line-height: 22px; color: #999; background: url(../images/common/icon_list_empty.svg) center 0 no-repeat;}
 
 /* 리뷰작성 */
-.pop-review-write > ul > li {padding: 20px 0; border-bottom: 1px solid #d7d7d7;}
+.pop-review-write > ul > li {padding: 16px 0; border-bottom: 1px solid #d7d7d7;}
+.pop-review-write > ul > li:last-child {border-bottom: 0;}
+.pop-review-write > ul > li.pop-satis {padding: 20px 0;}
 .pop-review-write .pop-product {display: flex;}
 .pop-review-write .pop-product .pro-img-area img {max-width: 100px; max-height: 100px;}
 .pop-review-write .pop-product .pro-text-area {margin-left: 20px; display: flex; flex-direction: column; justify-content: center;}
@@ -142,7 +144,8 @@
 .pop-review-write .pop-product .pro-text-area .pro-price p span {font-size: 12px; line-height: 12px; color: #000; }
 .pop-review-write .pop-satis .satis-tit {display: block; font-size: 18px; line-height: 16px; color: #000; padding-bottom: 16px; text-align: center;}
 .pop-review-write .pop-satis .pro-satis-list {display: flex; flex-wrap: wrap;}
-.pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 50%; display: flex; align-items: center; justify-content: center; padding: 5px 0;}
+.pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 50%; display: flex; align-items: center; justify-content: center; padding-bottom: 20px;}
+.pop-review-write .pop-satis .pro-satis-list .pro-satis-con:nth-of-type(2) ~ .pro-satis-con {padding-bottom: 0;}
 .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {width: 50px; font-size: 16px; line-height: 18px; color: #000; text-align: right; margin-right: 20px;}
 .pop-review-write .pro-upload .upload-url {display: flex;}
 .pop-review-write .pro-upload .upload-url label {width: 90px; line-height: 38px; font-size: 16px; color: #000;}
@@ -208,8 +211,12 @@
 .popup-cont .file-upload-btn > label{display: inline-block; width: 118px; height: 36px;border:1px solid #000; margin-left: 5px;text-align: center;line-height: 34px;}
 .pop-ip-area label + .form-layout2{width:calc(100% - 373px);}
 .pop-ip-area2 > label + .form-layout {line-height: 38px;}
-.pop-layout > ul > li.pop-ip-tit {background: #F5F5F5;}
-.pop-layout > ul > li.pop-ip-tit > p{line-height: 38px;padding-left: 20px;}
+.pop-layout.pop-write-m > ul > li.pop-ip-tit {background: #F5F5F5;}
+.pop-layout.pop-write-m > ul > li.pop-ip-tit > p{line-height: 38px;padding-left: 20px;}
+.pop-layout.pop-write-m > ul > li.pop-ip-tit + li {padding-top: 20px;}
+.pop-layout.pop-write-m > ul > li.pop-ip-tit ~ li:last-child {border-bottom: 1px solid #d7d7d7; padding-bottom: 20px;}
+.pop-layout.pop-write-m > ul > li + li.pop-ip-tit {position: relative; border-top: 1px solid #d7d7d7; margin-top: 30px;}
+.pop-layout.pop-write-m > ul > li + li.pop-ip-tit::before {content: ''; position: absolute; top: -20px; left: 0; display: block; width: 100%; height: 1px; background: #d7d7d7;}
 .pop-ip-area label + .form-layout.radio{flex-direction: column;}
 .pop-ip-area .form-layout.radio label{line-height: 31px;}
 #cartPopup .btn-area02 a{width:168px;}
@@ -218,7 +225,7 @@
 .pop-cart .cart-select select{flex:1}
 .pop-cart .cart-select button{width:110px;height: 38px;line-height: 36px;text-align: center;font-size: 14px;color: #000;background: #fff;border: 1px solid #000;margin-left:5px;}
 .pop-cart .cart-select button:hover {background: #f5f5f5;}
-.pop-cart .cart-add-select > p{margin:20px 0 16px;}
+.pop-cart .cart-add-select > p{margin:30px 0 16px;}
 .pop-cart .cart-add-select > span{font-size: 14px;color:#999;display: block;padding-right: 60px;}
 .pop-cart .cart-add-select .form-area{margin-bottom: 10px;}
 #pricerequestPopup input.input:read-only{width: 250px;}
@@ -517,12 +524,16 @@
 
     /* 상품상세 팝업 */
     .pop-ip-area2 {flex-direction: inherit;}
-    .pop-ip-area2 > label {width: 70px;padding-bottom: 0;line-height: 19px;}
+    .pop-ip-area2 > label {width: 80px;padding-bottom: 0;line-height: 19px;}
     .pop-ip-area2 > label + .form-layout {width: calc(100% - 70px);line-height: 19px;}
     .pop-ip-area label + .form-layout2{width:100%;}
-    .pop-layout.pop-write-m > ul > li{padding:16px 20px;}
+    .pop-layout.pop-write-m > ul > li{padding:8px 20px;}
+    .pop-layout.pop-write-m > ul > li.pop-ip-tit {padding: 16px 20px;}
+    .pop-layout.pop-write-m > ul > li:first-child {padding-top: 16px !important;}
     .pop-layout.pop-write-m > ul > li.pop-ip-tit > p{padding-left: 0;line-height: 19px;}
     .pop-layout.pop-write-m > ul > li .form-layout p.name{overflow: hidden;text-overflow: ellipsis;display: inline-block;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;word-wrap: break-wrod;}
+    .pop-layout.pop-write-m > ul > li + li.pop-ip-tit {margin-top: 38px;}
+    .pop-layout.pop-write-m > ul > li + li.pop-ip-tit::before {top: -30px;}
     .popup-cont .pop-layout.pop-write-m .file-upload-btn > label {width: 68px;}
     .popup-cont .pop-layout-txt3 {margin-top: 5px;}
     .pop-ip-area .form-layout.radio label{line-height: 19px;}
@@ -540,14 +551,16 @@
 
     /* 리뷰팝업 */
     .pop-review-write > ul > li:first-child {padding-top: 20px;}
-    .pop-review-write .pop-satis .satis-tit {font-size: 16px; padding-bottom: 10px;}
+    .pop-review-write .pop-satis .satis-tit {font-size: 16px; padding-bottom: 16px;}
     .pop-review-write .pop-product .pro-text-area {margin-left: 10px;}
     .pop-review-write .pop-product .pro-text-area .pro-name {font-size: 14px; padding-bottom: 3px;}
     .pop-review-write .pop-product .pro-text-area .pro-option {font-size: 12px; padding-bottom: 3px;}
     .pop-review-write .pop-product .pro-text-area .pro-price p {font-size: 12px; line-height: 19px;}
     .pop-review-write .pop-product .pro-text-area .pro-price p b {font-size: 18px;}
     .pop-review-write .pop-product .pro-img-area img {max-width: 80px; max-height:80px;}
-    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 100%;}
+    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con {width: 100%; padding-bottom: 10px;}
+    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con:nth-of-type(2) ~ .pro-satis-con {padding-bottom: 10px;}
+    .pop-review-write .pop-satis .pro-satis-list .pro-satis-con:last-child {padding-bottom: 0;}
     .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {font-size: 15px; height: 36px; line-height: 40px;}
     .pop-review-write .pro-upload .upload-area + .upload-url {padding-top: 10px;}
     .pop-review-write .pro-upload .upload-url {flex-direction: column;}
