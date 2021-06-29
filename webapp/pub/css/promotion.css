@@ -96,7 +96,8 @@
 .suggestion-goods .list-con .list-in > li.name div{max-width: 323px;}
 .suggestion-goods .list-con .list-in > li div.radio{display: inline-table;max-width: calc(100% - 130px);}
 .suggestion-goods .list-con .list-in > li div.radio div:last-child{margin-top: 20px;}
-.suggestion-goods .list-con .list-in > li div.radio label{margin-right: 50px;}
+.suggestion-goods .list-con .list-in > li div.radio label{margin: 0 60px 0 0;}
+.suggestion-goods .list-con .list-in > li div.radio label.radio-style1{margin-right: 45px;}
 .suggestion-goods .list-con .list-in > li div.radio label span{font-size: 16px;font-weight: normal;}
 .suggestion-goods .list-con .list-in > li div.textarea-wrap{max-width: calc(100% - 130px);position: relative;display: inline-table;}
 .suggestion-goods .list-con .list-in > li div.textarea-wrap label{margin-top: 10px;}

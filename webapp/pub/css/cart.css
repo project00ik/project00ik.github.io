@@ -378,7 +378,7 @@
 /* 모바일 시작 */
 @media only screen and (max-width:800px) {
     /* 장바구니 */
-    .cart-content {margin:36px 0 110px;}
+    .cart-content {margin:36px 0 113px;}
     .cart-top {margin-bottom:0;}
     .cart-content .tit-type1-2 em  {font-size:16px;line-height:19px;vertical-align:top;}
     .cart-list-con + .cart-list-con {margin-top:30px;}
