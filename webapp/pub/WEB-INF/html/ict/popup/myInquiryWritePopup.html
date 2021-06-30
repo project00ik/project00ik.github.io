@@ -319,7 +319,7 @@
         <div class="popup-cont">
           <div class="lyTitle center">
             <p>협력사 조회</p>
-            <a href="javascript:;" onclick="inLyClose()" class="inLyClose btn btn-close">닫기</a><!-- 닫기 이벤트 class : inLyClose -->
+            <a href="javascript:;" onclick="inLyClose('myMngPartnersPopup')" class="inLyClose btn btn-close">닫기</a><!-- 닫기 이벤트 class : inLyClose -->
           </div>
           <div class="lyPopCont">
             <div class="pop-layout pop-suggestion">
@@ -336,7 +336,7 @@
                   </div>
                 </div>
                 <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2 inLyClose">조회</button>
+                  <button class="btn btn-style-m2" onclick="inLyClose('myMngPartnersPopup')">조회</button>
                   <button class="btn btn-style-m1">초기화</button>
                 </div>
               </div>
@@ -359,7 +359,7 @@
         <div class="popup-cont">
           <div class="lyTitle center">
             <p>주문번호 조회</p>
-            <a href="javascript:;" onclick="inLyClose()" class="inLyClose btn btn-close">닫기</a>
+            <a href="javascript:;" onclick="inLyClose('myInquiryNumPopup')" class="inLyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
             <div class="pop-layout pop-sLabel">
@@ -412,7 +412,7 @@
                 </li>
               </ul>
               <div class="btn-r-area top-line-grid">
-                <button class="btn btn-style-m4 inLyClose" onclick="inLyClose()">선택</button>
+                <button class="btn btn-style-m4 inLyClose" onclick="inLyClose('myInquiryNumPopup')">선택</button>
                 <button class="btn btn-style-m4">초기화</button>
               </div>
               <div class="excel-wrap" style="height:240px;">
@@ -421,7 +421,7 @@
             </div>
           </div>
           <div class="btn-area">
-            <a href="javascript:;" onclick="inLyClose()" class="lyClose btn btn-style-m2">닫기</a>
+            <a href="javascript:;" onclick="inLyClose('myInquiryNumPopup')" class="lyClose btn btn-style-m2">닫기</a>
           </div>
         </div>
       </div>
@@ -437,7 +437,7 @@
         <div class="popup-cont">
           <div class="lyTitle center">
             <p>상품 조회</p>
-            <a href="javascript:;" onclick="inLyClose()" class="inLyClose btn btn-close">닫기</a>
+            <a href="javascript:;" onclick="inLyClose('myInquiryProPopup')" class="inLyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
             <div class="pop-layout pop-sLabel">
@@ -457,7 +457,7 @@
                 </li>
               </ul>
               <div class="btn-r-area top-line-grid">
-                <button class="btn btn-style-m4 inLyClose" onclick="inLyClose()">선택</button>
+                <button class="btn btn-style-m4 inLyClose" onclick="inLyClose('myInquiryProPopup')">선택</button>
                 <button class="btn btn-style-m4">초기화</button>
               </div>
               <div class="excel-wrap" style="height:240px;">
@@ -466,7 +466,7 @@
             </div>
           </div>
           <div class="btn-area">
-            <a href="javascript:;" onclick="inLyClose()" class="inLyClose btn btn-style-m2">닫기</a>
+            <a href="javascript:;" onclick="inLyClose('myInquiryProPopup')" class="inLyClose btn btn-style-m2">닫기</a>
           </div>
         </div>
       </div>
@@ -501,8 +501,7 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       lyOpen('myInquiryWritePopup');
-      inLyClose(); // 팝업안에 팝업 닫기
-
+      
     
     });
   </script>

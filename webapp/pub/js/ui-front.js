@@ -400,16 +400,17 @@ function inLyOpen(id) {
   $lyAcive.addClass('open');
 }
 
-function inLyClose(){
-  // 팝업안에 팝업 닫기
-  $('.inLyClose').each(function(){
-    $(this).on('click', function(){
-      $(this).closest('.lyPopupWrap').hide();
-      $(this).closest('.lyPopupWrap').removeClass('open');
-    })
-  });
+function inLyClose(id){
+  var $inLyCloseAcive = $('#' + id);
+  $inLyCloseAcive.hide();
+  $inLyCloseAcive.removeClass('open');
+  // $('.inLyClose').each(function(){
+  //   $(this).on('click', function(){
+  //     $(this).closest('.lyPopupWrap').hide();
+  //     $(this).closest('.lyPopupWrap').removeClass('open');
+  //   })
+  // });
 }
-
 
 function detailOptionLy(){
   // 상품상세 옵션 레이어 이벤트

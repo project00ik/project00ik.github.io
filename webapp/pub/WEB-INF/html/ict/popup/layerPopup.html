@@ -212,6 +212,7 @@
           </div>
           <div class="lyPopCont">
             <div class="">
+              <button class="btn btn-style-m4" onclick="inLyOpen('myInquiryProPopup')">조회</button><br>
               팝업 내용<br>
               팝업 내용<br>
               팝업 내용<br>
@@ -265,6 +266,52 @@
     </div>
   </div>
   <!--// 기본 팝업 -->
+  <!-- 팝업안에 팝업 -->
+  <!-- 상품 조회 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="myInquiryProPopup">
+    <!-- id 값 버튼과 연결해주세요. -->
+    <div class="lyPopup">
+      <div class="popup-wrap">
+        <div class="popup-cont">
+          <div class="lyTitle center">
+            <p>상품 조회</p>
+            <a href="javascript:;" onclick="inLyClose('myInquiryProPopup')" class="inLyClose btn btn-close">닫기</a>
+          </div>
+          <div class="lyPopCont">
+            <div class="pop-layout pop-sLabel">
+              <ul>
+                <li>
+                  <div class="pop-ip-area">
+                    <label for="">상품 통합검색</label>
+                    <div class="form-layout">
+                      <input type="text" name="" class="input" value="" placeholder="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pop-ip-area btn-r-area">
+                    <button class="btn btn-style-m4" onclick="inLyClose('myInquiryProPopup')">조회</button>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-r-area top-line-grid">
+                <button class="btn btn-style-m4 inLyClose" onclick="inLyClose('myInquiryProPopup')">선택</button>
+                <button class="btn btn-style-m4">초기화</button>
+              </div>
+              <div class="excel-wrap" style="height:240px;">
+                * 그리드 영역
+              </div>
+            </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="inLyClose('myInquiryProPopup')" class="inLyClose btn btn-style-m2">닫기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //상품 조회 팝업 -->
+  <!--// 팝업안에 팝업 -->
   <!-- 작은 팝업 -->
   <div class="lyPopupWrap popup-type-s" id="layerPopS"><!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
