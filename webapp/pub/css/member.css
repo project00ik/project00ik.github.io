@@ -55,7 +55,8 @@
 
 .con-normal-info {padding-top: 0;}
 .con-normal-info .list-in {margin-top: 0; border-top: 0; display: flex; flex-wrap: wrap;}
-.con-normal-info .list-in .list-w100 {flex: inherit; width: 100%; border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
+.con-normal-info .list-in .list-w100 {flex: inherit; width: 100%; }
+.con-normal-info .list-in .list-w100:first-child {border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
 .con-normal-info .list-in .list-w60 {width: 66.666%; font-size: 0;}
 .con-normal-info .list-in .list-w60 input {width: 100%;}
 .con-normal-info .list-in .list-w60 .select {margin-left: 5px; width: 118px;}
