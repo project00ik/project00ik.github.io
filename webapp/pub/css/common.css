@@ -749,7 +749,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout3 .form-inline {width:100%; display:flex; }
 
 .bt-btn-line .list-half-style .list-line {border-bottom: 1px solid #d7d7d7; margin-bottom: 20px;}
-.list-w100 .form-layout3 {margin-right: 0px; max-width: 525px; }
+.list-w100 .form-layout3 {margin-right: 0px; max-width: 525px;}
 .list-w100 .form-layout3 .form-inline {display:flex; flex:1;}
 .select.w127 {width:127px; flex: none; margin-right:5px;}
 
