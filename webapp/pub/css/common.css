@@ -1031,7 +1031,7 @@ textarea + .cot b {vertical-align: top;}
 
 
 /* 파일 업로드 */
-.upload-area {padding:20px 0 0; overflow:hidden; font-size:0;}
+.upload-area {width:calc(100% + 10px); margin-left:-10px; margin-top:-10px; padding:20px 0 0; overflow:hidden; font-size:0;}
 .upload-area .upload-thumbnail {width:80px; height:80px; display:inline-block; font-size:0; position:relative;}
 .upload-area .upload-thumbnail .img-del-btn {width:18px; height:18px; font-size:0; display:inline-block; background:url(../images/common/btn_del2.svg) 0 0 no-repeat; background-size:100% auto; position:absolute; top:5px; right:5px; z-index:1;}
 .img-thumbnail {width:100%; height:100%; overflow:hidden; display:inline-block;}
@@ -1039,8 +1039,8 @@ textarea + .cot b {vertical-align: top;}
 .img-upload-btn {display:inline-block;}
 .img-upload-btn > label {width:80px; height:80px; border:1px solid #bbb; background:url(../images/common/icon_plus.svg) 50% 50% no-repeat #fafafa; background-size:18px auto; display:inline-block; overflow:hidden;}
 .img-upload-btn > label input {width:100%; display:inline-block; opacity:0;}
-.upload-area .upload-thumbnail + .upload-thumbnail,
-.upload-area .upload-thumbnail + .img-upload-btn {margin-left:10px;}
+.upload-area .upload-thumbnail {margin-left:10px; margin-top:10px;}
+.upload-area .img-upload-btn {margin-left:10px; margin-top:10px;}
 .upload-area.excel-wrap{height: 80px;font-size: 16px;padding:0;margin-top: 16px;}
 
 /* 첨부파일 업로드 */
@@ -1554,9 +1554,10 @@ textarea + .cot b {vertical-align: top;}
     .check-style2 input + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2.svg) 50% 50% no-repeat;}
     .check-style2 input:checked + i {width: 20px; height: 20px; background:url(../images/common/mo_icon_checkbox2_checked.svg) 50% 50% no-repeat;}
     .unit-type1 .check-style2 {top:10px; left:10px;}
-    .upload-area {padding: 10px 0 0;}
-    .upload-area .upload-thumbnail {width: 63px; height: 63px;}
-    .upload-area .upload-thumbnail + .upload-thumbnail, .upload-area .upload-thumbnail + .img-upload-btn {margin-left: 5px;}
+    .upload-area {width:calc(100% + 5px); margin-left:-5px; margin-top:-5px; padding: 10px 0 0;}
+    .upload-area .upload-thumbnail {width: 63px; height: 63px; margin-left:5px; margin-top:10px;}
+    .upload-area .img-upload-btn {margin-left: 5px; margin-top:5px;}
+    
     .spinner {width:112px; height:36px; padding:0 36px; }
     .spinner input {height:34px; line-height:35px;}
     .spinner .down {width:36px; height:36px; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
