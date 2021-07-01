@@ -103,6 +103,12 @@
 .unit-cart .unit-under-btn {width:178px; padding:0 30px; color:#fff; position: absolute; top:110px; right:0; z-index:1; transform: translateY(-50.4%);}
 .unit-cart .unit-under-btn > li {text-align:center;}
 .unit-cart .unit-under-btn > li > a {margin-bottom:5px; display:inline-block; vertical-align:top;}
+/* .unit-cart .unit-under-btn > li .btn {color: #666; background: #fff; border: 1px solid #bbb;}
+.unit-cart .unit-under-btn > li .btn:hover {border-color:#000; color:#000;}
+.unit-cart .unit-under-btn > li .btn.btn-buynow {color: #fff; background: #346dd0; border-color:#346dd0;}
+.unit-cart .unit-under-btn > li .btn.btn-buynow:hover {background:#2d3a52; border-color:#2d3a52;}
+.unit-cart .unit-under-btn > li .btn-restock {background: #000; border-color:#000; color:#fff;}
+.unit-cart .unit-under-btn > li .btn-restock:hover {background:#666; border-color:#666; color:#fff;} */
 .unit-cart .unit-under-btn .btn-cart,
 .unit-cart .unit-under-btn .btn-like {width:100%; height:38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #000; color:#000;}
 .unit-cart .unit-under-btn .btn-like {margin-left:0;}
