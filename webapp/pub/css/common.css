@@ -487,6 +487,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-ml2 {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-ml2:hover {border-color:#2d3a52; background:#2d3a52;}
 .btn-style-ml2.on {min-width:198px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-ml2.on:hover {border-color:#000; background: #f5f5f5;}
 .btn-style-mm1 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mm1:hover {border-color:#000; background: #f5f5f5;}
 .btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
