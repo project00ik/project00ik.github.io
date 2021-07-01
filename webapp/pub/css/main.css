@@ -245,7 +245,7 @@
     .pop-alarm .alarmlist-wrap .list-top-area{padding-bottom: 20px;}
     .pop-alarm .alarmlist-wrap .list-top-area .rd-tab-area{padding:0}
     .pop-alarm .alarmlist-wrap .rd-tab-area > li + li{margin-left: 24px;}
-    .pop-alarm .alarmlist-wrap .alarmlistCont ul li.none {padding:180px 0 0;}
+    .pop-alarm .alarmlist-wrap .alarmlistCont ul li.none {padding:145px 0 0;}
     .pop-alarm .alarmlist-wrap .alarmlistCont ul li.none p{font-size: 14px;padding-top: 60px;background-size: 50px auto;}
     .pop-alarm .alarmlist-wrap .rd-tab-area .rd-tab input:checked + span{color:#346dd0}
     .pop-alarm .alarmlist-wrap .rd-tab-area .rd-tab > span{font-size: 15px;color:#999;}
