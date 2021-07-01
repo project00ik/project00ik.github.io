@@ -463,14 +463,14 @@
     .pop-restock  {text-align:left;}
     .pop-restock > p {font-size:15px;}
     .pop-restock > span {font-size:18px; font-weight:bold;}
-    .pop-restock .pop-write th {width:81px;}
-    .pop-restock .pop-write td {font-size:14px;}
-    .pop-restock .pop-write td div:not(.filebox) {flex-direction:column;}
-    .pop-restock .pop-write td div label {width:100px; margin-bottom:5px; font-size:15px;}
+    .pop-restock .pop-write > table > tbody > tr > th {width:81px;}
+    .pop-restock .pop-write > table > tbody > tr > td {font-size:14px;}
+    .pop-restock .pop-write > table > tbody > tr > td div:not(.filebox) {flex-direction:column;}
+    .pop-restock .pop-write > table > tbody > tr > td div label {width:100px; margin-bottom:5px; font-size:15px;}
     .pop-restock .pop-write .input th  {padding-right:15px;}
     .pop-restock .pop-write .input td div {line-height:19px}
     .pop-restock .pop-write .input td div label {line-height:19px}
-    .pop-restock .pop-write .input td div.form-layout {width:100%;}
+    .pop-restock .pop-write > table .input td div.form-layout  {width:100%;}
     .pop-cart-addr1 ul li.none p {background-size: 50px 50px; padding: 60px 0 0 0; font-size: 14px; line-height: 18px;}
 
       
