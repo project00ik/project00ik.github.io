@@ -431,8 +431,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-xs-small {width:78px; height:20px; line-height:18px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
 .btn-word  {width:64px; height:19px; line-height:17px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
 .btn-excel-download {width:auto; line-height: 100%; padding: 12px 25px; border-radius: 21px; text-align:center; font-size:16px; font-weight: 500; color:#346DD0; border: 1px solid #346DD0;}
-.btn-buynow {width:118px; height:38px; border: 1px solid #346dd0; background:#346dd0; font-size:14px; line-height:36px;}
-.btn-restock {width:118px; height:38px; background:#000; font-size:14px; line-height:37px;}
+.btn-buynow {width:118px; height:38px; border: 1px solid #346dd0; background:#346dd0; font-size:14px; line-height:36px; text-align: center; color:#fff;}
+.btn-buynow:hover {background: #2d3a52; border-color: #2d3a52;}
+.btn-restock {width:118px; height:38px; background:#000; font-size:14px; line-height:37px; text-align: center; color:#fff;}
 .btn-restock:hover {background: #666;}
 /* 버튼 컬러 스타일 */
 .btn.btn-color1 {color:#000; border-color:#000;}
@@ -467,7 +468,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-like-l:hover {border-color:#000;}
 .btn-like-l.on {}
 .btn-like-l.on::after {background:url(../images/common/icon_like_b.svg) 50% 50% no-repeat; animation-duration:3s;}
-.btn-like-m {width:24px; height:24px; font-size:0;}
+.btn-like-m {width:24px; height:24px; font-size:0; position:relative;}
 .btn-like-m::after {content:""; width: 24px; height: 24px; margin:-12px 0 0 -12px;  display:inline-block; background:url(../images/common/icon_like_g_s.svg) 50% 50% no-repeat; position: absolute; top:50%; left:50%; transform:scale(1); transition-duration:0.5s; -moz-transition-duration:0.5s;}
 .btn-like-m.on {}
 .btn-like-m.on::after {background:url(../images/common/icon_like_b_s.svg) 50% 50% no-repeat; animation-duration:1s;}
@@ -929,7 +930,7 @@ textarea + .cot b {vertical-align: top;}
 .unit-type1 .unit-layer .unit-under-btn > li {height:100%; flex:1; text-align:center;}
 .unit-type1 .unit-layer .unit-under-btn > li > a {width:100%; height:100%; display:inline-block; vertical-align:top;}
 .unit-type1 .unit-layer .unit-under-btn > li + li  {border-left:1px solid #7ea1dc;}
-.unit-type1 .unit-layer .unit-under-btn .btn-buynow {font-size:18px;}
+.unit-type1 .unit-layer .unit-under-btn .btn-buynow {font-size:18px; background:#346dd0; border-color:#346dd0;}
 .unit-type1 .unit-layer .unit-under-btn .btn-cart {width:36px; height:100%; font-size:0; background:url(../images/common/icon_cart_w.svg) 50% 50% no-repeat;}
 .unit-type1 .unit-layer .unit-under-btn .btn-like {width:36px; height:100%; font-size:0; margin-left:20px; background:url(../images/common/icon_like_w.svg) 50% 50% no-repeat;}
 .unit-type1 .unit-layer .unit-under-btn .btn-like.on {background:url(../images/common/icon_like_w_on.svg) 50% 50% no-repeat;}

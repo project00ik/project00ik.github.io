@@ -57,8 +57,14 @@
 		.guide-gnb > a {margin:5px 2px; padding:5px 10px; display:inline-block; border:1px solid #000; background:#fff; color:#000;}
 		.guide-gnb > a:focus,
 		.guide-gnb > a.on {background:#000; color:#fff;}
-		.guide .icon {background:pink;}
+		.guide .icon {padding:10px; background:rgb(66, 73, 73);}
 		.guide .icon > span {width:50px; height:50px; margin:3px; display:inline-block;}
+		.guide .sub-content {width:100%; min-height:auto; margin:0;}
+		.guide .popup-cont {margin: 0 auto; background:#fff;}
+		@media only screen and (max-width:800px){
+			.guide .tit-type1-2 {top:0;}
+			.guide .popup-cont {width:calc(100% + 40px); margin:0 -20px; }
+		}
 	</style>
 	<script>
 		$(document).ready(function(){
@@ -456,6 +462,13 @@
 								<div class="guide-cont">
 									<!-- button -->
 									<button class="btn btn-word">카테고리</button>
+									<button class="btn btn-excel-download">엑셀다운로드</button>
+									<a href="#삭제" class="btn btn-gray-line">삭제</a>
+									<a href="#바로구매" class="btn btn-buynow">바로구매</a>
+									<a href="#재입고알림" class="btn btn-restock">재입고알림</a>
+									<button class="btn btn-refresh">새로고침</button>
+									<button class="btn btn-plus">추가</button>
+									<button class="btn btn-minus">삭제</button>
 									<!--// button -->
 									<br>
 									<!-- html 보기 -->
@@ -469,14 +482,64 @@
 								</div>
 							</div>
 							<div class="cont-area">
-								<p class="guide-sub-tit">하단 버튼 유형 3</p>
+								<p class="guide-sub-tit">컨펌 버튼</p>
 								<div class="guide-cont">
-									<!-- button -->
-									<div class="btn-area">
-										<a href="javascript:;" class="btn btn-style2">쇼핑백</a>
-										<a href="javascript:;" class="btn btn-style1">바로구매</a>
+									<div class="sub-content">
+										<!-- button -->
+										<div class="btn-area-c mo-fixed-btn">
+											<button class="btn btn-style-ml1">취소</button>
+											<button class="btn btn-style-ml2">등록</button>
+										</div>
+										<!--// button -->
+										<!-- button -->
+										<div class="btn-area-c btn-layout3">
+											<button class="lyClose btn btn-style-ml1">삭제</button>
+											<button class="lyClose btn btn-style-ml2">임시저장</button>
+										</div>
+										<!--// button -->
+										<!-- 임시저장 후 노출되는 버튼 style -->
+										<div class="btn-area-c btn-layout3">
+											<button class="lyClose btn btn-style-ml1">삭제</button>
+											<button class="lyClose btn btn-style-ml2 on">임시저장</button>
+											<button class="lyClose btn btn-style-ml2">요청하기</button>
+										</div>
+										<!--// 임시저장 후 노출되는 버튼 style -->
+										<!-- button (작은버튼) -->
+										<div class="btn-area-c">
+											<a href="javascript:;" class="btn btn-style-mm1">삭제</a>
+											<a href="javascript:;" class="btn btn-style-mm2">저장</a>
+										</div>
+										<!--// button -->
 									</div>
-									<!--// button -->
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">팝업 컨펌버튼</p>
+								<div class="guide-cont">
+									<div class="lyPopup">
+										<div class="popup-cont">
+											<!-- button -->
+											<div class="btn-area">
+												<a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-mml1">계속쇼핑</a>
+												<a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-mml2">장바구니 바로가기</a>
+											</div>
+											<!--// button -->
+											<div class="btn-area">
+												<a href="javascript:;" onclick="lyClose()" class="btn btn-style-m1">취소</a>
+												<a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2">확인</a>
+											</div>
+										</div>
+									</div>
+									
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
@@ -487,200 +550,17 @@
 								</div>
 							</div>
 							<div class="cont-area">
-								<p class="guide-sub-tit">하단 버튼 유형 4</p>
+								<p class="guide-sub-tit">토글버튼</p>
 								<div class="guide-cont">
 									<!-- button -->
-									<div class="btn-area">
-										<a href="javascript:;" class="btn btn-style7">쇼핑 계속하기</a>
-										<a href="javascript:;" class="btn btn-style6">주문상품 상세보기</a>
+									<div class="btn-full-area">
+										<a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
 									</div>
+									<br>
+									<button class="btn btn-like-m tgBtn">찜하기</button>
+									<button class="btn btn-star tgBtn">즐겨찾기</button>
 									<!--// button -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<code>
-										</code>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">하단 버튼 유형 5</p>
-								<div class="guide-cont">
-									<!-- button -->
-									<div class="btn-area">
-										<a href="javascript:;" class="btn btn-style10">취소/교환/반품조회</a>
-										<a href="javascript:;" class="btn btn-style9">주문배송조회</a>
-									</div>
-									<!--// button -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<code>
-										</code>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">더보기 버튼</p>
-								<div class="guide-cont">
-									<!-- button -->
-									<a href="javascript:;" class="btn btn-more-box moreBtn">총 <b>2건</b> 전체보기</a>
-									<!--// button -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-								 	<div class="code">
-										<code>
-										</code>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">라인형 버튼</p>
-								<div class="guide-cont">
-									<!-- button -->
-									<a href="javascript:;" class="btn btn-line-box">목록으로</a>
-									<!--// button -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<code>
-										</code>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">아이콘</p>
-								<div class="guide-cont">
-									<div class="icon">
-										<img src="../../../images/common/arrow_gnb_d1.svg"/>
-										<img src="../../../images/common/arrow_history_bak.svg"/>
-										<img src="../../../images/common/arrow_realtime_search.svg"/>
-										<img src="../../../images/common/arrow_select_disabled.svg"/>
-										<img src="../../../images/common/arrow_select.svg"/>
-										<img src="../../../images/common/arrow_step.svg"/>
-										<img src="../../../images/common/arrow_tooltip.svg"/>
-										<img src="../../../images/common/btn_cate_ly_close.svg"/>
-										<img src="../../../images/common/btn_close_s.svg"/>
-										<img src="../../../images/common/btn_date_after.svg"/>
-										<img src="../../../images/common/btn_date_before.svg"/>
-										<img src="../../../images/common/btn_del.svg"/>
-										<img src="../../../images/common/btn_del2.svg"/>
-										<img src="../../../images/common/btn_download.svg"/>
-										<img src="../../../images/common/btn_filter_more.svg"/>
-										<img src="../../../images/common/btn_list_layout_on.svg"/>
-										<img src="../../../images/common/btn_list_layout.svg"/>
-										<img src="../../../images/common/btn_ly_option_more_on.svg"/>
-										<img src="../../../images/common/btn_ly_option_more.svg"/>
-										<img src="../../../images/common/btn_more.svg"/>
-										<img src="../../../images/common/btn_popup_close.svg"/>
-										<img src="../../../images/common/btn_refresh.svg"/>
-										<img src="../../../images/common/btn_search.svg"/>
-										<img src="../../../images/common/btn_search2.svg"/>
-										<img src="../../../images/common/btn_slide_L.svg"/>
-										<img src="../../../images/common/btn_slide_R.svg"/>
-										<img src="../../../images/common/btn_tooltip_close.svg"/>
-										<img src="../../../images/common/btn_tooltip_on.svg"/>
-										<img src="../../../images/common/btn_tooltip.svg"/>
-										<img src="../../../images/common/icon_a.svg"/>
-										<img src="../../../images/common/icon_arr_01.svg"/>
-										<img src="../../../images/common/icon_cart_02.svg"/>
-										<img src="../../../images/common/icon_cart_minus.svg"/>
-										<img src="../../../images/common/icon_cart_total.svg"/>
-										<img src="../../../images/common/icon_cart_w.svg"/>
-										<img src="../../../images/common/icon_cart.svg"/>
-										<img src="../../../images/common/icon_checkbox_disabled.svg"/>
-										<img src="../../../images/common/icon_checkbox.svg"/>
-										<img src="../../../images/common/icon_checkbox2_checked.svg"/>
-										<img src="../../../images/common/icon_checkbox2.svg"/>
-										<img src="../../../images/common/icon_cs_delivery.svg"/>
-										<img src="../../../images/common/icon_cs_faq.svg"/>
-										<img src="../../../images/common/icon_cs_question.svg"/>
-										<img src="../../../images/common/icon_date.svg"/>
-										<img src="../../../images/common/icon_filter.svg"/>
-										<img src="../../../images/common/icon_home.svg"/>
-										<img src="../../../images/common/icon_like_b.svg"/>
-										<img src="../../../images/common/icon_like_g.svg"/>
-										<img src="../../../images/common/icon_like_w_on.svg"/>
-										<img src="../../../images/common/icon_like_w.svg"/>
-										<img src="../../../images/common/icon_list_empty.svg"/>
-										<img src="../../../images/common/icon_member.svg"/>
-										<img src="../../../images/common/icon_minus_black.svg"/>
-										<img src="../../../images/common/icon_none.svg"/>
-										<img src="../../../images/common/icon_none2.svg"/>
-										<img src="../../../images/common/icon_plus_big_w.svg"/>
-										<img src="../../../images/common/icon_plus_black.svg"/>
-										<img src="../../../images/common/icon_plus_white.svg"/>
-										<img src="../../../images/common/icon_plus.svg"/>
-										<img src="../../../images/common/icon_q.svg"/>
-										<img src="../../../images/common/icon_spinner_down.svg"/>
-										<img src="../../../images/common/icon_spinner_up.svg"/>
-										<img src="../../../images/common/icon_st_favorite.svg"/>
-										<img src="../../../images/common/icon_st_history.svg"/>
-										<img src="../../../images/common/icon_st_lookmark.svg"/>
-										<img src="../../../images/common/icon_st_notify.svg"/>
-										<img src="../../../images/common/icon_st_quick.svg"/>
-										<img src="../../../images/common/icon_st_quicktop.svg"/>
-										<img src="../../../images/common/icon_st_request.svg"/>
-										<img src="../../../images/common/icon_st_speech.svg"/>
-										<img src="../../../images/common/icon_star_m_on.svg"/>
-										<img src="../../../images/common/icon_star_m.svg"/>
-										<img src="../../../images/common/icon_star_on.svg"/>
-										<img src="../../../images/common/icon_star_s_1.svg"/>
-										<img src="../../../images/common/icon_star_s_black_on.svg"/>
-										<img src="../../../images/common/icon_star_s_on.svg"/>
-										<img src="../../../images/common/icon_star_s.svg"/>
-										<img src="../../../images/common/icon_star.svg"/>
-										<img src="../../../images/common/icon_step1.svg"/>
-										<img src="../../../images/common/icon_step2.svg"/>
-										<img src="../../../images/common/icon_step3.svg"/>
-										<img src="../../../images/common/icon_step4.svg"/>
-										<img src="../../../images/common/icon_step5.svg"/>
-										<img src="../../../images/common/img_cs.svg"/>
-										<img src="../../../images/common/img_green.svg"/>
-										<img src="../../../images/common/img_kc.svg"/>
-										<img src="../../../images/common/loading.svg"/>
-										<img src="../../../images/common/mo_arrow_cate_goback.svg"/>
-										<img src="../../../images/common/mo_arrow_gnb_d1_on.svg"/>
-										<img src="../../../images/common/mo_arrow_gnb_d1.svg"/>
-										<img src="../../../images/common/mo_btn_cate_ly_close.svg"/>
-										<img src="../../../images/common/mo_btn_close_m_gray.svg"/>
-										<img src="../../../images/common/mo_btn_del.svg"/>
-										<img src="../../../images/common/mo_btn_popup_close.svg"/>
-										<img src="../../../images/common/mo_btn_refresh.svg"/>
-										<img src="../../../images/common/mo_btn_search.svg"/>
-										<img src="../../../images/common/mo_btn_tooltip_close.svg"/>
-										<img src="../../../images/common/mo_btn_tooltip_on.svg"/>
-										<img src="../../../images/common/mo_btn_tooltip.svg"/>
-										<img src="../../../images/common/mo_icon_cart_g.svg"/>
-										<img src="../../../images/common/mo_icon_cart.svg"/>
-										<img src="../../../images/common/mo_icon_cate_minus.svg"/>
-										<img src="../../../images/common/mo_icon_cate_plus.svg"/>
-										<img src="../../../images/common/mo_icon_checkbox2_checked.svg"/>
-										<img src="../../../images/common/mo_icon_checkbox2.svg"/>
-										<img src="../../../images/common/mo_icon_cs_delivery.svg"/>
-										<img src="../../../images/common/mo_icon_cs_faq.svg"/>
-										<img src="../../../images/common/mo_icon_cs_question.svg"/>
-										<img src="../../../images/common/mo_icon_date.svg"/>
-										<img src="../../../images/common/mo_icon_like_g_on.svg"/>
-										<img src="../../../images/common/mo_icon_like_g.svg"/>
-										<img src="../../../images/common/mo_icon_list_empty.svg"/>
-										<img src="../../../images/common/mo_icon_member.svg"/>
-										<img src="../../../images/common/mo_icon_none2.svg"/>
-										<img src="../../../images/common/mo_icon_plus_big_w.svg"/>
-										<img src="../../../images/common/mo_icon_st_favorite.svg"/>
-										<img src="../../../images/common/mo_icon_st_history.svg"/>
-										<img src="../../../images/common/mo_icon_st_lookmark.svg"/>
-										<img src="../../../images/common/mo_icon_st_notify.svg"/>
-										<img src="../../../images/common/mo_icon_st_quick.svg"/>
-										<img src="../../../images/common/mo_icon_st_quicktop.svg"/>
-										<img src="../../../images/common/mo_icon_st_request.svg"/>
-										<img src="../../../images/common/mo_icon_st_speech.svg"/>
-										<img src="../../../images/common/mo_img_cs.svg"/>
-									</div>
+									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
@@ -695,6 +575,249 @@
 										</code>
 									</div>
 									<!--// js 보기 -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<h2 class="guide-tit" id="gIcon">아이콘</h2>
+					<div class="guide-box">
+						<div class="cont-layout">
+							<div class="cont-area">
+								<p class="guide-sub-tit">SVG 아이콘</p>
+								<div class="guide-cont">
+									<div class="icon">
+										<img src="../../../images/common/arrow_gnb_d1.svg">
+										<img src="../../../images/common/arrow_history_bak.svg">
+										<img src="../../../images/common/arrow_realtime_search.svg">
+										<img src="../../../images/common/arrow_select_disabled.svg">
+										<img src="../../../images/common/arrow_select.svg">
+										<img src="../../../images/common/arrow_step.svg">
+										<img src="../../../images/common/arrow_tooltip.svg">
+										<img src="../../../images/common/arrow_visual_banner_next.svg">
+										<img src="../../../images/common/arrow_visual_banner_prev.svg">
+										<img src="../../../images/common/btn_cate_ly_close.svg">
+										<img src="../../../images/common/btn_close_s.svg">
+										<img src="../../../images/common/btn_date_after.svg">
+										<img src="../../../images/common/btn_date_before.svg">
+										<img src="../../../images/common/btn_del_white.svg">
+										<img src="../../../images/common/btn_del.svg">
+										<img src="../../../images/common/btn_del2.svg">
+										<img src="../../../images/common/btn_download.svg">
+										<img src="../../../images/common/btn_filter_more.svg">
+										<img src="../../../images/common/btn_filter_more2.svg">
+										<img src="../../../images/common/btn_list_layout_on.svg">
+										<img src="../../../images/common/btn_list_layout.svg">
+										<img src="../../../images/common/btn_ly_option_more_on.svg">
+										<img src="../../../images/common/btn_ly_option_more.svg">
+										<img src="../../../images/common/btn_more.svg">
+										<img src="../../../images/common/btn_popup_close.svg">
+										<img src="../../../images/common/btn_refresh.svg">
+										<img src="../../../images/common/btn_search.svg">
+										<img src="../../../images/common/btn_search2.svg">
+										<img src="../../../images/common/btn_slide_L.svg">
+										<img src="../../../images/common/btn_slide_R.svg">
+										<img src="../../../images/common/btn_tooltip_close.svg">
+										<img src="../../../images/common/btn_tooltip_on.svg">
+										<img src="../../../images/common/btn_tooltip.svg">
+										<img src="../../../images/common/icon_a.svg">
+										<img src="../../../images/common/icon_arr_01.svg">
+										<img src="../../../images/common/icon_cart_02.svg">
+										<img src="../../../images/common/icon_cart_minus.svg">
+										<img src="../../../images/common/icon_cart_on.svg">
+										<img src="../../../images/common/icon_cart_total.svg">
+										<img src="../../../images/common/icon_cart_w.svg">
+										<img src="../../../images/common/icon_cart.svg">
+										<img src="../../../images/common/icon_checkbox_disabled.svg">
+										<img src="../../../images/common/icon_checkbox.svg">
+										<img src="../../../images/common/icon_checkbox2_checked.svg">
+										<img src="../../../images/common/icon_checkbox2.svg">
+										<img src="../../../images/common/icon_cs_delivery.svg">
+										<img src="../../../images/common/icon_cs_faq.svg">
+										<img src="../../../images/common/icon_cs_question.svg">
+										<img src="../../../images/common/icon_cs_return.svg">
+										<img src="../../../images/common/icon_date.svg">
+										<img src="../../../images/common/icon_filter.svg">
+										<img src="../../../images/common/icon_gear.svg">
+										<img src="../../../images/common/icon_home.svg">
+										<img src="../../../images/common/icon_like_b_s.svg">
+										<img src="../../../images/common/icon_like_b.svg">
+										<img src="../../../images/common/icon_like_g_s.svg">
+										<img src="../../../images/common/icon_like_g.svg">
+										<img src="../../../images/common/icon_like_w_on.svg">
+										<img src="../../../images/common/icon_like_w.svg">
+										<img src="../../../images/common/icon_list_empty.svg">
+										<img src="../../../images/common/icon_list_new.svg">
+										<img src="../../../images/common/icon_member_on.svg">
+										<img src="../../../images/common/icon_member.svg">
+										<img src="../../../images/common/icon_minus_black.svg">
+										<img src="../../../images/common/icon_none.svg">
+										<img src="../../../images/common/icon_none2.svg">
+										<img src="../../../images/common/icon_plus_big_w.svg">
+										<img src="../../../images/common/icon_plus_black.svg">
+										<img src="../../../images/common/icon_plus_white.svg">
+										<img src="../../../images/common/icon_plus.svg">
+										<img src="../../../images/common/icon_q.svg">
+										<img src="../../../images/common/icon_spinner_down.svg">
+										<img src="../../../images/common/icon_spinner_up.svg">
+										<img src="../../../images/common/icon_st_delivery.svg">
+										<img src="../../../images/common/icon_st_down.svg">
+										<img src="../../../images/common/icon_st_favorite.svg">
+										<img src="../../../images/common/icon_st_history.svg">
+										<img src="../../../images/common/icon_st_lookmark.svg">
+										<img src="../../../images/common/icon_st_notify.svg">
+										<img src="../../../images/common/icon_st_quick.svg">
+										<img src="../../../images/common/icon_st_quicktop.svg">
+										<img src="../../../images/common/icon_st_request.svg">
+										<img src="../../../images/common/icon_st_speech.svg">
+										<img src="../../../images/common/icon_star_m_on.svg">
+										<img src="../../../images/common/icon_star_m.svg">
+										<img src="../../../images/common/icon_star_on.svg">
+										<img src="../../../images/common/icon_star_s_1.svg">
+										<img src="../../../images/common/icon_star_s_black_on.svg">
+										<img src="../../../images/common/icon_star_s_on.svg">
+										<img src="../../../images/common/icon_star_s.svg">
+										<img src="../../../images/common/icon_star_xs_on.svg">
+										<img src="../../../images/common/icon_star_xs.svg">
+										<img src="../../../images/common/icon_star.svg">
+										<img src="../../../images/common/icon_step1.svg">
+										<img src="../../../images/common/icon_step2.svg">
+										<img src="../../../images/common/icon_step3.svg">
+										<img src="../../../images/common/icon_step4.svg">
+										<img src="../../../images/common/icon_step5.svg">
+										<img src="../../../images/common/img_cs.svg">
+										<img src="../../../images/common/img_kc.svg">
+										<img src="../../../images/common/img_green.svg">
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">SVG 배경이미지</p>
+								<div class="guide-cont">
+									<div class="icon">
+										<img src="../../../images/common/info_img10.svg">
+										<img src="../../../images/common/info_img11.svg">
+										<img src="../../../images/common/info_img12.svg">
+										<img src="../../../images/common/info_img13.svg">
+										<img src="../../../images/common/info_img14.svg">
+										<img src="../../../images/common/info_img15.svg">
+										<img src="../../../images/common/insur_arr_01.svg">
+										<img src="../../../images/common/insur_arr_02.svg">
+										<img src="../../../images/common/insur_arr_03.svg">
+										<img src="../../../images/common/insur_arr_04.svg">
+										<img src="../../../images/common/insur_arr_05.svg">
+										<img src="../../../images/common/insur_line_02.svg">
+										<img src="../../../images/common/insur_line_03.svg">
+										<img src="../../../images/common/insur_line_04.svg">
+										<img src="../../../images/common/insur_line_05.svg">
+										<img src="../../../images/common/insur_line.svg">
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">SVG 아이콘(모바일용)</p>
+								<div class="guide-cont">
+									<div class="icon">
+										<img src="../../../images/common/mo_arrow_cate_goback.svg">
+										<img src="../../../images/common/mo_arrow_gnb_d1_on.svg">
+										<img src="../../../images/common/mo_arrow_gnb_d1.svg">
+										<img src="../../../images/common/mo_arrow_gnb_link.svg">
+										<img src="../../../images/common/mo_btn_cate_ly_close.svg">
+										<img src="../../../images/common/mo_btn_close_m_gray.svg">
+										<img src="../../../images/common/mo_btn_del.svg">
+										<img src="../../../images/common/mo_btn_popup_close.svg">
+										<img src="../../../images/common/mo_btn_refresh.svg">
+										<img src="../../../images/common/mo_btn_search.svg">
+										<img src="../../../images/common/mo_btn_tooltip_close.svg">
+										<img src="../../../images/common/mo_btn_tooltip_on.svg">
+										<img src="../../../images/common/mo_btn_tooltip.svg">
+										<img src="../../../images/common/mo_icon_cart_g.svg">
+										<img src="../../../images/common/mo_icon_cart_on.svg">
+										<img src="../../../images/common/mo_icon_cart.svg">
+										<img src="../../../images/common/mo_icon_cate_minus.svg">
+										<img src="../../../images/common/mo_icon_cate_plus.svg">
+										<img src="../../../images/common/mo_icon_checkbox2_checked.svg">
+										<img src="../../../images/common/mo_icon_checkbox2.svg">
+										<img src="../../../images/common/mo_icon_cs_delivery.svg">
+										<img src="../../../images/common/mo_icon_cs_faq.svg">
+										<img src="../../../images/common/mo_icon_cs_question.svg">
+										<img src="../../../images/common/mo_icon_cs_return.svg">
+										<img src="../../../images/common/mo_icon_date.svg">
+										<img src="../../../images/common/mo_icon_gear.svg">
+										<img src="../../../images/common/mo_icon_like_g_on.svg">
+										<img src="../../../images/common/mo_icon_like_g.svg">
+										<img src="../../../images/common/mo_icon_list_empty.svg">
+										<img src="../../../images/common/mo_icon_member_on.svg">
+										<img src="../../../images/common/mo_icon_member.svg">
+										<img src="../../../images/common/mo_icon_none2.svg">
+										<img src="../../../images/common/mo_icon_plus_big_w.svg">
+										<img src="../../../images/common/mo_icon_st_delivery.svg">
+										<img src="../../../images/common/mo_icon_st_down.svg">
+										<img src="../../../images/common/mo_icon_st_favorite.svg">
+										<img src="../../../images/common/mo_icon_st_history.svg">
+										<img src="../../../images/common/mo_icon_st_lookmark.svg">
+										<img src="../../../images/common/mo_icon_st_notify.svg">
+										<img src="../../../images/common/mo_icon_st_plus.svg">
+										<img src="../../../images/common/mo_icon_st_quick.svg">
+										<img src="../../../images/common/mo_icon_st_quicktop.svg">
+										<img src="../../../images/common/mo_icon_st_request.svg">
+										<img src="../../../images/common/mo_icon_st_speech.svg">
+										<img src="../../../images/common/mo_icon_star_xs_on.svg">
+										<img src="../../../images/common/mo_icon_star_xs.svg">
+										<img src="../../../images/common/mo_img_cs.svg">
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">SVG 로딩이미지</p>
+								<div class="guide-cont">
+									<img src="../../../images/common/loading.svg">
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">PNG 공통이미지</p>
+								<div class="guide-cont">
+									<div class="icon">
+										<img src="../../../images/common/arrow_quick_noti.png">
+										<img src="../../../images/common/img_commerce_logo.png">
+										<img src="../../../images/common/img_kakao.png">
+										<img src="../../../images/common/img_stamp.png">
+									</div>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
 								</div>
 							</div>
 						</div>
@@ -1885,7 +2008,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			
+			toggleBtn() // 토글버튼
 		});
 	</script>
 </body>
