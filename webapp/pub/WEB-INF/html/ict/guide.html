@@ -20,7 +20,7 @@
 		.guide h1 > span {width:180px; display:inline-block; vertical-align:bottom;}
 		.guide h1 > span > img {width:100%; margin-right:10px;}
 		.guide-tit {margin-top:30px; padding:10px 20px; border:1px solid #ccc; border-bottom:0; background:rgba(0,0,0,0.1); color:#000; font-size:14px; font-weight:700; border-radius:6px 6px 0 0;}
-		.guide .guide-sub-tit {margin:20px 0 10px; padding:10px 20px 0; font-size:16px; font-weight:700; color:#486b95; background:#ededed;}
+		.guide .guide-sub-tit {text-indent:-17px; margin:20px 0 10px; padding:10px 20px 10px 38px; font-size:16px; font-weight:700; color:#486b95; background:#ededed;}
 		.guide .guide-sub-tit::before {content:'*'; margin:0 5px 0 0; vertical-align:middle;}
 		.guide .guide-sub-tit2 {margin:20px 0 10px; padding:5px 5px 5px; font-size:14px; font-weight:700; color:#486b95; background:#ededed;}
 		.guide .guide-sub-tit2::before {content:'-'; margin:0 5px 0 0; vertical-align:top;}
@@ -40,19 +40,15 @@
 		.guide nav ul li:first-child {border: 0 none;}
 		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
 		.guide nav ul li.active a {background:#000; color:#fff;}
-		.guide .code {}
-		.guide .code textarea {width:0; height:0; padding:0; background:#486b95; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
-		.guide .code.open {}
-		.guide .code.open textarea {width:100%; height:200px; padding:10px;}
+		.guide .code {width:0; height:0; padding:0; background:#486b95; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
+		.guide .code.open {width:100%; height:200px; padding:10px; overflow: auto;}
 		.guide .btn-code {width:150px; padding:10px; text-align: center; margin-top:35px; background:#ededed; border:1px solid #ccc; color:#486b95; font-weight:700; border-radius:3px; display:inline-block; font-size:14px;}
 		.guide .btn-code:after {content:'보기';}
 		.guide .btn-code.on {border-color:#486b95; background:#486b95; color:#fff; border-radius:3px 3px 0 0;}
 		.guide .btn-code.on:after {content:'닫기';}
 
-		.guide .js-code {}
-		.guide .js-code textarea {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
-		.guide .js-code.open {}
-		.guide .js-code.open textarea {width:100%; height:200px; padding:10px;}
+		.guide .js-code {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
+		.guide .js-code.open {width:100%; height:200px; padding:10px; overflow: auto;}
 		.guide .btn-js-code {width:150px; padding:10px; margin-top:10px; background:#ededed; border:1px solid #ccc; color:#477163; font-weight:700; font-size:14px; border-radius:3px; text-align: center; display:inline-block}
 		.guide .btn-js-code:after {content:'보기';}
 		.guide .btn-js-code.on {border-color:#477163; background:#477163; color:#fff; border-radius:3px 3px 0 0;}
@@ -122,34 +118,100 @@
 					<h2 class="guide-tit">Color</h2>
 					<div class="guide-box">
 						<div class="guide-cont">
-							<!-- title -->
+							<!-- color -->
 							<p class="">기본컬러</p>
-							<p class="point1">point1: 포인트 컬러1</p>
-							<p class="point2">point2: 포인트 컬러2</p>
-							<p class="txt-under1">txt-under1: 하단 설명 텍스트 #666 / margin-top:7 / font-size:12 <br>(예시 - 사용가능 포인트 : 15,000원)</p>
-							<p class="txt-under2">txt-under2: 하단 설명 텍스트2 #000 / margin-top:10 / font-size:13 <br>(예시 - (필수) 주문하는 상품 및 결제, 주문정보를 확인하였으며, 이에 동의합니다.)</p>
-							<p class="txt-style1">txt-style1: #666 / font-size:14,16 <br>(예시 - <b>15,000</b>원 보유)</p>
-							<p class="txt-style2">txt-style2: #666 / font-size:14 <br>(예시 - 삼성비자카드 / 일시불)</p>
-							<!--// title -->
+							<p class="point-color1">point-color1: 포인트 컬러1</p>
+							<p class="point-color2">point-color2: 포인트 컬러2</p>
+							<p class="point-color3">point-color3: 포인트 컬러3</p>
+							<p class="notice-txt">입고처리 후 세금계산서가 발행되므로 신용카드 또는 현금영수증으로는 국세청에 부가세신고를 하지 마시기 바랍니다.(*기본 설명글)</p>
+							<div class="red-txt">
+								※ 첨부파일은 PC에서만 다운로드 가능합니다. (*첨부파일 설명글)
+							</div>
+							<p class="right-txt">* 최대 <span>10.0MB</span> 용량을 초과할 경우 업로드할 수 없습니다.(*오른쪽 정렬 설명글)</p>
+							<p class="pop-txt">※ 세금계산서 발행일은 [이전달] 또는 [배송완료일] 이전으로 선택할 수 없습니다.(*팝업용 설명글)</p>
+							<!--// color -->
 						</div>
 					</div>
 					
 					<h2 class="guide-tit" id="gtitle">Title</h2>
 					<div class="guide-box">
-						<h3 class="guide-sub-tit">페이지 타이틀</h3>
+						<h3 class="guide-sub-tit">메인 타이틀</h3>
 						<div class="guide-cont">
-							<!-- title -->
-							<p class="tit-type1">MD 추천상품</p>
-							<p class="sm-sub-tit">포토리뷰<span class="num">(7)</span></p> 
-							<p class="sm-sub-tit">함께 많이 본 상품</p>
-							<!--// title -->
+							<!-- 메인 가운데 정렬 타이틀 -->
+							<div class="tit-center-area">
+								<div class="left-area">
+									<p class="tit-type1"><b>메인 가운데 정렬 타이틀</b></p>
+								</div>
+							</div>
+							<!--// 메인 가운데 정렬 타이틀 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
-								<textarea class="textarea">
-
-								</textarea>
+							<pre class="code">
+<code>
+	&lt;!-- 메인 가운데 정렬 타이틀 --&gt;
+	&lt;div class="tit-center-area"&gt;
+		&lt;div class="left-area"&gt;
+			&lt;p class="tit-type1"&gt;&lt;b&gt;메인 가운데 정렬 타이틀&lt;/b&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--// 메인 가운데 정렬 타이틀 --&gt;
+</code>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">페이지 타이틀</h3>
+						<div class="guide-cont">
+							<!-- 타이틀 -->
+							<p class="tit-type1-1">회원가입이 완료 되었습니다.(*정보알림타이틀)</p>
+							<p class="tit-type1-1"><b>다른 고객이 함께 구매한 상품(*개인화영역 타이틀)</b></p>
+							<p class="tit-type1-2 mo-hide">페이지 타이틀(*PC용)</p>
+							<p class="tit-type1-2 pc-hide">페이지 타이틀(*모바일용)</p>
+							<div class="tit-area">
+								<p class="tit-type2">타이틀 (*아래 간격 있음) <span class="sub-txt">(주문 상품수 : <b>2</b>건<i class="bar-verti"></i>총 수량 : <b>5</b>개)(*타이틀 옆 꾸밈 텍스트)</span></p>
 							</div>
+							<div class="tit-area2">
+								<p class="tit-type2">타이틀 (*아래 간격 없음)</p>
+							</div>
+							<div class="tit-area">
+								<p class="tit-type1-3"><b>안전</b> 검색결과 타이틀 <span>(123,456)</span></p>
+							</div>
+							<div class="sub-tit-area">
+								<p class="tit-type2-1">서브타이틀 (*폼이 없는 페이지에 서브타이틀이 있는경우)</p>
+							</div>
+							
+							<!--// 타이틀 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+								<code>
+
+								</code>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">form 타이틀 (예시 : 회원가입)</h3>
+						<div class="guide-cont">
+							<!-- 타이틀 -->
+							<div class="join-list-con">
+								<!-- title -->
+								<div class="tit-area2">
+									<p class="tit-type2">하위 폼이 있는 경우 타이틀</p>
+								</div>
+								<!--// title -->
+								<div class="list-con">
+									<!-- title -->
+									<p class="tit-type2-1">폼 서브 타이틀</p>
+									<!--// title -->
+								</div>
+							</div>
+							<!--// 타이틀 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+								<code>
+
+								</code>
+							</pre>
 							<!--// html 보기 -->
 						</div>
 					</div>
@@ -158,37 +220,81 @@
 					<div class="guide-box">
 						<div class="cont-layout">
 							<div class="cont-area">
-								<p class="guide-sub-tit">컨텐츠 a태그 버튼</p>
+								<p class="guide-sub-tit">높이 56px 버튼 :  btn-style-l1~5</p>
 								<div class="guide-cont">
 									<!-- button -->
-									<div class="btn-area">
-										<a href="#" class="btn btn-style-m1 btn-color1">m1(118px)</a>
-										<a href="#" class="btn btn-style-m3 btn-color1">m3(auto)</a>
-										<a href="#" class="btn btn-style-m4 btn-color1">m4(68px)</a>
+									<div class="btn-full-area">
+										<a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
+										<a href="javascript:;" class="btn btn-style-l1">장바구니</a>
+										<a href="javascript:;" class="btn btn-style-l2">바로구매</a>
+									</div>
+									<br>
+									<div class="btn-full-area">
+										<a href="javascript:;" class="btn-like-l tgBtn">찜하기</a>
+										<a href="javascript:;" class="btn btn-style-l3">품절</a>
+										<a href="javascript:;" class="btn btn-style-l4" onclick="lyOpen('restockPopup2')">재입고알림</a>
+									</div>
+									<!--// button -->
+									<br>
+									<div class="join-content">
+										<div class="login-wrap">
+											<!-- button -->
+											<div class="btn-area">
+												<a href="#" class="btn btn-style-l2">로그인</a>
+											</div>
+											<div class="btn-area">
+												<a href="#" class="btn btn-style-l5">회원가입</a>
+											</div>
+											<!--// button -->
+										</div>
+									</div>
+									
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+
+							<div class="cont-area">
+								<p class="guide-sub-tit">
+									크기별 : btn-style-m1 / btn-style-m3 / btn-style-m4<br>
+									컬러별 : btn-color1(*블랙 라인형) / btn-color2(*그레이 라인형) / btn-color3(*블루 라인형) / btn-color4(*블루 면형)<br>
+									모바일 비율별 : 'btn-mo-percent(부모class)' 하위 로 mo-btn-w50(*50%비율) / mo-btn-w100(*100%비율)
+								</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-area btn-mo-percent">
+										<a href="#" class="btn btn-style-m1 btn-color1 mo-btn-w50">m1(118px)</a>
+										<a href="#" class="btn btn-style-m3 btn-color1 mo-btn-w50">m3(auto)</a>
+										<a href="#" class="btn btn-style-m4 btn-color1 mo-btn-w100">m4(68px)</a>
 									</div>
 									<!--// button -->
 									<br>
 									<!-- button -->
-									<div class="btn-area">
-										<a href="#" class="btn btn-style-m1 btn-color2">m1(118px)</a>
-										<a href="#" class="btn btn-style-m3 btn-color2">m3(auto)</a>
-										<a href="#" class="btn btn-style-m4 btn-color2">m4(68px)</a>
+									<div class="btn-area btn-mo-percent">
+										<a href="#" class="btn btn-style-m1 btn-color2 mo-btn-w50">m1(118px)</a>
+										<a href="#" class="btn btn-style-m3 btn-color2 mo-btn-w50">m3(auto)</a>
+										<a href="#" class="btn btn-style-m4 btn-color2 mo-btn-w100">m4(68px)</a>
 									</div>
 									<!--// button -->
 									<br>
 									<!-- button -->
-									<div class="btn-area">
-										<a href="#" class="btn btn-style-m1 btn-color3">m1(118px)</a>
-										<a href="#" class="btn btn-style-m3 btn-color3">m3(auto)</a>
-										<a href="#" class="btn btn-style-m4 btn-color3">m4(68px)</a>
+									<div class="btn-area btn-mo-percent">
+										<a href="#" class="btn btn-style-m1 btn-color3 mo-btn-w50">m1(118px)</a>
+										<a href="#" class="btn btn-style-m3 btn-color3 mo-btn-w50">m3(auto)</a>
+										<a href="#" class="btn btn-style-m4 btn-color3 mo-btn-w100">m4(68px)</a>
 									</div>
 									<!--// button -->
 									<br>
 									<!-- button -->
-									<div class="btn-area">
-										<a href="#" class="btn btn-style-m1 btn-color4">m1(118px)</a>
-										<a href="#" class="btn btn-style-m3 btn-color4">m3(auto)</a>
-										<a href="#" class="btn btn-style-m4 btn-color4">m4(68px)</a>
+									<div class="btn-area btn-mo-percent">
+										<a href="#" class="btn btn-style-m1 btn-color4 mo-btn-w50">m1(118px)</a>
+										<a href="#" class="btn btn-style-m3 btn-color4 mo-btn-w50">m3(auto)</a>
+										<a href="#" class="btn btn-style-m4 btn-color4 mo-btn-w100">m4(68px)</a>
 									</div>
 									<!--// button -->
 									<br>
@@ -196,73 +302,128 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
 							</div>
+
 							<div class="cont-area">
-								<p class="guide-sub-tit">컨텐츠 button태그 버튼</p>
+								<p class="guide-sub-tit">넓이 98 고정, 높이 26px 버튼 :  btn-style-s1,2</p>
 								<div class="guide-cont">
 									<!-- button -->
 									<div class="btn-area">
-										<button class="btn btn-style1">btn-style1</button>
-										<button class="btn btn-style2">btn-style2</button>
+										<a href="javascript:;" class="lyClose btn btn-style-s1">신규</a>
+										<a href="javascript:;" class="lyClose btn btn-style-s1">저장</a>
+										<a href="javascript:;" class="lyClose btn btn-style-s1">삭제</a>
+										<a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide">엑셀업로드</a>
 									</div>
 									<!--// button -->
 									<br>
 									<!-- button -->
-									<div class="btn-area">
-										<button class="btn btn-style6">btn-style6</button>
-										<button class="btn btn-style7">btn-style7</button>
-									</div>
+									<button class="btn btn-style-s2">장바구니 추가</button>
 									<!--// button -->
-									<br>
-									<!-- button -->
-									<div class="btn-area">
-										
-										<button class="btn btn-disabled" disabled>btn-disabled</button>
-									</div>
-									<!--// button -->
-									<br>
-									<p class="guide-sub-tit2">넓이 고정 버튼</p>
-									<div>
-										<!-- button -->
-										btn-style3(padding:0 30px): <button class="btn btn-style3">btn-style3</button>
-										<br><br>
-										btn-style4(padding:0 10px): <button class="btn btn-style4">btn-style4</button>
-										<br><br>
-										btn-style5(width:73px): <button class="btn btn-style5">btn-style5</button>
-										<br><br>
-										btn-style8(width:73.333px): <button class="btn btn-style8">btn-style8</button>
-										<!--// button -->
-									</div>
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
 							</div>
+
 							<div class="cont-area">
-								<p class="guide-sub-tit">컨텐츠 span태그 버튼</p>
+								<p class="guide-sub-tit">오른쪽 정렬 넓이 98 고정, 높이 26px 버튼 스타일별 :  btn-small-blue ,btn-small-line </p>
 								<div class="guide-cont">
 									<!-- button -->
-									<div class="btn-area">
-										<span class="btn btn-style1">btn-style1</span>
-										<span class="btn btn-style2">btn-style2</span>
+									<div class="btn-r-area mo-hide">
+										<button class="btn btn-small-blue">상품추가</button>
+										<button class="btn btn-small-line btn-color3">배송지 추가</button>
+										<button class="btn btn-small-line btn-color2">대표 배송지</button>
+									</div>
+									<!--// button -->
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+
+							<div class="cont-area">
+								<p class="guide-sub-tit">오른쪽 정렬 높이 26px  넓이별 버튼 : btn-small2-line, btn-small-line, btn-small-line2</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<div class="btn-r-area btn-mo-percent">
+										<button class="btn btn-small2-line mo-btn-w50">목록</button>
+										<button class="btn btn-small-line mo-btn-w50">주문변경</button>
+										<button class="btn btn-small-line2  mo-btn-w100">자주쓰는배송지</button>
 									</div>
 									<!--// button -->
 									<br>
 									<!-- button -->
-									<div class="btn-area">
-										<span class="btn btn-style6">btn-style6</span>
-										<span class="btn btn-style7">btn-style7</span>
+									<div class="btn-r-area btn-mo-percent">
+										<button class="btn btn-small2-line btn-color2 mo-btn-w50">목록</button>
+										<button class="btn btn-small-line btn-color2 mo-btn-w50">주문변경</button>
+										<button class="btn btn-small-line2 btn-color2 mo-btn-w100">자주쓰는배송지</button>
 									</div>
+									<!--// button -->
+									<br>
+									<!-- button -->
+									<div class="btn-r-area btn-mo-percent">
+										<button class="btn btn-small2-line btn-color3 mo-btn-w50">목록</button>
+										<button class="btn btn-small-line btn-color3 mo-btn-w50">주문변경</button>
+										<button class="btn btn-small-line2 btn-color3 mo-btn-w100">자주쓰는배송지</button>
+									</div>
+									<!--// button -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+
+							<div class="cont-area">
+								<p class="guide-sub-tit">넓이 78px 높이 20px 작은버튼 : btn-xs-small</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
+									<!--// button -->
+									<br>
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<div class="code">
+										<code>
+										</code>
+									</div>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							
+							<div class="cont-area">
+								<p class="guide-sub-tit">더보기 버튼 : 'btn-more-black2'는 메인에서만 사용되어 가이드에 넣지 않음</p>
+								<div class="guide-cont">
+									<!-- button -->
+									<a href="#" class="btn btn-more-black">더보기</a>
+									<!--// button -->
+									<br>
+									<div style="padding:5px 0; background: #000;">
+										<!-- button -->
+										<a href="#" class="btn btn-more-white">더보기</a>
+										<!--// button -->
+									</div>
+									<br>
+									<!-- button -->
+									<a href="#" class="btn btn-more">더보기</a>
 									<!--// button -->
 									<br>
 									<!-- button -->
@@ -278,25 +439,12 @@
 									</div>
 									<!--// button -->
 									<br>
-									<p class="guide-sub-tit2">넓이 고정 버튼</p>
-									<div>
-										<!-- button -->
-										btn-style3(padding:0 30px): <span class="btn btn-style3">btn-style3</span>
-										<br><br>
-										btn-style4(padding:0 10px): <span class="btn btn-style4">btn-style4</span>
-										<br><br>
-										btn-style5(width:73px): <span class="btn btn-style5">btn-style5</span>
-										<br><br>
-										btn-style8(width:73.333px): <span class="btn btn-style8">btn-style8</span>
-										<!--// button -->
-									</div>
-									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
+										<code>
 
-										</textarea>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -304,60 +452,18 @@
 						</div>
 						<div class="cont-layout">
 							<div class="cont-area">
-								<p class="guide-sub-tit">하단 고정 버튼 유형 1 (sm-action-bar)</p>
+								<p class="guide-sub-tit">용도별 버튼</p>
 								<div class="guide-cont">
-									<!-- button - 상품상세 액션바 -->
-									<div class="sm-action-bar">
-										<ul class="detail-btn">
-											<li class="share-area">
-												<button class="btn btn-like tgBtn">좋아요</button>
-												<button class="btn btn-share">공유하기</button>
-											</li>
-											<li class="buy-area">
-												<a href="javascript:;" class="btn btn-buy detailLyBtn">바로구매</a>
-											</li>
-										</ul>
-									</div>
-									<!--// button - 상품상세 액션바 -->
-									<!-- button - 상품상세 액션바 -->
-									<div class="sm-action-bar" style="position:relative">
-										<ul class="detail-btn">
-											<li class="share-area">
-												<button class="btn btn-like tgBtn">좋아요</button>
-												<button class="btn btn-share">공유하기</button>
-											</li>
-											<li class="buy-area">
-												<a href="javascript:;" class="btn btn-buy">바로구매</a>
-											</li>
-										</ul>
-									</div>
-									<!--// button - 상품상세 액션바 -->
+									<!-- button -->
+									<button class="btn btn-word">카테고리</button>
+									<!--// button -->
+									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
-									</div>
-									<!--// html 보기 -->
-								</div>
-							</div>
-							<div class="cont-area">
-								<p class="guide-sub-tit">하단 고정 버튼 유형 2 (sm-action-bar)</p>
-								<div class="guide-cont">
-									<!-- button - 상품상세 액션바 -->
-									<div class="sm-action-bar" style="position:relative">
-										<ul class="detail-btn">
-											<li class="buy-area">
-												<a href="javascript:;" class="btn btn-buy">1건 주문하기</a>
-											</li>
-										</ul>
-									</div>
-									<!--// button - 상품상세 액션바 -->
-									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -374,8 +480,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -392,8 +498,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -410,8 +516,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -425,8 +531,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 								 	<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -440,8 +546,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -578,15 +684,15 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 									<div class="js-code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// js 보기 -->
 								</div>
@@ -610,8 +716,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -627,8 +733,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -640,11 +746,11 @@
 									<div class="sm-satisfaction-area">
 										<div class="rating-btn-area">
 											<div>
-													<button class="btn-star-b btnStar">별점1</button>
-													<button class="btn-star-b btnStar">별점2</button>
-													<button class="btn-star-b btnStar">별점3</button>
-													<button class="btn-star-b btnStar">별점4</button>
-													<button class="btn-star-b btnStar">별점5</button>
+												<button class="btn-star-b btnStar">별점1</button>
+												<button class="btn-star-b btnStar">별점2</button>
+												<button class="btn-star-b btnStar">별점3</button>
+												<button class="btn-star-b btnStar">별점4</button>
+												<button class="btn-star-b btnStar">별점5</button>
 											</div>
 											<i class="icon-star"></i>
 										</div>
@@ -653,15 +759,15 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 									<div class="js-code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// js 보기 -->
 								</div>
@@ -683,8 +789,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -700,8 +806,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -717,8 +823,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -745,8 +851,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -766,8 +872,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -806,8 +912,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
@@ -833,8 +939,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -882,8 +988,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
@@ -910,8 +1016,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -925,8 +1031,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -940,8 +1046,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -963,8 +1069,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -982,8 +1088,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -1032,8 +1138,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -1064,8 +1170,8 @@
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<div class="code">
-										<textarea class="textarea">
-										</textarea>
+										<code>
+										</code>
 									</div>
 									<!--// html 보기 -->
 								</div>
@@ -1106,8 +1212,8 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 						</div>
@@ -1185,8 +1291,8 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 						</div>
@@ -1340,8 +1446,8 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 						</div>
@@ -1370,15 +1476,15 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -1397,15 +1503,15 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -1432,15 +1538,15 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -1508,15 +1614,15 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -1641,8 +1747,8 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 						</div>
@@ -1710,8 +1816,8 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 						</div>
@@ -1764,8 +1870,8 @@
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<div class="code">
-								<textarea class="textarea">
-								</textarea>
+								<code>
+								</code>
 							</div>
 							<!--// html 보기 -->
 						</div>
@@ -1779,17 +1885,7 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			toggleBtn(); // 토글버튼 (찜하기 버튼)
-			toggleLineArea(); // 토글영역 (line 디자인형)
-			toggleArea() // 토글영역
-			toggleSlideArea() // 토글 슬라이드(상품평 영역)
-			chkToggle() // checkbox 토글
-			radioToggle() // radio 토글 시 textarea 영역 show/hide
-			accordion(); // 아코디언
-			tab(); // 탭
-			customSelect(); // 디자인셀렉트 관련 js(상품목록 정렬하기)
-			allChecked(); // all checked
-			ratingBtnArea(); // 포토리뷰 별점버튼 js
+			
 		});
 	</script>
 </body>
