@@ -220,9 +220,11 @@
 .orderFormeTgView.open .list-in {height:auto;}
 .lybox-area {position: relative;}
 .lybox-wrap {display:none; width:800px; padding:30px; position: absolute; top:168px; left:150px; background:#fff; border: 1px solid #bbb;  z-index:10;}
+.lybox-wrap.lybox-posi {top:126px; left:139px; width:827px;}
 .lybox-wrap .tit {font-weight:500; font-size:16px;}
 .lybox-wrap .chk-area {width:calc(100% + 20px); font-size:0; margin-left:-20px;}
 .lybox-wrap .chk-area > li {width:132px; margin:20px 0 0 19px; display:inline-block; font-size:14px;}
+.lybox-wrap.lybox-posi .chk-area > li {width:137px;}
 .lybox-wrap .chk-area .check-style1 > span {font-size:14px; color:#666;}
 .lyboxClose {width:24px; height:24px; font-size:0; background: url(../images/common/btn_cate_ly_close.svg) 50% 50% no-repeat; display:inline-block; position: absolute; top:9px; right:9px;}
 

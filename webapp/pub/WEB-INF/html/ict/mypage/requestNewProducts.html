@@ -173,7 +173,7 @@
             <div class="tit-area2">
               <p class="tit-type2">신규상품요청</p>
             </div>
-            <div class="list-con bt-btn-line">
+            <div class="list-con bt-btn-line lybox-area">
               <ul class="list-in list-half-style">
                 <li class="list-w100">
                   <label for="">요청일</label>
@@ -203,26 +203,10 @@
                 <li>
                   <label for="">진행상태</label>
                   <div class="form-layout">
-                    <select class="select" name="" id="">
-                      <option value="">전체</option>
-                      <option value="">임시저장</option>
-                      <option value="">검토승인요청(중)</option>
-                      <option value="">승인거부</option>
-                      <option value="">요청</option>
-                      <option value="">운영사접수</option>
-                      <option value="">접수거부</option>
-                      <option value="">입찰중</option>
-                      <option value="">견적중</option>
-                      <option value="">상품등록중</option>
-                      <option value="">기등록상품</option>
-                      <option value="">고객사승인요청</option>
-                      <option value="">견적유찰</option>
-                      <option value="">고객사반려</option>
-                      <option value="">상품등록완료</option>
-                      <option value="">신규상품승인요청</option>
-                      <option value="">고객사승인반려</option>
-                      <option value="">신규상품승인완료</option>
-                    </select>
+                    <input type="text" name="" class="input" value="전체" readonly>
+                    <div class="w60-flexbox">
+                      <button class="btn btn-style-m4 ml5 lyboxbtn">선택</button>
+                    </div>
                   </div>
                 </li>
                 <li>
@@ -268,6 +252,34 @@
               <div class="btn-r-area">
                 <button class="btn btn-style-m3">조회</button>
               </div>
+              <!-- 진행상태 레이어 팝업 -->
+              <div class="lybox-wrap lyboxWrap lybox-posi">
+                <div class="lybox-cont">
+                  <p class="tit">진행상태</p>
+                  <button class="lyboxClose">닫기</button>
+                  <ul class="chk-area">
+                    <li><label class="check-style1"><input type="checkbox" name="orderState" checked><i></i><span>전체</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>임시저장</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>검토승인요청(중)</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>승인거부</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>요청</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>운영사접수</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>접수거부</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>입찰중</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>견적중</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>상품등록중</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>기등록상품</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>고객사승인요청</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>견적유찰</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>고객사반려</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>상품등록완료</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>신규상품승인요청</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>고객사승인반려</span></label></li>
+                    <li><label class="check-style1"><input type="checkbox" name="orderState"><i></i><span>신규상품승인완료</span></label></li>
+                  </ul>
+                </div>
+              </div>
+              <!--// 진행상태 레이어 팝업 -->
             </div>
             <div class="list-con list-file-con m-line-hide">
               <div class="btn-r-area3">
@@ -582,6 +594,7 @@
           현재페이지에서만 사용 js
       ========================================================================== */
       toggleSlideArea(); // 토글영역
+      lyboxWrap(); // 진행상태 레이어 이벤트
     });
   </script>
   <!-- javascript -->
