@@ -396,8 +396,10 @@
     .btn-open {height:36px; padding:0 21px; line-height:37px;}
     .orderFormeTgView .list-in {height:578px;}
     .lybox-wrap {width:calc(100% - 40px); margin:10px 20px 0; padding:20px; top:245px; left:0;}
+    .lybox-wrap.lybox-posi {top:280px; left:0; width:calc(100% - 40px);}
     .lybox-wrap .chk-area {margin-left:0;}
     .lybox-wrap .chk-area > li {width:50%; margin-left:0;}
+    .lybox-wrap.lybox-posi .chk-area > li {width:50%;}
 
     /* ==========================================================================
         잔여예산내역
