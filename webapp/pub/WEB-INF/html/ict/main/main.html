@@ -19320,8 +19320,6 @@
 
             // 메인 MD 추천상품 slide PC (mdpickSlide) swiper(plugin) option
             var mdpickSwiper = new Swiper('.slide-type-arrow > .swiper-container', {
-                slidesPerView: 4,
-                slidesPerGroup: 4,
                 centeredSlides: false,
                 grabCursor: true,
                 observer: true,
@@ -19335,12 +19333,14 @@
                     // 화면의 넓이가 320 이상일 때 
                     320: {
                         slidesPerView: 2,
-                        spaceBetween: 10
+                        spaceBetween: 10,
+                        slidesPerGroup: 2,
                     },
                     // 화면의 넓이가 800 이상일 때 
                     800: {
                         slidesPerView: 4,
                         spaceBetween: 10,
+                        slidesPerGroup: 4,
                     }
                 }
             });
