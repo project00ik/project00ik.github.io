@@ -40,8 +40,9 @@
 		.guide nav ul li:first-child {border: 0 none;}
 		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
 		.guide nav ul li.active a {background:#000; color:#fff;}
-		.guide .code {width:0; height:0; padding:0; background:#486b95; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
-		.guide .code.open {width:100%; height:200px; padding:10px; overflow: auto;}
+		.guide .code {width:0; height:0; padding:0; background:#486b95; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
+		.guide .code.open {width:100%; height:200px;}
+		.guide .code code {padding:10px; overflow: auto;}
 		.guide .btn-code {width:150px; padding:10px; text-align: center; margin-top:35px; background:#ededed; border:1px solid #ccc; color:#486b95; font-weight:700; border-radius:3px; display:inline-block; font-size:14px;}
 		.guide .btn-code:after {content:'보기';}
 		.guide .btn-code.on {border-color:#486b95; background:#486b95; color:#fff; border-radius:3px 3px 0 0;}
@@ -64,6 +65,7 @@
 		@media only screen and (max-width:800px){
 			.guide .tit-type1-2 {top:0;}
 			.guide .popup-cont {width:calc(100% + 40px); margin:0 -20px; }
+			.guide .icon img {max-width:100%; width:auto;}
 		}
 	</style>
 	<script>
@@ -116,7 +118,9 @@
 					<div class="guide-box">
 						<div class="guide-cont">
 							<!-- font -->
-							
+							<p style="font-weight:400;">Spoqa Han Sans Neo Regular (400)</p>
+							<p style="font-weight:500;">Spoqa Han Sans Neo Medium (500)</p>
+							<p style="font-weight:700;">Spoqa Han Sans Neo Bold (700)</p>
 							<!--// font -->
 						</div>
 					</div>
@@ -146,7 +150,7 @@
 							<!-- 메인 가운데 정렬 타이틀 -->
 							<div class="tit-center-area">
 								<div class="left-area">
-									<p class="tit-type1"><b>메인 가운데 정렬 타이틀</b></p>
+									<p class="tit-type1"><b>메인 타이틀</b></p>
 								</div>
 							</div>
 							<!--// 메인 가운데 정렬 타이틀 -->
@@ -184,14 +188,30 @@
 							<div class="sub-tit-area">
 								<p class="tit-type2-1">서브타이틀 (*폼이 없는 페이지에 서브타이틀이 있는경우)</p>
 							</div>
-							
 							<!--// 타이틀 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<code>
-
-								</code>
+<code>
+	&lt;!-- 타이틀 --&gt;
+	&lt;p class="tit-type1-1"&gt;회원가입이 완료 되었습니다.(*정보알림타이틀)&lt;/p&gt;
+	&lt;p class="tit-type1-1"&gt;&lt;b&gt;다른 고객이 함께 구매한 상품(*개인화영역 타이틀)&lt;/b&gt;&lt;/p&gt;
+	&lt;p class="tit-type1-2 mo-hide"&gt;페이지 타이틀(*PC용)&lt;/p&gt;
+	&lt;p class="tit-type1-2 pc-hide"&gt;페이지 타이틀(*모바일용)&lt;/p&gt;
+	&lt;div class="tit-area"&gt;
+		&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 있음) &lt;span class="sub-txt"&gt;(주문 상품수 : &lt;b&gt;2&lt;/b&gt;건&lt;i class="bar-verti"&gt;&lt;/i&gt;총 수량 : &lt;b&gt;5&lt;/b&gt;개)(*타이틀 옆 꾸밈 텍스트)&lt;/span&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="tit-area2"&gt;
+		&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 없음)&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="tit-area"&gt;
+		&lt;p class="tit-type1-3"&gt;&lt;b&gt;안전&lt;/b&gt; 검색결과 타이틀 &lt;span&gt;(123,456)&lt;/span&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="sub-tit-area"&gt;
+		&lt;p class="tit-type2-1"&gt;서브타이틀 (*폼이 없는 페이지에 서브타이틀이 있는경우)&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;!--// 타이틀 --&gt;
+</code>
 							</pre>
 							<!--// html 보기 -->
 						</div>
@@ -2009,6 +2029,7 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			toggleBtn() // 토글버튼
+			ratingBtnArea() // 포토리뷰 별점버튼 js
 		});
 	</script>
 </body>
