@@ -2072,7 +2072,6 @@
       // 상품이미지
       var productDetaileSlide2 = new Swiper(".productDetaileSlide2", {
         spaceBetween: 0,
-        touchRatio: 0,//드래그 금지
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -2099,7 +2098,6 @@
               320: {
                 slidesPerView: 2,
                 spaceBetween: 10,
-                slidesPerView: 2,
                 slidesPerGroup: 2,
               },
               // 화면의 넓이가 800 이상일 때 
@@ -2158,9 +2156,7 @@
           $doc.stop().animate({ scrollTop :offsetTop }, 600); 
           return false;
         });
-      }); 
-     
-      
+      });      
 
 
     });
