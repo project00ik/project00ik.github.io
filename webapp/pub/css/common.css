@@ -703,6 +703,9 @@ input.input:read-only {background:#fafafa; border:1px solid #bbb; color:#666;}
 input.input:read-only::placeholder {color:#666;}
 input.input:focus {border-color:#000; color:#000;}
 input.input:read-only:focus {border-color:#bbb;}
+input[readonly='readonly'] {background:#fafafa; border:1px solid #bbb; color:#666;}
+input[readonly='readonly']::placeholder {color:#666;}
+input[readonly='readonly']:focus{border-color:#bbb;}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
 
@@ -775,6 +778,9 @@ textarea.textarea:read-only {background:#fafafa; border:1px solid #bbb; color:#6
 textarea.textarea:read-only::placeholder {color:#666;}
 textarea.textarea:focus {border-color:#000; color:#000;}
 textarea.textarea:read-only:focus {border-color:#bbb;}
+textarea[readonly='readonly'] {background:#fafafa; border:1px solid #bbb; color:#666;}
+textarea[readonly='readonly']::placeholder {color:#666;}
+textarea[readonly='readonly']:focus {border-color:#bbb;}
 
 /* textarea */
 .textarea-wrap {position: relative;}
