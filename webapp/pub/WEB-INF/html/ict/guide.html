@@ -48,8 +48,9 @@
 		.guide .btn-code.on {border-color:#486b95; background:#486b95; color:#fff; border-radius:3px 3px 0 0;}
 		.guide .btn-code.on:after {content:'닫기';}
 
-		.guide .js-code {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0;}
+		.guide .js-code {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow:hidden;}
 		.guide .js-code.open {width:100%; height:200px; padding:10px; overflow: auto;}
+		.guide .js-code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee;}
 		.guide .btn-js-code {width:150px; padding:10px; margin-top:10px; background:#ededed; border:1px solid #ccc; color:#477163; font-weight:700; font-size:14px; border-radius:3px; text-align: center; display:inline-block}
 		.guide .btn-js-code:after {content:'보기';}
 		.guide .btn-js-code.on {border-color:#477163; background:#477163; color:#fff; border-radius:3px 3px 0 0;}
@@ -288,10 +289,36 @@
 									
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- button --&gt;
+	&lt;div class="btn-full-area"&gt;
+		&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
+		&lt;a href="javascript:;" class="btn btn-style-l1"&gt;장바구니&lt;/a&gt;
+		&lt;a href="javascript:;" class="btn btn-style-l2"&gt;바로구매&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;br&gt;
+	&lt;div class="btn-full-area"&gt;
+		&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
+		&lt;a href="javascript:;" class="btn btn-style-l3"&gt;품절&lt;/a&gt;
+		&lt;a href="javascript:;" class="btn btn-style-l4" onclick="lyOpen('restockPopup2')"&gt;재입고알림&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;!--// button --&gt;
+	&lt;br&gt;
+	&lt;div class="join-content"&gt;
+		&lt;div class="login-wrap"&gt;
+			&lt;!-- button --&gt;
+			&lt;div class="btn-area"&gt;
+				&lt;a href="#" class="btn btn-style-l2"&gt;로그인&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;div class="btn-area"&gt;
+				&lt;a href="#" class="btn btn-style-l5"&gt;회원가입&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;!--// button --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -338,7 +365,7 @@
 									
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-area btn-mo-percent"&gt;
@@ -372,7 +399,7 @@
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -395,7 +422,7 @@
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-area"&gt;
@@ -410,7 +437,7 @@
 	&lt;button class="btn btn-style-s2"&gt;장바구니 추가&lt;/button&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -428,7 +455,7 @@
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-r-area mo-hide"&gt;
@@ -438,7 +465,7 @@
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -471,7 +498,7 @@
 									<!--// button -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-r-area btn-mo-percent"&gt;
@@ -497,7 +524,7 @@
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -506,18 +533,18 @@
 								<p class="guide-sub-tit">넓이 78px 높이 20px 작은버튼 : btn-xs-small</p>
 								<div class="guide-cont">
 									<!-- button -->
-									<a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')">가격인하요청</a>
+									<a href="javascript:;" class="btn btn-xs-small">가격인하요청</a>
 									<!--// button -->
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
-	&lt;a href="javascript:;" class="btn btn-xs-small" onclick="lyOpen('pricerequestPopup')"&gt;가격인하요청&lt;/a&gt;
+	&lt;a href="javascript:;" class="btn btn-xs-small"&gt;가격인하요청&lt;/a&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -554,7 +581,7 @@
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;a href="#" class="btn btn-more-black"&gt;더보기&lt;/a&gt;
@@ -583,7 +610,7 @@
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -605,7 +632,7 @@
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;button class="btn btn-word"&gt;카테고리&lt;/button&gt;
@@ -618,7 +645,7 @@
 	&lt;button class="btn btn-minus"&gt;삭제&lt;/button&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -655,7 +682,7 @@
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-area-c mo-fixed-btn"&gt;
@@ -683,7 +710,7 @@
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -709,7 +736,7 @@
 									
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-area"&gt;
@@ -724,7 +751,7 @@
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -742,7 +769,7 @@
 									<br>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 <textarea class="codeArea">
 	&lt;!-- button --&gt;
 	&lt;div class="btn-full-area"&gt;
@@ -753,7 +780,7 @@
 	&lt;button class="btn btn-star tgBtn"&gt;즐겨찾기&lt;/button&gt;
 	&lt;!--// button --&gt;
 </textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
@@ -877,11 +904,11 @@
 										<img src="../../../images/common/img_green.svg">
 									</div>
 									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre> -->
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -907,11 +934,11 @@
 										<img src="../../../images/common/insur_line.svg">
 									</div>
 									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre> -->
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -968,11 +995,11 @@
 										<img src="../../../images/common/mo_img_cs.svg">
 									</div>
 									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre> -->
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -982,11 +1009,11 @@
 									<img src="../../../images/common/loading.svg">
 									<br>
 									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre> -->
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1000,11 +1027,11 @@
 										<img src="../../../images/common/img_stamp.png">
 									</div>
 									<!-- html 보기 -->
-									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre> -->
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1026,10 +1053,17 @@
 									<!--// 별점 -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 별점 --&gt;
+	&lt;p class="rating"&gt;
+		&lt;a href="#"&gt;
+			&lt;span class="star star3"&gt;별점&lt;/span&gt;&lt;!-- 별점 class : star0~5 --&gt;
+		&lt;/a&gt;
+	&lt;/p&gt;
+	&lt;!--// 별점 --&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1043,10 +1077,15 @@
 									<!--// 별점 M -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 별점 M --&gt;
+	&lt;p class="rating"&gt;
+		&lt;span class="star-m star3"&gt;별점&lt;/span&gt;&lt;!-- 별점 class : star0~5 --&gt;
+	&lt;/p&gt;
+	&lt;!--// 별점 M --&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1069,16 +1108,31 @@
 									<!--// 만족도 체크 영역 -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 만족도 체크 영역 --&gt;
+	&lt;div class="sm-satisfaction-area"&gt;
+		&lt;div class="rating-btn-area"&gt;
+			&lt;div&gt;
+				&lt;button class="btn-star-b btnStar"&gt;별점1&lt;/button&gt;
+				&lt;button class="btn-star-b btnStar"&gt;별점2&lt;/button&gt;
+				&lt;button class="btn-star-b btnStar"&gt;별점3&lt;/button&gt;
+				&lt;button class="btn-star-b btnStar"&gt;별점4&lt;/button&gt;
+				&lt;button class="btn-star-b btnStar"&gt;별점5&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;i class="icon-star"&gt;&lt;/i&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--// 만족도 체크 영역 --&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 									<div class="js-code">
-										<textarea class="codeArea">
-										</textarea>
+<textarea class="codeArea">
+ratingBtnArea() // 포토리뷰 별점버튼 js
+</textarea>
 									</div>
 									<!--// js 보기 -->
 								</div>
@@ -1093,16 +1147,21 @@
 								<p class="guide-sub-tit">Input(text)</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<div class="form-area">
-										<input type="text" class="input" name="" value="" placeholder="기본 타입">
+									<div class="form-layout">
+										<input type="text" name="" class="input" value="" placeholder="기본 타입">
 									</div>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- form --&gt;
+	&lt;div class="form-layout"&gt;
+		&lt;input type="text" name="" class="input" value="" placeholder="기본 타입"&gt;
+	&lt;/div&gt;
+	&lt;!--// form --&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1110,16 +1169,21 @@
 								<p class="guide-sub-tit">Input(text):disabled</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<div class="form-area">
+									<div class="form-layout">
 										<input type="text" class="input" name="" value="" placeholder="disabled" disabled>
 									</div>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- form --&gt;
+	&lt;div class="form-layout"&gt;
+		&lt;input type="text" class="input" name="" value="" placeholder="disabled" disabled&gt;
+	&lt;/div&gt;
+	&lt;!--// form --&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1127,16 +1191,21 @@
 								<p class="guide-sub-tit">Input(text):readonly</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<div class="form-area">
+									<div class="form-layout">
 										<input type="text" class="input" name="" value="" placeholder="readonly" readonly>
 									</div>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
-										<textarea class="codeArea">
-										</textarea>
-									</div>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- form --&gt;
+	&lt;div class="form-layout"&gt;
+	&lt;input type="text" class="input" name="" value="" placeholder="readonly" readonly&gt;
+	&lt;/div&gt;
+	&lt;!--// form --&gt;
+</textarea>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1161,10 +1230,10 @@
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1172,20 +1241,23 @@
 								<p class="guide-sub-tit">Input(text) : 전화번호 / 사업자번호</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<div class="form-layout form-phoen">
-										<input type="text" name="" class="input" value="010" maxlength="3">
+									<div class="form-layout form-phone">
+										<select class="select">
+											<option value="" selected>02</option>
+											<option value="010">010</option>
+										</select>
 										<span class="bar">-</span>
-										<input type="text" name="" class="input" value="1234" maxlength="4">
+										<input type="number" name="" maxlength="4" class="input" value="">
 										<span class="bar">-</span>
-										<input type="text" name="" class="input" value="5678" maxlength="4">
+										<input type="number" name="" maxlength="4" class="input" value="">
 									</div>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1193,20 +1265,56 @@
 
 						<div class="cont-layout">
 							<div class="cont-area">
-								<p class="guide-sub-tit">Input(file) :</p>
+								<p class="guide-sub-tit">Input(file) : 기본 형</p>
+								<div class="guide-cont">
+									<!-- 파일 선택 -->
+									<div class="filebox">
+										<input class="upload-name input " value="" readonly="">
+										<label for="file">파일 선택</label> 
+										<input type="file" id="file"> 
+									</div>
+									<!--// 파일 선택 -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
+										<textarea class="codeArea">
+										</textarea>
+									</pre>
+									<!--// html 보기 -->
+									<!-- js 보기 -->
+									<!-- <a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+									<div class="js-code">
+										<textarea class="textarea">
+										</textarea>
+									</div> -->
+									<!--// script 보기 -->
+								</div>
+								<p class="guide-sub-tit">Input(file) : 썸네일 형</p>
 								<div class="guide-cont">
 									<!-- 이미지 업로드 영역 -->
 									<div class="upload-area">
 										<!-- 썸네일 -->
 										<div class="upload-thumbnail">
 											<span class="img-thumbnail">
-												<img src="../img/common/ex_product1.png" />
+												<img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+                    <div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
+											</span>
+											<button class="img-del-btn">삭제</button>
+										</div>
+                    <div class="upload-thumbnail">
+											<span class="img-thumbnail">
+												<img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
 											</span>
 											<button class="img-del-btn">삭제</button>
 										</div>
 										<div class="upload-thumbnail">
 											<span class="img-thumbnail">
-												<img src="../img/common/ex_product2.png" />
+												<img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" />
 											</span>
 											<button class="img-del-btn">삭제</button>
 										</div>
@@ -1222,10 +1330,10 @@
 									<!--// 이미지 업로드 영역 -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<!-- <a href="javascript:;" class="btn btn-js-code">JS 소스</a>
@@ -1240,19 +1348,25 @@
 								<p class="guide-sub-tit">Input(address)</p>
 								<div class="guide-cont">
 									<!-- form -->
-									<div class="form-layout">
-										<input type="text" name="" class="input" value="" readonly="readonly" maxlength="8" />
-										<span class="btn btn-style3 btn-address">우편번호</span>
+									<div class="form-address">
+										<div class="form-layout">
+											<input type="text" name="" class="input" value="" readonly="readonly">
+											<button class="btn btn-style-m1 ml5">우편번호 찾기</button>
+										</div>
+										<div class="form-layout">
+											<input type="text" name="" class="input" value="" readonly="readonly">
+										</div>
+										<div class="form-layout">
+											<input type="text" name="" class="input" value="">
+										</div>
 									</div>
-									<p class="form-layout"><input type="text" id="addr1" name="addr1" class="input" value="" readonly="readonly" maxlength="1000"  /></p>
-									<p class="form-layout"><input type="text" id="addr2" name="addr2" class="input" value="" maxlength="1000" /></p>
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1298,10 +1412,10 @@
 									</script>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<!-- <a href="javascript:;" class="btn btn-js-code">JS 소스</a>
@@ -1326,10 +1440,10 @@
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1341,10 +1455,10 @@
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1356,10 +1470,10 @@
 									<!--// form -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1379,10 +1493,10 @@
 									<!--// select -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1398,10 +1512,10 @@
 									<!--// select -->
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1448,10 +1562,10 @@
 									</div>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1480,10 +1594,10 @@
 									</div>
 									<!-- html 보기 -->
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-									<div class="code">
+									<pre class="code">
 										<textarea class="codeArea">
 										</textarea>
-									</div>
+									</pre>
 									<!--// html 보기 -->
 								</div>
 							</div>
@@ -1522,7 +1636,7 @@
 							<!-- // normal-app-bar -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -1601,7 +1715,7 @@
 							</div>
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -1756,7 +1870,7 @@
 							<br>
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -1786,7 +1900,7 @@
 							<!--// 아코디언1 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -1813,7 +1927,7 @@
 							<!--// 토글형1 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -1848,7 +1962,7 @@
 							<!--// 체크 시 토글형 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -1924,7 +2038,7 @@
 							<!--// 탭2 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -2057,7 +2171,7 @@
 							<!--// 유닛(리스트형) -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -2126,7 +2240,7 @@
 								<!--// 유닛(유형1: 주문결제, 쇼핑백) -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
@@ -2180,7 +2294,7 @@
 							<!--// 유닛(유형2:찜한상품, 포토리뷰) -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<div class="code">
+							<pre class="code">
 								<textarea class="codeArea">
 								</textarea>
 							</div>
