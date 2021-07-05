@@ -742,7 +742,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout .bar {height:35px; line-height:33px; padding:0 5px; display:inline-block; vertical-align:middle;}
 .form-layout.form-email .input {flex: 1;}
 .form-layout.form-email .input + .input {margin-left:5px;}
-.form-layout.form-email .input + .select {flex: inherit; margin-left:5px;}
+.form-layout.form-email .input + .select {width:118px; flex: inherit; margin-left:5px;}
 .form-layout .w-auto {flex:inherit; width:auto;}
 .form-layout .bar {font-size: 16px; color: #666;}
 .form-layout3 {display:flex; width: 100%; flex:1;}
@@ -1474,6 +1474,7 @@ textarea + .cot b {vertical-align: top;}
     .unit-type1 > a {height:calc(100% - 42px); display:inline-block; position:absolute; top:0; left:0; z-index:8;}
     .unit-type1 .unit-area {padding:5px;}
     .unit-type1 .unit-area > dt {width:100%; height:100%;}
+    .best-list .product-1st .unit-type1 dt {width:100%; height:100%;}
     .unit-type1 .unit-area > dd {padding:10px 0 0;}
     .unit-type1 .unit-area .brand {margin-bottom:5px; font-size:13px;}
     .unit-type1 .unit-area .product-name {height:32px; font-size:14px;}
