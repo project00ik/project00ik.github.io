@@ -714,6 +714,7 @@ select.select:focus {border-color:#000; color:#000;}
 select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #bbb; color:#666;}
 /* select.select:disabled {background:url(../images/common/arrow_select_disabled.svg) top 10px right 10px no-repeat #fafafa; border:1px solid #e5e5e5; color:#d7d7d7;} */
 select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
+select.select.sel-s:disabled {background:url(../images/common/arrow_select_disabled.svg) top 4px right 10px no-repeat #fafafa; border:1px solid #bbb; color:#666;}
 
 input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 12px center no-repeat;}
 input[type="date"]::-webkit-clear-button, 
@@ -816,23 +817,6 @@ textarea + .cot b {vertical-align: top;}
 .radio-style1 input:checked:disabled + i::after {display:inline-block;}
 .radio-style1 > span {margin-left:7px; font-size:14px;}
 .radio-style1 .num {vertical-align:text-bottom; font-weight:400; line-height:1.4;}
-
-.radio-style2 {width:100%; position:relative; display:inline-block; cursor: pointer !important;}
-.radio-style2 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
-.radio-style2 input + i {width:20px; height:20px; background:#fff; display:inline-block; border:1px solid #999; border-radius:50%; overflow:hidden; position:absolute; top:50%; left:10px; z-index:1; transform:translateY(-50%);}
-.radio-style2 input + i::after {display:none; content:""; width:10px; height:10px; display:inline-block; border-radius:50%; overflow:hidden; background:#fff; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
-.radio-style2 input:checked + i {background:#000; border:1px solid #000;}
-.radio-style2 input:checked + i::after {display:block;}
-.radio-style2 input:disabled + i {background-color:#ddd;}
-.radio-style2 input:disabled + i::after {display:block; background-color:#bbb;}
-.radio-style2 > span {width:100%; height:40px; padding-left:40px; line-height:38px; border:1px solid #bbb; font-weight:500; font-size:14px; display:inline-block;}
-.radio-style2 input:checked + i + span {border-color:#000;}
-.radio-style2 .num {vertical-align:text-bottom; font-weight:400; line-height:1.4;}
-
-.radio-style3 {width:100%; position:relative; display:inline-block; cursor: pointer !important;}
-.radio-style3 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
-.radio-style3 > span {width:100%; height:40px; line-height:38px; border:1px solid #666; font-weight:500; font-size:12px; display:inline-block; text-align:center; color:#666;}
-.radio-style3 input:checked + span {border-color:#000; background:#000; color:#fff;}
 
 .form-checkradio label {margin-left: 40px; cursor: pointer !important;}
 .form-checkradio label:first-child {margin-left: 0;}
