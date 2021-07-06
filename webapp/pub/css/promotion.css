@@ -174,11 +174,14 @@
 .pop-myState .pop-layout > ul{border: none;}
 .pop-myState .pop-layout > ul li{border: none;}
 .pop-myState .pop-layout > ul li:first-child{padding-top: 0;}
-.pop-myState .pop-layout > ul li label{width: 180px;padding-left: 0;}
+.pop-myState .pop-layout > ul li label {width: 200px; padding-left: 20px;}
+.pop-myState .pop-layout .pop-ip-area label + .form-layout {width: calc(100% - 200px);}
+.pop-myState .state-write > ul li label {width: 190px; padding-left: 0;}
+.pop-myState .state-write .pop-ip-area label + .form-layout {width: calc(100% - 190px);}
 .pop-myState .btn-r-area3{padding-top: 10px;}
 .pop-myState .my-state-txt{margin-bottom: 10px;}
 .pop-myState .tit-type2-1{padding-bottom: 10px;margin-bottom: 20px;border-bottom: 1px solid #BBBBBB;}
-.pop-myState .pop-write + .tit-type2-1{padding-top: 30px;margin-top: 10px;border-top: 1px solid #BBBBBB;}
+.pop-myState .pop-write + .tit-type2-1{padding-top: 30px;margin-top: 20px;border-top: 1px solid #BBBBBB;}
 .pop-myState .textarea-wrap{width: 100%;}
 
 /* 보험 */
@@ -450,6 +453,9 @@
   .pop-myState .btn-r-area3 > .btn + .btn{margin-left:10px ;}
   .pop-myState .pop-layout > ul li label{font-size: 14px;}
   .pop-myState .my-state-txt {font-size: 14px; margin-bottom: 5px;}
+  .pop-myState .pop-layout > ul li label {padding-left: 0;}
+  .pop-myState .pop-layout .pop-ip-area label + .form-layout {width: 100%;}
+  .pop-myState .state-write .pop-ip-area label + .form-layout {width: 100%;}
 
   
   /* 보험 */
