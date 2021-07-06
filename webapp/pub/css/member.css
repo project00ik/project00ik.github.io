@@ -44,8 +44,8 @@
 .list-con .join-agree .agree-area .agree-tit .check-style2 {flex: 1;}
 .list-con .join-agree .agree-area .agree-tit .btn-slide-open {width: 30px; height: 30px; margin-left: 15px;}
 .list-con .join-agree .agree-area .agree-cont {padding: 20px; border: 1px solid #d7d7d7; border-top: 0; font-size: 14px; line-height: 22px; text-align: left; color: #666; height: 125px; overflow-y: auto;}
-.half-list-box {display: flex; justify-content: space-between;}
-.half-list-box > div {flex: 1;}
+.half-list-box {width:100%; display: flex; justify-content: space-between;}
+.half-list-box > div {width:50%; flex: 1;}
 .half-list-box > div + div {margin-left: 20px;}
 .half-list-box .divider {margin-left:0;}
 .half-list-box .list-con .tit-area3 {align-items: center; padding-bottom: 10px;}
