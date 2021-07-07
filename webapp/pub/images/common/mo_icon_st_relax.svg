@@ -1,0 +1,22 @@
+<svg id="ic_mo_quick_resort" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="area" width="24" height="24" fill="none"/>
+  <g id="icon" transform="translate(-3)">
+    <g id="_01" data-name="01" transform="translate(5 4)">
+      <path id="패스_208" data-name="패스 208" d="M5,10H25A19.48,19.48,0,0,0,15,4S8.571,5.2,5,10Z" transform="translate(-5 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="패스_209" data-name="패스 209" d="M18,4s-2.4.412-4,6" transform="translate(-8 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path id="패스_210" data-name="패스 210" d="M14,4s2.4.413,4,6" transform="translate(-4 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="_02" data-name="02" transform="translate(4 12)">
+      <path id="패스_211" data-name="패스 211" d="M7,14v8" transform="translate(-4 -15)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path id="패스_216" data-name="패스 216" d="M7,14v8" transform="translate(12 -15)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      <path id="패스_214" data-name="패스 214" d="M4,28H24" transform="translate(-3 -20)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="_03" data-name="03" transform="translate(9 16)">
+      <path id="패스_215" data-name="패스 215" d="M10,23V20a2.282,2.282,0,0,1,2.5-2A2.282,2.282,0,0,1,15,20v3" transform="translate(-9 -20)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <g id="사각형_467" data-name="사각형 467" transform="translate(8 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="4" height="2" stroke="none"/>
+        <rect x="1" y="1" width="2" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

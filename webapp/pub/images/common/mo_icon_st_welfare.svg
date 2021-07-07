@@ -1,0 +1,7 @@
+<svg id="ic_mo_quick_welfare" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="area" width="24" height="24" fill="none"/>
+  <g id="icon" transform="translate(-2 -3)">
+    <path id="패스_207" data-name="패스 207" d="M6,19.4v5.333H7.663a67.042,67.042,0,0,1,8.315.762l9.146-4.571s1.109-.571.831-1.524-9.978,2.667-9.978,2.667l-2.494-1.9h2.494s1.663,0,1.663-.762-2.287-1.587-4.989-1.9L7.663,19.4Z" transform="translate(-2 -2.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="_00" data-name="00" d="M182.4,401.552h0a2.193,2.193,0,0,0-2.912,0L179,402l-.485-.445a2.193,2.193,0,0,0-2.912,0h0a1.777,1.777,0,0,0,0,2.668l.485.445h0L179,407l2.912-2.335h0l.485-.445A1.777,1.777,0,0,0,182.4,401.552Z" transform="translate(-160 -394)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>
