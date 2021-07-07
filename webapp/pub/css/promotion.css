@@ -7,7 +7,7 @@
 .promt-banner {position: relative; text-align: center; margin-bottom: 50px;}
 .promt-banner img {max-width: 100%;}
 .promt-banner .ban-text-area {position: absolute; top: 50%; left: 0; width: 100%; transform: translateY(-50%);}
-.promt-banner .ban-text-area .ban-tit {font-size: 28px; color: #fff; font-weight: 500; padding-bottom: 12px;}
+.promt-banner .ban-text-area .ban-tit {font-size: 34px; color: #fff; font-weight: 700; padding-bottom: 12px;}
 .promt-banner .ban-text-area .ban-p {font-size: 16px; color: #e5e5e5; font-weight: normal;}
 .promt-list-wrap {width:100%; max-width:1200px;}
 .promt-list-wrap .promt-list {width:calc(100% + 14px); margin:0 -7px; font-size:0;}
