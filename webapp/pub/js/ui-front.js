@@ -372,10 +372,12 @@ function quickFloating(){
   $('.qk-group-show').on('click', function(e){
       e.preventDefault();
       if ( $(this).is('.on') ) {
-          $(this).siblings('.qk-group').slideUp();
+        $(this).siblings('.qk-group').slideUp();
+        $('.quickDim').remove();
       } else {
-          $(this).siblings('.qk-group').slideDown();
-      }
+        $(this).siblings('.qk-group').slideDown();
+        $('.quick-menu').after('<div class="quickDim"></div>');
+      } 
   })
 }
 
