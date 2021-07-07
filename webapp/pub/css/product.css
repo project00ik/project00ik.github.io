@@ -24,15 +24,15 @@
 .pro-detail-info .product-name {margin-top:10px; font-weight: 500; font-size: 24px;}
 .pro-detail-info .product-info {margin-top:10px; font-size: 16px; color: #999;}
 .pro-detail-info .group-buying {width:100%; margin-top:20px; padding:12px 20px; font-size:16px; color: #fff; border-radius: 21.5px 21.5px 21.5px 0px; background: #12b5cf; overflow: hidden;}
-.pro-detail-info .price-area {margin-top:20px;}
-.pro-detail-info .price-area .price {display:inline-block; font-size:22px;}
-.pro-detail-info .price-area .price > b {font-size:32px; font-weight:700; vertical-align: baseline;}
+.pro-detail-info .price-area {margin-top:24px;}
+.pro-detail-info .price-area .price {display:inline-block; font-size:18px;}
+.pro-detail-info .price-area .price > b {font-size:24px; font-weight:700; vertical-align: baseline;}
 .pro-detail-info .price-area .flag-txt {margin:3px 0 0 2px;}
 .pro-detail-info .satis-large {display:inline-block; margin-top:6px;}
 .pro-detail-info .satis-large > p {display:inline-block;}
 .pro-detail-info .satis-large .tit {margin-left:10px; font-size: 14px; text-align: right; color: #666; vertical-align: middle; line-height: 24px;}
 .pro-detail-info .satis-large .tit > * {vertical-align: top;}
-.pro-detail-info .table-area {margin-top:10px;}
+.pro-detail-info .table-area {margin-top:16px;}
 .option-area {margin-top:20px;}
 .option-result {margin-top:10px;}
 .option-box {width:100%; margin-bottom: 10px; padding:16px; position: relative; background: #f5f5f5;}
@@ -40,12 +40,12 @@
 .option-box .btn-del {position: absolute; top:16px; right:16px;}
 .option-box .option-name {padding-right: 26px; font-size:14px;}
 .option-box .option-name > p {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
-.option-box .option-price {width:100%; margin-top:12px; padding-top:12px; border-top:1px solid #d7d7d7; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: center;}
+.option-box .option-price {width:100%; margin-top:12px; padding-top:12px; border-top:1px solid #d7d7d7; display:-webkit-box; display:-ms-flexbox; display:flex; align-items: flex-end;}
 .option-box .option-price > li {flex:1;}
-.option-box .option-price > li:last-child {flex:2; text-align: right;}
-.option-box .option-price .price {font-size:20px; display:inline-block}
+.option-box .option-price > li:last-child {padding-bottom:2px; flex:2; text-align: right;}
+.option-box .option-price .price {font-size:18px; display:inline-block}
 .option-box .option-price .btn-xs-small {margin-left:10px;}
-.option-box .option-price .price > b {font-size:30px; vertical-align: baseline; font-weight: 700;}
+.option-box .option-price .price > b {font-size:25px; vertical-align: baseline; font-weight: 700;}
 .option-box .minimum-order {margin-top:3px; font-size: 13px; color: #666;}
 .option-box .normal-price {font-size: 16px; color: #999; text-decoration:line-through;}
 .pro-detail-info .option-box .normal-price {margin-right: 92px;}
