@@ -143,7 +143,7 @@
 .gnb-area .gnb ul > li > a:hover {position: relative;}
 .gnb-area .gnb ul > li > a.on::after,
 .gnb-area .gnb ul > li > a:hover::after {content:""; width:calc(100% - 56px); height:5px; overflow: hidden; background: #12b5cf; position: absolute; bottom:0; left:50%; z-index:1; display:inline-block; transform:translateX(-50%);}
-.gnb-area .gnb ul > li + li::before {content:""; width:1px; height:14px; display:inline-block; background:#fff; vertical-align:middle; position:absolute; top:50%; left:0; transform:translateY(-50%);}
+.gnb-area .gnb ul > li + li::before {content:""; width:1px; height:12px; display:inline-block; background:#fff; vertical-align:middle; position:absolute; top:50%; left:0; transform:translateY(-50%);}
 .gnb-wrap .gnb-area .gnb-right-area {width:190px; height:48px; color:#fff; position:absolute; top:0; right:0; z-index:100;}
 .gnb-right-area .real-time-search {height:48px; padding-right:20px; position:relative;}
 .gnb-right-area .real-time-search .swiper-container {height:48px;}
@@ -1175,11 +1175,11 @@ textarea + .cot b {vertical-align: top;}
     .header-cont .search-area .inp-area .del {right: 34px;}
 
 
-    .gnb-wrap .gnb-area {width:100%; height:48px; padding:0 0 0 66px;}
+    .gnb-wrap .gnb-area {width:100%; height:48px; padding:0 0 0 62px;}
     .gnb-wrap .gnb-area .gnb {width:100%; margin-left:0; white-space:nowrap; overflow-y:hidden; overflow-x:auto;}
     .gnb-area .gnb ul > li {font-size:15px;}
     .gnb-area .gnb ul > li:first-child > a {padding-left:0;}
-    .gnb-area .gnb ul > li > a {padding:0 12px; display:inline-block;}
+    .gnb-area .gnb ul > li > a {padding:0 10px 0 11px; display:inline-block;}
     .gnb-wrap .gnb-area .gnb-right-area {display:none;}
     .gnb-wrap .cate-area {width:auto; position:absolute; top:12px; left:20px; float:inherit;}
     .gnb-wrap .cate-area .cate-layer-wrap {display:none;}
@@ -1187,6 +1187,7 @@ textarea + .cot b {vertical-align: top;}
     .gnb-area .gnb ul > li > a:hover::after {width:calc(100% - 24px);}
     .gnb-area .gnb ul > li:first-child > a.on::after,
     .gnb-area .gnb ul > li:first-child > a:hover:after {width:calc(100% - 12px); left:0; transform: none;}
+    .gnb-area .gnb ul > li + li::before {height:10px;}
     .gnb-wrap .btn-cate {display:none;}
     .gnb-wrap .btn-cate.moBtnCate {display:block; width:24px; height:24px; font-size:0; background:none; padding:0;}
     .gnb-wrap .btn-cate.moBtnCate::before {width:100%; height:100%; margin-right:0; margin-top:0; background:url(../images/layout/mo_btn_cate.svg) 50% 50% no-repeat;}
