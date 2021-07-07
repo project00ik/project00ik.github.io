@@ -1087,7 +1087,7 @@ textarea + .cot b {vertical-align: top;}
 .paging a.prev.active,.paging a.next.active{background: url(../images/common/mo_arrow_gnb_d1_on.svg) 50% no-repeat;;}
 
 /* 첨부파일등록 브라우저팝업 */
-.attach-wrap {padding: 30px;}
+/* .attach-wrap {padding: 30px;} 브라우저 팝업 미사용으로 주석처리 */
 
 /* ==========================================================================
    Media Queries for Responsive Design.
