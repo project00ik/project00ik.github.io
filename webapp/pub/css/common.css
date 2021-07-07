@@ -744,7 +744,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:non
 .form-layout .input-price.focus {border-color:#000; color:#000;}
 .form-layout .input-price .input {width:calc(100% - 18px); height:34px; border:0; padding:0; text-align:right; vertical-align:top;}
 .form-layout .input-price .won {width:15px; height:36px; line-height:36px; display:inline-block; vertical-align:top;}
-.form-layout .input-price.disabled {color:#d7d7d7; background: #fafafa;}
+.form-layout .input-price.readonly {color:#666; background: #fafafa; border-color: #bbb;}
+.form-layout .input-price.disabled {color:#d7d7d7; background: #fafafa; border-color: #e5e5e5;}
+.form-layout .input-price input.input:read-only {color:#666; background:none;}
+.form-layout .input-price input[readonly='readonly'] {color:#666; background:none;}
 .form-layout .input-price input.input:disabled {color:#d7d7d7; background:none;}
 .form-layout .bar {height:35px; line-height:33px; padding:0 5px; display:inline-block; vertical-align:middle;}
 .form-layout.form-email .input {flex: 1;}

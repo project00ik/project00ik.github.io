@@ -588,23 +588,6 @@ function toggleBtn(){
   });
 }
 
-// function toggleArea(){
-//   // 토글영역(show/hide)
-//   $(".tgArea").each(function(){
-//     $(this).find('.tgAreaBtn').on('click', function(){
-//       var $active = $(this);
-//       $active.toggleClass('on');
-//       if($active.hasClass('on')){
-//         $active.closest('.tgArea').addClass('open');
-//         $active.closest('.tgArea').find('.tgAreaCont').show();
-//       } else {
-//         $active.closest('.tgArea').removeClass('open');
-//         $active.closest('.tgArea').find('.tgAreaCont').hide();
-//       }
-//     });
-//   });
-// } 
-
 function toggleSlideArea(){
   // 토글영역(slide모션)
   $(".tgSlide").each(function(){
@@ -654,26 +637,6 @@ function toggleAreaClose(){
   $('.tgAreaCont').hide();
   $(".tgArea").removeClass('open');
   $('.tgAreaBtn').removeClass('on');
-}
-
-
-function chkToggle(){
-  // 체크토글영역
-  $(".chkTg").each(function(){
-    $(this).find('.chkTgBtn').on('click', function(){
-      var $active = $(this);
-      $active.toggleClass('on');
-      if($active.find(".chk > input:checkbox").is(":checked") == true) {
-        $active.addClass('on');
-        $active.closest('.chkTg').addClass('open');
-        $active.closest('.chkTg').find('.chkTgCont').show();
-      } else {
-        $active.removeClass('on');
-        $active.closest('.chkTg').removeClass('open');
-        $active.closest('.chkTg').find('.chkTgCont').hide();
-      }
-    });
-  });
 }
 
 function radioToggle(){
@@ -738,22 +701,8 @@ function accordion(){
 	});
 }
 
-function customSelect(){
-  // 디자인셀렉트 관련 js
-  $('.customSelect').each(function(){
-    var $customSelect = $(this);
-    $customSelect.find('.seleced-txt').on('click', function(){
-      $(this).closest('.customSelect').toggleClass('on');
-    });
-    $customSelect.find('.select-list > li > label').on('click', function(){
-      var selTxt = $(this).find('.sel-txt').text();
-      $(this).closest('.customSelect').removeClass('on');
-      $('.customSelect .seleced-txt').text(selTxt);
-    });
-  });
-}
-
 function inputPrice(){
+  // 금액 input focus 효과
   $('.input-price').find('input').on('keyup focus', function(){
     $(this).closest('.input-price').addClass('focus');
   })

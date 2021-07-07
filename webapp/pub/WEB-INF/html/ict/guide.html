@@ -40,7 +40,7 @@
 		.guide nav ul li:first-child {border: 0 none;}
 		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
 		.guide nav ul li.active a {background:#000; color:#fff;}
-		.guide .code {width:0; height:0; padding:0;  color:#eee; background:#486b95; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
+		.guide .code {width:0; height:0; padding:0;	color:#eee; background:#486b95; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
 		.guide .code.open {width:100%; height:200px;}
 		.guide .code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee;}
 		.guide .btn-code {width:150px; padding:10px; text-align: center; margin-top:35px; background:#ededed; border:1px solid #ccc; color:#486b95; font-weight:700; border-radius:3px; display:inline-block; font-size:14px;}
@@ -258,7 +258,7 @@
 					<div class="guide-box">
 						<div class="cont-layout">
 							<div class="cont-area">
-								<p class="guide-sub-tit">높이 56px 버튼 :  btn-style-l1~5</p>
+								<p class="guide-sub-tit">높이 56px 버튼 :	btn-style-l1~5</p>
 								<div class="guide-cont">
 									<!-- button -->
 									<div class="btn-full-area">
@@ -405,7 +405,7 @@
 							</div>
 
 							<div class="cont-area">
-								<p class="guide-sub-tit">넓이 98 고정, 높이 26px 버튼 :  btn-style-s1,2</p>
+								<p class="guide-sub-tit">넓이 98 고정, 높이 26px 버튼 :	btn-style-s1,2</p>
 								<div class="guide-cont">
 									<!-- button -->
 									<div class="btn-area">
@@ -443,7 +443,7 @@
 							</div>
 
 							<div class="cont-area">
-								<p class="guide-sub-tit">오른쪽 정렬 넓이 98 고정, 높이 26px 버튼 스타일별 :  btn-small-blue ,btn-small-line </p>
+								<p class="guide-sub-tit">오른쪽 정렬 넓이 98 고정, 높이 26px 버튼 스타일별 :	btn-small-blue ,btn-small-line </p>
 								<div class="guide-cont">
 									<!-- button -->
 									<div class="btn-r-area mo-hide">
@@ -471,13 +471,13 @@
 							</div>
 
 							<div class="cont-area">
-								<p class="guide-sub-tit">오른쪽 정렬 높이 26px  넓이별 버튼 : btn-small2-line, btn-small-line, btn-small-line2</p>
+								<p class="guide-sub-tit">오른쪽 정렬 높이 26px	넓이별 버튼 : btn-small2-line, btn-small-line, btn-small-line2</p>
 								<div class="guide-cont">
 									<!-- button -->
 									<div class="btn-r-area btn-mo-percent">
 										<button class="btn btn-small2-line mo-btn-w50">목록</button>
 										<button class="btn btn-small-line mo-btn-w50">주문변경</button>
-										<button class="btn btn-small-line2  mo-btn-w100">자주쓰는배송지</button>
+										<button class="btn btn-small-line2	mo-btn-w100">자주쓰는배송지</button>
 									</div>
 									<!--// button -->
 									<br>
@@ -504,7 +504,7 @@
 	&lt;div class="btn-r-area btn-mo-percent"&gt;
 		&lt;button class="btn btn-small2-line mo-btn-w50"&gt;목록&lt;/button&gt;
 		&lt;button class="btn btn-small-line mo-btn-w50"&gt;주문변경&lt;/button&gt;
-		&lt;button class="btn btn-small-line2  mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
+		&lt;button class="btn btn-small-line2	mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
 	&lt;/div&gt;
 	&lt;!--// button --&gt;
 	&lt;br&gt;
@@ -1209,6 +1209,98 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									<!--// html 보기 -->
 								</div>
 							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text): 금액</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-layout">
+										<span class="input-price">
+											<input type="text" class="input" name="" value="" placeholder="0">
+											<em class="won">원</em>
+										</span>
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- form --&gt;
+	&lt;div class="form-layout"&gt;
+		&lt;span class="input-price"&gt;
+			&lt;input type="text" class="input" name="" value="" placeholder="0"&gt;
+			&lt;em class="won"&gt;원&lt;/em&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;!--// form --&gt;
+</textarea>
+									</pre>
+									<!--// html 보기 -->
+									<!-- js 보기 -->
+									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+									<div class="js-code">
+<textarea class="codeArea">
+	inputPrice(); // 금액 input focus 효과
+</textarea>
+									</div>
+									<!--// js 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text): 금액 readonly</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-layout">
+										<span class="input-price readonly">
+											<input type="text" class="input" name="" value="10,000" placeholder="" readonly="readonly">
+											<em class="won">원</em>
+										</span>
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- form --&gt;
+	&lt;div class="form-layout"&gt;
+		&lt;span class="input-price readonly"&gt;
+			&lt;input type="text" class="input" name="" value="10,000" placeholder="" readonly="readonly"&gt;
+			&lt;em class="won"&gt;원&lt;/em&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;!--// form --&gt;
+</textarea>
+									</pre>
+									<!--// html 보기 -->
+								</div>
+							</div>
+							<div class="cont-area">
+								<p class="guide-sub-tit">Input(text): 금액 disabled</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="form-layout">
+										<span class="input-price disabled">
+											<input type="text" class="input" name="" value="10,000" placeholder="" disabled="disabled">
+											<em class="won">원</em>
+										</span>
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- form --&gt;
+	&lt;div class="form-layout"&gt;
+		&lt;span class="input-price disabled"&gt;
+			&lt;input type="text" class="input" name="" value="10,000" placeholder="" disabled="disabled"&gt;
+			&lt;em class="won"&gt;원&lt;/em&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;!--// form --&gt;
+</textarea>
+									</pre>
+									<!--// html 보기 -->
+								</div>
+							</div>
 						</div>
 
 						<div class="cont-layout">
@@ -1562,7 +1654,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 								<p class="guide-sub-tit">Select:disabled</p>
 								<div class="guide-cont">
 									<!-- select -->
-									<select class="select" name="" id=""  disabled="disabled">
+									<select class="select" name="" id=""	disabled="disabled">
 										<option value="">선택1</option>
 										<option value="">선택2</option>
 										<option value="">선택3</option>
@@ -1777,6 +1869,84 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									</pre>
 									<!--// html 보기 -->
 								</div>
+
+								<p class="guide-sub-tit">Checkbox(All checked)</p>
+								<div class="guide-cont">
+									<!-- form -->
+									<div class="allChkArea">
+										<!-- form : 기본 -->
+										<div class="join-list-con join-agree-con allChkArea">
+											<div class="list-con">
+												<div class="agree-allcheck"><label class="check-style2 allChk"><input type="checkbox" name=""><i></i><span>모든 약관에 대하여 동의합니다.</span></label></div>
+												<div class="join-agree">
+													<ul>
+														<li>
+															<div class="agree-area tgSlide">
+																<div class="agree-tit">
+																	<label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>회원 이용약관</span></label>
+																	<button class="btn btn-slide-open tgSlideBtn">더보기</button>
+																</div>
+																<div class="agree-cont tgSlideCont">
+																	<div>
+																		이용표준약관 (利用標準約款)
+																		제 1 장 총 칙
+																		공 정  거 래 위 원 회
+																		표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+																		제 1조 (목적 )
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="agree-area tgSlide">
+																<div class="agree-tit">
+																	<label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 수집, 이용목적, 항목 및 보유기간</span></label>
+																	<button class="btn btn-slide-open tgSlideBtn">더보기</button>
+																</div>
+																<div class="agree-cont tgSlideCont">
+																	<div class="agree-textarea">
+																		이용표준약관 (利用標準約款)
+																		제 1 장 총 칙
+																		공 정  거 래 위 원 회
+																		표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+																		제 1조 (목적 )
+																	</div>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="agree-area tgSlide">
+																<div class="agree-tit">
+																	<label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 수집 방법</span></label>
+																	<button class="btn btn-slide-open tgSlideBtn">더보기</button>
+																</div>
+																<div class="agree-cont tgSlideCont">
+																	<div>
+																		이용표준약관 (利用標準約款)
+																		제 1 장 총 칙
+																		공 정  거 래 위 원 회
+																		표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+																		제 1조 (목적 )
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--// form : 기본 -->
+									</div>
+									<!--// form -->
+									<!-- html 보기 -->
+									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+									<pre class="code">
+<textarea class="codeArea">
+
+</textarea>
+									</pre>
+									<!--// html 보기 -->
+								</div>
 							</div>
 							<div class="cont-area">
 								<p class="guide-sub-tit">Radio</p>
@@ -1885,7 +2055,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">세로형 테이블 : table-style1</h3>
 						<div class="guide-cont">
-							<!-- table-area -->
+							<!-- table -->
 							<div class="table-area table-style1 tb-c">
 								<!-- 테이블 전체 가운데 정렬 시 tb-c(class) -->
 								<table>
@@ -1921,17 +2091,55 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 								</table>
 							</div>
 							<p class="table-info">※ 상품특성에 따라 평균/권장 유통기한의 차이가 있을 수 있음</p>
-							<!-- // table-area -->
+							<!-- // tablea -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+&lt;!-- table --&gt;
+&lt;div class="table-area table-style1 tb-c"&gt;
+	&lt;!-- 테이블 전체 가운데 정렬 시 tb-c(class) --&gt;
+	&lt;table&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: 33.3%;"&gt;
+			&lt;col style="width: 33.3%;"&gt;
+			&lt;col style="width: 33.3%;"&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;품목&lt;/th&gt;
+				&lt;th&gt;평균 유통기한&lt;/th&gt;
+				&lt;th&gt;권장 납품기한&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td&gt;라면&lt;/td&gt;
+				&lt;td class="tb-l"&gt;5개월&lt;/td&gt;
+				&lt;td class="tb-r"&gt;최소 2~3개월이상&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;과자류&lt;/td&gt;
+				&lt;td&gt;6개월&lt;/td&gt;
+				&lt;td&gt;최소 2~3개월이상&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;차류 (티백차, 잎차, 분말차 등)&lt;/td&gt;
+				&lt;td&gt;12~24개월&lt;/td&gt;
+				&lt;td&gt;최소 6개월이상&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+&lt;p class="table-info"&gt;※ 상품특성에 따라 평균/권장 유통기한의 차이가 있을 수 있음&lt;/p&gt;
+&lt;!-- // table --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">라인 없는 테이블 : table-style2</h3>
 						<div class="guide-cont">
+							<!-- table -->
 							<div class="table-area table-style2">
 								<!-- 테이블 전체 가운데 정렬 시 tb-c(class) -->
 								<table>
@@ -1959,16 +2167,47 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									</tbody>
 								</table>
 							</div>
+							<!--// table -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+&lt;!-- table --&gt;
+&lt;div class="table-area table-style2"&gt;
+	&lt;!-- 테이블 전체 가운데 정렬 시 tb-c(class) --&gt;
+	&lt;table&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: 176px;"&gt;
+			&lt;col /&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th&gt;상품코드&lt;/th&gt;
+				&lt;td&gt;10013098&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th&gt;고객사코드&lt;/th&gt;
+				&lt;td&gt;-&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th&gt;제조사&lt;/th&gt;
+				&lt;td&gt;디월트&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th&gt;원산지&lt;/th&gt;
+				&lt;td&gt;멕시코&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+&lt;!--// table --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">가로형 테이블 : table-style3</h3>
 						<div class="guide-cont">
+							<!-- table -->
 							<div class="table-area table-style3">
 								<table>
 									<colgroup>
@@ -1996,165 +2235,94 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									</tbody>
 								</table>
 							</div>
+							<!--// table -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+&lt;!-- table --&gt;
+&lt;div class="table-area table-style3"&gt;
+	&lt;table&gt;
+		&lt;colgroup&gt;
+			&lt;col class="w21"&gt;
+			&lt;col&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th&gt;KTC담당자&lt;span&gt;(주문/배송/정보)&lt;/span&gt;&lt;/th&gt;
+				&lt;td&gt;홍길동&lt;span&gt;(&lt;em&gt;02-767-5922&lt;/em&gt;/ &lt;em&gt;dh.park@kt.com&lt;/em&gt;)&lt;/span&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th&gt;상품담당자&lt;/th&gt;
+				&lt;td&gt;송은주&lt;span&gt;(&lt;em&gt;02-767-5922&lt;/em&gt;/ &lt;em&gt;dh.park@kt.com&lt;/em&gt;)&lt;/span&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th&gt;협력사&lt;/th&gt;
+				&lt;td&gt;주식회사 디콤애드&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th&gt;고객센터&lt;/th&gt;
+				&lt;td&gt;1577-1535&lt;/td&gt;
+			&lt;/tr&gt;
+			
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+&lt;!--// table --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
-					</div>
 
-					<h2 class="guide-tit" id="gPost">우편번호</h2>
-					<div class="guide-box">
-						<h3 class="guide-sub-tit">우편번호</h3>
+						<h3 class="guide-sub-tit">게시형 테이블 : approval-table</h3>
 						<div class="guide-cont">
-							<!-- 우편번호 -->
-							<div class="form-area">
-								<input type="text" class="input" name="" value="" placeholder="수령인명">
-								<input type="number" class="input" name="" value="" placeholder="휴대폰번호 ('-')없이 입력">
+							<!-- table -->
+							<div class="approval-table">
+								<table>
+									<colgroup>
+										<col style="width:113px;">
+										<col>
+									</colgroup>
+									<tbody><tr>
+										<th>결재선</th>
+										<th>부서명</th>
+										<th>ID</th>
+										<th>승인자명</th>
+										<th>후열</th>
+										<th>선택</th>
+									</tr>
+									<tr class="td-start">
+										<td>추가 승인자</td>
+										<td>정보보안TF</td>
+										<td>SMARTR23</td>
+										<td>장옥술</td>
+										<td></td>
+										<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+									</tr>
+									<tr>
+										<td>추가 승인자</td>
+										<td>재무관리실</td>
+										<td>SMT_003</td>
+										<td>재무관리실_정규일</td>
+										<td></td>
+										<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+									</tr>
+									<tr>
+										<td>추가 승인자</td>
+										<td>정유TF</td>
+										<td>SMT_010</td>
+										<td>정유TF_오세란</td>
+										<td></td>
+										<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+									</tr>
+								</tbody></table>
 							</div>
-							<!-- 주소 영역 -->
-							<div class="address-wrap tgArea">
-								<div class="form-layout">
-									<input type="text" name="" class="input" value="" readonly="readonly" maxlength="8" placeholder="배송주소">
-									<span class="btn btn-style3 btn-address tgAreaBtn">우편번호</span>
-								</div>
-								<!-- 우편번호 팝업 -->
-								<div class="post-address-area hide tgAreaCont">
-									<div class="form-area">
-										<input type="text" class="input" name="" value="" placeholder="도로명 또는 지번 주소 입력">
-										<button type="button" class="btn-search">검색</button>
-										<button type="button" class="btn-close addressClose" onclick="toggleAreaClose()">닫기</button>
-									</div>
-									<!-- input 입력 전 -->
-									<div class="before-data">
-										<p>아래와 같은 조합으로 검색을 하시면 더욱 정확한<br>결과가 검색됩니다.</p>
-										<ul>
-											<li>
-												<dl>
-													<dt class="ex-tit">도로명 + 건물번호</dt>
-													<dd class="ex-con">예) 판교역로 235, 제주 첨단로 242</dd>
-												</dl>
-											</li>
-											<li>
-												<dl>
-													<dt class="ex-tit">지역명(동/리) + 번지</dt>
-													<dd class="ex-con">예) 삼평동 681, 제주 영평동 2181</dd>
-												</dl>
-											</li>
-											<li>
-												<dl>
-													<dt class="ex-tit">지역명(동/리) + 건물영(아파트명)</dt>
-													<dd class="ex-con">예) 분당 주공, 연수동 주공3차</dd>
-												</dl>
-											</li>
-											<li>
-												<dl>
-													<dt class="ex-tit">사서함명 + 번호</dt>
-													<dd class="ex-con">예) 분당우체국사서함 1-100</dd>
-												</dl>
-											</li>
-										</ul>
-									</div>
-									<!-- // input 입력 전 -->
-									<!-- input 입력 후 -->
-									<div class="after-data">
-										<ul class="address-list">
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63 서울특별시 중구 소공로 63 서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-											<li class="address">
-												<a href="#!">
-													<dl>
-														<dt class="post-num">04530</dt>
-														<dd class="post-text">
-															<p><span>도로명</span><span>서울특별시 중구 소공로 63</span></p>
-															<p><span>지번</span><span>서울특별시 중구 충무로1가 52-5 신세계 백화점 건물</span></p>
-														</dd>
-													</dl>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<!-- // input 입력 후 -->
-								</div>
-								<!-- // 우편번호 팝업 -->
-							</div>
-							<p class="form-layout"><input type="text" id="addr1" name="addr1" class="input" value="" readonly="readonly" maxlength="1000"></p>
-							<p class="form-layout"><input type="text" id="addr1" name="addr1" class="input" value="" maxlength="1000" placeholder="상세주소 입력"></p>
-							<label class="check-style1 location-check"><input type="checkbox" name=""><i></i><span>기본배송지로 등록</span></label>
-							<!-- // 주소 영역 -->
-							<!-- 우편번호 -->
-							<br>
+							<!--// table -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
 								<textarea class="codeArea">
+
 								</textarea>
 							</pre>
 							<!--// html 보기 -->
@@ -2163,98 +2331,748 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 
 					<h2 class="guide-tit" id="gToogle">토글형</h2>
 					<div class="guide-box">
-						<h3 class="guide-sub-tit">아코디언1</h3>
+						<h3 class="guide-sub-tit">아코디언</h3>
 						<div class="guide-cont">
-							<!-- 아코디언1 -->
-							<div class="product-info acdArea">
+							<!-- 아코디언 -->
+							<div class="qna-list-area acdArea">
 								<dl>
-									<dt class="btn-tg acdBtn on">아코디언버튼(click!!)</dt>
+									<dt class="acdBtn">
+										<p class="qna-num">1</p>
+										<div class="txt-area">
+											<p class="txt"><b>[나의정보]</b> 조직이 이동되었습니다. 정보를 수정해야 하나요?</p>
+										</div>
+									</dt>
 									<dd class="acdCont">
-										내용
+										<p>담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.</p>
 									</dd>
 								</dl>
 								<dl>
-									<dt class="btn-tg acdBtn">아코디언버튼(click!!)</dt>
-									<dd class="acdCont" style="display: none;">
-										내용
+									<dt class="acdBtn">
+										<p class="qna-num">2</p>
+										<div class="txt-area">
+											<p class="txt"><b>[검색]</b> 상품검색을 할 때 도움이 될만한 것들이 있나요?</p>
+										</div>
+									</dt>
+									<dd class="acdCont">
+										<p>담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="acdBtn">
+										<p class="qna-num">3</p>
+										<div class="txt-area">
+											<p class="txt"><b>[나의정보]</b> 회원정보 변경은 어떻게 하나요?</p>
+										</div>
+									</dt>
+									<dd class="acdCont">
+										<p>담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="acdBtn">
+										<p class="qna-num">4</p>
+										<div class="txt-area">
+											<p class="txt"><b>[배송]</b> 배송비 때문에 판매가가 높은 건가요? 배송비 때문에 판매가가 높은 건가요? 배송비 때문에 판매가가 높은 건가요?	배송비 때문에 판매가가 높은 건가요?	배송비 때문에 판매가가 높은 건가요? 배송비 때문에 판매가가 높은 건가요?</p>
+										</div>
+									</dt>
+									<dd class="acdCont">
+										<p>담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.</p>
+										<p>담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt class="acdBtn">
+										<p class="qna-num">5</p>
+										<div class="txt-area">
+											<p class="txt"><b>[정산]</b> 정산여부를 확인하고 싶어요.</p>
+										</div>
+									</dt>
+									<dd class="acdCont">
+										<p>담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.</p>
 									</dd>
 								</dl>
 							</div>
-							<!--// 아코디언1 -->
+							<!--// 아코디언 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 아코디언 --&gt;
+	&lt;div class="qna-list-area acdArea"&gt;
+		&lt;dl&gt;
+			&lt;dt class="acdBtn"&gt;
+				&lt;p class="qna-num"&gt;1&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt"&gt;&lt;b&gt;[나의정보]&lt;/b&gt; 조직이 이동되었습니다. 정보를 수정해야 하나요?&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/dt&gt;
+			&lt;dd class="acdCont"&gt;
+				&lt;p&gt;담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.&lt;/p&gt;
+			&lt;/dd&gt;
+		&lt;/dl&gt;
+		&lt;dl&gt;
+			&lt;dt class="acdBtn"&gt;
+				&lt;p class="qna-num"&gt;2&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt"&gt;&lt;b&gt;[검색]&lt;/b&gt; 상품검색을 할 때 도움이 될만한 것들이 있나요?&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/dt&gt;
+			&lt;dd class="acdCont"&gt;
+				&lt;p&gt;담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.&lt;/p&gt;
+			&lt;/dd&gt;
+		&lt;/dl&gt;
+		&lt;dl&gt;
+			&lt;dt class="acdBtn"&gt;
+				&lt;p class="qna-num"&gt;3&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt"&gt;&lt;b&gt;[나의정보]&lt;/b&gt; 회원정보 변경은 어떻게 하나요?&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/dt&gt;
+			&lt;dd class="acdCont"&gt;
+				&lt;p&gt;담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.&lt;/p&gt;
+			&lt;/dd&gt;
+		&lt;/dl&gt;
+		&lt;dl&gt;
+			&lt;dt class="acdBtn"&gt;
+				&lt;p class="qna-num"&gt;4&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt"&gt;&lt;b&gt;[배송]&lt;/b&gt; 배송비 때문에 판매가가 높은 건가요? 배송비 때문에 판매가가 높은 건가요? 배송비 때문에 판매가가 높은 건가요?	배송비 때문에 판매가가 높은 건가요?	배송비 때문에 판매가가 높은 건가요? 배송비 때문에 판매가가 높은 건가요?&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/dt&gt;
+			&lt;dd class="acdCont"&gt;
+				&lt;p&gt;담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.&lt;/p&gt;
+				&lt;p&gt;담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.&lt;/p&gt;
+			&lt;/dd&gt;
+		&lt;/dl&gt;
+		&lt;dl&gt;
+			&lt;dt class="acdBtn"&gt;
+				&lt;p class="qna-num"&gt;5&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt"&gt;&lt;b&gt;[정산]&lt;/b&gt; 정산여부를 확인하고 싶어요.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/dt&gt;
+			&lt;dd class="acdCont"&gt;
+				&lt;p&gt;담당 MD 또는 고객센터로 연락해주시면 수정반영 해드립니다.&lt;/p&gt;
+			&lt;/dd&gt;
+		&lt;/dl&gt;
+	&lt;/div&gt;
+	&lt;!--// 아코디언 --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	accordion(); // 아코디언
+</textarea>
 							</div>
 							<!--// js 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">토글형(toggleSlide)</h3>
 						<div class="guide-cont">
-							<!-- 토글형1 -->
-							<div class="tgSlide">
-								<div class="tgSlideBtn">
-									토글버튼(click!!)
-								</div>
-								<div class="tgSlideCont ">
-									토글내용
-								</div>
+							<!-- 토글형 -->
+							<div class="qna-wrap">
+								<ul>
+									<li>
+										<div class="tgSlide">
+											<div class="tgSlideBtn tit">
+												<div>답변대기</div>
+												<p>자재 사이즈 문의드립니다.</p>
+												<span>김**</span>
+												<span class="date">2020.08.20</span>
+												<a href="javascript:;" class="btn-tg">더보기</a>
+											</div>
+											<div class="tgSlideCont content">
+												<p>문의구분 : 고객사(VOC) <em>협력사 : ㈜아이씨알</em></p>
+												<div>
+													<p class="question">DJR188RTE 제품 성능이 어떤가요?</p>
+													<p class="answer">안녕하세요 고객님<br>현재 답변 준비중입니다. 최대한 빨리 답변 드리겠습니다. 감사합니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tgSlide">
+											<div class="tgSlideBtn tit">
+												<div>답변대기</div>
+												<p>자재 사이즈 문의드립니다.</p>
+												<span>김**</span>
+												<span class="date">2020.08.20</span>
+												<a href="javascript:;" class="btn-tg">더보기</a>
+											</div>
+											<div class="tgSlideCont content">
+												<p>문의구분 : 고객사(VOC) <em>협력사 : ㈜아이씨알</em></p>
+												<div>
+													<p class="question">DJR188RTE 제품 성능이 어떤가요?</p>
+													<p class="answer">안녕하세요 고객님<br>현재 답변 준비중입니다. 최대한 빨리 답변 드리겠습니다. 감사합니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="tgSlide">
+											<div class="tgSlideBtn tit on">
+												<div class="done">답변완료</div>
+												<p>자재 사이즈 문의드립니다.</p>
+												<span>김**</span>
+												<span class="date">2020.08.20</span>
+												<a href="javascript:;" class="btn-tg">더보기</a>
+											</div>
+											<div class="tgSlideCont content">
+												<p>문의구분 : 고객사(VOC) <em>협력사 : ㈜아이씨알</em></p>
+												<div>
+													<p class="question">DJR188RTE 제품 성능이 어떤가요?</p>
+													<p class="answer">안녕하세요 고객님<br>현재 답변 준비중입니다. 최대한 빨리 답변 드리겠습니다. 감사합니다.</p>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
 							</div>
-							<!--// 토글형1 -->
+							<!--// 토글형 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 토글형 --&gt;
+	&lt;div class="qna-wrap"&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;div class="tgSlide"&gt;
+					&lt;div class="tgSlideBtn tit"&gt;
+						&lt;div&gt;답변대기&lt;/div&gt;
+						&lt;p&gt;자재 사이즈 문의드립니다.&lt;/p&gt;
+						&lt;span&gt;김**&lt;/span&gt;
+						&lt;span class="date"&gt;2020.08.20&lt;/span&gt;
+						&lt;a href="javascript:;" class="btn-tg"&gt;더보기&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="tgSlideCont content"&gt;
+						&lt;p&gt;문의구분 : 고객사(VOC) &lt;em&gt;협력사 : ㈜아이씨알&lt;/em&gt;&lt;/p&gt;
+						&lt;div&gt;
+							&lt;p class="question"&gt;DJR188RTE 제품 성능이 어떤가요?&lt;/p&gt;
+							&lt;p class="answer"&gt;안녕하세요 고객님&lt;br&gt;현재 답변 준비중입니다. 최대한 빨리 답변 드리겠습니다. 감사합니다.&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="tgSlide"&gt;
+					&lt;div class="tgSlideBtn tit"&gt;
+						&lt;div&gt;답변대기&lt;/div&gt;
+						&lt;p&gt;자재 사이즈 문의드립니다.&lt;/p&gt;
+						&lt;span&gt;김**&lt;/span&gt;
+						&lt;span class="date"&gt;2020.08.20&lt;/span&gt;
+						&lt;a href="javascript:;" class="btn-tg"&gt;더보기&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="tgSlideCont content"&gt;
+						&lt;p&gt;문의구분 : 고객사(VOC) &lt;em&gt;협력사 : ㈜아이씨알&lt;/em&gt;&lt;/p&gt;
+						&lt;div&gt;
+							&lt;p class="question"&gt;DJR188RTE 제품 성능이 어떤가요?&lt;/p&gt;
+							&lt;p class="answer"&gt;안녕하세요 고객님&lt;br&gt;현재 답변 준비중입니다. 최대한 빨리 답변 드리겠습니다. 감사합니다.&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="tgSlide"&gt;
+					&lt;div class="tgSlideBtn tit on"&gt;
+						&lt;div class="done"&gt;답변완료&lt;/div&gt;
+						&lt;p&gt;자재 사이즈 문의드립니다.&lt;/p&gt;
+						&lt;span&gt;김**&lt;/span&gt;
+						&lt;span class="date"&gt;2020.08.20&lt;/span&gt;
+						&lt;a href="javascript:;" class="btn-tg"&gt;더보기&lt;/a&gt;
+					&lt;/div&gt;
+					&lt;div class="tgSlideCont content"&gt;
+						&lt;p&gt;문의구분 : 고객사(VOC) &lt;em&gt;협력사 : ㈜아이씨알&lt;/em&gt;&lt;/p&gt;
+						&lt;div&gt;
+							&lt;p class="question"&gt;DJR188RTE 제품 성능이 어떤가요?&lt;/p&gt;
+							&lt;p class="answer"&gt;안녕하세요 고객님&lt;br&gt;현재 답변 준비중입니다. 최대한 빨리 답변 드리겠습니다. 감사합니다.&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;!--// 토글형 --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	toggleSlideArea(); // 토글영역
+</textarea>
+							</div>
+							<!--// js 보기 -->
+						</div>
+
+						<p class="guide-sub-tit">체크박스가 있는 토글형(toggleSlide)</p>
+						<div class="guide-cont">
+							<!-- 체크박스가 있는 토글형 -->
+							<div class="allChkArea">
+								<div class="join-list-con join-agree-con allChkArea">
+									<div class="list-con">
+										<div class="agree-allcheck"><label class="check-style2 allChk"><input type="checkbox" name=""><i></i><span>모든 약관에 대하여 동의합니다.</span></label></div>
+										<div class="join-agree">
+											<ul>
+												<li>
+													<div class="agree-area tgSlide">
+														<div class="agree-tit">
+															<label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>회원 이용약관</span></label>
+															<button class="btn btn-slide-open tgSlideBtn">더보기</button>
+														</div>
+														<div class="agree-cont tgSlideCont">
+															<div>
+																이용표준약관 (利用標準約款)
+																제 1 장 총 칙
+																공 정  거 래 위 원 회
+																표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+																제 1조 (목적 )
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="agree-area tgSlide">
+														<div class="agree-tit">
+															<label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 수집, 이용목적, 항목 및 보유기간</span></label>
+															<button class="btn btn-slide-open tgSlideBtn">더보기</button>
+														</div>
+														<div class="agree-cont tgSlideCont">
+															<div class="agree-textarea">
+																이용표준약관 (利用標準約款)
+																제 1 장 총 칙
+																공 정  거 래 위 원 회
+																표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+																제 1조 (목적 )
+															</div>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="agree-area tgSlide">
+														<div class="agree-tit">
+															<label class="check-style2 chk"><input type="checkbox" name=""><i></i><span>개인정보의 수집 방법</span></label>
+															<button class="btn btn-slide-open tgSlideBtn">더보기</button>
+														</div>
+														<div class="agree-cont tgSlideCont">
+															<div>
+																이용표준약관 (利用標準約款)
+																제 1 장 총 칙
+																공 정  거 래 위 원 회
+																표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+																제 1조 (목적 )
+															</div>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--// 체크박스가 있는 토글형 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 체크박스가 있는 토글형 --&gt;
+	&lt;div class="allChkArea"&gt;
+		&lt;div class="join-list-con join-agree-con allChkArea"&gt;
+			&lt;div class="list-con"&gt;
+				&lt;div class="agree-allcheck"&gt;&lt;label class="check-style2 allChk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;모든 약관에 대하여 동의합니다.&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;
+				&lt;div class="join-agree"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;
+							&lt;div class="agree-area tgSlide"&gt;
+								&lt;div class="agree-tit"&gt;
+									&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;회원 이용약관&lt;/span&gt;&lt;/label&gt;
+									&lt;button class="btn btn-slide-open tgSlideBtn"&gt;더보기&lt;/button&gt;
+								&lt;/div&gt;
+								&lt;div class="agree-cont tgSlideCont"&gt;
+									&lt;div&gt;
+										이용표준약관 (利用標準約款)
+										제 1 장 총 칙
+										공 정  거 래 위 원 회
+										표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+										제 1조 (목적 )
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;div class="agree-area tgSlide"&gt;
+								&lt;div class="agree-tit"&gt;
+									&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;개인정보의 수집, 이용목적, 항목 및 보유기간&lt;/span&gt;&lt;/label&gt;
+									&lt;button class="btn btn-slide-open tgSlideBtn"&gt;더보기&lt;/button&gt;
+								&lt;/div&gt;
+								&lt;div class="agree-cont tgSlideCont"&gt;
+									&lt;div class="agree-textarea"&gt;
+										이용표준약관 (利用標準約款)
+										제 1 장 총 칙
+										공 정  거 래 위 원 회
+										표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+										제 1조 (목적 )
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+						&lt;li&gt;
+							&lt;div class="agree-area tgSlide"&gt;
+								&lt;div class="agree-tit"&gt;
+									&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;개인정보의 수집 방법&lt;/span&gt;&lt;/label&gt;
+									&lt;button class="btn btn-slide-open tgSlideBtn"&gt;더보기&lt;/button&gt;
+								&lt;/div&gt;
+								&lt;div class="agree-cont tgSlideCont"&gt;
+									&lt;div&gt;
+										이용표준약관 (利用標準約款)
+										제 1 장 총 칙
+										공 정  거 래 위 원 회
+										표준약관 [제 10023호 ] 인터넷사이버몰이용 표준약관
+										제 1조 (목적 )
+									&lt;/div&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--// 체크박스가 있는 토글형 --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+							<!-- js 보기 -->
+							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
+							<div class="js-code">
+<textarea class="codeArea">
+	allChecked(); // all checked
+	toggleSlideArea(); // 토글영역
+</textarea>
 							</div>
 							<!--// js 보기 -->
 						</div>
 						
-						<h3 class="guide-sub-tit">체크 시 토글형</h3>
+						<h3 class="guide-sub-tit">리뷰 토글형(reviewToggle)</h3>
 						<div class="guide-cont">
-							<!-- 체크 시 토글형 -->
-							<dl class="pointcard-area chkTg">
-								<dt class="chkTgBtn">
-									<label class="chk check-style1">
-										<input type="checkbox" name="">
-										<i></i>
-										<span>신세계포인트 카드 적립</span>
-									</label>
-								</dt>
-								<dd class="chkTgCont" style="display:none;">
-									<p class="form-layout">
-										<span class="inp-tit">카드번호</span>
-										<input type="text" name="" class="input" placeholder="카드번호 입력">
-									</p>
-								</dd>
-							</dl>
-							<!--// 체크 시 토글형 -->
+							<!-- 리뷰 토글형 -->
+							<div class="detail-review">
+								<!-- 리뷰가 있는경우 -->
+								<ul>
+									<li>
+										<div class="review-info"><p>김**</p><p>2020.08.20</p></div>
+										<div class="review-satisfaction-area">
+											<div class="satis-large">
+												<p class="tit">상품만족도</p>
+												<p class="rating">
+													<span class="star-m star1">별점</span><!-- star0 ~ star5 -->
+												</p>
+											</div>
+											<div class="satis-small">
+												<div class="satis-s-list">
+													<p class="tit">가격</p>
+													<p class="rating">
+														<span class="star-s black star1">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">품질</p>
+													<p class="rating">
+														<span class="star-s black star3">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">배송</p>
+													<p class="rating">
+														<span class="star-s black star3">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">서비스</p>
+														<p class="rating">
+															<span class="star-s black star4">별점</span><!-- star0 ~ star5 -->
+														</p>
+												</div>
+											</div>
+										</div>
+										<div class="review-option">
+											<p>구매옵션 : 6.5인치 / 3700RPM</p>
+											<a href="#" class="btn btn-xs-small">동영상 보기</a>
+										</div>
+										<a href="#" class="review-text">
+											<p class="ellipsis-multiple2">막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니.</p>
+										</a>
+										<div class="review-front-img"><img src="../../../images/main/img_review_ex.png" alt="상품리뷰 대표이미지"></div>
+										<div class="review-cont-img">
+											<img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
+											<img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
+											<img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
+										</div>
+									</li>
+									<li>
+										<div class="review-info"><p>김**</p><p>2020.08.20</p></div>
+										<div class="review-satisfaction-area">
+											<div class="satis-large">
+												<p class="tit">상품만족도</p>
+												<p class="rating">
+													<span class="star-m star1">별점</span><!-- star0 ~ star5 -->
+												</p>
+											</div>
+											<div class="satis-small">
+												<div class="satis-s-list">
+													<p class="tit">가격</p>
+													<p class="rating">
+														<span class="star-s black star1">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">품질</p>
+													<p class="rating">
+														<span class="star-s black star3">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">배송</p>
+													<p class="rating">
+														<span class="star-s black star3">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">서비스</p>
+														<p class="rating">
+															<span class="star-s black star4">별점</span><!-- star0 ~ star5 -->
+														</p>
+												</div>
+											</div>
+										</div>
+										<div class="review-option">
+											<p>구매옵션 : 6.5인치 / 3700RPM</p>
+										</div>
+										<a href="#" class="review-text">
+											<p class="ellipsis-multiple2">막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니.</p>
+										</a>
+									</li>
+									<li>
+										<div class="review-info"><p>김**</p><p>2020.08.20</p></div>
+										<div class="review-satisfaction-area">
+											<div class="satis-large">
+												<p class="tit">상품만족도</p>
+												<p class="rating">
+													<span class="star-m star1">별점</span><!-- star0 ~ star5 -->
+												</p>
+											</div>
+											<div class="satis-small">
+												<div class="satis-s-list">
+													<p class="tit">가격</p>
+													<p class="rating">
+														<span class="star-s black star1">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">품질</p>
+													<p class="rating">
+														<span class="star-s black star3">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">배송</p>
+													<p class="rating">
+														<span class="star-s black star3">별점</span><!-- star0 ~ star5 -->
+													</p>
+												</div>
+												<div class="satis-s-list">
+													<p class="tit">서비스</p>
+														<p class="rating">
+															<span class="star-s black star4">별점</span><!-- star0 ~ star5 -->
+														</p>
+												</div>
+											</div>
+										</div>
+										<div class="review-option">
+											<p>구매옵션 : 6.5인치 / 3700RPM</p>
+											<a href="#" class="btn btn-xs-small">동영상 보기</a>
+										</div>
+										<a href="#" class="review-text">
+											<p class="ellipsis-multiple2">막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니</p>
+										</a>
+										<div class="review-front-img"><img src="../../../images/main/img_review_ex.png" alt="상품리뷰 대표이미지"></div>
+										<div class="review-cont-img">
+											<img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
+											<img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
+											<img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지">
+										</div>
+									</li>
+								</ul>
+								<!-- //리뷰가 있는경우 -->
+							</div>
+							<!--// 리뷰 토글형 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 리뷰 토글형 --&gt;
+	&lt;div class="detail-review"&gt;
+		&lt;!-- 리뷰가 있는경우 --&gt;
+		&lt;ul&gt;
+			&lt;li&gt;
+				&lt;div class="review-info"&gt;&lt;p&gt;김**&lt;/p&gt;&lt;p&gt;2020.08.20&lt;/p&gt;&lt;/div&gt;
+				&lt;div class="review-satisfaction-area"&gt;
+					&lt;div class="satis-large"&gt;
+						&lt;p class="tit"&gt;상품만족도&lt;/p&gt;
+						&lt;p class="rating"&gt;
+							&lt;span class="star-m star1"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="satis-small"&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;가격&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star1"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;품질&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star3"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;배송&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star3"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;서비스&lt;/p&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-s black star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="review-option"&gt;
+					&lt;p&gt;구매옵션 : 6.5인치 / 3700RPM&lt;/p&gt;
+					&lt;a href="#" class="btn btn-xs-small"&gt;동영상 보기&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;a href="#" class="review-text"&gt;
+					&lt;p class="ellipsis-multiple2"&gt;막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니.&lt;/p&gt;
+				&lt;/a&gt;
+				&lt;div class="review-front-img"&gt;&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 대표이미지"&gt;&lt;/div&gt;
+				&lt;div class="review-cont-img"&gt;
+					&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지"&gt;
+					&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지"&gt;
+					&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지"&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="review-info"&gt;&lt;p&gt;김**&lt;/p&gt;&lt;p&gt;2020.08.20&lt;/p&gt;&lt;/div&gt;
+				&lt;div class="review-satisfaction-area"&gt;
+					&lt;div class="satis-large"&gt;
+						&lt;p class="tit"&gt;상품만족도&lt;/p&gt;
+						&lt;p class="rating"&gt;
+							&lt;span class="star-m star1"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="satis-small"&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;가격&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star1"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;품질&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star3"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;배송&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star3"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;서비스&lt;/p&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-s black star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="review-option"&gt;
+					&lt;p&gt;구매옵션 : 6.5인치 / 3700RPM&lt;/p&gt;
+				&lt;/div&gt;
+				&lt;a href="#" class="review-text"&gt;
+					&lt;p class="ellipsis-multiple2"&gt;막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니.&lt;/p&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="review-info"&gt;&lt;p&gt;김**&lt;/p&gt;&lt;p&gt;2020.08.20&lt;/p&gt;&lt;/div&gt;
+				&lt;div class="review-satisfaction-area"&gt;
+					&lt;div class="satis-large"&gt;
+						&lt;p class="tit"&gt;상품만족도&lt;/p&gt;
+						&lt;p class="rating"&gt;
+							&lt;span class="star-m star1"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class="satis-small"&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;가격&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star1"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;품질&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star3"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;배송&lt;/p&gt;
+							&lt;p class="rating"&gt;
+								&lt;span class="star-s black star3"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class="satis-s-list"&gt;
+							&lt;p class="tit"&gt;서비스&lt;/p&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-s black star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class="review-option"&gt;
+					&lt;p&gt;구매옵션 : 6.5인치 / 3700RPM&lt;/p&gt;
+					&lt;a href="#" class="btn btn-xs-small"&gt;동영상 보기&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;a href="#" class="review-text"&gt;
+					&lt;p class="ellipsis-multiple2"&gt;막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니 정말 좋더라고요. 막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니막상 받아보니 너무 좋아요. 큰 기대를 안 했는데 막상 받이보니&lt;/p&gt;
+				&lt;/a&gt;
+				&lt;div class="review-front-img"&gt;&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 대표이미지"&gt;&lt;/div&gt;
+				&lt;div class="review-cont-img"&gt;
+					&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지"&gt;
+					&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지"&gt;
+					&lt;img src="../../../images/main/img_review_ex.png" alt="상품리뷰 상세이미지"&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;!-- //리뷰가 있는경우 --&gt;
+	&lt;/div&gt;
+	&lt;!--// 리뷰 토글형 --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	reviewToggle(); // 리뷰토글
+</textarea>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -2593,8 +3411,14 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			toggleBtn() // 토글버튼
-			ratingBtnArea() // 포토리뷰 별점버튼 js
+			inputPrice(); // 금액 input focus 효과
+			allChecked(); // all checked
+			toggleBtn(); // 토글버튼
+			ratingBtnArea(); // 포토리뷰 별점버튼 js
+			toggleSlideArea(); // 토글영역(slide모션)
+			reviewToggle(); // 리뷰토글
+			accordion(); // 아코디언
+			tab(); // 탭
 		});
 	</script>
 </body>
