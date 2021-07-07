@@ -586,42 +586,22 @@ function toggleBtn(){
   });
 }
 
-function toggleLineArea(){
-  // 토글영역
-  $('.tgLineArea').each(function(){
-    $(this).find('.tgLineBtn').on('click', function(e){
-      var $active = $(this);
-      e.preventDefault();
-      $active.toggleClass("on");
-      if($active.hasClass('on')){
-        $active.closest('.tgLineArea').addClass('open');
-        $active.closest('.tgLineArea').find('.tgLineCont').slideDown();
-      } else {
-        $active.closest('.tgLineArea').removeClass('open');
-        $active.closest('.tgLineArea').find('.tgLineCont').slideUp();
-      }
-    });
-  });
-  // 주문결재 마지막 토글영역에 라인 style
-  $('.sm-order .sm-line-layout2').last().addClass('last');
-}
-
-function toggleArea(){
-  // 토글영역(show/hide)
-  $(".tgArea").each(function(){
-    $(this).find('.tgAreaBtn').on('click', function(){
-      var $active = $(this);
-      $active.toggleClass('on');
-      if($active.hasClass('on')){
-        $active.closest('.tgArea').addClass('open');
-        $active.closest('.tgArea').find('.tgAreaCont').show();
-      } else {
-        $active.closest('.tgArea').removeClass('open');
-        $active.closest('.tgArea').find('.tgAreaCont').hide();
-      }
-    });
-  });
-} 
+// function toggleArea(){
+//   // 토글영역(show/hide)
+//   $(".tgArea").each(function(){
+//     $(this).find('.tgAreaBtn').on('click', function(){
+//       var $active = $(this);
+//       $active.toggleClass('on');
+//       if($active.hasClass('on')){
+//         $active.closest('.tgArea').addClass('open');
+//         $active.closest('.tgArea').find('.tgAreaCont').show();
+//       } else {
+//         $active.closest('.tgArea').removeClass('open');
+//         $active.closest('.tgArea').find('.tgAreaCont').hide();
+//       }
+//     });
+//   });
+// } 
 
 function toggleSlideArea(){
   // 토글영역(slide모션)
