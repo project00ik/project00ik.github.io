@@ -350,12 +350,14 @@
 .approval-add .jusitfy-info-area .pop-ip-area{width:calc(100% - 123px);}
 .approval-add .jusitfy-info-area .pop-ip-area label{padding-left: 0;width: 70px;}
 .approval-add .jusitfy-info-area .pop-ip-area .form-search{flex:1}
-.approval-add .approval-table {max-height:199px; overflow-x: hidden; overflow-y: auto; border-top: 1px solid #000; border-bottom: 1px solid #D7D7D7;padding-bottom: 14px;}
-.approval-add table th{background:#F5F5F5;border-left: 1px solid #D7D7D7;line-height: 59px;font-size: 16px;}
-.approval-add table th:first-child{border-left: none;}
-.approval-add table td{text-align: center;line-height: 34px;font-size: 16px;}
-.approval-add table tr.td-start td{padding-top: 14px;}
+.approval-table {max-height:199px; overflow-x: hidden; overflow-y: auto; border-top: 1px solid #bbb; border-bottom: 1px solid #D7D7D7;padding-bottom: 14px;}
+.approval-table th{font-weight: normal;background:#F5F5F5;border-left: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;line-height: 59px;font-size: 16px;}
+.approval-table th:first-child{border-left: none;}
+.approval-table tbody tr:first-child td {padding-top: 20px;}
+.approval-table td{text-align: center; font-size: 16px; padding: 6px 10px;}
+.approval-table tr.td-start td{padding-top: 14px;}
 .lyPopup .popup-cont .lyPopCont .approval-add .btn-area{text-align: right; padding-top:20px;}
+
 
 
 /* ==========================================================================
