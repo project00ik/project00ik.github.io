@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="icon" transform="translate(-1260 -1055)">
+    <rect id="area" width="60" height="60" transform="translate(1260 1055)" fill="none"/>
+    <g id="그룹_140" data-name="그룹 140" transform="translate(0 -5)">
+      <path id="패스_270" data-name="패스 270" d="M1268,1102.167l12-12,12,6,12-12" transform="translate(3 -10.167)" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle id="타원_9" data-name="타원 9" cx="2.5" cy="2.5" r="2.5" transform="translate(1269 1089)" fill="#fff"/>
+      <circle id="타원_10" data-name="타원 10" cx="2.5" cy="2.5" r="2.5" transform="translate(1281 1078)" fill="#fff"/>
+      <circle id="타원_11" data-name="타원 11" cx="2.5" cy="2.5" r="2.5" transform="translate(1292 1083)" fill="#fff"/>
+      <circle id="타원_12" data-name="타원 12" cx="2.5" cy="2.5" r="2.5" transform="translate(1306 1070)" fill="#fff"/>
+    </g>
+    <g id="그룹_138" data-name="그룹 138" transform="translate(0 -3)">
+      <g id="사각형_538" data-name="사각형 538" transform="translate(1263 1062)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="54" height="42" stroke="none"/>
+        <rect x="1" y="1" width="52" height="40" fill="none"/>
+      </g>
+      <rect id="사각형_539" data-name="사각형 539" width="2" height="10" rx="1" transform="translate(1280 1103)" fill="#fff"/>
+      <rect id="사각형_540" data-name="사각형 540" width="2" height="10" rx="1" transform="translate(1298 1103)" fill="#fff"/>
+      <rect id="사각형_541" data-name="사각형 541" width="36" height="2" rx="1" transform="translate(1272 1112)" fill="#fff"/>
+      <rect id="사각형_542" data-name="사각형 542" width="54" height="2" rx="1" transform="translate(1263 1096)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
