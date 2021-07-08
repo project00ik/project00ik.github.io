@@ -45,7 +45,7 @@
 .option-box .option-price > li:last-child {padding-bottom:2px; flex:2; text-align: right;}
 .option-box .option-price .price {font-size:18px; display:inline-block}
 .option-box .option-price .btn-xs-small {margin-left:10px;}
-.option-box .option-price .price > b {font-size:25px; vertical-align: baseline; font-weight: 700;}
+.option-box .option-price .price > b {font-size:24px; vertical-align: baseline; font-weight: 700;}
 .option-box .minimum-order {margin-top:3px; font-size: 13px; color: #666;}
 .option-box .normal-price {font-size: 16px; color: #999; text-decoration:line-through;}
 .pro-detail-info .option-box .normal-price {margin-right: 92px;}
@@ -371,14 +371,14 @@
 .ly-buyNowLy .pro-detail-slide .productDetaileSlide2 {width:100%;}
 .ly-buyNowLy .pro-detail-slide .swiper-slide .product-img {width:100%; height:390px;}
 .ly-buyNowLy .option-wrap {width:390px; height: 568px; float:right;}
-.ly-buyNowLy .pro-detail-info {width:100%; margin:0; padding-bottom:10px; border-bottom: 1px solid #000;}
+.ly-buyNowLy .pro-detail-info {width:100%; margin:0; padding-bottom:12px; border-bottom: 1px solid #000;}
 .ly-buyNowLy .pro-detail-info .price-area {margin-top:10px;}
 .ly-buyNowLy .pro-detail-info .product-name {margin-top:5px; overflow:hidden; text-overflow:ellipsis; display:inline-block; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-wrod; font-size:22px;}
 .ly-buyNowLy .pro-detail-info .brand {margin-top:0;}
 .ly-buyNowLy .pro-detail-info .normal-price {margin-top:10px; display:inline-block; color:#999; font-size:14px; text-decoration: line-through;}
 .ly-buyNowLy .pro-detail-info .normal-price > b {font-size:16px; font-weight: 400; vertical-align: baseline;}
-.ly-buyNowLy .pro-detail-info .price-area .price {font-size: 20px;}
-.ly-buyNowLy .pro-detail-info .price-area .price > b {font-size: 28px;}
+.ly-buyNowLy .pro-detail-info .price-area .price {font-size: 18px;}
+.ly-buyNowLy .pro-detail-info .price-area .price > b {font-size: 24px;}
 .ly-buyNowLy .option-result {height:222px; overflow-x: hidden; overflow-y: auto;}
 /* .ly-buyNowLy .option-result {height:184px; overflow-x: hidden; overflow-y: auto; margin-top: 10px;} */
 .ly-buyNowLy .option-result.selLeng0 {height:327px;}
