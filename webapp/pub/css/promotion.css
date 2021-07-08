@@ -329,9 +329,11 @@
 .service-content .service-info-05 > div span{line-height: 49px;width: 100%;display: inline-block;color:#fff;background:#346DD0;font-size:18px;}
 .service-content .service-info-05 > div p{padding:44px 0 43px;border: 1px solid #346DD0;line-height: 19px;}
 
+.service-content .service-info-06 {padding-bottom: 120px;}
 .service-content .service-info-06 .tit {padding-bottom: 50px;}
-.service-content .service-info-06 > div {display: flex; text-align: center; justify-content: center;}
+.service-content .service-info-06 > div {display: flex; text-align: center; justify-content: center; align-items: center;}
 .service-content .service-info-06 > div .circle {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 130px; height: 130px; border-radius: 50%; background: #12B5CF;}
+.service-content .service-info-06 > div .circle.center {width: 150px; height: 150px;}
 .service-content .service-info-06 > div .circle i {width: 60px; height: 60px;}
 .service-content .service-info-06 > div .circle i.icon-01 {background: url(../images/common/icon_info_01.svg) 0 0 no-repeat;}
 .service-content .service-info-06 > div .circle i.icon-02 {background: url(../images/common/icon_info_02.svg) 0 0 no-repeat;}
@@ -586,9 +588,11 @@
   .service-content .service-info-05 > div span{font-size: 16px;}
   .service-content .service-info-05 > div p{font-size: 15px; padding: 30px 0;}
 
+  .service-content .service-info-06 {padding-bottom: 0;}
   .service-content .service-info-06 .tit {padding-bottom: 40px;}
   .service-content .service-info-06 > div {flex-direction: column; align-items: center;}
   .service-content .service-info-06 > div .circle {width: 120px; height: 120px;}
+  .service-content .service-info-06 > div .circle.center {width: 140px; height: 140px;}
   .service-content .service-info-06 > div .circle p {font-size: 15px; padding-top: 5px;}
   .service-content .service-info-06 > div .arrow-con {flex-direction: row; width: 100%; margin: 16px 0;}
   .service-content .service-info-06 > div .arrow-con div {width: auto; height: 70px; flex: 1; display: flex; align-items: center;}
