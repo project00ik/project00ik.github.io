@@ -189,7 +189,6 @@
 .sub-content.insurance-cont .promt-banner{width: 1200px;margin: 60px auto 100px;}
 .sub-content.insurance-cont .bg-blue{background:#F3F8FF;}
 .sub-content.insurance-cont .inner{width: 1200px; margin: 0 auto;}
-.sub-content.insurance-cont .inner > div{padding-bottom: 100px;}
 .insurance-cont .promt-banner{margin-bottom: 100px;}
 .insurance-cont .tab-style3{width: 600px;margin: 0 auto;}
 .insurance-cont .tab-style3 > li{width: 50%;}
@@ -197,7 +196,7 @@
 .insurance-cont .tit-txt + .sub-txt{margin-top: 30px;margin-left: 0;}
 .insurance-cont .sub-txt{font-size: 18px;text-align: center;}
 .insurance-cont .sub-txt em{color:#346DD0;text-align: center;vertical-align: top;}
-.insurance-cont .tab-cont{padding-top: 70px;}
+.insurance-cont .tab-cont{padding: 70px 0 0;}
 .insurance-cont .circle{width:110px; line-height: 110px;border-radius: 50%;font-size: 16px;background:#2D3A52;text-align: center;color:#fff;margin: 0 auto;}
 .insurance-cont .report01{display: flex;padding:70px 50px 100px}
 .insurance-cont .report01 > div{width: calc(50% - 9px);position: relative;}
@@ -550,6 +549,7 @@
   .insurance-cont .suggestion-goods .notice-wrap p{font-size: 14px;}
   .insurance-cont .suggestion-goods .list-con .list-in > li > label{width: 180px;}
   .sub-content.insurance-cont .btn-area-c{margin:0 0;padding-bottom: 0 !important;}
+  .insurance-cont .tab-cont {padding-top:50px;}
 
   /* 서비스소개 */
   .sub-content.service-content .tit-type1-2{padding:8px 38px;border-bottom:1px solid #d7d7d7}
