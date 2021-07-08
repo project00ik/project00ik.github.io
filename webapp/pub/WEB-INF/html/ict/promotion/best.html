@@ -13783,10 +13783,10 @@
       optionResultHeight(); // 바로구매/장바구니 팝업 옵션 높이 제어 js
       liNum = function(){
         //리스트 번호
-        var $proli = $('.product-list').find('li');
+        var $proli = $('.best-100').find('li');
         $proli.each(function(){
           var indexNum = $(this).index() + 1;
-          $(this).find('dt').after('<span class="li-num">' + indexNum + '</span>');
+          $(this).find('dt > img').after('<span class="li-num">' + indexNum + '</span>');
           if(indexNum <= 10){
             $(this).find('.li-num').addClass('top10');
           }
