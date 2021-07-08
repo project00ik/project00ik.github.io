@@ -2,7 +2,6 @@
     회원가입
 ========================================================================== */
 .join-content .tit-type1-2 {margin-bottom: 50px;}
-.join-list-con .req {/*display: inline-block;*/ font-size: 16px; color: #346dd0; line-height: 100%; font-style: normal; vertical-align: baseline; padding: 0 3px;}
 .join-list-con .form-layout {flex: 1;}
 .join-list-con .tit-type3 {text-align: left; height: 24px; line-height: 24px;}
 .join-list-con .tit-area {margin-bottom: 0; border-bottom: 2px solid #000; padding-bottom: 10px;}

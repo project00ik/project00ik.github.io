@@ -582,14 +582,15 @@ button.btn-style-s1 {line-height:25px;}
 .point-color2 {color:#666;}
 .point-color3 {color:#346dd0;}
 
+/* 필수항목 */
+.req {font-size: 16px; color: #346dd0; line-height: 100%; font-style: normal; vertical-align: baseline; padding: 0 3px;}
+
+/* 텍스트 꾸밈 */
 .red-txt {width: 100%; text-align: left; padding: 10px; font-size: 13px; color: #f00; background: #f5f5f5;}
 .list-file-con .red-txt {width:auto; margin:10px 20px 0;}
 .join-txt {font-size: 16px; color: #000; word-break: keep-all;}
 .join-txt ~ .join-txt {padding-top: 6px;}
 .join-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
-.join-txt2 {text-align: right; font-size: 16px; color: #000; word-break: keep-all;}
-.join-txt2:before {content: '*'; display: inline-block; margin-right: 3px;}
-.join-txt2 span {color: #346DD0; vertical-align: top;}
 .join-txt3 {font-size: 16px; color: #666; padding-left: 12px;}
 .notice-txt {font-size: 14px; color: #666; margin-top: 20px; text-indent: -8px; margin-left: 16px;}
 .notice-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
