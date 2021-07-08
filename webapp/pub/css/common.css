@@ -918,7 +918,9 @@ textarea + .cot b {vertical-align: top;}
 .table-area col.w21 {width:22%;}
 
 /* 파일업로드(as-is그대로 영역) */
-.file-upload-area {width:100%; padding-top:10px;}
+.file-upload-area {width:100%;}
+.popup-wrap .file-upload-area {width:100%; padding-top:10px;}
+.join-list-con .file-upload-area {padding-top:20px;}
 
 /* 로딩바 */
 .loading-wrap {width:100%; height:100%; background:rgba(255, 255, 255, 0.7); position:fixed; top:0; left:0; bottom:0; right:0; z-index:99999; display:flex; align-items: center; justify-content: center;}

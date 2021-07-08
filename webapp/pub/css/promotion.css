@@ -190,7 +190,6 @@
 .sub-content.insurance-cont .bg-blue{background:#F3F8FF;}
 .sub-content.insurance-cont .inner{width: 1200px; margin: 0 auto;}
 .sub-content.insurance-cont .inner > div{padding-bottom: 100px;}
-.sub-content.insurance-cont .btn-area-c{padding-top:0;}
 .insurance-cont .promt-banner{margin-bottom: 100px;}
 .insurance-cont .tab-style3{width: 600px;margin: 0 auto;}
 .insurance-cont .tab-style3 > li{width: 50%;}
@@ -280,7 +279,6 @@
 .insurance-cont .suggestion-goods textarea.textarea{height: 219px;}
 .insurance-cont .suggestion-goods .list-con .list-in > li div{flex:inherit;width: 645px;max-width: 100%;}
 .insurance-cont .suggestion-goods .check-style1{margin-right: 50px;}
-.insurance-cont .suggestion-goods .notice-wrap{background: transparent;margin:20px 0 70px;}
 .insurance-cont .suggestion-goods .notice-wrap p{padding-left: 10px;font-size: 15px;color:#666}
 .insurance-cont .suggestion-goods .notice-wrap p::before{content: "*";display: inline-block;margin-left: -9px;padding-right: 3px;}
 
