@@ -880,7 +880,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style3 table th {background:#f5f5f5; font-weight:normal;}
 
 /* 간격작은 테이블 */
-.table-area.table-style4 {border-top:1px solid #000; }
+.table-area.table-style4 {border-bottom: 0;}
 .table-area.table-style4 table.ta-c td {text-align: center;}
 .table-area.table-style4 table {color:#000; font-size:16px; line-height: 19px;}
 .table-area.table-style4 table th,
