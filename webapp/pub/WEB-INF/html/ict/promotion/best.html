@@ -13781,18 +13781,17 @@
       ========================================================================== */
       delBtn(); // 바로구매/장바구니 팝업 옵션 삭제
       optionResultHeight(); // 바로구매/장바구니 팝업 옵션 높이 제어 js
-      liNum = function(){
-        //리스트 번호
-        var $proli = $('.best-100').find('li');
-        $proli.each(function(){
-          var indexNum = $(this).index() + 1;
-          $(this).find('dt > img').after('<span class="li-num">' + indexNum + '</span>');
-          if(indexNum <= 10){
-            $(this).find('.li-num').addClass('top10');
-          }
-        })
-      }
-      liNum();//리스트 번호
+      
+      // 베스트 상품 리스트 번호
+      var $proli = $('.best-100').find('li');
+      $proli.each(function(){
+        var indexNum = $(this).index() + 1;
+        $(this).find('dt > img').after('<span class="li-num">' + indexNum + '</span>');
+        if(indexNum <= 10){
+          $(this).find('.li-num').addClass('top10');
+        }
+      });
+      
 
       // 바로구매/장바구니 상품슬라이드
       // 썸네일
