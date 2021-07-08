@@ -50,8 +50,8 @@
 .notice-detail .date  {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
 .notice-detail > dd {width:100%;}
 .notice-detail .notice-file-upload {width: 100%; margin-bottom: 30px; display:flex; align-items: center;}
-.notice-detail .notice-file-upload > dt {width:99px; padding-left:20px; font-size:16px; font-weight: 400;}
-.notice-detail .notice-file-upload > dd {flex:1; background:#f5f5f5; overflow: auto;}
+.notice-detail .notice-file-upload > dt {display: none;width:99px; padding-left:20px; font-size:16px; font-weight: 400;}
+.notice-detail .notice-file-upload > dd {flex:1; }
 .notice-detail .html-area {width:100%; padding:30px 20px; word-break: keep-all; font-size:16px; color:#666; line-height:19px;}
 .notice-detail .notice-bt-list {border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;}
 .notice-detail .notice-bt-list > li {padding:18px 20px 18px 76px; position: relative;}
