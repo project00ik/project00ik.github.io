@@ -4208,17 +4208,17 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-<textarea class="codeArea">
-	// 베스트 상품 리스트 번호
-	var $proli = $('.best-100').find('li');
-	$proli.each(function(){
-		var indexNum = $(this).index() + 1;
-		$(this).find('dt > img').after('<span class="li-num">' + indexNum + '</span>');
-		if(indexNum <= 10){
-			$(this).find('.li-num').addClass('top10');
-		}
-	})
-</textarea>
+								<textarea class="codeArea">
+									<!-- // 베스트 상품 리스트 번호
+									var $proli = $('.best-100').find('li');
+									$proli.each(function(){
+										var indexNum = $(this).index() + 1;
+										$(this).find('dt > img').after('<span class="li-num">' + indexNum + '</span>');
+										if(indexNum <= 10){
+											$(this).find('.li-num').addClass('top10');
+										}
+									}) -->
+								</textarea>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -4365,7 +4365,6 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 										</div>
 										<!--// 할인율이 없는경우 -->
 									</li>
-									
                 </ul>
 							</div>
 							<!-- html 보기 -->
@@ -4375,6 +4374,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 								</textarea>
 							</pre>
 							<!--// html 보기 -->
+						</div>
 					</div>
 				</div>
 			</section>
