@@ -331,7 +331,8 @@
 .column-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 
 .excel-wrap {width:100%; min-height: 280px;}
-/* .excel-wrap {width:100%; background: #f5f5f5;  min-height: 280px;} */
+.excel-wrap + .file-upload-area {margin-top:10px;}
+
 
 .pop-tax .pop-ip-area > label {width: 150px; padding-left: 0;}
 .pop-tax .pop-ip-area label + .form-layout {width: calc(100% - 150px);}
@@ -582,6 +583,7 @@ button.btn-style-s1 {line-height:25px;}
 .point-color3 {color:#346dd0;}
 
 .red-txt {width: 100%; text-align: left; padding: 10px; font-size: 13px; color: #f00; background: #f5f5f5;}
+.list-file-con .red-txt {width:auto; margin:10px 20px 0;}
 .join-txt {font-size: 16px; color: #000; word-break: keep-all;}
 .join-txt ~ .join-txt {padding-top: 6px;}
 .join-txt:before {content: '※'; display: inline-block; margin-right: 3px;}
