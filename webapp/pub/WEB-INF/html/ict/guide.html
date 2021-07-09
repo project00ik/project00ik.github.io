@@ -63,6 +63,8 @@
 		.guide .icon > span {width:50px; height:50px; margin:3px; display:inline-block;}
 		.guide .sub-content {width:100%; min-height:auto; margin:0;}
 		.guide .popup-cont {margin: 0 auto; background:#fff;}
+		.guide .mypage-cont {min-height:auto;}
+		.guide .mypage-cont .product-list-wrap {margin:0;}
 		@media only screen and (max-width:800px){
 			.guide .tit-type1-2 {top:0;}
 			.guide .popup-cont {width:calc(100% + 40px); margin:0 -20px; }
@@ -3383,19 +3385,74 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									TAB3 내용
 								</div>
 							</div>
-							<!--// 탭2 -->
+							<!--// 탭3 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 탭1 --&gt;
+	&lt;div class="tab-area tabArea"&gt;
+		&lt;ul class="tab-btn-list tab-style1"&gt;
+			&lt;li class="tabBtn" data-tab="tab1"&gt;TAB1&lt;/li&gt;
+			&lt;li class="tabBtn" data-tab="tab2"&gt;TAB2&lt;/li&gt;
+			&lt;li class="tabBtn" data-tab="tab3"&gt;TAB3&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class="tab-cont tabCont" id="tab1"&gt;
+			TAB1 내용
+		&lt;/div&gt;
+		&lt;div class="tab-cont tabCont" id="tab2"&gt;
+			TAB2 내용
+		&lt;/div&gt;
+		&lt;div class="tab-cont tabCont" id="tab3"&gt;
+			TAB3 내용
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--// 탭1 --&gt;
+	&lt;!-- 탭2 --&gt;
+	&lt;div class="tab-area tabArea"&gt;
+		&lt;ul class="tab-btn-list tab-style2"&gt;
+			&lt;li class="tabBtn" data-tab="tab2-1"&gt;TAB1&lt;/li&gt;
+			&lt;li class="tabBtn" data-tab="tab2-2"&gt;TAB2&lt;/li&gt;
+			&lt;li class="tabBtn" data-tab="tab2-3"&gt;TAB3&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class="tab-cont tabCont" id="tab2-1"&gt;
+			TAB1 내용
+		&lt;/div&gt;
+		&lt;div class="tab-cont tabCont" id="tab2-2"&gt;
+			TAB2 내용
+		&lt;/div&gt;
+		&lt;div class="tab-cont tabCont" id="tab2-3"&gt;
+			TAB3 내용
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--// 탭2 --&gt;
+	&lt;!-- 탭3 --&gt;
+	&lt;div class="tab-area tabArea"&gt;
+		&lt;ul class="tab-btn-list tab-style3"&gt;
+			&lt;li class="tabBtn" data-tab="tab3-1"&gt;TAB1&lt;/li&gt;
+			&lt;li class="tabBtn" data-tab="tab3-2"&gt;TAB2&lt;/li&gt;
+			&lt;li class="tabBtn" data-tab="tab3-3"&gt;TAB3&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class="tab-cont tabCont" id="tab3-1"&gt;
+			TAB1 내용
+		&lt;/div&gt;
+		&lt;div class="tab-cont tabCont" id="tab3-2"&gt;
+			TAB2 내용
+		&lt;/div&gt;
+		&lt;div class="tab-cont tabCont" id="tab3-3"&gt;
+			TAB3 내용
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!--// 탭3 --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	tab(); // 탭
+</textarea>
 							</div>
 							<!--// js 보기 -->
 						</div>
@@ -3610,8 +3667,210 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 유닛(리스트형) --&gt;
+	&lt;!-- 리스트 영역 --&gt;
+	&lt;div class="product-list-wrap"&gt;
+		&lt;div class="product-list"&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;!-- 품절일 경우 --&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt class="soldeout"&gt;
+							&lt;span class="soldeout-txt"&gt;SOLD&lt;br&gt;OUT&lt;/span&gt;
+							&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')"&gt;재입고알림&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!--// 품절일 경우 --&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;로그인 후 가격 확인 가능&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;!-- 할인율이 없는경우 --&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!--// 할인율이 없는경우 --&gt;
+			&lt;/li&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- // 리스트 영역 --&gt;
+	&lt;!--// 유닛(리스트형) --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
@@ -3825,8 +4084,213 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 유닛(리스트형) --&gt;
+	&lt;!-- 리스트 영역 --&gt;
+	&lt;div class="product-list-wrap"&gt;
+		&lt;div class="product-list"&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;!-- 품절일 경우 --&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt class="soldeout"&gt;
+							&lt;span class="soldeout-txt"&gt;SOLD&lt;br&gt;OUT&lt;/span&gt;
+							&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="javascript:;" class="btn btn-restock" onclick="lyOpen('restockPopup2')"&gt;재입고알림&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!--// 품절일 경우 --&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;로그인 후 가격 확인 가능&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;!-- 할인율이 없는경우 --&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="standard"&gt;W210*H297mm, W99.06*H33.85mm, 16칸, 우편발송, 100매/EA, 백색&lt;/p&gt;
+							&lt;div class="satis-large"&gt;
+								&lt;p class="rating"&gt;
+									&lt;span class="star-m star4"&gt;별점&lt;/span&gt;&lt;!-- star0 ~ star5 --&gt;
+								&lt;/p&gt;
+								&lt;p class="tit"&gt;상품리뷰(&lt;span class="num"&gt;114&lt;/span&gt;)&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;!--// 할인율이 없는경우 --&gt;
+			&lt;/li&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- // 리스트 영역 --&gt;
+	&lt;!--// 유닛(리스트형) --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						
@@ -4014,13 +4478,192 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 유닛(메인 인기상품형) --&gt;
+	&lt;div class="product-list-wrap"&gt;
+		&lt;ul class="product-list best-list"&gt;
+			&lt;li class="product-1st"&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/img_13.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;!-- 로그인 후 가격 노출 --&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;!-- 로그인 전 노출 메세지 --&gt;
+							&lt;!-- &lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;로그인 후 가격 확인 가능&lt;/p&gt;
+							&lt;/div&gt; --&gt;
+							&lt;!--// 로그인 전 노출 메세지 --&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/img_16.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;!-- 로그인 후 가격 노출  --&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;!-- 로그인 전 노출 메세지 --&gt;
+							&lt;!-- &lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;로그인 후 가격 확인 가능&lt;/p&gt;
+							&lt;/div&gt; --&gt;
+							&lt;!--// 로그인 전 노출 메세지 --&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/img_17.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+					&lt;div class="unit-type1"&gt;
+						&lt;dl class="unit-area"&gt;
+							&lt;dt&gt;&lt;img src="../../../images/main/img_18.png" alt="선로 설비공사"&gt;
+							&lt;/dt&gt;
+							&lt;dd&gt;
+								&lt;div class="flag-area"&gt;
+									&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+									&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+									&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+									&lt;!-- 
+									&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+									&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+									&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+									--&gt;
+								&lt;/div&gt;
+								&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+								&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+								&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;div class="price-area"&gt;
+									&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+									&lt;p class="sale"&gt;10%&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/dd&gt;
+						&lt;/dl&gt;
+						&lt;div class="unit-layer"&gt;
+							&lt;!-- 상품링크 --&gt;
+							&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+							&lt;!--// 상품링크 --&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/img_19.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;!--// 유닛(메인 인기상품형) --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">유닛(인기상품형)</h3>
 						<div class="guide-cont">
+							<!-- 유닛(인기상품형) -->
 							<div class="product-list-wrap">
 								<ul class="product-list best-100">
 									<li>
@@ -4197,36 +4840,216 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									</li>
 								</ul>
 							</div>
-							
+							<!--// 유닛(인기상품형) -->
+
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 유닛(인기상품형) --&gt;
+	&lt;div class="product-list-wrap"&gt;
+		&lt;ul class="product-list best-100"&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;!--// 유닛(인기상품형) --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 							<div class="js-code">
-								<textarea class="codeArea">
-									<!-- // 베스트 상품 리스트 번호
-									var $proli = $('.best-100').find('li');
-									$proli.each(function(){
-										var indexNum = $(this).index() + 1;
-										$(this).find('dt > img').after('<span class="li-num">' + indexNum + '</span>');
-										if(indexNum <= 10){
-											$(this).find('.li-num').addClass('top10');
-										}
-									}) -->
-								</textarea>
+<textarea class="codeArea">
+	// 베스트 상품 리스트 번호
+	var $proli = $('.best-100').find('li');
+	$proli.each(function(){
+		var indexNum = $(this).index() + 1;
+		$(this).find('dt &gt; img').after('&lt;span class="li-num"&gt;' + indexNum + '&lt;/span&gt;');
+		if(indexNum &lt;= 10){
+			$(this).find('.li-num').addClass('top10');
+		}
+	})
+</textarea>
 							</div>
 							<!--// js 보기 -->
 						</div>
 
 						<h3 class="guide-sub-tit">유닛(공동구매형)</h3>
 						<div class="guide-cont">
+							<!-- 유닛(공동구매형) -->
 							<div class="product-list-wrap">
-                <ul class="product-list joint-list">
+								<ul class="product-list joint-list">
 									<li>
 										<div class="unit-type1">
 											<dl class="unit-area">
@@ -4365,13 +5188,438 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 										</div>
 										<!--// 할인율이 없는경우 -->
 									</li>
-                </ul>
+								</ul>
 							</div>
+							<!--// 유닛(공동구매형) -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 유닛(공동구매형) --&gt;
+	&lt;div class="product-list-wrap"&gt;
+		&lt;ul class="product-list joint-list"&gt;
+			&lt;li&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="volume-area"&gt;
+								&lt;p&gt;한정수량 1,000개 /&lt;span class="count"&gt;798개&lt;/span&gt;&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;!-- 품절일 경우 --&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt class="soldeout"&gt;
+							&lt;span class="soldeout-txt"&gt;SOLD&lt;br&gt;OUT&lt;/span&gt;
+							&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;p class="sale"&gt;10%&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="volume-area"&gt;
+								&lt;p&gt;한정수량 1,000개 /&lt;span class="count"&gt;798개&lt;/span&gt;&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="javascript:;" class="btn btn-restock"&gt;재입고알림&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;!--// 품절일 경우 --&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;!-- 할인율이 없는경우 --&gt;
+				&lt;div class="unit-type1"&gt;
+					&lt;dl class="unit-area"&gt;
+						&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+						&lt;/dt&gt;
+						&lt;dd&gt;
+							&lt;div class="flag-area"&gt;
+								&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+								&lt;!-- 
+								&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+								&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+								--&gt;
+							&lt;/div&gt;
+							&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+							&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+								6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+							&lt;div class="price-area"&gt;
+								&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+							&lt;/div&gt;
+							&lt;div class="volume-area"&gt;
+								&lt;p&gt;한정수량 1,000개 /&lt;span class="count"&gt;798개&lt;/span&gt;&lt;/p&gt;
+							&lt;/div&gt;
+						&lt;/dd&gt;
+					&lt;/dl&gt;
+					&lt;div class="unit-layer"&gt;
+						&lt;!-- 상품링크 --&gt;
+						&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+						&lt;!--// 상품링크 --&gt;
+						&lt;ul class="unit-under-btn"&gt;
+							&lt;li&gt;
+								&lt;a href="#바로구매" class="btn btn-buynow" onclick="buyNowLy('buyNowLayer')"&gt;바로구매&lt;/a&gt;
+							&lt;/li&gt;
+							&lt;li&gt;
+								&lt;a href="#장바구니" class="btn btn-cart" onclick="buyNowLy('cartLayer')"&gt;장바구니&lt;/a&gt;
+								&lt;a href="#찜하기" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+					&lt;label class="check-style2 chk"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;!--// 할인율이 없는경우 --&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;!--// 유닛(공동구매형) --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+
+						<h3 class="guide-sub-tit">유닛(마이페이지형)</h3>
+						<div class="guide-cont">
+							<!-- 유닛(마이페이지형) -->
+							<div class="mypage-cont">
+								<div class="product-list-wrap">
+									<ul class="product-list">
+										<li>
+											<!-- 기본 -->
+											<div class="unit-type1">
+												<dl class="unit-area">
+													<dt><img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"></dt>
+													<dd>
+														<div class="flag-area">
+																<div class="flag-txt blue">MD추천</div>
+																<div class="flag-txt blue">특가전</div>
+																<div class="flag-txt blue">공동구매</div>
+																<!-- 
+																<div class="flag-txt blue">특가전</div>
+																<div class="flag-txt blue">최저가</div>
+																<div class="flag-txt blue">신규출시</div>
+																-->
+														</div>
+														<p class="brand">Aimsak</p>
+														<p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+																6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+														<p class="normal-price"><b>99,900,000</b>원</p>
+														<div class="price-area">
+																<p class="price"><b>100,000</b>원</p>
+																<p class="sale">10%</p>
+														</div>
+													</dd>
+												</dl>
+												<div class="unit-layer">
+													<!-- 상품링크 -->
+													<a href="#상품링크" class="unit-link"></a>
+													<!--// 상품링크 -->
+													<ul class="unit-under-btn">
+														<li>
+															<a href="javascript:;" class="btn btn-buynow">바로구매</a>
+														</li>
+														<li>
+															<a href="javascript:;" class="btn btn-cart">장바구니</a>
+															<a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!--// 기본 -->
+										</li>
+										<li>
+											<!-- 품절일 경우 -->
+											<div class="unit-type1">
+												<dl class="unit-area">
+													<dt class="soldeout">
+														<span class="soldeout-txt">SOLD<br>OUT</span>
+														<img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사">
+													</dt>
+													<dd>
+														<div class="flag-area">
+																<div class="flag-txt blue">MD추천</div>
+																<div class="flag-txt blue">특가전</div>
+																<div class="flag-txt blue">공동구매</div>
+																<!-- 
+																<div class="flag-txt blue">특가전</div>
+																<div class="flag-txt blue">최저가</div>
+																<div class="flag-txt blue">신규출시</div>
+																-->
+														</div>
+														<p class="brand">Aimsak</p>
+														<p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+																6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+														<p class="normal-price"><b>99,900,000</b>원</p>
+														<div class="price-area">
+															<p class="price"><b>100,000</b>원</p>
+															<p class="sale">10%</p>
+														</div>
+													</dd>
+												</dl>
+												<div class="unit-layer">
+													<!-- 상품링크 -->
+													<a href="#상품링크" class="unit-link"></a>
+													<!--// 상품링크 -->
+													<ul class="unit-under-btn">
+														<li>
+																<a href="javascript:;" class="btn btn-restock">재입고알림</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!--// 품절일 경우 -->
+										</li>
+										<li>
+											<!-- 할인율이 없는경우 -->
+											<div class="unit-type1">
+												<dl class="unit-area">
+													<dt><img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"></dt>
+													<dd>
+														<div class="flag-area">
+																<div class="flag-txt blue">MD추천</div>
+																<div class="flag-txt blue">특가전</div>
+																<div class="flag-txt blue">공동구매</div>
+																<!-- 
+																<div class="flag-txt blue">특가전</div>
+																<div class="flag-txt blue">최저가</div>
+																<div class="flag-txt blue">신규출시</div>
+																-->
+														</div>
+														<p class="brand">Aimsak</p>
+														<p class="product-name ellipsis-multiple2">BL22T806 해머드릴 21.6V
+																6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah</p>
+														<div class="price-area">
+																<p class="price"><b>100,000</b>원</p>
+														</div>
+													</dd>
+												</dl>
+												<div class="unit-layer">
+													<!-- 상품링크 -->
+													<a href="#상품링크" class="unit-link"></a>
+													<!--// 상품링크 -->
+													<ul class="unit-under-btn">
+														<li>
+															<a href="javascript:;" class="btn btn-buynow">바로구매</a>
+														</li>
+														<li>
+															<a href="javascript:;" class="btn btn-cart">장바구니</a>
+															<a href="javascript:;" class="btn btn-like tgBtn">찜하기</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!--// 할인율이 없는경우 -->
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!--// 유닛(마이페이지형) -->
+							
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 유닛(마이페이지형) --&gt;
+	&lt;div class="mypage-cont"&gt;
+		&lt;div class="product-list-wrap"&gt;
+			&lt;ul class="product-list"&gt;
+				&lt;li&gt;
+					&lt;!-- 기본 --&gt;
+					&lt;div class="unit-type1"&gt;
+						&lt;dl class="unit-area"&gt;
+							&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;&lt;/dt&gt;
+							&lt;dd&gt;
+								&lt;div class="flag-area"&gt;
+										&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+										&lt;!-- 
+										&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+										--&gt;
+								&lt;/div&gt;
+								&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+								&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+										6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+								&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;div class="price-area"&gt;
+										&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+										&lt;p class="sale"&gt;10%&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/dd&gt;
+						&lt;/dl&gt;
+						&lt;div class="unit-layer"&gt;
+							&lt;!-- 상품링크 --&gt;
+							&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+							&lt;!--// 상품링크 --&gt;
+							&lt;ul class="unit-under-btn"&gt;
+								&lt;li&gt;
+									&lt;a href="javascript:;" class="btn btn-buynow"&gt;바로구매&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="javascript:;" class="btn btn-cart"&gt;장바구니&lt;/a&gt;
+									&lt;a href="javascript:;" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;!--// 기본 --&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;!-- 품절일 경우 --&gt;
+					&lt;div class="unit-type1"&gt;
+						&lt;dl class="unit-area"&gt;
+							&lt;dt class="soldeout"&gt;
+								&lt;span class="soldeout-txt"&gt;SOLD&lt;br&gt;OUT&lt;/span&gt;
+								&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;
+							&lt;/dt&gt;
+							&lt;dd&gt;
+								&lt;div class="flag-area"&gt;
+										&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+										&lt;!-- 
+										&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+										--&gt;
+								&lt;/div&gt;
+								&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+								&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+										6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+								&lt;p class="normal-price"&gt;&lt;b&gt;99,900,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;div class="price-area"&gt;
+									&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+									&lt;p class="sale"&gt;10%&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/dd&gt;
+						&lt;/dl&gt;
+						&lt;div class="unit-layer"&gt;
+							&lt;!-- 상품링크 --&gt;
+							&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+							&lt;!--// 상품링크 --&gt;
+							&lt;ul class="unit-under-btn"&gt;
+								&lt;li&gt;
+										&lt;a href="javascript:;" class="btn btn-restock"&gt;재입고알림&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;!--// 품절일 경우 --&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;!-- 할인율이 없는경우 --&gt;
+					&lt;div class="unit-type1"&gt;
+						&lt;dl class="unit-area"&gt;
+							&lt;dt&gt;&lt;img src="../../../images/main/mdpick_ex_image1.png" alt="선로 설비공사"&gt;&lt;/dt&gt;
+							&lt;dd&gt;
+								&lt;div class="flag-area"&gt;
+										&lt;div class="flag-txt blue"&gt;MD추천&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;공동구매&lt;/div&gt;
+										&lt;!-- 
+										&lt;div class="flag-txt blue"&gt;특가전&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;최저가&lt;/div&gt;
+										&lt;div class="flag-txt blue"&gt;신규출시&lt;/div&gt;
+										--&gt;
+								&lt;/div&gt;
+								&lt;p class="brand"&gt;Aimsak&lt;/p&gt;
+								&lt;p class="product-name ellipsis-multiple2"&gt;BL22T806 해머드릴 21.6V
+										6.0Ah BL22T806 해머드릴 21.6V 6.0Ah BL22T806 해머드릴 21.6V 6.0Ah&lt;/p&gt;
+								&lt;div class="price-area"&gt;
+										&lt;p class="price"&gt;&lt;b&gt;100,000&lt;/b&gt;원&lt;/p&gt;
+								&lt;/div&gt;
+							&lt;/dd&gt;
+						&lt;/dl&gt;
+						&lt;div class="unit-layer"&gt;
+							&lt;!-- 상품링크 --&gt;
+							&lt;a href="#상품링크" class="unit-link"&gt;&lt;/a&gt;
+							&lt;!--// 상품링크 --&gt;
+							&lt;ul class="unit-under-btn"&gt;
+								&lt;li&gt;
+									&lt;a href="javascript:;" class="btn btn-buynow"&gt;바로구매&lt;/a&gt;
+								&lt;/li&gt;
+								&lt;li&gt;
+									&lt;a href="javascript:;" class="btn btn-cart"&gt;장바구니&lt;/a&gt;
+									&lt;a href="javascript:;" class="btn btn-like tgBtn"&gt;찜하기&lt;/a&gt;
+								&lt;/li&gt;
+							&lt;/ul&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;!--// 할인율이 없는경우 --&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- 유닛(마이페이지형) --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
