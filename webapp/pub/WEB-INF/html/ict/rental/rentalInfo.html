@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>kt commerce</title>
+  <meta charset="utf-8" />
+  <meta property="og:title" content="ktcommerce" />
+  <!-- style -->
+  <link rel="stylesheet" type="text/css" href="../../../../css/import.css?v=2020123001" />
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header-top">
+        <a href="#" class="bul-bar">로그아웃</a>
+        <a href="#" class="bul-bar">고객센터</a>
+      </div>
+      <div class="header-cont">
+        <h1 class="logo"><a href="#"><img src="../../../../images/layout/logo_ictmall.png" alt="ICTMALL 로고"></a>
+        </h1>
+        <div class="search-area">
+          <div class="inp-area">
+            <input type="search" name="" id="" class="inp" placeholder="기업 자재 일괄 구매는 ICTMALL에서!!!">
+            <button class="del">삭제</button>
+          </div>
+          <button class="btn btn-search">검색</button>
+        </div>
+        <div class="right-area">
+          <div class="icon-btn cart">
+            <a href="#">
+              장바구니
+              <span class="cart-num">99</span>
+            </a>
+          </div>
+          <div class="icon-btn member">
+            <a href="#">
+              개인
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="gnb-wrap">
+        <div class="gnb-area gnbPC">
+          <!-- header 카테고리 
+            [작업 시 참고 내용 (카테고리 총 3개)]
+            1. pc용 카테고리 2개 : header 카테고리와 메인 고정 카테고리 (메인에만 카테고리 2개 / 서브페이지는 header영역만 1개)
+            2. mobile용 카테고리 1개 : 레이어팝업 형태로 제일 하단에 위치함
+          -->
+          <!-- header 카테고리 -->
+          <div class="cate-area">
+            <button class="btn-cate btnCate">전체카테고리</button>
+            <button class="btn-cate moBtnCate">전체카테고리</button>
+        </div>
+        <!--// header 카테고리 -->
+          <div class="gnb">
+            <ul>
+              <li><a href="#">인기상품</a></li>
+              <li><a href="#">특가세일</a></li>
+              <li><a href="#">기획전</a></li>
+              <li><a href="#">보험</a></li>
+              <li><a href="#">렌탈</a></li>
+            </ul>
+          </div>
+          <ul class="gnb-right-area">
+            <div class="real-time-search">
+              <div class="swiper-container realtimeSearchSlide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="real-time-more realTimeMore">실시간 검색 더보기</button>
+              <div class="real-time-layer realtimeLayer">
+                <ul class="all-list">
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">1</em>
+                        <span class="txt ellipsis">PCV 절연테이프</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">2</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">3</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">4</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="realtime-area">
+                      <a href="javascript:;">
+                        <em class="num">5</em>
+                        <span class="txt ellipsis">DCS391N 전동스킬 18V 충전 원형톱</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+                <button class="layer-close realtimeLyClose">닫기</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+
+      <div class="sub-content insurance-cont">
+        <div class="promt-banner">
+          <img src="../../../../images/product/rental_bg.png" class="mo-hide" alt="렌탈 상단 pc배너">
+          <img src="../../../../images/product/mo_rental_bg.png" class="pc-hide" alt="렌탈 상단 mobile배너">
+          <div class="ban-text-area">
+            <p class="ban-tit">KT커머스가 제공하는<br>One-Stop 렌탈서비스</p>
+          </div>
+        </div>
+
+        <div class="tab-area">
+          <ul class="tab-btn-list tab-style3">
+            <li class="tabBtn on" data-tab="promt-tab1"><a href="#">렌탈서비스 소개</a></li>
+            <li class="tabBtn" data-tab="promt-tab2"><a href="#">렌탈서비스 상담신청</a></li>
+          </ul>
+          <div class="tab-cont tabCont" id="">
+            <div>
+              <div>
+                <div class="inner">
+                  <p class="sub-txt">
+                    KT그룹사 및 외부 MRO 고객사의 통합물량을 기반으로 전략적인 렌탈 정책을 적용하여<br>비용 절감 및 업무의 효율성을 극대화 할 수 있는 <em>통합 렌탈 서비스를 제공</em>합니다.
+                  </p>
+                  <div class="report01">
+                    <div>
+                      <p>고객사 개별 보험 가입 시</p>
+                      <div class="report-box">
+                        <div class="report01-img">
+                          <p class="circle">고객사</p>
+                          <p class="request">견적요청</p>
+                          <div>
+                            <span>보험사</span>
+                            <span>보험사</span>
+                            <span>보험사</span>
+                            <span>보험사</span>
+                            <span>보험사</span>
+                          </div>
+                        </div>
+                        <div class="dot"> 
+                          <ul>
+                            <li>일부 보험사 대상 거래를 통한 협상력 저하</li>
+                            <li>적정 보험료 및 담보 조건의 검증 어려움</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <p>KT 커머스를 통한 보험 가입 시</p>
+                      <div>
+                        <div class="report-box">
+                          <div class="report02-img">
+                            <div class="group-img">
+                              <span>그룹사</span>
+                              <span>그룹사</span>
+                              <span>그룹사</span>
+                              <span>그룹사</span>
+                              <span>그룹사</span>
+                            </div>
+                            <div class="">
+                              <p>KT그룹 물량 확보</p>
+                              <span class="circle">고객사</span>
+                              <span class="arr-03">보험컨설팅</span>
+                              <span class="circle kt">kt커머스</span>
+                              <p class="arr-04">견적비교/협상</p>
+                            </div>
+                            <div class="group-img insur">
+                              <span>보험사</span>
+                              <span>보험사</span>
+                              <span>보험사</span>
+                              <span>보험사</span>
+                              <span>보험사</span>
+                            </div>
+                          </div>
+                          <div class="dot"> 
+                            <ul>
+                              <li>KT그룹 물량 기반 국내 전 보험사 대상 협상 가능</li>
+                              <li>보험 전문 인력을 통한 보험 컨설팅 서비스 제공</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bg-blue">
+              <div class="inner">
+                <p class="tit-txt">제공 가치</p>
+                <p class="sub-txt">
+                  다양한 보험사와 보험상품을 비교/분석하여 고객사에 최적화된 보험상품을 제안하고 보험료를 절감하고 있으며,<br/>보험 가입부터 보상처리까지 모든 업무를 대행하여 고객사의 업무를 효율화하고 있습니다.
+                </p>
+                <div class="report02">
+                  <div class="report02-01">
+                    <div>
+                      <ul>
+                        <li>
+                          <span>보험상품 <em>최적화</em></span>
+                          <p>고객사 특성에 맞는 가입 담보 설정 및 불필요한 담보 제거 등 최적의 조건 컨설팅</p>
+                        </li>
+                        <li>
+                          <span>보험료 <em>절감</em></span>
+                          <p>국내 전 보험사 대상 비교견적 및 협상을 통해 최저 보험료 산출</p>
+                        </li>
+                        <li>
+                          <span>업무 <em>효율화</em></span>
+                          <p>보험 가입부터 사고접수 대행, 보험금 지급 지연 방지 등 보험 관련 모든 업무 대행</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="report02-02">
+                    <div>
+                      <div class="left">
+                        <p class="circle">보험상품</p>
+                      </div>
+                      <div class="text">
+                        <div class="tit">
+                          <p>복지관리</p>
+                          <p>자산관리</p>
+                          <p>사업관리</p>
+                        </div>
+                        <div class="txt">
+                          <p><em>운전자보험 ,</em><em>퇴직연금</em> 등</p>
+                          <p><em>재산종합보험, </em><em>동산종합보험, </em><em>화재보험, </em><em>도난보험</em> 등</p>
+                          <p><em>생산물배상책임보험, </em><em>임원배상책임보험, </em><em>개인정보보호배상책임보험</em> 등</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="left">
+                        <p class="circle">보장내용</p>
+                      </div>
+                      <div class="text">
+                        <div class="tit">
+                          <p>복지관리</p>
+                          <p>자산관리</p>
+                          <p>사업관리</p>
+                        </div>
+                        <div class="txt">
+                          <p>직원 복리후생 및 의료비 보장</p>
+                          <p>회사 자산 관련 리스크(화재, 도난, 파손 등) 예방</p>                      
+                          <p>영업활동 중 발생할 수 있는 각종 배상책임 보장</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="inner">
+                <p class="tit-txt">서비스 프로세스</p>
+                <p class="sub-txt">
+                  KT 커머스는 고객사의 보험 가입 요청 시 국내 전 보험사를 대상으로 비교견적 및 협상을 실시하여<br/>보험사별 담보 및 보험료 검증 후 최적의 조건으로 보험 가입을 제안하고 있습니다.
+                </p>
+                <div class="report03">
+                  <div>
+                    <ul>
+                      <li>
+                        <div class="num">
+                          <span>01</span>
+                          <p>보험가입 요청</p>
+                        </div>
+                        <div class="txt">
+                          <p>고객사와 협의 후<em>보험가입 진행</em></p>
+                          <div>
+                            <ul>
+                              <li>보험가입 자료 공유</li>
+                              <li>실무미팅</li>
+                              <li>고객사 리스크 점검</li>
+                              <li>보험가입조건 협의</li>
+                              <li>진행일정 협의</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="num">
+                          <span>02</span>
+                          <p>보험사 비교견적시행</p>
+                        </div>
+                        <div class="txt">
+                          <p>국내 보험사 대상<em>비교견적 실시</em></p>
+                          <div>
+                            <ul>
+                              <li>보험사 대상 비교견적 안내</li>
+                              <li>비교견적 시행</li>
+                              <li>보험사별 견적 수합</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="num">
+                          <span>03</span>
+                          <p>검토 및 제안</p>
+                        </div>
+                        <div class="txt">
+                          <p>견적결과 검토 후<em>보험가입 제안</em></p>
+                          <div>
+                            <ul>
+                              <li>보험사별 견적 검토</li>
+                              <li>가입 담보 검토</li>
+                              <li>보험료 검토</li>
+                              <li>고객사 대상 보험 가입제안</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="num">
+                          <span>04</span>
+                          <p>고객사 내부검토</p>
+                        </div>
+                        <div class="txt">
+                          <p>제안내용 검토 후<em>계약 진행 여부 결정</em></p>
+                          <div>
+                            <ul>
+                              <li>제안서 내부 검토</li>
+                              <li>최종 의사결정</li>
+                              <li>계약 진행 요청</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="num">
+                          <span>05</span>
+                          <p>최종 계약체결</p>
+                        </div>
+                        <div class="txt">
+                          <p>계약 요청 시<em>보험 계약 진행</em></p>
+                          <div>
+                            <ul>
+                              <li>보험사 계약요청</li>
+                              <li>계약 체결 서류 안내</li>
+                              <li>보험료 납부</li>
+                              <li>보험 증권 발송</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="num">
+                          <span>06</span>
+                          <p>사후관리 서비스</p>
+                        </div>
+                        <div class="txt">
+                          <p>보험 가입 후<em>사후관리 지원</em></p>
+                          <div>
+                            <ul>
+                              <li>계약 변경 관리</li>
+                              <li>사고 접수 대행</li>
+                              <li>보험금 지급 지연 방지</li>
+                              <li>기타 보험 업무 지원</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btn-area-c">
+                  <button class="btn btn-style-ml2">상담 신청하기</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-wrap">
+      <div class="footer">
+        <div class="footer-top">
+          <ul>
+            <li>회사소개</li>
+            <li>이용약관</li>
+            <li><b class="point-color1">개인정보처리방침</b></li>
+          </ul>
+          <ul class="question">
+            <li>상담문의 <a href="tel:1577-3712" class="phone-link">1577-3712</a></li>
+            <li>이메일문의 <a href="mailto:ktcommerce@kt.com" class="mail-link">ktcommerce@kt.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-cont">
+          <p class="footet-logo">
+            <img src="../../../../images/layout/logo_footer.png" alt="kt commerce 로고">
+          </p>
+          <div class="footer-info">
+            <span>서울시 강남구 광평로 47길 28 <br class="pc-hide">KT수서지점 4층 케이티커머스(주)</span>
+            <span>대표이사 : 조창환</span><br class="mo-hide">
+            <span>사업자등록번호 : 107-86-18163</span>
+            <span>통신판매신고 : 강남-1568</span>
+            <span>개인정보최고책임자 : 김태기 본부</span>
+          </div>
+          <p class="copyright">COPYRIGHT ⓒ kt commerce ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+
+  <!-- javascript -->
+  <script type="text/javascript" src="../../../../js/swiper.min.js"></script>
+  <script type="text/javascript" src="../../../../js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="../../../../js/ui-front.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      /* ==========================================================================
+          공통 js (ui-front.js)
+      ========================================================================== */
+      /* 레이아웃 */
+      allCategoryBtn(); // gnb 전체카테고리 열고 닫기
+      layoutCategory(); // 카테고리 레이어 이벤트
+      realtimeSearchSlide(); //header 실시간검색 swiper(plugin)
+      // quickTopBtn(); // 스크롤 최상단으로 이동
+      // quickFloating(); //퀵 플로팅 모바일 펼치기 js
+
+      /* 컨텐츠 공통 */
+      tab(); // 탭 
+      toggleBtn(); // 토글버튼
+      accordion(); // 아코디언
+      /* ==========================================================================
+          현재페이지에서만 사용 js
+      ========================================================================== */
+      pagination(); // 페이지네이션
+
+
+    });
+    
+  </script>
+  <!-- javascript -->
+</body>
+
+</html>
