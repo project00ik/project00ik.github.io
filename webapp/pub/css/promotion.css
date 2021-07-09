@@ -85,27 +85,29 @@
 .suggestion-goods .list-con  > .tit-type2-1:first-child {padding-top: 30px;}
 .suggestion-goods .list-con .tit-type2-1 {padding-top:0;}
 .suggestion-goods .list-con .list-in{margin-top:0px;border-top:none;}
+.suggestion-goods .list-con .list-in .form-layout +  label {margin-left:40px;}
 .suggestion-goods .list-con > p + .list-in{margin-top: 10px;border-top: 1px solid #bbb;}
 .suggestion-goods .list-con > .suggestion-tit + .list-in{margin-top: 10px;border-top: 1px solid #bbb;}
 .suggestion-goods .list-con .list-in > li > label{width: 150px;}
-.suggestion-goods .list-con .list-in > li div{margin-right: 40px;}
-.suggestion-goods .list-con .list-in > li div.suggestion-date{margin-right: 0px;max-width: 530px;}
-.suggestion-goods .list-con .list-in > li div.suggestion-date div{display: flex;flex: 1;}
+/* .suggestion-goods .list-con .list-in > li div{margin-right: 40px;} */
+.suggestion-goods .list-con .list-in > li .suggestion-date{margin-right: 0px;max-width: 530px;}
+.suggestion-goods .list-con .list-in > li .suggestion-date div{display: flex;flex: 1;}
 .suggestion-goods .list-con .list-in > li div:last-child{margin-right: 0px;}
 .suggestion-goods .list-con .list-in > li div.form-search{margin-right: 5px;width: 50%;}
 .suggestion-goods .list-con .list-in > li.name div{max-width: 323px;}
-.suggestion-goods .list-con .list-in > li div.radio{display: inline-table;max-width: calc(100% - 130px);}
-.suggestion-goods .list-con .list-in > li div.radio div:last-child{margin-top: 20px;}
-.suggestion-goods .list-con .list-in > li div.radio label{margin: 0 60px 0 0;}
-.suggestion-goods .list-con .list-in > li div.radio label.radio-style1{margin-right: 45px;}
-.suggestion-goods .list-con .list-in > li div.radio label span{font-size: 16px;font-weight: normal;}
-.suggestion-goods .list-con .list-in > li div.textarea-wrap{max-width: calc(100% - 130px);position: relative;display: inline-table;}
-.suggestion-goods .list-con .list-in > li div.textarea-wrap label{margin-top: 10px;}
-.suggestion-goods .list-con .list-in > li div.textarea-wrap .btn-right{margin: 0px;}
+.suggestion-goods .list-con .list-in > li .radio{display: inline-table;max-width: calc(100% - 130px);}
+.suggestion-goods .list-con .list-in > li .radio div:last-child{margin-top: 20px;}
+.suggestion-goods .list-con .list-in > li .radio label{margin: 0 60px 0 0;}
+.suggestion-goods .list-con .list-in > li .radio label.radio-style1{margin-right: 45px;}
+.suggestion-goods .list-con .list-in > li .radio label span{font-size: 16px;font-weight: normal;}
+.suggestion-goods .list-con .list-in > li .textarea-wrap{max-width: calc(100% - 130px);position: relative;display: inline-table;}
+.suggestion-goods .textarea-wrap .file-upload-area .table-area.table-style5 td .ellipsis {width:463px;}
+.suggestion-goods .list-con .list-in > li .textarea-wrap .btn-right{margin: 0px;}
 .suggestion-goods .list-con .list-in > li.btn-right {display: block;margin: 0;}
 .suggestion-goods .list-con .list-in > li .btn-right p{font-size: 14px;margin-top: 5px;}
 .suggestion-goods .list-con .list-in > li .btn-right p .req{font-size: 14px;}
 .suggestion-goods .list-con .list-in > li.write label{align-self: flex-start;}
+.suggestion-goods .textarea-wrap .textarea +.check-style1 {margin-top:10px;}
 .suggestion-goods .suggestion-date select{width:127px;margin-right: 5px;flex:none}
 .suggestion-goods .suggestion-date em{margin:0 5px;line-height: 38px;}
 .suggestion-goods .btn-right{text-align: right;margin: 30px 0;}

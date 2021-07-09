@@ -55,7 +55,8 @@
 		.guide .btn-js-code:after {content:'보기';}
 		.guide .btn-js-code.on {border-color:#477163; background:#477163; color:#fff; border-radius:3px 3px 0 0;}
 		.guide .btn-js-code.on:after {content:'닫기';}
-		.guide-gnb {width:100%; padding:5px 0; overflow:hidden; position:sticky; top:0; left:0; z-index:99999; background:#F3F3F3;}
+		.guide-gnb {width:100%; padding:5px 0; overflow:hidden; background:#F3F3F3;}
+		.guide-gnb.fixed {position:fixed; top:0; left:0; z-index:99999;}
 		.guide-gnb > a {margin:5px 2px; padding:5px 10px; display:inline-block; border:1px solid #000; background:#fff; color:#000;}
 		.guide-gnb > a:focus,
 		.guide-gnb > a.on {background:#000; color:#fff;}
@@ -65,10 +66,18 @@
 		.guide .popup-cont {margin: 0 auto; background:#fff;}
 		.guide .mypage-cont {min-height:auto;}
 		.guide .mypage-cont .product-list-wrap {margin:0;}
+		.navFixed {padding-top:;}
+		
 		@media only screen and (max-width:800px){
 			.guide .tit-type1-2 {top:0;}
 			.guide .popup-cont {width:calc(100% + 40px); margin:0 -20px; }
 			.guide .icon img {max-width:100%; width:auto;}
+			.guide .container {padding:0;}
+			.guide-cont {padding:10px;}
+			.guide .product-list-wrap {width:calc(100% + 20px); max-width:calc(100% + 20px); margin:0 -10px;}
+			.guide .mypage-cont {width:calc(100% + 20px); max-width:calc(100% + 20px); margin:0 -10px;}
+			.guide .mypage-cont .product-list-wrap {width:100%; max-width:100%; margin:0;}
+			.guide .join-agree-con .list-con {padding:0;}
 		}
 	</style>
 	<script>
@@ -101,20 +110,19 @@
 						<li class="active"><a href="guide.html">가이드</a></li>
 					</ul>
 				</nav>
-				<div class="guide-gnb tabArea">
+				<div class="guide-gnb tabArea scrollTab">
 					<a class="tabBtn" href="#gText">텍스트</a>
 					<a class="tabBtn" href="#gtitle">타이틀</a>
 					<a class="tabBtn" href="#gBtn">공통버튼</a>
-					<a class="tabBtn" href="#gHeader">헤더</a>
 					<a class="tabBtn" href="#gStar">별점</a>
 					<a class="tabBtn" href="#gForm">폼요소</a>
-					<a class="tabBtn" href="#gAppbar">앱바</a>
 					<a class="tabBtn" href="#gTable">테이블</a>
-					<a class="tabBtn" href="#gList">리스트</a>
-					<a class="tabBtn" href="#gPost">우편번호</a>
 					<a class="tabBtn" href="#gToogle">토글형</a>
 					<a class="tabBtn" href="#gTab">탭</a>
 					<a class="tabBtn" href="#gUnit">유닛</a>
+					<a class="tabBtn" href="#gFileUpload">첨부파일</a>
+					<a class="tabBtn" href="#gNotice">게시판</a>
+					<a class="tabBtn" href="#gPagnation">페이지네이션</a>
 				</div>
 				<div class="cont-body">
 					<h2 class="guide-tit" id="gText">Font</h2>
@@ -3456,7 +3464,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 					<h2 class="guide-tit" id="gUnit">유닛</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">유닛(기본형)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 유닛(리스트형) -->
 							<!-- 리스트 영역 -->
 							<div class="product-list-wrap">
@@ -3870,7 +3878,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 							<!--// html 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">유닛(체크박스형)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 유닛(리스트형) -->
 							<!-- 리스트 영역 -->
 							<div class="product-list-wrap">
@@ -4291,7 +4299,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 						
 						</div>
 						<h3 class="guide-sub-tit">유닛(메인 인기상품형)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 유닛(메인 인기상품형) -->
 							<div class="product-list-wrap">
 								<ul class="product-list best-list">
@@ -4657,7 +4665,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 							<!--// html 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">유닛(인기상품형)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 유닛(인기상품형) -->
 							<div class="product-list-wrap">
 								<ul class="product-list best-100">
@@ -5041,7 +5049,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 						</div>
 
 						<h3 class="guide-sub-tit">유닛(공동구매형)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 유닛(공동구매형) -->
 							<div class="product-list-wrap">
 								<ul class="product-list joint-list">
@@ -5340,7 +5348,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 						</div>
 
 						<h3 class="guide-sub-tit">유닛(마이페이지형)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 유닛(마이페이지형) -->
 							<div class="mypage-cont">
 								<div class="product-list-wrap">
@@ -5621,7 +5629,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 
 					</div>
 
-					<h2 class="guide-tit" id="fileUpload">첨부파일 등록(업로드/다운로드)</h2>
+					<h2 class="guide-tit" id="gFileUpload">첨부파일 등록(업로드/다운로드)</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">첨부파일</h3>
 						<div class="guide-cont">
@@ -6027,7 +6035,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 						</div>
 					</div>
 
-					<h2 class="guide-tit" id="noticeList">게시판</h2>
+					<h2 class="guide-tit" id="gNotice">게시판</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">게시판(공지사항)</h3>
 						<div class="guide-cont">
@@ -6264,7 +6272,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 						</div>
 					</div>
 
-					<h2 class="guide-tit" id="pagnation">페이지네이션</h2>
+					<h2 class="guide-tit" id="gPagnation">페이지네이션</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">페이지네이션</h3>
 						<div class="guide-cont">
@@ -6347,6 +6355,20 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 					$(this).find('.li-num').addClass('top10');
 				}
 			})
+
+
+			/* 스크롤 이동 탭 [S] */
+			$(window).scroll(function() {
+				var $wTop = $(window).scrollTop();
+				if ($wTop < 136){
+					$('.guide .container').removeClass('navFixed');
+					$('.guide-gnb').removeClass('fixed');
+				} else {
+					$('.guide .container').addClass('navFixed');
+					$('.guide-gnb').addClass('fixed');
+				}
+			});
+          
 		});
 	</script>
 </body>
