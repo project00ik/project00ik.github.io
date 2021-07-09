@@ -187,7 +187,7 @@
 /* 보험 */
 .sub-content.insurance-cont{width: 100%;}
 .sub-content.insurance-cont .promt-banner{width: 1200px;margin: 60px auto 100px;}
-.sub-content.insurance-cont .bg-blue{background:#F3F8FF;}
+.sub-content.insurance-cont .bg-blue{background:#F3F8FF; padding-bottom: 100px;}
 .sub-content.insurance-cont .inner{width: 1200px; margin: 0 auto;}
 .insurance-cont .promt-banner{margin-bottom: 100px;}
 .insurance-cont .tab-style3{width: 600px;margin: 0 auto;}
@@ -478,6 +478,7 @@
   .sub-content.insurance-cont .inner{width: 100%;padding:0 20px}
   .sub-content.insurance-cont .inner > div{padding: 0 0 60px;}
   .sub-content.insurance-cont .inner .join-list-con .tit-area2 {padding: 0 0 15px;font-size: 18px;}
+  .sub-content.insurance-cont .bg-blue {padding-bottom: 0;}
   .insurance-cont .circle{width: 95px;line-height:95px;font-size: 15px;}
   .insurance-cont .tit-txt{padding-top: 60px;font-size: 22px;}
   .insurance-cont .sub-txt{font-size: 16px;word-break: keep-all;}
@@ -515,8 +516,8 @@
   .insurance-cont .report02-02 div.left .circle::after{width:1px;height: 15px;top:auto;bottom: -15px;right:50%}
   .insurance-cont .report02-02 div.text{flex-direction: column;}
   .insurance-cont .report02-02 > div > div > div{display: flex;flex-direction: initial;}
-  .insurance-cont .report02-02 div.text > div.tit p{margin: 0 0 0 10px;border-radius: 25px  25px 0 0;font-size: 15px;line-height: 48px;}
-  .insurance-cont .report02-02 div.text > div.txt p{margin: 0 0 0 10px;border-radius: 0 0 25px 25px;flex:1;font-size:14px;line-height: 18px;padding:10px 8px;height:auto;}
+  .insurance-cont .report02-02 div.text > div.tit p{margin: 0 0 0 10px;border-radius: 10px 10px 0 0;font-size: 15px;line-height: 48px;}
+  .insurance-cont .report02-02 div.text > div.txt p{margin: 0 0 0 10px;border-radius: 0 0 10px 10px;flex:1;font-size:14px;line-height: 18px;padding:10px 8px;height:auto;}
   .insurance-cont .report02-02 div.text > div.txt p em{vertical-align: top;display: inline-block;}
   .insurance-cont .report02-02 > div:last-child div.txt p{word-break: keep-all;}
   .insurance-cont .report02-02 div.text > div.txt p::before{display: none;}
