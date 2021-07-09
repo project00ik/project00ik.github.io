@@ -599,6 +599,8 @@ button.btn-style-s1 {line-height:25px;}
 .pop-txt {font-size: 14px; color: #666; padding: 20px 0;}
 .table-txt {font-size: 15px; color: #000; padding-top: 10px; text-align: right;}
 .table-txt span {color: #346DD0; vertical-align: baseline;}
+.table-txt + .table-txt {padding-top: 2px;}
+
 
 /* 타이틀 */
 .tit-center-area {width:100%; padding-right:100px; position:relative;}
