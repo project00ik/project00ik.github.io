@@ -5621,18 +5621,701 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 
 					</div>
 
-					<h2 class="guide-tit" id="gUnit">첨부파일</h2>
+					<h2 class="guide-tit" id="fileUpload">첨부파일 등록(업로드/다운로드)</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">첨부파일</h3>
 						<div class="guide-cont">
 							<!-- 첨부파일 -->
-
+							<div class="file-upload-area mo-hide">
+								<div class="attach-wrap">
+									<div class="btn-r-area4">
+										<button class="btn btn-small2-line btn-color1">내PC</button>
+										<button class="btn btn-small2-line btn-color3">업로드</button>
+										<button class="btn btn-small-line btn-color3">일괄다운로드</button>
+										<button class="btn btn-small2-line btn-color2">삭제</button>
+										<button class="btn btn-small2-line btn-color2">닫기</button>
+									</div>
+								
+									<div class="table-area table-style5">
+										<table>
+											<colgroup>
+												<col style="width:50px;">
+												<col>
+												<col style="width:120px;">
+												<col style="width:126px;">
+												<col >
+											</colgroup>
+											<thead>
+												<tr>
+													<th>선택</th>
+													<th>파일명</th>
+													<th>크기</th>
+													<th>첨부파일</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color2">취소</button></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="table-txt">*최대 <span>10.0MB</span> 용량을 초과할 경우 업로드 할 수 없습니다.</div>
+								</div>
+							</div>
+							<p class="red-txt pc-hide">※ 첨부파일은 PC에서만 다운로드 가능합니다.</p>
 							<!--// 첨부파일 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
-								<textarea class="codeArea">
-								</textarea>
+<textarea class="codeArea">
+	&lt;!-- 첨부파일 --&gt;
+	&lt;div class="file-upload-area mo-hide"&gt;
+		&lt;div class="attach-wrap"&gt;
+			&lt;div class="btn-r-area4"&gt;
+				&lt;button class="btn btn-small2-line btn-color1"&gt;내PC&lt;/button&gt;
+				&lt;button class="btn btn-small2-line btn-color3"&gt;업로드&lt;/button&gt;
+				&lt;button class="btn btn-small-line btn-color3"&gt;일괄다운로드&lt;/button&gt;
+				&lt;button class="btn btn-small2-line btn-color2"&gt;삭제&lt;/button&gt;
+				&lt;button class="btn btn-small2-line btn-color2"&gt;닫기&lt;/button&gt;
+			&lt;/div&gt;
+		
+			&lt;div class="table-area table-style5"&gt;
+				&lt;table&gt;
+					&lt;colgroup&gt;
+						&lt;col style="width:50px;"&gt;
+						&lt;col&gt;
+						&lt;col style="width:120px;"&gt;
+						&lt;col style="width:126px;"&gt;
+						&lt;col &gt;
+					&lt;/colgroup&gt;
+					&lt;thead&gt;
+						&lt;tr&gt;
+							&lt;th&gt;선택&lt;/th&gt;
+							&lt;th&gt;파일명&lt;/th&gt;
+							&lt;th&gt;크기&lt;/th&gt;
+							&lt;th&gt;첨부파일&lt;/th&gt;
+						&lt;/tr&gt;
+					&lt;/thead&gt;
+					&lt;tbody&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color2"&gt;취소&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tbody&gt;
+				&lt;/table&gt;
+			&lt;/div&gt;
+			&lt;div class="table-txt"&gt;*최대 &lt;span&gt;10.0MB&lt;/span&gt; 용량을 초과할 경우 업로드 할 수 없습니다.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;p class="red-txt pc-hide"&gt;※ 첨부파일은 PC에서만 다운로드 가능합니다.&lt;/p&gt;
+	&lt;!--// 첨부파일 --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">첨부파일(다운로드)</h3>
+						<div class="guide-cont">
+							<!-- 첨부파일 -->
+							<div class="file-upload-area mo-hide">
+								<div class="attach-wrap">
+									<div class="btn-r-area4">
+										<button class="btn btn-small2-line btn-color1">내PC</button>
+									</div>
+								
+									<div class="table-area table-style5">
+										<table>
+											<colgroup>
+												<col style="width:50px;">
+												<col>
+												<col style="width:120px;">
+												<col style="width:126px;">
+												<col >
+											</colgroup>
+											<thead>
+												<tr>
+													<th>선택</th>
+													<th>파일명</th>
+													<th>크기</th>
+													<th>첨부파일</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+												<tr>
+													<td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
+													<td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
+													<td class="tb-r">157.13KB</td>
+													<td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="table-txt">* 최대 <span>5.0MB</span> 용량을 초과할 경우 업로드 할 수 없습니다.</div>
+									<div class="table-txt">* <span>jpg, jpeg, gif, png, pdf, dox</span>  확장자만 업로드 할 수 있습니다.</div>
+								</div>
+							</div>
+							<p class="red-txt pc-hide">※ 첨부파일은 PC에서만 다운로드 가능합니다.</p>
+							<!--// 첨부파일 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 첨부파일 --&gt;
+	&lt;div class="file-upload-area mo-hide"&gt;
+		&lt;div class="attach-wrap"&gt;
+			&lt;div class="btn-r-area4"&gt;
+				&lt;button class="btn btn-small2-line btn-color1"&gt;내PC&lt;/button&gt;
+			&lt;/div&gt;
+		
+			&lt;div class="table-area table-style5"&gt;
+				&lt;table&gt;
+					&lt;colgroup&gt;
+						&lt;col style="width:50px;"&gt;
+						&lt;col&gt;
+						&lt;col style="width:120px;"&gt;
+						&lt;col style="width:126px;"&gt;
+						&lt;col &gt;
+					&lt;/colgroup&gt;
+					&lt;thead&gt;
+						&lt;tr&gt;
+							&lt;th&gt;선택&lt;/th&gt;
+							&lt;th&gt;파일명&lt;/th&gt;
+							&lt;th&gt;크기&lt;/th&gt;
+							&lt;th&gt;첨부파일&lt;/th&gt;
+						&lt;/tr&gt;
+					&lt;/thead&gt;
+					&lt;tbody&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+						&lt;tr&gt;
+							&lt;td&gt;&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;&lt;/td&gt;
+							&lt;td class="tb-l"&gt;&lt;p class="ellipsis"&gt;ICT_메뉴 구조도_v0.93_20210421.symxlsx&lt;/p&gt;&lt;/td&gt;
+							&lt;td class="tb-r"&gt;157.13KB&lt;/td&gt;
+							&lt;td&gt;&lt;button class="btn btn-small-line btn-color3"&gt;다운로드&lt;/button&gt;&lt;/td&gt;
+						&lt;/tr&gt;
+					&lt;/tbody&gt;
+				&lt;/table&gt;
+			&lt;/div&gt;
+			&lt;div class="table-txt"&gt;* 최대 &lt;span&gt;5.0MB&lt;/span&gt; 용량을 초과할 경우 업로드 할 수 없습니다.&lt;/div&gt;
+			&lt;div class="table-txt"&gt;* &lt;span&gt;jpg, jpeg, gif, png, pdf, dox&lt;/span&gt;  확장자만 업로드 할 수 있습니다.&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;p class="red-txt pc-hide"&gt;※ 첨부파일은 PC에서만 다운로드 가능합니다.&lt;/p&gt;
+	&lt;!--// 첨부파일 --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="noticeList">게시판</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">게시판(공지사항)</h3>
+						<div class="guide-cont">
+							<!-- 목록 -->
+							<div class="notice-list-area">
+								<ul class="notice-list">
+									<li>
+										<p class="list-flag">
+											<span class="flag-txt blue">중요</span>
+										</p>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<p class="list-flag">
+											<span class="flag-txt gray">일반</span>
+										</p>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<p class="list-flag">
+											<span class="flag-txt blue">중요</span>
+										</p>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<p class="list-flag">
+											<span class="flag-txt gray">일반</span>
+										</p>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<p class="list-flag">
+											<span class="flag-txt blue">중요</span>
+										</p>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+								</ul>
+								<!-- 내용없음 -->
+								<!-- <ul class="notice-list">
+									<li>
+										<div class="result-none-list">
+											<p class="no-txt">등록된 공지사항이 없습니다.</p>
+										</div>
+									</li>
+								</ul>  -->
+								<!--// 내용없음 -->
+							</div>
+							<!--// 목록 -->
+	
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 목록 --&gt;
+	&lt;div class="notice-list-area"&gt;
+		&lt;ul class="notice-list"&gt;
+			&lt;li&gt;
+				&lt;p class="list-flag"&gt;
+					&lt;span class="flag-txt blue"&gt;중요&lt;/span&gt;
+				&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;p class="list-flag"&gt;
+					&lt;span class="flag-txt gray"&gt;일반&lt;/span&gt;
+				&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;p class="list-flag"&gt;
+					&lt;span class="flag-txt blue"&gt;중요&lt;/span&gt;
+				&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;p class="list-flag"&gt;
+					&lt;span class="flag-txt gray"&gt;일반&lt;/span&gt;
+				&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;p class="list-flag"&gt;
+					&lt;span class="flag-txt blue"&gt;중요&lt;/span&gt;
+				&lt;/p&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;!-- 내용없음 --&gt;
+		&lt;!-- &lt;ul class="notice-list"&gt;
+			&lt;li&gt;
+				&lt;div class="result-none-list"&gt;
+					&lt;p class="no-txt"&gt;등록된 공지사항이 없습니다.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;  --&gt;
+		&lt;!--// 내용없음 --&gt;
+	&lt;/div&gt;
+	&lt;!--// 목록 --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+
+						<h3 class="guide-sub-tit">게시판(뉴스)</h3>
+						<div class="guide-cont">
+							<!-- 목록 -->
+							<div class="notice-list-area">
+								<ul class="notice-list news-list">
+									<li>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">김제시 지평선산업단지 등 CCTV 20개소 자가망 구축공사<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+									<li>
+										<div class="txt-area">
+											<p class="txt ellipsis"><a href="#">고객사 아이폰 App 갱신 다운로드 안내<span class="new">new</span></a></p>
+											<p class="date">2021.07.03</p>
+										</div>
+									</li>
+								</ul>
+								<!-- 내용없음 -->
+								<!-- <ul class="notice-list">
+									<li>
+										<div class="result-none-list">
+											<p class="no-txt">등록된 게시글이 없습니다.</p>
+										</div>
+									</li>
+								</ul>  -->
+								<!--// 내용없음 -->
+							</div>
+							<!--// 목록 -->
+
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- 목록 --&gt;
+	&lt;div class="notice-list-area"&gt;
+		&lt;ul class="notice-list news-list"&gt;
+			&lt;li&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;김제시 지평선산업단지 등 CCTV 20개소 자가망 구축공사&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내 고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+			&lt;li&gt;
+				&lt;div class="txt-area"&gt;
+					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;고객사 아이폰 App 갱신 다운로드 안내&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+					&lt;p class="date"&gt;2021.07.03&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;!-- 내용없음 --&gt;
+		&lt;!-- &lt;ul class="notice-list"&gt;
+			&lt;li&gt;
+				&lt;div class="result-none-list"&gt;
+					&lt;p class="no-txt"&gt;등록된 게시글이 없습니다.&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;  --&gt;
+		&lt;!--// 내용없음 --&gt;
+	&lt;/div&gt;
+	&lt;!--// 목록 --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="pagnation">페이지네이션</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">페이지네이션</h3>
+						<div class="guide-cont">
+							<!-- pC 페이지네이션 -->
+							<div class="paging mo-hide">
+								<a href="#" class="btn prev">previous</a>
+								<a href="#" class="btn on">1</a>
+								<a href="#" class="btn ">2</a>
+								<a href="#" class="btn ">3</a>
+								<a href="#" class="btn ">4</a>
+								<a href="#" class="btn ">5</a>
+								<a href="#" class="btn ">6</a>
+								<a href="#" class="btn ">7</a>
+								<a href="#" class="btn ">8</a>
+								<a href="#" class="btn ">9</a>
+								<a href="#" class="btn ">10</a>
+								<a href="#" class="btn next active">Next</a>
+							</div>
+							<!--// pC 페이지네이션 -->
+							<!-- MO 페이지네이션 -->
+							<button class="mobile-paging pc-hide">
+								더보기
+							</button>
+							<!--// MO 페이지네이션 -->
+
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- pC 페이지네이션 --&gt;
+	&lt;div class="paging mo-hide"&gt;
+		&lt;a href="#" class="btn prev"&gt;previous&lt;/a&gt;
+		&lt;a href="#" class="btn on"&gt;1&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;2&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;3&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;4&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;5&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;6&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;7&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;8&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;9&lt;/a&gt;
+		&lt;a href="#" class="btn "&gt;10&lt;/a&gt;
+		&lt;a href="#" class="btn next active"&gt;Next&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;!--// pC 페이지네이션 --&gt;
+	&lt;!-- MO 페이지네이션 --&gt;
+	&lt;button class="mobile-paging pc-hide"&gt;
+		더보기
+	&lt;/button&gt;
+	&lt;!--// MO 페이지네이션 --&gt;
+</textarea>
 							</pre>
 							<!--// html 보기 -->
 						</div>
