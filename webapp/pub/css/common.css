@@ -49,17 +49,19 @@
 .search-box.on {display: block;}
 .search-box {display: none; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #d7d7d7;}
 .search-box .half-box {display: flex;}
-.search-box .half-box > div {position: relative; width: 100%; padding: 20px;}
+.search-box .half-box > div {position: relative; width: 50%; padding: 20px;}
 .search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background: #d7d7d7;}
 .search-box .half-box .s-tit {font-size: 16px; font-weight: 500; color: #346dd0; padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
 .search-box .half-box .s-list {padding-top: 30px;}
 .search-box .half-box .s-list ul li {display: flex; justify-content: space-between; padding-bottom: 20px;}
 .search-box .half-box .s-list ul li:last-child {padding-bottom: 10px;}
 .search-box .half-box .s-list ul li a {font-size: 16px; color: #000;}
+.search-box .half-box .s-list ul li > a:first-child {width:auto; max-width:calc(100% - 18px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis;}
 .search-box .half-box .search-word ul li a:hover {border-bottom: 1px solid #000; margin-bottom: -1px;}
 .search-box .half-box .hit-word .s-list ul li a:hover p {border-bottom: 1px solid #000; margin-bottom: -1px;}
 .search-box .half-box .search-word .s-list ul li .del {font-size: 0; width: 18px; height: 18px; background: url(../images/common/mo_btn_tooltip_close.svg) 0 0 no-repeat;}
-.search-box .half-box .hit-word .s-list ul li a {display: flex;}
+.search-box .half-box .hit-word .s-list ul li a {max-width:100%; display: flex;}
+.search-box .half-box .hit-word .s-list ul li > a > p {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis;}
 .search-box .half-box .hit-word .s-list ul li .num {width: 20px; text-align: center; font-weight: 500; color: #346dd0; display: inline-block; font-style: normal; vertical-align: baseline; margin-right: 10px;}
 .search-box .search-bt {position: relative; padding: 18px 20px; border-top: 1px solid #d7d7d7; min-height: 50px;}
 .search-box .search-bt a {font-size: 14px; color: #666; line-height: 18px;}
@@ -73,7 +75,7 @@
 .word-box a {display: block; font-size: 16px; color: #000;}
 .word-box a:hover {color: #346dd0;}
 .word-box .word-words {padding-bottom: 20px;}
-.word-box .word-words a {margin-bottom: 10px;}
+.word-box .word-words a {margin-bottom: 10px; width:100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis;}
 .word-box .word-words a:last-child {margin-bottom: 0;}
 .word-box .word-words a span {display: inline-block; color: #346dd0; vertical-align: top;}
 .word-box .word-list {padding: 20px 0; border-top: 1px solid #d7d7d7;}
