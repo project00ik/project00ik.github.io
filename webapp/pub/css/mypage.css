@@ -178,6 +178,31 @@
 
 .my-rew-cont {position: relative; padding: 30px 44px 30px 30px; margin-bottom:30px; min-height:174px; background: #fafafa;}
 
+/* 주문서 관리 */
+.top-info-area {width:100%; padding:30px 0 10px;}
+.top-info-area .tit-type2-1 {font-size:16px;}
+.top-info-area .bul-bar-list {width:100%; margin-top:6px;}
+.top-info-area .bul-bar-list > li {}
+
+.order-management-list {padding-top:18px; border-top:1px solid #bbb; border-bottom: 1px solid #d7d7d7;}
+.order-management-list > dl {}
+.order-management-list > dl + dl {border-top:1px solid #e5e5e5;}
+.order-management-list > dl > dt {display: flex; padding:18px 0 18px 20px; align-items: center;}
+.order-management-list > dl > dd {display:none; padding:18px 50px 0; border-top:1px solid #e5e5e5;}
+.order-management-list .orderlist-wrap ul > li:last-child {border-bottom:0;}
+
+.order-management-list > dl > dt .form-area {max-width: 704px; flex:1; display:flex;}
+.order-management-list > dl > dt .form-area .input {flex:1;}
+.order-management-list > dl > dt .form-area .btn {margin-left:5px;}
+.order-management-list > dl > dt .date {padding:0 30px; font-size:14px; color:#666;}
+.order-management-list > dl > dt .btn-arrow {font-size:14px; color:#000; padding-right:20px; position: relative;}
+.order-management-list > dl > dt .btn-arrow::after {content:''; width: 18px; height: 18px; display:inline-block; background: url(../images/common/arrow_select.svg) center center no-repeat; font-size: 0; position: absolute; top:2px; right:0;}
+.order-management-list > dl > dt .btn-arrow.on::after {transform: rotate(-180deg);}
+
+
+
+
+
 
 /* ==========================================================================
     신규상품요청
@@ -368,6 +393,18 @@
     .my-detail.detail-review ul li .review-front-img {top: 54px; right: 20px; transform: none; }
     .my-detail.detail-review ul li .review-satisfaction-area .star-count {font-size: 15px; line-height: 26px;}
     
+    /* 주문서 관리 */
+    .mypage-order-list {padding:0 20px;}
+    .top-info-area {width:100%; padding:20px 0 10px;}
+    .order-management-list {padding-top:6px;}
+    .order-management-list > dl > dt {padding:12px 0;}
+    .order-management-list > dl > dt .btn-arrow {width:18px; height:36px; padding-left:10px; font-size: 0; display: inline-block;}
+    .order-management-list > dl > dt .btn-arrow::after {top:8px;}
+    .order-management-list > dl > dt .date {display:none;}
+    .order-management-list > dl > dd {padding:12px 30px 0;}
+    .order-management-list .orderlist-wrap ul > li {padding:12px 0;}
+    .top-info-area .tit-type2-1 {font-size:14px;}
+    .top-info-area .bul-bar-list {font-size:14px;}
 
     /* ==========================================================================
         신규상품요청
@@ -418,6 +455,9 @@
     .notice-wrap .cont-notice .service-area .ser-call .call-time span {display: block;}
 }
 
+@media only screen and (max-width:360px){
+    .order-management-list > dl > dd {padding-right:0;}
+}
 
 
 

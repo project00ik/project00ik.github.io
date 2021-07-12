@@ -369,6 +369,10 @@
 .bul-dot > li + li {margin-top:2px;}
 .bul-dot > li::before {content: ""; width: 4px; height: 4px; background: #999; border-radius: 50%; display:inline-block; position: absolute; top:7px; left:0;}
 
+.bul-bar-list {width:100%; color:#666; font-size:15px;}
+.bul-bar-list > li {width:100%; padding-left:10px; position: relative;}
+.bul-bar-list > li::before {content:''; width:5px; height:1px; display: inline-block; background: #666; position: absolute; top:8px; left:0; }
+
 /* 버튼 */
 .btn {display:inline-block;}
 .btn-area {width:100%; font-size:0;}
