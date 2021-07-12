@@ -269,7 +269,7 @@
 
     .mypage-cont input[type='text'], .mypage-cont input[type='password'] {font-size: 14px;}
     .mypage-cont .unit-type1 {height: auto;}
-    .mypage-cont .unit-type1 .unit-area > dt {width: 100%; height: 100%;}
+    .mypage-cont .unit-type1 .unit-area > dt {width: 100%; height:41.67vw;}
     .mypage-cont .tabArea {margin: 20px 0 0;}
     .mypage-cont .my-menu {position: relative; width: 100%; padding: 50px 0 0; display: none;}
     .mypage-cont .my-menu .my-logo {display: none;}
