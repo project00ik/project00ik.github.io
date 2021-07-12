@@ -918,7 +918,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style5 tr.td-start td{padding-top: 14px;}
 .table-area.table-style5 td .ellipsis {width:650px;}
 .lyPopupWrap .table-area.table-style5 td .ellipsis {width:300px;}
-.file-upload-area .table-style5 {height:280px; overflow-x: hidden; overflow-y: auto;}
+.file-upload-area .table-style5 {max-height:280px; overflow-x: hidden; overflow-y: auto;}
 
 /* 견적서 테이블 */
 .table-area table.thin-style {font-size: 13px; border: 1px solid #d7d7d7; border-top: 0;}
