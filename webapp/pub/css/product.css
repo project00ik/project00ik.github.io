@@ -9,7 +9,8 @@
 .pro-detail-slide .swiper-container {width: 100%; margin-left: auto; margin-right: auto;}
 .pro-detail-slide .swiper-slide {background-size: cover; background-position: center; overflow: hidden; cursor: pointer;}    
 .pro-detail-slide .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
-.pro-detail-slide .swiper-slide .product-img {width:500px; height:500px; overflow: hidden;}
+.pro-detail-slide .productDetaileSlide .swiper-slide .product-img {width:70px; height:70px; overflow: hidden;}
+.pro-detail-slide .productDetaileSlide2 .swiper-slide .product-img {width:500px; height:500px; overflow: hidden;}
 .pro-detail-slide .productDetaileSlide {width:70px; height:390px; position:absolute; top:0; left:0; z-index:1;}
 .pro-detail-slide .productDetaileSlide .swiper-slide {width:70px; height:70px !important;}
 .pro-detail-slide .swiper-slide-thumb-active {opacity:1; border: 2px solid #346dd0;}
