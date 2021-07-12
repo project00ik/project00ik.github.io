@@ -364,6 +364,11 @@
 .bul-bar + .bul-bar::before {content:""; width:1px; height:10px; display:inline-block; background:#666; position:absolute; top:5px; left:0;}
 .bar-verti {width:1px; height:12px; margin-top:-1px; margin-left:9px; padding-left:10px; display:inline-block; border-left:1px solid #666; vertical-align:middle;}
 
+.bul-dot {}
+.bul-dot > li {padding-left:12px; position: relative;}
+.bul-dot > li + li {margin-top:2px;}
+.bul-dot > li::before {content: ""; width: 4px; height: 4px; background: #999; border-radius: 50%; display:inline-block; position: absolute; top:7px; left:0;}
+
 /* 버튼 */
 .btn {display:inline-block;}
 .btn-area {width:100%; font-size:0;}
@@ -602,7 +607,6 @@ button.btn-style-s1 {line-height:25px;}
 .table-txt {font-size: 15px; color: #000; padding-top: 10px; text-align: right;}
 .table-txt span {color: #346DD0; vertical-align: baseline;}
 .table-txt + .table-txt {padding-top: 2px;}
-
 
 /* 타이틀 */
 .tit-center-area {width:100%; padding-right:100px; position:relative;}

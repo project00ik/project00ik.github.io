@@ -169,23 +169,23 @@
 
       <div class="sub-content insurance-cont">
         <div class="promt-banner">
-          <img src="../../../../images/product/insurance.png" class="mo-hide" alt="프로모션 상단 pc배너">
-          <img src="../../../../images/product/mo_insurance.png" class="pc-hide" alt="프로모션 상단 mobile배너">
+          <img src="../../../../images/product/rental_bg.png" class="mo-hide" alt="렌탈 상단 pc배너">
+          <img src="../../../../images/product/mo_rental_bg.png" class="pc-hide" alt="렌탈 상단 mobile배너">
           <div class="ban-text-area">
-            <p class="ban-tit">KT커머스가 제공하는 기업보험<br/>One-Stop 서비스</p>
+            <p class="ban-tit">KT커머스가 제공하는<br>One-Stop 렌탈서비스</p>
           </div>
         </div>
 
         <div class="tab-area">
           <ul class="tab-btn-list tab-style3">
-            <li class="tabBtn" data-tab="promt-tab1"><a href="#">보험서비스 소개</a></li>
-            <li class="tabBtn on" data-tab="promt-tab2"><a href="#">보험서비스 상담신청</a></li>
+            <li class="tabBtn" data-tab="promt-tab1"><a href="rentalInfo.html">렌탈서비스 소개</a></li>
+            <li class="tabBtn on" data-tab="promt-tab2"><a href="#">렌탈서비스 상담신청</a></li>
           </ul>
           <div class="tab-cont tabCont" id="promt-tab2">
             <div class="inner">
               <div class="join-list-con suggestion-goods">
                 <div class="tit-area2">
-                  <p class="tit-type2">보험서비스 상담 신청하기</p>
+                  <p class="tit-type2">렌탈서비스 상담 신청하기</p>
                 </div>
                 
                 <div class="list-con">
@@ -193,19 +193,19 @@
                     <li>
                       <label for="">회사명<i class="req">*</i></label>
                       <div class="form-layout ">
-                        <input type="text" name="" class="input" value="삼성전자" readonly>
+                        <input type="text" name="" class="input" value="삼성전자" readonly="readonly">
                       </div>
                     </li>
                     <li>
                       <label for="">성명<i class="req">*</i></label>
                       <div class="form-layout ">
-                        <input type="text" name="" class="input" value="홍길동" readonly>
+                        <input type="text" name="" class="input" value="홍길동" readonly="readonly">
                       </div>
                     </li>
                     <li>
                       <label for="">연락처<i class="req">*</i></label>
                       <div class="form-layout ">
-                        <input type="text" name="" class="input" value="010-1234-5678" readonly>
+                        <input type="text" name="" class="input" value="010-1234-5678" readonly="readonly">
                       </div>
                     </li>
                     <li>
@@ -217,15 +217,25 @@
                     <li>
                       <label for="">내용<i class="req">*</i></label>
                       <div class="form-layout ">
-                        <div class="textarea-wrap count">
-                          <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="">
-※ 회원정보에 등록된 회사명/성명/연락처와 다른 정보로 상담을 받으실 회원님은 아래에 추가로 작성 부탁드립니다. (회원정보와 동일할 경우 회사명/성명/연락처 작성 불필요)
-
-회사명:
-성명:
-연락처:
-상담내용:                        
-                          </textarea>
+                        <div class="textarea-wrap count rental-textarea">
+                          <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 회원정보에 등록된 회사명/성명/연락처와 다른 정보로 상담을 받으실 회원님은 아래에 추가로 작성 부탁드립니다. (회원정보와 동일할 경우 회사명/성명/연락처 작성 불필요)&#13;
+&#13;
+회사명 :&#13;
+성명 :&#13;
+연락처 :&#13;
+상담내용 :&#13;
+&#13;
+※ 정확한 안내를 위해 아래 내용을 작성하여 상담 신청 부탁드립니다.&#13;
+&#13;
+품명 : ex) 차량, OA기기(노트북, 복합기 등), 생활가전 등&#13;
+수량 :&#13;
+사용용도 : ex) 사무, 디자인, 설계 등&#13;
+품목 : ex) 차량, 노트북, 데스크탑, 정수기 등&#13;
+제조사 : ex) 현대, 기아, 삼성, LG 등&#13;
+모델명 : 특정 선택 모델이 있을 경우&#13;
+사양 : ex) 차량(옵션), OA(CPU, Ram, SSD 등)&#13;
+대여기간 : 12, 24, 36, 48 개월
+                          "></textarea>
                           <p class="cot"><b>0</b> / 1,000</p>
                         </div>
                       </div>
@@ -244,10 +254,6 @@
                   <div class="attach-wrap">
                     <div class="btn-r-area4">
                       <button class="btn btn-small2-line btn-color1">내PC</button>
-                      <button class="btn btn-small2-line btn-color3">업로드</button>
-                      <button class="btn btn-small-line btn-color3">일괄다운로드</button>
-                      <button class="btn btn-small2-line btn-color2">삭제</button>
-                      <button class="btn btn-small2-line btn-color2">닫기</button>
                     </div>
                     <div class="table-area table-style5">
                       <table>
@@ -271,7 +277,7 @@
                             <td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
                             <td class="tb-l"><p class="ellipsis">ICT_메뉴 구조도_v0.93_20210421.symxlsx</p></td>
                             <td class="tb-r">157.13KB</td>
-                            <td><button class="btn btn-small-line btn-color3">다운로드</button></td>
+                            <td><button class="btn btn-small-line btn-color2">취소</button></td>
                           </tr>
                           <tr>
                             <td><label class="check-style1"><input type="checkbox" name=""><i></i></label></td>
@@ -331,7 +337,6 @@
                       </table>
                     </div>
                     <div class="table-txt">*최대 <span>10.0MB</span> 용량을 초과할 경우 업로드 할 수 없습니다.</div>
-                    <div class="table-txt">*기존에 가입하신 보험증권을 첨부해 주시면 분석 후 컨설팅 해드립니다.</div>
                   </div>
                 </div>
                 <p class="red-txt pc-hide">※ 첨부파일은 PC에서만 다운로드 가능합니다.</p>
