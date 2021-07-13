@@ -125,7 +125,7 @@
 .last-banner-wrap ul li:after{content: "";position: absolute;top:7px;right:0;width: 1px ;height: 16px;background:#D7D7D7;}
 .last-banner-wrap ul li:last-child:after{content: "";display: none;}
 .last-banner-wrap ul li a {display: block;}
-.last-banner-wrap ul li a img{width:131px; height:30px; padding: 0 36px}
+.last-banner-wrap ul li a img{height:30px; padding: 0 36px}
 .last-banner-wrap ul li:first-child a img{padding-left: 0}
 
 /* 알림메시지함 */
