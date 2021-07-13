@@ -66,11 +66,11 @@
 
 
 /* 회원가입 */               
-.join-content .member-tit{text-align: center;font-size: 34px;line-height: 4 1px;font-weight: bold;margin-top: 120px;padding:0 20px}
+.join-content .member-tit{text-align: center;font-size: 28px;font-weight: bold;margin-top: 120px;padding:0 20px}
 .join-content .member-sub-tit{text-align: center;font-size: 18px;line-height: 21px;margin-top: 30px;padding:0 20px}
 .join-content .member-sub-tit em{vertical-align: top;}
 .join-content .member-sub-tit2{text-align: center;font-size: 18px;line-height: 21px;margin-top: 30px;padding:0 60px}
-.join-content .member-tit strong{color:#346DD0;vertical-align: top;font-weight: bold;}
+.join-content .member-tit strong{color:#DC001C;vertical-align: top;font-weight: bold;}
 .join-content .member-select-box {display: flex;margin: 50px auto;width: 706px;}
 .join-content .member-select-box > div{border:1px solid #D7D7D7;text-align: center;padding:50px 0}
 .join-content .member-select-box > div p{font-size: 24px;}
@@ -82,7 +82,7 @@
 .join-content .complete-wrap .btn-full-area a{height: 48px; line-height: 46px;}
 .join-content .login-wrap{width: 360px;margin: 0 auto;padding:30px 0;}
 .join-content .login-wrap > div > p{text-align: center;font-size: 16px;line-height: 19px;margin-top: 30px;}
-.join-content .login-wrap > div > p strong{color:#346DD0;vertical-align: top;}
+.join-content .login-wrap > div > p strong{color:#DC001C;vertical-align: top; font-weight: 400;}
 .join-content .login-wrap .login-checkbox{margin: 10px 0 20px;color:#666}
 .join-content .login-wrap .login-checkbox label + label{margin-left: 30px;}
 .join-content .login-wrap .btn-area{margin-top: 10px;}
@@ -260,6 +260,7 @@
     .join-content .login-wrap.privacy > .privacy-box p::before {top: 7px;}
     .join-content .login-wrap.privacy .btn-full-area{padding:50px 0}
     .join-content .login-wrap.privacy .btn-style-l2{height:42px; line-height: 40px;}
+    .join-content .member-tit strong {font-weight:500;}
 
     .join-content .btn-full-area .btn-style-ml1,
     .join-content .btn-full-area .btn-style-ml2 {min-width:auto; height:42px; line-height: 43px;}
