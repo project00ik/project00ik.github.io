@@ -78,6 +78,7 @@
 			.guide .mypage-cont {width:calc(100% + 20px); max-width:calc(100% + 20px); margin:0 -10px;}
 			.guide .mypage-cont .product-list-wrap {width:100%; max-width:100%; margin:0;}
 			.guide .join-agree-con .list-con {padding:0;}
+			.guide-gnb.fixed {top:36px;}
 			/* .navFixed {padding-top:400px;} */
 		}
 	</style>
@@ -113,8 +114,10 @@
 				</nav>
 				<div class="guide-gnb tabArea scrollTab">
 					<a class="tabBtn" href="#gText">텍스트</a>
+					<a class="tabBtn" href="#gList">텍스트</a>
 					<a class="tabBtn" href="#gtitle">타이틀</a>
 					<a class="tabBtn" href="#gBtn">공통버튼</a>
+					<a class="tabBtn" href="#gIcon">아이콘</a>
 					<a class="tabBtn" href="#gStar">별점</a>
 					<a class="tabBtn" href="#gForm">폼요소</a>
 					<a class="tabBtn" href="#gTable">테이블</a>
@@ -152,6 +155,56 @@
 							<!--// color -->
 						</div>
 					</div>
+
+					<h2 class="guide-tit" id="gList">List</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">도트형 리스트</h3>
+						<div class="guide-cont">
+							<!-- list -->
+							<ul class="bul-dot">
+								<li>고객별 맞춤 렌탈 설계 제공</li>
+								<li>차량별 옵션, 보험 등 상세 정보 제공</li>
+								<li>각 렌탈사 별 비교 견적으로 최적가 제공</li>
+							</ul>
+							<!--// list -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- list --&gt;
+	&lt;ul class="bul-dot"&gt;
+		&lt;li&gt;고객별 맞춤 렌탈 설계 제공&lt;/li&gt;
+		&lt;li&gt;차량별 옵션, 보험 등 상세 정보 제공&lt;/li&gt;
+		&lt;li&gt;각 렌탈사 별 비교 견적으로 최적가 제공&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;!--// list --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+						<h3 class="guide-sub-tit">바형 리스트</h3>
+						<div class="guide-cont">
+							<!-- list -->
+							<ul class="bul-bar-list">
+								<li>주문서명을 변경후 저장을 클릭하시면 주문서명이 수정됩니다.</li>
+								<li>체크박스 선택후 삭제를 클릭하시면 선택된 주문서가 삭제됩니다.</li>
+							</ul>
+							<!--// list -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+<textarea class="codeArea">
+	&lt;!-- list --&gt;
+	&lt;ul class="bul-bar-list"&gt;
+		&lt;li&gt;주문서명을 변경후 저장을 클릭하시면 주문서명이 수정됩니다.&lt;/li&gt;
+		&lt;li&gt;체크박스 선택후 삭제를 클릭하시면 선택된 주문서가 삭제됩니다.&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;!--// list --&gt;
+</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+					</div>
 					
 					<h2 class="guide-tit" id="gtitle">Title</h2>
 					<div class="guide-box">
@@ -185,7 +238,7 @@
 							<p class="tit-type1-1">회원가입이 완료 되었습니다.(*정보알림타이틀)</p>
 							<p class="tit-type1-1"><b>다른 고객이 함께 구매한 상품(*개인화영역 타이틀)</b></p>
 							<p class="tit-type1-2 mo-hide">페이지 타이틀(*PC용)</p>
-							<p class="tit-type1-2 pc-hide">페이지 타이틀(*모바일용)</p>
+							<p class="tit-type1-2 pc-hide"><a href="javascript:;" onclick="history.back()" class="history-bak">뒤로가기</a>페이지 타이틀(*모바일용)</p>
 							<div class="tit-area">
 								<p class="tit-type2">타이틀 (*아래 간격 있음) <span class="sub-txt">(주문 상품수 : <b>2</b>건<i class="bar-verti"></i>총 수량 : <b>5</b>개)(*타이틀 옆 꾸밈 텍스트)</span></p>
 							</div>
@@ -207,7 +260,7 @@
 	&lt;p class="tit-type1-1"&gt;회원가입이 완료 되었습니다.(*정보알림타이틀)&lt;/p&gt;
 	&lt;p class="tit-type1-1"&gt;&lt;b&gt;다른 고객이 함께 구매한 상품(*개인화영역 타이틀)&lt;/b&gt;&lt;/p&gt;
 	&lt;p class="tit-type1-2 mo-hide"&gt;페이지 타이틀(*PC용)&lt;/p&gt;
-	&lt;p class="tit-type1-2 pc-hide"&gt;페이지 타이틀(*모바일용)&lt;/p&gt;
+	&lt;p class="tit-type1-2 pc-hide"&gt;&lt;a href="javascript:;" onclick="history.back()" class="history-bak"&gt;뒤로가기&lt;/a&gt;페이지 타이틀(*모바일용)&lt;/p&gt;
 	&lt;div class="tit-area"&gt;
 		&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 있음) &lt;span class="sub-txt"&gt;(주문 상품수 : &lt;b&gt;2&lt;/b&gt;건&lt;i class="bar-verti"&gt;&lt;/i&gt;총 수량 : &lt;b&gt;5&lt;/b&gt;개)(*타이틀 옆 꾸밈 텍스트)&lt;/span&gt;&lt;/p&gt;
 	&lt;/div&gt;
@@ -565,7 +618,7 @@
 									<a href="#" class="btn btn-more-black">더보기</a>
 									<!--// button -->
 									<br>
-									<div style="padding:5px 0; background: #000;">
+									<div style="padding:5px 0; background: rgb(66, 73, 73);">
 										<!-- button -->
 										<a href="#" class="btn btn-more-white">더보기</a>
 										<!--// button -->
@@ -911,6 +964,10 @@
 										<img src="../../../images/common/img_cs.svg">
 										<img src="../../../images/common/img_kc.svg">
 										<img src="../../../images/common/img_green.svg">
+										<img src="../../../images/product/rental_icon1.svg">
+										<img src="../../../images/product/rental_icon2.svg">
+										<img src="../../../images/product/rental_icon3.svg">
+										<img src="../../../images/product/rental_icon4.svg">
 									</div>
 									<!-- html 보기 -->
 									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
@@ -941,6 +998,7 @@
 										<img src="../../../images/common/insur_line_04.svg">
 										<img src="../../../images/common/insur_line_05.svg">
 										<img src="../../../images/common/insur_line.svg">
+										<img src="../../../images/product/rental_bg2.svg">
 									</div>
 									<!-- html 보기 -->
 									<!-- <a href="javascript:;" class="btn btn-code">HTML 소스</a>
