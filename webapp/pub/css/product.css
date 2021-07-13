@@ -309,6 +309,7 @@
 .filter-detail-box > dl > dd {flex:1;}
 .filter-detail-box .filter-chk-list {margin-top:-18px; font-size:0; overflow: hidden;}
 .filter-detail-box .filter-chk-list > li {width:16.666%; padding-top:18px; display:inline-block; font-size:16px; color: #666;}
+.filter-detail-box .filter-chk-list .check-style1 > span {max-width: 120px; display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; text-indent: 0;}
 .filter-detail-box > dl.sub-sort {border:0; padding-top:0;}
 .filter-detail-box > dl.selection-result {padding:20px 30px; background: #f8faff; position: relative;}
 .filter-detail-box > dl.selection-result > dt {font-size: 14px; color: #333; font-weight: 400;}
