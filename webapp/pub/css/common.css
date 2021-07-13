@@ -878,7 +878,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style1 table tbody th + td {padding:10px 30px;}
 
 /* 제목에 배경 없는 테이블 */
-.table-area.table-style2 {padding:11px 0 16px; border-bottom:1px solid #d7d7d7;}
+.table-area.table-style2 {padding:11px 0 16px; border-bottom:1px solid #d7d7d7; border-top-color:#000;}
 .table-area.table-style2 table {color:#666; font-size:16px;}
 .table-area.table-style2 table th,
 .table-area.table-style2 table td {padding-top:5px; height:19px; text-align:left;}
