@@ -29,10 +29,11 @@
 .header-cont .right-area {position:absolute; top:5px; right:0; font-size:0;}
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
 .header-cont .right-area .icon-btn > a {width:36px; height:36px; display: block; position: relative;}
-.header-cont .right-area .icon-btn > a:hover::before {content:""; width:36px; height:36px; position:absolute; top:0; left:0; z-index:1;}
-.header-cont .right-area .icon-btn.cart > a:hover::before {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat #fff;}
+.header-cont .right-area .icon-btn > a::before {content:""; width:36px; height:36px; position:absolute; top:0; left:0; z-index:-1;}
+.header-cont .right-area .icon-btn > a:hover::before {z-index:1;}
+.header-cont .right-area .icon-btn.cart > a::before {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat #fff;}
 .header-cont .right-area .icon-btn.cart > a.on {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat }
-.header-cont .right-area .icon-btn.member > a:hover::before {background:url(../images/common/icon_member_on.svg) 50% 50% no-repeat #fff;}
+.header-cont .right-area .icon-btn.member > a::before {background:url(../images/common/icon_member_on.svg) 50% 50% no-repeat #fff;}
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
