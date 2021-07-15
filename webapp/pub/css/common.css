@@ -341,7 +341,7 @@
 .pop-tax .pop-ip-area > label {width: 150px; padding-left: 0;}
 .pop-tax .pop-ip-area label + .form-layout {width: calc(100% - 150px);}
 
-/* 결과없음(제품) */
+/* 결과없음(검색결과) */
 .result-none {padding: 60px 20px 100px; text-align: center;}
 .result-none .b-txt {font-size: 28px; color: #000; padding: 80px 0 30px; background: url(../images/common/icon_none2.svg) center 0 no-repeat;}
 .result-none .b-txt b {color: #346dd0; vertical-align: baseline;}
