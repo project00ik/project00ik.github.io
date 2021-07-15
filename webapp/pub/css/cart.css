@@ -63,7 +63,7 @@
 .pop-restock .pop-write > table > tbody > tr > td div {display:flex;}
 .pop-restock .pop-write > table > tbody > tr > td div label {width:100px;}
 .pop-restock .pop-write > table > tbody > tr > td strong {color:#346DD0;}
-.pop-restock .pop-write > table .input td div label {line-height:38px;}
+.pop-restock .pop-write > table .input td div label {line-height:38px; display: inline-block;}
 .pop-restock .pop-write > table .input td div.form-layout {display:block;width:calc(100% - 100px);}
 .pop-restock .pop-write .req{color: #346dd0;font-style: normal;vertical-align: top;padding: 0 3px;}
 .pop-restock .tab-area .pop-write th{width: 120px;text-align: center;padding: 20px 0;}

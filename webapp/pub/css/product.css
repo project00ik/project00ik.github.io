@@ -12,7 +12,7 @@
 .pro-detail-slide .productDetaileSlide .swiper-slide .product-img {width:70px; height:70px; overflow: hidden;}
 .pro-detail-slide .productDetaileSlide2 .swiper-slide .product-img {width:500px; height:500px; overflow: hidden;}
 .pro-detail-slide .productDetaileSlide {width:70px; height:390px; position:absolute; top:0; left:0; z-index:1;}
-.pro-detail-slide .productDetaileSlide .swiper-slide {width:70px; height:70px !important;}
+.pro-detail-slide .productDetaileSlide .swiper-slide {width:70px; height:70px !important; margin-right:10px;}
 .pro-detail-slide .swiper-slide-thumb-active {opacity:1; border: 2px solid #346dd0;}
 .pro-detail-slide .swiper-button-next,
 .pro-detail-slide .swiper-button-prev {display:none;}
@@ -351,14 +351,14 @@
 .proList .unit-type1 .unit-area .price > b {font-size:22px;}
 .proList .unit-type1 .unit-area .sale {margin:0 0 0 10px; display:inline-block; font-size:22px; text-align: left;}
 .proList .unit-type1 .unit-layer .unit-under-btn {width: 178px; height:auto; padding:30px; bottom:inherit; top:50%; right:0; background:none; transform: translateY(-50%);}
-.proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow {width: 118px; height: 38px; background:#346dd0; font-size:14px; line-height:37px;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow {width: 118px; height: 38px; background:#346dd0; font-size:14px; line-height:35px;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-buynow:hover {background: #2d3a52; border-color: #2d3a52;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-cart,
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like {width: 118px; height: 38px; background:#fff; font-size:14px; line-height:35px; border:1px solid #000; color:#000;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-cart:hover,
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like:hover {background: #f5f5f5;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-like {margin-left:0;}
-.proList .unit-type1 .unit-layer .unit-under-btn .btn-restock {width: 118px; height: 38px; background:#000; font-size:14px; line-height:37px;}
+.proList .unit-type1 .unit-layer .unit-under-btn .btn-restock {width: 118px; height: 38px; background:#000; font-size:14px; line-height:35px;}
 .proList .unit-type1 .unit-layer .unit-under-btn .btn-restock:hover {background: #666;}
 
 /* 바로구매 장바구니 팝업 */
@@ -368,7 +368,7 @@
 /* .ly-buyNowLy .ly-buyNowLy-cont {padding:30px; overflow: hidden; height:628px;} */
 /* .ly-buyNowLy .ly-buyNowLy-cont .option-cont {height:328px;} */
 .ly-buyNowLy .pro-detail-slide {width:390px; height: 470px; padding-left:0; float: left;}
-.ly-buyNowLy .pro-detail-slide .productDetaileSlide {width:100%; height:70px; padding:0; margin-top:10px; position: inherit; top:inherit; left:inherit; z-index:inherit;}
+.ly-buyNowLy .pro-detail-slide .productDetaileSlide {width:100%; height:70px; padding:0; margin-top:10px; position: static; top:inherit; left:inherit; z-index:inherit;}
 .ly-buyNowLy .pro-detail-slide .productDetaileSlide .swiper-wrapper {height:70px;}
 .ly-buyNowLy .pro-detail-slide .productDetaileSlide .swiper-slide {height:auto !important;}
 .ly-buyNowLy .pro-detail-slide .productDetaileSlide2 {width:100%;}
@@ -429,7 +429,7 @@
     .pro-detail-photo {width:100%;}
     .pro-detail-slide .swiper-container {height:auto;}
     .pro-detail-slide {padding-left:0;}
-    .pro-detail-slide .productDetaileSlide {width:100%; padding:0 20px; margin-top:10px; position: inherit; top:inherit; left:inherit; z-index:inherit;}
+    .pro-detail-slide .productDetaileSlide {width:100%; padding:0 20px; margin-top:10px; position: static; top:inherit; left:inherit; z-index:inherit;}
     .pro-detail-slide .productDetaileSlide .swiper-wrapper {height:16vw;}
     .pro-detail-slide .productDetaileSlide .swiper-slide {height:auto !important;}
     .pro-detail-slide .productDetaileSlide2 {width:100%;}
@@ -653,7 +653,7 @@
     .ly-buyNowLy .option-ly-btn-open {width:48px; height:20px; display:inline-block; margin-left:-24px; font-size:0; position:absolute; top:-20px; left:50%; z-index:1; background: url(../images/common/btn_ly_option_more_on.svg) 0 0 no-repeat;}
     .ly-buyNowLy .btn-area {padding:20px;}
     .ly-buyNowLy .btn-area .btn-style-ml2 {width:100%; height:42px; line-height:41px;}
-    .ly-buyNowLy .cart-select-area {width:calc(100% + 40px); margin:20px -20px 0; position: inherit; padding:20px 20px 0; border-top:1px solid #d7d7d7;}
+    .ly-buyNowLy .cart-select-area {width:calc(100% + 40px); margin:20px -20px 0; position: static; padding:20px 20px 0; border-top:1px solid #d7d7d7;}
 
     .ly-buyNowLy .option-result.selLeng0 {height:auto; margin-top:0;}
     .ly-buyNowLy .option-result.selLeng1,

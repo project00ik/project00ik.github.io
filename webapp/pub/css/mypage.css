@@ -79,7 +79,7 @@
 .pop-sLabel > ul li {border: none;}
 .pop-sLabel > ul > li:first-child {padding-top: 0;}
 .pop-sLabel > ul > li:last-child {padding-bottom: 0;}
-.pop-sLabel .pop-ip-area > label {width: 120px; padding-left: 0;}
+.pop-sLabel .pop-ip-area > label {width: 120px; padding-left: 0; display:inline-block;}
 .pop-sLabel .pop-ip-area label + .form-layout {width: calc(100% - 120px);}
 .pop-sLabel .textarea {height: 109px;}
 .pop-sLabel .btn-r-area {padding: 0;}

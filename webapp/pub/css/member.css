@@ -141,7 +141,7 @@
 .pop-password .pop-write > ul {padding:10px 0 0;border-top:1px solid #d7d7d7}
 .pop-password .pop-write > ul > li{border: none;padding:10px 0}
 .pop-password .pop-write > ul > li:last-child {padding-bottom: 0;}
-.pop-password .pop-ip-area > label{width: 170px;text-align: left;}
+.pop-password .pop-ip-area > label{width: 170px;text-align: left; display: inline-block;}
 .pop-password .pop-ip-area label + .form-layout{width: calc(100% - 190px)}
 .popup-type-m .lyPopup .popup-cont .pop-password .btn-area{padding-bottom: 0;}
 .pop-account {text-align: center;}

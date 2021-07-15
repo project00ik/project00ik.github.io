@@ -217,7 +217,7 @@ ICTMALL 고객만족도 조사
   .notice-detail {margin-top:20px; border-top:1px solid #000;}
   .notice-detail > dt {padding:12px 0 12px 42px; font-size: 14px;}
   .notice-detail .list-flag {left:0; top: 12px;}
-  .notice-detail .date {margin-top: 6px; font-size:13px; text-align:left; position: inherit; z-index:inherit;}
+  .notice-detail .date {margin-top: 6px; font-size:13px; text-align:left; position: static; z-index:inherit;}
   .notice-detail > dt .new {margin:-5px 0 0 5px;}
   .notice-detail .html-area {padding:20px 0; font-size: 14px; line-height:17px;}
   .notice-detail .notice-file-upload > dt {display:none;}

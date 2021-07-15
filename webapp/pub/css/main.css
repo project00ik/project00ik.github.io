@@ -4,9 +4,9 @@
 .main .container {width:100%;}
 .main .container .main-visual {width:100%; min-width:1200px; z-index:0;}
 .main-visual {position:relative;}
-.main-visual-cate .cate-area .cate-layer {position:absolute; top:48px; left:0; z-index:99;}
+.main-visual-cate .cate-area .cate-layer {height:592px; position:absolute; top:48px; left:0; z-index:99;}
 .main-visual-cate {width:1200px; margin-left:-600px; position:absolute; top:0; left:50%; z-index:10;}
-.main-visual-cate .cate-area .cate-layer {top:1px;}
+.main-visual-cate .cate-area .cate-layer {padding:17px 0; top:0;}
 .main-visual-cate .btn-layer-close {display:none;}
 
 .main .main-slide-area {position:relative;}
@@ -99,7 +99,7 @@
 .notice-wrap .cont-notice .notice-area ul {display: flex; justify-content: space-between;}
 .notice-wrap .cont-notice .notice-area ul li {width: 240px; height: 190px;}
 .notice-wrap .cont-notice .notice-area ul li a {display: block; padding: 24px 20px; background: #fff;}
-.notice-wrap .cont-notice .notice-area ul li p {padding-top: 10px; font-size: 18px; font-weight: 500; line-height: 26px; text-align: left; color: #000;}
+.notice-wrap .cont-notice .notice-area ul li p {height:62px; padding-top: 10px; font-size: 18px; font-weight: 500; line-height: 26px; text-align: left; color: #000; overflow:hidden;}
 .notice-wrap .cont-notice .notice-area ul li .noti-date {padding-top: 46px; font-size: 15px; line-height: 15px; text-align: left; color: #999;}
 .notice-wrap .cont-notice .notice-area ul li .noti-date .icon-new {margin-left: 3px;}
 .notice-wrap .cont-notice .service-area {position: absolute; top: -20px; right: 0; width: 436px; height: 384px; padding: 40px 28px; border: 1px solid #d7d7d7; background: #fff url(../images/common/img_cs.svg) right 28px top 28px no-repeat;}
@@ -230,7 +230,7 @@
     .notice-wrap .cont-notice .service-area .ser-box ul .sc-return u {background: url(../images/common/mo_icon_cs_return.svg) center bottom no-repeat;height: 39px;}
     
     .main .btn-area-c {padding: 0; display:block;}
-    .main .btn-area-c .btn-more-black2 {height:28px; line-height: 29px; font-size: 14px; position: inherit;  top:inherit; left: inherit; z-index: inherit;}
+    .main .btn-area-c .btn-more-black2 {height:28px; line-height: 29px; font-size: 14px; position: static;  top:inherit; left: inherit; z-index: inherit;}
 
     /* 하단배너 */
     .last-banner-wrap{width:100%;margin: 0 auto 100px;}
