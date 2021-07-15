@@ -28,10 +28,11 @@
 .header-cont .search-area .btn-search {position:absolute; top:0; right:0;}
 .header-cont .right-area {position:absolute; top:5px; right:0; font-size:0;}
 .header-cont .right-area .icon-btn {width:36px; height:36px; display:inline-block; background-size:auto 100%;}
-.header-cont .right-area .icon-btn > a {width:36px; height:36px; display: block;}
-.header-cont .right-area .icon-btn.cart > a:hover {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat }
+.header-cont .right-area .icon-btn > a {width:36px; height:36px; display: block; position: relative;}
+.header-cont .right-area .icon-btn > a:hover::before {content:""; width:36px; height:36px; position:absolute; top:0; left:0; z-index:1;}
+.header-cont .right-area .icon-btn.cart > a:hover::before {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat #fff;}
 .header-cont .right-area .icon-btn.cart > a.on {background:url(../images/common/icon_cart_on.svg) 50% 50% no-repeat }
-.header-cont .right-area .icon-btn.member:hover {background:url(../images/common/icon_member_on.svg) 50% 50% no-repeat}
+.header-cont .right-area .icon-btn.member > a:hover::before {background:url(../images/common/icon_member_on.svg) 50% 50% no-repeat #fff;}
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
@@ -400,7 +401,7 @@
 .icon-btn + .icon-btn {margin-left:30px;}
 .icon-btn.cart {position:relative;}
 .icon-btn.cart > a {background:url(../images/common/icon_cart.svg) 50% 50% no-repeat;}
-.icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px}
+.icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px; z-index:2;}
 .icon-btn.member {background:url(../images/common/icon_member.svg) 50% 50% no-repeat;}
 .btn-more-white {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #fff; font-weight:500; font-size:14px; color:#fff; background:url(../images/common/icon_plus_white.svg) right 16px center no-repeat; display:inline-block;}
 .btn-star {font-size:0; width:24px; height:24px; background:url(../images/common/icon_star_s.svg) 0 0 no-repeat; display:inline-block;}
