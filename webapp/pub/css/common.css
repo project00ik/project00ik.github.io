@@ -21,7 +21,7 @@
 .header .header-top {width:1200px; margin:20px auto 13px; text-align:right; font-size:13px; color:#333;}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .header .header-top {margin:20px auto 14px; }
-   }
+}
 .header .header-cont {width:1200px; margin:0 auto 20px; position:relative;}
 .header-cont .logo {width:187px; height:38px; display:inline-block; position:absolute; bottom:20px; left:0;}
 .header-cont .search-area {width:400px; height:38px; margin:0 auto; position:relative; border-bottom:2px solid #000;}
@@ -333,6 +333,8 @@
 .form-layout.form-flexnone {display: block;}
 .form-layout.form-flexnone .form-email select {width: 118px;}
 
+.form-layout .form-search {flex:1;}
+
 .column-ip-area {padding-bottom: 20px;}
 .column-ip-area label {display: block; padding-bottom: 10px; font-size: 16px; color: #000;}
 .column-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
@@ -459,7 +461,7 @@ button.btn-style-s1 {line-height:25px;}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .btn-buynow,
     .btn-restock {line-height: 42px;}
-   }
+}
 .btn-restock:hover {background: #666;}
 /* 버튼 컬러 스타일 */
 .btn.btn-color1 {color:#000; border-color:#000;}
@@ -548,6 +550,10 @@ button.btn-style-s1 {line-height:25px;}
 .flag-txt.gray {color:#000; background:#e5e5e5;}
 .flag-txt.flag-hide {display:none;}
 .proList .flag-txt.flag-hide {display:inline-block;}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .flag-txt {line-height:20px;}
+}
+
 
 /* 공통 아이콘 */
 .icon-new {position:relative; display:inline-block; font-style:normal; margin-top:-4px; width:15px; height:15px; font-weight:500; font-size:10px; line-height:15px; text-align:center; color:#fff; border-radius:100%; background:#346DD0; text-decoration:none;}
@@ -753,7 +759,7 @@ select.select:disabled {background:url(../images/common/arrow_select_disabled.sv
 select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
 select.select.sel-s:disabled {background:url(../images/common/arrow_select_disabled.svg) top 4px right 10px no-repeat #fafafa; border:1px solid #bbb; color:#666;}
 
-input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 12px center no-repeat;}
+input.datepicker {width: 100%; height: 38px; padding: 0 12px; line-height: 38px; border: 1px solid #bbb; font-size: 14px; background: url(../images/common/icon_date.svg) right 12px center no-repeat; flex:1;}
 input[type="date"]::-webkit-clear-button, 
 input[type="date"]::-webkit-inner-spin-button {display: none;}
 input[type="date"]::-webkit-calendar-picker-indicator {width:5px; background:none;} 
@@ -950,11 +956,11 @@ textarea + .cot b {vertical-align: top;}
 .loading-wrap {width:100%; height:100%; background:rgba(255, 255, 255, 0.7); position:fixed; top:0; left:0; bottom:0; right:0; z-index:99999; display:flex; align-items: center; justify-content: center;}
 .loading-wrap .loading {width:70px; height:70px; font-size:0; background: url(../images/common/loading.svg) 0 0 no-repeat; background-size: 100% auto;}
 /* IE10+ */ 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { /* Enter your style code */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
     .loading-wrap .loading {width:70px; height:70px; font-size:0; background: url(../images/common/loading.gif) 0 0 no-repeat; background-size: 100% auto;}
 }
 /* IE9,10 */
-@media screen and (min-width:0\0){ /* Enter your style code */
+@media screen and (min-width:0\0){ 
     .loading-wrap .loading {width:70px; height:70px; font-size:0; background: url(../images/common/loading.gif) 0 0 no-repeat; background-size: 100% auto;}
 }
 
@@ -1005,7 +1011,7 @@ textarea + .cot b {vertical-align: top;}
 .unit-type2 .unit-area > dt {width:100%; background:#f5f5f5; position: relative;}
 .unit-type2 .unit-area > dt > img {width:100%;}
 .unit-type2 .unit-area > dd {width:100%; padding:16px 0 0;}
-.unit-type2 .unit-area .unit-title {width:100%; height:50px; font-size:20px; font-weight: 500;}
+.unit-type2 .unit-area .unit-title {width:100%; height:49px; font-size:20px; font-weight: 500;}
 .unit-type2 .unit-area .date-area {display:-webkit-box; display:-ms-flexbox; display:flex; align-items:flex-end;padding-top: 3px; }
 .unit-type2 .unit-area .date-area .date {font-size:14px; color:#333; display:inline-block;}
 .unit-type2 .unit-area .date-area .dday:before {content: ''; display: inline-flex; width: 1px; height: 10px; background: #d7d7d7; margin-right: 10px;}
@@ -1104,9 +1110,9 @@ textarea + .cot b {vertical-align: top;}
 /* 첨부파일 업로드 */
 .filebox{display: flex;}
 .filebox input[type="file"] {position: absolute;width: 0;height: 0;padding: 0;overflow: hidden;border: 0;}
-.filebox label {vertical-align: middle;cursor: pointer;border: 1px solid #000;width:118px;height: 38px;margin-left: 5px;line-height: 36px !important;color: #000;text-align: center;}
+.filebox label {vertical-align: middle;cursor: pointer;border: 1px solid #000;width:118px;height: 38px;margin-left: 5px;line-height: 36px !important;color: #000;text-align: center; display: inline-block;}
 .filebox label:hover {background:#f5f5f5;}
-.filebox .upload-name{width:calc(100% - 43px);}
+.filebox .upload-name{width:calc(100% - 43px); flex:1;}
 
 /* 페이징 */
 .paging{text-align: center; margin:70px 0 30px;}

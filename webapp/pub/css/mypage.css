@@ -31,7 +31,7 @@
 .mypage-cont .my-main .my-top-area .top-member b {font-size: 28px;}
 .mypage-cont .my-main .my-top-area .top-member span {font-size: 20px; vertical-align: bottom;}
 .mypage-cont .my-main .my-top-area .top-member-condition {display: flex; width: 640px; justify-content: space-evenly;}
-.mypage-cont .my-main .my-top-area .top-member-condition > div {position: relative; width: 100%; text-align: center; color: #fff;}
+.mypage-cont .my-main .my-top-area .top-member-condition > div {position: relative; width: 100%; text-align: center; color: #fff; flex:1;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div:before {content: ''; display: inline-block; position: absolute; top: 0; left: 0; width: 1px; height: 60px; background: #0095ac; opacity: 0.6;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div span {font-size: 16px;}
 .mypage-cont .my-main .my-top-area .top-member-condition > div b {display: block; padding-top: 5px; font-size: 30px;}
@@ -110,7 +110,7 @@
 .grid-bottom-form .form-layout.w102 {width:102px;}
 .grid-bottom-form .form-layout.w370 {width:370px;}
 .grid-search-area {width:100%; margin-bottom:10px; display: flex; justify-content: flex-end;}
-.grid-search-area .form-layout3 {max-width:310px;}
+.grid-search-area .form-layout3 {max-width:310px; flex:none;}
 .pop-info-txt {margin-top:20px; text-indent:-9px; padding-left:9px; font-size: 14px; color:#666;}
 .pop-info-txt > em {color: #346dd0; vertical-align: top;}
 
@@ -241,7 +241,7 @@
 .btn-open.on::after {content:"닫기"; font-size:14px; vertical-align: top;}
 .w127 {width:127px;}
 .w101 {width:101px;}
-.orderFormeTgView .list-in {height:295px; overflow:hidden;}
+.orderFormeTgView .list-in {height:294px; overflow:hidden;}
 .orderFormeTgView.open .list-in {height:auto;}
 .lybox-area {position: relative;}
 .lybox-wrap {display:none; width:800px; padding:30px; position: absolute; top:168px; left:150px; background:#fff; border: 1px solid #bbb;  z-index:10;}

@@ -84,7 +84,6 @@ input[type="date"]::-webkit-outer-spin-button {-webkit-appearance:none; margin:0
 [readonly],
 [disabled] {cursor:default;}
 [disabled] {cursor:default; opacity:1; -webkit-text-fill-color:inherit;}
-button:active {padding:0;}
 
 select {-webkit-appearance:none; -moz-appearance:none; appearance:none; cursor: pointer;}
 select::-ms-expand {display:none;}
