@@ -403,15 +403,10 @@ function inLyOpen(id) {
 }
 
 function inLyClose(id){
+  // 팝업안에 팝업 닫기
   var $inLyCloseAcive = $('#' + id);
   $inLyCloseAcive.hide();
   $inLyCloseAcive.removeClass('open');
-  // $('.inLyClose').each(function(){
-  //   $(this).on('click', function(){
-  //     $(this).closest('.lyPopupWrap').hide();
-  //     $(this).closest('.lyPopupWrap').removeClass('open');
-  //   })
-  // });
 }
 
 function detailOptionLy(){
@@ -520,27 +515,6 @@ function tab(){ // 탭 관련 js
   })
 }
 
-
-// function scrollTab() {
-//   // scroll 탭 관련 js
-//   $('.scrollTab li').each(function () { 
-//     $(this).bind('click', function () {
-//       var depId = $(this).attr('data-tab');
-//       var winW = $(window).width();
-//       if (winW > 800){
-//         var depPd = 278;
-//       } else {
-//         var depPd = 240;
-//       }
-//       $('html, body').animate({ scrollTop: $('#' + depId).offset().top - depPd }, 800, 'easeInOutExpo');
-//       $(this).addClass('on');
-//       $(this).siblings().removeClass('on');
-//     });
-//   });
-// }
-// $(window).resize(function(){
-//   scrollTab();
-// })
 
 function scrollTop(){
   // 스크롤탭 fixed 고정
@@ -833,33 +807,6 @@ function lyPrevTab(){
   });
 }
 
-
-
-// function btnTooltip(){
-//   // 툴팁
-//   $('.tooltipBtn').each(function(){
-//     $(this).on('click', function(){
-//       $(this).toggleClass('on');
-//       if($(this).hasClass('on')){
-//         $(this).closest('.tooltip-box').show();
-//       } else {
-//         $(this).closest('.tooltip-box').hide();
-//       }
-//     });
-//     $(this).find('.btnCloseTooltip').on('click', function(){
-//       $(this).closest('.tooltipBtn').removeClass('on');
-//     })
-//   })
-// }
-
-// function scaleImg(){
-//   $('.product-1st').on('mouseover', function(){
-//     $('.product-1st .unit-area > dt.on').addClass('on');
-//   });
-//   $('.product-1st').on('mouseoout', function(){
-//     $('.product-1st .unit-area > dt.on').removeClass('on');
-//   })
-// }
 
 
 /* ==========================================================================
