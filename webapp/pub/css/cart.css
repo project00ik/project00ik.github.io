@@ -251,7 +251,7 @@
 .cart-order-list .cart-list-con .tit-area {border-bottom: 0;}
 .cart-order-list .cart-list-con .unit-cart .unit-under-btn {width: auto;}
 .cart-order-list .order-delivery ul li {display: flex; padding-bottom: 20px;}
-.cart-order-list .order-delivery ul li > label {width: 176px; padding-left: 20px; line-height: 38px;}
+.cart-order-list .order-delivery ul li > label {width: 176px; padding-left: 20px; line-height: 38px; display: inline-block;}
 .cart-order-list .order-delivery ul li .form-add-area {flex:1;}
 .cart-order-list .order-delivery ul li .form-layout {flex: 1; justify-content: space-between;}
 .cart-order-list .order-delivery ul li .form-layout .input {max-width:613px;}
