@@ -339,9 +339,8 @@
 .column-ip-area label {display: block; padding-bottom: 10px; font-size: 16px; color: #000;}
 .column-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: top; font-style: normal; margin-left: 5px;}
 
-.excel-wrap {width:100%; min-height: 280px;}
+.excel-wrap {width:100%;}
 .excel-wrap + .file-upload-area {margin-top:10px;}
-
 
 .pop-tax .pop-ip-area > label {width: 150px; padding-left: 0;}
 .pop-tax .pop-ip-area label + .form-layout {width: calc(100% - 150px);}
@@ -1677,6 +1676,10 @@ textarea + .cot b {vertical-align: top;}
     .form-layout3 .w127 {width:100%;}
     .list-area .list-con {border-bottom:0;}
     .form-checkradio label {line-height: 36px;}
+
+    /* 그리드 영역 */
+    .in-grid-size,
+    .excel-wrap {width:100%; overflow:auto;}
 
 }
 @media only screen and  (min-height:812px){ /* iphoneX */
