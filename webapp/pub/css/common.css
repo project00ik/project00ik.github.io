@@ -419,8 +419,8 @@ a[class^="btn-"] {display:inline-block;}
 .mobile-paging {width:calc(100% - 40px); height:36px; margin:50px 20px 0; background: #fff; border: 1px solid #000; font-size: 14px; text-align: center; color: #000;}
 .product-detail .mobile-paging {margin-top:20px;}
 .mobile-paging::after {content:""; width:18px; height:18px; margin-top:2px; background:url(../images/common/icon_plus_black.svg) 0 0 no-repeat; display:inline-block; vertical-align:top;}
-.btn-style-s1 {min-width:98px; height:26px; line-height:26px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000; display:inline-block;}
-.btn-style-s2 {min-width:98px; height:26px; line-height:26px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0; display:inline-block;}
+.btn-style-s1 {min-width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000; display:inline-block;}
+.btn-style-s2 {min-width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0; display:inline-block;}
 button.btn-style-s1 {line-height:25px;}
 .btn-style-m1 {min-width:118px; height:38px; line-height:37px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-m2 {min-width:118px; height:38px; line-height:37px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
@@ -521,9 +521,9 @@ button.btn-style-s1 {line-height:25px;}
 .btn-style-mm1:hover {border-color:#000; background: #f5f5f5;}
 .btn-style-mm2 {min-width:148px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-mm2:hover {border-color:#2d3a52; background:#2d3a52;}
-.btn-style-mml1 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
+.btn-style-mml1 {min-width:168px; height:38px; line-height:37px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000;}
 .btn-style-mml1:hover {border-color:#000; background: #f5f5f5;}
-.btn-style-mml2 {min-width:168px; height:48px; line-height:47px; text-align:center; font-size:16px; display:inline-block; color:#fff; background:#346dd0;}
+.btn-style-mml2 {min-width:168px; height:38px; line-height:37px; text-align:center; font-size:14px; display:inline-block; color:#fff; background:#346dd0;}
 .btn-style-mml2:hover {border-color:#2d3a52; background:#2d3a52;}
 
 .btn-tooltip {width: 20px; height: 20px; margin:3px 0 0 2px; position: relative; display:inline-block; font-size:0; background: url(../images/common/btn_tooltip.svg) 0 0 no-repeat;}
