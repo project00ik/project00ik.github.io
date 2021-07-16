@@ -356,7 +356,7 @@
 .approval-table th:first-child{border-left: none;}
 .approval-table tbody tr:first-child td {padding-top: 20px;}
 .approval-table td{text-align: center; font-size: 16px; padding: 6px 12px;}
-.approval-table tr.td-start td{padding-top: 14px;}
+.approval-table tr.td-start td{padding-top: 20px;}
 .lyPopup .popup-cont .lyPopCont .approval-add .btn-area{text-align: right; padding-top:20px;}
 
 
