@@ -1228,10 +1228,12 @@ textarea + .cot b {vertical-align: top;}
     .header-cont .logo > a::before {content:''; width:136px; height:36px; display: inline-block; background: url(../images/layout/mo_logo_ictmall.png) 0 0 no-repeat; background-size: 136px auto;}
     .header-cont .right-area {top:20px; right:20px;}
     .header-cont .right-area .icon-btn {width:24px; height:24px;}
-    .header-cont .right-area .icon-btn > a {width: 24px; height: 24px;}
-    .header-cont .right-area .icon-btn.cart > a:hover {background:url(../images/common/mo_icon_cart_on.svg) 50% 50% no-repeat }
-    .header-cont .right-area .icon-btn.cart > a.on {background:url(../images/common/mo_icon_cart_on.svg) 50% 50% no-repeat }
-    .header-cont .right-area .icon-btn.member:hover {background:url(../images/common/mo_icon_member_on.svg) 50% 50% no-repeat}
+    .header-cont .right-area .icon-btn > a,
+    .header-cont .right-area .icon-btn > a::before {width: 24px; height: 24px;}
+    .header-cont .right-area .icon-btn.cart > a::before {background:url(../images/common/mo_icon_cart_on.svg) 50% 50% no-repeat }
+    .header-cont .right-area .icon-btn.cart > a:hover::before {z-index:1;}
+    .header-cont .right-area .icon-btn.cart > a.on::before {z-index:1;}
+    .header-cont .right-area .icon-btn.member > a::before {background:url(../images/common/mo_icon_member_on.svg) 50% 50% no-repeat}
     .icon-btn + .icon-btn {margin-left:20px;}
     .inp-area .inp {font-size:15px;}
     .inp-area .btn-del {right: 34px;}
