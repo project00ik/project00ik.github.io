@@ -929,7 +929,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style5 th{font-weight: normal;background:#F5F5F5;border-left: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;line-height: 59px;font-size: 16px; text-align: center;}
 .table-area.table-style5 th:first-child{border-left: none;}
 .table-area.table-style5 tbody tr:first-child td {padding-top: 20px;}
-.table-area.table-style5 td{text-align: center; font-size: 16px; padding: 6px 10px;}
+.table-area.table-style5 td{text-align: center; font-size: 16px; padding: 6px 12px;}
 .table-area.table-style5 tr.td-start td{padding-top: 14px;}
 .table-area.table-style5 td .ellipsis {width:650px;}
 .lyPopupWrap .table-area.table-style5 td .ellipsis {width:300px;}
