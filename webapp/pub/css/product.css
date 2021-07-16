@@ -153,7 +153,7 @@
 .pop-review-write .pop-satis .pro-satis-list .pro-satis-con:nth-of-type(2) ~ .pro-satis-con {padding-bottom: 0;}
 .pop-review-write .pop-satis .pro-satis-list .pro-satis-con .rating-tit {width: 50px; font-size: 16px; line-height: 18px; color: #000; text-align: right; margin-right: 20px;}
 .pop-review-write .pro-upload .upload-url {display: flex;}
-.pop-review-write .pro-upload .upload-url label {width: 90px; line-height: 38px; font-size: 16px; color: #000;}
+.pop-review-write .pro-upload .upload-url label {width: 90px; line-height: 38px; font-size: 16px; color: #000; display:inline-block;}
 .pop-review-write .pro-upload .upload-url label + input[type='text'] {width: 350px;}
 .pop-review-write .pro-upload .upload-area + .upload-url {padding-top: 16px;}
 

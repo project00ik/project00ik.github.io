@@ -836,7 +836,7 @@ textarea + .cot b {vertical-align: top;}
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px; cursor: pointer !important;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
 .check-style1 input + i {width: 22px; height: 22px; background: #fff; border: 1px solid #bbb; display:inline-block; }
-.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 51% no-repeat #fff; display:inline-block; border:1px solid #bbb; background-size:12.826px 8.413px;}
+.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 51% no-repeat #fff; display:inline-block; border:1px solid #bbb; background-size:12px auto;}
 .check-style1 input:disabled + i {width: 22px; height: 22px; background: #fafafa; border: 1px solid #e5e5e5;}
 .check-style1 input:checked:disabled + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox_disabled.svg) 50% 50% no-repeat #fafafa; border: 1px solid #e5e5e5;}
 .check-style1 > span {margin-left:10px; font-weight:400; font-size:16px;}
