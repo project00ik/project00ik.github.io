@@ -269,10 +269,11 @@
 .cart-order-list .order-delivery ul li .form-layout .in-de-right label {flex: 1; }
 .cart-order-list .order-delivery ul li .form-layout .in-form-right {width: 292px; display: flex; align-items: center;}
 .cart-order-list .order-delivery ul li .form-layout .in-form-right .input {max-width: 118px;}
-.cart-order-list .order-delivery ul li .form-layout .in-form-right label {flex:1;}
-.cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {display: flex;}
+.cart-order-list .order-delivery ul li .form-layout .in-form-right label {flex:1; display:inline-block;}
+.cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {display: flex; flex:1;}
 .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div .input {flex:1;}
 .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div .btn {margin-left: 5px;}
+.cart-order-list .order-delivery ul li .form-layout .in-form-right label.laW2 {width:100px; flex:none;}
 .cart-order-list .order-delivery ul li .order-de-title {font-size: 16px; color: #000; font-weight: 500; width: 176px; padding-left: 20px;}
 .cart-order-list .order-delivery ul li .order-de-txt {font-size: 14px; color: #666;}
 .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row {display: flex;}
@@ -554,8 +555,8 @@
     .notice-txt {padding: 0 20px;}
     .pay-agree-check {padding: 30px 20px 0;}
     .after-pay-area {padding: 0; margin-top: 30px;}
-    .after-pay-area .swiper-slide {width: 370px !important; padding: 0 10px 10px;}
-    .after-pay-area .afpay-box {background-size: 100% 100%;}
+    .after-pay-area .swiper-slide {width: 370px !important; padding: 0 5px 10px;}
+    .after-pay-area .afpay-box {padding:20px; background-size: 100% 100%;}
     .after-pay-area .afpay-box .afpay-txt p {font-size: 15px;}
     
     .list-con .list-in .two-form .form-layout > :last-child {width: 112px;}
@@ -591,7 +592,7 @@
 @media only screen and (max-width:760px) {
 }
 @media only screen and (max-width:480px) {
-    .after-pay-area .swiper-slide {width: 280px !important;}
+    .after-pay-area .swiper-slide {width: 300px !important;}
 }
 @media only screen and (max-width:414px) { /* iphone plus */
 }
@@ -600,6 +601,7 @@
 @media only screen and  (max-width:360px) { /* galaxy */
 }
 @media only screen and  (max-width:320px) { /* iphoneSE */
+    .after-pay-area .swiper-slide {width: 280px !important;}
 }
 @media only screen and  (max-height:568px) { /* 아이폰SE */
 
