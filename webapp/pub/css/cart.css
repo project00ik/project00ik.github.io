@@ -138,7 +138,7 @@
 /* 장바구니 팝업*/
 .pop-orderlist {word-break:keep-all;}
 .pop-orderlist > .input{display: flex;margin: 30px 15px 0;}
-.pop-orderlist > .input label{width: 80px;line-height: 38px;text-align: left;}
+.pop-orderlist > .input label{width: 80px;line-height: 38px;text-align: left; display:inline-block;}
 .pop-orderlist > .input .form-layout{width:calc(100% - 80px)}
 .pop-orderlist > p.ex{font-size: 14px;color: #666;margin: 20px 0;}
 .orderlist-wrap ul > li{padding:20px 0;border-bottom: 1px solid #D7D7D7;}

@@ -21,6 +21,8 @@
 .cs-info dl > dd > p {font-size: 14px; color: #666; font-weight: 400;}
 .cs-info dl > dd .cs-tel {padding:6px 0; font-size: 26px; color: #000; font-weight: 700;}
 
+.cs-content .list-con + .list-con {margin-top:20px;}
+
 /* ==========================================================================
     공지사항
 ========================================================================== */

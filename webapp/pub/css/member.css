@@ -102,7 +102,7 @@
 .join-content .login-wrap.find .radio-select > div.on{display: block;}
 .join-content .login-wrap.find .radio-select > div > div{display: flex;}
 .join-content .login-wrap.find .radio-select > div > div + div{margin-top: 20px;}
-.join-content .login-wrap.find .radio-select > div > div label{width: 180px;line-height: 38px;}
+.join-content .login-wrap.find .radio-select > div > div label{width: 180px;line-height: 38px; display:inline-block;}
 .join-content .login-wrap.find .radio-select > div > div .form-layout{display: contents;width: calc(100% - 180px);}
 .join-content .login-wrap.find .radio-select > div > div .w380{width:380px}
 .join-content .login-wrap.find .radio-select > div > div .w100{width: calc(100% - 180px)}

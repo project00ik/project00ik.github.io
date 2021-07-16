@@ -27,7 +27,7 @@
 .pop-ip-area .form-address {width: calc(100% - 190px);}
 .pop-ip-area .form-address .form-layout input + button {margin-left: 5px;}
 .pop-suggestion .user-search .pop-mo-form {display: flex; flex:1;}
-.pop-suggestion .user-search .pop-mo-form .form-area {width: 100%;}
+.pop-suggestion .user-search .pop-mo-form .form-area {width: 100%; flex:1;}
 .pop-suggestion .user-search .pop-mo-btn {display: flex; margin-left: 5px;}
 .pop-suggestion .user-search .pop-mo-btn .btn {margin-left: 0;}
 .pop-suggestion .user-search .pop-mo-btn .btn + .btn {margin-left: 5px;} 
@@ -131,7 +131,7 @@
 .pop-suggestion .textarea-wrap{margin-top: 20px;}
 .pop-suggestion .textarea-wrap textarea{margin-top: 10px;}
 .pop-suggestion .user-search{display: flex;margin-bottom: 30px;}
-.pop-suggestion .user-search select{width: 118px;}
+.pop-suggestion .user-search select{width: 140px;}
 .pop-suggestion .user-search .form-area{margin-left:5px;width: 394px;}
 .pop-suggestion .user-search .btn-style-m1{margin-left:5px;}
 .popup-type-m .lyPopup .popup-cont .pop-suggestion .btn-area{padding:0;border: none;width: auto;}
@@ -234,7 +234,7 @@
 .insurance-cont .report02 > div{width: 970px;margin: 0 auto;}
 .insurance-cont .report02-01 div{margin-top: 70px;}
 .insurance-cont .report02-01 ul li{display: flex;margin-bottom: 10px;}
-.insurance-cont .report02-01 ul li span{width: 200px;;text-align:center;line-height: 57px;background:#346DD0;color:#fff;}
+.insurance-cont .report02-01 ul li span{width: 200px;;text-align:center;line-height: 57px;background:#346DD0;color:#fff; display:inline-block;}
 .insurance-cont .report02-01 ul li span em{vertical-align: top;}
 .insurance-cont .report02-01 ul li p{line-height: 57px;background:#fff;margin-left: 10px;flex:1;padding-left: 20px;word-break: keep-all;}
 .insurance-cont .report02-02 > div{display: flex;margin-top: 50px;}
