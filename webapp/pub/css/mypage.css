@@ -150,8 +150,11 @@
 
 /* 나의리뷰 */
 .top-flex-area {padding: 30px 0 20px; display: flex; border-bottom: 1px solid #bbb;}
-.top-flex-area .form-layout {flex: inherit; max-width: 500px; margin-left: 20px;}
+.top-flex-area .form-layout {width:100%; max-width: 500px; margin-left: 20px;}
 .top-flex-area .form-layout .btn {margin-left: 5px;}
+.top-flex-area .form-layout .datepicker {}
+.top-flex-area .form-layout .mo-full {flex:none;}
+.top-flex-area .form-layout .mo-full:first-child {flex:1;}
 
 .my-detail.detail-review {margin-top: 20px; padding-bottom: 30px;}
 .my-detail.detail-review ul li {padding: 0;}
