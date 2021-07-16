@@ -86,7 +86,7 @@
 .word-box .word-list {padding: 20px 0; border-top: 1px solid #d7d7d7;}
 .word-box .word-list ul li {display: flex; justify-content: space-between; padding-bottom: 16px;}
 .word-box .word-list ul li:last-child {padding-bottom: 0;}
-.word-box .word-list ul li > a {width:100%; padding-right: 20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.word-box .word-list ul li > a {width:100%; padding-right: 20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; flex:1;}
 .word-box .word-list ul li > a span {display: inline-block; vertical-align: top;}
 .word-box .word-list.special {padding-bottom: 0;}
 
@@ -450,7 +450,7 @@ button.btn-style-s1 {line-height:25px;}
 .btn-small2-line {width:56px; height:28px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
 .btn-small3-line {height:28px; padding:0 12px; line-height:27px; text-align:center; font-size:14px; color:#000; border:1px solid #000; background:#fff;}
 .btn-check-line > input {opacity: 0;}
-.btn-check-line > span {display: inline-block; width:98px; height:28px; line-height:27px; padding: 0 0 0 30px; text-align: left; font-size:14px; color:#000; border:1px solid #000; background: url(../images/common/icon_checkbox_disabled.svg) left 13px center no-repeat;}
+.btn-check-line > span {display: inline-block; width:98px; height:28px; line-height:27px; padding: 0 0 0 30px; text-align: left; font-size:14px; color:#000; border:1px solid #000; background: url(../images/common/icon_checkbox_disabled.svg) left 13px center no-repeat; background-size:auto 8px;}
 .btn-check-line input:checked + span {color:#fff; border: 0;background-color: #346dd0;}
 .btn-xs-small {width:78px; height:20px; line-height:18px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
 .btn-word  {width:64px; height:19px; line-height:17px; color:#333; font-size:12px; text-align:center; border:1px solid #bbb; background:#fff;}
@@ -840,7 +840,7 @@ textarea + .cot b {vertical-align: top;}
 .check-style1 {position:relative; display:inline-block; text-indent:-30px; padding-left:30px; cursor: pointer !important;}
 .check-style1 input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
 .check-style1 input + i {width: 22px; height: 22px; background: #fff; border: 1px solid #bbb; display:inline-block; }
-.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 51% no-repeat #fff; display:inline-block; border:1px solid #bbb; background-size:12px auto;}
+.check-style1 input:checked + i {background:url(../images/common/icon_checkbox.svg) 50% 51% no-repeat #fff; background-size:13px auto; display:inline-block; border:1px solid #bbb; background-size:12px auto;}
 .check-style1 input:disabled + i {width: 22px; height: 22px; background: #fafafa; border: 1px solid #e5e5e5;}
 .check-style1 input:checked:disabled + i {width: 22px; height: 22px; background:url(../images/common/icon_checkbox_disabled.svg) 50% 50% no-repeat #fafafa; border: 1px solid #e5e5e5;}
 .check-style1 > span {margin-left:10px; font-weight:400; font-size:16px;}
@@ -927,7 +927,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style4 table .ta-r {text-align: right !important;}
 .table-area.table-style4 table .ta-l {text-align: left !important;}
 
-.table-area.table-style5 {border-top: 1px solid #bbb; border-bottom: 1px solid #D7D7D7;padding-bottom: 14px;}
+.table-area.table-style5 {border-top: 1px solid #bbb; border-bottom: 1px solid #D7D7D7;}
 .table-area.table-style5 .tb-l {text-align: left;}
 .table-area.table-style5 .tb-r {text-align: right;}
 .table-area.table-style5 th{font-weight: normal;background:#F5F5F5;border-left: 1px solid #d7d7d7; border-bottom: 1px solid #d7d7d7;line-height: 59px;font-size: 16px; text-align: center;}
@@ -935,6 +935,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style5 tbody tr:first-child td {padding-top: 20px;}
 .table-area.table-style5 td{text-align: center; font-size: 16px; padding: 6px 12px;}
 .table-area.table-style5 tr.td-start td{padding-top: 14px;}
+.table-area.table-style5 tr:last-child td {padding-bottom:20px;}
 .table-area.table-style5 td .ellipsis {width:650px;}
 .lyPopupWrap .table-area.table-style5 td .ellipsis {width:300px;}
 .file-upload-area .table-style5 {max-height:280px; overflow-x: hidden; overflow-y: auto;}

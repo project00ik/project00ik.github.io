@@ -237,6 +237,7 @@
 .pop-cart .cart-add-select > span{font-size: 14px;color:#999;display: block;padding-right: 60px;}
 .pop-cart .cart-add-select .form-area{margin-bottom: 10px;}
 #pricerequestPopup input.input {width: 250px;}
+#pricerequestPopup input.upload-name {flex:none;}
 
 /* ==========================================================================
     상품목록

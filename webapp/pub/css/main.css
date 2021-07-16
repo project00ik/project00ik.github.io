@@ -134,7 +134,7 @@
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li{padding:20px 0;border-bottom:1px solid #D7D7D7;}
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li:first-child{border-top:1px solid #D7D7D7;}
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li div{display: flex;justify-content: space-between;margin-bottom: 10px;}
-.pop-alarm .alarmlist-wrap .alarmlistCont ul li div span{position: relative;font-size: 16px;color:#346DD0;}
+.pop-alarm .alarmlist-wrap .alarmlistCont ul li div span{position: relative;font-size: 16px;color:#346DD0; display:inline-block;}
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li div span::after{content: "";position: absolute;top:2px;right:-10px;width:6px;height:6px;border-radius: 50%;background:#12B5CF;display: inline-block;}
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li div span.read::after{display: none;}
 .pop-alarm .alarmlist-wrap .alarmlistCont ul li div .time{font-size: 14px;color:#999;}
