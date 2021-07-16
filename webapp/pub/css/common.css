@@ -539,6 +539,10 @@ button.btn-style-s1 {line-height:25px;}
 .btn-plus {width:28px; height:28px; display:inline-block; background: url(../images/common/icon_plus_black.svg) 50% 50% no-repeat; font-size:0; border:1px solid #000;}
 .btn-minus {width:28px; height:28px; display:inline-block; background: url(../images/common/icon_minus_black.svg) 50% 50% no-repeat; font-size:0; border:1px solid #000;}
 
+/* 모바일 로그아웃 버튼 */
+.mo-logout-area {padding:30px 20px 0; display:none;}
+.mo-logout-area .btn-logout {width:100%; height:36px; line-height:38px; border:1px solid #000; text-align: center; font-size:14px;}
+
 /* 플래그 */
 .flag-txt {display:inline-block; width:auto; height:20px; line-height:19px; font-size:12px; text-align:center; border-radius:10px; padding:0 7px;}
 .flag-txt ~ .flag-txt {margin-left:6px;}
@@ -1456,7 +1460,7 @@ textarea + .cot b {vertical-align: top;}
     .mobile-paging::after {margin-top: 0; vertical-align: text-bottom;}
 
     /* 모바일 버튼 퍼센트형 */
-    .btn-mo-percent {flex-wrap: wrap; margin-left:-10px; padding-bottom:0 !important;}
+    .btn-mo-percent {width:calc(100% + 10px); flex-wrap: wrap; margin-left:-10px; padding-bottom:0 !important;}
     .btn-mo-percent .btn {margin-left:10px; margin-bottom:10px; height: 36px; line-height: 38px;}
     .btn-mo-percent .btn.mo-btn-w100 {width:calc(100% - 10px); flex:calc(100% - 10px) 1 1 !important; min-width:auto;}
     .btn-mo-percent .btn.mo-btn-w50 {width:calc(50% - 10px); flex:calc(50% - 10px) 1 1 !important; min-width:auto;}
@@ -1479,6 +1483,9 @@ textarea + .cot b {vertical-align: top;}
     .sub-content .btn-area-c.btn-layout3 {flex-wrap: wrap;}
     .sub-content .btn-area-c.btn-layout3 .btn {width:calc(50% - 10px); flex: 1 1 calc(50% - 10px);}
     .sub-content .btn-area-c.btn-layout3 .btn:nth-child(3) {margin-left:0; margin-top:20px;}
+
+    /* 모바일 로그아웃 버튼 */
+    .mo-logout-area {display:block;}
 
     /* 로딩바 */
     .loading-wrap .loading {width:60px; height:60px; background-size:100% auto;}
