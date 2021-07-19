@@ -213,10 +213,23 @@
           <div class="pop-layout pop-address">
             <div>
               <!-- 검색영역 -->
-              <div class="form-search search-type-del">
-                <input type="search" name="" id="" class="input" placeholder="도로명 또는 지번주소 검색">
-                <button class="del">삭제</button>
-                <button class="btn btn-search2">검색</button>
+              <div class="address-search">
+                <div class="form-search search-type-del">
+                  <input type="search" name="" id="" class="input" placeholder="도로명 또는 지번주소 검색">
+                  <button class="del">삭제</button>
+                  <button class="btn btn-search2">검색</button>
+                </div>
+                <div class="addressListAuto">
+                  <p><a href="javascript:;">서울시 강남구 광평로 180(수서동) 서울시 강남구 광평로 180(수서동) 서울시 강남구 광평로 180(수서동) 서울시 강남구 광평로 180(수서동) 서울시 강남구 광평로 180(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 185(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 188(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 180(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 185(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 188(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 180(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 185(수서동)</a></p>
+                  <p><a href="javascript:;">서울시 강남구 광평로 188(수서동)</a></p>
+                </div>
               </div>
               <!--// 검색영역 -->
               <!-- 결과 있음(주소목록) -->
@@ -370,7 +383,27 @@
       ========================================================================== */
       lyOpen('addressPopup');
       searchInputBox(); // 검색 input clear
-    
+      
+      // 우편번호 찾기 검색 영역 
+      var addrIp = $(".address-search .form-search");
+      var addrIpDelBtn = addrIp.find('.del');
+      var addrIpHdSearch = addrIp.find('.input');
+      $(document).on("keyup",".address-search .form-search .input",function () {  // val값삭제
+        if($(this).val().length > 0){ //val값 있을때
+          $('.addressListAuto').show();
+          addrIpDelBtn.click(function(){ //val 삭제버튼 클릭
+            addrIpHdSearch.val('');
+            $('.addressListAuto').hide();
+          });
+          $('body').mouseup(function(e){
+            if(addrIp.has(e.target).length === 0){
+              $('.addressListAuto').hide();
+            }
+          })
+        } else { //val값 없을때
+          $('.addressListAuto').hide();
+        }
+      });
     });
   </script>
   <!-- javascript -->
