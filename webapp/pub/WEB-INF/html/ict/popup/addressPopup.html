@@ -391,9 +391,10 @@
       $(document).on("keyup",".address-search .form-search .input",function () {  // val값삭제
         if($(this).val().length > 0){ //val값 있을때
           $('.addressListAuto').show();
-          addrIpDelBtn.click(function(){ //val 삭제버튼 클릭
+          addrIpDelBtn.on('touchstart click ',function(){ //val 삭제버튼 클릭
             addrIpHdSearch.val('');
             $('.addressListAuto').hide();
+            addrIpDelBtn.toggle(Boolean($(this).val()));
           });
           $('body').mouseup(function(e){
             if(addrIp.has(e.target).length === 0){
