@@ -15,7 +15,8 @@
 	<script type="text/javascript" src="../../../js/ui-front.js" charset="UTF-8" ></script>
 	<style>
 		body {background:#F3F3F3; font-size: 14px;}
-		.guide .container {padding:10px 10px 60px; margin-top:0;}
+		.guide {width:1200px; margin:0 auto;}
+		.guide .container {padding:10px 0 60px; margin-top:0;}
 		.guide h1 {padding:10px; font-size:20px; text-align:center; background:#999; color:#fff; border-radius: 5px;}
 		.guide h1 > span {width:180px; display:inline-block; vertical-align:bottom;}
 		.guide h1 > span > img {width:100%; margin-right:10px;}
@@ -40,9 +41,9 @@
 		.guide nav ul li:first-child {border: 0 none;}
 		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
 		.guide nav ul li.active a {background:#000; color:#fff;}
-		.guide pre.code {width:0; height:0; padding:0;	color:#eee; background:#486b95; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
-		.guide pre.code.open {width:100%; height:200px;}
-		.guide pre.code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee; font-size:14px;}
+		.guide .code {width:0; height:0; padding:0;	color:#eee; background:#486b95; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
+		.guide .code.open {width:100%; height:200px;}
+		.guide .code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee; font-size:14px;}
 		.guide .btn-code {width:150px; padding:10px; text-align: center; margin-top:35px; background:#ededed; border:1px solid #ccc; color:#486b95; font-weight:700; border-radius:3px; display:inline-block; font-size:14px;}
 		.guide .btn-code:after {content:'보기';}
 		.guide .btn-code.on {border-color:#486b95; background:#486b95; color:#fff; border-radius:3px 3px 0 0;}
@@ -56,10 +57,12 @@
 		.guide .btn-js-code.on {border-color:#477163; background:#477163; color:#fff; border-radius:3px 3px 0 0;}
 		.guide .btn-js-code.on:after {content:'닫기';}
 		.guide-gnb {width:100%; padding:5px 0; overflow:hidden; background:#F3F3F3;}
-		.guide-gnb.fixed {padding:5px 8px; position:fixed; top:0; left:0; z-index:99999;}
-		.guide-gnb > a {margin:5px 2px; padding:5px 10px; display:inline-block; border:1px solid #000; background:#fff; color:#000;}
-		.guide-gnb > a:focus,
-		.guide-gnb > a.on {background:#000; color:#fff;}
+		.guide-gnb .guide-gnb-btn {padding:5px 0;}
+		.guide-gnb.fixed {width:100%; position:fixed; top:0; left:0; z-index:99999;}
+		.guide-gnb.fixed .guide-gnb-btn {width:1200px; margin:0 auto;}
+		.guide-gnb .guide-gnb-btn a {margin:5px 2px; padding:5px 10px; display:inline-block; border:1px solid #000; background:#fff; color:#000;}
+		.guide-gnb .guide-gnb-btn a:focus,
+		.guide-gnb .guide-gnb-btn a.on {background:#000; color:#fff;}
 		.guide .icon {padding:10px; background:rgb(66, 73, 73);}
 		.guide .icon > span {width:50px; height:50px; margin:3px; display:inline-block;}
 		.guide .sub-content {width:100%; min-height:auto; margin:0;}
@@ -69,6 +72,7 @@
 		/* .navFixed {padding-top:200px;} */
 		
 		@media only screen and (max-width:800px){
+			.guide {width:100%; margin:0;}
 			.guide .tit-type1-2 {top:0;}
 			.guide .popup-cont {width:calc(100% + 40px); margin:0 -20px; }
 			.guide .icon img {max-width:100%; width:auto;}
@@ -78,7 +82,12 @@
 			.guide .mypage-cont {width:calc(100% + 20px); max-width:calc(100% + 20px); margin:0 -10px;}
 			.guide .mypage-cont .product-list-wrap {width:100%; max-width:100%; margin:0;}
 			.guide .join-agree-con .list-con {padding:0;}
+			.guide-gnb .guide-gnb-btn {padding:5px 8px;}
 			.guide-gnb.fixed {top:36px;}
+			.guide-gnb.fixed .guide-gnb-btn {width:100%; margin:0;}
+			.guide-cont .btn-tooltip {margin-left:165px;}
+			.guide .code .codeArea,
+			.guide .js-code .codeArea {font-size:12px; padding:0;}
 			/* .navFixed {padding-top:400px;} */
 		}
 	</style>
@@ -99,7 +108,7 @@
 		});
 	</script>
 </head>
-<body class="responsive-bd">
+<body>
 	<!-- wrap -->
 	<div class="guide">
 		<!-- container -->
@@ -112,22 +121,24 @@
 						<li class="active"><a href="guide.html">가이드</a></li>
 					</ul>
 				</nav>
-				<div class="guide-gnb tabArea scrollTab">
-					<a class="tabBtn" href="#gText">텍스트</a>
-					<a class="tabBtn" href="#gList">리스트</a>
-					<a class="tabBtn" href="#gtitle">타이틀</a>
-					<a class="tabBtn" href="#gBtn">공통버튼</a>
-					<a class="tabBtn" href="#gIcon">아이콘</a>
-					<a class="tabBtn" href="#gStar">별점</a>
-					<a class="tabBtn" href="#gForm">폼요소</a>
-					<a class="tabBtn" href="#gTable">테이블</a>
-					<a class="tabBtn" href="#gFileUpload">첨부파일</a>
-					<a class="tabBtn" href="#gToogle">토글형</a>
-					<a class="tabBtn" href="#gTab">탭</a>
-					<a class="tabBtn" href="#gUnit">유닛</a>
-					<a class="tabBtn" href="#gNotice">게시판</a>
-					<a class="tabBtn" href="#gNonResult">결과없음</a>
-					<a class="tabBtn" href="#gPagnation">페이지네이션</a>
+				<div class="guide-gnb tabArea">
+					<div class="guide-gnb-btn">
+						<a class="tabBtn" href="#gText">텍스트</a>
+						<a class="tabBtn" href="#gList">리스트</a>
+						<a class="tabBtn" href="#gtitle">타이틀</a>
+						<a class="tabBtn" href="#gBtn">공통버튼</a>
+						<a class="tabBtn" href="#gIcon">아이콘</a>
+						<a class="tabBtn" href="#gStar">별점</a>
+						<a class="tabBtn" href="#gForm">폼요소</a>
+						<a class="tabBtn" href="#gTable">테이블</a>
+						<a class="tabBtn" href="#gFileUpload">첨부파일</a>
+						<a class="tabBtn" href="#gToogle">토글형</a>
+						<a class="tabBtn" href="#gTab">탭</a>
+						<a class="tabBtn" href="#gUnit">유닛</a>
+						<a class="tabBtn" href="#gNotice">게시판</a>
+						<a class="tabBtn" href="#gNonResult">결과없음</a>
+						<a class="tabBtn" href="#gPagnation">페이지네이션</a>
+					</div>
 				</div>
 				<div class="cont-body">
 					<h2 class="guide-tit" id="gText">Font</h2>
@@ -172,13 +183,13 @@
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- list --&gt;
-	&lt;ul class="bul-dot"&gt;
-		&lt;li&gt;고객별 맞춤 렌탈 설계 제공&lt;/li&gt;
-		&lt;li&gt;차량별 옵션, 보험 등 상세 정보 제공&lt;/li&gt;
-		&lt;li&gt;각 렌탈사 별 비교 견적으로 최적가 제공&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;!--// list --&gt;
+&lt;!-- list --&gt;
+&lt;ul class="bul-dot"&gt;
+	&lt;li&gt;고객별 맞춤 렌탈 설계 제공&lt;/li&gt;
+	&lt;li&gt;차량별 옵션, 보험 등 상세 정보 제공&lt;/li&gt;
+	&lt;li&gt;각 렌탈사 별 비교 견적으로 최적가 제공&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--// list --&gt;
 </textarea>
 							</pre>
 							<!--// html 보기 -->
@@ -195,12 +206,12 @@
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- list --&gt;
-	&lt;ul class="bul-bar-list"&gt;
-		&lt;li&gt;주문서명을 변경후 저장을 클릭하시면 주문서명이 수정됩니다.&lt;/li&gt;
-		&lt;li&gt;체크박스 선택후 삭제를 클릭하시면 선택된 주문서가 삭제됩니다.&lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;!--// list --&gt;
+&lt;!-- list --&gt;
+&lt;ul class="bul-bar-list"&gt;
+	&lt;li&gt;주문서명을 변경후 저장을 클릭하시면 주문서명이 수정됩니다.&lt;/li&gt;
+	&lt;li&gt;체크박스 선택후 삭제를 클릭하시면 선택된 주문서가 삭제됩니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!--// list --&gt;
 </textarea>
 							</pre>
 							<!--// html 보기 -->
@@ -211,24 +222,20 @@
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">메인 타이틀</h3>
 						<div class="guide-cont">
-							<!-- 메인 가운데 정렬 타이틀 -->
-							<div class="tit-center-area">
-								<div class="left-area">
-									<p class="tit-type1"><b>메인 타이틀</b></p>
-								</div>
+							<div class="wrap main">
+								<!-- 메인 가운데 정렬 타이틀 -->
+								<p class="tit-type1"><b>MD 추천상품</b></p>
+								<!--// 메인 가운데 정렬 타이틀 -->
 							</div>
-							<!--// 메인 가운데 정렬 타이틀 -->
 							<!-- html 보기 -->
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
 <textarea class="codeArea">
+&lt;div class="wrap main"&gt;
 	&lt;!-- 메인 가운데 정렬 타이틀 --&gt;
-	&lt;div class="tit-center-area"&gt;
-		&lt;div class="left-area"&gt;
-			&lt;p class="tit-type1"&gt;&lt;b&gt;메인 가운데 정렬 타이틀&lt;/b&gt;&lt;/p&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+	&lt;p class="tit-type1"&gt;&lt;b&gt;MD 추천상품&lt;/b&gt;&lt;/p&gt;
 	&lt;!--// 메인 가운데 정렬 타이틀 --&gt;
+&lt;/div&gt;
 </textarea>
 							</pre>
 							<!--// html 보기 -->
@@ -257,24 +264,24 @@
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- 타이틀 --&gt;
-	&lt;p class="tit-type1-1"&gt;회원가입이 완료 되었습니다.(*정보알림타이틀)&lt;/p&gt;
-	&lt;p class="tit-type1-1"&gt;&lt;b&gt;다른 고객이 함께 구매한 상품(*개인화영역 타이틀)&lt;/b&gt;&lt;/p&gt;
-	&lt;p class="tit-type1-2 mo-hide"&gt;페이지 타이틀(*PC용)&lt;/p&gt;
-	&lt;p class="tit-type1-2 pc-hide"&gt;&lt;a href="javascript:;" onclick="history.back()" class="history-bak"&gt;뒤로가기&lt;/a&gt;페이지 타이틀(*모바일용)&lt;/p&gt;
-	&lt;div class="tit-area"&gt;
-		&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 있음) &lt;span class="sub-txt"&gt;(주문 상품수 : &lt;b&gt;2&lt;/b&gt;건&lt;i class="bar-verti"&gt;&lt;/i&gt;총 수량 : &lt;b&gt;5&lt;/b&gt;개)(*타이틀 옆 꾸밈 텍스트)&lt;/span&gt;&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="tit-area2"&gt;
-		&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 없음)&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="tit-area"&gt;
-		&lt;p class="tit-type1-3"&gt;&lt;b&gt;안전&lt;/b&gt; 검색결과 타이틀 &lt;span&gt;(123,456)&lt;/span&gt;&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;div class="sub-tit-area"&gt;
-		&lt;p class="tit-type2-1"&gt;서브타이틀 (*폼이 없는 페이지에 서브타이틀이 있는경우)&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;!--// 타이틀 --&gt;
+&lt;!-- 타이틀 --&gt;
+&lt;p class="tit-type1-1"&gt;회원가입이 완료 되었습니다.(*정보알림타이틀)&lt;/p&gt;
+&lt;p class="tit-type1-1"&gt;&lt;b&gt;다른 고객이 함께 구매한 상품(*개인화영역 타이틀)&lt;/b&gt;&lt;/p&gt;
+&lt;p class="tit-type1-2 mo-hide"&gt;페이지 타이틀(*PC용)&lt;/p&gt;
+&lt;p class="tit-type1-2 pc-hide"&gt;&lt;a href="javascript:;" onclick="history.back()" class="history-bak"&gt;뒤로가기&lt;/a&gt;페이지 타이틀(*모바일용)&lt;/p&gt;
+&lt;div class="tit-area"&gt;
+	&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 있음) &lt;span class="sub-txt"&gt;(주문 상품수 : &lt;b&gt;2&lt;/b&gt;건&lt;i class="bar-verti"&gt;&lt;/i&gt;총 수량 : &lt;b&gt;5&lt;/b&gt;개)(*타이틀 옆 꾸밈 텍스트)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="tit-area2"&gt;
+	&lt;p class="tit-type2"&gt;타이틀 (*아래 간격 없음)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="tit-area"&gt;
+	&lt;p class="tit-type1-3"&gt;&lt;b&gt;안전&lt;/b&gt; 검색결과 타이틀 &lt;span&gt;(123,456)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sub-tit-area"&gt;
+	&lt;p class="tit-type2-1"&gt;서브타이틀 (*폼이 없는 페이지에 서브타이틀이 있는경우)&lt;/p&gt;
+&lt;/div&gt;
+&lt;!--// 타이틀 --&gt;
 </textarea>
 							</pre>
 							<!--// html 보기 -->
@@ -299,18 +306,18 @@
 							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 							<pre class="code">
 <textarea class="codeArea">
-	&lt;div class="join-list-con"&gt;
-		&lt;!-- title --&gt;
-		&lt;div class="tit-area2"&gt;
-			&lt;p class="tit-type2"&gt;하위 폼이 있는 경우 타이틀&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;!--// title --&gt;
-		&lt;div class="list-con"&gt;
-			&lt;!-- title --&gt;
-			&lt;p class="tit-type2-1"&gt;폼 서브 타이틀&lt;/p&gt;
-			&lt;!--// title --&gt;
-		&lt;/div&gt;
+&lt;div class="join-list-con"&gt;
+	&lt;!-- title --&gt;
+	&lt;div class="tit-area2"&gt;
+		&lt;p class="tit-type2"&gt;하위 폼이 있는 경우 타이틀&lt;/p&gt;
 	&lt;/div&gt;
+	&lt;!--// title --&gt;
+	&lt;div class="list-con"&gt;
+		&lt;!-- title --&gt;
+		&lt;p class="tit-type2-1"&gt;폼 서브 타이틀&lt;/p&gt;
+		&lt;!--// title --&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 </textarea>
 							</pre>
 							<!--// html 보기 -->
@@ -354,32 +361,32 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-full-area"&gt;
-		&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
-		&lt;a href="javascript:;" class="btn btn-style-l1"&gt;장바구니&lt;/a&gt;
-		&lt;a href="javascript:;" class="btn btn-style-l2"&gt;바로구매&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;br&gt;
-	&lt;div class="btn-full-area"&gt;
-		&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
-		&lt;a href="javascript:;" class="btn btn-style-l3"&gt;품절&lt;/a&gt;
-		&lt;a href="javascript:;" class="btn btn-style-l4" onclick="lyOpen('restockPopup2')"&gt;재입고알림&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;div class="join-content"&gt;
-		&lt;div class="login-wrap"&gt;
-			&lt;!-- button --&gt;
-			&lt;div class="btn-area"&gt;
-				&lt;a href="#" class="btn btn-style-l2"&gt;로그인&lt;/a&gt;
-			&lt;/div&gt;
-			&lt;div class="btn-area"&gt;
-				&lt;a href="#" class="btn btn-style-l5"&gt;회원가입&lt;/a&gt;
-			&lt;/div&gt;
-			&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-full-area"&gt;
+	&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
+	&lt;a href="javascript:;" class="btn btn-style-l1"&gt;장바구니&lt;/a&gt;
+	&lt;a href="javascript:;" class="btn btn-style-l2"&gt;바로구매&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div class="btn-full-area"&gt;
+	&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
+	&lt;a href="javascript:;" class="btn btn-style-l3"&gt;품절&lt;/a&gt;
+	&lt;a href="javascript:;" class="btn btn-style-l4" onclick="lyOpen('restockPopup2')"&gt;재입고알림&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;div class="join-content"&gt;
+	&lt;div class="login-wrap"&gt;
+		&lt;!-- button --&gt;
+		&lt;div class="btn-area"&gt;
+			&lt;a href="#" class="btn btn-style-l2"&gt;로그인&lt;/a&gt;
 		&lt;/div&gt;
+		&lt;div class="btn-area"&gt;
+			&lt;a href="#" class="btn btn-style-l5"&gt;회원가입&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;!--// button --&gt;
 	&lt;/div&gt;
+&lt;/div&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -430,37 +437,37 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area btn-mo-percent"&gt;
-		&lt;a href="#" class="btn btn-style-m1 btn-color1 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m3 btn-color1 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m4 btn-color1 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area btn-mo-percent"&gt;
-		&lt;a href="#" class="btn btn-style-m1 btn-color2 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m3 btn-color2 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m4 btn-color2 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area btn-mo-percent"&gt;
-		&lt;a href="#" class="btn btn-style-m1 btn-color3 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m3 btn-color3 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m4 btn-color3 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area btn-mo-percent"&gt;
-		&lt;a href="#" class="btn btn-style-m1 btn-color4 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m3 btn-color4 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
-		&lt;a href="#" class="btn btn-style-m4 btn-color4 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area btn-mo-percent"&gt;
+	&lt;a href="#" class="btn btn-style-m1 btn-color1 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m3 btn-color1 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m4 btn-color1 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area btn-mo-percent"&gt;
+	&lt;a href="#" class="btn btn-style-m1 btn-color2 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m3 btn-color2 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m4 btn-color2 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area btn-mo-percent"&gt;
+	&lt;a href="#" class="btn btn-style-m1 btn-color3 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m3 btn-color3 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m4 btn-color3 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area btn-mo-percent"&gt;
+	&lt;a href="#" class="btn btn-style-m1 btn-color4 mo-btn-w50"&gt;m1(118px)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m3 btn-color4 mo-btn-w50"&gt;m3(auto)&lt;/a&gt;
+	&lt;a href="#" class="btn btn-style-m4 btn-color4 mo-btn-w100"&gt;m4(68px)&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -487,18 +494,18 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area"&gt;
-		&lt;a href="javascript:;" class="lyClose btn btn-style-s1"&gt;신규&lt;/a&gt;
-		&lt;a href="javascript:;" class="lyClose btn btn-style-s1"&gt;저장&lt;/a&gt;
-		&lt;a href="javascript:;" class="lyClose btn btn-style-s1"&gt;삭제&lt;/a&gt;
-		&lt;a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide"&gt;엑셀업로드&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;button class="btn btn-style-s2"&gt;장바구니 추가&lt;/button&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area"&gt;
+	&lt;a href="javascript:;" class="lyClose btn btn-style-s1"&gt;신규&lt;/a&gt;
+	&lt;a href="javascript:;" class="lyClose btn btn-style-s1"&gt;저장&lt;/a&gt;
+	&lt;a href="javascript:;" class="lyClose btn btn-style-s1"&gt;삭제&lt;/a&gt;
+	&lt;a href="javascript:;" class="lyClose btn btn-style-s1 mo-hide"&gt;엑셀업로드&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;button class="btn btn-style-s2"&gt;장바구니 추가&lt;/button&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -520,13 +527,13 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-r-area mo-hide"&gt;
-		&lt;button class="btn btn-small-blue"&gt;상품추가&lt;/button&gt;
-		&lt;button class="btn btn-small-line btn-color3"&gt;배송지 추가&lt;/button&gt;
-		&lt;button class="btn btn-small-line btn-color2"&gt;대표 배송지&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-r-area mo-hide"&gt;
+	&lt;button class="btn btn-small-blue"&gt;상품추가&lt;/button&gt;
+	&lt;button class="btn btn-small-line btn-color3"&gt;배송지 추가&lt;/button&gt;
+	&lt;button class="btn btn-small-line btn-color2"&gt;대표 배송지&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -563,29 +570,29 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-r-area btn-mo-percent"&gt;
-		&lt;button class="btn btn-small2-line mo-btn-w50"&gt;목록&lt;/button&gt;
-		&lt;button class="btn btn-small-line mo-btn-w50"&gt;주문변경&lt;/button&gt;
-		&lt;button class="btn btn-small-line2	mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-r-area btn-mo-percent"&gt;
-		&lt;button class="btn btn-small2-line btn-color2 mo-btn-w50"&gt;목록&lt;/button&gt;
-		&lt;button class="btn btn-small-line btn-color2 mo-btn-w50"&gt;주문변경&lt;/button&gt;
-		&lt;button class="btn btn-small-line2 btn-color2 mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-r-area btn-mo-percent"&gt;
-		&lt;button class="btn btn-small2-line btn-color3 mo-btn-w50"&gt;목록&lt;/button&gt;
-		&lt;button class="btn btn-small-line btn-color3 mo-btn-w50"&gt;주문변경&lt;/button&gt;
-		&lt;button class="btn btn-small-line2 btn-color3 mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-r-area btn-mo-percent"&gt;
+	&lt;button class="btn btn-small2-line mo-btn-w50"&gt;목록&lt;/button&gt;
+	&lt;button class="btn btn-small-line mo-btn-w50"&gt;주문변경&lt;/button&gt;
+	&lt;button class="btn btn-small-line2	mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-r-area btn-mo-percent"&gt;
+	&lt;button class="btn btn-small2-line btn-color2 mo-btn-w50"&gt;목록&lt;/button&gt;
+	&lt;button class="btn btn-small-line btn-color2 mo-btn-w50"&gt;주문변경&lt;/button&gt;
+	&lt;button class="btn btn-small-line2 btn-color2 mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-r-area btn-mo-percent"&gt;
+	&lt;button class="btn btn-small2-line btn-color3 mo-btn-w50"&gt;목록&lt;/button&gt;
+	&lt;button class="btn btn-small-line btn-color3 mo-btn-w50"&gt;주문변경&lt;/button&gt;
+	&lt;button class="btn btn-small-line2 btn-color3 mo-btn-w100"&gt;자주쓰는배송지&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -603,9 +610,9 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;a href="javascript:;" class="btn btn-xs-small"&gt;가격인하요청&lt;/a&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;a href="javascript:;" class="btn btn-xs-small"&gt;가격인하요청&lt;/a&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -646,32 +653,32 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;a href="#" class="btn btn-more-black"&gt;더보기&lt;/a&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;div style="padding:5px 0; background: #000;"&gt;
-	&lt;!-- button --&gt;
-	&lt;a href="#" class="btn btn-more-white"&gt;더보기&lt;/a&gt;
-	&lt;!--// button --&gt;
-	&lt;/div&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;a href="#" class="btn btn-more"&gt;더보기&lt;/a&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area"&gt;
-	&lt;span class="btn btn-style9"&gt;btn-style9&lt;/span&gt;
-	&lt;span class="btn btn-style10"&gt;btn-style10&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;br&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area"&gt;
-	&lt;span class="btn btn-disabled"&gt;btn-disabled&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;a href="#" class="btn btn-more-black"&gt;더보기&lt;/a&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;div style="padding:5px 0; background: #000;"&gt;
+&lt;!-- button --&gt;
+&lt;a href="#" class="btn btn-more-white"&gt;더보기&lt;/a&gt;
+&lt;!--// button --&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;a href="#" class="btn btn-more"&gt;더보기&lt;/a&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area"&gt;
+&lt;span class="btn btn-style9"&gt;btn-style9&lt;/span&gt;
+&lt;span class="btn btn-style10"&gt;btn-style10&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;br&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area"&gt;
+&lt;span class="btn btn-disabled"&gt;btn-disabled&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -697,16 +704,16 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;button class="btn btn-word"&gt;카테고리&lt;/button&gt;
-	&lt;button class="btn btn-excel-download"&gt;엑셀다운로드&lt;/button&gt;
-	&lt;a href="#삭제" class="btn btn-gray-line"&gt;삭제&lt;/a&gt;
-	&lt;a href="#바로구매" class="btn btn-buynow"&gt;바로구매&lt;/a&gt;
-	&lt;a href="#재입고알림" class="btn btn-restock"&gt;재입고알림&lt;/a&gt;
-	&lt;button class="btn btn-refresh"&gt;새로고침&lt;/button&gt;
-	&lt;button class="btn btn-plus"&gt;추가&lt;/button&gt;
-	&lt;button class="btn btn-minus"&gt;삭제&lt;/button&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;button class="btn btn-word"&gt;카테고리&lt;/button&gt;
+&lt;button class="btn btn-excel-download"&gt;엑셀다운로드&lt;/button&gt;
+&lt;a href="#삭제" class="btn btn-gray-line"&gt;삭제&lt;/a&gt;
+&lt;a href="#바로구매" class="btn btn-buynow"&gt;바로구매&lt;/a&gt;
+&lt;a href="#재입고알림" class="btn btn-restock"&gt;재입고알림&lt;/a&gt;
+&lt;button class="btn btn-refresh"&gt;새로고침&lt;/button&gt;
+&lt;button class="btn btn-plus"&gt;추가&lt;/button&gt;
+&lt;button class="btn btn-minus"&gt;삭제&lt;/button&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -747,31 +754,31 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area-c mo-fixed-btn"&gt;
-		&lt;button class="btn btn-style-ml1"&gt;취소&lt;/button&gt;
-		&lt;button class="btn btn-style-ml2"&gt;등록&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area-c btn-layout3"&gt;
-		&lt;button class="lyClose btn btn-style-ml1"&gt;삭제&lt;/button&gt;
-		&lt;button class="lyClose btn btn-style-ml2"&gt;임시저장&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;!-- 임시저장 후 노출되는 버튼 style --&gt;
-	&lt;div class="btn-area-c btn-layout3"&gt;
-		&lt;button class="lyClose btn btn-style-ml1"&gt;삭제&lt;/button&gt;
-		&lt;button class="lyClose btn btn-style-ml2 on"&gt;임시저장&lt;/button&gt;
-		&lt;button class="lyClose btn btn-style-ml2"&gt;요청하기&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// 임시저장 후 노출되는 버튼 style --&gt;
-	&lt;!-- button (작은버튼) --&gt;
-	&lt;div class="btn-area-c"&gt;
-		&lt;a href="javascript:;" class="btn btn-style-mm1"&gt;삭제&lt;/a&gt;
-		&lt;a href="javascript:;" class="btn btn-style-mm2"&gt;저장&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area-c mo-fixed-btn"&gt;
+	&lt;button class="btn btn-style-ml1"&gt;취소&lt;/button&gt;
+	&lt;button class="btn btn-style-ml2"&gt;등록&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area-c btn-layout3"&gt;
+	&lt;button class="lyClose btn btn-style-ml1"&gt;삭제&lt;/button&gt;
+	&lt;button class="lyClose btn btn-style-ml2"&gt;임시저장&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;!-- 임시저장 후 노출되는 버튼 style --&gt;
+&lt;div class="btn-area-c btn-layout3"&gt;
+	&lt;button class="lyClose btn btn-style-ml1"&gt;삭제&lt;/button&gt;
+	&lt;button class="lyClose btn btn-style-ml2 on"&gt;임시저장&lt;/button&gt;
+	&lt;button class="lyClose btn btn-style-ml2"&gt;요청하기&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// 임시저장 후 노출되는 버튼 style --&gt;
+&lt;!-- button (작은버튼) --&gt;
+&lt;div class="btn-area-c"&gt;
+	&lt;a href="javascript:;" class="btn btn-style-mm1"&gt;삭제&lt;/a&gt;
+	&lt;a href="javascript:;" class="btn btn-style-mm2"&gt;저장&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -801,18 +808,18 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area"&gt;
-		&lt;a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-mml1"&gt;계속쇼핑&lt;/a&gt;
-		&lt;a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-mml2"&gt;장바구니 바로가기&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
-	&lt;!-- button --&gt;
-	&lt;div class="btn-area"&gt;
-		&lt;a href="javascript:;" onclick="lyClose()" class="btn btn-style-m1"&gt;취소&lt;/a&gt;
-		&lt;a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2"&gt;확인&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area"&gt;
+	&lt;a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-mml1"&gt;계속쇼핑&lt;/a&gt;
+	&lt;a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-mml2"&gt;장바구니 바로가기&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-area"&gt;
+	&lt;a href="javascript:;" onclick="lyClose()" class="btn btn-style-m1"&gt;취소&lt;/a&gt;
+	&lt;a href="javascript:;" onclick="lyClose()" class="btn btn-style-m2"&gt;확인&lt;/a&gt;
+&lt;/div&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -834,14 +841,14 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- button --&gt;
-	&lt;div class="btn-full-area"&gt;
-		&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;br&gt;
-	&lt;button class="btn btn-like-m tgBtn"&gt;찜하기&lt;/button&gt;
-	&lt;button class="btn btn-star tgBtn"&gt;즐겨찾기&lt;/button&gt;
-	&lt;!--// button --&gt;
+&lt;!-- button --&gt;
+&lt;div class="btn-full-area"&gt;
+	&lt;a href="javascript:;" class="btn-like-l tgBtn"&gt;찜하기&lt;/a&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;button class="btn btn-like-m tgBtn"&gt;찜하기&lt;/button&gt;
+&lt;button class="btn btn-star tgBtn"&gt;즐겨찾기&lt;/button&gt;
+&lt;!--// button --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -849,16 +856,16 @@
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 									<div class="js-code">
 <textarea class="codeArea">
-	function toggleBtn(){
-	  // 토글버튼
-	  $('.tgBtn').each(function(){
-		$(this).on('click', function(e){
-		  e.preventDefault();
-		  $(this).toggleClass("on");
-		})
-	  });
-	}
-	toggleBtn() // 토글버튼
+function toggleBtn(){
+  // 토글버튼
+  $('.tgBtn').each(function(){
+	$(this).on('click', function(e){
+	  e.preventDefault();
+	  $(this).toggleClass("on");
+	})
+  });
+}
+toggleBtn() // 토글버튼
 </textarea>
 									</div>
 									<!--// js 보기 -->
@@ -1132,13 +1139,13 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- 별점 --&gt;
-	&lt;p class="rating"&gt;
-		&lt;a href="#"&gt;
-			&lt;span class="star star3"&gt;별점&lt;/span&gt;&lt;!-- 별점 class : star0~5 --&gt;
-		&lt;/a&gt;
-	&lt;/p&gt;
-	&lt;!--// 별점 --&gt;
+&lt;!-- 별점 --&gt;
+&lt;p class="rating"&gt;
+	&lt;a href="#"&gt;
+		&lt;span class="star star3"&gt;별점&lt;/span&gt;&lt;!-- 별점 class : star0~5 --&gt;
+	&lt;/a&gt;
+&lt;/p&gt;
+&lt;!--// 별점 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1156,11 +1163,11 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- 별점 M --&gt;
-	&lt;p class="rating"&gt;
-		&lt;span class="star-m star3"&gt;별점&lt;/span&gt;&lt;!-- 별점 class : star0~5 --&gt;
-	&lt;/p&gt;
-	&lt;!--// 별점 M --&gt;
+&lt;!-- 별점 M --&gt;
+&lt;p class="rating"&gt;
+	&lt;span class="star-m star3"&gt;별점&lt;/span&gt;&lt;!-- 별점 class : star0~5 --&gt;
+&lt;/p&gt;
+&lt;!--// 별점 M --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1187,20 +1194,20 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- 만족도 체크 영역 --&gt;
-	&lt;div class="sm-satisfaction-area"&gt;
-		&lt;div class="rating-btn-area"&gt;
-			&lt;div&gt;
-				&lt;button class="btn-star-b btnStar"&gt;별점1&lt;/button&gt;
-				&lt;button class="btn-star-b btnStar"&gt;별점2&lt;/button&gt;
-				&lt;button class="btn-star-b btnStar"&gt;별점3&lt;/button&gt;
-				&lt;button class="btn-star-b btnStar"&gt;별점4&lt;/button&gt;
-				&lt;button class="btn-star-b btnStar"&gt;별점5&lt;/button&gt;
-			&lt;/div&gt;
-			&lt;i class="icon-star"&gt;&lt;/i&gt;
+&lt;!-- 만족도 체크 영역 --&gt;
+&lt;div class="sm-satisfaction-area"&gt;
+	&lt;div class="rating-btn-area"&gt;
+		&lt;div&gt;
+			&lt;button class="btn-star-b btnStar"&gt;별점1&lt;/button&gt;
+			&lt;button class="btn-star-b btnStar"&gt;별점2&lt;/button&gt;
+			&lt;button class="btn-star-b btnStar"&gt;별점3&lt;/button&gt;
+			&lt;button class="btn-star-b btnStar"&gt;별점4&lt;/button&gt;
+			&lt;button class="btn-star-b btnStar"&gt;별점5&lt;/button&gt;
 		&lt;/div&gt;
+		&lt;i class="icon-star"&gt;&lt;/i&gt;
 	&lt;/div&gt;
-	&lt;!--// 만족도 체크 영역 --&gt;
+&lt;/div&gt;
+&lt;!--// 만족도 체크 영역 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1208,16 +1215,16 @@
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 									<div class="js-code">
 <textarea class="codeArea">
-	function ratingBtnArea(){
-	  // 포토리뷰 별점버튼 js
-	  $('.rating-btn-area').find('.btnStar').each(function(){
-		$(this).on('click', function(){
-		  var starIndex = $(this).index() + 1;
-		  $(this).parent().attr('class','star'+ starIndex);
-		})
-	  });
-	}
-	ratingBtnArea() // 포토리뷰 별점버튼 js
+function ratingBtnArea(){
+  // 포토리뷰 별점버튼 js
+  $('.rating-btn-area').find('.btnStar').each(function(){
+	$(this).on('click', function(){
+	  var starIndex = $(this).index() + 1;
+	  $(this).parent().attr('class','star'+ starIndex);
+	})
+  });
+}
+ratingBtnArea() // 포토리뷰 별점버튼 js
 </textarea>
 									</div>
 									<!--// js 보기 -->
@@ -1241,11 +1248,11 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout"&gt;
-		&lt;input type="text" name="" class="input" value="" placeholder="기본 타입"&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout"&gt;
+	&lt;input type="text" name="" class="input" value="" placeholder="기본 타입"&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1263,11 +1270,11 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout"&gt;
-		&lt;input type="text" class="input" name="" value="" placeholder="disabled" disabled&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout"&gt;
+	&lt;input type="text" class="input" name="" value="" placeholder="disabled" disabled&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1285,11 +1292,11 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout"&gt;
-	&lt;input type="text" class="input" name="" value="" placeholder="readonly" readonly="readonly"&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout"&gt;
+&lt;input type="text" class="input" name="" value="" placeholder="readonly" readonly="readonly"&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1310,14 +1317,14 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout"&gt;
-		&lt;span class="input-price"&gt;
-			&lt;input type="text" class="input" name="" value="" placeholder="0"&gt;
-			&lt;em class="won"&gt;원&lt;/em&gt;
-		&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout"&gt;
+	&lt;span class="input-price"&gt;
+		&lt;input type="text" class="input" name="" value="" placeholder="0"&gt;
+		&lt;em class="won"&gt;원&lt;/em&gt;
+	&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1325,16 +1332,16 @@
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
 									<div class="js-code">
 <textarea class="codeArea">
-	function inputPrice(){
-		// 금액 input focus 효과
-		$('.input-price').find('input').on('keyup focus', function(){
-			$(this).closest('.input-price').addClass('focus');
-		})
-		$('.input-price').find('input').on('blur', function(){
-			$(this).closest('.input-price').removeClass('focus');
-		});
-	}
-	inputPrice(); // 금액 input focus 효과
+function inputPrice(){
+	// 금액 input focus 효과
+	$('.input-price').find('input').on('keyup focus', function(){
+		$(this).closest('.input-price').addClass('focus');
+	})
+	$('.input-price').find('input').on('blur', function(){
+		$(this).closest('.input-price').removeClass('focus');
+	});
+}
+inputPrice(); // 금액 input focus 효과
 </textarea>
 									</div>
 									<!--// js 보기 -->
@@ -1355,14 +1362,14 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout"&gt;
-		&lt;span class="input-price readonly"&gt;
-			&lt;input type="text" class="input" name="" value="10,000" placeholder="" readonly="readonly"&gt;
-			&lt;em class="won"&gt;원&lt;/em&gt;
-		&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout"&gt;
+	&lt;span class="input-price readonly"&gt;
+		&lt;input type="text" class="input" name="" value="10,000" placeholder="" readonly="readonly"&gt;
+		&lt;em class="won"&gt;원&lt;/em&gt;
+	&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1383,14 +1390,14 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout"&gt;
-		&lt;span class="input-price disabled"&gt;
-			&lt;input type="text" class="input" name="" value="10,000" placeholder="" disabled="disabled"&gt;
-			&lt;em class="won"&gt;원&lt;/em&gt;
-		&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout"&gt;
+	&lt;span class="input-price disabled"&gt;
+		&lt;input type="text" class="input" name="" value="10,000" placeholder="" disabled="disabled"&gt;
+		&lt;em class="won"&gt;원&lt;/em&gt;
+	&lt;/span&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1419,18 +1426,18 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout form-email"&gt;
-		&lt;input type="text" name="" class="input" value="" maxlength="100"&gt;
-		&lt;span class="bar"&gt;@&lt;/span&gt;
-		&lt;input type="text" name="" class="input" value="" maxlength="100"&gt;
-		&lt;select class="select"&gt;
-			&lt;option value=""&gt;직접입력&lt;/option&gt;
-			&lt;option value="aaa.com"&gt;naver.com&lt;/option&gt;
-			&lt;option value="bbb.net"&gt;bbb.net&lt;/option&gt;
-		&lt;/select&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout form-email"&gt;
+	&lt;input type="text" name="" class="input" value="" maxlength="100"&gt;
+	&lt;span class="bar"&gt;@&lt;/span&gt;
+	&lt;input type="text" name="" class="input" value="" maxlength="100"&gt;
+	&lt;select class="select"&gt;
+		&lt;option value=""&gt;직접입력&lt;/option&gt;
+		&lt;option value="aaa.com"&gt;naver.com&lt;/option&gt;
+		&lt;option value="bbb.net"&gt;bbb.net&lt;/option&gt;
+	&lt;/select&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1455,18 +1462,18 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="form-layout form-phone"&gt;
-		&lt;select class="select"&gt;
-			&lt;option value="" selected&gt;02&lt;/option&gt;
-			&lt;option value="010"&gt;010&lt;/option&gt;
-		&lt;/select&gt;
-		&lt;span class="bar"&gt;-&lt;/span&gt;
-		&lt;input type="number" name="" maxlength="4" class="input" value=""&gt;
-		&lt;span class="bar"&gt;-&lt;/span&gt;
-		&lt;input type="number" name="" maxlength="4" class="input" value=""&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="form-layout form-phone"&gt;
+	&lt;select class="select"&gt;
+		&lt;option value="" selected&gt;02&lt;/option&gt;
+		&lt;option value="010"&gt;010&lt;/option&gt;
+	&lt;/select&gt;
+	&lt;span class="bar"&gt;-&lt;/span&gt;
+	&lt;input type="number" name="" maxlength="4" class="input" value=""&gt;
+	&lt;span class="bar"&gt;-&lt;/span&gt;
+	&lt;input type="number" name="" maxlength="4" class="input" value=""&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1489,23 +1496,16 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- 파일 선택 --&gt;
-	&lt;div class="filebox"&gt;
-		&lt;input class="upload-name input " value="" readonly="readonly"&gt;
-		&lt;label for="file"&gt;파일 선택&lt;/label&gt; 
-		&lt;input type="file" id="file"&gt; 
-	&lt;/div&gt;
-	&lt;!--// 파일 선택 --&gt;
+&lt;!-- 파일 선택 --&gt;
+&lt;div class="filebox"&gt;
+	&lt;input class="upload-name input " value="" readonly="readonly"&gt;
+	&lt;label for="file"&gt;파일 선택&lt;/label&gt; 
+	&lt;input type="file" id="file"&gt; 
+&lt;/div&gt;
+&lt;!--// 파일 선택 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
-									<!-- js 보기 -->
-									<!-- <a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-									<div class="js-code">
-										<textarea class="textarea">
-										</textarea>
-									</div> -->
-									<!--// script 보기 -->
 								</div>
 								<p class="guide-sub-tit">Input(file) : 썸네일 형</p>
 								<div class="guide-cont">
@@ -1550,39 +1550,39 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- 썸네일 --&gt;
-	&lt;div class="upload-thumbnail"&gt;
-		&lt;span class="img-thumbnail"&gt;
-			&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
-		&lt;/span&gt;
-		&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class="upload-thumbnail"&gt;
-		&lt;span class="img-thumbnail"&gt;
-			&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
-		&lt;/span&gt;
-		&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class="upload-thumbnail"&gt;
-		&lt;span class="img-thumbnail"&gt;
-			&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
-		&lt;/span&gt;
-		&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;div class="upload-thumbnail"&gt;
-		&lt;span class="img-thumbnail"&gt;
-			&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
-		&lt;/span&gt;
-		&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
-	&lt;/div&gt;
-	&lt;!--// 썸네일 --&gt;
-	&lt;!-- 이미지 추가버튼 --&gt;
-	&lt;div class="img-upload-btn"&gt;
-		&lt;label&gt;
-			&lt;input type="file" id="input_imgs" multiple/&gt;
-		&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;!--// 이미지 추가버튼 --&gt;
+&lt;!-- 썸네일 --&gt;
+&lt;div class="upload-thumbnail"&gt;
+	&lt;span class="img-thumbnail"&gt;
+		&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
+	&lt;/span&gt;
+	&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="upload-thumbnail"&gt;
+	&lt;span class="img-thumbnail"&gt;
+		&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
+	&lt;/span&gt;
+	&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="upload-thumbnail"&gt;
+	&lt;span class="img-thumbnail"&gt;
+		&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
+	&lt;/span&gt;
+	&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="upload-thumbnail"&gt;
+	&lt;span class="img-thumbnail"&gt;
+		&lt;img src="../../../images/main/img_fileupload_ex.png" alt="업로드 예시 이미지" /&gt;
+	&lt;/span&gt;
+	&lt;button class="img-del-btn"&gt;삭제&lt;/button&gt;
+&lt;/div&gt;
+&lt;!--// 썸네일 --&gt;
+&lt;!-- 이미지 추가버튼 --&gt;
+&lt;div class="img-upload-btn"&gt;
+	&lt;label&gt;
+		&lt;input type="file" id="input_imgs" multiple/&gt;
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;!--// 이미지 추가버튼 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1628,12 +1628,12 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- PC용 --&gt;
-	&lt;input type="text" class="datepicker mo-hide" id="datepicker" value=""&gt;
-	&lt;!--// PC용 --&gt;
-	&lt;!-- Mobile용 --&gt;
-	&lt;input type="date" class="datepicker pc-hide" name="" id=""&gt;
-	&lt;!--// Mobile용 --&gt;
+&lt;!-- PC용 --&gt;
+&lt;input type="text" class="datepicker mo-hide" id="datepicker" value=""&gt;
+&lt;!--// PC용 --&gt;
+&lt;!-- Mobile용 --&gt;
+&lt;input type="date" class="datepicker pc-hide" name="" id=""&gt;
+&lt;!--// Mobile용 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1658,10 +1658,10 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;div class="textarea-wrap count"&gt;
-		&lt;textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오.&#10;"&gt;&lt;/textarea&gt;
-		&lt;p class="cot"&gt;&lt;b&gt;0&lt;/b&gt; / 1,000&lt;/p&gt;
-	&lt;/div&gt;
+&lt;div class="textarea-wrap count"&gt;
+	&lt;textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오.&#10;"&gt;&lt;/textarea&gt;
+	&lt;p class="cot"&gt;&lt;b&gt;0&lt;/b&gt; / 1,000&lt;/p&gt;
+&lt;/div&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1680,12 +1680,12 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="textarea-wrap count"&gt;
-		&lt;textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오.&#10;" disabled="disabled"&gt;disabled 내용&lt;/textarea&gt;
-		&lt;p class="cot"&gt;&lt;b&gt;0&lt;/b&gt; / 1,000&lt;/p&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="textarea-wrap count"&gt;
+	&lt;textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder="※ 1,000자 이내로 입력해 주십시오.&#10;" disabled="disabled"&gt;disabled 내용&lt;/textarea&gt;
+	&lt;p class="cot"&gt;&lt;b&gt;0&lt;/b&gt; / 1,000&lt;/p&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1733,13 +1733,13 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- select --&gt;
-	&lt;select class="select" name="" id=""&gt;
-		&lt;option value=""&gt;선택1&lt;/option&gt;
-		&lt;option value=""&gt;선택2&lt;/option&gt;
-		&lt;option value=""&gt;선택3&lt;/option&gt;
-	&lt;/select&gt;
-	&lt;!--// select --&gt;
+&lt;!-- select --&gt;
+&lt;select class="select" name="" id=""&gt;
+	&lt;option value=""&gt;선택1&lt;/option&gt;
+	&lt;option value=""&gt;선택2&lt;/option&gt;
+	&lt;option value=""&gt;선택3&lt;/option&gt;
+&lt;/select&gt;
+&lt;!--// select --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1759,13 +1759,13 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- select --&gt;
-	&lt;select class="select" name="" id="" disabled&gt;
-		&lt;option value=""&gt;선택1&lt;/option&gt;
-		&lt;option value=""&gt;선택2&lt;/option&gt;
-		&lt;option value=""&gt;선택3&lt;/option&gt;
-	&lt;/select&gt;
-	&lt;!--// select --&gt;
+&lt;!-- select --&gt;
+&lt;select class="select" name="" id="" disabled&gt;
+	&lt;option value=""&gt;선택1&lt;/option&gt;
+	&lt;option value=""&gt;선택2&lt;/option&gt;
+	&lt;option value=""&gt;선택3&lt;/option&gt;
+&lt;/select&gt;
+&lt;!--// select --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1786,13 +1786,13 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- select --&gt;
-	&lt;select class="select sel-s" name="" id=""&gt;
-		&lt;option value=""&gt;선택1&lt;/option&gt;
-		&lt;option value=""&gt;선택2&lt;/option&gt;
-		&lt;option value=""&gt;선택3&lt;/option&gt;
-	&lt;/select&gt;
-	&lt;!--// select --&gt;
+&lt;!-- select --&gt;
+&lt;select class="select sel-s" name="" id=""&gt;
+	&lt;option value=""&gt;선택1&lt;/option&gt;
+	&lt;option value=""&gt;선택2&lt;/option&gt;
+	&lt;option value=""&gt;선택3&lt;/option&gt;
+&lt;/select&gt;
+&lt;!--// select --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1813,13 +1813,13 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- select --&gt;
-	&lt;select class="select sel-s" name="" id="" disabled&gt;
-		&lt;option value=""&gt;선택1&lt;/option&gt;
-		&lt;option value=""&gt;선택2&lt;/option&gt;
-		&lt;option value=""&gt;선택3&lt;/option&gt;
-	&lt;/select&gt;
-	&lt;!--// select --&gt;
+&lt;!-- select --&gt;
+&lt;select class="select sel-s" name="" id="" disabled&gt;
+	&lt;option value=""&gt;선택1&lt;/option&gt;
+	&lt;option value=""&gt;선택2&lt;/option&gt;
+	&lt;option value=""&gt;선택3&lt;/option&gt;
+&lt;/select&gt;
+&lt;!--// select --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1856,24 +1856,24 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form : 기본 --&gt;
-	&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;체크박스 기본&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : 기본 --&gt;
-	&lt;!-- form : id 연결 시 --&gt;
-	&lt;label for="chk" class="check-style1"&gt;&lt;input type="checkbox" name="" id="chk"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;id 연결 시&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : id 연결 시 --&gt;
-	&lt;!-- form : checked --&gt;
-	&lt;label class="check-style1"&gt;&lt;input type="checkbox" name="" checked&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;checked&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : checked --&gt;
-	&lt;!-- form : disabled --&gt;
-	&lt;label class="check-style1"&gt;&lt;input type="checkbox" name="" disabled&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;disabled&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : disabled --&gt;
-	&lt;!-- form : disabled checked --&gt;
-	&lt;label class="check-style1"&gt;&lt;input type="checkbox" name="" checked disabled&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;checked disabled&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : disabled --&gt;
-	&lt;!-- form : 글자가 없는경우 --&gt;
-	&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
-	&lt;!--// form : 글자가 없는경우 --&gt;
+&lt;!-- form : 기본 --&gt;
+&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;체크박스 기본&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : 기본 --&gt;
+&lt;!-- form : id 연결 시 --&gt;
+&lt;label for="chk" class="check-style1"&gt;&lt;input type="checkbox" name="" id="chk"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;id 연결 시&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : id 연결 시 --&gt;
+&lt;!-- form : checked --&gt;
+&lt;label class="check-style1"&gt;&lt;input type="checkbox" name="" checked&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;checked&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : checked --&gt;
+&lt;!-- form : disabled --&gt;
+&lt;label class="check-style1"&gt;&lt;input type="checkbox" name="" disabled&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;disabled&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : disabled --&gt;
+&lt;!-- form : disabled checked --&gt;
+&lt;label class="check-style1"&gt;&lt;input type="checkbox" name="" checked disabled&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;checked disabled&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : disabled --&gt;
+&lt;!-- form : 글자가 없는경우 --&gt;
+&lt;label class="check-style1"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+&lt;!--// form : 글자가 없는경우 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1898,18 +1898,18 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form : 기본 --&gt;
-	&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;체크박스 기본&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : 기본 --&gt;
-	&lt;!-- form : id 연결 시 --&gt;
-	&lt;label for="chk" class="check-style2"&gt;&lt;input type="checkbox" name="" id="chk"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;id 연결 시&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : id 연결 시 --&gt;
-	&lt;!-- form : checked --&gt;
-	&lt;label class="check-style2"&gt;&lt;input type="checkbox" name="" checked&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;checked&lt;/span&gt;&lt;/label&gt;
-	&lt;!--// form : checked --&gt;
-	&lt;!-- form : 글자가 없는경우 --&gt;
-	&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
-	&lt;!--// form : 글자가 없는경우 --&gt;
+&lt;!-- form : 기본 --&gt;
+&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;체크박스 기본&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : 기본 --&gt;
+&lt;!-- form : id 연결 시 --&gt;
+&lt;label for="chk" class="check-style2"&gt;&lt;input type="checkbox" name="" id="chk"&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;id 연결 시&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : id 연결 시 --&gt;
+&lt;!-- form : checked --&gt;
+&lt;label class="check-style2"&gt;&lt;input type="checkbox" name="" checked&gt;&lt;i&gt;&lt;/i&gt;&lt;span&gt;checked&lt;/span&gt;&lt;/label&gt;
+&lt;!--// form : checked --&gt;
+&lt;!-- form : 글자가 없는경우 --&gt;
+&lt;label class="check-style2"&gt;&lt;input type="checkbox" name=""&gt;&lt;i&gt;&lt;/i&gt;&lt;/label&gt;
+&lt;!--// form : 글자가 없는경우 --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -1940,26 +1940,26 @@
 									<a href="javascript:;" class="btn btn-code">HTML 소스</a>
 									<pre class="code">
 <textarea class="codeArea">
-	&lt;!-- form --&gt;
-	&lt;div class="rd-btn-area"&gt;
-		&lt;label class="rd-btn"&gt;
-			&lt;input type="checkbox" name="btnCk" checked=""&gt;
-			&lt;span&gt;무료배송&lt;/span&gt;
-		&lt;/label&gt;
-		&lt;label class="rd-btn"&gt;
-			&lt;input type="checkbox" name="btnCk"&gt;
-			&lt;span&gt;특가세일&lt;/span&gt;
-		&lt;/label&gt;
-		&lt;label class="rd-btn"&gt;
-			&lt;input type="checkbox" name="btnCk"&gt;
-			&lt;span&gt;사은품&lt;/span&gt;
-		&lt;/label&gt;
-		&lt;label class="rd-btn"&gt;
-			&lt;input type="checkbox" name="btnCk"&gt;
-			&lt;span&gt;볼륨DC&lt;/span&gt;
-		&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;!--// form --&gt;
+&lt;!-- form --&gt;
+&lt;div class="rd-btn-area"&gt;
+	&lt;label class="rd-btn"&gt;
+		&lt;input type="checkbox" name="btnCk" checked=""&gt;
+		&lt;span&gt;무료배송&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;label class="rd-btn"&gt;
+		&lt;input type="checkbox" name="btnCk"&gt;
+		&lt;span&gt;특가세일&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;label class="rd-btn"&gt;
+		&lt;input type="checkbox" name="btnCk"&gt;
+		&lt;span&gt;사은품&lt;/span&gt;
+	&lt;/label&gt;
+	&lt;label class="rd-btn"&gt;
+		&lt;input type="checkbox" name="btnCk"&gt;
+		&lt;span&gt;볼륨DC&lt;/span&gt;
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;!--// form --&gt;
 </textarea>
 									</pre>
 									<!--// html 보기 -->
@@ -7003,208 +7003,6 @@
 				&lt;/div&gt;
 			&lt;/li&gt;
 		&lt;/ul&gt;  --&gt;
-		&lt;!--// 내용없음 --&gt;
-	&lt;/div&gt;
-	&lt;!--// 목록 --&gt;
-</textarea>
-							</pre>
-							<!--// html 보기 -->
-						</div>
-
-						<h3 class="guide-sub-tit">게시판(다운로드센터)(notice-list+download-list)</h3>
-						<div class="guide-cont">
-							<!-- 목록 -->
-							<div class="notice-list-area">
-								<ul class="notice-list download-list">
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">Kc 인증서 광케이블<span class="new">new</span></a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">제조사A제조사A제조사A제조사A</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">Ks 인증서 LAX FCX<span class="new">new</span></a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">인증서</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블<span class="new">new</span></a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">인증서</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">시험성적서</a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">인증서</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">시험성적서</a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">인증서</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">시험성적서</a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">인증서</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-											<p class="txt ellipsis"><a href="#">기계기술연구동 통신(전화) 케이블 교체 등 3건 통신공사 작업에 필요한 기계기술연구동 통신(전화) 케이블 교체 등 3건 통신공사 작업에 필요한</a></p>
-											<p class="cate ellipsis">인증서</p>
-											<p class="made ellipsis">인증서</p>
-											<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-										<p class="txt ellipsis"><a href="#">시험성적서</a></p>
-										<p class="cate ellipsis">인증서</p>
-										<p class="made ellipsis">인증서</p>
-										<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-										<p class="txt ellipsis"><a href="#">시험성적서</a></p>
-										<p class="cate ellipsis">인증서</p>
-										<p class="made ellipsis">인증서</p>
-										<p class="date">2021.07.04</p>
-										</div>
-									</li>
-									<li>
-										<div class="txt-area">
-										<p class="txt ellipsis"><a href="#">시험성적서</a></p>
-										<p class="cate ellipsis">인증서</p>
-										<p class="made ellipsis">인증서</p>
-										<p class="date">2021.07.04</p>
-										</div>
-									</li>
-								</ul>
-								<!-- 내용없음 -->
-								<!-- <ul class="notice-list">
-									<li>
-										<div class="result-none-list">
-										<p class="no-txt">등록된 항목이 없습니다.</p>
-										</div>
-									</li>
-								</ul>-->
-								<!--// 내용없음 -->
-							</div>
-							<!--// 목록 -->
-
-							<!-- html 보기 -->
-							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
-							<pre class="code">
-<textarea class="codeArea">
-	&lt;!-- 목록 --&gt;
-	&lt;div class="notice-list-area"&gt;
-		&lt;ul class="notice-list download-list"&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;Kc 인증서 광케이블&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;제조사A제조사A제조사A제조사A&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;Ks 인증서 LAX FCX&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블UL 인증서 Lan 케이블&lt;span class="new"&gt;new&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;시험성적서&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;시험성적서&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;시험성적서&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-					&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;기계기술연구동 통신(전화) 케이블 교체 등 3건 통신공사 작업에 필요한 기계기술연구동 통신(전화) 케이블 교체 등 3건 통신공사 작업에 필요한&lt;/a&gt;&lt;/p&gt;
-					&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-					&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-				&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;시험성적서&lt;/a&gt;&lt;/p&gt;
-				&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-				&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-				&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-				&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;시험성적서&lt;/a&gt;&lt;/p&gt;
-				&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-				&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-				&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;div class="txt-area"&gt;
-				&lt;p class="txt ellipsis"&gt;&lt;a href="#"&gt;시험성적서&lt;/a&gt;&lt;/p&gt;
-				&lt;p class="cate ellipsis"&gt;인증서&lt;/p&gt;
-				&lt;p class="made ellipsis"&gt;인증서&lt;/p&gt;
-				&lt;p class="date"&gt;2021.07.04&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;
-		&lt;!-- 내용없음 --&gt;
-		&lt;!-- &lt;ul class="notice-list"&gt;
-			&lt;li&gt;
-				&lt;div class="result-none-list"&gt;
-				&lt;p class="no-txt"&gt;등록된 항목이 없습니다.&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/li&gt;
-		&lt;/ul&gt;--&gt;
 		&lt;!--// 내용없음 --&gt;
 	&lt;/div&gt;
 	&lt;!--// 목록 --&gt;
