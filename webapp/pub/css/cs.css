@@ -31,8 +31,8 @@
 .notice-detail .new {width:15px; height:15px; line-height: 13px; text-align: center; display:inline-block; background:url(../images/common/icon_list_new.svg) 50% 50% no-repeat; font-size:0;}
 .list-top-search {padding-top:20px; display:flex; justify-content: flex-end;}
 .list-top-search .form-search {width:320px; flex:320px 1 1;}
-.notice-list-area {width:100%; margin-top:20px; border-bottom:1px solid #bbb;}
-.notice-list {width:100%; border-top:1px solid #bbb;}
+.notice-list-area {width:100%; margin-top:20px;}
+.notice-list {width:100%; border-top:1px solid #bbb; border-bottom:1px solid #d7d7d7;}
 .notice-list > li {width:100%; padding:18px 114px 18px 76px; position: relative;}
 .notice-list > li .ellipsis {width:auto; max-width:100%;}
 .notice-list > li + li {border-top: 1px solid #e5e5e5;}
