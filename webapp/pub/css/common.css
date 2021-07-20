@@ -1338,7 +1338,7 @@ textarea + .cot b {vertical-align: top;}
     .footer .footer-top ul {font-size:0;}
     .footer .footer-top ul > li {font-size:14px; line-height:20px;}
     .footer .footer-top ul > li + li {padding-left:10px; margin-left:10px;}
-    .footer .footer-top ul > li + li::before {top:2px;}
+    .footer .footer-top ul > li + li::before {top:3px;}
     .footer .footer-top ul + ul {display:block; padding:0; margin:0;}
     .footer .footer-top ul + ul::before {display:none;}
     .footer .footer-top ul.question {}
