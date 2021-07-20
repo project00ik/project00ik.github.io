@@ -180,15 +180,15 @@
 .footer .footer-top ul > li {display:inline-block; font-size:16px;}
 .footer .footer-top ul > li > * {vertical-align:top;}
 .footer .footer-top ul > li + li {padding-left:21px; margin-left:20px; position:relative;}
-.footer .footer-top ul > li + li::before {content:""; width:1px; height:10px; background:#999; position:absolute; top:50%; left:0; transform:translateY(-50%);}
+.footer .footer-top ul > li + li::before {content:""; width:1px; height:12px; background:#999; position:absolute; top:3px; left:0;}
 .footer .footer-top ul + ul {padding-left:21px; margin-left:20px; position:relative;}
-.footer .footer-top ul + ul::before {content:""; width:1px; height:14px; background:#999; position:absolute; top:50%; left:0; transform:translateY(-50%);}
+.footer .footer-top ul + ul::before {content:""; width:1px; height:12px; background:#999; position:absolute; top:3px; left:0; }
 .footer .footer-cont {padding:40px 0 60px 232px; position:relative;}
 .footer .footer-cont .footet-logo {width:172px; height:28px; position:absolute; top:40px; left:0;}
 .footer .footer-cont .footer-info {font-size:14px; color:#666;}
-.footer .footer-cont .footer-info > span {position:relative; display:inline-block;}
+.footer .footer-cont .footer-info > span {position:relative; display:inline-block; line-height:19px;}
 .footer .footer-cont .footer-info > span + span {margin-left:12px; padding-left:12px;}
-.footer .footer-cont .footer-info > span + span::before {content:""; width:1px; height:10px; background:#999; display:inline-block; position:absolute; top:3px; left:0;}
+.footer .footer-cont .footer-info > span + span::before {content:""; width:1px; height:10px; background:#999; display:inline-block; position:absolute; top:5px; left:0;}
 .footer .footer-cont .copyright {margin-top:16px; font-size:14px; color:#999;}
 
 /* 퀵메뉴 */
@@ -1338,6 +1338,7 @@ textarea + .cot b {vertical-align: top;}
     .footer .footer-top ul {font-size:0;}
     .footer .footer-top ul > li {font-size:14px; line-height:20px;}
     .footer .footer-top ul > li + li {padding-left:10px; margin-left:10px;}
+    .footer .footer-top ul > li + li::before {top:2px;}
     .footer .footer-top ul + ul {display:block; padding:0; margin:0;}
     .footer .footer-top ul + ul::before {display:none;}
     .footer .footer-top ul.question {}

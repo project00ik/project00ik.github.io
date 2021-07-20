@@ -89,8 +89,8 @@
 .join-content .login-wrap .btn-area a{width: 100%;}
 .join-content .login-wrap > div div.btn-full-area a{color:#666;}
 .join-content .login-wrap .btn-full-area {padding: 20px 0 30px;border-bottom: 1px solid #BBBBBB;}
-.join-content .login-wrap .btn-full-area a{flex: 1;text-align: center;position: relative;}
-.join-content .login-wrap .btn-full-area a:last-child::before{content: "" ;position: absolute;top:5px;left:0;width:1px ;height: 10px;background:#999;}
+.join-content .login-wrap .btn-full-area a{flex: 1;text-align: center;position: relative; display:inline-block;}
+.join-content .login-wrap .btn-full-area a:last-child::before{content: "" ;position: absolute;top:4px;left:0;width:1px ;height: 10px;background:#999;}
 .join-content .login-wrap.find {width:720px}
 .join-content .login-wrap.find .tab-area .tab-cont{padding-top:50px }
 .join-content .login-wrap.find .tab-area .tab-style1{text-align: center;}
