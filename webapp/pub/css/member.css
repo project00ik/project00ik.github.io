@@ -215,8 +215,9 @@
     .list-file-con .file-con {margin: 10px 20px; display: block; border: 0;}
     .list-file-con .file-con .in-grid-size {height: auto;}
     .list-file-con .file-con .in-grid-size.w-460 {width: 100%; margin: 0 0 10px 0;}
-
+    
     /* 회원가입 */
+    .join-content .login-wrap .btn-full-area a:last-child::before {top:2px;}
     .join-content .complete-wrap{width: 100%;margin: 70px auto;}
     .join-content .complete-wrap .complete-txt{margin: 30px 0;font-size: 16px;}
     .join-content .complete-wrap .btn-full-area{border:none;}
@@ -233,7 +234,7 @@
     .join-content .login-wrap{padding: 30px 20px;width: 100%;}
     .join-content .login-wrap input{height:42px}
     .join-content .login-wrap .login-checkbox label + label{margin-left:20px;}
-    .join-content .login-wrap .btn-style-l2{height: 50px;line-height: 48px;}
+    .join-content .login-wrap .btn-style-l2{height: 50px;line-height: 50px;}
     .join-content .login-wrap .btn-full-area{font-size: 14px;}
     .join-content .login-wrap.find {width: 100%;}
     .join-content .login-wrap.find input{height: 36px;font-size: 14px;}
