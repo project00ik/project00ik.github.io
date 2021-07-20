@@ -717,14 +717,32 @@ function pagination() {
 
 function btnFilterDetail(){
   // 상세필터
+  var filterBox = $('.filterDetailBox');
   $('.btnFilterDetail').on('click', function(){
     $(this).toggleClass('on');
     if($(this).hasClass('on')){
-      $('.filterDetailBox').slideDown();
+      filterBox.addClass('open');
+      filterBox.slideDown();
     } else {
-      $('.filterDetailBox').hide();
+      filterBox.removeClass('open');
+      filterBox.slideUp();
     }
   });
+
+  // 상세필터 PC / Mobile 반응형 관련 js
+  $(window).resize( function() {
+    var winW = $(window).outerWidth();
+    if(winW < 800){
+      $('.btnFilterDetail').removeClass('on');
+      filterBox.removeClass('open');
+      filterBox.hide();
+    } else {
+      $('#filterDetail').removeClass('open');
+      $('#filterDetail').hide();
+    }
+  });
+  
+  
 }
 
 function selectionDelete(){
@@ -758,6 +776,14 @@ function btnListLayout(){
       $('.productLayout').removeClass('proList');
     }
   })
+  // 상품목록 리스트형으로 보기 PC / Mobile 반응형 관련 js
+  $(window).resize( function() {
+    var winW = $(window).outerWidth();
+    if(winW < 800){
+      $('.btnListLayout').removeClass('on');
+      $('.productLayout').removeClass('proList');
+    }
+  });
 }
 
 function toggleResize(){

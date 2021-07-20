@@ -315,7 +315,7 @@
 .filter-detail-box > dl.selection-result {padding:20px 30px; background: #f8faff; position: relative;}
 .filter-detail-box > dl.selection-result > dt {font-size: 14px; color: #333; font-weight: 400;}
 .selection-area {margin-left:-20px; margin-top:-18px; padding-right:178px;}
-.selection-area .selection-item {margin-left:20px; margin-top:18px; font-weight: 500; font-size: 14px; color: #346dd0; display:inline-block;}
+.selection-area .selection-item {margin-left:20px; margin-top:18px; font-weight: 500; font-size: 14px; color: #346dd0; display:inline-block; word-break: break-all;}
 .selection-area .selection-item .del {width: 18px; height: 18px; display:inline-block; background: url(../images/common/btn_tooltip_close.svg) 0 0 no-repeat; display:inline-block; font-size:0; vertical-align: top;}
 .selection-result .btn-style-m1 {position: absolute; top:50%; right:30px; transform: translateY(-50%);}
 

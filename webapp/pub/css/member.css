@@ -239,7 +239,7 @@
     .join-content .login-wrap.find {width: 100%;}
     .join-content .login-wrap.find input{height: 36px;font-size: 14px;}
     .join-content .login-wrap.find .tab-area .tab-style1 .tabBtn{font-size: 15px;}
-    .join-content .login-wrap.find .tab-area .tab-cont{padding:20px 0}
+    .join-content .login-wrap.find .tab-area .tab-cont{padding:30px 0}
     .join-content .login-wrap.find .radio-select > div {padding:20px 0}
     .join-content .login-wrap.find .radio-select > div > div{flex-direction: column ;}
     .join-content .login-wrap.find .radio-select > div > div label{font-size: 14px;line-height: 17px;margin-bottom: 5px;}
@@ -249,7 +249,7 @@
     .join-content .login-wrap.find .radio-select > div > div select.select{height:36px}
     .join-content .login-wrap.find .radio-select > div > div .form-layout{display: flex;width: 100%;}
     .join-content .login-wrap.find .radio-select > a {width: 100%;height:42px;line-height: 43px;margin-top: 30px;}
-    .join-content .login-wrap.find .radio-select select.select{background:url(../images/common/arrow_select.svg) top 8px right 10px no-repeat #fff}
+    .join-content .login-wrap.find .radio-select select.select{background:url(../images/common/arrow_select.svg) top 7px right 10px no-repeat #fff}
     .join-content .login-wrap.find #tab2 .radio-select .form-phone input{flex:1; width: inherit;}
     .join-content .login-wrap.find .form-phone .btn-style-m1 {width:68px; min-width:auto;}
     .join-content .login-wrap.find #tab2 .radio-select .vc-input button{width: 68px; min-width:auto; height: 36px;line-height: 34px;}
