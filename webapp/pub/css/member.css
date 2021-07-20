@@ -232,7 +232,7 @@
     .join-content .member-select-box > div.admin {margin:30px 0 0;}
     .join-content .member-select-box > div.admin a{background: #D7D7D7;}
     .join-content .login-wrap{padding: 30px 20px;width: 100%;}
-    .join-content .login-wrap input{height:42px}
+    .join-content .login-wrap input{height:42px; padding:10px 12px 9px; line-height: 40px;}
     .join-content .login-wrap .login-checkbox label + label{margin-left:20px;}
     .join-content .login-wrap .btn-style-l2{height: 50px;line-height: 50px;}
     .join-content .login-wrap .btn-full-area{font-size: 14px;}
