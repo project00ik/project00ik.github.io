@@ -233,7 +233,7 @@
     .main .btn-area-c .btn-more-black2 {height:28px; line-height: 29px; font-size: 14px; position: static;  top:inherit; left: inherit; z-index: inherit;}
 
     /* 하단배너 */
-    .last-banner-wrap{width:100%;margin: 0 auto 100px;}
+    .last-banner-wrap{width:100%;margin: 0 auto 100px; padding-top:82px;}
     .last-banner-wrap ul {padding: 0 20px;flex-wrap: nowrap;overflow-x: auto; -ms-overflow-style: none; scrollbar-width: none;}
     .last-banner-wrap ul::-webkit-scrollbar {display: none;}
     .last-banner-wrap ul li a img{padding: 0 10px;width: auto;height:30px}
