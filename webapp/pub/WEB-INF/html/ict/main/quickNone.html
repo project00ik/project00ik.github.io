@@ -170,8 +170,8 @@
         <div class="cart-top">
           <p class="tit-type1-2"><a href="javascript:;" onclick="history.back()" class="history-bak pc-hide">뒤로가기</a>QUICK 주문</p>
         </div>
-        <div class="cart-list-con quick-con">
-          <div class="top-write-box mo-hide">
+        <div class="cart-list-con quick-con allChkArea">
+          <div class="top-write-box">
             <label for="">상품코드 입력</label>
             <div class="form-layout">
               <input type="text" name="" class="input" value="10013098">
@@ -179,21 +179,29 @@
             </div>
             <p class="notice-txt">주문수량은 최초 1개로 설정되고, 주문수정 클릭후 수정가능합니다.</p>
           </div>
-          <div class="tit-area only-r mo-hide">
+          <div class="tit-area">
+            <p class="left-area">
+              <!-- <label class="check-style2 allChk"><input type="checkbox" name=""><i></i><span>전체선택</span></label>
+              <span class="sub-txt">(주문 상품수 : <b>2</b>건<i class="bar-verti"></i>총 수량 : <b>5</b>개)</span> -->
+            </p>
             <div class="right-area">
-              <button class="btn btn-small3-line" onclick="lyOpen('registerPopup')">상품 일괄 업로드</button>
+              <button class="btn btn-small3-line mo-hide" onclick="lyOpen('registerPopup')">상품 일괄 업로드</button>
+              <!-- <button class="btn btn-small-gline">선택삭제</button>
+              <button class="btn btn-small-gline">품절삭제</button> -->
             </div>
           </div>
-
-          <div class="result-none2">
-            <p class="no-txt">QUICK 주문할 상품이 없습니다.</p>
+          <!-- 장바구니 목록 -->
+          <div class="list-con">
+            <div class="result-none2">
+              <p class="no-txt">QUICK 주문할 상품이 없습니다.</p>
+            </div>
           </div>
           
         </div>
-        <div class="btn-area-c mo-fixed-btn color-none">
+        <!-- <div class="btn-area-c mo-fixed-btn">
           <button class="btn btn-style-ml1">장바구니</button>
           <button class="btn btn-style-ml2">바로구매</button>
-        </div>
+        </div> -->
       </div>
     </section>
     <footer class="footer-wrap mo-hide">
