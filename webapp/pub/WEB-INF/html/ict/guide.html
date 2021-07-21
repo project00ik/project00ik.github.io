@@ -41,17 +41,17 @@
 		.guide nav ul li:first-child {border: 0 none;}
 		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
 		.guide nav ul li.active a {background:#000; color:#fff;}
-		.guide .code {width:0; height:0; padding:0;	color:#eee; background:#486b95; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
-		.guide .code.open {width:100%; height:200px;}
-		.guide .code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee; font-size:14px;}
+		.guide pre.code {width:0; height:0; padding:0;	color:#eee; background:#486b95; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow: hidden;}
+		.guide pre.code.open {width:100%; height:200px;}
+		.guide pre.code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee; font-size:14px;}
 		.guide .btn-code {width:150px; padding:10px; text-align: center; margin-top:35px; background:#ededed; border:1px solid #ccc; color:#486b95; font-weight:700; border-radius:3px; display:inline-block; font-size:14px;}
 		.guide .btn-code:after {content:'보기';}
 		.guide .btn-code.on {border-color:#486b95; background:#486b95; color:#fff; border-radius:3px 3px 0 0;}
 		.guide .btn-code.on:after {content:'닫기';}
 
-		.guide .js-code {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow:hidden;}
-		.guide .js-code.open {width:100%; height:200px; padding:10px; overflow: auto;}
-		.guide .js-code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee;}
+		.guide pre.js-code {width:0; height:0; padding:0; background:#477163; color:#eee; resize: auto; transition-duration:0.5s; -moz-transition-duration:0.5s; border:0; overflow:hidden;}
+		.guide pre.js-code.open {width:100%; height:200px; padding:10px; overflow: auto;}
+		.guide pre.js-code .codeArea {width:100%; height:100%; padding:10px; overflow: auto; color:#eee;}
 		.guide .btn-js-code {width:150px; padding:10px; margin-top:10px; background:#ededed; border:1px solid #ccc; color:#477163; font-weight:700; font-size:14px; border-radius:3px; text-align: center; display:inline-block}
 		.guide .btn-js-code:after {content:'보기';}
 		.guide .btn-js-code.on {border-color:#477163; background:#477163; color:#fff; border-radius:3px 3px 0 0;}
@@ -861,7 +861,7 @@
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-									<div class="js-code">
+									<pre class="js-code">
 <textarea class="codeArea">
 function toggleBtn(){
   // 토글버튼
@@ -874,7 +874,7 @@ function toggleBtn(){
 }
 toggleBtn() // 토글버튼
 </textarea>
-									</div>
+									</pre>
 									<!--// js 보기 -->
 								</div>
 							</div>
@@ -1220,7 +1220,7 @@ toggleBtn() // 토글버튼
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-									<div class="js-code">
+									<pre class="js-code">
 <textarea class="codeArea">
 function ratingBtnArea(){
   // 포토리뷰 별점버튼 js
@@ -1233,7 +1233,7 @@ function ratingBtnArea(){
 }
 ratingBtnArea() // 포토리뷰 별점버튼 js
 </textarea>
-									</div>
+									</pre>
 									<!--// js 보기 -->
 								</div>
 							</div>
@@ -1337,7 +1337,7 @@ ratingBtnArea() // 포토리뷰 별점버튼 js
 									<!--// html 보기 -->
 									<!-- js 보기 -->
 									<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-									<div class="js-code">
+									<pre class="js-code">
 <textarea class="codeArea">
 function inputPrice(){
 	// 금액 input focus 효과
@@ -1350,7 +1350,7 @@ function inputPrice(){
 }
 inputPrice(); // 금액 input focus 효과
 </textarea>
-									</div>
+									</pre>
 									<!--// js 보기 -->
 								</div>
 							</div>
@@ -3412,7 +3412,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function toggleBtn(){
 		// 토글버튼
@@ -3425,7 +3425,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	toggleBtn(); // 토글버튼
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 
@@ -3562,7 +3562,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function accordion(){
 		// 아코디언
@@ -3585,7 +3585,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	accordion(); // 아코디언
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">토글형(toggleSlide)</h3>
@@ -3719,7 +3719,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function toggleSlideArea(){
 		// 토글영역(slide모션)
@@ -3739,7 +3739,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	toggleSlideArea(); // 토글영역
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 
@@ -3882,7 +3882,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function allChecked(){
 		// all checked
@@ -3923,7 +3923,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	toggleSlideArea(); // 토글영역
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 						
@@ -4240,7 +4240,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function reviewToggle() {
 		// 리뷰토글
@@ -4254,7 +4254,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	reviewToggle(); // 리뷰토글
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 
@@ -4381,7 +4381,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function tab(){ // 탭 관련 js
 		$('.tabArea').each(function (){
@@ -4407,7 +4407,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	tab(); // 탭
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 					</div>
@@ -4836,7 +4836,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	function btnListLayout(){
 	  // 상품목록 리스트형으로 보기
@@ -4851,7 +4851,7 @@ inputPrice(); // 금액 input focus 효과
 	}
 	btnListLayout(); // 상품목록 리스트형으로 보기
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 						<h3 class="guide-sub-tit">유닛(체크박스형)(unit-type1)</h3>
@@ -6009,7 +6009,7 @@ inputPrice(); // 금액 input focus 효과
 							<!--// html 보기 -->
 							<!-- js 보기 -->
 							<a href="javascript:;" class="btn btn-js-code">JS 소스</a>
-							<div class="js-code">
+							<pre class="js-code">
 <textarea class="codeArea">
 	// 베스트 상품 리스트 번호
 	var $proli = $('.best-100').find('li');
@@ -6021,7 +6021,7 @@ inputPrice(); // 금액 input focus 효과
 		}
 	})
 </textarea>
-							</div>
+							</pre>
 							<!--// js 보기 -->
 						</div>
 

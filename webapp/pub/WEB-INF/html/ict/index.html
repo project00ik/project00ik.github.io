@@ -32,13 +32,13 @@
 		.guide tr.no-mb td {background:#e5ebf1;}
 		.guide tr.no-mb.finish td {background:#f5faff;}
 		.guide .link {color:#145e95; text-align: left;}
+		.guide nav {margin-top:20px; overflow:hidden;}
 		.guide nav ul {float: left; padding: 0; margin: 0; margin-bottom: 20px; border: 1px solid #666;}
 		.guide nav ul:after {content: ''; clear: both; display: block;}
-		.guide nav ul li {height:38px; float: left; list-style: none; border-left: 1px solid #666; width: 100px; line-height: 30px; text-align: center; background:#fff;}
+		.guide nav ul li {float: left; list-style: none; border-left: 1px solid #666; width: 100px; line-height: 30px; text-align: center; font-size:0;}
 		.guide nav ul li:first-child {border: 0 none;}
-		.guide nav ul li a {text-decoration: none; color:#444;}
-		.guide nav ul li.active {color:#fff; background:#000;}
-		.guide nav ul li.active a {color:#fff;}
+		.guide nav ul li a {width:100%; font-size:14px; display:inline-block; text-decoration: none; background:#fff; color:#444;}
+		.guide nav ul li.active a {background:#000; color:#fff;}
 		.guide b {color: #c24d41}
 		.guideInfo {width:100%; overflow:hidden; margin-bottom:20px;}
 		.guideInfo p {min-width:150px; height:20px; padding:4px 0; font-size:12px; float:left; text-align:center;}
@@ -88,15 +88,16 @@
 	<p>jquery-3.4.1.min.js (jQuery v3.4.1)</p>
 	<p>jquery-ui.min.js (jQuery UI v1.12.1)</p>
 	<p>swiper.min.js (Swiper v5.4.5)</p>
+	<p>jquery.flipper-responsive.js (공동구매 카운트다운)</p>
 </div>
 <nav>
 	<ul>
 		<li class="active"><a href="index.html">작업목록</a></li>
-		<!-- <li><a href="guide.html">가이드</a></li> -->
+		<li><a href="guide.html">가이드</a></li>
 	</ul>
 </nav>
 <div class="guideInfo">
-	<p class="mod">수정예정</p>
+	<!-- <p class="mod">수정예정</p> -->
 	<p class="finish">완료</p>
 	<p class="no-mb">반응형X</p>
 	<p class="infoPage">작업/총(page) : <b class="page"></b> / <span class="total"></span></p>
@@ -442,7 +443,7 @@
 			<td class="date">06.08</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.19 수정 : 검색영역 연관검색어 영역 추가 <span class="new">NEW</span></li>
+					<li>07.19 수정 : 검색영역 연관검색어 영역 추가</li>
 				</ul>
 			</td>
 			<td class="design">
@@ -525,7 +526,7 @@
 			<td class="date">06.01</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.19 수정 : 최근본상품이 없을 때 추가 <span class="new">NEW</span></li>
+					<li>07.19 수정 : 최근본상품이 없을 때 추가</li>
 					<li>07.13 수정 : [*ICTMall_리뷰및수정요청사항] 검색 placeholder 문구수정 ICT Mall → META ON ICT Mall</li>
 					<li>07.05 수정 : [*ICTMall_리뷰및수정요청사항] // 주문수정 상품슬라이드 'touchRatio' 옵션 수정</li>
 					<li>06.28 수정 : 바로구매/장바구니 팝업 볼륨DC옆 툴팁 추가</li>
@@ -543,7 +544,7 @@
 			<td class="date">05.03</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : footer 링크 추가 <span class="new">NEW</span></li>
+					<li>07.15 수정 : footer 링크 추가</li>
 					<li>07.13 수정 : [*ICTMall_리뷰및수정요청사항] 검색 placeholder 문구수정 ICT Mall → META ON ICT Mall</li>
 					<li>07.07 수정 : [*ICTMall_리뷰및수정요청사항] 퀵메뉴 복지몰, 휴양소 추가</li>
 					<li>07.06 수정 : [*ICTMall_리뷰및수정요청사항] gnb '인기상품, 특가세일, 기획전, 보험, 렌탈'으로 변경</li>
@@ -566,7 +567,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 footer없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.05 수정 : // 주문수정 상품슬라이드 'touchRatio' 옵션 수정</li>
 					<li>07.01 수정 : [*현업 팀리뷰 수정사항] 버튼hover스타일로 인한 class변경 및 위치 수정, 주문수량 삭제버튼영역 삭제</li>
 					<li>06.25 수정 : 퀵메뉴 메뉴명 및 알림 부분 수정</li>
@@ -585,7 +586,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 footer없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.05 수정 : // 주문수정 상품슬라이드 'touchRatio' 옵션 수정</li>
 				</ul>
 			</td>
@@ -921,7 +922,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 footer없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.05 수정 : [*ICTMall_리뷰및수정요청사항]<br>html 하단 js 플러그인옵션(메인 MD 추천상품 slide) 수정</li>
 					<li>07.05 수정 : // 주문수정 상품슬라이드 'touchRatio' 옵션 수정</li>
 					<li>06.29 수정 : 구매옵션 할인 전 가격 '원' 추가, 하단 js 여백값 수정</li>
@@ -1019,7 +1020,7 @@
 			<td class="date">05.06</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/9c5be2e0-46a3-4653-8a5e-f17bf7e5b5b7-c908/" target="_blank">디자인보기</a></td>
@@ -1194,7 +1195,7 @@
 			<td class="date">05.03</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.16 수정 : 등록된 게시글이 없는 경우 추가 / 모바일 로그아웃버튼 추가 <span class="new">NEW</span></li>
+					<li>07.16 수정 : 등록된 게시글이 없는 경우 추가 / 모바일 로그아웃버튼 추가</li>
 					<li>06.22 수정 : [*현업 팀리뷰 수정사항] 안녕하세요 김재욱님 옆에 문구 수정 및 a태그추가, 상단 노출 항목 "신규상품등록, 주문, 배송중, 입고대상"으로 수정</li>
 					<li>05.07 수정 : 유닛 플래그 및 세일가 정상가 추가<br/>
 						05.28 수정 : 찜한 상품 → 관심상품 으로 타이틀변경</li>
@@ -1412,7 +1413,7 @@
 			<td class="date">05.24</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.02 수정 : 진행상태 select → 다회선택(checkbox)레어어 팝업으로 수정</li>
 				</ul>
 			</td>
@@ -1488,7 +1489,7 @@
 			<td class="date">05.24</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/e8d3a211-6e40-4f49-aa64-36cb38cb5e8c-bd80/" target="_blank">디자인보기</a></td>
@@ -1548,7 +1549,7 @@
 			<td class="date">05.27</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.05 수정 : // 주문수정 상품슬라이드 'touchRatio' 옵션 수정</li>
 					<li>06.28 수정 : 버튼 용도별 클래스명 수정</li>
 				</ul>
@@ -1565,7 +1566,7 @@
 			<td class="date">05.27</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.28 수정 : 버튼 용도별 클래스명 수정</li>
 				</ul>
 			</td>
@@ -1686,7 +1687,7 @@
 			<td class="date">05.27</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.01 수정 : 타이틀수정</li>
 				</ul>
 			</td>
@@ -1748,7 +1749,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/9c746c32-66f8-41ea-b689-e94821c08da4-c927/" target="_blank">디자인보기</a></td>
@@ -1764,7 +1765,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/9c746c32-66f8-41ea-b689-e94821c08da4-c927/" target="_blank">디자인보기</a></td>
@@ -1846,7 +1847,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.28 수정 : 버튼 용도별 클래스명 수정</li>
 					<li>06.14 수정 : 기획내용 변경 적용 (문구수정 및 항목삭제) </li>
 				</ul>
@@ -1908,7 +1909,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"></td>
@@ -1923,7 +1924,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.06 수정 : 수령인정보 추가</li>
 				</ul>
 			</td>
@@ -1939,7 +1940,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"></td>
@@ -1954,7 +1955,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.28 수정 : 버튼 용도별 클래스명 수정</li>
 				</ul>
 			</td>
@@ -2015,7 +2016,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"></td>
@@ -2105,7 +2106,7 @@
 			<td class="date">06.10</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"></td>
@@ -2456,7 +2457,7 @@
 			<td class="date">06.08</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.28 수정 : 버튼 용도별 클래스명 수정</li>
 				</ul>
 			</td>
@@ -2562,7 +2563,7 @@
 			<td class="date">06.08</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"></td>
@@ -2638,7 +2639,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 footer없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.09 수정 : 장바구니 버튼명 수정 [상품일괄 업로드] → [상품 일괄 등록] / 버튼추가 [인증서 일괄 다운로드]</li>
 					<li>07.05 수정 : // 주문수정 상품슬라이드 'touchRatio' 옵션 수정</li>
 					<li>06.22 수정 : [*현업 팀리뷰 수정사항] 버튼hover스타일로 인한 class변경 및 위치 수정, 주문수량 삭제버튼영역 삭제</li>
@@ -2692,7 +2693,7 @@
 			<td class="date">05.17</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/0ae53037-4a4d-4512-8a56-7970d4181bf1-5fb6/" target="_blank">디자인보기</a></td>
@@ -2787,7 +2788,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 footer없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.23 수정 : 버튼 색상 class 변경</li>
 					<li>06.22 수정 : [*현업 팀리뷰 수정사항] 버튼hover스타일로 인한 class변경 및 위치 수정,<br>
 						배송지 영역 배송지 추가 시 노출 영역 관련하여 마크업수정(* 수정된 영역 '배송지 영역'주석으로 표시)</li>
@@ -2830,7 +2831,7 @@
 			<td class="memo">
 				<ul class="modiList">
 					<li>모바일 footer없음</li>
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.22 수정 : [*현업 팀리뷰 수정사항] 버튼hover스타일로 인한 class변경 및 위치 수정,<br>
 						배송지 영역 배송지 추가 시 노출 영역 관련하여 마크업수정(* 수정된 영역 '배송지 영역'주석으로 표시)
 					</li>
@@ -3035,7 +3036,7 @@
 			<td class="date">05.24</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/6ca96630-917d-4e53-a7d9-eba5aec3c738-39fa/" target="_blank">디자인보기</a></td>
@@ -3050,7 +3051,7 @@
 			<td class="date">05.24</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/6ca96630-917d-4e53-a7d9-eba5aec3c738-39fa/" target="_blank">디자인보기</a></td>
@@ -3095,7 +3096,7 @@
 			<td class="date">05.24</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.30 수정 : 팝업안에 팝업 관련js 수정</li>
 					<li>06.28 수정 : 엑셀업로드 팝업 예시 추가</li>
 					<li>06.28 수정 : 버튼 용도별 클래스명 수정</li>
@@ -3113,7 +3114,7 @@
 			<td class="date">05.24</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 				</ul>
 			</td>
 			<td class="design"><a href="https://xd.adobe.com/view/6ca96630-917d-4e53-a7d9-eba5aec3c738-39fa/" target="_blank">디자인보기</a></td>
@@ -3143,6 +3144,7 @@
 			<td class="date">06.02</td>
 			<td class="memo">
 				<ul class="modiList">
+					<li>07.21 수정 : 첨부파일 테이블 내 '선택(checkbox)'영역 삭제 <span class="new">NEW</span></li>
 					<li>06.14 수정 : lnb 카카오톡 상담하기 영역추가 </li>
 				</ul>
 			</td>
@@ -3250,7 +3252,7 @@
 			<td class="date">06.02</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>06.14 수정 : lnb 카카오톡 상담하기 영역추가 </li>
 				</ul>
 			</td>
@@ -3263,7 +3265,7 @@
 			<td class="d4">설문조사</td>
 			<td class="d5"></td>
 			<td class="link"><a href="#" target="_blank">cs/surveyDetail02.html</a></td>
-			<td class="date"></td>
+			<td class="date">07.13</td>
 			<td class="memo">
 				<ul class="modiList">
 					<li></li>
@@ -3371,7 +3373,7 @@
 			<td class="date">06.03</td>
 			<td class="memo">
 				<ul class="modiList">
-					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정 <span class="new">NEW</span></li>
+					<li>07.15 수정 : 크로스브라우징(ie10) 관련 readonly → readonly="readonly" 로 수정</li>
 					<li>07.08 수정 : 첨부파일 html 추가</li>
 				</ul>
 			</td>
