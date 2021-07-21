@@ -69,15 +69,22 @@
 		.guide .popup-cont {margin: 0 auto; background:#fff;}
 		.guide .mypage-cont {min-height:auto;}
 		.guide .mypage-cont .product-list-wrap {margin:0;}
+		.guide .in-grid-size,
+		.guide .excel-wrap {padding:20px; background: #f5f5f5; color:red;}
 		/* .navFixed {padding-top:200px;} */
 		
 		@media only screen and (max-width:800px){
 			.guide {width:100%; margin:0;}
+			.guide .code .codeArea,
+			.guide .js-code .codeArea {font-size:12px; padding:0;}
 			.guide .tit-type1-2 {top:0;}
 			.guide .popup-cont {width:calc(100% + 40px); margin:0 -20px; }
 			.guide .icon img {max-width:100%; width:auto;}
 			.guide .container {padding:0 0 110px;}
 			.guide-cont {padding:10px;}
+			.guide-cont.guide-nonpd {padding:10px 0;}
+			.guide-cont.guide-nonpd .btn-code {margin-left:10px;}
+			.guide-cont.guide-nonpd .btn-js-code {margin-left:10px;}
 			.guide .product-list-wrap {width:calc(100% + 20px); max-width:calc(100% + 20px); margin:0 -10px;}
 			.guide .mypage-cont {width:calc(100% + 20px); max-width:calc(100% + 20px); margin:0 -10px;}
 			.guide .mypage-cont .product-list-wrap {width:100%; max-width:100%; margin:0;}
@@ -86,8 +93,6 @@
 			.guide-gnb.fixed {top:36px;}
 			.guide-gnb.fixed .guide-gnb-btn {width:100%; margin:0;}
 			.guide-cont .btn-tooltip {margin-left:165px;}
-			.guide .code .codeArea,
-			.guide .js-code .codeArea {font-size:12px; padding:0;}
 			/* .navFixed {padding-top:400px;} */
 		}
 	</style>
@@ -130,6 +135,8 @@
 						<a class="tabBtn" href="#gIcon">아이콘</a>
 						<a class="tabBtn" href="#gStar">별점</a>
 						<a class="tabBtn" href="#gForm">폼요소</a>
+						<a class="tabBtn" href="#gFormLayout">폼레이아웃</a>
+						<a class="tabBtn" href="#gGrid">그리드영역</a>
 						<a class="tabBtn" href="#gTable">테이블</a>
 						<a class="tabBtn" href="#gFileUpload">첨부파일</a>
 						<a class="tabBtn" href="#gToogle">토글형</a>
@@ -2068,6 +2075,180 @@ inputPrice(); // 금액 input focus 효과
 						</div>
 					</div>
 
+					<h2 class="guide-tit" id="gFormLayout">폼 레이아웃</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">폼 레이아웃 : join-list-con list-con</h3>
+						<div class="guide-cont guide-nonpd">
+							<!-- 폼 레이아웃 -->
+							<div class="join-list-con">
+								<div class="tit-area2">
+									<p class="tit-type2">폼 타이틀</p>
+								</div>
+								<div class="list-con bt-btn-line">
+									<ul class="list-in list-half-style">
+										<li class="list-w100">
+											<label for="">제목(100%)</label>
+											<div class="form-layout3">
+												<select class="select w127" name="" id="" >
+													<option value="">요청일자</option>
+													<option value="">당일</option>
+													<option value="">일주일</option>
+													<option value="">한달</option>
+													<option value="">세달</option>
+												</select>
+												<div class="form-inline">
+													<input type="text" class="datepicker mo-hide" value="">
+													<input type="date" class="datepicker pc-hide" value="">
+													<em class="bar">-</em>
+													<input type="text" class="datepicker mo-hide" value="">
+													<input type="date" class="datepicker pc-hide" value="">
+												</div>
+											</div>
+										</li>
+										<li>
+											<label for="">제목</label>
+											<div class="form-layout">
+												<input type="number" name="" class="input" value="">
+											</div>
+										</li>
+										<li>
+											<label for="">제목</label>
+											<div class="form-layout">
+												<input type="text" name="" class="input" value="전체" readonly="readonly">
+												<div class="w60-flexbox">
+													<button class="btn btn-style-m4 ml5 lyboxbtn">선택</button>
+												</div>
+											</div>
+										</li>
+										<li>
+											<label for="">제목제목</label>
+											<div class="form-layout">
+												<input type="text" name="" class="input" value="" placeholder="">
+											</div>
+										</li>
+										<li>
+											<label for="">제목</label>
+											<div class="form-layout">
+												<input type="text" name="" class="input" value="">
+											</div>
+										</li>
+										<li>
+											<label for="">제목</label>
+											<div class="form-layout">
+												<input type="text" name="" class="input" value="">
+											</div>
+										</li>
+										<li>
+											<label for="">제목제목</label>
+											<div class="form-layout form-search">
+												<input type="text" name="" class="input" value="" placeholder="" readonly="readonly">
+												<button class="btn btn-search2" onclick="lyOpen('myMngOfficePopup')">검색</button>
+											</div>
+										</li>
+									</ul>
+									<div class="btn-r-area">
+										<button class="btn btn-style-m3">조회</button>
+									</div>
+								</div>
+								<!-- 폼 하단 영역 -->
+								<div class="list-con list-file-con m-line-hide">
+									<!-- button -->
+									<div class="btn-r-area btn-mo-percent">
+										<a href="javascript:;" class="btn btn-style-m1 btn-color3 mo-btn-w50">주문상품취소</a>
+										<a href="javascript:;" class="btn btn-style-m1 btn-color3 mo-btn-w50">반품/교환요청</a>
+										<a href="javascript:;" class="btn btn-style-m1 mo-btn-w50 mo-hide">명세서출력</a>
+										<a href="javascript:;" class="btn btn-style-m1 btn-color2 mo-btn-w50">관심상품등록</a>
+										<a href="javascript:;" class="btn btn-style-m1 btn-color2 mo-btn-w50">장바구니담기</a>
+										<a href="javascript:;" class="btn btn-style-m4 btn-color2 mo-btn-w100">저장</a>
+									</div>
+									<!--// button -->
+									<!-- 그리드 영역 -->
+									<div class="file-con">
+										<div class="in-grid-size w-all">
+											* 그리드영역 *
+										</div>
+									</div>
+									<!--// 그리드 영역 -->
+								</div>
+								<!--// 폼 하단 영역 -->
+							</div>
+							<!--// 폼 레이아웃 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+								<textarea class="codeArea">
+									
+								</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
+					<h2 class="guide-tit" id="gGrid">그리드 영역</h2>
+					<div class="guide-box">
+						<h3 class="guide-sub-tit">그리드 영역 : list-file-con file-con</h3>
+						<div class="guide-cont guide-nonpd">
+							<div class="list-file-con">
+								<!-- 그리드 영역 -->
+								<div class="file-con">
+									<div class="in-grid-size w-all">
+										* 그리드영역 *
+									</div>
+								</div>
+								<!--// 그리드 영역 -->
+							</div>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+								<textarea class="codeArea">
+									
+								</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+
+						<h3 class="guide-sub-tit">그리드 영역(이분활) : list-file-con file-con</h3>
+						<div class="guide-cont guide-nonpd">
+							<div class="list-file-con">
+								<!-- 그리드 영역 -->
+								<div class="file-con">
+									<div class="in-grid-size w-460">
+										* 그리드영역 *
+									</div>
+									<div class="in-grid-size w-all">
+										* 그리드영역 *
+									</div>
+								</div>
+								<!--// 그리드 영역 -->
+							</div>
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+								<textarea class="codeArea">
+									
+								</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+
+						<h3 class="guide-sub-tit">그리드 영역(팝업) : excel-wrap</h3>
+						<div class="guide-cont">
+							<!-- 그리드 영역 -->
+							<div class="excel-wrap">
+                * 그리드영역 *
+              </div>
+							<!--// 그리드 영역 -->
+							<!-- html 보기 -->
+							<a href="javascript:;" class="btn btn-code">HTML 소스</a>
+							<pre class="code">
+								<textarea class="codeArea">
+									
+								</textarea>
+							</pre>
+							<!--// html 보기 -->
+						</div>
+					</div>
+
 					<h2 class="guide-tit" id="gTable">테이블</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">세로형 테이블 : table-style1</h3>
@@ -3137,7 +3318,7 @@ inputPrice(); // 금액 input focus 효과
 					</div>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">아코디언(acdArea)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 아코디언 -->
 							<div class="qna-list-area acdArea">
 								<dl>
@@ -6778,7 +6959,7 @@ inputPrice(); // 금액 input focus 효과
 					<h2 class="guide-tit" id="gNotice">게시판</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">게시판(공지사항)(notice-list)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 목록 -->
 							<div class="notice-list-area">
 								<ul class="notice-list">
@@ -6910,7 +7091,7 @@ inputPrice(); // 금액 input focus 효과
 						</div>
 
 						<h3 class="guide-sub-tit">게시판(뉴스)(notice-list+news-list)</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- 목록 -->
 							<div class="notice-list-area">
 								<ul class="notice-list news-list">
@@ -7084,7 +7265,7 @@ inputPrice(); // 금액 input focus 효과
 					<h2 class="guide-tit" id="gPagnation">페이지네이션</h2>
 					<div class="guide-box">
 						<h3 class="guide-sub-tit">페이지네이션</h3>
-						<div class="guide-cont">
+						<div class="guide-cont guide-nonpd">
 							<!-- pC 페이지네이션 -->
 							<div class="paging mo-hide">
 								<a href="#" class="btn prev">previous</a>
