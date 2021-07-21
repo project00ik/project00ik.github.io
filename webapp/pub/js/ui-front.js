@@ -1,54 +1,7 @@
 
 $(document).ready(function (){
-  // var appHidden = function(){ 
-	// 	var agent = navigator.userAgent;
-	// 	agent = agent.toLowerCase();
-		
-	// 	if (agent.indexOf("ipod") != -1 || agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1) { // iOS일때
-  //     $('body').addClass('ios');
-  //   } else { // iOS가 아닐때
-  //     $('body').addClass('android');
-	// 	}
-  // }; appHidden();
-
-  // $(window).scroll(function (){
-  //   /* 스크롤 방향 체크 [S] */
-  //   if ($(this).scrollTop() >= 43) {
-  //     nowScrollTop = $(this).scrollTop();
-  //     $('body').removeClass('scrollTop');
-  //     if (wheelDelta() == 'down') {
-  //       $('body').removeClass('scrollUp');
-  //       $('body').addClass('scrollDown');
-  //     }
-  //     if (wheelDelta() == 'up') {
-  //       $('body').removeClass('scrollDown');
-  //       $('body').addClass('scrollUp');
-  //     }
-  //     // - 초기화
-  //     prevScrollTop = nowScrollTop;
-  //   } else { 
-  //     $('body').addClass('scrollTop');
-  //   }
-  //   // - 스크롤 움직임 감지
-  //   $.fn.scrollStopped = function (callback) {
-  //     var that = this, $this = $(that);
-  //     $this.scroll(function (ev) {
-  //       clearTimeout($this.data('scrollTimeout'));
-  //       $this.data('scrollTimeout', setTimeout(callback.bind(that), 250, ev));
-  //     });
-  //   };
-  //   // - 스크롤 멈췄을 때 
-  //   // $(window).scrollStopped(function (ev) {
-  //   //   console.log(ev);
-  //   //   console.log('scroll stopped');
-  //   // }); 
-  //   /* 스크롤 방향 체크 [E] */
-    
-  //   // fixedArea(); // 플로팅 버튼 관련 스크롤 이벤트(fixed-area share, top)
-  //   nowScrollPosition(); // 현재 스크롤 위치 기억
-
-  // });
-
+  
+  // 데이터피커
   $(".datepicker").each(function(){
     $(this).datepicker({
       dateFormat: 'yy-mm-dd',
