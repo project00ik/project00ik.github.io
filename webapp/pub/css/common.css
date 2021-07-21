@@ -936,7 +936,7 @@ textarea + .cot b {vertical-align: top;}
 .table-area.table-style5 td{text-align: center; font-size: 16px; padding: 6px 12px;}
 .table-area.table-style5 tr.td-start td{padding-top: 14px;}
 .table-area.table-style5 tr:last-child td {padding-bottom:20px;}
-.table-area.table-style5 td .ellipsis {width:650px;}
+.table-area.table-style5 td .ellipsis {width:650px; line-height: 1.4;}
 .lyPopupWrap .table-area.table-style5 td .ellipsis {width:300px;}
 .file-upload-area .table-style5 {max-height:280px; overflow-x: hidden; overflow-y: auto;}
 
