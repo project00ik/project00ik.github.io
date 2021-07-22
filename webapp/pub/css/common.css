@@ -1415,7 +1415,8 @@ textarea + .cot b {vertical-align: top;}
     .result-none-list {padding: 70px 0 100px;}
     .result-none-list .no-txt {padding: 60px 0 0 0; font-size: 14px; line-height: 18px; background:url(../images/common/mo_icon_none2.svg) center 0 no-repeat; }
 
-    
+    /* swiper */
+    .swiper-pagination.swiper-pagination-bullets {margin-top:0;}
 
     /* 버튼 */
     .header-cont .search-area .btn-search {width:24px; height:24px; background:url(../images/common/mo_btn_search.svg) 50% 50% no-repeat; top:5px;}

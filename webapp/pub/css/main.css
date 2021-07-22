@@ -176,7 +176,7 @@
     .bulk-purchase-slide .swiper-scrollbar {width:calc(100% - 76px); height:2px; display:block; background:#fff; left:38px;}
     .bulk-purchase-slide .swiper-scrollbar-drag {background:#346dd0;}
     .bulk-purchase-slide .bulk-img-area > dt {width:116px; height:82px; border-radius:10px; overflow:hidden;}
-    .bulk-purchase-slide .bulk-img-area > dd {margin-top:10px; font-size:16px;}
+    .bulk-purchase-slide .bulk-img-area > dd {margin-top:10px; font-size:14px;}
     .main .cont-main-wrap {max-width:100%;}    
     .main .cont-main-wrap .tab-cont {margin-top:0;}
     .main .cont-main {margin-top:60px;}
@@ -184,12 +184,12 @@
     .main .slide-type-arrow {padding:0 15px; margin-top:14px;}
     .main .cont-main-wrap .cont-newproduct {width:100%;}
 
-    .main .cont-banner {width:100%; padding:0 20px; overflow:hidden; font-size:0;}
+    .main .cont-banner {width:100%; padding:0 20px; margin-top:30px; overflow:hidden; font-size:0;}
     .main .cont-banner .banner-image-area {display:block;}
     .main .cont-banner .banner-image-area + .banner-image-area {margin-top:16px;}
     .main .cont-banner .banner-image-area .banner-image {display:none;}
     .main .cont-banner .banner-image-area .mo-banner-image {display:block; width:100%; height:auto; max-height:37.6vw;}
-    .main .mid-banner-wrap .cont-mid-banner {width:100%; margin-top:70px;}
+    .main .mid-banner-wrap .cont-mid-banner {width:100%; margin-top:40px;}
     .main .mid-banner-wrap .slide-mid-banner .banner-image {display:none; max-height:250px; overflow:hidden;}
     .main .mid-banner-wrap .slide-mid-banner .mo-banner-image {display:block; max-height: 42.67vw; overflow:hidden;}
     .main .cont-bidding-info-wrap {margin-top:60px; padding:0 20px 20px; background:#1f2d62;}
