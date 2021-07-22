@@ -987,7 +987,7 @@ textarea + .cot b {vertical-align: top;}
 .unit-type1 .unit-area > dt > img {width:100%;}
 .unit-type1 .unit-area > dd {width:100%; padding:16px 0 62px; position: relative;}
 .unit-type1 .unit-area .brand {width:100%; margin-bottom:6px; font-size:15px; color:#bbb; display:inline-block;}
-.unit-type1 .unit-area .product-name {width:100%; height: 39px; margin-bottom:25px; font-size:16px;}
+.unit-type1 .unit-area .product-name {width:100%; height: 40px; margin-bottom:25px; font-size:16px;}
 .unit-type1 .unit-area .price-area {display:-webkit-box; display:-ms-flexbox; display:flex; align-items:flex-end;}
 .unit-type1 .unit-area .price {flex:1; font-size:20px; color:#000; display:inline-block;}
 .unit-type1 .unit-area .price > b {vertical-align:baseline; font-weight:700; font-size:28px;}
