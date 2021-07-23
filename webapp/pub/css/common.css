@@ -56,9 +56,9 @@
 /* 검색박스 */
 .search-box.on {display: block;}
 .search-box {display: none; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #d7d7d7;}
-.search-box .half-box {display: flex;}
-.search-box .half-box > div {position: relative; width: 50%; padding: 20px;}
-.search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 0; top: 0; width: 1px; height: 100%; background: #d7d7d7;}
+.search-box .half-box {max-height:486px; display: flex; overflow:auto; background:url(../images/common/bg_search_mid_line.png) 50% 0 repeat-y;}
+.search-box .half-box > div {flex:1; width: 50%; padding: 20px;}
+/* .search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: #d7d7d7;} */
 .search-box .half-box .s-tit {font-size: 16px; font-weight: 500; color: #346dd0; padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
 .search-box .half-box .s-list {padding-top: 30px;}
 .search-box .half-box .s-list ul li {display: flex; justify-content: space-between; padding-bottom: 20px;}
@@ -78,7 +78,7 @@
 .search-box .list-none p {font-size: 16px; color: #999; text-align: center; line-height: 22px; padding-top: 80px; background:url(../images/common/icon_none2.svg) top center no-repeat;}
 .header-cont .search-area .inp-area .del {display:none; position: absolute; top: 50%; right: 40px; transform: translateY(-50%); width: 18px; height: 18px; font-size: 0; background:url(../images/common/btn_del.svg) 0 0 no-repeat;}
 
-.word-box {display: none; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 30px 20px; background: #fff; border: 1px solid #d7d7d7;}
+.word-box {display: none; max-height:500px; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 30px 20px; background: #fff; border: 1px solid #d7d7d7; overflow:auto;}
 .word-box.on {display: block;}
 .word-box a {display: block; font-size: 16px; color: #000;}
 .word-box a:hover {color: #346dd0;}
@@ -1148,7 +1148,7 @@ textarea + .cot b {vertical-align: top;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
-@media only screen and (max-width:1200px){ /* ipad pro(1024)*/
+@media only screen and (max-width:1200px){ /* PC최소 사이즈 1200px / ipad pro(1024)*/
     .wrap {min-width:1240px;}
     .header .header-cont {width:100%; margin:0 0 20px;}
     .header-cont .logo {left:24px;}
@@ -1268,6 +1268,7 @@ textarea + .cot b {vertical-align: top;}
 
     /* 검색박스 */
     .search-box {width: 100%; top: 46px;}
+    .search-box .half-box {max-height:335px;}
     .search-box .half-box .s-tit {font-size: 14px; padding-bottom: 16px;}
     .search-box .half-box .s-list {padding-top: 16px;}
     .search-box .half-box .s-list ul li {padding-bottom: 17px;}
@@ -1276,7 +1277,7 @@ textarea + .cot b {vertical-align: top;}
     .search-box .search-bt a {font-size: 13px; line-height: 15px;}
     .search-box .list-none p {word-break:keep-all; line-height: 18px; width: 90px; font-size: 14px; padding: 60px 0 0 0; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
     .search-box .half-box .s-list ul li:last-child {padding-bottom: 0;}
-    .word-box {width: 100%; top: 46px; padding: 20px;}
+    .word-box {width: 100%; max-height:387px; top: 46px; padding: 20px;}
     .word-box a {font-size: 14px;}
     .word-box .word-words {padding-bottom: 16px;}
     .word-box .word-list {padding: 16px 0;}
