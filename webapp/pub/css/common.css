@@ -56,7 +56,7 @@
 /* 검색박스 */
 .search-box.on {display: block;}
 .search-box {display: none; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #d7d7d7;}
-.search-box .half-box {max-height:486px; display: flex; overflow:auto; background:url(../images/common/bg_search_mid_line.png) 50% 0 repeat-y;}
+.search-box .half-box {max-height:493px; display: flex; overflow:auto; background:url(../images/common/bg_search_mid_line.png) 50% 0 repeat-y;}
 .search-box .half-box > div {flex:1; width: 50%; padding: 20px;}
 /* .search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: #d7d7d7;} */
 .search-box .half-box .s-tit {font-size: 16px; font-weight: 500; color: #346dd0; padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
@@ -78,15 +78,17 @@
 .search-box .list-none p {font-size: 16px; color: #999; text-align: center; line-height: 22px; padding-top: 80px; background:url(../images/common/icon_none2.svg) top center no-repeat;}
 .header-cont .search-area .inp-area .del {display:none; position: absolute; top: 50%; right: 40px; transform: translateY(-50%); width: 18px; height: 18px; font-size: 0; background:url(../images/common/btn_del.svg) 0 0 no-repeat;}
 
-.word-box {display: none; max-height:500px; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 30px 20px; background: #fff; border: 1px solid #d7d7d7; overflow:auto;}
+.word-box {display: none; max-height:500px; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; padding: 0 20px; background: #fff; border: 1px solid #d7d7d7; overflow:auto;}
 .word-box.on {display: block;}
 .word-box a {display: block; font-size: 16px; color: #000;}
 .word-box a:hover {color: #346dd0;}
-.word-box .word-words {padding-bottom: 20px;}
+.word-box > div:first-child {margin-top:30px;}
+.word-box > div:last-child {margin-bottom:30px;}
 .word-box .word-words a {margin-bottom: 10px; width:100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis;}
 .word-box .word-words a:last-child {margin-bottom: 0;}
 .word-box .word-words a span {display: inline-block; color: #346dd0; vertical-align: top;}
-.word-box .word-list {padding: 20px 0; border-top: 1px solid #d7d7d7;}
+.word-box .word-words + .word-list,
+.word-box .word-list + .word-list {border-top: 1px solid #d7d7d7; margin-top:20px; padding-top:20px; }
 .word-box .word-list ul li {display: flex; justify-content: space-between; padding-bottom: 16px;}
 .word-box .word-list ul li:last-child {padding-bottom: 0;}
 .word-box .word-list ul li > a {width:100%; padding-right: 20px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; flex:1;}
