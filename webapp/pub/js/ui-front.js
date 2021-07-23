@@ -74,13 +74,20 @@ function searchBox(){
         searchBox.removeClass('on');
       }
     })
+
+    /* 검색창 focus시 input value값 여부에 따라 searchBox 노출 여부 (동시 노출되는 현상 관련 추가js) */
+    if($(this).val().length > 0){//val값 있을때
+      searchBox.removeClass('on');
+      wordBox.addClass('on');
+    } 
+
     $(document).on("keyup",".header-cont .search-area .inp-area .inp",function () {  // val값삭제
       ipDelBtn.toggle(Boolean($(this).val()));
       searchBox.addClass("on");
-      if($(this).val().length > 0){ //val값 있을때
+      if($(this).val().length > 0){ //keyup val값 있을때
         wordBox.addClass('on');
         searchBox.removeClass('on');
-        ipDelBtn.click(function(){ //val 삭제버튼 클릭
+        ipDelBtn.click(function(){ //keyup val 삭제버튼 클릭
           ipHdSearch.val('');
           wordBox.removeClass('on');
           ipDelBtn.toggle(Boolean($(this).val()));
