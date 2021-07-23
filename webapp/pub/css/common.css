@@ -1148,7 +1148,7 @@ textarea + .cot b {vertical-align: top;}
 /* ==========================================================================
    Media Queries for Responsive Design.
    ========================================================================== */
-@media only screen and (max-width:1024px){ /* ipad pro*/
+@media only screen and (max-width:1200px){ /* ipad pro(1024)*/
     .wrap {min-width:1240px;}
     .header .header-cont {width:100%; margin:0 0 20px;}
     .header-cont .logo {left:24px;}
@@ -1231,8 +1231,8 @@ textarea + .cot b {vertical-align: top;}
     
 }
 
-@media only screen and (max-width:1024px){ /* ipad pro*/
-    
+@media only screen and (max-width:1000px){
+    .gnb-wrap .gnb-area .gnb-right-area {display:none;}
 }
 
 /* 모바일 시작 */
