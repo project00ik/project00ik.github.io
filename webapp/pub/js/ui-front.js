@@ -748,6 +748,7 @@ function toggleResize(){
     $tgcon.removeClass('open');
     $tgcon.find('.tgSlideCont').slideUp();
   } else {
+    $tgcon.find('.tgSlideBtn').addClass('on');
     $tgcon.addClass('open');
     $tgcon.find('.tgSlideCont').slideDown();
   }
