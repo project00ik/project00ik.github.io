@@ -153,7 +153,7 @@
 .gnb-area .gnb ul > li > a {height:100%; line-height:49px; padding:0 28px; display: inline-block;}
 .gnb-area .gnb ul > li > a.on,
 .gnb-area .gnb ul > li > a:hover {position: relative;}
-.gnb-area .gnb ul > li > a.on::after,n
+.gnb-area .gnb ul > li > a.on::after,
 .gnb-area .gnb ul > li > a:hover::after {content:""; width:calc(100% - 56px); height:5px; overflow: hidden; background: #12b5cf; position: absolute; bottom:0; left:50%; z-index:1; display:inline-block; transform:translateX(-50%);}
 .gnb-area .gnb ul > li + li::before {content:""; width:1px; height:12px; display:inline-block; background:#fff; vertical-align:middle; position:absolute; top:50%; left:0; transform:translateY(-50%);}
 .gnb-wrap .gnb-area .gnb-right-area {width:190px; height:48px; color:#fff; position:absolute; top:0; right:0; z-index:100;}
