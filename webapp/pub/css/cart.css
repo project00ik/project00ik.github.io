@@ -403,6 +403,7 @@
     .cart-list-con .list-con + .list-con {margin-top:20px;}
     .cart-list-con .list-con ul li .list-none {padding:130px 0 70px;background-position-y:70px; background-size: 50px 50px; font-size: 14px;}
     .cart-list-con .list-con ul {}
+    .cart-list-con .tit-area .sub-txt > b {vertical-align: middle;}
     .wish-list-con .list-con ul {border-top:1px solid #000; border-bottom:none; }
     .cart-content .list-con .list-in .btn-tooltip {margin-top: 0;}
 
