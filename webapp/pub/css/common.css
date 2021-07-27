@@ -1611,7 +1611,7 @@ textarea + .cot b {vertical-align: top;}
     .best-list .product-1st .unit-type1 dt {width:100%; height:87vw;}
     .unit-type1 .unit-area > dd {padding:10px 0 0;}
     .unit-type1 .unit-area .brand {margin-bottom:5px; font-size:13px;}
-    .unit-type1 .unit-area .product-name {height:32px; font-size:14px;}
+    .unit-type1 .unit-area .product-name {height:34px; margin-bottom:23px; font-size:14px;}
     .unit-type1 .unit-area .price {font-size:14px;}
     .unit-type1 .unit-area .price > b {font-weight:700; font-size:20px;}
     .unit-type1 .normal-price {font-size:12px; top:88px;}
