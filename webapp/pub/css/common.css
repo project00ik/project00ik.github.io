@@ -364,6 +364,10 @@
 .result-none-list {width:100%; text-align: center; padding: 100px 0;}
 .result-none-list .no-txt {padding: 80px 0 0 0; font-size: 16px; color: #999; line-height: 22px; background:url(../images/common/icon_none2.svg) center 0 no-repeat;}
 
+/* 결과없음(텍스트만) */
+.result-none3 {width:100%; text-align: center;}
+.result-none3 .no-txt {font-size: 16px; color: #999; line-height: 22px;}
+
 /* 바로구매 장바구니 팝업 */
 .ly-buyNowLy {display:none; width:100%; height:100%; position:fixed; top:0; left:0; z-index:999;}
 .buyNowLyDim {width:100%; height:100%; overflow:hidden; background:rgba(0,0,0,0.6); position:fixed; top:0; left:0; z-index:99;}
@@ -616,6 +620,7 @@ button.btn-style-s1 {line-height:25px;}
 .point-color1 {color:#ed1c24;}
 .point-color2 {color:#666;}
 .point-color3 {color:#346dd0;}
+.point-color4 {color:#DC001C;}
 
 /* 필수항목 */
 .req {font-size: 16px; color: #346dd0; line-height: 100%; font-style: normal; vertical-align: baseline; padding: 0 3px;}
@@ -719,7 +724,7 @@ button.btn-style-s1 {line-height:25px;}
 
 .tab-area .tab-style5 {width:100%; position: relative; z-index: 1; margin-bottom: 50px;}
 .tab-area .tab-style5 .tabBtn {margin-top: -1px; margin-right: -1px;  border: 1px solid #000; width: 20%; text-align: center; font-size: 14px; color: #000; height: 38px; line-height: 38px; z-index: 1; cursor: pointer;}
-.tab-area .tab-style5 .tabBtn.on {color: #346dd0; font-weight: 500; border: 1px solid #346dd0; position: relative; z-index: 2; margin-left: 0;}
+.tab-area .tab-style5 .tabBtn.on {color: #fff; background: #346dd0; font-weight: 500; border: 1px solid #346dd0; position: relative; z-index: 2; margin-left: 0;}
 
 .product .tab-area .tab-cont {padding-bottom: 0;}
 .popup-wrap .tab-area .tab-cont {padding-bottom:0;}
@@ -1432,6 +1437,10 @@ textarea + .cot b {vertical-align: top;}
     /* 결과없음(리스트) */
     .result-none-list {padding: 70px 0 100px;}
     .result-none-list .no-txt {padding: 60px 0 0 0; font-size: 14px; line-height: 18px; background:url(../images/common/mo_icon_none2.svg) center 0 no-repeat; }
+
+    /* 결과없음(텍스트만) */
+    .result-none3 {}
+    .result-none3 .no-txt {font-size: 14px; line-height: 18px;}
 
     /* swiper */
     .swiper-pagination.swiper-pagination-bullets {margin-top:0;}
