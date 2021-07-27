@@ -1504,6 +1504,7 @@ textarea + .cot b {vertical-align: top;}
     .sub-content .btn-area-c.btn-layout3 {flex-wrap: wrap;}
     .sub-content .btn-area-c.btn-layout3 .btn {width:calc(50% - 10px); flex: 1 1 calc(50% - 10px);}
     .sub-content .btn-area-c.btn-layout3 .btn:nth-child(3) {margin-left:0; margin-top:20px;}
+    .sub-content .btn-area-c.btn-layout3 .btn:nth-child(4) {margin-top:20px;}
 
     /* 모바일 로그아웃 버튼 */
     .mo-logout-area {display:block;}
