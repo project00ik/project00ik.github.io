@@ -57,6 +57,7 @@ function searchBox(){
   var alldelBtn = $('.header-cont .search-bt .all-del');
   ipHdSearch.focus(function(e){
     searchBox.addClass("on");
+    allCategoryLyClose(); // 카테고리 레이어 닫기
     $('.del').each(function(){
       // 최근검색어 삭제
       $(this).click(function(){
