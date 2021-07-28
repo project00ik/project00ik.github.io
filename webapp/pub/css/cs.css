@@ -251,5 +251,6 @@ ICTMALL 고객만족도 조사
   .qna-list-area dl > dt .qna-num {left:10px;}
   .qna-list-area dl > dt::after {right:10px;}
   .questions-list {margin-top:50px;}
+  .questions-list .tab-btn-list {margin-bottom:25px;}
 
 }
