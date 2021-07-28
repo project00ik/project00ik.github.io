@@ -1663,9 +1663,12 @@ textarea + .cot b {vertical-align: top;}
     .slide-arrow-prev, .slide-arrow-next {display:none;}
     /* 상품리스트 */
     .product-list-wrap {max-width:100%;}
-    .product-list-wrap .product-list {width:100%; margin:0; padding:0 10px 10px; font-size:0;}
-    .product-list-wrap .product-list > li {width:50%; display:inline-block;}
-    
+    .product-list-wrap .product-list {width:100%; margin:0; padding:0 10px 10px; font-size:0; display:flex; flex-wrap: wrap;}
+    .product-list-wrap .product-list > li {width:50%; display:inline-block; flex:50% 1 1;}
+    .product-list-wrap .product-list .unit-type1 {height:100%;}
+    .product-list-wrap .product-list .unit-type1 .unit-area {height:calc(100% - 60px);}
+    .product-list-wrap .product-list .unit-type1 .unit-layer {}
+
     /* 최근 본 상품 */
     .unit-recently .btn-del {right:3px;}
     .unit-recently .btn-like-m {right:0;}
