@@ -206,10 +206,10 @@
 .lyPopup .popup-cont .lyPopCont .pop-namecard .excel-wrap{margin-top: 20px;height: 340px}
 
 /* 장바구니 관리 */
-.mypage-cart-list .tit-type2-1 {font-weight: 400;}
 .mypage-cart-list .list-con{position: relative;padding-top: 30px;}
-.mypage-cart-list .list-con > p{font-size: 16px;line-height: 28px;}
-.mypage-cart-list .list-con button{position: absolute;top:30px;right:0}
+.mypage-cart-list .list-con .tit-type2-1 {font-size: 16px;line-height: 28px;font-weight: 400;}
+.mypage-cart-list .list-con .btn {position: absolute;top:30px;right:0}
+.mypage-cart-list .list-con .btn-tooltip {margin-top:0;}
 .mypage-cart-list .list-con ul::after {content: ""; display: block; clear: both;}
 .mypage-cart-list .list-con ul li{width: 50%;float: left;}
 .mypage-cart-list .list-con .form-area{flex:1}
@@ -513,7 +513,8 @@
     /* 장바구니 관리 */
     .mypage-cart-list .list-con{padding:20px 0 10px; border-bottom: none;}
     .mypage-cart-list .list-con > p{font-size: 14px;}
-    .mypage-cart-list .list-con button{position: relative;top:0;margin:0 20px;}
+    .mypage-cart-list .list-con .btn{position: relative;top:0;margin:10px 20px 0;}
+    .mypage-cart-list .list-con .btn-tooltip .tooltip-box {left:0; right:inherit;}
     .mypage-cart-list .list-con .list-in > li {display: flex; width: 100%; padding:0; margin-bottom:20px; flex-direction: row; align-items: center;}
     .mypage-cart-list .btn-style-mm1, .mypage-cart-list .btn-style-mm2{width:calc(50% - 5px);}
 
