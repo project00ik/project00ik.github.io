@@ -1644,7 +1644,7 @@ textarea + .cot b {vertical-align: top;}
     .product-1st .unit-type1 .unit-area .price {font-size:20px;}
     .product-1st .unit-type1 .unit-area .price > b {font-size:26px;}
     .product-1st .unit-type1 .unit-area .sale {width:72px; font-size:30px;}
-    .product-list-wrap .best-list > li.product-1st {width:100%; padding:0 10px; margin:0 0 15px;}
+    .product-list-wrap .best-list > li.product-1st {width:100%; padding:0 10px; margin:0 0 15px; flex:100% 0 0;}
     .best-list .unit-type1 .unit-area {padding:0;}
     .best-list .unit-type1 .unit-layer {height:0; margin:0;}
 
