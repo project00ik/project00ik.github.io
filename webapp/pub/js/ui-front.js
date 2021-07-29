@@ -523,6 +523,16 @@ function toggleBtn(){
   });
 }
 
+function tooltipBtn(){
+  // 툴팁버튼
+  $('.btn-tooltip').each(function(){
+    $(this).on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass("on");
+    })
+  });
+}
+
 function toggleSlideArea(){
   // 토글영역(slide모션)
   $(".tgSlide").each(function(){
@@ -634,6 +644,22 @@ function accordion(){
       }
     })
 	});
+}
+
+function customSelect(){
+  // 디자인셀렉트 관련 js
+  $('.customSelect').each(function(){
+    var $customSelect = $(this);
+    $customSelect.find('.selected-txt').on('click', function(){
+      $(this).closest('.customSelect').toggleClass('on');
+    });
+    $customSelect.find('.select-list > li > label').on('click', function(){
+      var selTxt = $(this).find('.sel-txt').text();
+      console.log(selTxt);
+      $(this).closest('.customSelect').removeClass('on');
+      $(this).closest('.customSelect').find('.selected-txt').text(selTxt);
+    });
+  });
 }
 
 function inputPrice(){
