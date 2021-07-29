@@ -17,7 +17,7 @@
 ========================================================================== */
 .wrap {width:100%; min-width:1200px;}
 /* header */
-.header {width:100%; height:156px; position:fixed; top:0; left:0; z-index:97; background:#fff;}
+.header {width:100%; height:156px; position:fixed; top:0; left:0; z-index:99; background:#fff;}
 .header .header-top {width:1200px; margin:20px auto 13px; text-align:right; font-size:13px; color:#333;}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .header .header-top {margin:20px auto 14px; }
@@ -43,14 +43,18 @@
 
 /* 장바구니박스 */
 .header-cont .right-area .icon-btn > a.on + .cart-box {display: block;}
-.cart-box {display: none; position: absolute; top: 41px; right: -66px; width: 158px; height: 170px; overflow-y: auto; border: 1px solid #000; background: #fff; z-index: 101;}
+.cart-box {display: none; position: absolute; top: 41px; right: -66px; width: 158px; max-height: 170px; overflow-y: auto; border: 1px solid #000; background: #fff; z-index: 101;}
 .cart-box .cart-in-list {padding: 20px;}
-.cart-box .cart-in-list li {padding-bottom: 10px;}
+.cart-box .cart-in-list li {padding-bottom: 8px;}
 .cart-box .cart-in-list li:last-child {padding-bottom: 0;}
-.cart-box .cart-in-list li a {display: block;}
-.cart-box .cart-in-list li a p {padding-right: 20px; font-size: 14px; color: #000; line-height: 17px; background: url('../images/common/btn_more.svg') right center no-repeat; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
-.cart-box .cart-in-list li a p:hover {color: #346dd0;}
-.cart-box .cart-in-list li.mng a p {background: url('../images/common/icon_gear.svg') right center no-repeat;}
+.cart-box .cart-in-list li a {display: block; padding-right: 20px; background: url('../images/common/btn_more.svg') right -1px no-repeat; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
+.cart-box .cart-in-list li a p {padding-bottom:2px; font-size: 14px; color: #000; line-height: 17px; display:inline-block; position:relative;}
+.cart-box .cart-in-list li a p::after {content:''; width:100%; height:1px; display:none; position:absolute; left:0; bottom:0; z-index:1; background:#346dd0;}
+.cart-box .cart-in-list li a:hover {background: url('../images/common/btn_more_on.svg') right -1px no-repeat;}
+.cart-box .cart-in-list li a:hover p {color: #346dd0;}
+.cart-box .cart-in-list li a:hover p::after {display:inline-block;}
+.cart-box .cart-in-list li.mng a {background: url('../images/common/icon_gear.svg') right 0px no-repeat;}
+.cart-box .cart-in-list li.mng a:hover {background: url('../images/common/icon_gear_on.svg') right 0px no-repeat;}
 
 
 /* 검색박스 */
@@ -1245,6 +1249,8 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu .alarm-area {display: none;}
     .quick-menu .qk-notify .dot {width:5px; height:5px; top:8px; right:8px;}
     .quickDim {width:100%; height:100%; display:block; background:rgba(0, 0, 0, 0.5); position:fixed; top:0; left:0; z-index:97;}
+    .quick-menu.open {z-index:100;}
+    .quick-menu.open + .quickDim {z-index:99;}
 
     /* 모바일 세로정렬 line-height */
     select.select.sel-s {line-height:29px;}
@@ -1281,14 +1287,17 @@ textarea + .cot b {vertical-align: top;}
     .inp-area .btn-del {right: 34px;}
 
     /* 장바구니박스 */
-    .cart-box {width: 100%; height: 100vh; overflow-y: auto; position: fixed; top: 0; left: 0; right: auto; border: 0;}
-    .cart-box .cart-tit-area {width: 100%; position: fixed; top: 0; left: 0; height: 50px; line-height: 50px; font-size: 18px; color: #000; font-weight: 500; text-align: center; border-bottom: 1px solid #d7d7d7; background: #fff;}
+    .cart-box {width: 100%; height: 100vh; max-height: 100%; overflow-y: auto; position: fixed; top: 0; left: 0; right: auto; border: 0;}
+    .cart-box .cart-tit-area {width: 100%; position: fixed; top: 0; left: 0; z-index:10; height: 50px; line-height: 50px; font-size: 18px; color: #000; font-weight: 500; text-align: center; border-bottom: 1px solid #d7d7d7; background: #fff;}
     .cart-box .cart-tit-area .cartlyClose {position: absolute; top: 14px; right: 20px; width: 24px; height: 24px; background: url(../images/common/mo_btn_popup_close.svg) 0 0 no-repeat; font-size: 0;}
     .cart-box .cart-in-list {margin-top: 50px;}
     .cart-box .cart-in-list li {padding-bottom: 20px;}
     .unit-type1 .unit-area .price > b {vertical-align:baseline; font-weight:700; font-size:28px;}
-    .cart-box .cart-in-list li a p {font-size: 16px; line-height: 20px; background: url(../images/common/mo_arrow_gnb_d1_on.svg) right 0 no-repeat;}
-
+    .cart-box .cart-in-list li a {background: url(../images/common/mo_arrow_gnb_d1_on.svg) right 0 no-repeat;}
+    .cart-box .cart-in-list li a:hover {background: url(../images/common/mo_btn_more_on.svg) right 0 no-repeat;}
+    .cart-box .cart-in-list li a p {font-size: 16px; line-height: 20px;}
+    .cart-box .cart-in-list li.mng a {background: url(../images/common/mo_icon_gear.svg) right 0 no-repeat;}
+    .cart-box .cart-in-list li.mng a:hover {background: url(../images/common/mo_icon_gear_on.svg) right 0 no-repeat;}
     /* 검색박스 */
     .search-box {width: 100%; top: 46px;}
     .search-box .half-box {max-height:335px;}

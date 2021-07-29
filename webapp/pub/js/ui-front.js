@@ -334,9 +334,11 @@ function quickFloating(){
       e.preventDefault();
       if ( $(this).is('.on') ) {
         $(this).siblings('.qk-group').slideUp();
+        $('.quick-menu').removeClass('open');
         $('.quickDim').remove();
       } else {
         $(this).siblings('.qk-group').slideDown();
+        $('.quick-menu').addClass('open');
         $('.quick-menu').after('<div class="quickDim"></div>');
       } 
   })
