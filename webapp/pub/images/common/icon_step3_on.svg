@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="ic_03_active" transform="translate(-774 -381)">
+    <rect id="area" width="60" height="60" transform="translate(774 381)" fill="none"/>
+    <g id="icon">
+      <g id="사각형_466" data-name="사각형 466" transform="translate(774 422)" fill="none" stroke="#346dd0" stroke-linecap="round" stroke-width="2">
+        <path d="M2,0H58a2,2,0,0,1,2,2V5a5,5,0,0,1-5,5H5A5,5,0,0,1,0,5V2A2,2,0,0,1,2,0Z" stroke="none"/>
+        <path d="M2,1H58a1,1,0,0,1,1,1V5a4,4,0,0,1-4,4H5A4,4,0,0,1,1,5V2A1,1,0,0,1,2,1Z" fill="none"/>
+      </g>
+      <g id="사각형_467" data-name="사각형 467" transform="translate(779 390)" fill="none" stroke="#346dd0" stroke-width="2">
+        <rect width="50" height="34" stroke="none"/>
+        <rect x="1" y="1" width="48" height="32" fill="none"/>
+      </g>
+      <rect id="사각형_468" data-name="사각형 468" width="8" height="2" transform="translate(800 424)" fill="#346dd0"/>
+      <g id="search" transform="translate(795 398)">
+        <g id="icon-2" data-name="icon" transform="translate(2.429 2.429)">
+          <circle id="_00" data-name="00" cx="6" cy="6" r="6" transform="translate(-0.429 -0.429)" fill="none" stroke="#346dd0" stroke-width="2"/>
+          <path id="_00-2" data-name="00" d="M390,272l3,3" transform="translate(-379.429 -261.429)" fill="none" stroke="#346dd0" stroke-linecap="round" stroke-width="2"/>
+          <circle id="타원_2" data-name="타원 2" cx="3" cy="3" r="3" transform="translate(2.571 2.571)" fill="rgba(52,109,208,0.5)"/>
+          <circle id="타원_3" data-name="타원 3" cx="2" cy="2" r="2" transform="translate(3.571 3.571)" fill="#346dd0"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

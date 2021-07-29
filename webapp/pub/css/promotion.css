@@ -122,6 +122,11 @@
 .suggestion-goods .suggestion-step li div p.step3{background: url(../images/common/icon_step3.svg) top 0 left 50% no-repeat;}
 .suggestion-goods .suggestion-step li div p.step4{background: url(../images/common/icon_step4.svg) top 0 left 50% no-repeat;}
 .suggestion-goods .suggestion-step li div p.step5{background: url(../images/common/icon_step5.svg) top 10px left 50% no-repeat;margin-top: 0;}
+.suggestion-goods .suggestion-step li div p.step1.on{background: url(../images/common/icon_step1_on.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step2.on{background: url(../images/common/icon_step2_on.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step3.on{background: url(../images/common/icon_step3_on.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step4.on{background: url(../images/common/icon_step4_on.svg) top 0 left 50% no-repeat;}
+.suggestion-goods .suggestion-step li div p.step5.on{background: url(../images/common/icon_step5_on.svg) top 10px left 50% no-repeat;margin-top: 0;}
 .suggestion-goods .suggestion-tit{display: flex;margin-top: 30px;}
 .suggestion-goods .suggestion-tit p.tit-type3-1{font-size: 16px;margin-left:20px;line-height: 24px;}
 
