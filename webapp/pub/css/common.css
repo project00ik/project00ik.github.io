@@ -131,7 +131,7 @@
 .cate-layer .depthBtn {position: relative;}
 .cate-layer .depthBtn:hover {color:#346dd0; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
 .cate-layer .depthBtn.on {color:#346dd0; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
-
+.cate-layer .depth4-layer .d4-list .depthBtn:hover {background:none;}
 .cate-layer .depthCont {height:100%; position:absolute; top:0; z-index:1; background:#fff;}
 .cate-layer .depthCont::before {content:""; width:1px; height:496px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:0;}
 .cate-layer .depth3-layer {left:203px; background:#fff;}
