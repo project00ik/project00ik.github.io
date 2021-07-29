@@ -126,10 +126,10 @@
 .cate-layer .d2-layer-box .partition-wrap {width:100%;}
 .cate-layer .partition-wrap .partition-area {float:left; display:inline-block; position:relative;}
 .cate-layer .partition-area .depth-list > li {width:100%; color:#333;}
-.cate-layer .partition-area .depth-list > li > a {width:203px; padding:0 20px 14px; font-size:15px; display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.cate-layer .partition-area .depth-list > li > a {width:203px; padding:0 38px 14px 20px; font-size:15px; display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .cate-layer .partition-area .depth-list {color:#333;}
-.cate-layer .depthBtn:hover {color:#346dd0;}
-.cate-layer .depthBtn.on {color:#346dd0;}
+.cate-layer .depthBtn:hover {color:#346dd0; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat;}
+.cate-layer .depthBtn.on {color:#346dd0; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat;}
 .cate-layer .depthCont {height:100%; position:absolute; top:0; z-index:1; background:#fff;}
 .cate-layer .depthCont::before {content:""; width:1px; height:496px; display:inline-block; background:#e5e5e5; position:absolute; top:0; left:0;}
 .cate-layer .depth3-layer {left:203px; background:#fff;}
@@ -1191,7 +1191,8 @@ textarea + .cot b {vertical-align: top;}
     .cate-layer .d1-btn.on::after {display:none;} */
     .cate-layer .d2-layer-box .tit {padding-left:10px;}
     .cate-layer .d2-layer-box {width:762px;}
-    .cate-layer .partition-area .depth-list > li > a {width:158px; padding:0 10px 14px;}
+    .cate-layer .partition-area .depth-list > li > a {width:158px; padding:0 28px 14px 10px;}
+    .cate-layer .depthBtn.on {background-position:top 0px right 10px;}
     .cate-layer .depth3-layer {left:158px;}
     .cate-layer .depth4-layer {left:158px;}
     .cate-layer .depth4-layer .d4-list {width:316px;}
