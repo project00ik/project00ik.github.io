@@ -253,7 +253,6 @@
 .location-list {float: left; display:inline-block;}
 .location-list > li {margin-left:12px; padding-left:13px; position: relative; float: left;}
 .location-list > li::before {content: ""; width:1px; height:10px; background:#e5e5e5; display:inline-block; position: absolute; top:50%; left:0; transform: translateY(-50%);}
-.location-list > li .select-type-s {width:163px; height:18px; padding-right:21px; line-height:18px; font-size:14px; color:#666; background:url(../images/common/arrow_select.svg) 100% 0 no-repeat; vertical-align: top;}
 .pro-list-cont .tit-type1-2 {margin-bottom:30px;}
 .filter-box {padding:31px 30px; border:1px solid #d7d7d7; border-top:1px solid #333; margin-bottom:10px;}
 .filter-box > ul {width:100%; overflow: hidden;}

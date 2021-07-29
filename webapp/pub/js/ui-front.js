@@ -655,10 +655,14 @@ function customSelect(){
     });
     $customSelect.find('.select-list > li > label').on('click', function(){
       var selTxt = $(this).find('.sel-txt').text();
-      console.log(selTxt);
       $(this).closest('.customSelect').removeClass('on');
       $(this).closest('.customSelect').find('.selected-txt').text(selTxt);
     });
+    $('body').mouseup(function(e){
+      if($customSelect.has(e.target).length === 0){
+        $customSelect.removeClass('on');
+      }
+    })
   });
 }
 

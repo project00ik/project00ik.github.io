@@ -172,22 +172,37 @@
           <a href="main.html" class="home">홈</a>
           <ul class="location-list">
             <li>
-              <select class="select-type-s">
-                <option value="" selected>공구</option>
-                <option value="">대카테고리명</option>
-              </select>
+              <!-- 디자인 셀렉트 -->
+              <div class="select-type-s customSelect">
+                <p class="selected-txt">공구</p>
+                <ul class="select-list">
+                  <li><label><input type="radio" name="selTxt1"><span class="sel-txt">공구</span></label></li>
+                  <li><label><input type="radio" name="selTxt1"><span class="sel-txt">대카테고리명</span></label></li>
+                </ul>
+              </div>
+              <!--// 디자인 셀렉트 -->
             </li>
             <li>
-              <select class="select-type-s">
-                <option value="" selected>공구류</option>
-                <option value="">중카테고리명</option>
-              </select>
+              <!-- 디자인 셀렉트 -->
+              <div class="select-type-s customSelect">
+                <p class="selected-txt">중카테고리명</p>
+                <ul class="select-list">
+                  <li><label><input type="radio" name="selTxt2"><span class="sel-txt">공구류</span></label></li>
+                  <li><label><input type="radio" name="selTxt2"><span class="sel-txt">중카테고리명</span></label></li>
+                </ul>
+              </div>
+              <!--// 디자인 셀렉트 -->
             </li>
             <li>
-              <select class="select-type-s">
-                <option value="" selected>수공구</option>
-                <option value="">소카테고리명</option>
-              </select>
+              <!-- 디자인 셀렉트 -->
+              <div class="select-type-s customSelect">
+                <p class="selected-txt">소카테고리명</p>
+                <ul class="select-list">
+                  <li><label><input type="radio" name="selTxt3"><span class="sel-txt">수공구</span></label></li>
+                  <li><label><input type="radio" name="selTxt3"><span class="sel-txt">소카테고리명</span></label></li>
+                </ul>
+              </div>
+              <!--// 디자인 셀렉트 -->
             </li>
           </ul>
         </div>
@@ -1934,6 +1949,7 @@
       filterBoxMore(); // 필터 더보기 버튼 이벤트
       btnListLayout(); // 상품목록 리스트형으로 보기   
       delBtn(); // 옵션 삭제
+      customSelect(); // 디자인셀렉트 관련 js
     });
   </script>
   <!-- javascript -->
