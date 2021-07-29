@@ -236,11 +236,11 @@
 .pop-cart .add-cart{text-align: center;font-size: 16px;padding: 100px 0 20px;background: url(../images/common/icon_cart_02.svg) 50% 20px no-repeat;}
 .pop-cart .cart-select{display: flex;border:none;padding:0;margin: 0;}
 .pop-cart .cart-select select{flex:1}
-.pop-cart .cart-select button{width:110px;height: 38px;line-height: 36px;text-align: center;font-size: 14px;color: #000;background: #fff;border: 1px solid #000;margin-left:5px;}
-.pop-cart .cart-select button:hover {background: #f5f5f5;}
+.pop-cart .btn-style1{width:110px;height: 38px;line-height: 36px;text-align: center;font-size: 14px;color: #000;background: #fff;border: 1px solid #000;margin-left:5px;}
+.pop-cart .btn-style1:hover {background: #f5f5f5;}
+.pop-cart .cart-add-select .form-layout{margin-bottom: 10px;}
 .pop-cart .cart-add-select > p{margin:30px 0 16px;}
-.pop-cart .cart-add-select > span{font-size: 14px;color:#999;display: block;padding-right: 60px;}
-.pop-cart .cart-add-select .form-area{margin-bottom: 10px;}
+.pop-cart .cart-add-select > span{font-size: 14px; line-height:18px; color:#999;display: block;padding-right: 60px;}
 #pricerequestPopup input.input {width: 250px;}
 #pricerequestPopup input.upload-name {flex:none;}
 
@@ -569,7 +569,7 @@
     #cartPopup .lyPopup .lyPopCont{padding:20px 20px 0}
     #cartPopup .btn-area02 a{width:calc(50% - 5px);}
     #pricerequestPopup input.input:read-only{width: 100%;}
-    .pop-cart .cart-select button{width: 68px; height: 36px; line-height: 35px;}
+    .pop-cart .btn-style1{width: 68px; height: 36px; line-height: 35px;}
 
     /* 리뷰팝업 */
     .pop-review-write > ul > li:first-child {padding-top: 20px;}
