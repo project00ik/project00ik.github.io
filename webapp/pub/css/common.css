@@ -1335,7 +1335,7 @@ textarea + .cot b {vertical-align: top;}
     .gnb-area .gnb ul > li > a.on::after,
     .gnb-area .gnb ul > li > a:hover::after {width:calc(100% - 24px);}
     .gnb-area .gnb ul > li:first-child > a.on::after,
-    .gnb-area .gnb ul > li:first-child > a:hover:after {width:calc(100% - 12px); left:0; transform: none;}
+    .gnb-area .gnb ul > li:first-child > a:hover:after {width:calc(100% - 10px); left:0; transform: none;}
     .gnb-area .gnb ul > li + li::before {height:10px;}
     .gnb-wrap .btn-cate {display:none;}
     .gnb-wrap .btn-cate.moBtnCate {display:block; width:24px; height:24px; font-size:0; background:none; padding:0;}
