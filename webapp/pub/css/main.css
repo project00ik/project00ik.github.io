@@ -107,6 +107,8 @@
 .notice-wrap .cont-notice .service-area .tit-type1 {text-align: left; margin-bottom: 24px;}
 .notice-wrap .cont-notice .service-area .ser-call .call-txt {font-size: 20px; line-height: 20px; color: #000;}
 .notice-wrap .cont-notice .service-area .ser-call a {display: inline-block; font-weight: bold; font-size: 48px; line-height: 48px; text-align: left; color: #346dd0; padding-top: 7px;}
+.notice-wrap .cont-notice .service-area .ser-call a.pc-hide {display: none;}
+.notice-wrap .cont-notice .service-area .ser-call a.mo-hide {display: inline-block;}
 .notice-wrap .cont-notice .service-area .ser-call .call-time {font-size: 15px; line-height: 15px; color: #666; padding-top: 27px; word-break:keep-all;}
 .notice-wrap .cont-notice .service-area .ser-call .call-time span {vertical-align: top;}
 .notice-wrap .cont-notice .service-area .ser-box ul {display: flex; justify-content: space-between; padding-top: 18px;}
@@ -221,6 +223,8 @@
     .notice-wrap .cont-notice .service-area .tit-type1 {margin-bottom: 20px;}
     .notice-wrap .cont-notice .service-area .ser-call .call-txt {font-size: 15px;}
     .notice-wrap .cont-notice .service-area .ser-call a {font-size: 40px; line-height: 100%; letter-spacing: -0.02em;}
+    .notice-wrap .cont-notice .service-area .ser-call a.pc-hide {display: inline-block;}
+    .notice-wrap .cont-notice .service-area .ser-call a.mo-hide {display: none;}
     .notice-wrap .cont-notice .service-area .ser-call .call-time {font-size: 12px; padding-top: 20px;}
     .notice-wrap .cont-notice .service-area .ser-box ul li {width: calc(33.333% - 5px); height: 98px;}
     .notice-wrap .cont-notice .service-area .ser-box ul li p {font-size: 13px; padding-top: 16px;}
