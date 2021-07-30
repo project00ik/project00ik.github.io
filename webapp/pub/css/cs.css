@@ -147,8 +147,8 @@ ICTMALL 고객만족도 조사
 .cs-cont .survey-list ul li{display: flex;padding:18px 0;border-bottom: 1px solid #E5E5E5;}
 .cs-cont .survey-list ul li > div{position: relative;}
 .cs-cont .survey-list ul li > div>div{position:absolute;top:50%;left: 0;margin-top: -12px;}
-.cs-cont .survey-list ul li .num{width: 60px;text-align: center;}
-.cs-cont .survey-list ul li .text{width: 380px;}
+.cs-cont .survey-list ul li .num{width: 170px;text-align: left;}
+.cs-cont .survey-list ul li .text{width: 260px;}
 .cs-cont .survey-list ul li .text span{display: block;}
 .cs-cont .survey-list ul li .text span:first-child{font-weight: 500;margin-bottom: 6px;}
 .cs-cont .survey-list ul li .radio-wrap{flex:1;margin-left: 30px;}
