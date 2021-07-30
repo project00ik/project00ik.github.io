@@ -193,6 +193,11 @@
     .list-con .join-agree .agree-area .agree-cont {font-size: 12px; line-height: 1.4;}
     .list-con .join-agree .agree-area .agree-tit .btn-slide-open {top: 15px;}
     .join-agree-con .list-con {padding: 20px 20px 0 20px; border-bottom: 0;}
+    
+    /* 팝업 약관동의 */
+    .popup-wrap .join-agree-con {padding-top:0;}
+    .popup-wrap .join-agree-con .tit-area2 {padding:0 0 15px;}
+    .popup-wrap .join-agree-con .list-con {padding:20px 0 0;}
 
     .half-list-box {display: block;}
     .half-list-box .list-file-con:first-child .file-con {margin-bottom: 0;}
