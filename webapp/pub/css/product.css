@@ -56,6 +56,7 @@
 .product-total .total-price .price {font-size: 20px; font-weight: 500;}
 .product-total .total-price .price > b {font-size: 28px; font-weight:700; vertical-align: baseline; display: inline-block; padding-right: 2px;}
 .product-total .price-info {font-size: 14px; color: #999;}
+.product-total .price-info .vatPrice {vertical-align: top;}
 .product-total.soldeout {border-top:0;}
 
 .product-banner-area {width:100%; margin:100px 0; display:-webkit-box; display:-ms-flexbox; display:flex;}
