@@ -260,7 +260,7 @@
 .order-delivery ul li .form-layout .form-de-order .in-de-order {display: flex;}
 .order-delivery ul li .form-layout .form-de-order > input {flex:1; }
 .order-delivery ul li .form-layout .form-de-order .in-de-order {margin-left: 5px;}
-.order-delivery ul li .form-layout .form-de-order .input-w1 {width: 50px; flex: inherit;}
+.order-delivery ul li .form-layout .form-de-order .input-w1 {width: 69px; flex: inherit;}
 .order-delivery ul li .form-layout .form-de-order .input-w1 + span {width: 45px; font-size: 14px; height: 38px; line-height: 38px;}
 .order-delivery ul li .form-layout .in-de-right {width: 292px; display: flex; flex:1; align-items: center; justify-content: flex-end; text-align: left;}
 .order-delivery ul li .form-layout .in-de-right > * {margin-left: 5px;}

@@ -751,7 +751,7 @@ button.btn-style-s1 {line-height:25px;}
 
 
 /* 폼요소 */
-.spinner {width:112px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative; background:#fff;}
+.spinner {width:129px; height:38px; padding:0 38px; border:1px solid #d7d7d7; display:inline-block; position:relative; background:#fff;}
 .spinner input {width:100%; height:38px; line-height:38px; text-align:center; font-size:16px; vertical-align:top; font-weight:500; color:#666;}
 .spinner .down {width:38px; height:38px; position:absolute; top:0; left:0; z-index:1; font-size:0; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
 .spinner .up {width:38px; height:38px; position:absolute; top:0; right:0; z-index:1; font-size:0; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
@@ -1734,7 +1734,7 @@ textarea + .cot b {vertical-align: top;}
     .upload-area .upload-thumbnail {width: 63px; height: 63px; margin-left:5px; margin-top:10px;}
     .upload-area .img-upload-btn {margin-left: 5px; margin-top:5px;}
     
-    .spinner {width:112px; height:36px; padding:0 36px; }
+    .spinner {width:129px; height:36px; padding:0 36px; }
     .spinner input {height:34px; line-height:35px;}
     .spinner .down {width:36px; height:36px; background:url(../images/common/icon_spinner_down.svg) 50% 50% no-repeat;}
     .spinner .up {width:36px; height:36px; background:url(../images/common/icon_spinner_up.svg) 50% 50% no-repeat;}
