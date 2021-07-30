@@ -192,6 +192,10 @@
 .footer .footer-top ul > li > * {vertical-align:top;}
 .footer .footer-top ul > li + li {padding-left:21px; margin-left:20px; position:relative;}
 .footer .footer-top ul > li + li::before {content:""; width:1px; height:12px; background:#999; position:absolute; top:3px; left:0;}
+.footer .footer-top ul > li.pc-hide {display:none;}
+.footer .footer-top ul > li.mo-hide {display:inline-block;}
+.footer .footer-top ul > li.pc-hide + li.mo-hide {padding-left:0; margin-left:0;}
+.footer .footer-top ul > li.pc-hide + li.mo-hide::before {display:none;}
 .footer .footer-top ul + ul {padding-left:21px; margin-left:20px; position:relative;}
 .footer .footer-top ul + ul::before {content:""; width:1px; height:12px; background:#999; position:absolute; top:3px; left:0; }
 .footer .footer-cont {padding:40px 0 60px 232px; position:relative;}
@@ -1395,10 +1399,13 @@ textarea + .cot b {vertical-align: top;}
     .footer .footer-top ul > li {font-size:14px; line-height:20px;}
     .footer .footer-top ul > li + li {padding-left:10px; margin-left:10px;}
     .footer .footer-top ul > li + li::before {height:10px; top:5px;}
+    .footer .footer-top ul > li.pc-hide {display:inline-block;}
+    .footer .footer-top ul > li.mo-hide {display:none;}
     .footer .footer-top ul + ul {display:block; padding:0; margin:0;}
     .footer .footer-top ul + ul::before {display:none;}
     .footer .footer-top ul.question {}
     .footer .footer-top ul.question > li {margin-top:5px; display:block; font-size:13px;}
+    .footer .footer-top ul.question > li + li {margin-left:0; padding-left:0;}
     .footer .footer-top ul.question > li::before {display:none;}
     .footer .footer-cont .footer-info {line-height:20px;}
     .footer .footer-cont .footer-info > span {width:100%;}
