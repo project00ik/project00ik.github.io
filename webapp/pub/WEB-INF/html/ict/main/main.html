@@ -19351,7 +19351,7 @@
                 centeredSlides: false,
                 loop: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 6000,
                     disableOnInteraction: false,
                 },
                 pagination: {
@@ -19364,7 +19364,7 @@
                 },
             });
 
-            // 메인 공종별 자재 일괄구매 slide (bulkPurchaseSlide) swiper(plugin) option
+            // 공종별 자재 일괄구매 slide (bulkPurchaseSlide) swiper(plugin) option
             var bulkPurchaseSwiper = new Swiper('.bulkPurchaseSlide', {
                 centeredSlides: false,
                 slidesPerGroupSkip: 1,
@@ -19378,7 +19378,7 @@
                 breakpoints: {
                     // 화면의 넓이가 320 이상일 때 
                     320: {
-                        slidesPerView: 3,
+                        slidesPerView: "auto",
                         spaceBetween: 10,
                         freemode: true,
                     },
