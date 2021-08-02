@@ -9,8 +9,9 @@
 
 .materiel-cont .bulk-purchase-wrap {background: none;}
 .materiel-cont .bulk-purchase-wrap + .event-empty {margin-top: 70px;}
-.materiel-cont .tit-area {margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #d7d7d7;}
-.materiel-cont .tit-area .tit-type2 + div {font-size: 0;}
+.materiel-cont .tit-area {margin-top:-10px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #d7d7d7;}
+.materiel-cont .tit-area .tit-type2 {margin-top:10px;}
+.materiel-cont .tit-area .tit-type2 + div {margin-top:10px; font-size: 0;}
 .materiel-cont .tit-area .tit-type2 + div button {margin-left: 5px;}
 .materiel-cont .tab-area .tab-cont {padding: 30px 0 40px;}
 .materiel-cont .materiel-list {padding: 70px 0 0 0;}
