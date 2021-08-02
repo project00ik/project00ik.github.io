@@ -213,7 +213,7 @@
 /* 퀵메뉴 */
 .quick-menu {margin-right:-725px; position:fixed; right:50%; top:166px; z-index:98;}
 .quick-menu a {overflow:visible; position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; width:70px; height:70px; margin-bottom:1px; background:#000;}
-.quick-menu a:hover {background: #346dd0;}
+.quick-menu a:hover {background: #df141c;}
 .quick-menu u {display:inline-block; width:36px; height:36px; margin-top: -4px;}
 .quick-menu span {display:block; font-size:11px; line-height:14px; color:#fff; margin-top: 5px;}
 .quick-menu span b {display: block;}
