@@ -202,7 +202,8 @@
 .footer .footer-top ul + ul {padding-left:21px; margin-left:20px; position:relative;}
 .footer .footer-top ul + ul::before {content:""; width:1px; height:12px; background:#999; position:absolute; top:3px; left:0; }
 .footer .footer-cont {padding:40px 0 60px 232px; position:relative;}
-.footer .footer-cont .footet-logo {width:172px; height:28px; position:absolute; top:40px; left:0;}
+.footer .footer-cont .footet-logo {width:186px; height:50px; position:absolute; top:40px; left:0;}
+.footer .footer-cont .footet-logo img {width:100%;}
 .footer .footer-cont .footer-info {font-size:14px; color:#666;}
 .footer .footer-cont .footer-info > span {position:relative; display:inline-block; line-height:19px;}
 .footer .footer-cont .footer-info > span + span {margin-left:12px; padding-left:12px;}
@@ -1394,9 +1395,11 @@ textarea + .cot b {vertical-align: top;}
     .main .main-visual-cate {display:none !important;}
     .sub-content {min-height:auto;}
 
-    .footer-wrap .footer {width:100%; padding:84px 20px 0; text-align:center;}
+    .footer-wrap .footer {width:100%; padding:96px 20px 0; text-align:center;}
     .footer .footer-cont {padding:20px 0 60px; position:inherit;}
-    .footer .footer-cont .footet-logo {width:147px; height:24px; left:50%; margin-left:-73.5px;}
+    .footer .footer-cont .footet-logo {width:136px; height:36px; left:50%; margin-left:-73.5px;}
+    .footer .footer-cont .footet-logo::before {content:''; width:136px; height:36px; display:inline-block; background:url(../images/layout/mo_logo_footer.png) 50% 0 no-repeat; background-size: 100% auto;}
+    .footer .footer-cont .footet-logo img {opacity: 0;}
     .footer .footer-top {padding:0 0 20px;}
     .footer .footer-top ul {font-size:0;}
     .footer .footer-top ul > li {font-size:14px; line-height:20px;}
