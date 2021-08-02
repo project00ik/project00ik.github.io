@@ -130,8 +130,8 @@
 .cate-layer .partition-area .depth-list > li > a {width:203px; padding:0 38px 14px 20px; font-size:15px; display:inline-block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .cate-layer .partition-area .depth-list {color:#333;}
 .cate-layer .depthBtn {position: relative;}
-.cate-layer .depthBtn:hover {color:#df141c; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
-.cate-layer .depthBtn.on {color:#df141c; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
+.cate-layer .depthBtn:hover {color:#df141c; background:url(../images/common/arrow_cate_red_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
+.cate-layer .depthBtn.on {color:#df141c; background:url(../images/common/arrow_cate_red_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
 /* .cate-layer .depthBtn:hover {color:#346dd0; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat; text-decoration: underline;}
 .cate-layer .depthBtn.on {color:#346dd0; background:url(../images/common/arrow_cate_on.svg) top 0px right 20px no-repeat; text-decoration: underline;} */
 .cate-layer .depth4-layer .d4-list .depthBtn:hover {background:none;}
@@ -150,7 +150,8 @@
 .cate-layer .depth4-layer .d4-list > li {width:203px; padding-right:55px; position:relative;}
 .cate-layer .depth4-layer .d4-list > li .depthBtn {padding-right:38px;}
 .cate-layer .depth4-layer .d4-list > li .btn-star {width:18px; height:18px; background:url(../images/common/icon_star_xs.svg) 0 0 no-repeat; position:absolute; top:0; right:20px; z-index:1;}
-.cate-layer .depth4-layer .d4-list > li .btn-star.on {background:url(../images/common/icon_star_xs_on.svg) 0 0 no-repeat;}
+.cate-layer .depth4-layer .d4-list > li .btn-star.on {background:url(../images/common/icon_star_red_xs_on.svg) 0 0 no-repeat;}
+/* .cate-layer .depth4-layer .d4-list > li .btn-star.on {background:url(../images/common/icon_star_xs_on.svg) 0 0 no-repeat;} */
 .cate-layer .banner-area {float:right; margin-right:24px;}
 .cate-layer .banner-area .banner-img-area {width:118px; height:475px;}
 .cate-layer .banner-area .banner-img-area > img {width:100%; height:100%;}
@@ -431,7 +432,8 @@ a[class^="btn-"] {display:inline-block;}
 .icon-btn + .icon-btn {margin-left:30px;}
 .icon-btn.cart {position:relative;}
 .icon-btn.cart > a {background:url(../images/common/icon_cart.svg) 50% 50% no-repeat;}
-.icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px; z-index:2;}
+.icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#df141c; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px; z-index:2;}
+/* .icon-btn.cart .cart-num {min-width:24px; height:24px; padding:2px; display:inline-block; font-size:13px; font-weight:500; color:#fff; background:#346dd0; line-height:22px; text-align:center; border-radius:22px; overflow:hidden; position:absolute; top:0; right:-8px; z-index:2;} */
 .icon-btn.member {background:url(../images/common/icon_member.svg) 50% 50% no-repeat;}
 .btn-more-white {width:98px; height:28px; line-height:26px; padding:0 35px 0 15px; border:1px solid #fff; font-weight:500; font-size:14px; color:#fff; background:url(../images/common/icon_plus_white.svg) right 16px center no-repeat; display:inline-block;}
 .btn-star {font-size:0; width:24px; height:24px; background:url(../images/common/icon_star_s.svg) 0 0 no-repeat; display:inline-block;}
@@ -1372,7 +1374,8 @@ textarea + .cot b {vertical-align: top;}
     .mo-cate-layer-wrap .cate-layer .depth3-layer.active {display:block; left:0; transition-duration:0.5s; -moz-transition-duration:0.5s; z-index:10;}
     .mo-cate-layer-wrap .cate-layer .d3-list > li > a {width:100%; padding:10px 42px 10px 24px; font-weight:500; font-size:16px; line-height:20px; text-align:left; color:#666; position:relative;}
     .mo-cate-layer-wrap .cate-layer .d3-list > li > a::after {content:""; width:18px; height:18px; background:url(../images/common/mo_icon_cate_plus.svg) 0 0 no-repeat; position:absolute; top:11px; right:24px; display: inline-block;}
-    .mo-cate-layer-wrap .cate-layer .d3-list > li > a.on {color:#346dd0; padding:10px 42px 20px 24px;}
+    .mo-cate-layer-wrap .cate-layer .d3-list > li > a.on {color:#df141c; padding:10px 42px 20px 24px;}
+    /* .mo-cate-layer-wrap .cate-layer .d3-list > li > a.on {color:#346dd0; padding:10px 42px 20px 24px;} */
     .mo-cate-layer-wrap .cate-layer .d3-list > li > a.on::after {content:""; background:url(../images/common/mo_icon_cate_minus.svg) 0 0 no-repeat;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer {height:auto; position:relative; top:inherit; left:inherit; z-index:inherit;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer::before {content:""; width:calc(100% - 48px); height:1px; background:#e5e5e5; position:absolute; top:0; left:24px; display:inline-block;}
@@ -1380,7 +1383,8 @@ textarea + .cot b {vertical-align: top;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list {width:100%; height:auto; display:block;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list::before {display:none;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list .btn-star {background: url(../images/common/mo_icon_star_xs.svg) 0 0 no-repeat;}
-    .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list .btn-star.on {background: url(../images/common/mo_icon_star_xs_on.svg) 0 0 no-repeat;}
+    .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list .btn-star.on {background: url(../images/common/mo_icon_star_red_xs_on.svg) 0 0 no-repeat;}
+    /* .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list .btn-star.on {background: url(../images/common/mo_icon_star_xs_on.svg) 0 0 no-repeat;} */
     .mo-cate-layer-wrap .cate-layer .partition-area .depth-list > li > a {width:100%;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list {padding: 16px;}
     .mo-cate-layer-wrap .cate-layer .depth4-layer .d4-list a {padding-bottom:16px;}
