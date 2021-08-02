@@ -204,6 +204,7 @@
     .main .bidding-info-slide,
     .main .bidding-info-slide .swiper-container {height:auto;}
     .main .cont-bidding-info .bidding-info-slide {margin-top:0;}
+    .main .cont-bidding-info .bidding-info-slide .swiper-wrapper {padding-bottom:20px;}
     .main .cont-bidding-info .bidding-info-box {width:100%; height:176px; margin:0;}
     .main .cont-bidding-info .bidding-info-box > a {height:100%; margin:0; padding:24px 12px;}
     .main .cont-bidding-info .bidding-info-box > a:hover {padding:24px 12px; background:#fff; box-shadow:none;}
