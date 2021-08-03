@@ -28,10 +28,14 @@ $(document).ready(function (){
 function cartMainPop(){
   //메인 장바구니 팝업
   var winW = $(window).width();
+  $('.icon-btn.cart > a').on('click', function(){
+    $(this).toggleClass('on');
+    console.log('test');
+  })
   if(winW > 800){
     $('body').mouseup(function(e){
       if($('.icon-btn.cart').has(e.target).length === 0){
-        $('.cart-box').siblings('.tgBtn').removeClass('on');
+        $('.cart-box').closest('.icon-btn.cart').find('> a').removeClass('on');
       }
     })
   }
@@ -41,7 +45,7 @@ function cartMainPop(){
 // })
 function cartlyClose(){
   //메인 장바구니 팝업닫기
-  $('.cart-box').siblings('.tgBtn').removeClass('on');
+  $('.cart-box').closest('.icon-btn.cart').find('> a').removeClass('on');
 }
 
 
