@@ -399,6 +399,8 @@
     
     /* 주문서 관리 */
     .mypage-order-list {padding:0 20px;}
+    .mypage-order-list .btn-area-c {margin:0;}
+    .mypage-order-list .mobile-paging {width:100%; margin:50px 0 0;}
     .top-info-area {width:100%; padding:20px 0 10px;}
     .order-management-list {padding-top:6px;}
     .order-management-list > dl > dt {padding:12px 0;}
