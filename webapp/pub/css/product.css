@@ -241,7 +241,7 @@
 .pop-cart .btn-style1:hover {background: #f5f5f5;}
 .pop-cart .cart-add-select .form-layout{margin-bottom: 10px;}
 .pop-cart .cart-add-select > p{margin:30px 0 16px;}
-.pop-cart .cart-add-select > span{font-size: 14px; line-height:18px; color:#999;display: block;padding-right: 60px;}
+.pop-cart .cart-add-select > span{font-size: 13px; line-height:18px; color:#999;display: block;padding-right: 0;}
 #pricerequestPopup input.input {width: 250px;}
 #pricerequestPopup input.upload-name {flex:none;}
 
