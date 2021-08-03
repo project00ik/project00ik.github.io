@@ -373,15 +373,17 @@
    Media Queries for Responsive Design.
    ========================================================================== */
 @media only screen and (max-width:1200px) {
-    .cart-floating-box {height:auto; border-top-color:#d7d7d7;}
-    .cart-total-floating {display: none;}
+    .cart-floating-box {height:auto;}
     .cart-total-floating dl {display:none;}
     .cart-total-floating dl + dl {margin-left:0; padding-left:0;}
     .cart-total-floating dl.total {display:block;}
+    .cart-total-floating dl.total .price {margin-top:0;}
     .cart-total-floating dl.total::before {display:none;}
-    .cart-floating-box .cart-floating-cont {width:100%; padding:20px;}
-    .cart-floating-cont .right-area {width:100%; text-align: center; position:inherit; top:inherit; right:inherit;}
-    .cart-floating-cont .right-area .btn {min-width:198px; height:48px; line-height:47px; font-size:16px;}
+    .cart-floating-box .cart-floating-cont {width:100%; padding:0;}
+    .cart-floating-cont .cart-total-floating {padding:20px 305px 20px 30px;}
+    .cart-floating-cont .right-area {top:25px;}
+    /* .cart-floating-cont .right-area {width:100%; text-align: center; position:inherit; top:inherit; right:inherit;}
+    .cart-floating-cont .right-area .btn {min-width:198px; height:48px; line-height:47px; font-size:16px;} */
     /* .cart-floating-box {border-top-color:#d7d7d7;}
     .cart-floating-cont .right-area {display: flex;}
     .cart-floating-cont .right-area .btn {flex:1; min-width:198px; height:48px; line-height:47px; font-size:16px;} */

@@ -332,14 +332,16 @@ function quickFloating(){
   // 퀵 플로팅 모바일 펼치기 js
   $('.qk-group-show').on('click', function(e){
       e.preventDefault();
-      if ( $(this).is('.on') ) {
-        $(this).siblings('.qk-group').slideUp();
-        $('.quick-menu').removeClass('open');
-        $('.quickDim').remove();
-      } else {
-        $(this).siblings('.qk-group').slideDown();
+      $(this).toggleClass('on');
+      if ($('.qk-group-show').hasClass('on') ) {
+        $(this).closest('.quick-menu').find('.qk-group').slideDown();
         $('.quick-menu').addClass('open');
         $('.quick-menu').after('<div class="quickDim"></div>');
+      } else {
+        $(this).closest('.quick-menu').find('.qk-group').slideUp();
+        $('.quick-menu').removeClass('open');
+        $('.quickDim').remove();
+        
       } 
   })
 }
