@@ -48,7 +48,7 @@
 .cart-box .cart-in-list li {padding-bottom: 8px;}
 .cart-box .cart-in-list li:last-child {padding-bottom: 0;}
 .cart-box .cart-in-list li a {display: block; padding-right: 20px; background: url('../images/common/btn_more.svg') right -1px no-repeat; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis;}
-.cart-box .cart-in-list li a p {padding-bottom:2px; font-size: 14px; color: #000; line-height: 17px; display:inline-block; position:relative;}
+.cart-box .cart-in-list li a p {padding-bottom:2px; font-size: 14px; color: #000; line-height: 17px; display:inline-block; position:relative; max-width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .cart-box .cart-in-list li a p::after {content:''; width:100%; height:1px; display:none; position:absolute; left:0; bottom:0; z-index:1; background:#346dd0;}
 .cart-box .cart-in-list li a:hover {background: url('../images/common/btn_more_on.svg') right -1px no-repeat;}
 .cart-box .cart-in-list li a:hover p {color: #346dd0;}
