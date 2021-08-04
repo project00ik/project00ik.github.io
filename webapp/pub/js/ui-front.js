@@ -389,6 +389,7 @@ function detailOptionLy(){
     $('.ly-detail').after('<div class="detaileLyDim"></div>');
     $('.detaileLyDim').on('click', function(){
       $(this).remove();
+      $('.detailLyBtn').show();
       $('.ly-detail').removeClass('open');
       $('body').removeClass('detailLyOpen');
     });
