@@ -1047,7 +1047,7 @@ textarea + .cot b {vertical-align: top;}
 .unit-type1 .unit-area > dt > img {width:100%;}
 .unit-type1 .unit-area > dd {width:100%; padding:16px 0 62px; position: relative;}
 .unit-type1 .unit-area .brand {width:100%; margin-bottom:6px; font-size:15px; color:#bbb; display:inline-block;}
-.unit-type1 .unit-area .product-name {width:100%; height: 40px; margin-bottom:25px; font-size:16px;}
+.unit-type1 .unit-area .product-name {width:100%; height: 40px; margin-bottom:5px; font-size:16px;}
 .unit-type1 .unit-area .price-area {display:-webkit-box; display:-ms-flexbox; display:flex; align-items:flex-end;}
 .unit-type1 .unit-area .price {flex:1; font-size:20px; color:#000; display:inline-block;}
 .unit-type1 .unit-area .price > b {vertical-align:baseline; font-weight:700; font-size:28px;}
@@ -1069,7 +1069,7 @@ textarea + .cot b {vertical-align: top;}
 .unit-type1 .flag-area {margin-bottom:6px; font-size:0;}
 .unit-type1 .normal-price {display:none; margin-top:6px; font-size: 12px; color: #999; text-decoration: line-through; position:absolute; top:105px; left:0;}
 .unit-type1 .normal-price > b {font-weight: 400; font-size: 16px; vertical-align: text-bottom;}
-.unit-type1 .standard {width:100%; font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; position:absolute; top:110px; left:0;}
+.unit-type1 .standard {width:100%; margin-bottom:3px; font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .proList .unit-type1 .normal-price {position: static; top:inherit; left:inherit;}
 .unit-type1 .check-style2 {position: absolute; top:20px; left:20px; z-index:8;}
 
@@ -1102,7 +1102,7 @@ textarea + .cot b {vertical-align: top;}
 .product-list-wrap .best-list > li:nth-child(5)::after {content:"5";}
 .product-list-wrap .best-list > li.product-1st {width:590px; margin-right:15px; padding:0;}
 .product-list-wrap .best-list > li.product-1st::after {content:"1"; width:50px; height:50px; font-size:32px; line-height:50px; background:#346dd0; top:0; left:0;}
-.product-list-wrap .best-list > li.product-1st .unit-type1 .standard {padding:0 30px; font-size:25px; top:203px;}
+.product-list-wrap .best-list > li.product-1st .unit-type1 .standard {margin-bottom:3px; font-size:25px;}
 .best-list .unit-type1 {height:459px;}
 .best-list .product-1st .unit-type1 {padding:0; border:1px solid #d7d7d7;}
 .best-list .product-1st .unit-type1 dt {width:588px; height:588px;}
@@ -1128,7 +1128,7 @@ textarea + .cot b {vertical-align: top;}
 .product-1st .flag-area {margin-bottom:12px;}
 .product-1st .flag-area .flag-txt {width: 110px; height: 38px; border-radius: 38px; font-size: 23px; line-height: 35px;}
 .product-1st .unit-type1 .unit-area .brand {font-size:24px; margin-bottom:12px;}
-.product-1st .unit-type1 .unit-area .product-name {height:78px; margin-bottom:48px; font-size:32px; font-weight: 500;}
+.product-1st .unit-type1 .unit-area .product-name {height:78px; margin-bottom:14px; font-size:32px; font-weight: 500;}
 .product-1st .unit-type1 .normal-price {font-size:23px; margin-top:12px; top:190px; left:30px;}
 .product-1st .unit-type1 .normal-price > b {font-size:30px;}
 .product-1st .unit-type1 .unit-area .price-area {line-height: 1.1;}
@@ -1677,12 +1677,12 @@ textarea + .cot b {vertical-align: top;}
     .unit-type1 .unit-area > dd {padding:10px 0 0;}
     .unit-type1 .flag-area {height:18px;}
     .unit-type1 .unit-area .brand {margin-bottom:5px; font-size:13px;}
-    .unit-type1 .unit-area .product-name {height:32px; margin-bottom:23px; font-size:14px;}
+    .unit-type1 .unit-area .product-name {height:32px; margin-bottom:7px; font-size:14px;}
     .unit-type1 .unit-area .price {font-size:14px;}
     .unit-type1 .unit-area .price > b {font-weight:700; font-size:20px;}
     .unit-type1 .normal-price {font-size:12px; top:88px;}
     .unit-type1 .normal-price > b {font-size:14px; line-height: 1.1;}
-    .unit-type1 .standard {top:95px; font-size:13px;}
+    .unit-type1 .standard {margin:0; font-size:13px;}
     .unit-type1 .unit-area .sale {width:49px; font-size:22px;}
 
     .unit-type1 .unit-layer {width:100%; height:30px; margin:5px 0 25px; border:0; position:inherit; top:inherit; left:inherit; z-index:inherit; display:block;}
@@ -1701,14 +1701,14 @@ textarea + .cot b {vertical-align: top;}
     .product-1st .flag-area .flag-txt {width:auto; height:20px; line-height:22px; font-size:12px;}
     .product-1st .unit-type1 .unit-area > dd {padding:20px;}
     .product-1st .unit-type1 .unit-area .brand {font-size: 14px; margin-bottom:6px;}
-    .product-1st .unit-type1 .unit-area .product-name {height:42px; margin-bottom:22px; font-size:18px;}
+    .product-1st .unit-type1 .unit-area .product-name {height:42px; margin-bottom:6px; font-size:18px;}
     .product-1st .unit-type1 .normal-price {font-size:13px; top:109px; left:20px;}
     .product-1st .unit-type1 .normal-price > b {font-size: 17px;}
     .product-1st .unit-type1 .unit-area .price {font-size:20px;}
     .product-1st .unit-type1 .unit-area .price > b {font-size:26px;}
     .product-1st .unit-type1 .unit-area .sale {width:72px; font-size:30px;}
     .product-list-wrap .best-list > li.product-1st {width:100%; padding:0 10px; margin:0 0 15px; flex:100% 0 0;}
-    .product-list-wrap .best-list > li.product-1st .unit-type1 .standard {top:117px; padding:0 20px; font-size:14px;}
+    .product-list-wrap .best-list > li.product-1st .unit-type1 .standard {font-size:14px;}
     .best-list .unit-type1 .unit-area {padding:0;}
     .best-list .unit-type1 .unit-layer {height:0; margin:0;}
 
