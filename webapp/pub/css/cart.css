@@ -50,6 +50,8 @@
 .cart-total-floating .price {font-size:18px;}
 .cart-total-floating .price > b {font-size:26px; font-weight:700; vertical-align:text-bottom;}
 .cart-total-floating .info-txt {font-size:13px; color:#999; font-weight: 400;}
+.mo-cart-floating-box {display:none;}
+
 
 
 /* .cart-content .btn-area-c {margin-top:70px;} */
@@ -464,6 +466,13 @@
 
     .unit-cart .unit-area .price-area .btn-tooltip {margin:0 calc(100% - 69px) 0 0;}
 
+    .mo-cart-floating-box {width:100%; display:block; border-top:1px solid #d7d7d7; background:#fff; position: fixed; bottom:0; left:0; z-index:10;}
+    .mo-cart-floating-box .floating-total {width:100%; display: flex; padding:10px 20px; justify-content: space-between; font-size: 14px; color:#000;}
+    .mo-cart-floating-box .floating-total .tit {font-size: 15px; font-weight: 500;}
+    .mo-cart-floating-box .floating-total .price {line-height:15px;}
+    .mo-cart-floating-box .floating-total .price > b {font-size: 16px; font-weight: 700; vertical-align: top;}
+    .mo-cart-floating-box .floating-total .info-txt {color:#999;}
+    .mo-cart-floating-box .btn-area-c {padding:0 0 20px;}
 
     /* quick주문 */
     .top-write-box {flex-wrap: wrap; margin-bottom: 0;}
