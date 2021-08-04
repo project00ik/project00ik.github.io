@@ -99,7 +99,7 @@
 .unit-cart .option-area {margin-top:6px; color:#666; font-size:0;}
 .unit-cart .option-area > p {display:inline-block; font-size:14px;}
 .unit-cart .option-area > p + p::before {content:""; width:1px; height:10px; margin:2px 7px; display:inline-block; background:#bbb;}
-.unit-cart .order-quantity {margin:14px 0 6px; font-weight:500; font-size:15px; color:#000;}
+.unit-cart .order-quantity {margin:14px 0 6px; font-weight:500; font-size:15px; color:#eb3030;}
 
 .unit-under-count {padding:0 0 0 30px; color:#fff; position: absolute; top:50%; right:0; z-index:1; transform: translateY(-50.4%);}
 .unit-cart .unit-under-btn {width:178px; padding:0 30px; color:#fff; position: absolute; top:110px; right:0; z-index:1; transform: translateY(-50.4%);}
