@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>ICTMALL</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="../../../../css/font.css" />
+	<!-- html용 style -->
+	<style>
+		/* reset */
+		*           {margin:0; padding:0;}
+		html        {}
+
+		td *, div *, li *, span *, p *  {vertical-align:middle;}
+		ul, ul > li                      {list-style:none;}
+
+		img, hr     {border:none;}
+		img         {vertical-align:top; border:0px ;}
+		strong      {font-weight:bold;}
+
+		/* Link Style */
+		:link       {text-decoration:none; color:inherit;}
+		:visited    {text-decoration:none; color:inherit;}
+		:active {text-decoration:none; color:inherit;}
+		:hover      {text-decoration:none;}
+		/* Table Style */
+		table       {border-collapse:collapse;  border-spacing:0; width:100%;}
+		table td img    {vertical-align:middle;}
+
+		/* tag all font-size set */
+		p,div,ul,li,dl,dt,dd,ol,a,em,strong,fieldset,textarea,input,select,span,table,th,td,address,cite,
+		h1,h2,h3,h4,h5,h6 {color:inherit; font-family:sans-serif; font-size:inherit; line-height:inherit;}
+
+		/* form */
+		input::placeholder,
+		textarea::placeholder {color:#bbb;}
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {color:#bbb;}
+		input:-ms-input-placeholder,
+		textarea:-ms-input-placeholder {color:#bbb;}
+		input::-moz-placeholder,
+		textarea::-moz-placeholder {color:#bbb; opacity:1;}
+
+    /* 팝업 */
+    html, body {height:100%;}
+    body {background:#fff; font:normal 16px/1.2 'Spoqa Han Sans Neo', sans-serif; color:#000;}
+    * {margin:0; padding:0; box-sizing:border-box;}
+    .winPopupWrap {height:100%; position: relative; }
+    .winPopupWrap .winPopupCont {height:100%; padding-bottom:40px;}
+    .winPopupWrap .winPopupBottom {width:100%; display: flex; height:47px; padding:10px 10px; position: absolute; bottom:0; left:0; z-index:10; background: #f5f5f5;}
+    .todayChk {flex:1; position:relative; display:inline-block; text-indent:-30px; padding-left:30px; cursor: pointer !important;}
+    .todayChk input {opacity:0; font-size:0; position:absolute; top:0; left:0;}
+    .todayChk input + i {width: 22px; height: 22px; background: #fff; border: 1px solid #bbb; display:inline-block; }
+    .todayChk input:checked + i {background:url(../../../../images/common/icon_checkbox.svg) 50% 51% no-repeat #fff; background-size:13px auto; display:inline-block; border:1px solid #bbb; background-size:12px auto;}
+    .todayChk input:disabled + i {width: 22px; height: 22px; background: #fafafa; border: 1px solid #e5e5e5;}
+    .todayChk input:checked:disabled + i {width: 22px; height: 22px; background:url(../../../../images/common/icon_checkbox_disabled.svg) 50% 50% no-repeat #fafafa; border: 1px solid #e5e5e5;}
+    .todayChk > span {font-weight:400; font-size:14px;}
+
+    .todayChk > b {margin-left:7px; font-weight:500; font-size:14px;}
+    .todayChk .num {vertical-align:text-bottom; font-weight:400; line-height:1.4;}
+    .todayChk .num > span {vertical-align:top;}
+    .winPopupClose {width:56px; height:28px; display: inline-block; line-height:27px; text-align:center; font-size:14px; color:#666; border:1px solid #666; background:#fff;}
+    .winPopupClose:hover {color:#000; border:1px solid #000;}
+
+	</style>
+	<!--// html용 style -->
+</head>
+
+<body>
+  <div class="winPopupWrap">
+    <div class="winPopupCont">
+      팝업내용
+    </div>
+    <div class="winPopupBottom">
+      <label class="todayChk"><input type="checkbox" name="" id=""><i></i> <span>오늘하루 열지않기</span></label>
+      <a href="javascript:;" class="winPopupClose" onclick="self.close();">닫기</a>
+    </div>
+  </div>
+</body>
+
+</html>
