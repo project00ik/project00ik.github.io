@@ -342,6 +342,7 @@
 .pop-ip-area label {font-size: 16px; line-height: 35px; color: #000; display: inline-block;}
 .pop-ip-area > label {width: 132px; padding-left: 20px; font-weight: 500;}
 .pop-ip-area label .req {font-size: 16px; color: #346dd0; vertical-align: baseline; font-style: normal; margin-left: 5px;}
+.pop-restock .pop-write .pop-ip-area label .req {vertical-align:middle;}
 .pop-ip-area label + .form-layout {position: relative; width: calc(100% - 183px);}
 
 .form-half > * {width: 50%;}
