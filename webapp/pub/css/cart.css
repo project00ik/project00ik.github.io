@@ -417,6 +417,7 @@
     .cart-content .list-con .list-in .btn-tooltip {margin-top: 0;}
 
     .cart-total-area {width:auto; margin:10px 20px 0; padding:0 0 20px; border-top:1px solid #000; border-bottom:1px solid #d7d7d7; background:none; flex-direction:column;}
+    .cart-content .cart-total-area {margin-top:30px;}
     .cart-total-area dl {margin-top:20px; flex: inherit;}
     .cart-total-area dl.total::before,
     .cart-total-area dl + dl::before {display:none;}
@@ -541,8 +542,8 @@
     .cart-content .join-list-con .list-con .list-in .two-form .tooltip-box {right: auto; left: 0; width: 181px;}
     .cart-content .cart-order-list .toolsize {margin-top: 10px;}
     .cart-content .cart-order-list .toolsize .tooltip-box {width: 152px;}
-    .cart-list-con .list-con .list-tit {padding:18px 20px; font-size: 16px;}
-    .cart-list-con .list-con .list-tit .sub-txt {margin: 10px 0 0 0; display: block; font-size: 15px;}
+    .cart-list-con .list-con .list-tit {padding:15px 20px; font-size: 16px;}
+    .cart-list-con .list-con .list-tit .sub-txt {margin: 5px 0 0 0; display: block; font-size: 15px;}
     .cart-list-con .unit-cart .unit-under-count {position: relative; top: 0; margin: 10px 0 0 145px; padding: 0; transform: inherit;}
     
     .cart-order-list {padding: 0 0 20px 0;}
