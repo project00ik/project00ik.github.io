@@ -297,7 +297,7 @@ function layoutCategory(){
   });
 
   // PC 카테고리 depth 별 hover 시 닫기 버튼 노출
-  $('.main-visual-cate').on('mouseover', function(){
+  $('.main-visual-cate .cateLyArea > ul').on('mouseover', function(){
     $('.visualCate .btn-layer-close').show();
   });
   
