@@ -3,6 +3,10 @@
     상품상세
 ========================================================================== */
 /* 상품상세 상단 */
+.pro-detail-location {width:100%; padding-bottom: 20px; overflow: hidden;}
+.pro-detail-location .location-txt {font-size:15px; color:#000;}
+.pro-detail-location .location-txt + .location-txt::before {content:''; width:18px; height:18px; display: inline-block; vertical-align: top; background: url(../images/common/arrow_location.svg) -1px 1px no-repeat;}
+.pro-detail-location .location-txt:last-child {font-weight: 500; color:#346dd0}
 .pro-detail-top {font-size:0;}
 .pro-detail-photo {width:590px; font-size:14px; display:inline-block;}
 .pro-detail-slide {width:100%; padding-left:90px; position: relative;}
@@ -431,6 +435,7 @@
 /* 모바일 시작 */
 @media only screen and (max-width:800px){
     /* 상품상세 상단 */
+    .pro-detail-location {display:none;}
     .pro-detail-cont {margin: 0 0 100px;}
     .pro-detail-photo {width:100%;}
     .pro-detail-slide .swiper-container {height:auto;}
