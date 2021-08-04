@@ -348,8 +348,7 @@
 .proList .unit-type1 .unit-layer .unit-under-btn > li > a {width:auto; margin-bottom: 5px;}
 .proList .unit-type1 .unit-layer .unit-under-btn > li + li {border:0;}
 .proList .unit-type1 .unit-area .product-name {width:754px; height:20px; margin-bottom:0; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; -webkit-line-clamp: 1; display:inline-block;}
-.unit-type1 .standard {display:none;}
-.proList .unit-type1 .standard {width:754px; margin:6px 0;font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; display:block;}
+.proList .unit-type1 .standard {width:754px; margin:6px 0; display:block; position:inherit; top:inherit; left:inherit;}
 .unit-type1 .satis-large {display:none;}
 .proList .unit-type1 .satis-large {display:block;}
 .proList .unit-type1 .satis-large .rating {display:inline-block;}
