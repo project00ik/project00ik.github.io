@@ -529,7 +529,7 @@
     .mypage-cart-list .list-con{padding:20px 0 10px; border-bottom: none;}
     .mypage-cart-list .list-con > p{font-size: 14px;}
     .mypage-cart-list .list-con .btn{position: relative;top:0;margin:10px 20px 0;}
-    .mypage-cart-list .list-con .btn-tooltip .tooltip-box {left:0; right:inherit;}
+    /* .mypage-cart-list .list-con .btn-tooltip .tooltip-box {left:0; right:inherit;} */
     .mypage-cart-list .list-con .list-in > li {display: flex; width: 100%; padding:0; margin-bottom:20px; flex-direction: row; align-items: center;}
     .mypage-cart-list .btn-style-mm1, .mypage-cart-list .btn-style-mm2{width:calc(50% - 5px);}
 
@@ -610,18 +610,14 @@
 
     .cart-floating-box {display:none;}
 }
-@media only screen and  (min-height:812px) { /* iphoneX */
-}
-@media only screen and (max-width:768px) { /* ipad */
-}
-@media only screen and (max-width:760px) {
-}
+
 @media only screen and (max-width:480px) {
     .after-pay-area .swiper-slide {width: 300px !important;}
 }
 @media only screen and (max-width:414px) { /* iphone plus */
 }
 @media only screen and  (max-width:375px) { /* iphone6 */
+    .mypage-cart-list .list-con .btn-tooltip .tooltip-box {left:0; right:inherit;}
 }
 @media only screen and  (max-width:360px) { /* galaxy */
 }
