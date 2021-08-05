@@ -215,7 +215,9 @@
 /* 퀵메뉴 */
 .quick-menu {margin-right:-725px; position:fixed; right:50%; top:166px; z-index:98;}
 .quick-menu a {overflow:visible; position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; width:70px; height:70px; margin-bottom:1px; background:#000;}
-.quick-menu a:hover {background: #df141c;}
+.quick-menu .qk-group-show {background:#df141c;}
+.quick-menu .qk-group-show.on {background:#000;}
+.quick-menu a.on {background: #000;}
 .quick-menu u {display:inline-block; width:36px; height:36px; margin-top: -4px;}
 .quick-menu span {display:block; font-size:11px; line-height:14px; color:#fff; margin-top: 5px;}
 .quick-menu span b {display: block;}
@@ -1371,7 +1373,7 @@ textarea + .cot b {vertical-align: top;}
     .mo-cate-layer-wrap .cate-layer .partition-area .d4-list > li > a {padding-right:10px; background:none;}
     .mo-cate-layer-wrap .cate-layer .d1-btn {padding:10px 42px 10px 24px; font-weight:500; font-size:16px; line-height:20px; text-align:left; color:#666;}
     .mo-cate-layer-wrap .cate-layer .d1-btn::after {display:inline-block; background:url(../images/common/mo_arrow_gnb_d1.svg) 0 0 no-repeat;}
-    .mo-cate-layer-wrap .cate-layer .d1-btn.on {background:none; color:#346dd0;}
+    .mo-cate-layer-wrap .cate-layer .d1-btn.on {background:none; color:#df141c;}
     .mo-cate-layer-wrap .cate-layer .d1-btn.on::after {background:url(../images/common/mo_arrow_gnb_d1_on.svg) 0 0 no-repeat;}
     .mo-cate-layer-wrap .cate-layer .d2-layer-box {display:block; width:100%; height:100%; border:0; position:fixed; left:100%; z-index:-1;}
     .mo-cate-layer-wrap .cate-layer .d2-layer-box.active {left:0; transition-duration:0.5s; -moz-transition-duration:0.5s; z-index:10;}
