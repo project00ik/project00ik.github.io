@@ -50,7 +50,7 @@
 .cart-total-floating .price {font-size:18px;}
 .cart-total-floating .price > b {font-size:26px; font-weight:700; vertical-align:text-bottom;}
 .cart-total-floating .info-txt {font-size:13px; color:#999; font-weight: 400;}
-.mo-cart-floating-box {display:none;}
+.mo-cart-floating-box .floating-total {display:none;}
 
 
 
