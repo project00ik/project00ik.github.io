@@ -1548,7 +1548,7 @@ textarea + .cot b {vertical-align: top;}
     .btn-style-mml1 {line-height: 40px;}
     .btn-style-mml2 {line-height: 40px;}
     .btn-buynow {height: 36px; line-height: 37px;}
-    .btn-excel-download {padding: 10px 20px; font-size: 14px;}
+    .btn-excel-download {display:none; padding: 10px 20px; font-size: 14px;}
     .btn-word {line-height: 20px;}
     .btn-restock {height: 36px; line-height: 37px;}
     .mobile-paging::after {margin-top: 0; vertical-align: text-bottom;}
