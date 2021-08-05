@@ -354,12 +354,32 @@
 
 
 /* 개인정보처리방침 */
+.policy-content {line-height:1.5;}
+.policy-content > h3 {margin-top:30px; font-size:20px; font-weight: 500;}
+.policy-content > h4 {margin-top:30px; font-size:16px; font-weight: 500;}
+.policy-content > p {margin-top:20px;}
+.policy-content > ol {margin-top:20px;}
+.policy-content ol.ol_hg {padding-top:10px;}
+.policy-content > ol > li {}
 .policy-content > div {width: 320px;}
 .policy-content > ul {padding-bottom:30px}
 .policy-content > ul > li {padding-top: 20px;}
 .policy-content > ul > li  p{font-size: 24px;padding-top: 10px;}
 .policy-content > ul > li > ul > li{margin-top: 10px;}
 .policy-content > ul > li > ul > li:first-child{margin-top: 0px;}
+
+.policy-content .board_list {border-top:1px solid #bbb; }
+.policy-content .board_list table {font-size:16px;}
+.policy-content .board_list table thead th {text-align: center;}
+.policy-content .board_list table th,
+.policy-content .board_list table td {height:55px; padding:10px;}
+.policy-content .board_list table th {border:1px solid #e5e5e5; background:#f5f5f5; font-weight:normal;}
+.policy-content .board_list table td {border:1px solid #e5e5e5;}
+.policy-content .board_list table tr + tr {border-top:1px solid #e5e5e5;}
+.policy-content .board_list table tbody th {padding:30px; text-align:left;}
+.policy-content .board_list table tbody th + td {padding:10px 30px;}
+.policy-content .board_list table a {color: #346dd0; vertical-align: top;}
+
 
 /* 렌탈 */
 .rental-info {width:100%; margin:70px 0 100px;}
