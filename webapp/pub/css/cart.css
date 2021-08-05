@@ -198,6 +198,7 @@
 .pop-cart-addr1 ul li > div.btn-wrap .btn:last-child{margin-top: 10px;}
 .pop-cart-addr1 ul li > .check-style2{padding-left: 0;padding-right: 20px;}
 .pop-cart-addr1 ul li > .check-style2 input + i{display: block;margin-top: 20px;}
+.pop-cart-addr1 .flag-txt.blue {margin-right:5px;}
 .pop-restock .pop-cart-addr2 {text-align: right;}
 .pop-restock .pop-cart-addr2 .pop-mo-check{margin-top: 30px;}
 .pop-restock .pop-cart-addr2 .pop-write{margin-top: 10px;}
