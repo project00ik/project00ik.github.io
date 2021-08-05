@@ -28,6 +28,9 @@
 .main .main-slide-area .swiper-button-prev::after,
 .main .main-slide-area .swiper-button-next::after {display:none;}
 .main .main-slide-area .swiper-slide .mo-slide-img-area {display:none;}
+.main .main-slide-area .visaul-autoplay-area {width:50px; height:50px; margin-left:-60px; color:#fff; font-size:0; border-radius: 50%; background: rgba(0,0,0,0.2); display: inline-block; position: absolute; bottom:30px; left:50%; z-index:1; overflow: hidden; cursor: pointer;}
+.main .main-slide-area .visaul-autoplay-area .swiper-button-play {display: none; width:50px; height:50px; background:url(../images/common/btn_play.svg) 50% 50% no-repeat;}
+.main .main-slide-area .visaul-autoplay-area .swiper-button-pause {width:50px; height:50px; background:url(../images/common/btn_pause.svg) 50% 50% no-repeat;}
 
 .bulk-purchase-wrap {width:100%; background:#f5f5f5;}
 .bulk-purchase-wrap .cont-bulk-purchase {width:1200px; margin:0 auto; padding:50px 0;}
@@ -166,6 +169,10 @@
     .main .main-slide-area .swiper-button-prev,
     .main .main-slide-area .swiper-button-next {display:none;}
     .main .main-slide-area .swiper-pagination::after {display:none;}
+    .main .main-slide-area .visaul-autoplay-area {width:32px; height:32px; margin-left:0; left:107px; bottom:20px;}
+    .main .main-slide-area .visaul-autoplay-area .swiper-button-play {display: none; width:32px; height:32px; background:url(../images/common/mo_btn_play.svg) 50% 50% no-repeat;}
+    .main .main-slide-area .visaul-autoplay-area .swiper-button-pause {width:32px; height:32px; background:url(../images/common/mo_btn_pause.svg) 50% 50% no-repeat;}
+
     .bulk-purchase-slide .swiper-container {height:150px;}
     .bulk-purchase-wrap .cont-bulk-purchase {width:100%; padding:40px 0;}
     .bulk-purchase-slide {padding:0;}

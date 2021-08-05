@@ -5262,6 +5262,11 @@
                             <div class="swiper-button-prev">이전</div>
                             <div class="swiper-button-next">다음</div>
                         </div>
+                        <div class="visaul-autoplay-area">
+                            <div class="swiper-button-play">play</div>
+                            <div class="swiper-button-pause">stop</div>
+                        </div>
+
                         <!-- 인디케이터 -->
                     </div>
                 </div>
@@ -19433,7 +19438,7 @@
                 현재페이지에서만 사용 js
             ========================================================================== */
             // 메인 비주얼 영역 slide (scrollbarSlide) swiper(plugin) option
-            var scrollbarSwiper = new Swiper('.main-slide-area .swiper-container.scrollbarSlide', {
+            var visualSwiper = new Swiper('.main-slide-area .swiper-container.scrollbarSlide', {
                 slidesPerView: 1,
                 // effect: 'fade',
                 centeredSlides: false,
@@ -19450,6 +19455,16 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+            });
+            $('.main-slide-area .swiper-button-pause').on('click', function(){
+                visualSwiper.autoplay.stop();
+                $(this).hide();
+                $('.main-slide-area .swiper-button-play').show();
+            });
+            $('.main-slide-area .swiper-button-play').on('click', function(){
+                visualSwiper.autoplay.start();
+                $(this).hide();
+                $('.main-slide-area .swiper-button-pause').show();
             });
 
             // 공종별 자재 일괄구매 slide (bulkPurchaseSlide) swiper(plugin) option

@@ -1,0 +1,7 @@
+<svg id="ic_mo_play" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <rect id="area" width="18" height="18" fill="none"/>
+  <g id="다각형_1" data-name="다각형 1" transform="translate(17 2) rotate(90)" fill="none" stroke-linecap="round">
+    <path d="M7,0l7,12H0Z" stroke="none"/>
+    <path d="M 7 3.969271659851074 L 3.482074737548828 10 L 10.51792526245117 10 L 7 3.969271659851074 M 7 0 L 14 12 L 0 12 L 7 0 Z" stroke="none" fill="#fff"/>
+  </g>
+</svg>
