@@ -655,7 +655,7 @@
     .ly-buyNowLy .pro-detail-slide {display:none;}
     .ly-buyNowLy .option-wrap {width:100%; height:auto; float:inherit;}
     .ly-buyNowLy .pro-detail-info {display:none;}
-    .ly-buyNowLy .option-result {height:222px; overflow-x: hidden; overflow-y: auto;}
+    .ly-buyNowLy .option-result {max-height:222px; height:auto; overflow-x: hidden; overflow-y: auto;}
     .ly-buyNowLy .product-total {padding-bottom:0;}
     .ly-buyNowLy .cart-select-area {margin-top:24px;}
     .ly-buyNowLy .cart-select-area .tit {margin-bottom:10px; font-size: 16px;}
