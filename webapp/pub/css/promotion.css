@@ -183,7 +183,7 @@
 .pop-myState .pop-layout > ul li:first-child{padding-top: 0;}
 .pop-myState .pop-layout > ul li label {width: 200px; padding-left: 20px;}
 .pop-myState .pop-layout .pop-ip-area label + .form-layout {width: calc(100% - 200px);}
-.pop-myState .state-write > ul li label {width: 190px; padding-left: 0;}
+.pop-myState .state-write > ul li label {width: 190px; padding-left: 0; cursor: text;}
 .pop-myState .state-write .pop-ip-area label + .form-layout {width: calc(100% - 190px);}
 .pop-myState .btn-r-area3{padding-top: 10px;}
 .pop-myState .my-state-txt{margin-bottom: 10px;}
