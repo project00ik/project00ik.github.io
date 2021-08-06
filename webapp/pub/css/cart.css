@@ -13,6 +13,7 @@
 .cart-list-con {}
 .cart-list-con .tit-area {margin-bottom:30px;}
 .cart-list-con + .cart-list-con {margin-top:100px;}
+.cart-content .cart-list-con.wish-list-con {margin-top:100px;}
 .cart-list-con .list-con {padding-top:0; border-top:1px solid #000;border-bottom:1px solid #D7D7D7;}
 .cart-list-con .list-con + .list-con {margin-top:20px;}
 .cart-list-con .list-con .list-tit {padding:20px; background:#fafafa; position: relative; font-size:16px;}
@@ -405,6 +406,7 @@
     .cart-top {margin-bottom:0;}
     .cart-content .tit-type1-2 em  {font-size:16px;line-height:19px;vertical-align:top;}
     .cart-list-con + .cart-list-con {margin-top:30px;}
+    .cart-content .cart-list-con.wish-list-con {margin-top:30px;}
     /* .cart-list-con .list-con {border-top:0; border-bottom: 0;} */
     .cart-list-con .tit-area {margin-bottom:20px; padding:78px 20px 0; position:relative; font-size:15px;}
     .cart-list-con.wish-list-con .tit-area {padding-top:0;}
