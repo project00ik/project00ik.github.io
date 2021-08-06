@@ -436,6 +436,7 @@
     /* 상품상세 상단 */
     .pro-detail-location {display:none;}
     .pro-detail-cont {margin: 0 0 100px;}
+    .pro-detail-cont .tit-type1-2.pc-hide {display:none;}
     .pro-detail-photo {width:100%;}
     .pro-detail-slide .swiper-container {height:auto;}
     .pro-detail-slide {padding-left:0;}
