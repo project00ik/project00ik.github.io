@@ -1186,9 +1186,10 @@ textarea + .cot b {vertical-align: top;}
 .filebox .upload-name{width:calc(100% - 43px); flex:1;}
 
 /* 페이징 */
-.paging{text-align: center; margin:70px 0 30px;}
+.paging{text-align: center; margin:70px 0 30px; font-size:0;}
 .product-detail .paging {margin: 30px 0;}
-.paging a{width:38px;line-height: 36px;display: inline-block;}
+.paging a{width:38px;line-height: 36px;display: inline-block; font-size:16px;}
+.paging a + a {margin-left:3px;}
 .paging a.on{border:1px solid #346DD0;box-sizing: border-box;}
 .paging a.prev,.paging a.next{border:1px solid #BBBBBB;box-sizing: border-box;text-indent: -9999px;background: url(../images/common/mo_arrow_gnb_d1.svg) 50% no-repeat;}
 .paging a.prev{ -webkit-transform: rotate(180deg);-moz-transform: rotate(180deg);-ms-transform: rotate(180deg);-o-transform: rotate(180deg);transform: rotate(180deg);}
