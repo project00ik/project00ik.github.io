@@ -571,6 +571,7 @@
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label {font-size: 14px; padding: 0 0 5px 0; line-height: 17px;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right .input {max-width: 100%;}
     .cart-order-list .order-delivery ul li .form-layout .in-form-right label + div {width: 100%;}
+    .cart-order-list .order-delivery ul li .form-layout .in-de-right .btn-style-m3.btn-delivery {margin-left:0;}
     .cart-order-list .order-delivery ul li .order-de-title {font-size: 14px; padding: 0 0 10px 0;}
     .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row {display: inherit;}
     .cart-order-list .order-delivery ul li .order-de-txt > .de-txt-row p {display: inline;}
