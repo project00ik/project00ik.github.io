@@ -302,7 +302,7 @@
 .after-pay-area .afpay-box {padding: 30px; background: url(../images/common/img_card_bg.png) 0 0 no-repeat; background-size: 370px 199px; border-radius: 10px;}
 .after-pay-area .afpay-box.on {box-shadow: 8px 8px 8px rgba(52, 109, 208, 0.2);}
 .after-pay-area .afpay-box .afpay-txt {padding-top: 10px;}
-.after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 21px; color: #fff;}
+.after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 21px; color: #fff; word-break: break-all;}
 .after-pay-area .afpay-box .radio-style1 {width: 100%;}
 .pay-agree-check {text-align: center; padding: 70px 0 0;}
 .cart-content .pay-agree-check + .btn-area-c {margin-top: 0;}
