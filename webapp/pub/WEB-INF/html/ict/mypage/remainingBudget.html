@@ -174,7 +174,14 @@
               <p class="tit-type2">잔여예산내역</p>
             </div>
             <div class="remaining-area">
-              <p class="info-txt">홍길동 고객님의 잔여예산 내역 입니다.</p>
+              <div class="tit-area3">
+                <div class="left-area">
+                  <p class="info-txt">홍길동 고객님의 잔여예산 내역 입니다.</p>
+                </div>
+                <p class="right-area">
+                  <button class="btn btn-small-line info-btn" onclick="lyOpen('budgetIncreasePopup')">예산증액요청</button>
+                </p>
+              </div>
               <div class="remaining-card-area">
                 <!-- 카드영역 -->
                 <dl class="remaining-card">
@@ -432,165 +439,70 @@
     </footer>
   </div>
 
-  <!-- 고객사 사업장 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngOfficePopup">
+  <!-- 예산증액요청 팝업 -->
+  <div class="lyPopupWrap popup-type-m" id="budgetIncreasePopup">
     <!-- id 값 버튼과 연결해주세요. -->
     <div class="lyPopup">
       <div class="popup-wrap">
         <div class="popup-cont">
           <div class="lyTitle center">
-            <p>고객사 사업장 조회</p>
+            <p>예산증액요청</p>
             <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
           </div>
           <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">사업장</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
+            <div class="pop-layout pop-myState">
+              <div class="pop-layout pop-write state-write">
+                <ul>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">계정선택</label>
+                      <div class="form-layout">
+                        <!-- select -->
+                        <select class="select" name="" id="">
+                          <option value="">에이비엘생명보험 사무용품</option>
+                          <option value="">선택2</option>
+                          <option value="">선택3</option>
+                        </select>
+                        <!--// select -->
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">요청자</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="전여진" readonly="readonly">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">요청금액</label>
+                      <div class="form-layout">
+                        <input type="text" class="input" value="">
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="pop-ip-area">
+                      <label for="">요청사유</label>
+                      <div class="form-layout">
+                        <textarea class="textarea" name="" rows="10" cols="8" style="resize: none;" placeholder=""></textarea>                        
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
+          <div class="btn-area">
+            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-style-m2">확인</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- //고객사 사업장 조회 팝업 -->
-
-  <!-- 고객사 부서 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngSectionPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>고객사 부서 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">부서</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //고객사 부서 조회 팝업 -->
-
-  <!-- 고객사 사용자 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngUserPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>고객사 사용자 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">사용자</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //고객사 사용자 조회 팝업 -->
-  
-  <!-- 협력사 조회 팝업 -->
-  <div class="lyPopupWrap popup-type-m" id="myMngPartnersPopup">
-    <!-- id 값 버튼과 연결해주세요. -->
-    <div class="lyPopup">
-      <div class="popup-wrap">
-        <div class="popup-cont">
-          <div class="lyTitle center">
-            <p>협력사 조회</p>
-            <a href="javascript:;" onclick="lyClose()" class="lyClose btn btn-close">닫기</a>
-          </div>
-          <div class="lyPopCont">
-            <div class="pop-layout pop-suggestion">
-              <div class="user-search">
-                <div class="pop-mo-form">
-                  <select class="select" name="" id="">
-                    <option value="">협력사명</option>
-                    <option value="">협력사코드</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                  </select>
-                  <div class="form-area">
-                    <input type="text" class="input" name="" value="" placeholder="">
-                  </div>
-                </div>
-                <div class="pop-mo-btn">
-                  <button class="btn btn-style-m2">조회</button>
-                  <button class="btn btn-style-m1">초기화</button>
-                </div>
-              </div>
-              <div class="excel-wrap">
-                그리드
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //협력사 조회 팝업 -->
+  <!-- //예산증액요청 팝업 -->
   
 
 
