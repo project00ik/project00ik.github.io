@@ -299,7 +299,7 @@
 .after-pay-area {position: relative; margin: 20px 0 0 0; }
 .after-pay-area [class^=af-arrow] {top: 50%; transform: translateY(-50%);}
 .after-pay-area .swiper-slide {padding: 0 15px 15px;}
-.after-pay-area .afpay-box {padding: 30px; background: url(../images/common/img_card_bg.png) 0 0 no-repeat; background-size: 370px 199px; border-radius: 10px;}
+.after-pay-area .afpay-box {height:218px; padding: 30px; background: url(../images/common/img_card_bg.png) 0 0 no-repeat; background-size: 100% 100%; border-radius: 10px;}
 .after-pay-area .afpay-box.on {box-shadow: 8px 8px 8px rgba(52, 109, 208, 0.2);}
 .after-pay-area .afpay-box .afpay-txt {padding-top: 10px;}
 .after-pay-area .afpay-box .afpay-txt p {font-size: 16px; line-height: 21px; color: #fff; word-break: break-all;}
@@ -582,7 +582,7 @@
     .pay-agree-check {padding: 30px 20px 0;}
     .after-pay-area {padding: 0; margin-top: 30px;}
     .after-pay-area .swiper-slide {width: 370px !important; padding: 0 5px 10px;}
-    .after-pay-area .afpay-box {padding:20px; background-size: 100% 100%;}
+    .after-pay-area .afpay-box {height:198px; padding:20px; background-size: 100% 100%;}
     .after-pay-area .afpay-box .afpay-txt p {font-size: 15px;}
     
     .list-con .list-in .two-form .form-layout > :last-child {width: 112px;}
