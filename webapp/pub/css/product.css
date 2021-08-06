@@ -338,7 +338,7 @@
 .proList .unit-type1 {height:auto; padding:30px 30px 30px 62px;}
 .proList .unit-type1 .unit-area {height:auto;}
 .proList .unit-type1 .unit-area {padding:0; display:flex;}
-.proList .unit-type1 .unit-area > dt {width: 156px; height: 156px;}
+.proList .unit-type1 .unit-area > dt {width: 156px; height: 156px; margin:0;}
 .proList .unit-type1 .unit-area > dd {flex:1; padding:0 0 0 20px;}
 .proList .unit-type1 .unit-layer {width:100%; display:block; border:0;}
 .proList .unit-type1 .check-style2 {top:50%; margin-top:-11px;}
