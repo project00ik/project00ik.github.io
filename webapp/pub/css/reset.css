@@ -100,7 +100,7 @@ label       {cursor:pointer; margin:0;}
 b, strong {font-weight:500;}
 
 
-body {background:#fff; font:normal 16px/1.2 'Spoqa Han Sans Neo', sans-serif; color:#000;}
+body {background:#fff; font:normal 16px/1.2 'Spoqa Han Sans Neo', sans-serif; color:#000; word-break: break-all;}
 a {color:inherit;}
 
 /* inpuy[type=search] 닫기 버튼 reset */
