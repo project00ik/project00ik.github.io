@@ -1603,32 +1603,37 @@ textarea + .cot b {vertical-align: top;}
     
     /* 탭 */
     .tab-area .tab-btn-list > li {display:inline-block; font-size:16px;}
-    .tab-area .tab-style1 {margin-bottom:-10px;}
+    .tab-area .tab-style1::-webkit-scrollbar {display: none;}
     .tab-area .tab-style1 > li {margin-bottom:10px;}
     .tab-area .tab-style1 > li:first-child {margin-left:20px;}
     .tab-area .tab-style1 > li:last-child {margin-right:20px;}
     .tab-area .tab-style1 > li + li {margin-left:18px;}
     .tab-area .tab-style1 .tabBtn {padding-bottom:5px; margin-bottom:10px; font-size:14px; position:relative;}
     .tab-area .tab-style2 {margin-bottom:-10px;}
+    .tab-area .tab-style2::-webkit-scrollbar {display: none;}
     .tab-area .tab-style2 > li {margin-bottom:10px;}
     .tab-area .tab-style2 > li:first-child {margin-left:20px;}
     .tab-area .tab-style2 > li:last-child {margin-right:20px;}
     .tab-area .tab-style2 > li + li {margin-left:24px;}
     .tab-area .tab-style2 .tabBtn {padding-bottom:5px; font-size:16px;}
     .tab-area .tab-style2-1 {margin-bottom:-10px;}
+    .tab-area .tab-style2-1::-webkit-scrollbar {display: none;}
     .tab-area .tab-style2-1 > li {margin-bottom:10px;}
     .tab-area .tab-style2-1 {overflow-x: auto;}
     .tab-area .tab-style2-1 > li:first-child {margin-left:20px;}
     .tab-area .tab-style2-1 > li:last-child {margin-right:20px;}
     .tab-area .tab-style2-1 > li + li {margin-left:24px;}
     .tab-area .tab-style2-1 .tabBtn {padding-bottom:5px; font-size:16px;}
+    .tab-area .tab-style3::-webkit-scrollbar {display: none;}
     .tab-area .tab-style3 .tabBtn {font-size:16px; line-height:47px; padding-bottom:3px;}
     .tab-area .tab-style3 .tabBtn.on::after {height:3px;}
     .tab-area .tab-style4 > li {margin: 0 0 12px 10px;}
+    .tab-area .tab-style4::-webkit-scrollbar {display: none;}
     .tab-area .tab-style4 > li:first-child {margin-left: 20px;}
     .tab-area .tab-style4 > li:last-child {margin-right: 20px;}
     .tab-area .tab-style4 .tabBtn a {padding: 10px 20px; font-size: 14px;}
     .tab-area .tab-style5 {width: 100%; overflow-y: hidden; overflow-x: auto; white-space: nowrap; padding-bottom:0; margin:0 0 30px;}
+    .tab-area .tab-style5::-webkit-scrollbar {display: none;}
     .tab-area .tab-style5 .tabBtn {margin: 0; width: auto; border: 0; margin-bottom: 15px; height: 20px; line-height: 20px; font-size: 15px; color: #999;}
     .tab-area .tab-style5 .tabBtn:first-child {margin-left:20px;}
     .tab-area .tab-style5 .tabBtn:last-child {margin-right:20px;}
