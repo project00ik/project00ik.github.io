@@ -215,6 +215,7 @@
 /* 퀵메뉴 */
 .quick-menu {margin-right:-725px; position:fixed; right:50%; top:166px; z-index:98;}
 .quick-menu a {overflow:visible; position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; text-align:center; width:70px; height:70px; margin-bottom:1px; background:#000;}
+.quick-menu a:hover {background:#df141c;}
 .quick-menu .qk-group-show {background:#df141c;}
 .quick-menu .qk-group-show.on {background:#000;}
 .quick-menu a.on {background: #000;}
@@ -1237,6 +1238,7 @@ textarea + .cot b {vertical-align: top;}
     .quick-menu {margin-right:0; top:auto; right:20px; bottom:20px;}
     .quick-menu.non-footer-quick {bottom:103px;}
     .quick-menu a {position: relative; width:40px; height:40px;}
+    /* .quick-menu a:hover {background:inherit;} */
     .quick-menu span {position: absolute; left: -89px; top: 50%; width: 77px; text-align: right; font-size: 13px; margin: 0;
         animation-name:quickTxt; 
         animation-duration:1.3s;
