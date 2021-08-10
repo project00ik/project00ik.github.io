@@ -52,6 +52,7 @@
 .notice-detail .list-flag {position: absolute; top:18px; left:20px; z-index:1;}
 .notice-detail .date  {width:80px; font-size:14px; color:#666; text-align: right; position: absolute; top:20px; right:20px; z-index:1;}
 .notice-detail > dd {width:100%;}
+.notice-detail .dw-file-upload {margin-bottom:30px;}
 .notice-detail .notice-file-upload {width: 100%; margin-bottom: 30px; display:flex; align-items: center;}
 .notice-detail .notice-file-upload > dt {display: none;width:99px; padding-left:20px; font-size:16px; font-weight: 400;}
 .notice-detail .notice-file-upload > dd {flex:1; }
