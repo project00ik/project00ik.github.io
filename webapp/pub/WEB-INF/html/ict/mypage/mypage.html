@@ -494,39 +494,151 @@
           <div class="my-logo">
             <p><a href="mypage.html">MY<br />ICT몰</a></p>
           </div>
+          <div class="my-menu-list lnbAcdArea">
+            <ul>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu1')">주문/배송조회</a>						
+                <ul class="list-deps lnbAcdCont" id="lnbMenu1">
+                  <li class="acdContSelect mypageOrderDeliveryManagementView">																
+                    <a href="#" class="mypageOrderDeliveryManagementView">주문현황</a>
+                  </li>							
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu2')">입고</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu2">
+                  <li class="acdContSelect receivingStatus">								
+                    <a href="#" class="receivingStatus">입고현황</a>							
+                  </li>
+                  <li class="acdContSelect returnStatus">
+                    <a href="#" class="returnStatus">반품/교환현황</a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"></a>							
+                  </li> -->
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu3')">예산</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu3">						       
+                  <li class="acdContSelect myBdgtRemainingList">
+                    <a href="#" class="myBdgtRemainingList">잔여예산내역</a>
+                  </li>							
+                </ul>
+              </li>
+              <li class="mo-hide">
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu4')">결재관리</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu4">						
+                                
+                  <li class="acdContSelect paymentDetails on">
+                    <a href="#" class="paymentDetails">결재내역</a>
+                  </li>													
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu5')">신규요청</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu5">
+                  <li class="acdContSelect newProductList">
+                    <a href="#" class="newProductList">신규상품요청</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu6')">나의 쇼핑</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu6">
+                  <li class="acdContSelect cartListView">
+                    <a href="#" class="cartListView">장바구니관리</a>
+                  </li>
+                  <li class="acdContSelect orderManagement">
+                    <a href="#" class="orderManagement">주문서관리</a>
+                  </li>							
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu7')">나의 활동</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu7">
+                  <li class="acdContSelect myReviewListView">
+                    <a href="#" class="myReviewListView">나의리뷰</a>
+                  </li>
+                  <li class="acdContSelect myInquiryView">
+                    <a href="#" class="myInquiryView">1:1문의</a>
+                  </li>
+                  <li class="acdContSelect mySuggestionView mo-hide">
+                    <a href="#" class="mySuggestionView">열린소싱상품제안</a>
+                  </li>							
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu8')">나의 관심</a>
+                <ul class="list-deps lnbAcdCont" id="lnbMenu8">
+                  <li class="acdContSelect interestCatagory">
+                    <a href="#" class="interestCatagory">관심카테고리</a>
+                  </li>
+                  <li class="acdContSelect interestProduct">
+                    <a href="#" class="interestProduct">관심상품</a>
+                  </li>
+                  <li class="acdContSelect interestNews">
+                    <a href="#" class="interestNews">관심뉴스</a>
+                  </li>
+                  <!-- 
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                   -->
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="lnbAcdBtn" onclick="lnb('lnbMenu9')">회원정보 관리</a>					
+                <ul class="list-deps lnbAcdCont" id="lnbMenu9">							
+                  <li class="acdContSelect memberManager mo-hide">
+                    <a href="#" class="memberManager">회원관리</a>
+                  </li>
+                  <li class="acdContSelect memberPasswdCheck">
+                    <a href="#" class="memberPasswdCheck">회원정보 수정</a>
+                  </li>												
+                  <li class="acdContSelect myDeliveryManager">
+                    <a href="#" class="myDeliveryManager">배송지관리</a>
+                  </li>
+                  <!-- <li class="acdContSelect">
+                    <a href="#"">회원탈퇴</a>
+                  </li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- old 08.10
           <div class="my-menu-list acdArea">
             <ul>
               <li>
-                <a href="#" class="acdBtn">주문/배송조회</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">주문/배송조회</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">주문현황</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">입고</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">입고</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">입고현황</a></li>
                   <li><a href="#">반품/교환현황</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">예산</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">예산</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">예산관리</a></li>
                   <li><a href="#">예산증액신청승인</a></li>
                   <li><a href="#">잔여예산내역</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">정산</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">정산</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">일정산조회</a></li>
                   <li><a href="#">세금계산서조회</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">결재관리</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">결재관리</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">자사정보관리</a></li>
                   <li><a href="#">부서관리</a></li>
                   <li><a href="#">사용자관리</a></li>
@@ -536,45 +648,45 @@
               </li>
               
               <li>
-                <a href="#" class="acdBtn">신규요청</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">신규요청</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">신규상품요청</a></li>
                   <li><a href="#">신규상품등록승인</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">나의쇼핑</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">나의쇼핑</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">장바구니관리</a></li>
                   <li><a href="#">주문서관리</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">나의활동</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">나의활동</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">나의리뷰</a></li>
                   <li><a href="#">1:1문의</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">나의관심</a>
-                <ul class="list-deps acdCont">
+                <a href="#" class="lnbAcdBtn">나의관심</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">관심카테고리</a></li>
                   <li><a href="#">관심상품</a></li>
                   <li><a href="#">관심뉴스</a></li>
                 </ul>
               </li>
               <li>
-                <a href="#" class="acdBtn">회원정보관리</a><!-- on 활성화 -->
-                <ul class="list-deps acdCont"><!-- on 활성되면 display:block -->
+                <a href="#" class="lnbAcdBtn">회원정보관리</a>
+                <ul class="list-deps lnbAcdCont">
                   <li><a href="#">회원관리</a></li>
-                  <li><a href="#">회원정보수정</a></li><!-- on 활성화 -->
+                  <li><a href="#">회원정보수정</a></li>
                   <li><a href="#">배송지관리</a></li>
                   <li><a href="#">회원탈퇴</a></li>
                 </ul>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
         <!-- 모바일 로그아웃 버튼 -->
         <div class="mo-logout-area">
@@ -636,9 +748,7 @@
       /* ==========================================================================
           현재페이지에서만 사용 js
       ========================================================================== */
-
-      
-
+      lnb('lnbMenu3'); // 마이페이지 lnb js
 
     });
   </script>

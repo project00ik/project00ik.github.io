@@ -655,6 +655,31 @@ function accordion(){
 	});
 }
 
+
+// function lnb(){ // 마이페이지 lnb js
+//   $('.lnbAcdArea').each(function (){
+//     var $lnbArea = $(this);
+//     var $lnbBt = $lnbArea.find('.lnbAcdBtn');
+//     var $lnbCt = $lnbArea.find('.lnbAcdCont');
+//     $lnbBt.on('click', function (){ // 1depth
+//       var $activeLnbBtn = $(this);
+//       var activelnbCt = $activeLnbBtn.attr('data-lnb');
+//       $lnbBt.not($activeLnbBtn.toggleClass('on')).removeClass('on');
+//       $lnbCt.not($('#' + activelnbCt).slideToggle()).slideUp();
+//     });
+//     $('.acdContSelect').on('click', function(){ // 2depth
+//       $('.acdContSelect').removeClass('on');
+//       $(this).addClass('on');
+//     });
+//   })
+// }
+
+function lnb(id) { // 마이페이지 lnb js
+  var $activeLnbBtn = $('#' + id);
+  $('.lnbAcdBtn').not($activeLnbBtn.toggleClass('on')).removeClass('on');
+  $('.lnbAcdCont').not($activeLnbBtn.closest('li').find('.lnbAcdCont').slideToggle()).slideUp();
+}
+
 function customSelect(){
   // 디자인셀렉트 관련 js
   $('.customSelect').each(function(){

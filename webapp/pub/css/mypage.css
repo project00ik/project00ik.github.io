@@ -15,6 +15,8 @@
 .mypage-cont .my-menu .my-menu-list > ul > li > a {font-weight: 500; font-size: 20px; color: #000; transition: all 0.3s ease;}
 .mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn {background: url(../images/common/icon_plus_black.svg) right center no-repeat;}
 .mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn.on {background: url(../images/common/icon_minus_black.svg) right center no-repeat;}
+.mypage-cont .my-menu .my-menu-list > ul > li > a.lnbAcdBtn {background: url(../images/common/icon_plus_black.svg) right center no-repeat;}
+.mypage-cont .my-menu .my-menu-list > ul > li > a.lnbAcdBtn.on {background: url(../images/common/icon_minus_black.svg) right center no-repeat;}
 .mypage-cont .my-menu .my-menu-list .list-deps {display: none; padding-top: 24px;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 12px;}
 .mypage-cont .my-menu .my-menu-list .list-deps > li:last-child {padding-bottom: 0;}
@@ -308,6 +310,8 @@
     .mypage-cont .my-menu .my-menu-list > ul > li > a {padding: 16px 20px; font-size: 16px;}
     .mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn {background-position: right 20px center;}
     .mypage-cont .my-menu .my-menu-list > ul > li > a.acdBtn.on {background-position: right 20px center;}
+    .mypage-cont .my-menu .my-menu-list > ul > li > a.lnbAcdBtn {background-position: right 20px center;}
+    .mypage-cont .my-menu .my-menu-list > ul > li > a.lnbAcdBtn.on {background-position: right 20px center;}
     .mypage-cont .my-menu .my-menu-list .list-deps {padding-top: 0;}
     .mypage-cont .my-menu .my-menu-list .list-deps > li:first-child {border-top: 1px solid #d7d7d7;}
     .mypage-cont .my-menu .my-menu-list .list-deps > li {padding-bottom: 0; border-top: 1px solid #e5e5e5;}
