@@ -1323,10 +1323,10 @@ textarea + .cot b {vertical-align: top;}
     .header-cont .right-area .icon-btn {width:24px; height:24px;}
     .header-cont .right-area .icon-btn > a,
     .header-cont .right-area .icon-btn > a::before {width: 24px; height: 24px;}
-    .header-cont .right-area .icon-btn.cart > a::before {background:url(../images/common/mo_icon_cart_on.svg) 50% 50% no-repeat }
+    .header-cont .right-area .icon-btn.cart > a::before {background:url(../images/common/mo_icon_cart_on.svg) 50% 50% no-repeat #fff;}
     .header-cont .right-area .icon-btn.cart > a:hover::before {z-index:1;}
     .header-cont .right-area .icon-btn.cart > a.on::before {z-index:1;}
-    .header-cont .right-area .icon-btn.member > a::before {background:url(../images/common/mo_icon_member_on.svg) 50% 50% no-repeat}
+    .header-cont .right-area .icon-btn.member > a::before {background:url(../images/common/mo_icon_member_on.svg) 50% 50% no-repeat #fff;}
     .icon-btn + .icon-btn {margin-left:20px;}
     .inp-area .inp {font-size:15px;}
     .inp-area .btn-del {right: 34px;}
