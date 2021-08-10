@@ -21,7 +21,7 @@
 .pro-detail-slide .swiper-button-next,
 .pro-detail-slide .swiper-button-prev {display:none;}
 .pro-detail-reporting {width:100%; margin-top:20px; padding:16px 22px; border: 1px solid #d7d7d7; overflow: hidden;}
-.pro-detail-reporting > p {font-size:16px; float:left;}
+.pro-detail-reporting > p {font-size:16px; line-height:28px; float:left;}
 .pro-detail-reporting  .btn-style-s1 {float:right; margin-left:22px;}
 .pro-detail-info {width:570px; margin-left:40px; font-size:14px; display:inline-block; vertical-align: top;}
 .pro-detail-info .flag-area {font-size: 0;}
@@ -173,6 +173,7 @@
 .product-detail .detail-wrap > div a.certificate{position: absolute;top:0;right: 0;border: 1px solid #000;line-height: 26px;padding:0 12px;}
 .product-detail .detail-wrap > div p{font-size: 24px;}
 .product-detail .detail-wrap .detail-img{width: 860px; margin: 80px auto 0;}
+.product-detail .detail-wrap .detail-img img {width:100%;}
 .product-detail .detail-wrap .table-area td span.kc{padding-left:18px;background: url(../images/common/img_kc.svg) 0 3px no-repeat;}
 .product-detail .detail-wrap .table-area td span.green{padding-left:18px;background: url(../images/common/img_green.svg) 0 6px no-repeat;}
 .product-detail .detail-wrap .table-area td span em{vertical-align: top;}
