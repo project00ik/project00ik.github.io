@@ -270,6 +270,11 @@ function layoutCategory(){
       $('.main-visual-cate .cate-layer-wrap').removeClass('open');
     }
   });
+  // 2depth hover시 3depth 첫번째 on처리
+  $pcCateLyArea.find('.d2-list > li > .depthBtn').on('mouseover', function(){
+    $pcCateLyArea.find('.d3-list > li > .depthBtn').removeClass('on');
+    $pcCateLyArea.find('.d3-list > li.first > .depthBtn').addClass('on');
+  });
 
   // PC 카테고리 depth 별 hover 시 이벤트
   $pcCateLyArea.each(function () {
