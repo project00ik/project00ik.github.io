@@ -435,8 +435,9 @@
     .request-number {font-size:14px;}
     .request-number .num {margin-left:5px;}
     .list-con.bt-btn-line {border-bottom:0;}
+    .list-con .chk-list .list-in {padding-left:20px;}
     .cart-list-con .list-con .list-tit .btn-slide-open.allSlideBtn{display: none;}
-    .cart-list-con .list-con.allSlideTgArea .chk-list .list-in{padding:55px 0 0 0}
+    .cart-list-con .list-con.allSlideTgArea .chk-list .list-in{padding-top:55px}
 
     /* ==========================================================================
         주문현황

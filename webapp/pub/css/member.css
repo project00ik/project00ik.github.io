@@ -169,6 +169,7 @@
     .join-list-con .tit-area2 .join-txt {padding-left: 10px; line-height: 100%;}
     .join-list-con .btn-area-c {padding-top:20px;}
     .list-con {padding-top: 20px;}
+    .list-con.bt-btn-line {padding-top: 20px;}
     .list-con .tit-type2-1 {padding: 0 20px;}
     .list-con .tit-area4 .tit-type2-1 {padding: 0 0 10px 0;}
     .list-con .list-in {margin-left: 20px; margin-right: 20px; border-bottom: 0;}
@@ -178,7 +179,7 @@
     .list-con .list-in > li > label {width: auto; font-size: 14px; padding-bottom: 5px; line-height: 17px;}
     .list-con .list-in + .tit-type2-1 {padding-top: 20px; border-top: 1px solid #d7d7d7;}
     .list-con .list-in > li .btn-style-m1 {font-size: 14px; min-width: 68px; height: 36px;}
-    .list-con .list-half-style {flex-direction: column; align-items: flex-start; margin: 10px 20px 0;}
+    .list-con .list-half-style {margin: 10px 0 0; padding:0 20px; display: block; flex-wrap:inherit;}
     .list-con .list-half-style li {width: 100%;}
     .list-con .mem-info-list li .form-layout {width: 100%;}
     .list-con .mem-info-list .ip-only .form-layout {width: 100%;}

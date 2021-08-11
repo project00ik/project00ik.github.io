@@ -1798,6 +1798,7 @@ textarea + .cot b {vertical-align: top;}
     .form-layout .input-price .input {margin-top: 1px;height: 32px; line-height: 33px;}
     .form-layout .bar {font-size: 14px; line-height: 36px;}
     .form-layout3 {width:100%; display:block; flex:none;}
+    .list-w100 .form-layout3 {max-width: 100%;}
     .form-layout3 .form-inline {margin-top:10px;}
     .form-layout3 .w127 {width:100%;}
     .list-area .list-con {border-bottom:0;}
