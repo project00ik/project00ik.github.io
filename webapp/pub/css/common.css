@@ -1018,7 +1018,7 @@ textarea + .cot b {vertical-align: top;}
 .loading-wrap .loading {width:70px; height:70px; font-size:0; background: url(../images/common/loading.svg) 0 0 no-repeat; background-size: 100% auto;}
 .ui-jqgrid .ui-state-active.loading, 
 .ui-jqgrid .ui-widget-content .ui-state-active.loading, 
-.ui-jqgrid .ui-widget-header .ui-state-active.loading {width: 61px; padding-top:30px; text-align: center; font-size:12px; border:0; color: #346dd0 !important; position: absolute; top: 41%; left: 47%; z-index: 101; background: url(../images/common/loading.svg) 50% 0 no-repeat !important; background-size: 30px auto !important;}
+.ui-jqgrid .ui-widget-header .ui-state-active.loading {width: 70px; padding-top:30px; text-align: center; font-size:12px; border:0; color: #346dd0 !important; position: absolute; top: 41%; left: 47%; z-index: 101; background: url(../images/common/loading.svg) 50% 0 no-repeat !important; background-size: 30px auto !important;}
 
 /* IE10+ */ 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
