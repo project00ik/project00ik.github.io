@@ -1297,13 +1297,13 @@ textarea + .cot b {vertical-align: top;}
     .unit-type1 .unit-layer .unit-under-btn .btn-buynow {line-height:31px;}
 
     /* 모바일 탭 스크롤처리 */
-    /* .gnb-wrap .gnb-area .gnb::-webkit-scrollbar {display: none;}
+    .gnb-wrap .gnb-area .gnb::-webkit-scrollbar {display: none;}
     .tab-area .tab-style1::-webkit-scrollbar {display: none;}
     .tab-area .tab-style2::-webkit-scrollbar {display: none;}
     .tab-area .tab-style2-1::-webkit-scrollbar {display: none;}
     .tab-area .tab-style3::-webkit-scrollbar {display: none;}
     .tab-area .tab-style4::-webkit-scrollbar {display: none;}
-    .tab-area .tab-style5::-webkit-scrollbar {display: none;} */
+    .tab-area .tab-style5::-webkit-scrollbar {display: none;}
     
 }
 
