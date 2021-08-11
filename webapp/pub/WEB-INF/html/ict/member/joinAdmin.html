@@ -471,9 +471,9 @@
         <div class="join-list-con type-slide tgSlide">
           <div class="tit-area">
             <p class="tit-type2">관심 공종 선택</p>
-            <button class="btn btn-slide-open tgSlideBtn">더보기</button>
+            <button class="btn btn-slide-open tgSlideBtn on">더보기</button>
           </div>
-          <div class="list-con tgSlideCont">
+          <div class="list-con tgSlideCont" style="display: block;">
             <p class="join-txt">관심 공종은 최대 5개까지 선택 가능합니다.</p>
             <ul class="list-in">
               <li class="list-btn-area">
@@ -816,9 +816,8 @@
       현재페이지에서만 사용 js
       ========================================================================== */
       toggleSlideArea(); // 토글영역
-      // toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
       allChecked(); // all checked
-      
+      // toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
       // $(window).resize(function(){
       //   toggleResize(); // 관심공종 여닫기(PC/Mobile분기)
       // })
