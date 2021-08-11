@@ -1532,7 +1532,7 @@ textarea + .cot b {vertical-align: top;}
     .pop-tax .pop-ip-area label + .form-layout {width: 100%;}
     
     /* 메인팝업 */
-    .lyPopupWrap {width:100% !important; height:auto !important; left:0 !important; top:0 !important;}
+    .mainPopup {width:100% !important; height:auto !important; left:0 !important; top:0 !important;}
 
 
     /* 결과없음(제품) */
