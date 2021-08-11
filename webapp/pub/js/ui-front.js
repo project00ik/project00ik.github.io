@@ -721,12 +721,15 @@ function inputPrice(){
     $(this).closest('.input-price').removeClass('focus');
   });
 }
-
 function allChecked(){
   // all checked
-	$('.allChk').each(function(){
-		$(this).find(' > input').on('click', function(){
-			$(this).closest('.allChkArea').find('.chk > input').prop('checked', this.checked);
+  $('.allChk').each(function(){
+    $(this).find(' > input').on('click', function(){
+      $(this).closest('.allChkArea').find('.chk > input').prop('checked', this.checked);
+      /*익스프러에서...오류로*/
+      if((AllCheckFunction != undefined) ||(typeof AllCheckFunction =='function')){
+        AllCheckFunction()
+      }
     })
   })
   // 전체 선택이 아닐때 allChk checked false
