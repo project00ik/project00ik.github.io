@@ -674,10 +674,15 @@ function accordion(){
 //   })
 // }
 
-function lnb(id) { // 마이페이지 lnb js
+function lnb(id) { // 마이페이지 lnb js 1depth
   var $activeLnbBtn = $('#' + id);
   $('.lnbAcdBtn').not($activeLnbBtn.toggleClass('on')).removeClass('on');
   $('.lnbAcdCont').not($activeLnbBtn.closest('li').find('.lnbAcdCont').slideToggle()).slideUp();
+}
+function lnbSub(subClass) { // 마이페이지 lnb js 2depth
+  var $activeLnbSBtn = $('.' + subClass);
+  $('.acdContSelect').removeClass('on');
+  $activeLnbSBtn.closest('li').addClass('on');
 }
 
 function customSelect(){
