@@ -150,9 +150,9 @@
 .mystate-con .btn-r-area3{padding-bottom: 0;}
 .mystate-con .step-wrap > ul + .btn-r-area3 {padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
 .mystate-con .step-wrap{border-top:1px solid #bbb;margin-top: 10px;}
-.mystate-con .step-wrap > ul {margin: 20px 0;}
+.mystate-con .step-wrap > ul {margin: 20px 0; justify-content: center;}
 .mystate-con .step-wrap > ul > li{margin-left: 57px;}
-.mystate-con .step-wrap > ul > li:first-child{margin-left: 27px;}
+.mystate-con .step-wrap > ul > li:first-child{margin-left:0;}
 .mystate-con .step-wrap > ul > li p{color:#999;}
 .mystate-con .state-text{background:#F5F5F5;margin-top: 20px;}
 .mystate-con .state-text p{line-height: 89px;font-size: 24px;text-align: center;}
