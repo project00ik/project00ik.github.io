@@ -1103,7 +1103,7 @@ textarea + .cot b {vertical-align: top;}
 .unit-type1 .flag-area {margin-bottom:6px; font-size:0;}
 .unit-type1 .normal-price {display:none; margin-top:6px; font-size: 12px; color: #999; text-decoration: line-through; position:absolute; top:105px; left:0;}
 .unit-type1 .normal-price > b {font-weight: 400; font-size: 16px; vertical-align: text-bottom;}
-.unit-type1 .standard {width:100%; margin-bottom:3px; font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
+.unit-type1 .standard {width:100%; padding-bottom:3px; font-size: 14px; color: #999; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis;}
 .proList .unit-type1 .normal-price {position: static; top:inherit; left:inherit;}
 .unit-type1 .check-style2 {position: absolute; top:20px; left:20px; z-index:8;}
 
