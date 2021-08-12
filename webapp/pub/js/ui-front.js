@@ -460,7 +460,6 @@ function detailLyClose() {
 
 function tabReset(){
   // 탭 초기화
-  console.log('test');
   $('.tabArea .tabBtn').removeClass('on');
   $('.tabArea .tabCont').removeClass('active');
   $('.tabArea .tabBtn').eq(0).addClass('on');
