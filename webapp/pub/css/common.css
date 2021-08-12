@@ -1327,6 +1327,7 @@ textarea + .cot b {vertical-align: top;}
     .tab-area .tab-style3::-webkit-scrollbar {display: none;}
     .tab-area .tab-style4::-webkit-scrollbar {display: none;}
     .tab-area .tab-style5::-webkit-scrollbar {display: none;}
+    .alarmlist-wrap .list-top-area::-webkit-scrollbar {display: none;}
     
 }
 
