@@ -471,6 +471,8 @@
     .ly-detail .option-result.selLeng1,
     .ly-detail .option-result.selLeng2,
     .ly-detail .option-result.selLeng3 {height:120px;} 
+
+    .product-detail .tooltip-box {width:166px; padding:20px 10px; left:-52px; right:inherit;}
     
 
     .product-total {margin-top:16px; padding:20px 0;}
