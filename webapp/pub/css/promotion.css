@@ -27,6 +27,7 @@
 .pop-ip-area .form-address {width: calc(100% - 190px);}
 .pop-ip-area .form-address .form-layout input + button {margin-left: 5px;}
 .pop-suggestion .user-search .pop-mo-form {display: flex; flex:1;}
+.pop-suggestion .user-search > form {width:100%;}
 .pop-suggestion .user-search .pop-mo-form .form-area {width: 100%; flex:1;}
 .pop-suggestion .user-search .pop-mo-btn {display: flex; margin-left: 5px;}
 .pop-suggestion .user-search .pop-mo-btn .btn {margin-left: 0;}
