@@ -247,7 +247,7 @@
     width:auto;
     text-align: right;
     position:absolute; top:19px; right:57px;
-    display: inline-block;
+    display: none;
     overflow: hidden;
     background: url(../images/common/arrow_quick_noti.png) 100% 50% no-repeat;
     animation-name:quickNoti; 
@@ -257,6 +257,7 @@
     animation-direction:alternate;
     animation-fill-mode: forwards;
 }
+.quick-menu .alarm-area.on {display: inline-block;}
 
 .quick-menu .noti-txt p {white-space:nowrap;}
 .quick-menu .qk-notify .dot {width:6px; height:6px; border-radius: 50%; overflow: hidden; display:inline-block; font-size:0; background: #12b5cf; position: absolute; top:9px; right:20px; z-index:1; font-size:0;}
