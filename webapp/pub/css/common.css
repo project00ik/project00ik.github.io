@@ -61,12 +61,12 @@
 .search-box.on {display: block;}
 .search-box {display: none; position: absolute; top: 48px; left: 50%; z-index: 99; transform: translateX(-50%); width: 640px; background: #fff; border: 1px solid #d7d7d7;}
 .search-box .half-box {max-height:493px; display: flex; overflow:auto; background:url(../images/common/bg_search_mid_line.png) 50% 0 repeat-y;}
-.search-box .half-box > div {flex:1; width: 50%; padding: 20px;}
+.search-box .half-box > div {flex:1; width: 50%; padding: 20px 20px 0;}
 /* .search-box .half-box .hit-word:before {content: ''; display: inline-block; position: absolute; left: 50%; top: 0; width: 1px; height: 100%; background: #d7d7d7;} */
 .search-box .half-box .s-tit {font-size: 16px; font-weight: 500; color: #346dd0; padding-bottom: 20px; border-bottom: 1px solid #d7d7d7;}
 .search-box .half-box .s-list {padding-top: 30px;}
 .search-box .half-box .s-list ul li {display: flex; justify-content: space-between; padding-bottom: 20px;}
-.search-box .half-box .s-list ul li:last-child {padding-bottom: 10px;}
+.search-box .half-box .s-list ul li:last-child {padding-bottom: 30px;}
 .search-box .half-box .s-list ul li a {font-size: 16px; color: #000;}
 .search-box .half-box .s-list ul li > a:first-child {width:auto; max-width:calc(100% - 18px); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; -o-text-overflow: ellipsis; display:inline-block;}
 .search-box .half-box .search-word ul li a:hover {border-bottom: 1px solid #000; margin-bottom: -1px;}
@@ -1379,7 +1379,7 @@ textarea + .cot b {vertical-align: top;}
     .search-box .search-bt {padding: 16px 20px;}
     .search-box .search-bt a {font-size: 13px; line-height: 15px;}
     .search-box .list-none p {word-break:keep-all; line-height: 18px; width: 90px; font-size: 14px; padding: 60px 0 0 0; background: url(../images/common/mo_icon_none2.svg) center 0 no-repeat;}
-    .search-box .half-box .s-list ul li:last-child {padding-bottom: 0;}
+    .search-box .half-box .s-list ul li:last-child {padding-bottom: 20px;}
     .word-box {width: 100%; max-height:387px; top: 46px; padding: 20px;}
     .word-box a {font-size: 14px;}
     .word-box .word-list ul li {padding-bottom: 13px;}
