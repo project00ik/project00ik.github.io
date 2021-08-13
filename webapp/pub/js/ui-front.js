@@ -208,12 +208,16 @@ function allCategoryLyClose(){
 }
 
 function layoutCategory(){
+
   // 1depth 레이어 이벤트
-  $('.header, .content').on('mouseover', function () {
-    $('.visualCate .d1Btn').removeClass('on');
-    $('.visualCate .d2Layer').removeClass('active');
-    $('.visualCate .btn-layer-close').hide();
-    $('.main-visual-cate .cate-layer-wrap').removeClass('open');
+  var mainOverCate = $('.main-visual-cate');
+  $('body').on('mouseover', function(e){
+    if(mainOverCate.has(e.target).length === 0){
+      $('.visualCate .d1Btn').removeClass('on');
+      $('.visualCate .d2Layer').removeClass('active');
+      $('.visualCate .btn-layer-close').hide();
+      $('.main-visual-cate .cate-layer-wrap').removeClass('open');
+    }
   });
 
   // 카테고리 레이어 이벤트
