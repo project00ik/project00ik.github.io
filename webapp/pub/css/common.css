@@ -1461,7 +1461,7 @@ textarea + .cot b {vertical-align: top;}
 
     .footer-wrap .footer {width:100%; padding:96px 20px 0; text-align:center;}
     .footer .footer-cont {padding:20px 0 60px; position:inherit;}
-    .footer .footer-cont .footet-logo {width:136px; height:36px; left:50%; margin-left:-73.5px;}
+    .footer .footer-cont .footet-logo {width:136px; height:36px; left:50%; margin-left:-73.5px; overflow: hidden;}
     .footer .footer-cont .footet-logo::before {content:''; width:136px; height:36px; display:inline-block; background:url(../images/layout/mo_logo_footer.png) 50% 0 no-repeat; background-size: 100% auto;}
     .footer .footer-cont .footet-logo img {opacity: 0;}
     .footer .footer-top {padding:0 0 20px;}
