@@ -150,8 +150,6 @@
 .list-delivery ul li .de-btn-area {font-size: 0; padding-bottom: 0;}
 .list-delivery ul li .de-btn-area .btn {display: block;}
 .list-delivery ul li .de-btn-area .btn + .btn {margin-top: 10px;}
-/* 회원관리 개발 페이지 css 충돌 관련 수정 */
-.mypage-cont #pageRightContents.my-main.main-style .tit-area {margin-bottom:0; border-bottom: 2px solid #000;}
 
 /* 나의리뷰 */
 .top-flex-area {padding: 30px 0 20px; display: flex; border-bottom: 1px solid #bbb;}
@@ -343,7 +341,6 @@
     .mypage-cont .product-list-wrap {margin-bottom: 0;}
     .mypage-cont .my-main.main-style .tit-area {margin-bottom: 20px;}
     .mypage-cont .my-main.main-style .product-list-wrap .tit-area {margin-bottom: 15px;}
-
 
     /* 나의활동 */
     .pop-sLabel .pop-ip-area label + .form-layout {width: 100%;}
