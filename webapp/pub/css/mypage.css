@@ -442,7 +442,7 @@
         주문현황
     ========================================================================== */
     .btn-open {height:36px; padding:0 21px; line-height:37px;}
-    .orderFormeTgView .list-in {height:578px;}
+    .orderFormeTgView .list-in {height:573px;}
     .lybox-wrap {width:calc(100% - 40px); margin:10px 20px 0; padding:20px; top:245px; left:0;}
     .lybox-wrap.lybox-posi {top:280px; left:0; width:calc(100% - 40px);}
     .lybox-wrap .chk-area {margin-left:0;}
