@@ -25,7 +25,8 @@
 .mypage-cont .my-menu .my-menu-list .list-deps > li.on > a {color: #346dd0;font-weight: 500;}
 .mypage-cont .my-main {margin-left: 214px;}
 .mypage-cont .my-main .tit-area {margin-bottom: 0; padding-bottom: 10px; border-bottom: 2px solid #000;}
-.mypage-cont .my-main.main-style .tit-area {margin-bottom: 30px; border-bottom: 0;}
+.mypage-cont .my-main.main-style .tit-area {margin-bottom: 0; border-bottom: 0;}
+.mypage-cont .my-main.main-style .type-slide .tit-area {border-bottom: 2px solid #000; padding-bottom: 10px;}
 .mypage-cont .my-main.main-style .tab-area .tab-cont {padding: 0;}
 .mypage-cont .my-main .my-top-area {display: flex; justify-content: space-around; align-items: center; width: 100%; height: 160px; margin-bottom: 60px; border-radius: 80px 80px 80px 0px; background: #12b5cf;}
 .mypage-cont .my-main .my-top-area .top-member {padding-left: 50px; color: #fff;}
@@ -340,6 +341,7 @@
     .mypage-cont .unit-type1 .unit-layer .unit-under-btn .btn-restock {font-size: 15px;}
     .mypage-cont .product-list-wrap {margin-bottom: 0;}
     .mypage-cont .my-main.main-style .tit-area {margin-bottom: 20px;}
+    .mypage-cont .my-main.main-style .type-slide .tit-area {margin-bottom:0;}
     .mypage-cont .my-main.main-style .product-list-wrap .tit-area {margin-bottom: 15px;}
 
     /* 나의활동 */
