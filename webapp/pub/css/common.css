@@ -824,9 +824,10 @@ select.select:disabled {background:url(../images/common/arrow_select_disabled.sv
 select.select.sel-s {width:auto; height:28px; padding:0 38px 0 10px;  background:url(../images/common/arrow_select.svg) top 4px right 10px no-repeat #fff; line-height:26px; vertical-align: top;}
 select.select.sel-s:disabled {background:url(../images/common/arrow_select_disabled.svg) top 4px right 10px no-repeat #fafafa; border:1px solid #bbb; color:#666;}
 
-.select-type-s {width:168px; height:18px; padding-right:21px; line-height:18px; font-size:14px; color:#666; background:url(../images/common/arrow_select.svg) 100% 0 no-repeat; vertical-align: top;}
+.select-type-s {width:180px; height:18px; padding-right:21px; line-height:18px; font-size:14px; color:#666; background:url(../images/common/arrow_select.svg) 100% 0 no-repeat; vertical-align: top;}
 .customSelect {position:relative;}
 .customSelect .select-list {display:none; width:100%; border:1px solid #bbb; position:absolute; top:calc(100% + 5px); left:0; z-index:3; background:#fff;}
+.customSelect .selected-txt {width:180px; cursor: pointer;}
 .customSelect.on .select-list {display:block;}
 .customSelect .select-list .sel-txt {width:100%; padding:5px 9px; display:inline-block; font-size:14px; color:#666;}
 .customSelect .select-list > li label {width:100%; display:inline-block; cursor: pointer;}
