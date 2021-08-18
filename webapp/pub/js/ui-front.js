@@ -334,10 +334,24 @@ function moCteLyClose() {
   $('.d2Layer').removeClass('active');
 }
 
+function cateAccordion(){
+  // 모바일 카테고리 아코디언
+  var $cateAcdName = $('.cateAcdArea');
+	var $cateAcdBt = $cateAcdName.find('.cateAcdBtn');
+	var $cateAcdCt = $cateAcdName.find('.cateAcdCont');
+	$cateAcdBt.each(function(){
+		$(this).on('click', function(e) {
+      e.preventDefault();
+      var $cateAcdActive = $(this);
+      $cateAcdBt.not($cateAcdActive.toggleClass('on')).removeClass('on');
+      $cateAcdCt.not($cateAcdActive.parent().find($cateAcdCt).slideToggle()).slideUp();
+    })
+	});
+}
 
 function quickTopBtn(){
   // 스크롤 최상단으로 이동
-    $('html, body').stop().animate({ scrollTop: 0 }, 300);
+    /*$('html, body').stop().animate({ scrollTop: 0 }, 300);*/
     return false;
 }
 
@@ -730,8 +744,8 @@ function allChecked(){
     $(this).find(' > input').on('click', function(){
       $(this).closest('.allChkArea').find('.chk > input').prop('checked', this.checked);
       /*익스프러에서...오류로*/
-      if((AllCheckFunction != undefined) ||(typeof AllCheckFunction =='function')){
-        AllCheckFunction()
+      if((typeof AllCheckFunction =='function')){
+        AllCheckFunction();
       }
     })
   })
