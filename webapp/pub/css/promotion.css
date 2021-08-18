@@ -403,7 +403,7 @@
 .reltal-section .offer-value {width:1018px; margin:50px auto 70px; padding-top:68px; position:relative;}
 .reltal-section .offer-value .offer-value-img {width: 418px; height: 384px; margin:0 auto; background: url(../images/product/rental_bg2.svg) 50% 50% no-repeat; position:relative;}
 .offer-value .offer-value-img > li {color:#fff; font-size: 15px; text-align: center; position: absolute; z-index:1;}
-.offer-value .offer-value-img > li b {width:100%; margin-bottom: 3px; display:inline-block; font-size:16px;}
+.offer-value .offer-value-img > li b {width:100%; margin-bottom: 3px; display:inline-block; font-size:16px; font-weight: 700;}
 .offer-value .offer-value-img > li .num {font-size:20px; margin-bottom:6px;}
 .offer-value .offer-value-img > li:nth-child(1) {width:212px; top:28px; left:50%; transform: translateX(-50%);}
 .offer-value .offer-value-img > li:nth-child(2) {width:122px; bottom:86px; left:44px;}
