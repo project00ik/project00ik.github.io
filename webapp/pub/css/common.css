@@ -471,6 +471,7 @@ a[class^="btn-"] {display:inline-block;}
 .btn-more-black {width:98px; height:28px; line-height:27px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat;}
 .btn-more-black2 {width:98px; height:28px; line-height:27px; padding:0 35px 0 15px; border:1px solid #000; font-weight:500; font-size:14px; color:#000; background:url(../images/common/icon_plus_black.svg) right 16px center no-repeat; position: absolute; top: -69px; right: 35px; z-index: 2;}
 .mobile-paging {width:calc(100% - 40px); height:36px; margin:50px 20px 0; background: #fff; border: 1px solid #000; font-size: 14px; text-align: center; color: #000;}
+.mobile-paging.pagingNone {display: none;}
 .product-detail .mobile-paging {margin-top:20px;}
 .mobile-paging::after {content:""; width:18px; height:18px; margin-top:2px; background:url(../images/common/icon_plus_black.svg) 0 0 no-repeat; display:inline-block; vertical-align:top;}
 .btn-style-s1 {min-width:98px; height:28px; line-height:27px; text-align:center; font-size:14px; display:inline-block; color:#000; background:#fff; border:1px solid #000; display:inline-block;}
